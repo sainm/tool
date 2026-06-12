@@ -67,13 +67,15 @@ class TypeInfo:
 
 
 def find_java_bin(jdk_home):
-    """查找 java / javap 可执行文件"""
+    """查找 java / javac / javap 可执行文件"""
     java_exe = Path(jdk_home) / "bin" / "java.exe"
+    javac_exe = Path(jdk_home) / "bin" / "javac.exe"
     javap_exe = Path(jdk_home) / "bin" / "javap.exe"
     if not java_exe.exists():
         java_exe = Path(jdk_home) / "bin" / "java"
+        javac_exe = Path(jdk_home) / "bin" / "javac"
         javap_exe = Path(jdk_home) / "bin" / "javap"
-    return str(java_exe), str(javap_exe)
+    return str(java_exe), str(javac_exe), str(javap_exe)
 
 
 def list_modules(java_exe):
@@ -90,13 +92,13 @@ def list_modules(java_exe):
     return modules
 
 
-def list_module_classes(java_exe, module):
+def list_module_classes(java_exe, javac_exe, module):
     """列出某个模块中所有公开的 .class 文件（通过 jrt: 文件系统）"""
     code = f'''
 import java.nio.file.*;
 import java.util.stream.*;
 import java.io.IOException;
-public class Ls {{
+class Ls {{
     public static void main(String[] args) throws Exception {{
         var fs = FileSystems.getFileSystem(java.net.URI.create("jrt:/"));
         var classes = Files.walk(fs.getPath("modules/{module}"))
@@ -117,7 +119,7 @@ public class Ls {{
 
     # 编译
     subprocess.run(
-        [java_exe.replace("java", "javac") if "javac" in java_exe else java_exe.replace("java.exe", "javac.exe"), java_file],
+        [javac_exe, java_file],
         capture_output=True, text=True, timeout=30
     )
 
@@ -209,43 +211,57 @@ def parse_javap_output(text, module, pkg, cls_name):
     return ti
 
 
-def extract_jdk_api(jdk_home, progress_callback=None):
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+def _process_class(args):
+    """处理单个 class 文件，返回 TypeInfo 或 None"""
+    javap_exe, mod, cls_path = args
+    *pkg_parts, cls_name = cls_path.split("/")
+    pkg = ".".join(pkg_parts) if pkg_parts else ""
+    full = f"{pkg}.{cls_name}" if pkg else cls_name if cls_name else ""
+
+    try:
+        result = subprocess.run(
+            [javap_exe, "-public", "-classpath", "", "--module", mod, full],
+            capture_output=True, text=True, timeout=30
+        )
+        if result.returncode == 0 and result.stdout.strip():
+            return parse_javap_output(result.stdout, mod, pkg, cls_name)
+    except Exception:
+        pass
+    return None
+
+
+def extract_jdk_api(jdk_home, progress_callback=None, workers=8):
     """提取一个 JDK 的全部公开 API"""
-    java_exe, javap_exe = find_java_bin(jdk_home)
+    java_exe, javac_exe, javap_exe = find_java_bin(jdk_home)
     print(f"\n[扫描 JDK] {jdk_home}")
     print(f"  java: {java_exe}")
 
     modules = list_modules(java_exe)
     print(f"  共 {len(modules)} 个模块")
 
+    # 收集所有待处理的 class
+    all_tasks = []
+    for mod in modules:
+        classes = list_module_classes(java_exe, javac_exe, mod)
+        if classes:
+            for cls_path in classes:
+                all_tasks.append((javap_exe, mod, cls_path))
+
+    print(f"  共 {len(all_tasks)} 个类，使用 {workers} 个线程处理...")
     all_types = []
-    total = len(modules)
 
-    for idx, mod in enumerate(modules):
-        if progress_callback:
-            progress_callback(idx, total, mod)
-
-        classes = list_module_classes(java_exe, mod)
-        if not classes:
-            continue
-
-        for cls_path in classes:
-            # cls_path 如 "java/lang/String"
-            *pkg_parts, cls_name = cls_path.split("/")
-            pkg = ".".join(pkg_parts) if pkg_parts else ""
-
-            full = f"{pkg}.{cls_name}" if pkg else cls_name if cls_name else ""
-
-            try:
-                result = subprocess.run(
-                    [javap_exe, "-public", "-classpath", "", f"--module={mod}", full],
-                    capture_output=True, text=True, timeout=30
-                )
-                if result.returncode == 0 and result.stdout.strip():
-                    ti = parse_javap_output(result.stdout, mod, pkg, cls_name)
-                    all_types.append(ti)
-            except Exception:
-                continue
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {executor.submit(_process_class, task): task for task in all_tasks}
+        done = 0
+        for future in as_completed(futures):
+            done += 1
+            if done % 5000 == 0 or done == len(futures):
+                print(f"    进度: {done}/{len(futures)} ({100*done//len(futures)}%)")
+            ti = future.result()
+            if ti is not None:
+                all_types.append(ti)
 
     print(f"  共提取 {len(all_types)} 个类型")
     return all_types
