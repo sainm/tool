@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.github.javaparser:javaparser-core:3.25.10'
+}
+
+application {
+    mainClass = 'com.scanner.DeprecatedScanner'
+}
+
+tasks.withType(JavaCompile) {
+    options.release = 17
+}
