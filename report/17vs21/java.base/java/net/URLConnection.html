@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.net.URLConnection</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/net/package-summary.html">java.net</a></div>
+<h1>Class&nbsp;URLConnection</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> URLConnection <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="allowUserInteraction"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> allowUserInteraction</div>
+</div>
+</li><li><div class="element" id="connected"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> connected</div>
+</div>
+</li><li><div class="element" id="doInput"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> doInput</div>
+</div>
+</li><li><div class="element" id="doOutput"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> doOutput</div>
+</div>
+</li><li><div class="element" id="ifModifiedSince"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">long</span> ifModifiedSince</div>
+</div>
+</li><li><div class="element" id="url"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.net.URL url</div>
+</div>
+</li><li><div class="element" id="useCaches"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> useCaches</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(URL)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> URLConnection(<span class="parameters"><span class="parameter">java.net.URL arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addRequestProperty(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addRequestProperty(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="connect()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> connect() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="getAllowUserInteraction()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getAllowUserInteraction()</div>
+</div>
+</li><li><div class="element" id="getConnectTimeout()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getConnectTimeout()</div>
+</div>
+</li><li><div class="element" id="getContent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getContent() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="getContent(Class[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getContent(<span class="parameters"><span class="parameter"><span><span>java.lang.Class&lt;?&gt;</span>[]</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="getContentEncoding()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getContentEncoding()</div>
+</div>
+</li><li><div class="element" id="getContentLength()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getContentLength()</div>
+</div>
+</li><li><div class="element" id="getContentLengthLong()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getContentLengthLong()</div>
+</div>
+</li><li><div class="element" id="getContentType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getContentType()</div>
+</div>
+</li><li><div class="element" id="getDate()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getDate()</div>
+</div>
+</li><li><div class="element" id="getDefaultAllowUserInteraction()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> getDefaultAllowUserInteraction()</div>
+</div>
+</li><li><div class="element" id="getDefaultRequestProperty(String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String getDefaultRequestProperty(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDefaultUseCaches()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getDefaultUseCaches()</div>
+</div>
+</li><li><div class="element" id="getDefaultUseCaches(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> getDefaultUseCaches(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDoInput()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getDoInput()</div>
+</div>
+</li><li><div class="element" id="getDoOutput()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getDoOutput()</div>
+</div>
+</li><li><div class="element" id="getExpiration()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getExpiration()</div>
+</div>
+</li><li><div class="element" id="getFileNameMap()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.net.FileNameMap getFileNameMap()</div>
+</div>
+</li><li><div class="element" id="getHeaderField(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getHeaderField(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getHeaderField(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getHeaderField(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getHeaderFieldDate(String,long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getHeaderFieldDate(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getHeaderFieldInt(String,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getHeaderFieldInt(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getHeaderFieldKey(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getHeaderFieldKey(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getHeaderFieldLong(String,long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getHeaderFieldLong(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getHeaderFields()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Map&lt;java.lang.String, <span>java.util.List&lt;java.lang.String&gt;</span>&gt;</span> getHeaderFields()</div>
+</div>
+</li><li><div class="element" id="getIfModifiedSince()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getIfModifiedSince()</div>
+</div>
+</li><li><div class="element" id="getInputStream()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.InputStream getInputStream() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="getLastModified()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getLastModified()</div>
+</div>
+</li><li><div class="element" id="getOutputStream()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.OutputStream getOutputStream() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="getPermission()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.security.Permission getPermission() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="getReadTimeout()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getReadTimeout()</div>
+</div>
+</li><li><div class="element" id="getRequestProperties()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Map&lt;java.lang.String, <span>java.util.List&lt;java.lang.String&gt;</span>&gt;</span> getRequestProperties()</div>
+</div>
+</li><li><div class="element" id="getRequestProperty(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getRequestProperty(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getURL()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.net.URL getURL()</div>
+</div>
+</li><li><div class="element" id="getUseCaches()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getUseCaches()</div>
+</div>
+</li><li><div class="element" id="guessContentTypeFromName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String guessContentTypeFromName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="guessContentTypeFromStream(InputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String guessContentTypeFromStream(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="setAllowUserInteraction(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAllowUserInteraction(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setConnectTimeout(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setConnectTimeout(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setContentHandlerFactory(ContentHandlerFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setContentHandlerFactory(<span class="parameters"><span class="parameter">java.net.ContentHandlerFactory arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDefaultAllowUserInteraction(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setDefaultAllowUserInteraction(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDefaultRequestProperty(String,String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setDefaultRequestProperty(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDefaultUseCaches(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDefaultUseCaches(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDefaultUseCaches(String,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setDefaultUseCaches(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDoInput(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDoInput(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDoOutput(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDoOutput(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFileNameMap(FileNameMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setFileNameMap(<span class="parameters"><span class="parameter">java.net.FileNameMap arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setIfModifiedSince(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setIfModifiedSince(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setReadTimeout(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setReadTimeout(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRequestProperty(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRequestProperty(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setUseCaches(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setUseCaches(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

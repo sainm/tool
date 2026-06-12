@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.smartcardio/javax.smartcardio.CommandAPDU</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.smartcardio/module-summary.html">java.smartcardio</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.smartcardio/javax/smartcardio/package-summary.html">javax.smartcardio</a></div>
+<h1>Class&nbsp;CommandAPDU</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> CommandAPDU <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> CommandAPDU(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> CommandAPDU(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,int,int,int,byte[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> CommandAPDU(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span><span class="keyword">byte</span>[]</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,int,int,int,byte[],int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> CommandAPDU(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span><span class="keyword">byte</span>[]</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,int,int,int,byte[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> CommandAPDU(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span><span class="keyword">byte</span>[]</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span class="keyword">int</span> arg6</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,int,int,int,byte[],int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> CommandAPDU(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span><span class="keyword">byte</span>[]</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span class="keyword">int</span> arg6</span>, <span class="parameter"><span class="keyword">int</span> arg7</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(byte[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> CommandAPDU(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(byte[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> CommandAPDU(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(ByteBuffer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> CommandAPDU(<span class="parameters"><span class="parameter">java.nio.ByteBuffer arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBytes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span class="keyword">byte</span>[]</span> getBytes()</div>
+</div>
+</li><li><div class="element" id="getCLA()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getCLA()</div>
+</div>
+</li><li><div class="element" id="getData()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span class="keyword">byte</span>[]</span> getData()</div>
+</div>
+</li><li><div class="element" id="getINS()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getINS()</div>
+</div>
+</li><li><div class="element" id="getNc()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getNc()</div>
+</div>
+</li><li><div class="element" id="getNe()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getNe()</div>
+</div>
+</li><li><div class="element" id="getP1()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getP1()</div>
+</div>
+</li><li><div class="element" id="getP2()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getP2()</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>398698301286670877<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span><span class="keyword">byte</span>[]</span>&nbsp;apdu</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

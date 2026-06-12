@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/javax.security.auth.Subject</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/javax/security/auth/package-summary.html">javax.security.auth</a></div>
+<h1>Class&nbsp;Subject</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> Subject <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Subject()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(boolean,Set,Set,Set)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Subject(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span>, <span class="parameter"><span>java.util.Set&lt;<span>? <span class="keyword">extends</span> java.security.Principal</span>&gt;</span> arg1</span>, <span class="parameter"><span>java.util.Set&lt;?&gt;</span> arg2</span>, <span class="parameter"><span>java.util.Set&lt;?&gt;</span> arg3</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="callAs(Subject,Callable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T callAs(<span class="parameters"><span class="parameter">javax.security.auth.Subject arg0</span>, <span class="parameter"><span>java.util.concurrent.Callable&lt;T&gt;</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.util.concurrent.CompletionException</span></div>
+</div>
+</li><li><div class="element" id="current()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.security.auth.Subject current()</div>
+</div>
+</li><li><div class="element" id="doAs(Subject,PrivilegedAction)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="18"forRemoval=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doAs(<span class="parameters"><span class="parameter">javax.security.auth.Subject arg0</span>, <span class="parameter"><span>java.security.PrivilegedAction&lt;T&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="doAs(Subject,PrivilegedExceptionAction)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="18"forRemoval=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doAs(<span class="parameters"><span class="parameter">javax.security.auth.Subject arg0</span>, <span class="parameter"><span>java.security.PrivilegedExceptionAction&lt;T&gt;</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.security.PrivilegedActionException</span></div>
+</div>
+</li><li><div class="element" id="doAsPrivileged(Subject,PrivilegedAction,AccessControlContext)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="17"forRemoval=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doAsPrivileged(<span class="parameters"><span class="parameter">javax.security.auth.Subject arg0</span>, <span class="parameter"><span>java.security.PrivilegedAction&lt;T&gt;</span> arg1</span>, <span class="parameter">java.security.AccessControlContext arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="doAsPrivileged(Subject,PrivilegedExceptionAction,AccessControlContext)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="17"forRemoval=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doAsPrivileged(<span class="parameters"><span class="parameter">javax.security.auth.Subject arg0</span>, <span class="parameter"><span>java.security.PrivilegedExceptionAction&lt;T&gt;</span> arg1</span>, <span class="parameter">java.security.AccessControlContext arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.security.PrivilegedActionException</span></div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPrincipals()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Set&lt;java.security.Principal&gt;</span> getPrincipals()</div>
+</div>
+</li><li><div class="element" id="getPrincipals(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Set&lt;T&gt;</span> getPrincipals(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPrivateCredentials()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Set&lt;java.lang.Object&gt;</span> getPrivateCredentials()</div>
+</div>
+</li><li><div class="element" id="getPrivateCredentials(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Set&lt;T&gt;</span> getPrivateCredentials(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPublicCredentials()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Set&lt;java.lang.Object&gt;</span> getPublicCredentials()</div>
+</div>
+</li><li><div class="element" id="getPublicCredentials(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Set&lt;T&gt;</span> getPublicCredentials(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getSubject(AccessControlContext)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="17"forRemoval=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.security.auth.Subject getSubject(<span class="parameters"><span class="parameter">java.security.AccessControlContext arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="isReadOnly()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isReadOnly()</div>
+</div>
+</li><li><div class="element" id="setReadOnly()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setReadOnly()</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-8308522755600156056<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.util.Set&lt;java.security.Principal&gt;</span>&nbsp;principals</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;readOnly</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

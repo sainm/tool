@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.base/java.lang.classfile.CodeBuilder</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/lang/classfile/package-summary.html">java.lang.classfile</a></div>
+<h1>Interface&nbsp;CodeBuilder</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">sealed</span></span> <span class="keyword">interface</span> CodeBuilder <div class="superinterfaces"><span class="keyword">extends</span> <span>java.lang.classfile.ClassFileBuilder&lt;java.lang.classfile.CodeElement, java.lang.classfile.CodeBuilder&gt;</span></div>
+<div class="permitted-subclasses"><span class="keyword">permits</span> jdk.internal.classfile.impl.ChainedCodeBuilder, jdk.internal.classfile.impl.NonterminalCodeBuilder, jdk.internal.classfile.impl.TerminalCodeBuilder, java.lang.classfile.CodeBuilder.BlockCodeBuilder</div>
+</div>
+</div>
+<section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/CodeBuilder.BlockCodeBuilder.html">BlockCodeBuilder</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/CodeBuilder.CatchBuilder.html">CatchBuilder</a></span></li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="aaload()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder aaload()</div>
+</div>
+</li><li><div class="element" id="aastore()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder aastore()</div>
+</div>
+</li><li><div class="element" id="aconst_null()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder aconst_null()</div>
+</div>
+</li><li><div class="element" id="allocateLocal(TypeKind)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> allocateLocal(<span class="parameters"><span class="parameter">java.lang.classfile.TypeKind arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="aload(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder aload(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="anewarray(ClassEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder anewarray(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.ClassEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="anewarray(ClassDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder anewarray(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="areturn()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder areturn()</div>
+</div>
+</li><li><div class="element" id="arrayLoad(TypeKind)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder arrayLoad(<span class="parameters"><span class="parameter">java.lang.classfile.TypeKind arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="arrayStore(TypeKind)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder arrayStore(<span class="parameters"><span class="parameter">java.lang.classfile.TypeKind arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="arraylength()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder arraylength()</div>
+</div>
+</li><li><div class="element" id="astore(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder astore(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="athrow()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder athrow()</div>
+</div>
+</li><li><div class="element" id="baload()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder baload()</div>
+</div>
+</li><li><div class="element" id="bastore()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder bastore()</div>
+</div>
+</li><li><div class="element" id="bipush(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder bipush(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="block(Consumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder block(<span class="parameters"><span class="parameter"><span>java.util.function.Consumer&lt;java.lang.classfile.CodeBuilder.BlockCodeBuilder&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="branch(Opcode,Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder branch(<span class="parameters"><span class="parameter">java.lang.classfile.Opcode arg0</span>, <span class="parameter">java.lang.classfile.Label arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="caload()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder caload()</div>
+</div>
+</li><li><div class="element" id="castore()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder castore()</div>
+</div>
+</li><li><div class="element" id="characterRange(Label,Label,int,int,int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder characterRange(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span>, <span class="parameter">java.lang.classfile.Label arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="checkcast(ClassEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder checkcast(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.ClassEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="checkcast(ClassDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder checkcast(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="conversion(TypeKind,TypeKind)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder conversion(<span class="parameters"><span class="parameter">java.lang.classfile.TypeKind arg0</span>, <span class="parameter">java.lang.classfile.TypeKind arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="d2f()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder d2f()</div>
+</div>
+</li><li><div class="element" id="d2i()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder d2i()</div>
+</div>
+</li><li><div class="element" id="d2l()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder d2l()</div>
+</div>
+</li><li><div class="element" id="dadd()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dadd()</div>
+</div>
+</li><li><div class="element" id="daload()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder daload()</div>
+</div>
+</li><li><div class="element" id="dastore()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dastore()</div>
+</div>
+</li><li><div class="element" id="dcmpg()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dcmpg()</div>
+</div>
+</li><li><div class="element" id="dcmpl()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dcmpl()</div>
+</div>
+</li><li><div class="element" id="dconst_0()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dconst_0()</div>
+</div>
+</li><li><div class="element" id="dconst_1()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dconst_1()</div>
+</div>
+</li><li><div class="element" id="ddiv()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ddiv()</div>
+</div>
+</li><li><div class="element" id="dload(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dload(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="dmul()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dmul()</div>
+</div>
+</li><li><div class="element" id="dneg()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dneg()</div>
+</div>
+</li><li><div class="element" id="drem()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder drem()</div>
+</div>
+</li><li><div class="element" id="dreturn()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dreturn()</div>
+</div>
+</li><li><div class="element" id="dstore(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dstore(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="dsub()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dsub()</div>
+</div>
+</li><li><div class="element" id="dup()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dup()</div>
+</div>
+</li><li><div class="element" id="dup2()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dup2()</div>
+</div>
+</li><li><div class="element" id="dup2_x1()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dup2_x1()</div>
+</div>
+</li><li><div class="element" id="dup2_x2()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dup2_x2()</div>
+</div>
+</li><li><div class="element" id="dup_x1()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dup_x1()</div>
+</div>
+</li><li><div class="element" id="dup_x2()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder dup_x2()</div>
+</div>
+</li><li><div class="element" id="endLabel()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.classfile.Label endLabel()</div>
+</div>
+</li><li><div class="element" id="exceptionCatch(Label,Label,Label,ClassEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder exceptionCatch(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span>, <span class="parameter">java.lang.classfile.Label arg1</span>, <span class="parameter">java.lang.classfile.Label arg2</span>, <span class="parameter">java.lang.classfile.constantpool.ClassEntry arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="exceptionCatch(Label,Label,Label,ClassDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder exceptionCatch(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span>, <span class="parameter">java.lang.classfile.Label arg1</span>, <span class="parameter">java.lang.classfile.Label arg2</span>, <span class="parameter">java.lang.constant.ClassDesc arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="exceptionCatch(Label,Label,Label,Optional)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder exceptionCatch(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span>, <span class="parameter">java.lang.classfile.Label arg1</span>, <span class="parameter">java.lang.classfile.Label arg2</span>, <span class="parameter"><span>java.util.Optional&lt;java.lang.classfile.constantpool.ClassEntry&gt;</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="exceptionCatchAll(Label,Label,Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder exceptionCatchAll(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span>, <span class="parameter">java.lang.classfile.Label arg1</span>, <span class="parameter">java.lang.classfile.Label arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="f2d()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder f2d()</div>
+</div>
+</li><li><div class="element" id="f2i()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder f2i()</div>
+</div>
+</li><li><div class="element" id="f2l()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder f2l()</div>
+</div>
+</li><li><div class="element" id="fadd()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder fadd()</div>
+</div>
+</li><li><div class="element" id="faload()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder faload()</div>
+</div>
+</li><li><div class="element" id="fastore()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder fastore()</div>
+</div>
+</li><li><div class="element" id="fcmpg()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder fcmpg()</div>
+</div>
+</li><li><div class="element" id="fcmpl()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder fcmpl()</div>
+</div>
+</li><li><div class="element" id="fconst_0()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder fconst_0()</div>
+</div>
+</li><li><div class="element" id="fconst_1()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder fconst_1()</div>
+</div>
+</li><li><div class="element" id="fconst_2()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder fconst_2()</div>
+</div>
+</li><li><div class="element" id="fdiv()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder fdiv()</div>
+</div>
+</li><li><div class="element" id="fieldAccess(Opcode,FieldRefEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder fieldAccess(<span class="parameters"><span class="parameter">java.lang.classfile.Opcode arg0</span>, <span class="parameter">java.lang.classfile.constantpool.FieldRefEntry arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="fieldAccess(Opcode,ClassDesc,String,ClassDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder fieldAccess(<span class="parameters"><span class="parameter">java.lang.classfile.Opcode arg0</span>, <span class="parameter">java.lang.constant.ClassDesc arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter">java.lang.constant.ClassDesc arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="fload(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder fload(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fmul()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder fmul()</div>
+</div>
+</li><li><div class="element" id="fneg()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder fneg()</div>
+</div>
+</li><li><div class="element" id="frem()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder frem()</div>
+</div>
+</li><li><div class="element" id="freturn()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder freturn()</div>
+</div>
+</li><li><div class="element" id="fstore(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder fstore(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fsub()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder fsub()</div>
+</div>
+</li><li><div class="element" id="getfield(FieldRefEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder getfield(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.FieldRefEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getfield(ClassDesc,String,ClassDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder getfield(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.constant.ClassDesc arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getstatic(FieldRefEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder getstatic(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.FieldRefEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getstatic(ClassDesc,String,ClassDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder getstatic(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.constant.ClassDesc arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="goto_(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder goto_(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="goto_w(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder goto_w(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="i2b()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder i2b()</div>
+</div>
+</li><li><div class="element" id="i2c()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder i2c()</div>
+</div>
+</li><li><div class="element" id="i2d()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder i2d()</div>
+</div>
+</li><li><div class="element" id="i2f()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder i2f()</div>
+</div>
+</li><li><div class="element" id="i2l()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder i2l()</div>
+</div>
+</li><li><div class="element" id="i2s()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder i2s()</div>
+</div>
+</li><li><div class="element" id="iadd()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder iadd()</div>
+</div>
+</li><li><div class="element" id="iaload()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder iaload()</div>
+</div>
+</li><li><div class="element" id="iand()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder iand()</div>
+</div>
+</li><li><div class="element" id="iastore()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder iastore()</div>
+</div>
+</li><li><div class="element" id="iconst_0()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder iconst_0()</div>
+</div>
+</li><li><div class="element" id="iconst_1()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder iconst_1()</div>
+</div>
+</li><li><div class="element" id="iconst_2()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder iconst_2()</div>
+</div>
+</li><li><div class="element" id="iconst_3()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder iconst_3()</div>
+</div>
+</li><li><div class="element" id="iconst_4()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder iconst_4()</div>
+</div>
+</li><li><div class="element" id="iconst_5()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder iconst_5()</div>
+</div>
+</li><li><div class="element" id="iconst_m1()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder iconst_m1()</div>
+</div>
+</li><li><div class="element" id="idiv()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder idiv()</div>
+</div>
+</li><li><div class="element" id="ifThen(Opcode,Consumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ifThen(<span class="parameters"><span class="parameter">java.lang.classfile.Opcode arg0</span>, <span class="parameter"><span>java.util.function.Consumer&lt;java.lang.classfile.CodeBuilder.BlockCodeBuilder&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="ifThen(Consumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ifThen(<span class="parameters"><span class="parameter"><span>java.util.function.Consumer&lt;java.lang.classfile.CodeBuilder.BlockCodeBuilder&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ifThenElse(Opcode,Consumer,Consumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ifThenElse(<span class="parameters"><span class="parameter">java.lang.classfile.Opcode arg0</span>, <span class="parameter"><span>java.util.function.Consumer&lt;java.lang.classfile.CodeBuilder.BlockCodeBuilder&gt;</span> arg1</span>, <span class="parameter"><span>java.util.function.Consumer&lt;java.lang.classfile.CodeBuilder.BlockCodeBuilder&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="ifThenElse(Consumer,Consumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ifThenElse(<span class="parameters"><span class="parameter"><span>java.util.function.Consumer&lt;java.lang.classfile.CodeBuilder.BlockCodeBuilder&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.Consumer&lt;java.lang.classfile.CodeBuilder.BlockCodeBuilder&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="if_acmpeq(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder if_acmpeq(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="if_acmpne(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder if_acmpne(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="if_icmpeq(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder if_icmpeq(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="if_icmpge(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder if_icmpge(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="if_icmpgt(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder if_icmpgt(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="if_icmple(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder if_icmple(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="if_icmplt(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder if_icmplt(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="if_icmpne(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder if_icmpne(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ifeq(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ifeq(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ifge(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ifge(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ifgt(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ifgt(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ifle(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ifle(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="iflt(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder iflt(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ifne(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ifne(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ifnonnull(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ifnonnull(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ifnull(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ifnull(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="iinc(int,int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder iinc(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="iload(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder iload(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="imul()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder imul()</div>
+</div>
+</li><li><div class="element" id="ineg()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ineg()</div>
+</div>
+</li><li><div class="element" id="instanceOf(ClassEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder instanceOf(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.ClassEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="instanceOf(ClassDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder instanceOf(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="invoke(Opcode,MemberRefEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invoke(<span class="parameters"><span class="parameter">java.lang.classfile.Opcode arg0</span>, <span class="parameter">java.lang.classfile.constantpool.MemberRefEntry arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="invoke(Opcode,ClassDesc,String,MethodTypeDesc,boolean)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invoke(<span class="parameters"><span class="parameter">java.lang.classfile.Opcode arg0</span>, <span class="parameter">java.lang.constant.ClassDesc arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter">java.lang.constant.MethodTypeDesc arg3</span>, <span class="parameter"><span class="keyword">boolean</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokedynamic(InvokeDynamicEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invokedynamic(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.InvokeDynamicEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokedynamic(DynamicCallSiteDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invokedynamic(<span class="parameters"><span class="parameter">java.lang.constant.DynamicCallSiteDesc arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokeinterface(InterfaceMethodRefEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invokeinterface(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.InterfaceMethodRefEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokeinterface(ClassDesc,String,MethodTypeDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invokeinterface(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.constant.MethodTypeDesc arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokespecial(InterfaceMethodRefEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invokespecial(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.InterfaceMethodRefEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokespecial(MethodRefEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invokespecial(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.MethodRefEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokespecial(ClassDesc,String,MethodTypeDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invokespecial(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.constant.MethodTypeDesc arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokespecial(ClassDesc,String,MethodTypeDesc,boolean)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invokespecial(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.constant.MethodTypeDesc arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokestatic(InterfaceMethodRefEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invokestatic(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.InterfaceMethodRefEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokestatic(MethodRefEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invokestatic(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.MethodRefEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokestatic(ClassDesc,String,MethodTypeDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invokestatic(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.constant.MethodTypeDesc arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokestatic(ClassDesc,String,MethodTypeDesc,boolean)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invokestatic(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.constant.MethodTypeDesc arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokevirtual(MethodRefEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invokevirtual(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.MethodRefEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokevirtual(ClassDesc,String,MethodTypeDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder invokevirtual(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.constant.MethodTypeDesc arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="ior()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ior()</div>
+</div>
+</li><li><div class="element" id="irem()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder irem()</div>
+</div>
+</li><li><div class="element" id="ireturn()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ireturn()</div>
+</div>
+</li><li><div class="element" id="ishl()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ishl()</div>
+</div>
+</li><li><div class="element" id="ishr()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ishr()</div>
+</div>
+</li><li><div class="element" id="istore(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder istore(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isub()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder isub()</div>
+</div>
+</li><li><div class="element" id="iushr()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder iushr()</div>
+</div>
+</li><li><div class="element" id="ixor()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ixor()</div>
+</div>
+</li><li><div class="element" id="l2d()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder l2d()</div>
+</div>
+</li><li><div class="element" id="l2f()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder l2f()</div>
+</div>
+</li><li><div class="element" id="l2i()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder l2i()</div>
+</div>
+</li><li><div class="element" id="labelBinding(Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder labelBinding(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ladd()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ladd()</div>
+</div>
+</li><li><div class="element" id="laload()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder laload()</div>
+</div>
+</li><li><div class="element" id="land()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder land()</div>
+</div>
+</li><li><div class="element" id="lastore()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lastore()</div>
+</div>
+</li><li><div class="element" id="lcmp()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lcmp()</div>
+</div>
+</li><li><div class="element" id="lconst_0()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lconst_0()</div>
+</div>
+</li><li><div class="element" id="lconst_1()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lconst_1()</div>
+</div>
+</li><li><div class="element" id="ldc(LoadableConstantEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ldc(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.LoadableConstantEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ldc(ConstantDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ldc(<span class="parameters"><span class="parameter">java.lang.constant.ConstantDesc arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ldiv()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder ldiv()</div>
+</div>
+</li><li><div class="element" id="lineNumber(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lineNumber(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="lload(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lload(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="lmul()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lmul()</div>
+</div>
+</li><li><div class="element" id="lneg()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lneg()</div>
+</div>
+</li><li><div class="element" id="loadConstant(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder loadConstant(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="loadConstant(long)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder loadConstant(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="loadConstant(float)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder loadConstant(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="loadConstant(double)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder loadConstant(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="loadConstant(ConstantDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder loadConstant(<span class="parameters"><span class="parameter">java.lang.constant.ConstantDesc arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="loadLocal(TypeKind,int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder loadLocal(<span class="parameters"><span class="parameter">java.lang.classfile.TypeKind arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="localVariable(int,String,ClassDesc,Label,Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder localVariable(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.constant.ClassDesc arg2</span>, <span class="parameter">java.lang.classfile.Label arg3</span>, <span class="parameter">java.lang.classfile.Label arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="localVariable(int,Utf8Entry,Utf8Entry,Label,Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder localVariable(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.lang.classfile.constantpool.Utf8Entry arg1</span>, <span class="parameter">java.lang.classfile.constantpool.Utf8Entry arg2</span>, <span class="parameter">java.lang.classfile.Label arg3</span>, <span class="parameter">java.lang.classfile.Label arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="localVariableType(int,String,Signature,Label,Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder localVariableType(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.classfile.Signature arg2</span>, <span class="parameter">java.lang.classfile.Label arg3</span>, <span class="parameter">java.lang.classfile.Label arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="localVariableType(int,Utf8Entry,Utf8Entry,Label,Label)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder localVariableType(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.lang.classfile.constantpool.Utf8Entry arg1</span>, <span class="parameter">java.lang.classfile.constantpool.Utf8Entry arg2</span>, <span class="parameter">java.lang.classfile.Label arg3</span>, <span class="parameter">java.lang.classfile.Label arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="lookupswitch(Label,List)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lookupswitch(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span>, <span class="parameter"><span>java.util.List&lt;java.lang.classfile.instruction.SwitchCase&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="lor()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lor()</div>
+</div>
+</li><li><div class="element" id="lrem()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lrem()</div>
+</div>
+</li><li><div class="element" id="lreturn()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lreturn()</div>
+</div>
+</li><li><div class="element" id="lshl()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lshl()</div>
+</div>
+</li><li><div class="element" id="lshr()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lshr()</div>
+</div>
+</li><li><div class="element" id="lstore(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lstore(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="lsub()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lsub()</div>
+</div>
+</li><li><div class="element" id="lushr()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lushr()</div>
+</div>
+</li><li><div class="element" id="lxor()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder lxor()</div>
+</div>
+</li><li><div class="element" id="monitorenter()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder monitorenter()</div>
+</div>
+</li><li><div class="element" id="monitorexit()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder monitorexit()</div>
+</div>
+</li><li><div class="element" id="multianewarray(ClassEntry,int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder multianewarray(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.ClassEntry arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="multianewarray(ClassDesc,int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder multianewarray(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="newBoundLabel()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.Label newBoundLabel()</div>
+</div>
+</li><li><div class="element" id="newLabel()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.classfile.Label newLabel()</div>
+</div>
+</li><li><div class="element" id="new_(ClassEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder new_(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.ClassEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="new_(ClassDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder new_(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="newarray(TypeKind)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder newarray(<span class="parameters"><span class="parameter">java.lang.classfile.TypeKind arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="nop()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder nop()</div>
+</div>
+</li><li><div class="element" id="parameterSlot(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> parameterSlot(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="pop()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder pop()</div>
+</div>
+</li><li><div class="element" id="pop2()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder pop2()</div>
+</div>
+</li><li><div class="element" id="putfield(FieldRefEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder putfield(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.FieldRefEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="putfield(ClassDesc,String,ClassDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder putfield(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.constant.ClassDesc arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="putstatic(FieldRefEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder putstatic(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.FieldRefEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="putstatic(ClassDesc,String,ClassDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder putstatic(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.constant.ClassDesc arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="receiverSlot()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> receiverSlot()</div>
+</div>
+</li><li><div class="element" id="return_()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder return_()</div>
+</div>
+</li><li><div class="element" id="return_(TypeKind)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder return_(<span class="parameters"><span class="parameter">java.lang.classfile.TypeKind arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="saload()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder saload()</div>
+</div>
+</li><li><div class="element" id="sastore()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder sastore()</div>
+</div>
+</li><li><div class="element" id="sipush(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder sipush(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="startLabel()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.classfile.Label startLabel()</div>
+</div>
+</li><li><div class="element" id="storeLocal(TypeKind,int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder storeLocal(<span class="parameters"><span class="parameter">java.lang.classfile.TypeKind arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="swap()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder swap()</div>
+</div>
+</li><li><div class="element" id="tableswitch(int,int,Label,List)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder tableswitch(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">java.lang.classfile.Label arg2</span>, <span class="parameter"><span>java.util.List&lt;java.lang.classfile.instruction.SwitchCase&gt;</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="tableswitch(Label,List)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder tableswitch(<span class="parameters"><span class="parameter">java.lang.classfile.Label arg0</span>, <span class="parameter"><span>java.util.List&lt;java.lang.classfile.instruction.SwitchCase&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="transforming(CodeTransform,Consumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder transforming(<span class="parameters"><span class="parameter">java.lang.classfile.CodeTransform arg0</span>, <span class="parameter"><span>java.util.function.Consumer&lt;java.lang.classfile.CodeBuilder&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="trying(Consumer,Consumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.CodeBuilder trying(<span class="parameters"><span class="parameter"><span>java.util.function.Consumer&lt;java.lang.classfile.CodeBuilder.BlockCodeBuilder&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.Consumer&lt;java.lang.classfile.CodeBuilder.CatchBuilder&gt;</span> arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/CodeBuilder.html">CodeBuilder</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/CodeBuilder.BlockCodeBuilder.html">CodeBuilder.BlockCodeBuilder</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/CodeBuilder.CatchBuilder.html">CodeBuilder.CatchBuilder</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.imageio.plugins.tiff.TIFFDirectory</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/imageio/plugins/tiff/package-summary.html">javax.imageio.plugins.tiff</a></div>
+<h1>Class&nbsp;TIFFDirectory</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> TIFFDirectory <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.lang.Cloneable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(TIFFTagSet[],TIFFTag)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> TIFFDirectory(<span class="parameters"><span class="parameter"><span>javax.imageio.plugins.tiff.TIFFTagSet[]</span> arg0</span>, <span class="parameter">javax.imageio.plugins.tiff.TIFFTag arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addTIFFField(TIFFField)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addTIFFField(<span class="parameters"><span class="parameter">javax.imageio.plugins.tiff.TIFFField arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addTagSet(TIFFTagSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addTagSet(<span class="parameters"><span class="parameter">javax.imageio.plugins.tiff.TIFFTagSet arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="clone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.imageio.plugins.tiff.TIFFDirectory clone() <span class="throws"><span class="keyword">throws</span> java.lang.CloneNotSupportedException</span></div>
+</div>
+</li><li><div class="element" id="containsTIFFField(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> containsTIFFField(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createFromMetadata(IIOMetadata)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.imageio.plugins.tiff.TIFFDirectory createFromMetadata(<span class="parameters"><span class="parameter">javax.imageio.metadata.IIOMetadata arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.imageio.metadata.IIOInvalidTreeException</span></div>
+</div>
+</li><li><div class="element" id="getAsMetadata()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.imageio.metadata.IIOMetadata getAsMetadata()</div>
+</div>
+</li><li><div class="element" id="getNumTIFFFields()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getNumTIFFFields()</div>
+</div>
+</li><li><div class="element" id="getParentTag()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.imageio.plugins.tiff.TIFFTag getParentTag()</div>
+</div>
+</li><li><div class="element" id="getTIFFField(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.imageio.plugins.tiff.TIFFField getTIFFField(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getTIFFFields()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.imageio.plugins.tiff.TIFFField[]</span> getTIFFFields()</div>
+</div>
+</li><li><div class="element" id="getTag(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.imageio.plugins.tiff.TIFFTag getTag(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getTagSets()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.imageio.plugins.tiff.TIFFTagSet[]</span> getTagSets()</div>
+</div>
+</li><li><div class="element" id="removeTIFFField(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeTIFFField(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeTIFFFields()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeTIFFFields()</div>
+</div>
+</li><li><div class="element" id="removeTagSet(TIFFTagSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeTagSet(<span class="parameters"><span class="parameter">javax.imageio.plugins.tiff.TIFFTagSet arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

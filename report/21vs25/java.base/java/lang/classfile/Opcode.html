@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: enum java.base/java.lang.classfile.Opcode</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/lang/classfile/package-summary.html">java.lang.classfile</a></div>
+<h1>Enum&nbsp;Opcode</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">enum</span> Opcode <div class="superclass"><span class="keyword">extends</span> <span>java.lang.Enum&lt;java.lang.classfile.Opcode&gt;</span></div>
+</div>
+</div>
+<section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/Opcode.Kind.html">Kind</a></span></li></ul>
+</section>
+<section class="enclosed"><h2>Enum Constants</h2>
+<ul><li><div class="element" id="AALOAD"><span class="add">&plus;</span><div class="signature">AALOAD</div>
+</div>
+</li><li><div class="element" id="AASTORE"><span class="add">&plus;</span><div class="signature">AASTORE</div>
+</div>
+</li><li><div class="element" id="ACONST_NULL"><span class="add">&plus;</span><div class="signature">ACONST_NULL</div>
+</div>
+</li><li><div class="element" id="ALOAD"><span class="add">&plus;</span><div class="signature">ALOAD</div>
+</div>
+</li><li><div class="element" id="ALOAD_0"><span class="add">&plus;</span><div class="signature">ALOAD_0</div>
+</div>
+</li><li><div class="element" id="ALOAD_1"><span class="add">&plus;</span><div class="signature">ALOAD_1</div>
+</div>
+</li><li><div class="element" id="ALOAD_2"><span class="add">&plus;</span><div class="signature">ALOAD_2</div>
+</div>
+</li><li><div class="element" id="ALOAD_3"><span class="add">&plus;</span><div class="signature">ALOAD_3</div>
+</div>
+</li><li><div class="element" id="ALOAD_W"><span class="add">&plus;</span><div class="signature">ALOAD_W</div>
+</div>
+</li><li><div class="element" id="ANEWARRAY"><span class="add">&plus;</span><div class="signature">ANEWARRAY</div>
+</div>
+</li><li><div class="element" id="ARETURN"><span class="add">&plus;</span><div class="signature">ARETURN</div>
+</div>
+</li><li><div class="element" id="ARRAYLENGTH"><span class="add">&plus;</span><div class="signature">ARRAYLENGTH</div>
+</div>
+</li><li><div class="element" id="ASTORE"><span class="add">&plus;</span><div class="signature">ASTORE</div>
+</div>
+</li><li><div class="element" id="ASTORE_0"><span class="add">&plus;</span><div class="signature">ASTORE_0</div>
+</div>
+</li><li><div class="element" id="ASTORE_1"><span class="add">&plus;</span><div class="signature">ASTORE_1</div>
+</div>
+</li><li><div class="element" id="ASTORE_2"><span class="add">&plus;</span><div class="signature">ASTORE_2</div>
+</div>
+</li><li><div class="element" id="ASTORE_3"><span class="add">&plus;</span><div class="signature">ASTORE_3</div>
+</div>
+</li><li><div class="element" id="ASTORE_W"><span class="add">&plus;</span><div class="signature">ASTORE_W</div>
+</div>
+</li><li><div class="element" id="ATHROW"><span class="add">&plus;</span><div class="signature">ATHROW</div>
+</div>
+</li><li><div class="element" id="BALOAD"><span class="add">&plus;</span><div class="signature">BALOAD</div>
+</div>
+</li><li><div class="element" id="BASTORE"><span class="add">&plus;</span><div class="signature">BASTORE</div>
+</div>
+</li><li><div class="element" id="BIPUSH"><span class="add">&plus;</span><div class="signature">BIPUSH</div>
+</div>
+</li><li><div class="element" id="CALOAD"><span class="add">&plus;</span><div class="signature">CALOAD</div>
+</div>
+</li><li><div class="element" id="CASTORE"><span class="add">&plus;</span><div class="signature">CASTORE</div>
+</div>
+</li><li><div class="element" id="CHECKCAST"><span class="add">&plus;</span><div class="signature">CHECKCAST</div>
+</div>
+</li><li><div class="element" id="D2F"><span class="add">&plus;</span><div class="signature">D2F</div>
+</div>
+</li><li><div class="element" id="D2I"><span class="add">&plus;</span><div class="signature">D2I</div>
+</div>
+</li><li><div class="element" id="D2L"><span class="add">&plus;</span><div class="signature">D2L</div>
+</div>
+</li><li><div class="element" id="DADD"><span class="add">&plus;</span><div class="signature">DADD</div>
+</div>
+</li><li><div class="element" id="DALOAD"><span class="add">&plus;</span><div class="signature">DALOAD</div>
+</div>
+</li><li><div class="element" id="DASTORE"><span class="add">&plus;</span><div class="signature">DASTORE</div>
+</div>
+</li><li><div class="element" id="DCMPG"><span class="add">&plus;</span><div class="signature">DCMPG</div>
+</div>
+</li><li><div class="element" id="DCMPL"><span class="add">&plus;</span><div class="signature">DCMPL</div>
+</div>
+</li><li><div class="element" id="DCONST_0"><span class="add">&plus;</span><div class="signature">DCONST_0</div>
+</div>
+</li><li><div class="element" id="DCONST_1"><span class="add">&plus;</span><div class="signature">DCONST_1</div>
+</div>
+</li><li><div class="element" id="DDIV"><span class="add">&plus;</span><div class="signature">DDIV</div>
+</div>
+</li><li><div class="element" id="DLOAD"><span class="add">&plus;</span><div class="signature">DLOAD</div>
+</div>
+</li><li><div class="element" id="DLOAD_0"><span class="add">&plus;</span><div class="signature">DLOAD_0</div>
+</div>
+</li><li><div class="element" id="DLOAD_1"><span class="add">&plus;</span><div class="signature">DLOAD_1</div>
+</div>
+</li><li><div class="element" id="DLOAD_2"><span class="add">&plus;</span><div class="signature">DLOAD_2</div>
+</div>
+</li><li><div class="element" id="DLOAD_3"><span class="add">&plus;</span><div class="signature">DLOAD_3</div>
+</div>
+</li><li><div class="element" id="DLOAD_W"><span class="add">&plus;</span><div class="signature">DLOAD_W</div>
+</div>
+</li><li><div class="element" id="DMUL"><span class="add">&plus;</span><div class="signature">DMUL</div>
+</div>
+</li><li><div class="element" id="DNEG"><span class="add">&plus;</span><div class="signature">DNEG</div>
+</div>
+</li><li><div class="element" id="DREM"><span class="add">&plus;</span><div class="signature">DREM</div>
+</div>
+</li><li><div class="element" id="DRETURN"><span class="add">&plus;</span><div class="signature">DRETURN</div>
+</div>
+</li><li><div class="element" id="DSTORE"><span class="add">&plus;</span><div class="signature">DSTORE</div>
+</div>
+</li><li><div class="element" id="DSTORE_0"><span class="add">&plus;</span><div class="signature">DSTORE_0</div>
+</div>
+</li><li><div class="element" id="DSTORE_1"><span class="add">&plus;</span><div class="signature">DSTORE_1</div>
+</div>
+</li><li><div class="element" id="DSTORE_2"><span class="add">&plus;</span><div class="signature">DSTORE_2</div>
+</div>
+</li><li><div class="element" id="DSTORE_3"><span class="add">&plus;</span><div class="signature">DSTORE_3</div>
+</div>
+</li><li><div class="element" id="DSTORE_W"><span class="add">&plus;</span><div class="signature">DSTORE_W</div>
+</div>
+</li><li><div class="element" id="DSUB"><span class="add">&plus;</span><div class="signature">DSUB</div>
+</div>
+</li><li><div class="element" id="DUP"><span class="add">&plus;</span><div class="signature">DUP</div>
+</div>
+</li><li><div class="element" id="DUP2"><span class="add">&plus;</span><div class="signature">DUP2</div>
+</div>
+</li><li><div class="element" id="DUP2_X1"><span class="add">&plus;</span><div class="signature">DUP2_X1</div>
+</div>
+</li><li><div class="element" id="DUP2_X2"><span class="add">&plus;</span><div class="signature">DUP2_X2</div>
+</div>
+</li><li><div class="element" id="DUP_X1"><span class="add">&plus;</span><div class="signature">DUP_X1</div>
+</div>
+</li><li><div class="element" id="DUP_X2"><span class="add">&plus;</span><div class="signature">DUP_X2</div>
+</div>
+</li><li><div class="element" id="F2D"><span class="add">&plus;</span><div class="signature">F2D</div>
+</div>
+</li><li><div class="element" id="F2I"><span class="add">&plus;</span><div class="signature">F2I</div>
+</div>
+</li><li><div class="element" id="F2L"><span class="add">&plus;</span><div class="signature">F2L</div>
+</div>
+</li><li><div class="element" id="FADD"><span class="add">&plus;</span><div class="signature">FADD</div>
+</div>
+</li><li><div class="element" id="FALOAD"><span class="add">&plus;</span><div class="signature">FALOAD</div>
+</div>
+</li><li><div class="element" id="FASTORE"><span class="add">&plus;</span><div class="signature">FASTORE</div>
+</div>
+</li><li><div class="element" id="FCMPG"><span class="add">&plus;</span><div class="signature">FCMPG</div>
+</div>
+</li><li><div class="element" id="FCMPL"><span class="add">&plus;</span><div class="signature">FCMPL</div>
+</div>
+</li><li><div class="element" id="FCONST_0"><span class="add">&plus;</span><div class="signature">FCONST_0</div>
+</div>
+</li><li><div class="element" id="FCONST_1"><span class="add">&plus;</span><div class="signature">FCONST_1</div>
+</div>
+</li><li><div class="element" id="FCONST_2"><span class="add">&plus;</span><div class="signature">FCONST_2</div>
+</div>
+</li><li><div class="element" id="FDIV"><span class="add">&plus;</span><div class="signature">FDIV</div>
+</div>
+</li><li><div class="element" id="FLOAD"><span class="add">&plus;</span><div class="signature">FLOAD</div>
+</div>
+</li><li><div class="element" id="FLOAD_0"><span class="add">&plus;</span><div class="signature">FLOAD_0</div>
+</div>
+</li><li><div class="element" id="FLOAD_1"><span class="add">&plus;</span><div class="signature">FLOAD_1</div>
+</div>
+</li><li><div class="element" id="FLOAD_2"><span class="add">&plus;</span><div class="signature">FLOAD_2</div>
+</div>
+</li><li><div class="element" id="FLOAD_3"><span class="add">&plus;</span><div class="signature">FLOAD_3</div>
+</div>
+</li><li><div class="element" id="FLOAD_W"><span class="add">&plus;</span><div class="signature">FLOAD_W</div>
+</div>
+</li><li><div class="element" id="FMUL"><span class="add">&plus;</span><div class="signature">FMUL</div>
+</div>
+</li><li><div class="element" id="FNEG"><span class="add">&plus;</span><div class="signature">FNEG</div>
+</div>
+</li><li><div class="element" id="FREM"><span class="add">&plus;</span><div class="signature">FREM</div>
+</div>
+</li><li><div class="element" id="FRETURN"><span class="add">&plus;</span><div class="signature">FRETURN</div>
+</div>
+</li><li><div class="element" id="FSTORE"><span class="add">&plus;</span><div class="signature">FSTORE</div>
+</div>
+</li><li><div class="element" id="FSTORE_0"><span class="add">&plus;</span><div class="signature">FSTORE_0</div>
+</div>
+</li><li><div class="element" id="FSTORE_1"><span class="add">&plus;</span><div class="signature">FSTORE_1</div>
+</div>
+</li><li><div class="element" id="FSTORE_2"><span class="add">&plus;</span><div class="signature">FSTORE_2</div>
+</div>
+</li><li><div class="element" id="FSTORE_3"><span class="add">&plus;</span><div class="signature">FSTORE_3</div>
+</div>
+</li><li><div class="element" id="FSTORE_W"><span class="add">&plus;</span><div class="signature">FSTORE_W</div>
+</div>
+</li><li><div class="element" id="FSUB"><span class="add">&plus;</span><div class="signature">FSUB</div>
+</div>
+</li><li><div class="element" id="GETFIELD"><span class="add">&plus;</span><div class="signature">GETFIELD</div>
+</div>
+</li><li><div class="element" id="GETSTATIC"><span class="add">&plus;</span><div class="signature">GETSTATIC</div>
+</div>
+</li><li><div class="element" id="GOTO"><span class="add">&plus;</span><div class="signature">GOTO</div>
+</div>
+</li><li><div class="element" id="GOTO_W"><span class="add">&plus;</span><div class="signature">GOTO_W</div>
+</div>
+</li><li><div class="element" id="I2B"><span class="add">&plus;</span><div class="signature">I2B</div>
+</div>
+</li><li><div class="element" id="I2C"><span class="add">&plus;</span><div class="signature">I2C</div>
+</div>
+</li><li><div class="element" id="I2D"><span class="add">&plus;</span><div class="signature">I2D</div>
+</div>
+</li><li><div class="element" id="I2F"><span class="add">&plus;</span><div class="signature">I2F</div>
+</div>
+</li><li><div class="element" id="I2L"><span class="add">&plus;</span><div class="signature">I2L</div>
+</div>
+</li><li><div class="element" id="I2S"><span class="add">&plus;</span><div class="signature">I2S</div>
+</div>
+</li><li><div class="element" id="IADD"><span class="add">&plus;</span><div class="signature">IADD</div>
+</div>
+</li><li><div class="element" id="IALOAD"><span class="add">&plus;</span><div class="signature">IALOAD</div>
+</div>
+</li><li><div class="element" id="IAND"><span class="add">&plus;</span><div class="signature">IAND</div>
+</div>
+</li><li><div class="element" id="IASTORE"><span class="add">&plus;</span><div class="signature">IASTORE</div>
+</div>
+</li><li><div class="element" id="ICONST_0"><span class="add">&plus;</span><div class="signature">ICONST_0</div>
+</div>
+</li><li><div class="element" id="ICONST_1"><span class="add">&plus;</span><div class="signature">ICONST_1</div>
+</div>
+</li><li><div class="element" id="ICONST_2"><span class="add">&plus;</span><div class="signature">ICONST_2</div>
+</div>
+</li><li><div class="element" id="ICONST_3"><span class="add">&plus;</span><div class="signature">ICONST_3</div>
+</div>
+</li><li><div class="element" id="ICONST_4"><span class="add">&plus;</span><div class="signature">ICONST_4</div>
+</div>
+</li><li><div class="element" id="ICONST_5"><span class="add">&plus;</span><div class="signature">ICONST_5</div>
+</div>
+</li><li><div class="element" id="ICONST_M1"><span class="add">&plus;</span><div class="signature">ICONST_M1</div>
+</div>
+</li><li><div class="element" id="IDIV"><span class="add">&plus;</span><div class="signature">IDIV</div>
+</div>
+</li><li><div class="element" id="IFEQ"><span class="add">&plus;</span><div class="signature">IFEQ</div>
+</div>
+</li><li><div class="element" id="IFGE"><span class="add">&plus;</span><div class="signature">IFGE</div>
+</div>
+</li><li><div class="element" id="IFGT"><span class="add">&plus;</span><div class="signature">IFGT</div>
+</div>
+</li><li><div class="element" id="IFLE"><span class="add">&plus;</span><div class="signature">IFLE</div>
+</div>
+</li><li><div class="element" id="IFLT"><span class="add">&plus;</span><div class="signature">IFLT</div>
+</div>
+</li><li><div class="element" id="IFNE"><span class="add">&plus;</span><div class="signature">IFNE</div>
+</div>
+</li><li><div class="element" id="IFNONNULL"><span class="add">&plus;</span><div class="signature">IFNONNULL</div>
+</div>
+</li><li><div class="element" id="IFNULL"><span class="add">&plus;</span><div class="signature">IFNULL</div>
+</div>
+</li><li><div class="element" id="IF_ACMPEQ"><span class="add">&plus;</span><div class="signature">IF_ACMPEQ</div>
+</div>
+</li><li><div class="element" id="IF_ACMPNE"><span class="add">&plus;</span><div class="signature">IF_ACMPNE</div>
+</div>
+</li><li><div class="element" id="IF_ICMPEQ"><span class="add">&plus;</span><div class="signature">IF_ICMPEQ</div>
+</div>
+</li><li><div class="element" id="IF_ICMPGE"><span class="add">&plus;</span><div class="signature">IF_ICMPGE</div>
+</div>
+</li><li><div class="element" id="IF_ICMPGT"><span class="add">&plus;</span><div class="signature">IF_ICMPGT</div>
+</div>
+</li><li><div class="element" id="IF_ICMPLE"><span class="add">&plus;</span><div class="signature">IF_ICMPLE</div>
+</div>
+</li><li><div class="element" id="IF_ICMPLT"><span class="add">&plus;</span><div class="signature">IF_ICMPLT</div>
+</div>
+</li><li><div class="element" id="IF_ICMPNE"><span class="add">&plus;</span><div class="signature">IF_ICMPNE</div>
+</div>
+</li><li><div class="element" id="IINC"><span class="add">&plus;</span><div class="signature">IINC</div>
+</div>
+</li><li><div class="element" id="IINC_W"><span class="add">&plus;</span><div class="signature">IINC_W</div>
+</div>
+</li><li><div class="element" id="ILOAD"><span class="add">&plus;</span><div class="signature">ILOAD</div>
+</div>
+</li><li><div class="element" id="ILOAD_0"><span class="add">&plus;</span><div class="signature">ILOAD_0</div>
+</div>
+</li><li><div class="element" id="ILOAD_1"><span class="add">&plus;</span><div class="signature">ILOAD_1</div>
+</div>
+</li><li><div class="element" id="ILOAD_2"><span class="add">&plus;</span><div class="signature">ILOAD_2</div>
+</div>
+</li><li><div class="element" id="ILOAD_3"><span class="add">&plus;</span><div class="signature">ILOAD_3</div>
+</div>
+</li><li><div class="element" id="ILOAD_W"><span class="add">&plus;</span><div class="signature">ILOAD_W</div>
+</div>
+</li><li><div class="element" id="IMUL"><span class="add">&plus;</span><div class="signature">IMUL</div>
+</div>
+</li><li><div class="element" id="INEG"><span class="add">&plus;</span><div class="signature">INEG</div>
+</div>
+</li><li><div class="element" id="INSTANCEOF"><span class="add">&plus;</span><div class="signature">INSTANCEOF</div>
+</div>
+</li><li><div class="element" id="INVOKEDYNAMIC"><span class="add">&plus;</span><div class="signature">INVOKEDYNAMIC</div>
+</div>
+</li><li><div class="element" id="INVOKEINTERFACE"><span class="add">&plus;</span><div class="signature">INVOKEINTERFACE</div>
+</div>
+</li><li><div class="element" id="INVOKESPECIAL"><span class="add">&plus;</span><div class="signature">INVOKESPECIAL</div>
+</div>
+</li><li><div class="element" id="INVOKESTATIC"><span class="add">&plus;</span><div class="signature">INVOKESTATIC</div>
+</div>
+</li><li><div class="element" id="INVOKEVIRTUAL"><span class="add">&plus;</span><div class="signature">INVOKEVIRTUAL</div>
+</div>
+</li><li><div class="element" id="IOR"><span class="add">&plus;</span><div class="signature">IOR</div>
+</div>
+</li><li><div class="element" id="IREM"><span class="add">&plus;</span><div class="signature">IREM</div>
+</div>
+</li><li><div class="element" id="IRETURN"><span class="add">&plus;</span><div class="signature">IRETURN</div>
+</div>
+</li><li><div class="element" id="ISHL"><span class="add">&plus;</span><div class="signature">ISHL</div>
+</div>
+</li><li><div class="element" id="ISHR"><span class="add">&plus;</span><div class="signature">ISHR</div>
+</div>
+</li><li><div class="element" id="ISTORE"><span class="add">&plus;</span><div class="signature">ISTORE</div>
+</div>
+</li><li><div class="element" id="ISTORE_0"><span class="add">&plus;</span><div class="signature">ISTORE_0</div>
+</div>
+</li><li><div class="element" id="ISTORE_1"><span class="add">&plus;</span><div class="signature">ISTORE_1</div>
+</div>
+</li><li><div class="element" id="ISTORE_2"><span class="add">&plus;</span><div class="signature">ISTORE_2</div>
+</div>
+</li><li><div class="element" id="ISTORE_3"><span class="add">&plus;</span><div class="signature">ISTORE_3</div>
+</div>
+</li><li><div class="element" id="ISTORE_W"><span class="add">&plus;</span><div class="signature">ISTORE_W</div>
+</div>
+</li><li><div class="element" id="ISUB"><span class="add">&plus;</span><div class="signature">ISUB</div>
+</div>
+</li><li><div class="element" id="IUSHR"><span class="add">&plus;</span><div class="signature">IUSHR</div>
+</div>
+</li><li><div class="element" id="IXOR"><span class="add">&plus;</span><div class="signature">IXOR</div>
+</div>
+</li><li><div class="element" id="JSR"><span class="add">&plus;</span><div class="signature">JSR</div>
+</div>
+</li><li><div class="element" id="JSR_W"><span class="add">&plus;</span><div class="signature">JSR_W</div>
+</div>
+</li><li><div class="element" id="L2D"><span class="add">&plus;</span><div class="signature">L2D</div>
+</div>
+</li><li><div class="element" id="L2F"><span class="add">&plus;</span><div class="signature">L2F</div>
+</div>
+</li><li><div class="element" id="L2I"><span class="add">&plus;</span><div class="signature">L2I</div>
+</div>
+</li><li><div class="element" id="LADD"><span class="add">&plus;</span><div class="signature">LADD</div>
+</div>
+</li><li><div class="element" id="LALOAD"><span class="add">&plus;</span><div class="signature">LALOAD</div>
+</div>
+</li><li><div class="element" id="LAND"><span class="add">&plus;</span><div class="signature">LAND</div>
+</div>
+</li><li><div class="element" id="LASTORE"><span class="add">&plus;</span><div class="signature">LASTORE</div>
+</div>
+</li><li><div class="element" id="LCMP"><span class="add">&plus;</span><div class="signature">LCMP</div>
+</div>
+</li><li><div class="element" id="LCONST_0"><span class="add">&plus;</span><div class="signature">LCONST_0</div>
+</div>
+</li><li><div class="element" id="LCONST_1"><span class="add">&plus;</span><div class="signature">LCONST_1</div>
+</div>
+</li><li><div class="element" id="LDC"><span class="add">&plus;</span><div class="signature">LDC</div>
+</div>
+</li><li><div class="element" id="LDC2_W"><span class="add">&plus;</span><div class="signature">LDC2_W</div>
+</div>
+</li><li><div class="element" id="LDC_W"><span class="add">&plus;</span><div class="signature">LDC_W</div>
+</div>
+</li><li><div class="element" id="LDIV"><span class="add">&plus;</span><div class="signature">LDIV</div>
+</div>
+</li><li><div class="element" id="LLOAD"><span class="add">&plus;</span><div class="signature">LLOAD</div>
+</div>
+</li><li><div class="element" id="LLOAD_0"><span class="add">&plus;</span><div class="signature">LLOAD_0</div>
+</div>
+</li><li><div class="element" id="LLOAD_1"><span class="add">&plus;</span><div class="signature">LLOAD_1</div>
+</div>
+</li><li><div class="element" id="LLOAD_2"><span class="add">&plus;</span><div class="signature">LLOAD_2</div>
+</div>
+</li><li><div class="element" id="LLOAD_3"><span class="add">&plus;</span><div class="signature">LLOAD_3</div>
+</div>
+</li><li><div class="element" id="LLOAD_W"><span class="add">&plus;</span><div class="signature">LLOAD_W</div>
+</div>
+</li><li><div class="element" id="LMUL"><span class="add">&plus;</span><div class="signature">LMUL</div>
+</div>
+</li><li><div class="element" id="LNEG"><span class="add">&plus;</span><div class="signature">LNEG</div>
+</div>
+</li><li><div class="element" id="LOOKUPSWITCH"><span class="add">&plus;</span><div class="signature">LOOKUPSWITCH</div>
+</div>
+</li><li><div class="element" id="LOR"><span class="add">&plus;</span><div class="signature">LOR</div>
+</div>
+</li><li><div class="element" id="LREM"><span class="add">&plus;</span><div class="signature">LREM</div>
+</div>
+</li><li><div class="element" id="LRETURN"><span class="add">&plus;</span><div class="signature">LRETURN</div>
+</div>
+</li><li><div class="element" id="LSHL"><span class="add">&plus;</span><div class="signature">LSHL</div>
+</div>
+</li><li><div class="element" id="LSHR"><span class="add">&plus;</span><div class="signature">LSHR</div>
+</div>
+</li><li><div class="element" id="LSTORE"><span class="add">&plus;</span><div class="signature">LSTORE</div>
+</div>
+</li><li><div class="element" id="LSTORE_0"><span class="add">&plus;</span><div class="signature">LSTORE_0</div>
+</div>
+</li><li><div class="element" id="LSTORE_1"><span class="add">&plus;</span><div class="signature">LSTORE_1</div>
+</div>
+</li><li><div class="element" id="LSTORE_2"><span class="add">&plus;</span><div class="signature">LSTORE_2</div>
+</div>
+</li><li><div class="element" id="LSTORE_3"><span class="add">&plus;</span><div class="signature">LSTORE_3</div>
+</div>
+</li><li><div class="element" id="LSTORE_W"><span class="add">&plus;</span><div class="signature">LSTORE_W</div>
+</div>
+</li><li><div class="element" id="LSUB"><span class="add">&plus;</span><div class="signature">LSUB</div>
+</div>
+</li><li><div class="element" id="LUSHR"><span class="add">&plus;</span><div class="signature">LUSHR</div>
+</div>
+</li><li><div class="element" id="LXOR"><span class="add">&plus;</span><div class="signature">LXOR</div>
+</div>
+</li><li><div class="element" id="MONITORENTER"><span class="add">&plus;</span><div class="signature">MONITORENTER</div>
+</div>
+</li><li><div class="element" id="MONITOREXIT"><span class="add">&plus;</span><div class="signature">MONITOREXIT</div>
+</div>
+</li><li><div class="element" id="MULTIANEWARRAY"><span class="add">&plus;</span><div class="signature">MULTIANEWARRAY</div>
+</div>
+</li><li><div class="element" id="NEW"><span class="add">&plus;</span><div class="signature">NEW</div>
+</div>
+</li><li><div class="element" id="NEWARRAY"><span class="add">&plus;</span><div class="signature">NEWARRAY</div>
+</div>
+</li><li><div class="element" id="NOP"><span class="add">&plus;</span><div class="signature">NOP</div>
+</div>
+</li><li><div class="element" id="POP"><span class="add">&plus;</span><div class="signature">POP</div>
+</div>
+</li><li><div class="element" id="POP2"><span class="add">&plus;</span><div class="signature">POP2</div>
+</div>
+</li><li><div class="element" id="PUTFIELD"><span class="add">&plus;</span><div class="signature">PUTFIELD</div>
+</div>
+</li><li><div class="element" id="PUTSTATIC"><span class="add">&plus;</span><div class="signature">PUTSTATIC</div>
+</div>
+</li><li><div class="element" id="RET"><span class="add">&plus;</span><div class="signature">RET</div>
+</div>
+</li><li><div class="element" id="RETURN"><span class="add">&plus;</span><div class="signature">RETURN</div>
+</div>
+</li><li><div class="element" id="RET_W"><span class="add">&plus;</span><div class="signature">RET_W</div>
+</div>
+</li><li><div class="element" id="SALOAD"><span class="add">&plus;</span><div class="signature">SALOAD</div>
+</div>
+</li><li><div class="element" id="SASTORE"><span class="add">&plus;</span><div class="signature">SASTORE</div>
+</div>
+</li><li><div class="element" id="SIPUSH"><span class="add">&plus;</span><div class="signature">SIPUSH</div>
+</div>
+</li><li><div class="element" id="SWAP"><span class="add">&plus;</span><div class="signature">SWAP</div>
+</div>
+</li><li><div class="element" id="TABLESWITCH"><span class="add">&plus;</span><div class="signature">TABLESWITCH</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="bytecode()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> bytecode()</div>
+</div>
+</li><li><div class="element" id="isWide()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isWide()</div>
+</div>
+</li><li><div class="element" id="kind()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.classfile.Opcode.Kind kind()</div>
+</div>
+</li><li><div class="element" id="sizeIfFixed()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> sizeIfFixed()</div>
+</div>
+</li><li><div class="element" id="valueOf(String)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.Opcode valueOf(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="values()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.Opcode[]</span> values()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/Opcode.html">Opcode</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/Opcode.Kind.html">Opcode.Kind</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

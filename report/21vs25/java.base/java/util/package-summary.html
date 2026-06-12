@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package java.base/java.util</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<h1>Package&nbsp;java.util</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="keyword">package</span> java.util</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/AbstractCollection.html">AbstractCollection</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/AbstractList.html">AbstractList</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/AbstractMap.html">AbstractMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/AbstractQueue.html">AbstractQueue</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/AbstractSequentialList.html">AbstractSequentialList</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/AbstractSet.html">AbstractSet</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/ArrayDeque.html">ArrayDeque</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/ArrayList.html">ArrayList</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Arrays.html">Arrays</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/util/Base64.html">Base64</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/BitSet.html">BitSet</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Calendar.html">Calendar</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Collection.html">Collection</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/util/Collections.html">Collections</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Comparator.html">Comparator</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/ConcurrentModificationException.html">ConcurrentModificationException</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/util/Currency.html">Currency</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Date.html">Date</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Deque.html">Deque</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Dictionary.html">Dictionary</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/DoubleSummaryStatistics.html">DoubleSummaryStatistics</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/DuplicateFormatFlagsException.html">DuplicateFormatFlagsException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/EmptyStackException.html">EmptyStackException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/EnumMap.html">EnumMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/EnumSet.html">EnumSet</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Enumeration.html">Enumeration</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/EventListener.html">EventListener</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/EventListenerProxy.html">EventListenerProxy</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/EventObject.html">EventObject</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/FormatFlagsConversionMismatchException.html">FormatFlagsConversionMismatchException</a></span></li><li><span><span class="remove">&minus;</span> <a href="../../../java.base/java/util/FormatProcessor.html">FormatProcessor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Formattable.html">Formattable</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/util/FormattableFlags.html">FormattableFlags</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Formatter.html">Formatter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/FormatterClosedException.html">FormatterClosedException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/GregorianCalendar.html">GregorianCalendar</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/HashMap.html">HashMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/HashSet.html">HashSet</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Hashtable.html">Hashtable</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/HexFormat.html">HexFormat</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/IdentityHashMap.html">IdentityHashMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/IllegalFormatCodePointException.html">IllegalFormatCodePointException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/IllegalFormatConversionException.html">IllegalFormatConversionException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/IllegalFormatException.html">IllegalFormatException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/IllegalFormatFlagsException.html">IllegalFormatFlagsException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/IllegalFormatPrecisionException.html">IllegalFormatPrecisionException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/IllegalFormatWidthException.html">IllegalFormatWidthException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/IllformedLocaleException.html">IllformedLocaleException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/InputMismatchException.html">InputMismatchException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/IntSummaryStatistics.html">IntSummaryStatistics</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/InvalidPropertiesFormatException.html">InvalidPropertiesFormatException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Iterator.html">Iterator</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/LinkedHashMap.html">LinkedHashMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/LinkedHashSet.html">LinkedHashSet</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/LinkedList.html">LinkedList</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/List.html">List</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/ListIterator.html">ListIterator</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/ListResourceBundle.html">ListResourceBundle</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Locale.html">Locale</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/LongSummaryStatistics.html">LongSummaryStatistics</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Map.html">Map</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/MissingFormatArgumentException.html">MissingFormatArgumentException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/MissingFormatWidthException.html">MissingFormatWidthException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/MissingResourceException.html">MissingResourceException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/NavigableMap.html">NavigableMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/NavigableSet.html">NavigableSet</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/NoSuchElementException.html">NoSuchElementException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Objects.html">Objects</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Observable.html">Observable</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Observer.html">Observer</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Optional.html">Optional</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/OptionalDouble.html">OptionalDouble</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/OptionalInt.html">OptionalInt</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/OptionalLong.html">OptionalLong</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/PrimitiveIterator.html">PrimitiveIterator</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/PriorityQueue.html">PriorityQueue</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Properties.html">Properties</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/PropertyPermission.html">PropertyPermission</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/PropertyResourceBundle.html">PropertyResourceBundle</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Queue.html">Queue</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Random.html">Random</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/RandomAccess.html">RandomAccess</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/ResourceBundle.html">ResourceBundle</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Scanner.html">Scanner</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/SequencedCollection.html">SequencedCollection</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/SequencedMap.html">SequencedMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/SequencedSet.html">SequencedSet</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/ServiceConfigurationError.html">ServiceConfigurationError</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/ServiceLoader.html">ServiceLoader</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Set.html">Set</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/SimpleTimeZone.html">SimpleTimeZone</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/SortedMap.html">SortedMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/SortedSet.html">SortedSet</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Spliterator.html">Spliterator</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Spliterators.html">Spliterators</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/SplittableRandom.html">SplittableRandom</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Stack.html">Stack</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/StringJoiner.html">StringJoiner</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/StringTokenizer.html">StringTokenizer</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/util/TimeZone.html">TimeZone</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Timer.html">Timer</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/TimerTask.html">TimerTask</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/TooManyListenersException.html">TooManyListenersException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/TreeMap.html">TreeMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/TreeSet.html">TreeSet</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/UUID.html">UUID</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/UnknownFormatConversionException.html">UnknownFormatConversionException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/UnknownFormatFlagsException.html">UnknownFormatFlagsException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Vector.html">Vector</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/WeakHashMap.html">WeakHashMap</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th>Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.base/java/util/Base64.html">Base64</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/Collections.html">Collections</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/Currency.html">Currency</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/FormatProcessor.html">FormatProcessor</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/FormattableFlags.html">FormattableFlags</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/TimeZone.html">TimeZone</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

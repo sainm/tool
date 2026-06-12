@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.desktop/javax.swing.BoundedRangeModel</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Interface&nbsp;BoundedRangeModel</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> BoundedRangeModel </div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addChangeListener(ChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> addChangeListener(<span class="parameters"><span class="parameter">javax.swing.event.ChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getExtent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getExtent()</div>
+</div>
+</li><li><div class="element" id="getMaximum()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getMaximum()</div>
+</div>
+</li><li><div class="element" id="getMinimum()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getMinimum()</div>
+</div>
+</li><li><div class="element" id="getValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getValue()</div>
+</div>
+</li><li><div class="element" id="getValueIsAdjusting()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> getValueIsAdjusting()</div>
+</div>
+</li><li><div class="element" id="removeChangeListener(ChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> removeChangeListener(<span class="parameters"><span class="parameter">javax.swing.event.ChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setExtent(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setExtent(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMaximum(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setMaximum(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMinimum(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setMinimum(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRangeProperties(int,int,int,int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setRangeProperties(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">boolean</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="setValue(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setValue(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setValueIsAdjusting(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setValueIsAdjusting(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

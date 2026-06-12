@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.filechooser.FileSystemView</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/swing/filechooser/package-summary.html">javax.swing.filechooser</a></div>
+<h1>Class&nbsp;FileSystemView</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> FileSystemView <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> FileSystemView()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="createFileObject(File,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.File createFileObject(<span class="parameters"><span class="parameter">java.io.File arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="createFileObject(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.File createFileObject(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createFileSystemRoot(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.io.File createFileSystemRoot(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createNewFolder(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.io.File createNewFolder(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="getChild(File,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.File getChild(<span class="parameters"><span class="parameter">java.io.File arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getChooserComboBoxFiles()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.io.File[]</span> getChooserComboBoxFiles()</div>
+</div>
+</li><li><div class="element" id="getChooserShortcutPanelFiles()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span>java.io.File[]</span> getChooserShortcutPanelFiles()</div>
+</div>
+</li><li><div class="element" id="getDefaultDirectory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.File getDefaultDirectory()</div>
+</div>
+</li><li><div class="element" id="getFileSystemView()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.filechooser.FileSystemView getFileSystemView()</div>
+</div>
+</li><li><div class="element" id="getFiles(File,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.io.File[]</span> getFiles(<span class="parameters"><span class="parameter">java.io.File arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getHomeDirectory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.File getHomeDirectory()</div>
+</div>
+</li><li><div class="element" id="getLinkLocation(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.File getLinkLocation(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.FileNotFoundException</span></div>
+</div>
+</li><li><div class="element" id="getParentDirectory(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.File getParentDirectory(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getRoots()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.io.File[]</span> getRoots()</div>
+</div>
+</li><li><div class="element" id="getSystemDisplayName(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getSystemDisplayName(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getSystemIcon(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getSystemIcon(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getSystemIcon(File,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getSystemIcon(<span class="parameters"><span class="parameter">java.io.File arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getSystemTypeDescription(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getSystemTypeDescription(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isComputerNode(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isComputerNode(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isDrive(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isDrive(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isFileSystem(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isFileSystem(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isFileSystemRoot(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isFileSystemRoot(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isFloppyDrive(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isFloppyDrive(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isHiddenFile(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isHiddenFile(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isLink(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isLink(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isParent(File,File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isParent(<span class="parameters"><span class="parameter">java.io.File arg0</span>, <span class="parameter">java.io.File arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isRoot(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isRoot(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isTraversable(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Boolean isTraversable(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

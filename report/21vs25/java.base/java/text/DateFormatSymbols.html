@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/java.text.DateFormatSymbols</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/text/package-summary.html">java.text</a></div>
+<h1>Class&nbsp;DateFormatSymbols</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> DateFormatSymbols <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable, java.lang.Cloneable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DateFormatSymbols()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DateFormatSymbols(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="clone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object clone()</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAmPmStrings()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getAmPmStrings()</div>
+</div>
+</li><li><div class="element" id="getAvailableLocales()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Locale[]</span> getAvailableLocales()</div>
+</div>
+</li><li><div class="element" id="getEras()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getEras()</div>
+</div>
+</li><li><div class="element" id="getInstance()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.text.DateFormatSymbols getInstance()</div>
+</div>
+</li><li><div class="element" id="getInstance(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.text.DateFormatSymbols getInstance(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLocalPatternChars()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getLocalPatternChars()</div>
+</div>
+</li><li><div class="element" id="getMonths()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getMonths()</div>
+</div>
+</li><li><div class="element" id="getShortMonths()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getShortMonths()</div>
+</div>
+</li><li><div class="element" id="getShortWeekdays()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getShortWeekdays()</div>
+</div>
+</li><li><div class="element" id="getWeekdays()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getWeekdays()</div>
+</div>
+</li><li><div class="element" id="getZoneStrings()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span>java.lang.String[]</span>[]</span> getZoneStrings()</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="setAmPmStrings(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAmPmStrings(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEras(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setEras(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLocalPatternChars(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLocalPatternChars(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMonths(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMonths(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setShortMonths(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setShortMonths(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setShortWeekdays(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setShortWeekdays(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setWeekdays(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setWeekdays(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setZoneStrings(String[][])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setZoneStrings(<span class="parameters"><span class="parameter"><span><span>java.lang.String[]</span>[]</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-5987973545549424702<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.lang.String[]</span>&nbsp;ampms</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.lang.String[]</span>&nbsp;eras</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.lang.String&nbsp;localPatternChars</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.util.Locale&nbsp;locale</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.lang.String[]</span>&nbsp;months</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.lang.String[]</span>&nbsp;shortMonths</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.lang.String[]</span>&nbsp;shortWeekdays</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.lang.String[]</span>&nbsp;weekdays</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span><span>java.lang.String[]</span>[]</span>&nbsp;zoneStrings</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

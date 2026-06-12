@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface jdk.jdi/com.sun.jdi.ObjectReference</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../jdk.jdi/module-summary.html">jdk.jdi</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../jdk.jdi/com/sun/jdi/package-summary.html">com.sun.jdi</a></div>
+<h1>Interface&nbsp;ObjectReference</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> ObjectReference <div class="superinterfaces"><span class="keyword">extends</span> com.sun.jdi.Value</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="INVOKE_NONVIRTUAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> INVOKE_NONVIRTUAL = 2</div>
+</div>
+</li><li><div class="element" id="INVOKE_SINGLE_THREADED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> INVOKE_SINGLE_THREADED = 1</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="disableCollection()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> disableCollection()</div>
+</div>
+</li><li><div class="element" id="enableCollection()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> enableCollection()</div>
+</div>
+</li><li><div class="element" id="entryCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> entryCount() <span class="throws"><span class="keyword">throws</span> com.sun.jdi.IncompatibleThreadStateException</span></div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getValue(Field)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.Value getValue(<span class="parameters"><span class="parameter">com.sun.jdi.Field arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getValues(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.Map&lt;com.sun.jdi.Field, com.sun.jdi.Value&gt;</span> getValues(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.jdi.Field</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="invokeMethod(ThreadReference,Method,List,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.Value invokeMethod(<span class="parameters"><span class="parameter">com.sun.jdi.ThreadReference arg0</span>, <span class="parameter">com.sun.jdi.Method arg1</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.jdi.Value</span>&gt;</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> com.sun.jdi.ClassNotLoadedException, com.sun.jdi.IncompatibleThreadStateException, com.sun.jdi.InvalidTypeException, com.sun.jdi.InvocationException</span></div>
+</div>
+</li><li><div class="element" id="isCollected()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isCollected()</div>
+</div>
+</li><li><div class="element" id="owningThread()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.ThreadReference owningThread() <span class="throws"><span class="keyword">throws</span> com.sun.jdi.IncompatibleThreadStateException</span></div>
+</div>
+</li><li><div class="element" id="referenceType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.ReferenceType referenceType()</div>
+</div>
+</li><li><div class="element" id="referringObjects(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.ObjectReference&gt;</span> referringObjects(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setValue(Field,Value)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setValue(<span class="parameters"><span class="parameter">com.sun.jdi.Field arg0</span>, <span class="parameter">com.sun.jdi.Value arg1</span></span>) <span class="throws"><span class="keyword">throws</span> com.sun.jdi.ClassNotLoadedException, com.sun.jdi.InvalidTypeException</span></div>
+</div>
+</li><li><div class="element" id="uniqueID()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">long</span> uniqueID()</div>
+</div>
+</li><li><div class="element" id="waitingThreads()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.ThreadReference&gt;</span> waitingThreads() <span class="throws"><span class="keyword">throws</span> com.sun.jdi.IncompatibleThreadStateException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

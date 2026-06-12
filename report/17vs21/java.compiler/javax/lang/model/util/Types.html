@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface java.compiler/javax.lang.model.util.Types</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.compiler/module-summary.html">java.compiler</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.compiler/javax/lang/model/util/package-summary.html">javax.lang.model.util</a></div>
+<h1>Interface&nbsp;Types</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> Types </div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="asElement(TypeMirror)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.element.Element asElement(<span class="parameters"><span class="parameter">javax.lang.model.type.TypeMirror arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="asMemberOf(DeclaredType,Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.type.TypeMirror asMemberOf(<span class="parameters"><span class="parameter">javax.lang.model.type.DeclaredType arg0</span>, <span class="parameter">javax.lang.model.element.Element arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="boxedClass(PrimitiveType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.element.TypeElement boxedClass(<span class="parameters"><span class="parameter">javax.lang.model.type.PrimitiveType arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="capture(TypeMirror)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.type.TypeMirror capture(<span class="parameters"><span class="parameter">javax.lang.model.type.TypeMirror arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="contains(TypeMirror,TypeMirror)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> contains(<span class="parameters"><span class="parameter">javax.lang.model.type.TypeMirror arg0</span>, <span class="parameter">javax.lang.model.type.TypeMirror arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="directSupertypes(TypeMirror)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;<span>? <span class="keyword">extends</span> javax.lang.model.type.TypeMirror</span>&gt;</span> directSupertypes(<span class="parameters"><span class="parameter">javax.lang.model.type.TypeMirror arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="erasure(TypeMirror)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.type.TypeMirror erasure(<span class="parameters"><span class="parameter">javax.lang.model.type.TypeMirror arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getArrayType(TypeMirror)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.type.ArrayType getArrayType(<span class="parameters"><span class="parameter">javax.lang.model.type.TypeMirror arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDeclaredType(TypeElement,TypeMirror[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.type.DeclaredType getDeclaredType(<span class="parameters"><span class="parameter">javax.lang.model.element.TypeElement arg0</span>, <span class="parameter"><span>javax.lang.model.type.TypeMirror[]</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDeclaredType(DeclaredType,TypeElement,TypeMirror[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.type.DeclaredType getDeclaredType(<span class="parameters"><span class="parameter">javax.lang.model.type.DeclaredType arg0</span>, <span class="parameter">javax.lang.model.element.TypeElement arg1</span>, <span class="parameter"><span>javax.lang.model.type.TypeMirror[]</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getNoType(TypeKind)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.type.NoType getNoType(<span class="parameters"><span class="parameter">javax.lang.model.type.TypeKind arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getNullType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.type.NullType getNullType()</div>
+</div>
+</li><li><div class="element" id="getPrimitiveType(TypeKind)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.type.PrimitiveType getPrimitiveType(<span class="parameters"><span class="parameter">javax.lang.model.type.TypeKind arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getWildcardType(TypeMirror,TypeMirror)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.type.WildcardType getWildcardType(<span class="parameters"><span class="parameter">javax.lang.model.type.TypeMirror arg0</span>, <span class="parameter">javax.lang.model.type.TypeMirror arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isAssignable(TypeMirror,TypeMirror)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isAssignable(<span class="parameters"><span class="parameter">javax.lang.model.type.TypeMirror arg0</span>, <span class="parameter">javax.lang.model.type.TypeMirror arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isSameType(TypeMirror,TypeMirror)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isSameType(<span class="parameters"><span class="parameter">javax.lang.model.type.TypeMirror arg0</span>, <span class="parameter">javax.lang.model.type.TypeMirror arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isSubsignature(ExecutableType,ExecutableType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isSubsignature(<span class="parameters"><span class="parameter">javax.lang.model.type.ExecutableType arg0</span>, <span class="parameter">javax.lang.model.type.ExecutableType arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isSubtype(TypeMirror,TypeMirror)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isSubtype(<span class="parameters"><span class="parameter">javax.lang.model.type.TypeMirror arg0</span>, <span class="parameter">javax.lang.model.type.TypeMirror arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="unboxedType(TypeMirror)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.type.PrimitiveType unboxedType(<span class="parameters"><span class="parameter">javax.lang.model.type.TypeMirror arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

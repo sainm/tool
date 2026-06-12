@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/java.awt.Font</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/java/awt/package-summary.html">java.awt</a></div>
+<h1>Class&nbsp;Font</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> Font <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="BOLD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> BOLD = 1</div>
+</div>
+</li><li><div class="element" id="CENTER_BASELINE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CENTER_BASELINE = 1</div>
+</div>
+</li><li><div class="element" id="DIALOG"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DIALOG = "Dialog"</div>
+</div>
+</li><li><div class="element" id="DIALOG_INPUT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DIALOG_INPUT = "DialogInput"</div>
+</div>
+</li><li><div class="element" id="HANGING_BASELINE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HANGING_BASELINE = 2</div>
+</div>
+</li><li><div class="element" id="ITALIC"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ITALIC = 2</div>
+</div>
+</li><li><div class="element" id="LAYOUT_LEFT_TO_RIGHT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LAYOUT_LEFT_TO_RIGHT = 0</div>
+</div>
+</li><li><div class="element" id="LAYOUT_NO_LIMIT_CONTEXT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LAYOUT_NO_LIMIT_CONTEXT = 4</div>
+</div>
+</li><li><div class="element" id="LAYOUT_NO_START_CONTEXT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LAYOUT_NO_START_CONTEXT = 2</div>
+</div>
+</li><li><div class="element" id="LAYOUT_RIGHT_TO_LEFT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LAYOUT_RIGHT_TO_LEFT = 1</div>
+</div>
+</li><li><div class="element" id="MONOSPACED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String MONOSPACED = "Monospaced"</div>
+</div>
+</li><li><div class="element" id="PLAIN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PLAIN = 0</div>
+</div>
+</li><li><div class="element" id="ROMAN_BASELINE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ROMAN_BASELINE = 0</div>
+</div>
+</li><li><div class="element" id="SANS_SERIF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SANS_SERIF = "SansSerif"</div>
+</div>
+</li><li><div class="element" id="SERIF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SERIF = "Serif"</div>
+</div>
+</li><li><div class="element" id="TRUETYPE_FONT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TRUETYPE_FONT = 0</div>
+</div>
+</li><li><div class="element" id="TYPE1_FONT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TYPE1_FONT = 1</div>
+</div>
+</li><li><div class="element" id="name"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String name</div>
+</div>
+</li><li><div class="element" id="pointSize"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">float</span> pointSize</div>
+</div>
+</li><li><div class="element" id="size"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> size</div>
+</div>
+</li><li><div class="element" id="style"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> style</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(String,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Font(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Map)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Font(<span class="parameters"><span class="parameter"><span>java.util.Map&lt;<span>? <span class="keyword">extends</span> java.text.AttributedCharacterIterator.Attribute</span>, ?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Font)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> Font(<span class="parameters"><span class="parameter">java.awt.Font arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="canDisplay(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> canDisplay(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="canDisplay(char)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> canDisplay(<span class="parameters"><span class="parameter"><span class="keyword">char</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="canDisplayUpTo(char[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> canDisplayUpTo(<span class="parameters"><span class="parameter"><span><span class="keyword">char</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="canDisplayUpTo(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> canDisplayUpTo(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="canDisplayUpTo(CharacterIterator,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> canDisplayUpTo(<span class="parameters"><span class="parameter">java.text.CharacterIterator arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="createFont(int,File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Font createFont(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.io.File arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.awt.FontFormatException</span></div>
+</div>
+</li><li><div class="element" id="createFont(int,InputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Font createFont(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.io.InputStream arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.awt.FontFormatException</span></div>
+</div>
+</li><li><div class="element" id="createFonts(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.awt.Font[]</span> createFonts(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.awt.FontFormatException</span></div>
+</div>
+</li><li><div class="element" id="createFonts(InputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.awt.Font[]</span> createFonts(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.awt.FontFormatException</span></div>
+</div>
+</li><li><div class="element" id="createGlyphVector(FontRenderContext,int[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.GlyphVector createGlyphVector(<span class="parameters"><span class="parameter">java.awt.font.FontRenderContext arg0</span>, <span class="parameter"><span><span class="keyword">int</span>[]</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="createGlyphVector(FontRenderContext,char[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.GlyphVector createGlyphVector(<span class="parameters"><span class="parameter">java.awt.font.FontRenderContext arg0</span>, <span class="parameter"><span><span class="keyword">char</span>[]</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="createGlyphVector(FontRenderContext,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.GlyphVector createGlyphVector(<span class="parameters"><span class="parameter">java.awt.font.FontRenderContext arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="createGlyphVector(FontRenderContext,CharacterIterator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.GlyphVector createGlyphVector(<span class="parameters"><span class="parameter">java.awt.font.FontRenderContext arg0</span>, <span class="parameter">java.text.CharacterIterator arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="decode(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Font decode(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="deriveFont(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Font deriveFont(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="deriveFont(int,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Font deriveFont(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="deriveFont(int,AffineTransform)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Font deriveFont(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.awt.geom.AffineTransform arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="deriveFont(float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Font deriveFont(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="deriveFont(Map)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Font deriveFont(<span class="parameters"><span class="parameter"><span>java.util.Map&lt;<span>? <span class="keyword">extends</span> java.text.AttributedCharacterIterator.Attribute</span>, ?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="deriveFont(AffineTransform)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Font deriveFont(<span class="parameters"><span class="parameter">java.awt.geom.AffineTransform arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAttributes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Map&lt;java.awt.font.TextAttribute, ?&gt;</span> getAttributes()</div>
+</div>
+</li><li><div class="element" id="getAvailableAttributes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.text.AttributedCharacterIterator.Attribute[]</span> getAvailableAttributes()</div>
+</div>
+</li><li><div class="element" id="getBaselineFor(char)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">byte</span> getBaselineFor(<span class="parameters"><span class="parameter"><span class="keyword">char</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getFamily()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getFamily()</div>
+</div>
+</li><li><div class="element" id="getFamily(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getFamily(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getFont(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Font getFont(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getFont(String,Font)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Font getFont(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.awt.Font arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getFont(Map)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Font getFont(<span class="parameters"><span class="parameter"><span>java.util.Map&lt;<span>? <span class="keyword">extends</span> java.text.AttributedCharacterIterator.Attribute</span>, ?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getFontName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getFontName()</div>
+</div>
+</li><li><div class="element" id="getFontName(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getFontName(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getItalicAngle()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getItalicAngle()</div>
+</div>
+</li><li><div class="element" id="getLineMetrics(char[],int,int,FontRenderContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.LineMetrics getLineMetrics(<span class="parameters"><span class="parameter"><span><span class="keyword">char</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">java.awt.font.FontRenderContext arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLineMetrics(String,int,int,FontRenderContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.LineMetrics getLineMetrics(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">java.awt.font.FontRenderContext arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLineMetrics(String,FontRenderContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.LineMetrics getLineMetrics(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.awt.font.FontRenderContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLineMetrics(CharacterIterator,int,int,FontRenderContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.LineMetrics getLineMetrics(<span class="parameters"><span class="parameter">java.text.CharacterIterator arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">java.awt.font.FontRenderContext arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="getMaxCharBounds(FontRenderContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.geom.Rectangle2D getMaxCharBounds(<span class="parameters"><span class="parameter">java.awt.font.FontRenderContext arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getMissingGlyphCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMissingGlyphCode()</div>
+</div>
+</li><li><div class="element" id="getName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getName()</div>
+</div>
+</li><li><div class="element" id="getNumGlyphs()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getNumGlyphs()</div>
+</div>
+</li><li><div class="element" id="getPSName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getPSName()</div>
+</div>
+</li><li><div class="element" id="getSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getSize()</div>
+</div>
+</li><li><div class="element" id="getSize2D()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getSize2D()</div>
+</div>
+</li><li><div class="element" id="getStringBounds(char[],int,int,FontRenderContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.geom.Rectangle2D getStringBounds(<span class="parameters"><span class="parameter"><span><span class="keyword">char</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">java.awt.font.FontRenderContext arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="getStringBounds(String,int,int,FontRenderContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.geom.Rectangle2D getStringBounds(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">java.awt.font.FontRenderContext arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="getStringBounds(String,FontRenderContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.geom.Rectangle2D getStringBounds(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.awt.font.FontRenderContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getStringBounds(CharacterIterator,int,int,FontRenderContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.geom.Rectangle2D getStringBounds(<span class="parameters"><span class="parameter">java.text.CharacterIterator arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">java.awt.font.FontRenderContext arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="getStyle()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getStyle()</div>
+</div>
+</li><li><div class="element" id="getTransform()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.geom.AffineTransform getTransform()</div>
+</div>
+</li><li><div class="element" id="hasLayoutAttributes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> hasLayoutAttributes()</div>
+</div>
+</li><li><div class="element" id="hasUniformLineMetrics()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> hasUniformLineMetrics()</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="isBold()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isBold()</div>
+</div>
+</li><li><div class="element" id="isItalic()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isItalic()</div>
+</div>
+</li><li><div class="element" id="isPlain()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isPlain()</div>
+</div>
+</li><li><div class="element" id="isTransformed()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isTransformed()</div>
+</div>
+</li><li><div class="element" id="layoutGlyphVector(FontRenderContext,char[],int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.GlyphVector layoutGlyphVector(<span class="parameters"><span class="parameter">java.awt.font.FontRenderContext arg0</span>, <span class="parameter"><span><span class="keyword">char</span>[]</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="textRequiresLayout(char[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> textRequiresLayout(<span class="parameters"><span class="parameter"><span><span class="keyword">char</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-4206021311591459213<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.util.Hashtable&lt;java.lang.Object, java.lang.Object&gt;</span>&nbsp;fRequestedAttributes</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;fontSerializedDataVersion</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.lang.String&nbsp;name</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">float</span>&nbsp;pointSize</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;size</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;style</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

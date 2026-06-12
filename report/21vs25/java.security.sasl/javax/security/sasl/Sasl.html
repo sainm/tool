@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.security.sasl/javax.security.sasl.Sasl</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.security.sasl/module-summary.html">java.security.sasl</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.security.sasl/javax/security/sasl/package-summary.html">javax.security.sasl</a></div>
+<h1>Class&nbsp;Sasl</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> Sasl <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="BOUND_SERVER_NAME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String BOUND_SERVER_NAME = "javax.security.sasl.bound.server.name"</div>
+</div>
+</li><li><div class="element" id="CREDENTIALS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String CREDENTIALS = "javax.security.sasl.credentials"</div>
+</div>
+</li><li><div class="element" id="MAX_BUFFER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String MAX_BUFFER = "javax.security.sasl.maxbuffer"</div>
+</div>
+</li><li><div class="element" id="POLICY_FORWARD_SECRECY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String POLICY_FORWARD_SECRECY = "javax.security.sasl.policy.forward"</div>
+</div>
+</li><li><div class="element" id="POLICY_NOACTIVE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String POLICY_NOACTIVE = "javax.security.sasl.policy.noactive"</div>
+</div>
+</li><li><div class="element" id="POLICY_NOANONYMOUS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String POLICY_NOANONYMOUS = "javax.security.sasl.policy.noanonymous"</div>
+</div>
+</li><li><div class="element" id="POLICY_NODICTIONARY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String POLICY_NODICTIONARY = "javax.security.sasl.policy.nodictionary"</div>
+</div>
+</li><li><div class="element" id="POLICY_NOPLAINTEXT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String POLICY_NOPLAINTEXT = "javax.security.sasl.policy.noplaintext"</div>
+</div>
+</li><li><div class="element" id="POLICY_PASS_CREDENTIALS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String POLICY_PASS_CREDENTIALS = "javax.security.sasl.policy.credentials"</div>
+</div>
+</li><li><div class="element" id="QOP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String QOP = "javax.security.sasl.qop"</div>
+</div>
+</li><li><div class="element" id="RAW_SEND_SIZE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String RAW_SEND_SIZE = "javax.security.sasl.rawsendsize"</div>
+</div>
+</li><li><div class="element" id="REUSE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String REUSE = "javax.security.sasl.reuse"</div>
+</div>
+</li><li><div class="element" id="SERVER_AUTH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SERVER_AUTH = "javax.security.sasl.server.authentication"</div>
+</div>
+</li><li><div class="element" id="STRENGTH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String STRENGTH = "javax.security.sasl.strength"</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="createSaslClient(String[],String,String,String,Map,CallbackHandler)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.security.sasl.SaslClient createSaslClient(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter">java.lang.String arg3</span>, <span class="parameter"><span>java.util.Map&lt;java.lang.String, ?&gt;</span> arg4</span>, <span class="parameter">javax.security.auth.callback.CallbackHandler arg5</span></span>) <span class="throws"><span class="keyword">throws</span> javax.security.sasl.SaslException</span></div>
+</div>
+</li><li><div class="element" id="createSaslServer(String,String,String,Map,CallbackHandler)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.security.sasl.SaslServer createSaslServer(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span>java.util.Map&lt;java.lang.String, ?&gt;</span> arg3</span>, <span class="parameter">javax.security.auth.callback.CallbackHandler arg4</span></span>) <span class="throws"><span class="keyword">throws</span> javax.security.sasl.SaslException</span></div>
+</div>
+</li><li><div class="element" id="getSaslClientFactories()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Enumeration&lt;javax.security.sasl.SaslClientFactory&gt;</span> getSaslClientFactories()</div>
+</div>
+</li><li><div class="element" id="getSaslServerFactories()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Enumeration&lt;javax.security.sasl.SaslServerFactory&gt;</span> getSaslServerFactories()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.text.PlainView</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/swing/text/package-summary.html">javax.swing.text</a></div>
+<h1>Class&nbsp;PlainView</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> PlainView <div class="superclass"><span class="keyword">extends</span> javax.swing.text.View</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.swing.text.TabExpander</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="metrics"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.FontMetrics metrics</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> PlainView(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="changedUpdate(DocumentEvent,Shape,ViewFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> changedUpdate(<span class="parameters"><span class="parameter">javax.swing.event.DocumentEvent arg0</span>, <span class="parameter">java.awt.Shape arg1</span>, <span class="parameter">javax.swing.text.ViewFactory arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="damageLineRange(int,int,Shape,Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> damageLineRange(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">java.awt.Shape arg2</span>, <span class="parameter">java.awt.Component arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="drawLine(int,Graphics,int,int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> drawLine(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.awt.Graphics arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="drawLine(int,Graphics2D,float,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> drawLine(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.awt.Graphics2D arg1</span>, <span class="parameter"><span class="keyword">float</span> arg2</span>, <span class="parameter"><span class="keyword">float</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="drawSelectedText(Graphics,int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> drawSelectedText(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>) <span class="throws"><span class="keyword">throws</span> javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="drawSelectedText(Graphics2D,float,float,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">float</span> drawSelectedText(<span class="parameters"><span class="parameter">java.awt.Graphics2D arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter"><span class="keyword">float</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>) <span class="throws"><span class="keyword">throws</span> javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="drawUnselectedText(Graphics,int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> drawUnselectedText(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>) <span class="throws"><span class="keyword">throws</span> javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="drawUnselectedText(Graphics2D,float,float,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">float</span> drawUnselectedText(<span class="parameters"><span class="parameter">java.awt.Graphics2D arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter"><span class="keyword">float</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>) <span class="throws"><span class="keyword">throws</span> javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="getLineBuffer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> javax.swing.text.Segment getLineBuffer()</div>
+</div>
+</li><li><div class="element" id="getPreferredSpan(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getPreferredSpan(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getTabSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> getTabSize()</div>
+</div>
+</li><li><div class="element" id="insertUpdate(DocumentEvent,Shape,ViewFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> insertUpdate(<span class="parameters"><span class="parameter">javax.swing.event.DocumentEvent arg0</span>, <span class="parameter">java.awt.Shape arg1</span>, <span class="parameter">javax.swing.text.ViewFactory arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="lineToRect(Shape,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Rectangle lineToRect(<span class="parameters"><span class="parameter">java.awt.Shape arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="modelToView(int,Shape,Bias)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Shape modelToView(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.awt.Shape arg1</span>, <span class="parameter">javax.swing.text.Position.Bias arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="nextTabStop(float,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> nextTabStop(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="paint(Graphics,Shape)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paint(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">java.awt.Shape arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeUpdate(DocumentEvent,Shape,ViewFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeUpdate(<span class="parameters"><span class="parameter">javax.swing.event.DocumentEvent arg0</span>, <span class="parameter">java.awt.Shape arg1</span>, <span class="parameter">javax.swing.text.ViewFactory arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSize(float,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSize(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateDamage(DocumentEvent,Shape,ViewFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> updateDamage(<span class="parameters"><span class="parameter">javax.swing.event.DocumentEvent arg0</span>, <span class="parameter">java.awt.Shape arg1</span>, <span class="parameter">javax.swing.text.ViewFactory arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateMetrics()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> updateMetrics()</div>
+</div>
+</li><li><div class="element" id="viewToModel(float,float,Shape,Bias[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> viewToModel(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter">java.awt.Shape arg2</span>, <span class="parameter"><span>javax.swing.text.Position.Bias[]</span> arg3</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

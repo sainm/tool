@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class jdk.incubator.foreign/jdk.internal.foreign.ResourceScopeImpl</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../jdk.incubator.foreign/module-summary.html">jdk.incubator.foreign</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../jdk.incubator.foreign/jdk/internal/foreign/package-summary.html">jdk.internal.foreign</a></div>
+<h1>Class&nbsp;ResourceScopeImpl</h1>
+</div>
+<div class="element"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK17; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> ResourceScopeImpl <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> jdk.incubator.foreign.ResourceScope, jdk.incubator.foreign.SegmentAllocator, jdk.internal.misc.ScopedMemoryAccess.Scope</div>
+</div>
+</div>
+<section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="remove">&minus;</span> <a href="../../../../jdk.incubator.foreign/jdk/internal/foreign/ResourceScopeImpl.HandleImpl.html">HandleImpl</a></span></li><li><span><span class="remove">&minus;</span> <a href="../../../../jdk.incubator.foreign/jdk/internal/foreign/ResourceScopeImpl.ResourceList.html">ResourceList</a></span></li></ul>
+</section>
+<section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="GLOBAL"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> jdk.internal.foreign.ResourceScopeImpl GLOBAL</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(Cleaner,ResourceList)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> ResourceScopeImpl(<span class="parameters"><span class="parameter">java.lang.ref.Cleaner arg0</span>, <span class="parameter">jdk.internal.foreign.ResourceScopeImpl.ResourceList arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="acquire()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> jdk.internal.foreign.ResourceScopeImpl.HandleImpl acquire()</div>
+</div>
+</li><li><div class="element" id="addCloseAction(Runnable)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addCloseAction(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addOrCleanupIfFail(ResourceCleanup)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addOrCleanupIfFail(<span class="parameters"><span class="parameter">jdk.internal.foreign.ResourceScopeImpl.ResourceList.ResourceCleanup arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="allocate(long,long)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.incubator.foreign.MemorySegment allocate(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="checkValidState()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> checkValidState()</div>
+</div>
+</li><li><div class="element" id="checkValidStateSlow()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> checkValidStateSlow()</div>
+</div>
+</li><li><div class="element" id="clone()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.Object clone() <span class="throws"><span class="keyword">throws</span> java.lang.CloneNotSupportedException</span></div>
+</div>
+</li><li><div class="element" id="close()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> close()</div>
+</div>
+</li><li><div class="element" id="createConfined(Thread,Cleaner)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.internal.foreign.ResourceScopeImpl createConfined(<span class="parameters"><span class="parameter">java.lang.Thread arg0</span>, <span class="parameter">java.lang.ref.Cleaner arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="createConfined(Cleaner)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.internal.foreign.ResourceScopeImpl createConfined(<span class="parameters"><span class="parameter">java.lang.ref.Cleaner arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createImplicitScope()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.internal.foreign.ResourceScopeImpl createImplicitScope()</div>
+</div>
+</li><li><div class="element" id="createShared(Cleaner)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.internal.foreign.ResourceScopeImpl createShared(<span class="parameters"><span class="parameter">java.lang.ref.Cleaner arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isAlive()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isAlive()</div>
+</div>
+</li><li><div class="element" id="isImplicit()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isImplicit()</div>
+</div>
+</li><li><div class="element" id="ownerThread()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.Thread ownerThread()</div>
+</div>
+</li><li><div class="element" id="release(Handle)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> release(<span class="parameters"><span class="parameter">jdk.incubator.foreign.ResourceScope.Handle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="release(Handle)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> release(<span class="parameters"><span class="parameter">jdk.internal.misc.ScopedMemoryAccess.Scope.Handle arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../jdk.incubator.foreign/jdk/internal/foreign/ResourceScopeImpl.html">ResourceScopeImpl</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../jdk.incubator.foreign/jdk/internal/foreign/ResourceScopeImpl.HandleImpl.html">ResourceScopeImpl.HandleImpl</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../jdk.incubator.foreign/jdk/internal/foreign/ResourceScopeImpl.ResourceList.html">ResourceScopeImpl.ResourceList</a></th>
+<td></td>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td></td>
+<td></td>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

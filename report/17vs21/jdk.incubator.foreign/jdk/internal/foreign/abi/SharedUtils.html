@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class jdk.incubator.foreign/jdk.internal.foreign.abi.SharedUtils</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../jdk.incubator.foreign/module-summary.html">jdk.incubator.foreign</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../jdk.incubator.foreign/jdk/internal/foreign/abi/package-summary.html">jdk.internal.foreign.abi</a></div>
+<h1>Class&nbsp;SharedUtils</h1>
+</div>
+<div class="element"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK17; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> SharedUtils <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="remove">&minus;</span> <a href="../../../../../jdk.incubator.foreign/jdk/internal/foreign/abi/SharedUtils.EmptyVaList.html">EmptyVaList</a></span></li><li><span><span class="remove">&minus;</span> <a href="../../../../../jdk.incubator.foreign/jdk/internal/foreign/abi/SharedUtils.SimpleVaArg.html">SimpleVaArg</a></span></li></ul>
+</section>
+<section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="THROWING_ALLOCATOR"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> jdk.incubator.foreign.SegmentAllocator THROWING_ALLOCATOR</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> SharedUtils()</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="adaptDowncallForIMR(MethodHandle,FunctionDescriptor)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.invoke.MethodHandle adaptDowncallForIMR(<span class="parameters"><span class="parameter">java.lang.invoke.MethodHandle arg0</span>, <span class="parameter">jdk.incubator.foreign.FunctionDescriptor arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="adaptUpcallForIMR(MethodHandle,boolean)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.invoke.MethodHandle adaptUpcallForIMR(<span class="parameters"><span class="parameter">java.lang.invoke.MethodHandle arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="align(MemoryLayout,boolean,long)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">long</span> align(<span class="parameters"><span class="parameter">jdk.incubator.foreign.MemoryLayout arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="alignUp(long,long)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">long</span> alignUp(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="alignment(MemoryLayout,boolean)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">long</span> alignment(<span class="parameters"><span class="parameter">jdk.incubator.foreign.MemoryLayout arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="allocateMemoryInternal(long)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.foreign.MemoryAddress allocateMemoryInternal(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="boxVaLists(MethodHandle,MethodHandle)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.invoke.MethodHandle boxVaLists(<span class="parameters"><span class="parameter">java.lang.invoke.MethodHandle arg0</span>, <span class="parameter">java.lang.invoke.MethodHandle arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="checkAddress(MemoryAddress)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.foreign.MemoryAddress checkAddress(<span class="parameters"><span class="parameter">jdk.incubator.foreign.MemoryAddress arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="checkCompatibleType(Class,MemoryLayout,long)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> checkCompatibleType(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">jdk.incubator.foreign.MemoryLayout arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="checkFunctionTypes(MethodType,FunctionDescriptor,long)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> checkFunctionTypes(<span class="parameters"><span class="parameter">java.lang.invoke.MethodType arg0</span>, <span class="parameter">jdk.incubator.foreign.FunctionDescriptor arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="checkSymbol(Addressable)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.foreign.MemoryAddress checkSymbol(<span class="parameters"><span class="parameter">jdk.incubator.foreign.Addressable arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="convertVaListCarriers(MethodType,Class)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.invoke.MethodType convertVaListCarriers(<span class="parameters"><span class="parameter">java.lang.invoke.MethodType arg0</span>, <span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="emptyVaList()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.foreign.CLinker.VaList emptyVaList()</div>
+</div>
+</li><li><div class="element" id="freeMemoryInternal(MemoryAddress)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> freeMemoryInternal(<span class="parameters"><span class="parameter">jdk.incubator.foreign.MemoryAddress arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getSystemLinker()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.foreign.CLinker getSystemLinker()</div>
+</div>
+</li><li><div class="element" id="isTrivial(FunctionDescriptor)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isTrivial(<span class="parameters"><span class="parameter">jdk.incubator.foreign.FunctionDescriptor arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="newVaList(Consumer,ResourceScope)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.foreign.CLinker.VaList newVaList(<span class="parameters"><span class="parameter"><span>java.util.function.Consumer&lt;jdk.incubator.foreign.CLinker.VaList.Builder&gt;</span> arg0</span>, <span class="parameter">jdk.incubator.foreign.ResourceScope arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="newVaListOfAddress(MemoryAddress,ResourceScope)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.foreign.CLinker.VaList newVaListOfAddress(<span class="parameters"><span class="parameter">jdk.incubator.foreign.MemoryAddress arg0</span>, <span class="parameter">jdk.incubator.foreign.ResourceScope arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="primitiveCarrierForSize(long,boolean)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.Class&lt;?&gt;</span> primitiveCarrierForSize(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="toJavaStringInternal(MemorySegment,long)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String toJavaStringInternal(<span class="parameters"><span class="parameter">jdk.incubator.foreign.MemorySegment arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="unboxVaLists(MethodType,MethodHandle,MethodHandle)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.invoke.MethodHandle unboxVaLists(<span class="parameters"><span class="parameter">java.lang.invoke.MethodType arg0</span>, <span class="parameter">java.lang.invoke.MethodHandle arg1</span>, <span class="parameter">java.lang.invoke.MethodHandle arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="vhPrimitiveOrAddress(Class,MemoryLayout)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.invoke.VarHandle vhPrimitiveOrAddress(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">jdk.incubator.foreign.MemoryLayout arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../../jdk.incubator.foreign/jdk/internal/foreign/abi/SharedUtils.html">SharedUtils</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../jdk.incubator.foreign/jdk/internal/foreign/abi/SharedUtils.EmptyVaList.html">SharedUtils.EmptyVaList</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../jdk.incubator.foreign/jdk/internal/foreign/abi/SharedUtils.SimpleVaArg.html">SharedUtils.SimpleVaArg</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td></td>
+<td></td>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

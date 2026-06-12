@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package java.base/java.nio.file</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<h1>Package&nbsp;java.nio.file</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="keyword">package</span> java.nio.file</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/AccessDeniedException.html">AccessDeniedException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/AccessMode.html">AccessMode</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/AtomicMoveNotSupportedException.html">AtomicMoveNotSupportedException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/ClosedDirectoryStreamException.html">ClosedDirectoryStreamException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/ClosedFileSystemException.html">ClosedFileSystemException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/ClosedWatchServiceException.html">ClosedWatchServiceException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/CopyOption.html">CopyOption</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/DirectoryIteratorException.html">DirectoryIteratorException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/DirectoryNotEmptyException.html">DirectoryNotEmptyException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/DirectoryStream.html">DirectoryStream</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/FileAlreadyExistsException.html">FileAlreadyExistsException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/FileStore.html">FileStore</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/FileSystem.html">FileSystem</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/FileSystemAlreadyExistsException.html">FileSystemAlreadyExistsException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/FileSystemException.html">FileSystemException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/FileSystemLoopException.html">FileSystemLoopException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/FileSystemNotFoundException.html">FileSystemNotFoundException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/FileSystems.html">FileSystems</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/FileVisitOption.html">FileVisitOption</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/FileVisitResult.html">FileVisitResult</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/FileVisitor.html">FileVisitor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/Files.html">Files</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/InvalidPathException.html">InvalidPathException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/LinkOption.html">LinkOption</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/LinkPermission.html">LinkPermission</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/NoSuchFileException.html">NoSuchFileException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/NotDirectoryException.html">NotDirectoryException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/NotLinkException.html">NotLinkException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/OpenOption.html">OpenOption</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/nio/file/Path.html">Path</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/PathMatcher.html">PathMatcher</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/Paths.html">Paths</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/ProviderMismatchException.html">ProviderMismatchException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/ProviderNotFoundException.html">ProviderNotFoundException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/ReadOnlyFileSystemException.html">ReadOnlyFileSystemException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/SecureDirectoryStream.html">SecureDirectoryStream</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/SimpleFileVisitor.html">SimpleFileVisitor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/StandardCopyOption.html">StandardCopyOption</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/StandardOpenOption.html">StandardOpenOption</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/StandardWatchEventKinds.html">StandardWatchEventKinds</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/WatchEvent.html">WatchEvent</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/WatchKey.html">WatchKey</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/WatchService.html">WatchService</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/file/Watchable.html">Watchable</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/nio/file/Path.html">Path</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

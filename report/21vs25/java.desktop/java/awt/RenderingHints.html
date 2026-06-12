@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/java.awt.RenderingHints</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/java/awt/package-summary.html">java.awt</a></div>
+<h1>Class&nbsp;RenderingHints</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> RenderingHints <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.lang.Cloneable, <span>java.util.Map&lt;java.lang.Object, java.lang.Object&gt;</span></div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/RenderingHints.Key.html">Key</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="KEY_ALPHA_INTERPOLATION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.RenderingHints.Key KEY_ALPHA_INTERPOLATION</div>
+</div>
+</li><li><div class="element" id="KEY_ANTIALIASING"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.RenderingHints.Key KEY_ANTIALIASING</div>
+</div>
+</li><li><div class="element" id="KEY_COLOR_RENDERING"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.RenderingHints.Key KEY_COLOR_RENDERING</div>
+</div>
+</li><li><div class="element" id="KEY_DITHERING"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.RenderingHints.Key KEY_DITHERING</div>
+</div>
+</li><li><div class="element" id="KEY_FRACTIONALMETRICS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.RenderingHints.Key KEY_FRACTIONALMETRICS</div>
+</div>
+</li><li><div class="element" id="KEY_INTERPOLATION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.RenderingHints.Key KEY_INTERPOLATION</div>
+</div>
+</li><li><div class="element" id="KEY_RENDERING"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.RenderingHints.Key KEY_RENDERING</div>
+</div>
+</li><li><div class="element" id="KEY_RESOLUTION_VARIANT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.RenderingHints.Key KEY_RESOLUTION_VARIANT</div>
+</div>
+</li><li><div class="element" id="KEY_STROKE_CONTROL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.RenderingHints.Key KEY_STROKE_CONTROL</div>
+</div>
+</li><li><div class="element" id="KEY_TEXT_ANTIALIASING"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.RenderingHints.Key KEY_TEXT_ANTIALIASING</div>
+</div>
+</li><li><div class="element" id="KEY_TEXT_LCD_CONTRAST"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.RenderingHints.Key KEY_TEXT_LCD_CONTRAST</div>
+</div>
+</li><li><div class="element" id="VALUE_ALPHA_INTERPOLATION_DEFAULT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_ALPHA_INTERPOLATION_DEFAULT</div>
+</div>
+</li><li><div class="element" id="VALUE_ALPHA_INTERPOLATION_QUALITY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_ALPHA_INTERPOLATION_QUALITY</div>
+</div>
+</li><li><div class="element" id="VALUE_ALPHA_INTERPOLATION_SPEED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_ALPHA_INTERPOLATION_SPEED</div>
+</div>
+</li><li><div class="element" id="VALUE_ANTIALIAS_DEFAULT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_ANTIALIAS_DEFAULT</div>
+</div>
+</li><li><div class="element" id="VALUE_ANTIALIAS_OFF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_ANTIALIAS_OFF</div>
+</div>
+</li><li><div class="element" id="VALUE_ANTIALIAS_ON"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_ANTIALIAS_ON</div>
+</div>
+</li><li><div class="element" id="VALUE_COLOR_RENDER_DEFAULT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_COLOR_RENDER_DEFAULT</div>
+</div>
+</li><li><div class="element" id="VALUE_COLOR_RENDER_QUALITY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_COLOR_RENDER_QUALITY</div>
+</div>
+</li><li><div class="element" id="VALUE_COLOR_RENDER_SPEED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_COLOR_RENDER_SPEED</div>
+</div>
+</li><li><div class="element" id="VALUE_DITHER_DEFAULT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_DITHER_DEFAULT</div>
+</div>
+</li><li><div class="element" id="VALUE_DITHER_DISABLE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_DITHER_DISABLE</div>
+</div>
+</li><li><div class="element" id="VALUE_DITHER_ENABLE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_DITHER_ENABLE</div>
+</div>
+</li><li><div class="element" id="VALUE_FRACTIONALMETRICS_DEFAULT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_FRACTIONALMETRICS_DEFAULT</div>
+</div>
+</li><li><div class="element" id="VALUE_FRACTIONALMETRICS_OFF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_FRACTIONALMETRICS_OFF</div>
+</div>
+</li><li><div class="element" id="VALUE_FRACTIONALMETRICS_ON"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_FRACTIONALMETRICS_ON</div>
+</div>
+</li><li><div class="element" id="VALUE_INTERPOLATION_BICUBIC"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_INTERPOLATION_BICUBIC</div>
+</div>
+</li><li><div class="element" id="VALUE_INTERPOLATION_BILINEAR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_INTERPOLATION_BILINEAR</div>
+</div>
+</li><li><div class="element" id="VALUE_INTERPOLATION_NEAREST_NEIGHBOR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_INTERPOLATION_NEAREST_NEIGHBOR</div>
+</div>
+</li><li><div class="element" id="VALUE_RENDER_DEFAULT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_RENDER_DEFAULT</div>
+</div>
+</li><li><div class="element" id="VALUE_RENDER_QUALITY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_RENDER_QUALITY</div>
+</div>
+</li><li><div class="element" id="VALUE_RENDER_SPEED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_RENDER_SPEED</div>
+</div>
+</li><li><div class="element" id="VALUE_RESOLUTION_VARIANT_BASE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_RESOLUTION_VARIANT_BASE</div>
+</div>
+</li><li><div class="element" id="VALUE_RESOLUTION_VARIANT_DEFAULT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_RESOLUTION_VARIANT_DEFAULT</div>
+</div>
+</li><li><div class="element" id="VALUE_RESOLUTION_VARIANT_DPI_FIT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_RESOLUTION_VARIANT_DPI_FIT</div>
+</div>
+</li><li><div class="element" id="VALUE_RESOLUTION_VARIANT_SIZE_FIT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_RESOLUTION_VARIANT_SIZE_FIT</div>
+</div>
+</li><li><div class="element" id="VALUE_STROKE_DEFAULT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_STROKE_DEFAULT</div>
+</div>
+</li><li><div class="element" id="VALUE_STROKE_NORMALIZE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_STROKE_NORMALIZE</div>
+</div>
+</li><li><div class="element" id="VALUE_STROKE_PURE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_STROKE_PURE</div>
+</div>
+</li><li><div class="element" id="VALUE_TEXT_ANTIALIAS_DEFAULT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_TEXT_ANTIALIAS_DEFAULT</div>
+</div>
+</li><li><div class="element" id="VALUE_TEXT_ANTIALIAS_GASP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_TEXT_ANTIALIAS_GASP</div>
+</div>
+</li><li><div class="element" id="VALUE_TEXT_ANTIALIAS_LCD_HBGR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_TEXT_ANTIALIAS_LCD_HBGR</div>
+</div>
+</li><li><div class="element" id="VALUE_TEXT_ANTIALIAS_LCD_HRGB"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_TEXT_ANTIALIAS_LCD_HRGB</div>
+</div>
+</li><li><div class="element" id="VALUE_TEXT_ANTIALIAS_LCD_VBGR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_TEXT_ANTIALIAS_LCD_VBGR</div>
+</div>
+</li><li><div class="element" id="VALUE_TEXT_ANTIALIAS_LCD_VRGB"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_TEXT_ANTIALIAS_LCD_VRGB</div>
+</div>
+</li><li><div class="element" id="VALUE_TEXT_ANTIALIAS_OFF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_TEXT_ANTIALIAS_OFF</div>
+</div>
+</li><li><div class="element" id="VALUE_TEXT_ANTIALIAS_ON"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object VALUE_TEXT_ANTIALIAS_ON</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(Map)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> RenderingHints(<span class="parameters"><span class="parameter"><span>java.util.Map&lt;java.awt.RenderingHints.Key, ?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Key,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> RenderingHints(<span class="parameters"><span class="parameter">java.awt.RenderingHints.Key arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="add(RenderingHints)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> add(<span class="parameters"><span class="parameter">java.awt.RenderingHints arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="clear()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> clear()</div>
+</div>
+</li><li><div class="element" id="clone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object clone()</div>
+</div>
+</li><li><div class="element" id="containsKey(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> containsKey(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="containsValue(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> containsValue(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="entrySet()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Set&lt;<span>java.util.Map.Entry&lt;java.lang.Object, java.lang.Object&gt;</span>&gt;</span> entrySet()</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="get(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object get(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="isEmpty()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isEmpty()</div>
+</div>
+</li><li><div class="element" id="keySet()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Set&lt;java.lang.Object&gt;</span> keySet()</div>
+</div>
+</li><li><div class="element" id="put(Object,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object put(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="putAll(Map)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> putAll(<span class="parameters"><span class="parameter"><span>java.util.Map&lt;?, ?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object remove(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="size()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> size()</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li><li><div class="element" id="values()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Collection&lt;java.lang.Object&gt;</span> values()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

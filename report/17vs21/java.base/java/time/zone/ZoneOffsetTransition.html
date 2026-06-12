@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.time.zone.ZoneOffsetTransition</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/time/zone/package-summary.html">java.time.zone</a></div>
+<h1>Class&nbsp;ZoneOffsetTransition</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> ZoneOffsetTransition <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable, <span>java.lang.Comparable&lt;java.time.zone.ZoneOffsetTransition&gt;</span></div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="compareTo(ZoneOffsetTransition)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> compareTo(<span class="parameters"><span class="parameter">java.time.zone.ZoneOffsetTransition arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDateTimeAfter()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.LocalDateTime getDateTimeAfter()</div>
+</div>
+</li><li><div class="element" id="getDateTimeBefore()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.LocalDateTime getDateTimeBefore()</div>
+</div>
+</li><li><div class="element" id="getDuration()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.Duration getDuration()</div>
+</div>
+</li><li><div class="element" id="getInstant()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.Instant getInstant()</div>
+</div>
+</li><li><div class="element" id="getOffsetAfter()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.ZoneOffset getOffsetAfter()</div>
+</div>
+</li><li><div class="element" id="getOffsetBefore()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.ZoneOffset getOffsetBefore()</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="isGap()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isGap()</div>
+</div>
+</li><li><div class="element" id="isOverlap()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isOverlap()</div>
+</div>
+</li><li><div class="element" id="isValidOffset(ZoneOffset)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isValidOffset(<span class="parameters"><span class="parameter">java.time.ZoneOffset arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(LocalDateTime,ZoneOffset,ZoneOffset)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.zone.ZoneOffsetTransition of(<span class="parameters"><span class="parameter">java.time.LocalDateTime arg0</span>, <span class="parameter">java.time.ZoneOffset arg1</span>, <span class="parameter">java.time.ZoneOffset arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="toEpochSecond()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> toEpochSecond()</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-6946044323557704546<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">long</span>&nbsp;epochSecond</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.time.ZoneOffset&nbsp;offsetAfter</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.time.ZoneOffset&nbsp;offsetBefore</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.time.LocalDateTime&nbsp;transition</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.InvalidObjectException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeReplace"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> java.lang.Object writeReplace()</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

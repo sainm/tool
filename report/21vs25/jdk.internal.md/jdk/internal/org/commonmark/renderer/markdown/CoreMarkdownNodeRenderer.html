@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class jdk.internal.md/jdk.internal.org.commonmark.renderer.markdown.CoreMarkdownNodeRenderer</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../../../jdk.internal.md/module-summary.html">jdk.internal.md</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../../../jdk.internal.md/jdk/internal/org/commonmark/renderer/markdown/package-summary.html">jdk.internal.org.commonmark.renderer.markdown</a></div>
+<h1>Class&nbsp;CoreMarkdownNodeRenderer</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> CoreMarkdownNodeRenderer <div class="superclass"><span class="keyword">extends</span> jdk.internal.org.commonmark.node.AbstractVisitor</div>
+<div class="superinterfaces"><span class="keyword">implements</span> jdk.internal.org.commonmark.renderer.NodeRenderer</div>
+</div>
+</div>
+<section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="context"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> jdk.internal.org.commonmark.renderer.markdown.MarkdownNodeRendererContext context</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(MarkdownNodeRendererContext)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> CoreMarkdownNodeRenderer(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.renderer.markdown.MarkdownNodeRendererContext arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getNodeTypes()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Set&lt;<span>java.lang.Class&lt;<span>? <span class="keyword">extends</span> jdk.internal.org.commonmark.node.Node</span>&gt;</span>&gt;</span> getNodeTypes()</div>
+</div>
+</li><li><div class="element" id="render(Node)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> render(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.Node arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(BlockQuote)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.BlockQuote arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(BulletList)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.BulletList arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(Code)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.Code arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(Document)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.Document arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(Emphasis)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.Emphasis arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(FencedCodeBlock)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.FencedCodeBlock arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(HardLineBreak)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.HardLineBreak arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(Heading)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.Heading arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(HtmlBlock)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.HtmlBlock arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(HtmlInline)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.HtmlInline arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(Image)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.Image arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(IndentedCodeBlock)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.IndentedCodeBlock arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(Link)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.Link arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(ListItem)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.ListItem arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(OrderedList)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.OrderedList arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(Paragraph)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.Paragraph arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(SoftLineBreak)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.SoftLineBreak arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(StrongEmphasis)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.StrongEmphasis arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(Text)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.Text arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visit(ThematicBreak)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> visit(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.ThematicBreak arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="visitChildren(Node)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> visitChildren(<span class="parameters"><span class="parameter">jdk.internal.org.commonmark.node.Node arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../../../../jdk.internal.md/jdk/internal/org/commonmark/renderer/markdown/CoreMarkdownNodeRenderer.html">CoreMarkdownNodeRenderer</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

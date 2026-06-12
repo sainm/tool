@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/javax.net.ssl.SSLSocket</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/javax/net/ssl/package-summary.html">javax.net.ssl</a></div>
+<h1>Class&nbsp;SSLSocket</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> SSLSocket <div class="superclass"><span class="keyword">extends</span> java.net.Socket</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> SSLSocket()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> SSLSocket(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.net.UnknownHostException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,int,InetAddress,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> SSLSocket(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">java.net.InetAddress arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.net.UnknownHostException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(InetAddress,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> SSLSocket(<span class="parameters"><span class="parameter">java.net.InetAddress arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(InetAddress,int,InetAddress,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> SSLSocket(<span class="parameters"><span class="parameter">java.net.InetAddress arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">java.net.InetAddress arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addHandshakeCompletedListener(HandshakeCompletedListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> addHandshakeCompletedListener(<span class="parameters"><span class="parameter">javax.net.ssl.HandshakeCompletedListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getApplicationProtocol()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getApplicationProtocol()</div>
+</div>
+</li><li><div class="element" id="getEnableSessionCreation()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> getEnableSessionCreation()</div>
+</div>
+</li><li><div class="element" id="getEnabledCipherSuites()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.lang.String[]</span> getEnabledCipherSuites()</div>
+</div>
+</li><li><div class="element" id="getEnabledProtocols()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.lang.String[]</span> getEnabledProtocols()</div>
+</div>
+</li><li><div class="element" id="getHandshakeApplicationProtocol()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getHandshakeApplicationProtocol()</div>
+</div>
+</li><li><div class="element" id="getHandshakeApplicationProtocolSelector()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.function.BiFunction&lt;javax.net.ssl.SSLSocket, <span>java.util.List&lt;java.lang.String&gt;</span>, java.lang.String&gt;</span> getHandshakeApplicationProtocolSelector()</div>
+</div>
+</li><li><div class="element" id="getHandshakeSession()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.net.ssl.SSLSession getHandshakeSession()</div>
+</div>
+</li><li><div class="element" id="getNeedClientAuth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> getNeedClientAuth()</div>
+</div>
+</li><li><div class="element" id="getSSLParameters()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.net.ssl.SSLParameters getSSLParameters()</div>
+</div>
+</li><li><div class="element" id="getSession()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.net.ssl.SSLSession getSession()</div>
+</div>
+</li><li><div class="element" id="getSupportedCipherSuites()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.lang.String[]</span> getSupportedCipherSuites()</div>
+</div>
+</li><li><div class="element" id="getSupportedProtocols()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.lang.String[]</span> getSupportedProtocols()</div>
+</div>
+</li><li><div class="element" id="getUseClientMode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> getUseClientMode()</div>
+</div>
+</li><li><div class="element" id="getWantClientAuth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> getWantClientAuth()</div>
+</div>
+</li><li><div class="element" id="removeHandshakeCompletedListener(HandshakeCompletedListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> removeHandshakeCompletedListener(<span class="parameters"><span class="parameter">javax.net.ssl.HandshakeCompletedListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEnableSessionCreation(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setEnableSessionCreation(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEnabledCipherSuites(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setEnabledCipherSuites(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEnabledProtocols(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setEnabledProtocols(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setHandshakeApplicationProtocolSelector(BiFunction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setHandshakeApplicationProtocolSelector(<span class="parameters"><span class="parameter"><span>java.util.function.BiFunction&lt;javax.net.ssl.SSLSocket, <span>java.util.List&lt;java.lang.String&gt;</span>, java.lang.String&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setNeedClientAuth(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setNeedClientAuth(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSSLParameters(SSLParameters)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSSLParameters(<span class="parameters"><span class="parameter">javax.net.ssl.SSLParameters arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setUseClientMode(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setUseClientMode(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setWantClientAuth(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setWantClientAuth(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="startHandshake()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> startHandshake() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

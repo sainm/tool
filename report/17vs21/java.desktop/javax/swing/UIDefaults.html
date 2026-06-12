@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.UIDefaults</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Class&nbsp;UIDefaults</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> UIDefaults <div class="superclass"><span class="keyword">extends</span> <span>java.util.Hashtable&lt;java.lang.Object, java.lang.Object&gt;</span></div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/UIDefaults.ActiveValue.html">ActiveValue</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/UIDefaults.LazyInputMap.html">LazyInputMap</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/UIDefaults.LazyValue.html">LazyValue</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/UIDefaults.ProxyLazyValue.html">ProxyLazyValue</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> UIDefaults()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> UIDefaults(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> UIDefaults(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addPropertyChangeListener(PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addPropertyChangeListener(<span class="parameters"><span class="parameter">java.beans.PropertyChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addResourceBundle(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addResourceBundle(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="firePropertyChange(String,Object,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.Object arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="get(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object get(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="get(Object,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object get(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.util.Locale arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBoolean(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getBoolean(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBoolean(Object,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getBoolean(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.util.Locale arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBorder(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.border.Border getBorder(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBorder(Object,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.border.Border getBorder(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.util.Locale arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getColor(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getColor(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getColor(Object,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getColor(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.util.Locale arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDefaultLocale()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.Locale getDefaultLocale()</div>
+</div>
+</li><li><div class="element" id="getDimension(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getDimension(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDimension(Object,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getDimension(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.util.Locale arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getFont(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Font getFont(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getFont(Object,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Font getFont(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.util.Locale arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getIcon(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getIcon(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getIcon(Object,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getIcon(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.util.Locale arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getInsets(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Insets getInsets(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getInsets(Object,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Insets getInsets(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.util.Locale arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getInt(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getInt(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getInt(Object,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getInt(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.util.Locale arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPropertyChangeListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.beans.PropertyChangeListener[]</span> getPropertyChangeListeners()</div>
+</div>
+</li><li><div class="element" id="getString(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getString(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getString(Object,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getString(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.util.Locale arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.plaf.ComponentUI getUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getUIClass(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;<span>? <span class="keyword">extends</span> javax.swing.plaf.ComponentUI</span>&gt;</span> getUIClass(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getUIClass(String,ClassLoader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;<span>? <span class="keyword">extends</span> javax.swing.plaf.ComponentUI</span>&gt;</span> getUIClass(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.ClassLoader arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getUIError(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> getUIError(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="put(Object,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object put(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="putDefaults(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> putDefaults(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removePropertyChangeListener(PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removePropertyChangeListener(<span class="parameters"><span class="parameter">java.beans.PropertyChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeResourceBundle(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeResourceBundle(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDefaultLocale(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDefaultLocale(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>1946596746851518244<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.event.SwingPropertyChangeSupport&nbsp;changeSupport</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.util.Locale&nbsp;defaultLocale</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.util.Vector&lt;java.lang.String&gt;</span>&nbsp;resourceBundles</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.util.Map&lt;java.util.Locale, <span>java.util.Map&lt;java.lang.String, java.lang.Object&gt;</span>&gt;</span>&nbsp;resourceCache</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

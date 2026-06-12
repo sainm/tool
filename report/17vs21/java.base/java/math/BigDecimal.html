@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.math.BigDecimal</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/math/package-summary.html">java.math</a></div>
+<h1>Class&nbsp;BigDecimal</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> BigDecimal <div class="superclass"><span class="keyword">extends</span> java.lang.Number</div>
+<div class="superinterfaces"><span class="keyword">implements</span> <span>java.lang.Comparable&lt;java.math.BigDecimal&gt;</span></div>
+</div>
+</div>
+<section class="enclosed"><h2>Fields</h2>
+<ul><li class="unchanged"><div class="element" id="ONE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.math.BigDecimal ONE</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ROUND_CEILING"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ROUND_CEILING = 2</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ROUND_DOWN"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ROUND_DOWN = 1</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ROUND_FLOOR"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ROUND_FLOOR = 3</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ROUND_HALF_DOWN"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ROUND_HALF_DOWN = 5</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ROUND_HALF_EVEN"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ROUND_HALF_EVEN = 6</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ROUND_HALF_UP"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ROUND_HALF_UP = 4</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ROUND_UNNECESSARY"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ROUND_UNNECESSARY = 7</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ROUND_UP"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ROUND_UP = 0</div>
+</div>
+</li><li class="unchanged"><div class="element" id="TEN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.math.BigDecimal TEN</div>
+</div>
+</li><li><div class="element" id="TWO"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.math.BigDecimal TWO</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ZERO"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.math.BigDecimal ZERO</div>
+</div>
+</li></ul>
+</section>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.math.MathContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(long,MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.math.MathContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(double,MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter">java.math.MathContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(char[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter"><span><span class="keyword">char</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(char[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter"><span><span class="keyword">char</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(char[],int,int,MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter"><span><span class="keyword">char</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">java.math.MathContext arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(char[],MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter"><span><span class="keyword">char</span>[]</span> arg0</span>, <span class="parameter">java.math.MathContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.math.MathContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(BigInteger)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter">java.math.BigInteger arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(BigInteger,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter">java.math.BigInteger arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(BigInteger,int,MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter">java.math.BigInteger arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">java.math.MathContext arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(BigInteger,MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BigDecimal(<span class="parameters"><span class="parameter">java.math.BigInteger arg0</span>, <span class="parameter">java.math.MathContext arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="abs()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal abs()</div>
+</div>
+</li><li><div class="element" id="abs(MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal abs(<span class="parameters"><span class="parameter">java.math.MathContext arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(BigDecimal)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal add(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(BigDecimal,MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal add(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span>, <span class="parameter">java.math.MathContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="byteValueExact()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">byte</span> byteValueExact()</div>
+</div>
+</li><li><div class="element" id="compareTo(BigDecimal)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> compareTo(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="divide(BigDecimal)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal divide(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="divide(BigDecimal,int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal divide(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="divide(BigDecimal,int,int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal divide(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="divide(BigDecimal,int,RoundingMode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal divide(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">java.math.RoundingMode arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="divide(BigDecimal,MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal divide(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span>, <span class="parameter">java.math.MathContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="divide(BigDecimal,RoundingMode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal divide(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span>, <span class="parameter">java.math.RoundingMode arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="divideAndRemainder(BigDecimal)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.math.BigDecimal[]</span> divideAndRemainder(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="divideAndRemainder(BigDecimal,MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.math.BigDecimal[]</span> divideAndRemainder(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span>, <span class="parameter">java.math.MathContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="divideToIntegralValue(BigDecimal)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal divideToIntegralValue(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="divideToIntegralValue(BigDecimal,MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal divideToIntegralValue(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span>, <span class="parameter">java.math.MathContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="doubleValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">double</span> doubleValue()</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="floatValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> floatValue()</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="intValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> intValue()</div>
+</div>
+</li><li><div class="element" id="intValueExact()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> intValueExact()</div>
+</div>
+</li><li><div class="element" id="longValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> longValue()</div>
+</div>
+</li><li><div class="element" id="longValueExact()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> longValueExact()</div>
+</div>
+</li><li><div class="element" id="max(BigDecimal)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal max(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="min(BigDecimal)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal min(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="movePointLeft(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal movePointLeft(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="movePointRight(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal movePointRight(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="multiply(BigDecimal)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal multiply(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="multiply(BigDecimal,MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal multiply(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span>, <span class="parameter">java.math.MathContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="negate()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal negate()</div>
+</div>
+</li><li><div class="element" id="negate(MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal negate(<span class="parameters"><span class="parameter">java.math.MathContext arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="plus()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal plus()</div>
+</div>
+</li><li><div class="element" id="plus(MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal plus(<span class="parameters"><span class="parameter">java.math.MathContext arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="pow(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal pow(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="pow(int,MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal pow(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.math.MathContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="precision()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> precision()</div>
+</div>
+</li><li><div class="element" id="remainder(BigDecimal)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal remainder(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="remainder(BigDecimal,MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal remainder(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span>, <span class="parameter">java.math.MathContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="round(MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal round(<span class="parameters"><span class="parameter">java.math.MathContext arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="scale()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> scale()</div>
+</div>
+</li><li><div class="element" id="scaleByPowerOfTen(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal scaleByPowerOfTen(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setScale(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal setScale(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setScale(int,int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal setScale(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setScale(int,RoundingMode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal setScale(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.math.RoundingMode arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="shortValueExact()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">short</span> shortValueExact()</div>
+</div>
+</li><li><div class="element" id="signum()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> signum()</div>
+</div>
+</li><li><div class="element" id="sqrt(MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal sqrt(<span class="parameters"><span class="parameter">java.math.MathContext arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="stripTrailingZeros()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal stripTrailingZeros()</div>
+</div>
+</li><li><div class="element" id="subtract(BigDecimal)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal subtract(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="subtract(BigDecimal,MathContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal subtract(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span>, <span class="parameter">java.math.MathContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="toBigInteger()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigInteger toBigInteger()</div>
+</div>
+</li><li><div class="element" id="toBigIntegerExact()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigInteger toBigIntegerExact()</div>
+</div>
+</li><li><div class="element" id="toEngineeringString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toEngineeringString()</div>
+</div>
+</li><li><div class="element" id="toPlainString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toPlainString()</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li><li><div class="element" id="ulp()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigDecimal ulp()</div>
+</div>
+</li><li><div class="element" id="unscaledValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.math.BigInteger unscaledValue()</div>
+</div>
+</li><li><div class="element" id="valueOf(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.math.BigDecimal valueOf(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="valueOf(long,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.math.BigDecimal valueOf(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="valueOf(double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.math.BigDecimal valueOf(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>6108874887143696463<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">java.math.BigInteger&nbsp;intVal</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;scale</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-readObjectNoData"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObjectNoData() <span class="throws"><span class="keyword">throws</span> java.io.ObjectStreamException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.base/java/math/BigDecimal.html#TWO">TWO</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

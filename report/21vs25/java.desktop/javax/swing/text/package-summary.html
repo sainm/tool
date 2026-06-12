@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package java.desktop/javax.swing.text</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<h1>Package&nbsp;javax.swing.text</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="keyword">package</span> javax.swing.text</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/AbstractDocument.html">AbstractDocument</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/AbstractWriter.html">AbstractWriter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/AsyncBoxView.html">AsyncBoxView</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/AttributeSet.html">AttributeSet</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/BadLocationException.html">BadLocationException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/BoxView.html">BoxView</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/Caret.html">Caret</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/ChangedCharSetException.html">ChangedCharSetException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/ComponentView.html">ComponentView</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/CompositeView.html">CompositeView</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/DateFormatter.html">DateFormatter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/DefaultCaret.html">DefaultCaret</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/DefaultEditorKit.html">DefaultEditorKit</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/DefaultFormatter.html">DefaultFormatter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/DefaultFormatterFactory.html">DefaultFormatterFactory</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/DefaultHighlighter.html">DefaultHighlighter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/DefaultStyledDocument.html">DefaultStyledDocument</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/DefaultTextUI.html">DefaultTextUI</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/Document.html">Document</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/DocumentFilter.html">DocumentFilter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/EditorKit.html">EditorKit</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/Element.html">Element</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/ElementIterator.html">ElementIterator</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/FieldView.html">FieldView</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/FlowView.html">FlowView</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/GapContent.html">GapContent</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/GlyphView.html">GlyphView</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/Highlighter.html">Highlighter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/IconView.html">IconView</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/InternationalFormatter.html">InternationalFormatter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/JTextComponent.html">JTextComponent</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/Keymap.html">Keymap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/LabelView.html">LabelView</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/LayeredHighlighter.html">LayeredHighlighter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/LayoutQueue.html">LayoutQueue</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/MaskFormatter.html">MaskFormatter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/MutableAttributeSet.html">MutableAttributeSet</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/NavigationFilter.html">NavigationFilter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/NumberFormatter.html">NumberFormatter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/ParagraphView.html">ParagraphView</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/PasswordView.html">PasswordView</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/PlainDocument.html">PlainDocument</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/PlainView.html">PlainView</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/Position.html">Position</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/Segment.html">Segment</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/SimpleAttributeSet.html">SimpleAttributeSet</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/StringContent.html">StringContent</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/Style.html">Style</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/StyleConstants.html">StyleConstants</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.desktop/javax/swing/text/StyleContext.html">StyleContext</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/StyledDocument.html">StyledDocument</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/StyledEditorKit.html">StyledEditorKit</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/TabExpander.html">TabExpander</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/TabSet.html">TabSet</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/TabStop.html">TabStop</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/TabableView.html">TabableView</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/TableView.html">TableView</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/TextAction.html">TextAction</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/Utilities.html">Utilities</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/View.html">View</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/ViewFactory.html">ViewFactory</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/WrappedPlainView.html">WrappedPlainView</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/ZoneView.html">ZoneView</a></span></li></ul>
+</section>
+<section class="doc-files"><h2>Additional Files</h2>
+<ul><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>Document-coord.gif<table class="details"><caption>Source File Details for Document-coord.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>2480</td>
+<td>0cebc8985716fa81</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for Document-coord.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>Document-notification.gif<table class="details"><caption>Source File Details for Document-notification.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>12309</td>
+<td>575a2c1ab55c676e</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for Document-notification.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>Document-structure.gif<table class="details"><caption>Source File Details for Document-structure.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>5664</td>
+<td>0f47ec23c2b7c7e0</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for Document-structure.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>OpenBookIcon.gif<table class="details"><caption>Source File Details for OpenBookIcon.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>2241</td>
+<td>6d29728dba4fd69f</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for OpenBookIcon.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>editor.gif<table class="details"><caption>Source File Details for editor.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>4768</td>
+<td>91d7148d195c8cc1</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for editor.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>paragraph.gif<table class="details"><caption>Source File Details for paragraph.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>4695</td>
+<td>fbc7e0a9a7c6f95e</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for paragraph.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>plain1.gif<table class="details"><caption>Source File Details for plain1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>3788</td>
+<td>5b33ada087427a42</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for plain1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>plain10.gif<table class="details"><caption>Source File Details for plain10.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>9278</td>
+<td>2e2ed7f04d953e74</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for plain10.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>plain11.gif<table class="details"><caption>Source File Details for plain11.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>6409</td>
+<td>5ba4437dfb23f34b</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for plain11.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>plain12.gif<table class="details"><caption>Source File Details for plain12.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>7553</td>
+<td>90ad515835e1122d</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for plain12.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>plain2.gif<table class="details"><caption>Source File Details for plain2.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>5644</td>
+<td>442ef352c996f895</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for plain2.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>plain3.gif<table class="details"><caption>Source File Details for plain3.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>5881</td>
+<td>a0072b0d270d2ece</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for plain3.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>plain4.gif<table class="details"><caption>Source File Details for plain4.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>7960</td>
+<td>913997c4fff2f26f</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for plain4.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>plain5.gif<table class="details"><caption>Source File Details for plain5.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>3339</td>
+<td>6a519c23f4d0dfe9</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for plain5.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>plain6.gif<table class="details"><caption>Source File Details for plain6.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>5829</td>
+<td>9c1c48c5bc4505d3</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for plain6.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>plain7.gif<table class="details"><caption>Source File Details for plain7.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>11337</td>
+<td>3feb830562c3da3e</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for plain7.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>plain8.gif<table class="details"><caption>Source File Details for plain8.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>7195</td>
+<td>d86813159dfd7f5b</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for plain8.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>plain9.gif<table class="details"><caption>Source File Details for plain9.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>8746</td>
+<td>e92f2f5947a61a79</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for plain9.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th>Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.desktop/javax/swing/text/package-summary.html">javax.swing.text</a></th>
+<td>18</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>18</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.desktop/javax/swing/text/StyleContext.html">StyleContext</a></th>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>18</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>20</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

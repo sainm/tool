@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package java.base/java.net</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<h1>Package&nbsp;java.net</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="keyword">package</span> java.net</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/Authenticator.html">Authenticator</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/BindException.html">BindException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/CacheRequest.html">CacheRequest</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/CacheResponse.html">CacheResponse</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/ConnectException.html">ConnectException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/ContentHandler.html">ContentHandler</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/ContentHandlerFactory.html">ContentHandlerFactory</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/CookieHandler.html">CookieHandler</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/CookieManager.html">CookieManager</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/CookiePolicy.html">CookiePolicy</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/CookieStore.html">CookieStore</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/DatagramPacket.html">DatagramPacket</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/DatagramSocket.html">DatagramSocket</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/net/DatagramSocketImpl.html">DatagramSocketImpl</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/DatagramSocketImplFactory.html">DatagramSocketImplFactory</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/FileNameMap.html">FileNameMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/HttpCookie.html">HttpCookie</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/HttpRetryException.html">HttpRetryException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/HttpURLConnection.html">HttpURLConnection</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/IDN.html">IDN</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/net/Inet4Address.html">Inet4Address</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/net/Inet6Address.html">Inet6Address</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/net/InetAddress.html">InetAddress</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/InetSocketAddress.html">InetSocketAddress</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/net/InterfaceAddress.html">InterfaceAddress</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/JarURLConnection.html">JarURLConnection</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/MalformedURLException.html">MalformedURLException</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/net/MulticastSocket.html">MulticastSocket</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/NetPermission.html">NetPermission</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/NetworkInterface.html">NetworkInterface</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/NoRouteToHostException.html">NoRouteToHostException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/PasswordAuthentication.html">PasswordAuthentication</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/PortUnreachableException.html">PortUnreachableException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/ProtocolException.html">ProtocolException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/ProtocolFamily.html">ProtocolFamily</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/Proxy.html">Proxy</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/ProxySelector.html">ProxySelector</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/ResponseCache.html">ResponseCache</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/SecureCacheResponse.html">SecureCacheResponse</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/ServerSocket.html">ServerSocket</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/net/Socket.html">Socket</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/SocketAddress.html">SocketAddress</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/SocketException.html">SocketException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/SocketImpl.html">SocketImpl</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/SocketImplFactory.html">SocketImplFactory</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/SocketOption.html">SocketOption</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/SocketOptions.html">SocketOptions</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/SocketPermission.html">SocketPermission</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/SocketTimeoutException.html">SocketTimeoutException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/StandardProtocolFamily.html">StandardProtocolFamily</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/StandardSocketOptions.html">StandardSocketOptions</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/URI.html">URI</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/URISyntaxException.html">URISyntaxException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/URL.html">URL</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/URLClassLoader.html">URLClassLoader</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/URLConnection.html">URLConnection</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/net/URLDecoder.html">URLDecoder</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/net/URLEncoder.html">URLEncoder</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/URLPermission.html">URLPermission</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/URLStreamHandler.html">URLStreamHandler</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/URLStreamHandlerFactory.html">URLStreamHandlerFactory</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/UnixDomainSocketAddress.html">UnixDomainSocketAddress</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/UnknownHostException.html">UnknownHostException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/net/UnknownServiceException.html">UnknownServiceException</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th>Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.base/java/net/DatagramSocketImpl.html">DatagramSocketImpl</a></th>
+<td></td>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/net/Inet4Address.html">Inet4Address</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/net/Inet6Address.html">Inet6Address</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/net/InetAddress.html">InetAddress</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/net/InterfaceAddress.html">InterfaceAddress</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/net/MulticastSocket.html">MulticastSocket</a></th>
+<td></td>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/net/Socket.html">Socket</a></th>
+<td></td>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/net/URLDecoder.html">URLDecoder</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/net/URLEncoder.html">URLEncoder</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>4</td>
+<td>17</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>21</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

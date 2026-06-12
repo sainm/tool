@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.text.html.HTMLWriter</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/swing/text/html/package-summary.html">javax.swing.text.html</a></div>
+<h1>Class&nbsp;HTMLWriter</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> HTMLWriter <div class="superclass"><span class="keyword">extends</span> javax.swing.text.AbstractWriter</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(Writer,HTMLDocument)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> HTMLWriter(<span class="parameters"><span class="parameter">java.io.Writer arg0</span>, <span class="parameter">javax.swing.text.html.HTMLDocument arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Writer,HTMLDocument,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> HTMLWriter(<span class="parameters"><span class="parameter">java.io.Writer arg0</span>, <span class="parameter">javax.swing.text.html.HTMLDocument arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="closeOutUnwantedEmbeddedTags(AttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> closeOutUnwantedEmbeddedTags(<span class="parameters"><span class="parameter">javax.swing.text.AttributeSet arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="comment(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> comment(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="emptyTag(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> emptyTag(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="endTag(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> endTag(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="isBlockTag(AttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isBlockTag(<span class="parameters"><span class="parameter">javax.swing.text.AttributeSet arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="matchNameAttribute(AttributeSet,Tag)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> matchNameAttribute(<span class="parameters"><span class="parameter">javax.swing.text.AttributeSet arg0</span>, <span class="parameter">javax.swing.text.html.HTML.Tag arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="output(char[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> output(<span class="parameters"><span class="parameter"><span><span class="keyword">char</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="selectContent(AttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> selectContent(<span class="parameters"><span class="parameter">javax.swing.text.AttributeSet arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="startTag(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> startTag(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="synthesizedElement(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> synthesizedElement(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="text(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> text(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="textAreaContent(AttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> textAreaContent(<span class="parameters"><span class="parameter">javax.swing.text.AttributeSet arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="write()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> write() <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="writeAttributes(AttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> writeAttributes(<span class="parameters"><span class="parameter">javax.swing.text.AttributeSet arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="writeEmbeddedTags(AttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> writeEmbeddedTags(<span class="parameters"><span class="parameter">javax.swing.text.AttributeSet arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="writeLineSeparator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> writeLineSeparator() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="writeOption(Option)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> writeOption(<span class="parameters"><span class="parameter">javax.swing.text.html.Option arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface java.xml.crypto/javax.xml.crypto.dsig.DigestMethod</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.xml.crypto/module-summary.html">java.xml.crypto</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.xml.crypto/javax/xml/crypto/dsig/package-summary.html">javax.xml.crypto.dsig</a></div>
+<h1>Interface&nbsp;DigestMethod</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> DigestMethod <div class="superinterfaces"><span class="keyword">extends</span> javax.xml.crypto.AlgorithmMethod, javax.xml.crypto.XMLStructure</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="RIPEMD160"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String RIPEMD160 = "http://www.w3.org/2001/04/xmlenc#ripemd160"</div>
+</div>
+</li><li><div class="element" id="SHA1"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SHA1 = "http://www.w3.org/2000/09/xmldsig#sha1"</div>
+</div>
+</li><li><div class="element" id="SHA224"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SHA224 = "http://www.w3.org/2001/04/xmldsig-more#sha224"</div>
+</div>
+</li><li><div class="element" id="SHA256"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SHA256 = "http://www.w3.org/2001/04/xmlenc#sha256"</div>
+</div>
+</li><li><div class="element" id="SHA384"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SHA384 = "http://www.w3.org/2001/04/xmldsig-more#sha384"</div>
+</div>
+</li><li><div class="element" id="SHA3_224"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SHA3_224 = "http://www.w3.org/2007/05/xmldsig-more#sha3-224"</div>
+</div>
+</li><li><div class="element" id="SHA3_256"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SHA3_256 = "http://www.w3.org/2007/05/xmldsig-more#sha3-256"</div>
+</div>
+</li><li><div class="element" id="SHA3_384"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SHA3_384 = "http://www.w3.org/2007/05/xmldsig-more#sha3-384"</div>
+</div>
+</li><li><div class="element" id="SHA3_512"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SHA3_512 = "http://www.w3.org/2007/05/xmldsig-more#sha3-512"</div>
+</div>
+</li><li><div class="element" id="SHA512"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SHA512 = "http://www.w3.org/2001/04/xmlenc#sha512"</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getParameterSpec()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.security.spec.AlgorithmParameterSpec getParameterSpec()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

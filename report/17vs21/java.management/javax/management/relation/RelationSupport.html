@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.management/javax.management.relation.RelationSupport</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.management/module-summary.html">java.management</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.management/javax/management/relation/package-summary.html">javax.management.relation</a></div>
+<h1>Class&nbsp;RelationSupport</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> RelationSupport <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.management.MBeanRegistration, javax.management.relation.RelationSupportMBean</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(String,ObjectName,String,RoleList)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> RelationSupport(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">javax.management.ObjectName arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter">javax.management.relation.RoleList arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalArgumentException, javax.management.relation.InvalidRoleValueException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,ObjectName,MBeanServer,String,RoleList)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> RelationSupport(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">javax.management.ObjectName arg1</span>, <span class="parameter">javax.management.MBeanServer arg2</span>, <span class="parameter">java.lang.String arg3</span>, <span class="parameter">javax.management.relation.RoleList arg4</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalArgumentException, javax.management.relation.InvalidRoleValueException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getAllRoles()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.management.relation.RoleResult getAllRoles() <span class="throws"><span class="keyword">throws</span> javax.management.relation.RelationServiceNotRegisteredException</span></div>
+</div>
+</li><li><div class="element" id="getReferencedMBeans()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Map&lt;javax.management.ObjectName, <span>java.util.List&lt;java.lang.String&gt;</span>&gt;</span> getReferencedMBeans()</div>
+</div>
+</li><li><div class="element" id="getRelationId()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getRelationId()</div>
+</div>
+</li><li><div class="element" id="getRelationServiceName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.management.ObjectName getRelationServiceName()</div>
+</div>
+</li><li><div class="element" id="getRelationTypeName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getRelationTypeName()</div>
+</div>
+</li><li><div class="element" id="getRole(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.List&lt;javax.management.ObjectName&gt;</span> getRole(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalArgumentException, javax.management.relation.RelationServiceNotRegisteredException, javax.management.relation.RoleNotFoundException</span></div>
+</div>
+</li><li><div class="element" id="getRoleCardinality(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Integer getRoleCardinality(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalArgumentException, javax.management.relation.RoleNotFoundException</span></div>
+</div>
+</li><li><div class="element" id="getRoles(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.management.relation.RoleResult getRoles(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalArgumentException, javax.management.relation.RelationServiceNotRegisteredException</span></div>
+</div>
+</li><li><div class="element" id="handleMBeanUnregistration(ObjectName,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> handleMBeanUnregistration(<span class="parameters"><span class="parameter">javax.management.ObjectName arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalArgumentException, javax.management.relation.InvalidRoleValueException, javax.management.relation.RelationNotFoundException, javax.management.relation.RelationServiceNotRegisteredException, javax.management.relation.RelationTypeNotFoundException, javax.management.relation.RoleNotFoundException</span></div>
+</div>
+</li><li><div class="element" id="isInRelationService()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Boolean isInRelationService()</div>
+</div>
+</li><li><div class="element" id="postDeregister()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> postDeregister()</div>
+</div>
+</li><li><div class="element" id="postRegister(Boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> postRegister(<span class="parameters"><span class="parameter">java.lang.Boolean arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="preDeregister()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> preDeregister() <span class="throws"><span class="keyword">throws</span> java.lang.Exception</span></div>
+</div>
+</li><li><div class="element" id="preRegister(MBeanServer,ObjectName)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.management.ObjectName preRegister(<span class="parameters"><span class="parameter">javax.management.MBeanServer arg0</span>, <span class="parameter">javax.management.ObjectName arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.Exception</span></div>
+</div>
+</li><li><div class="element" id="retrieveAllRoles()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.management.relation.RoleList retrieveAllRoles()</div>
+</div>
+</li><li><div class="element" id="setRelationServiceManagementFlag(Boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRelationServiceManagementFlag(<span class="parameters"><span class="parameter">java.lang.Boolean arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li><div class="element" id="setRole(Role)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRole(<span class="parameters"><span class="parameter">javax.management.relation.Role arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalArgumentException, javax.management.relation.InvalidRoleValueException, javax.management.relation.RelationNotFoundException, javax.management.relation.RelationServiceNotRegisteredException, javax.management.relation.RelationTypeNotFoundException, javax.management.relation.RoleNotFoundException</span></div>
+</div>
+</li><li><div class="element" id="setRoles(RoleList)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.management.relation.RoleResult setRoles(<span class="parameters"><span class="parameter">javax.management.relation.RoleList arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalArgumentException, javax.management.relation.RelationNotFoundException, javax.management.relation.RelationServiceNotRegisteredException, javax.management.relation.RelationTypeNotFoundException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/java.awt.event.MouseEvent</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/java/awt/event/package-summary.html">java.awt.event</a></div>
+<h1>Class&nbsp;MouseEvent</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> MouseEvent <div class="superclass"><span class="keyword">extends</span> java.awt.event.InputEvent</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="BUTTON1"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> BUTTON1 = 1</div>
+</div>
+</li><li><div class="element" id="BUTTON2"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> BUTTON2 = 2</div>
+</div>
+</li><li><div class="element" id="BUTTON3"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> BUTTON3 = 3</div>
+</div>
+</li><li><div class="element" id="MOUSE_CLICKED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MOUSE_CLICKED = 500</div>
+</div>
+</li><li><div class="element" id="MOUSE_DRAGGED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MOUSE_DRAGGED = 506</div>
+</div>
+</li><li><div class="element" id="MOUSE_ENTERED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MOUSE_ENTERED = 504</div>
+</div>
+</li><li><div class="element" id="MOUSE_EXITED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MOUSE_EXITED = 505</div>
+</div>
+</li><li><div class="element" id="MOUSE_FIRST"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MOUSE_FIRST = 500</div>
+</div>
+</li><li><div class="element" id="MOUSE_LAST"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MOUSE_LAST = 507</div>
+</div>
+</li><li><div class="element" id="MOUSE_MOVED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MOUSE_MOVED = 503</div>
+</div>
+</li><li><div class="element" id="MOUSE_PRESSED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MOUSE_PRESSED = 501</div>
+</div>
+</li><li><div class="element" id="MOUSE_RELEASED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MOUSE_RELEASED = 502</div>
+</div>
+</li><li><div class="element" id="MOUSE_WHEEL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MOUSE_WHEEL = 507</div>
+</div>
+</li><li><div class="element" id="NOBUTTON"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> NOBUTTON = 0</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(Component,int,long,int,int,int,int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> MouseEvent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span class="keyword">int</span> arg6</span>, <span class="parameter"><span class="keyword">boolean</span> arg7</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Component,int,long,int,int,int,int,boolean,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> MouseEvent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span class="keyword">int</span> arg6</span>, <span class="parameter"><span class="keyword">boolean</span> arg7</span>, <span class="parameter"><span class="keyword">int</span> arg8</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Component,int,long,int,int,int,int,int,int,boolean,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> MouseEvent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span class="keyword">int</span> arg6</span>, <span class="parameter"><span class="keyword">int</span> arg7</span>, <span class="parameter"><span class="keyword">int</span> arg8</span>, <span class="parameter"><span class="keyword">boolean</span> arg9</span>, <span class="parameter"><span class="keyword">int</span> arg10</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getButton()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getButton()</div>
+</div>
+</li><li><div class="element" id="getClickCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getClickCount()</div>
+</div>
+</li><li><div class="element" id="getLocationOnScreen()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Point getLocationOnScreen()</div>
+</div>
+</li><li><div class="element" id="getModifiersEx()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getModifiersEx()</div>
+</div>
+</li><li><div class="element" id="getMouseModifiersText(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String getMouseModifiersText(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPoint()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Point getPoint()</div>
+</div>
+</li><li><div class="element" id="getX()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getX()</div>
+</div>
+</li><li><div class="element" id="getXOnScreen()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getXOnScreen()</div>
+</div>
+</li><li><div class="element" id="getY()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getY()</div>
+</div>
+</li><li><div class="element" id="getYOnScreen()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getYOnScreen()</div>
+</div>
+</li><li><div class="element" id="isPopupTrigger()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isPopupTrigger()</div>
+</div>
+</li><li><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String paramString()</div>
+</div>
+</li><li><div class="element" id="translatePoint(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> translatePoint(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-991214153494842848<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;button</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;causedByTouchEvent</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;clickCount</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;popupTrigger</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;x</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;xAbs</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;y</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;yAbs</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

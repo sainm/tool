@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.imageio.metadata.IIOMetadataNode</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/imageio/metadata/package-summary.html">javax.imageio.metadata</a></div>
+<h1>Class&nbsp;IIOMetadataNode</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> IIOMetadataNode <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> org.w3c.dom.Element, org.w3c.dom.NodeList</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> IIOMetadataNode()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> IIOMetadataNode(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="appendChild(Node)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Node appendChild(<span class="parameters"><span class="parameter">org.w3c.dom.Node arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="cloneNode(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Node cloneNode(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="compareDocumentPosition(Node)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">short</span> compareDocumentPosition(<span class="parameters"><span class="parameter">org.w3c.dom.Node arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="getAttribute(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getAttribute(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAttributeNS(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getAttributeNS(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAttributeNode(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Attr getAttributeNode(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAttributeNodeNS(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Attr getAttributeNodeNS(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAttributes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.NamedNodeMap getAttributes()</div>
+</div>
+</li><li><div class="element" id="getBaseURI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getBaseURI() <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="getChildNodes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.NodeList getChildNodes()</div>
+</div>
+</li><li><div class="element" id="getElementsByTagName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.NodeList getElementsByTagName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getElementsByTagNameNS(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.NodeList getElementsByTagNameNS(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getFeature(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getFeature(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="getFirstChild()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Node getFirstChild()</div>
+</div>
+</li><li><div class="element" id="getLastChild()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Node getLastChild()</div>
+</div>
+</li><li><div class="element" id="getLength()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getLength()</div>
+</div>
+</li><li><div class="element" id="getLocalName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getLocalName()</div>
+</div>
+</li><li><div class="element" id="getNamespaceURI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getNamespaceURI() <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="getNextSibling()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Node getNextSibling()</div>
+</div>
+</li><li><div class="element" id="getNodeName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getNodeName()</div>
+</div>
+</li><li><div class="element" id="getNodeType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">short</span> getNodeType()</div>
+</div>
+</li><li><div class="element" id="getNodeValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getNodeValue()</div>
+</div>
+</li><li><div class="element" id="getOwnerDocument()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Document getOwnerDocument()</div>
+</div>
+</li><li><div class="element" id="getParentNode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Node getParentNode()</div>
+</div>
+</li><li><div class="element" id="getPrefix()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getPrefix()</div>
+</div>
+</li><li><div class="element" id="getPreviousSibling()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Node getPreviousSibling()</div>
+</div>
+</li><li><div class="element" id="getSchemaTypeInfo()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.TypeInfo getSchemaTypeInfo() <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="getTagName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getTagName()</div>
+</div>
+</li><li><div class="element" id="getTextContent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getTextContent() <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="getUserData(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getUserData(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="getUserObject()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getUserObject()</div>
+</div>
+</li><li><div class="element" id="hasAttribute(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> hasAttribute(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="hasAttributeNS(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> hasAttributeNS(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="hasAttributes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> hasAttributes()</div>
+</div>
+</li><li><div class="element" id="hasChildNodes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> hasChildNodes()</div>
+</div>
+</li><li><div class="element" id="insertBefore(Node,Node)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Node insertBefore(<span class="parameters"><span class="parameter">org.w3c.dom.Node arg0</span>, <span class="parameter">org.w3c.dom.Node arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isDefaultNamespace(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isDefaultNamespace(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="isEqualNode(Node)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isEqualNode(<span class="parameters"><span class="parameter">org.w3c.dom.Node arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="isSameNode(Node)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSameNode(<span class="parameters"><span class="parameter">org.w3c.dom.Node arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="isSupported(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSupported(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="item(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Node item(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="lookupNamespaceURI(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String lookupNamespaceURI(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="lookupPrefix(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String lookupPrefix(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="normalize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> normalize()</div>
+</div>
+</li><li><div class="element" id="removeAttribute(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeAttribute(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeAttributeNS(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeAttributeNS(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeAttributeNode(Attr)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Attr removeAttributeNode(<span class="parameters"><span class="parameter">org.w3c.dom.Attr arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeChild(Node)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Node removeChild(<span class="parameters"><span class="parameter">org.w3c.dom.Node arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="replaceChild(Node,Node)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Node replaceChild(<span class="parameters"><span class="parameter">org.w3c.dom.Node arg0</span>, <span class="parameter">org.w3c.dom.Node arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setAttribute(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAttribute(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setAttributeNS(String,String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAttributeNS(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.String arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="setAttributeNode(Attr)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Attr setAttributeNode(<span class="parameters"><span class="parameter">org.w3c.dom.Attr arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="setAttributeNodeNS(Attr)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> org.w3c.dom.Attr setAttributeNodeNS(<span class="parameters"><span class="parameter">org.w3c.dom.Attr arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setIdAttribute(String,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setIdAttribute(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="setIdAttributeNS(String,String,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setIdAttributeNS(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="setIdAttributeNode(Attr,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setIdAttributeNode(<span class="parameters"><span class="parameter">org.w3c.dom.Attr arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="setNodeValue(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setNodeValue(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setPrefix(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setPrefix(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setTextContent(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setTextContent(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="setUserData(String,Object,UserDataHandler)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object setUserData(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">org.w3c.dom.UserDataHandler arg2</span></span>) <span class="throws"><span class="keyword">throws</span> org.w3c.dom.DOMException</span></div>
+</div>
+</li><li><div class="element" id="setUserObject(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setUserObject(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

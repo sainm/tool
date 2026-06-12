@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package java.desktop/javax.swing</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<h1>Package&nbsp;javax.swing</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="keyword">package</span> javax.swing</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/AbstractAction.html">AbstractAction</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/AbstractButton.html">AbstractButton</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/AbstractCellEditor.html">AbstractCellEditor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/AbstractListModel.html">AbstractListModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/AbstractSpinnerModel.html">AbstractSpinnerModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/Action.html">Action</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ActionMap.html">ActionMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/BorderFactory.html">BorderFactory</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/BoundedRangeModel.html">BoundedRangeModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/Box.html">Box</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/BoxLayout.html">BoxLayout</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ButtonGroup.html">ButtonGroup</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ButtonModel.html">ButtonModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/CellEditor.html">CellEditor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/CellRendererPane.html">CellRendererPane</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ComboBoxEditor.html">ComboBoxEditor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ComboBoxModel.html">ComboBoxModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ComponentInputMap.html">ComponentInputMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/DebugGraphics.html">DebugGraphics</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/DefaultBoundedRangeModel.html">DefaultBoundedRangeModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/DefaultButtonModel.html">DefaultButtonModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/DefaultCellEditor.html">DefaultCellEditor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/DefaultComboBoxModel.html">DefaultComboBoxModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/DefaultDesktopManager.html">DefaultDesktopManager</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/DefaultFocusManager.html">DefaultFocusManager</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/DefaultListCellRenderer.html">DefaultListCellRenderer</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/DefaultListModel.html">DefaultListModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/DefaultListSelectionModel.html">DefaultListSelectionModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/DefaultRowSorter.html">DefaultRowSorter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/DefaultSingleSelectionModel.html">DefaultSingleSelectionModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/DesktopManager.html">DesktopManager</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/DropMode.html">DropMode</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.desktop/javax/swing/FocusManager.html">FocusManager</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/GrayFilter.html">GrayFilter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/GroupLayout.html">GroupLayout</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/Icon.html">Icon</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ImageIcon.html">ImageIcon</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/InputMap.html">InputMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/InputVerifier.html">InputVerifier</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/InternalFrameFocusTraversalPolicy.html">InternalFrameFocusTraversalPolicy</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JApplet.html">JApplet</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JButton.html">JButton</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JCheckBox.html">JCheckBox</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JCheckBoxMenuItem.html">JCheckBoxMenuItem</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JColorChooser.html">JColorChooser</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JComboBox.html">JComboBox</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JComponent.html">JComponent</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JDesktopPane.html">JDesktopPane</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JDialog.html">JDialog</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JEditorPane.html">JEditorPane</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.desktop/javax/swing/JFileChooser.html">JFileChooser</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.desktop/javax/swing/JFormattedTextField.html">JFormattedTextField</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JFrame.html">JFrame</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JInternalFrame.html">JInternalFrame</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JLabel.html">JLabel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JLayer.html">JLayer</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JLayeredPane.html">JLayeredPane</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JList.html">JList</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JMenu.html">JMenu</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JMenuBar.html">JMenuBar</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JMenuItem.html">JMenuItem</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JOptionPane.html">JOptionPane</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JPanel.html">JPanel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JPasswordField.html">JPasswordField</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.desktop/javax/swing/JPopupMenu.html">JPopupMenu</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JProgressBar.html">JProgressBar</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JRadioButton.html">JRadioButton</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JRadioButtonMenuItem.html">JRadioButtonMenuItem</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JRootPane.html">JRootPane</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.desktop/javax/swing/JScrollBar.html">JScrollBar</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JScrollPane.html">JScrollPane</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JSeparator.html">JSeparator</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JSlider.html">JSlider</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JSpinner.html">JSpinner</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.desktop/javax/swing/JSplitPane.html">JSplitPane</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JTabbedPane.html">JTabbedPane</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JTable.html">JTable</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JTextArea.html">JTextArea</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JTextField.html">JTextField</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JTextPane.html">JTextPane</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JToggleButton.html">JToggleButton</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JToolBar.html">JToolBar</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JToolTip.html">JToolTip</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JTree.html">JTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JViewport.html">JViewport</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JWindow.html">JWindow</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/KeyStroke.html">KeyStroke</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/LayoutFocusTraversalPolicy.html">LayoutFocusTraversalPolicy</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/LayoutStyle.html">LayoutStyle</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ListCellRenderer.html">ListCellRenderer</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ListModel.html">ListModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ListSelectionModel.html">ListSelectionModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/LookAndFeel.html">LookAndFeel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/MenuElement.html">MenuElement</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/MenuSelectionManager.html">MenuSelectionManager</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/MutableComboBoxModel.html">MutableComboBoxModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/OverlayLayout.html">OverlayLayout</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/Painter.html">Painter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/Popup.html">Popup</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/PopupFactory.html">PopupFactory</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ProgressMonitor.html">ProgressMonitor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ProgressMonitorInputStream.html">ProgressMonitorInputStream</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/Renderer.html">Renderer</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/RepaintManager.html">RepaintManager</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/RootPaneContainer.html">RootPaneContainer</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/RowFilter.html">RowFilter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/RowSorter.html">RowSorter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ScrollPaneConstants.html">ScrollPaneConstants</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ScrollPaneLayout.html">ScrollPaneLayout</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/Scrollable.html">Scrollable</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/SingleSelectionModel.html">SingleSelectionModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/SizeRequirements.html">SizeRequirements</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/SizeSequence.html">SizeSequence</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/SortOrder.html">SortOrder</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/SortingFocusTraversalPolicy.html">SortingFocusTraversalPolicy</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/SpinnerDateModel.html">SpinnerDateModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/SpinnerListModel.html">SpinnerListModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/SpinnerModel.html">SpinnerModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/SpinnerNumberModel.html">SpinnerNumberModel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/Spring.html">Spring</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/SpringLayout.html">SpringLayout</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/SwingConstants.html">SwingConstants</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/SwingContainer.html">SwingContainer</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/SwingUtilities.html">SwingUtilities</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/SwingWorker.html">SwingWorker</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.desktop/javax/swing/Timer.html">Timer</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ToolTipManager.html">ToolTipManager</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/TransferHandler.html">TransferHandler</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/UIClientPropertyKey.html">UIClientPropertyKey</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/UIDefaults.html">UIDefaults</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.desktop/javax/swing/UIManager.html">UIManager</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/UnsupportedLookAndFeelException.html">UnsupportedLookAndFeelException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ViewportLayout.html">ViewportLayout</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/WindowConstants.html">WindowConstants</a></span></li></ul>
+</section>
+<section class="doc-files"><h2>Additional Files</h2>
+<ul><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>JLayeredPane-1.gif<table class="details"><caption>Source File Details for JLayeredPane-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>1808</td>
+<td>2d5d31e5e4b94ca1</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for JLayeredPane-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>JRootPane-1.gif<table class="details"><caption>Source File Details for JRootPane-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>5515</td>
+<td>b4a93a5b4f85e756</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for JRootPane-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>JRootPane-2.gif<table class="details"><caption>Source File Details for JRootPane-2.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>2700</td>
+<td>b3fba97a0372d427</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for JRootPane-2.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>JScrollPane-1.gif<table class="details"><caption>Source File Details for JScrollPane-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>2504</td>
+<td>b5579db2d552556e</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for JScrollPane-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>SizeSequence-1.gif<table class="details"><caption>Source File Details for SizeSequence-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>912</td>
+<td>b449761712d4c2f6</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for SizeSequence-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>groupLayout.1.gif<table class="details"><caption>Source File Details for groupLayout.1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>2913</td>
+<td>b6017f1de6c0c5f3</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for groupLayout.1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>groupLayout.2.gif<table class="details"><caption>Source File Details for groupLayout.2.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>3221</td>
+<td>a09ba7df6437aa9f</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for groupLayout.2.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>groupLayout.3.gif<table class="details"><caption>Source File Details for groupLayout.3.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>3515</td>
+<td>308b232afd4a8176</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for groupLayout.3.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>groupLayout.example.png<table class="details"><caption>Source File Details for groupLayout.example.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>8402</td>
+<td>e1cfb6a18f6cf068</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for groupLayout.example.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>groupLayout.sequential.gif<table class="details"><caption>Source File Details for groupLayout.sequential.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>2624</td>
+<td>c867bc121e693443</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for groupLayout.sequential.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>groupLayout.sequential.horizontal.gif<table class="details"><caption>Source File Details for groupLayout.sequential.horizontal.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>2438</td>
+<td>0e6a818835f9d59a</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for groupLayout.sequential.horizontal.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>groupLayout.sequential.vertical.gif<table class="details"><caption>Source File Details for groupLayout.sequential.vertical.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>2645</td>
+<td>ae4cbe0dc288b04c</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for groupLayout.sequential.vertical.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th>Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></th>
+<td>12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.desktop/javax/swing/FocusManager.html">FocusManager</a></th>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.desktop/javax/swing/JFileChooser.html">JFileChooser</a></th>
+<td>1</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.desktop/javax/swing/JFormattedTextField.html">JFormattedTextField</a></th>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.desktop/javax/swing/JPopupMenu.html">JPopupMenu</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.desktop/javax/swing/JScrollBar.html">JScrollBar</a></th>
+<td>2</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.desktop/javax/swing/JSplitPane.html">JSplitPane</a></th>
+<td>2</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.desktop/javax/swing/Timer.html">Timer</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.desktop/javax/swing/UIManager.html">UIManager</a></th>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>17</td>
+<td>11</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>29</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.JTextPane</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Class&nbsp;JTextPane</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="annotation">@JavaBean(description="A text component that can be marked up with attributes that are graphically represented.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> JTextPane <div class="superclass"><span class="keyword">extends</span> javax.swing.JEditorPane</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JTextPane()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(StyledDocument)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JTextPane(<span class="parameters"><span class="parameter">javax.swing.text.StyledDocument arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addStyle(String,Style)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.Style addStyle(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">javax.swing.text.Style arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="createDefaultEditorKit()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.text.EditorKit createDefaultEditorKit()</div>
+</div>
+</li><li><div class="element" id="getCharacterAttributes()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.AttributeSet getCharacterAttributes()</div>
+</div>
+</li><li><div class="element" id="getInputAttributes()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.MutableAttributeSet getInputAttributes()</div>
+</div>
+</li><li><div class="element" id="getLogicalStyle()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.Style getLogicalStyle()</div>
+</div>
+</li><li><div class="element" id="getParagraphAttributes()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.AttributeSet getParagraphAttributes()</div>
+</div>
+</li><li><div class="element" id="getStyle(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.Style getStyle(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getStyledDocument()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.StyledDocument getStyledDocument()</div>
+</div>
+</li><li><div class="element" id="getStyledEditorKit()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> javax.swing.text.StyledEditorKit getStyledEditorKit()</div>
+</div>
+</li><li><div class="element" id="getUIClassID()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.lang.String getUIClassID()</div>
+</div>
+</li><li><div class="element" id="insertComponent(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> insertComponent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="insertIcon(Icon)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> insertIcon(<span class="parameters"><span class="parameter">javax.swing.Icon arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String paramString()</div>
+</div>
+</li><li><div class="element" id="removeStyle(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeStyle(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="replaceSelection(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> replaceSelection(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setCharacterAttributes(AttributeSet,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCharacterAttributes(<span class="parameters"><span class="parameter">javax.swing.text.AttributeSet arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDocument(Document)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDocument(<span class="parameters"><span class="parameter">javax.swing.text.Document arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEditorKit(EditorKit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setEditorKit(<span class="parameters"><span class="parameter">javax.swing.text.EditorKit arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLogicalStyle(Style)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLogicalStyle(<span class="parameters"><span class="parameter">javax.swing.text.Style arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setParagraphAttributes(AttributeSet,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setParagraphAttributes(<span class="parameters"><span class="parameter">javax.swing.text.AttributeSet arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setStyledDocument(StyledDocument)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setStyledDocument(<span class="parameters"><span class="parameter">javax.swing.text.StyledDocument arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-1062573701638168629<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

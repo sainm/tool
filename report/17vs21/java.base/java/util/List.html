@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface java.base/java.util.List</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/util/package-summary.html">java.util</a></div>
+<h1>Interface&nbsp;List</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> List<span class="typarams">&lt;<span>E</span>&gt;</span> <div class="superinterfaces"><span class="keyword">extends</span> <span class="diffs"><span class="api" title="JDK17"><span>java.util.Collection&lt;E&gt;</span></span><span class="api" title="JDK21">&nbsp;</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21"><span>java.util.SequencedCollection&lt;E&gt;</span></span></span></div>
+</div>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="add(int,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> add(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="add(E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> add(<span class="parameters"><span class="parameter">E arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="addAll(int,Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> addAll(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">extends</span> E</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="addAll(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> addAll(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">extends</span> E</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addFirst(E)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">void</span> addFirst(<span class="parameters"><span class="parameter">E arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addLast(E)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">void</span> addLast(<span class="parameters"><span class="parameter">E arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="clear()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> clear()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="contains(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> contains(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="containsAll(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> containsAll(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="copyOf(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.List&lt;E&gt;</span> copyOf(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">extends</span> E</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="get(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E get(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getFirst()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> E getFirst()</div>
+</div>
+</li><li><div class="element" id="getLast()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> E getLast()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="indexOf(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> indexOf(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isEmpty()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isEmpty()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="iterator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.Iterator&lt;E&gt;</span> iterator()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="lastIndexOf(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> lastIndexOf(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="listIterator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.ListIterator&lt;E&gt;</span> listIterator()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="listIterator(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.ListIterator&lt;E&gt;</span> listIterator(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="of()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.List&lt;E&gt;</span> of()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="of(E[])"><span class="same">&equals;</span><div class="signature"><span class="annotation">@SafeVarargs</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.List&lt;E&gt;</span> of(<span class="parameters"><span class="parameter"><span>E[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="of(E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.List&lt;E&gt;</span> of(<span class="parameters"><span class="parameter">E arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="of(E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.List&lt;E&gt;</span> of(<span class="parameters"><span class="parameter">E arg0</span>, <span class="parameter">E arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="of(E,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.List&lt;E&gt;</span> of(<span class="parameters"><span class="parameter">E arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="of(E,E,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.List&lt;E&gt;</span> of(<span class="parameters"><span class="parameter">E arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span>, <span class="parameter">E arg3</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="of(E,E,E,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.List&lt;E&gt;</span> of(<span class="parameters"><span class="parameter">E arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span>, <span class="parameter">E arg3</span>, <span class="parameter">E arg4</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="of(E,E,E,E,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.List&lt;E&gt;</span> of(<span class="parameters"><span class="parameter">E arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span>, <span class="parameter">E arg3</span>, <span class="parameter">E arg4</span>, <span class="parameter">E arg5</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="of(E,E,E,E,E,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.List&lt;E&gt;</span> of(<span class="parameters"><span class="parameter">E arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span>, <span class="parameter">E arg3</span>, <span class="parameter">E arg4</span>, <span class="parameter">E arg5</span>, <span class="parameter">E arg6</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="of(E,E,E,E,E,E,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.List&lt;E&gt;</span> of(<span class="parameters"><span class="parameter">E arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span>, <span class="parameter">E arg3</span>, <span class="parameter">E arg4</span>, <span class="parameter">E arg5</span>, <span class="parameter">E arg6</span>, <span class="parameter">E arg7</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="of(E,E,E,E,E,E,E,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.List&lt;E&gt;</span> of(<span class="parameters"><span class="parameter">E arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span>, <span class="parameter">E arg3</span>, <span class="parameter">E arg4</span>, <span class="parameter">E arg5</span>, <span class="parameter">E arg6</span>, <span class="parameter">E arg7</span>, <span class="parameter">E arg8</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="of(E,E,E,E,E,E,E,E,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.List&lt;E&gt;</span> of(<span class="parameters"><span class="parameter">E arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span>, <span class="parameter">E arg3</span>, <span class="parameter">E arg4</span>, <span class="parameter">E arg5</span>, <span class="parameter">E arg6</span>, <span class="parameter">E arg7</span>, <span class="parameter">E arg8</span>, <span class="parameter">E arg9</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="remove(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E remove(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="remove(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> remove(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="removeAll(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> removeAll(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeFirst()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> E removeFirst()</div>
+</div>
+</li><li><div class="element" id="removeLast()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> E removeLast()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="replaceAll(UnaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">void</span> replaceAll(<span class="parameters"><span class="parameter"><span>java.util.function.UnaryOperator&lt;E&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="retainAll(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> retainAll(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="reversed()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>java.util.List&lt;E&gt;</span> reversed()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="set(int,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E set(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="size()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> size()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="sort(Comparator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">void</span> sort(<span class="parameters"><span class="parameter"><span>java.util.Comparator&lt;<span>? <span class="keyword">super</span> E</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="spliterator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>java.util.Spliterator&lt;E&gt;</span> spliterator()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="subList(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;E&gt;</span> subList(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toArray()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.lang.Object[]</span> toArray()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toArray(T[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>T[]</span> toArray(<span class="parameters"><span class="parameter"><span>T[]</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th>Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.base/java/util/List.html">List</a></th>
+<td></td>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/List.html#addFirst(E)">addFirst(E)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/List.html#addLast(E)">addLast(E)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/List.html#getFirst()">getFirst()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/List.html#getLast()">getLast()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/List.html#removeFirst()">removeFirst()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/List.html#removeLast()">removeLast()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/List.html#reversed()">reversed()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>7</td>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

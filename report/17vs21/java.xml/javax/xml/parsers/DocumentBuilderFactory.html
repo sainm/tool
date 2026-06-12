@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.xml/javax.xml.parsers.DocumentBuilderFactory</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.xml/module-summary.html">java.xml</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.xml/javax/xml/parsers/package-summary.html">javax.xml.parsers</a></div>
+<h1>Class&nbsp;DocumentBuilderFactory</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> DocumentBuilderFactory <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> DocumentBuilderFactory()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getAttribute(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.Object getAttribute(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li><div class="element" id="getFeature(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> getFeature(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.parsers.ParserConfigurationException</span></div>
+</div>
+</li><li><div class="element" id="getSchema()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.xml.validation.Schema getSchema()</div>
+</div>
+</li><li><div class="element" id="isCoalescing()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isCoalescing()</div>
+</div>
+</li><li><div class="element" id="isExpandEntityReferences()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isExpandEntityReferences()</div>
+</div>
+</li><li><div class="element" id="isIgnoringComments()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isIgnoringComments()</div>
+</div>
+</li><li><div class="element" id="isIgnoringElementContentWhitespace()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isIgnoringElementContentWhitespace()</div>
+</div>
+</li><li><div class="element" id="isNamespaceAware()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isNamespaceAware()</div>
+</div>
+</li><li><div class="element" id="isValidating()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isValidating()</div>
+</div>
+</li><li><div class="element" id="isXIncludeAware()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isXIncludeAware()</div>
+</div>
+</li><li><div class="element" id="newDefaultInstance()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.xml.parsers.DocumentBuilderFactory newDefaultInstance()</div>
+</div>
+</li><li><div class="element" id="newDefaultNSInstance()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.xml.parsers.DocumentBuilderFactory newDefaultNSInstance()</div>
+</div>
+</li><li><div class="element" id="newDocumentBuilder()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.parsers.DocumentBuilder newDocumentBuilder() <span class="throws"><span class="keyword">throws</span> javax.xml.parsers.ParserConfigurationException</span></div>
+</div>
+</li><li><div class="element" id="newInstance()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.xml.parsers.DocumentBuilderFactory newInstance()</div>
+</div>
+</li><li><div class="element" id="newInstance(String,ClassLoader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.xml.parsers.DocumentBuilderFactory newInstance(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.ClassLoader arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="newNSInstance()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.xml.parsers.DocumentBuilderFactory newNSInstance()</div>
+</div>
+</li><li><div class="element" id="newNSInstance(String,ClassLoader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.xml.parsers.DocumentBuilderFactory newNSInstance(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.ClassLoader arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setAttribute(String,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setAttribute(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li><div class="element" id="setCoalescing(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCoalescing(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setExpandEntityReferences(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setExpandEntityReferences(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFeature(String,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setFeature(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.parsers.ParserConfigurationException</span></div>
+</div>
+</li><li><div class="element" id="setIgnoringComments(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setIgnoringComments(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setIgnoringElementContentWhitespace(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setIgnoringElementContentWhitespace(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setNamespaceAware(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setNamespaceAware(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSchema(Schema)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSchema(<span class="parameters"><span class="parameter">javax.xml.validation.Schema arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setValidating(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setValidating(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setXIncludeAware(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setXIncludeAware(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

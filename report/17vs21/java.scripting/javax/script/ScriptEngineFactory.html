@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface java.scripting/javax.script.ScriptEngineFactory</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.scripting/module-summary.html">java.scripting</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.scripting/javax/script/package-summary.html">javax.script</a></div>
+<h1>Interface&nbsp;ScriptEngineFactory</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> ScriptEngineFactory </div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getEngineName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getEngineName()</div>
+</div>
+</li><li><div class="element" id="getEngineVersion()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getEngineVersion()</div>
+</div>
+</li><li><div class="element" id="getExtensions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;java.lang.String&gt;</span> getExtensions()</div>
+</div>
+</li><li><div class="element" id="getLanguageName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getLanguageName()</div>
+</div>
+</li><li><div class="element" id="getLanguageVersion()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getLanguageVersion()</div>
+</div>
+</li><li><div class="element" id="getMethodCallSyntax(String,String,String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getMethodCallSyntax(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter"><span>java.lang.String[]</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getMimeTypes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;java.lang.String&gt;</span> getMimeTypes()</div>
+</div>
+</li><li><div class="element" id="getNames()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;java.lang.String&gt;</span> getNames()</div>
+</div>
+</li><li><div class="element" id="getOutputStatement(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getOutputStatement(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getParameter(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.Object getParameter(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getProgram(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getProgram(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getScriptEngine()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.script.ScriptEngine getScriptEngine()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

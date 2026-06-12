@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface java.sql.rowset/javax.sql.rowset.spi.SyncResolver</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.sql.rowset/module-summary.html">java.sql.rowset</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.sql.rowset/javax/sql/rowset/spi/package-summary.html">javax.sql.rowset.spi</a></div>
+<h1>Interface&nbsp;SyncResolver</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> SyncResolver <div class="superinterfaces"><span class="keyword">extends</span> javax.sql.RowSet</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="DELETE_ROW_CONFLICT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> DELETE_ROW_CONFLICT = 1</div>
+</div>
+</li><li><div class="element" id="INSERT_ROW_CONFLICT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> INSERT_ROW_CONFLICT = 2</div>
+</div>
+</li><li><div class="element" id="NO_ROW_CONFLICT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> NO_ROW_CONFLICT = 3</div>
+</div>
+</li><li><div class="element" id="UPDATE_ROW_CONFLICT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> UPDATE_ROW_CONFLICT = 0</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getConflictValue(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.Object getConflictValue(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getConflictValue(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.Object getConflictValue(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getStatus()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getStatus()</div>
+</div>
+</li><li><div class="element" id="nextConflict()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> nextConflict() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="previousConflict()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> previousConflict() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setResolvedValue(int,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setResolvedValue(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setResolvedValue(String,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setResolvedValue(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

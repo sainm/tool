@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface java.base/java.util.concurrent.Future</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/util/concurrent/package-summary.html">java.util.concurrent</a></div>
+<h1>Interface&nbsp;Future</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> Future<span class="typarams">&lt;<span>V</span>&gt;</span> </div>
+</div>
+<section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/util/concurrent/Future.State.html">State</a></span></li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="cancel(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> cancel(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="exceptionNow()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.Throwable exceptionNow()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="get()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> V get() <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException, java.util.concurrent.ExecutionException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="get(long,TimeUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> V get(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.util.concurrent.TimeUnit arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException, java.util.concurrent.ExecutionException, java.util.concurrent.TimeoutException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="isCancelled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isCancelled()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isDone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isDone()</div>
+</div>
+</li><li><div class="element" id="resultNow()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> V resultNow()</div>
+</div>
+</li><li><div class="element" id="state()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.util.concurrent.Future.State state()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/Future.State.html">Future.State</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/Future.html#exceptionNow()">exceptionNow()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/Future.html#resultNow()">resultNow()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/Future.html#state()">state()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

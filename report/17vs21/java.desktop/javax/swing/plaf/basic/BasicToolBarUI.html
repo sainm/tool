@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.plaf.basic.BasicToolBarUI</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/swing/plaf/basic/package-summary.html">javax.swing.plaf.basic</a></div>
+<h1>Class&nbsp;BasicToolBarUI</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> BasicToolBarUI <div class="superclass"><span class="keyword">extends</span> javax.swing.plaf.ToolBarUI</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.swing.SwingConstants</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html">DockingListener</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DragWindow.html">DragWindow</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicToolBarUI.FrameListener.html">FrameListener</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicToolBarUI.PropertyListener.html">PropertyListener</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicToolBarUI.ToolBarContListener.html">ToolBarContListener</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicToolBarUI.ToolBarFocusListener.html">ToolBarFocusListener</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="constraintBeforeFloating"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String constraintBeforeFloating</div>
+</div>
+</li><li><div class="element" id="dockingBorderColor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Color dockingBorderColor</div>
+</div>
+</li><li><div class="element" id="dockingColor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Color dockingColor</div>
+</div>
+</li><li><div class="element" id="dockingListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.MouseInputListener dockingListener</div>
+</div>
+</li><li><div class="element" id="downKey"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> javax.swing.KeyStroke downKey</div>
+</div>
+</li><li><div class="element" id="dragWindow"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.plaf.basic.BasicToolBarUI.DragWindow dragWindow</div>
+</div>
+</li><li><div class="element" id="floatingBorderColor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Color floatingBorderColor</div>
+</div>
+</li><li><div class="element" id="floatingColor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Color floatingColor</div>
+</div>
+</li><li><div class="element" id="focusedCompIndex"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> focusedCompIndex</div>
+</div>
+</li><li><div class="element" id="leftKey"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> javax.swing.KeyStroke leftKey</div>
+</div>
+</li><li><div class="element" id="propertyListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.beans.PropertyChangeListener propertyListener</div>
+</div>
+</li><li><div class="element" id="rightKey"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> javax.swing.KeyStroke rightKey</div>
+</div>
+</li><li><div class="element" id="toolBar"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JToolBar toolBar</div>
+</div>
+</li><li><div class="element" id="toolBarContListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.ContainerListener toolBarContListener</div>
+</div>
+</li><li><div class="element" id="toolBarFocusListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.FocusListener toolBarFocusListener</div>
+</div>
+</li><li><div class="element" id="upKey"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> javax.swing.KeyStroke upKey</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BasicToolBarUI()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="canDock(Component,Point)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> canDock(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.awt.Point arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="createDockingListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.MouseInputListener createDockingListener()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="createDragWindow(JToolBar)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.plaf.basic.BasicToolBarUI.DragWindow createDragWindow(<span class="parameters"><span class="parameter">javax.swing.JToolBar arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createFloatingFrame(JToolBar)"><span class="diff">&ne;</span><div class="signature"><span class="annotation">@Deprecated(forRemoval = <span class="diffs"><span class="api" title="JDK17">false</span><span class="api" title="JDK21">true</span></span>, since = "17")</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JFrame createFloatingFrame(<span class="parameters"><span class="parameter">javax.swing.JToolBar arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="createFloatingWindow(JToolBar)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.RootPaneContainer createFloatingWindow(<span class="parameters"><span class="parameter">javax.swing.JToolBar arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="createFrameListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.WindowListener createFrameListener()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="createNonRolloverBorder()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.border.Border createNonRolloverBorder()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="createPropertyListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.beans.PropertyChangeListener createPropertyListener()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="createRolloverBorder()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.border.Border createRolloverBorder()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="createToolBarContListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.ContainerListener createToolBarContListener()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="createToolBarFocusListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.FocusListener createToolBarFocusListener()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="createUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.plaf.ComponentUI createUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="dragTo(Point,Point)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> dragTo(<span class="parameters"><span class="parameter">java.awt.Point arg0</span>, <span class="parameter">java.awt.Point arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="floatAt(Point,Point)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> floatAt(<span class="parameters"><span class="parameter">java.awt.Point arg0</span>, <span class="parameter">java.awt.Point arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDockingColor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getDockingColor()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFloatingColor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getFloatingColor()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getNonRolloverBorder(AbstractButton)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.border.Border getNonRolloverBorder(<span class="parameters"><span class="parameter">javax.swing.AbstractButton arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getRolloverBorder(AbstractButton)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.border.Border getRolloverBorder(<span class="parameters"><span class="parameter">javax.swing.AbstractButton arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="installComponents()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installComponents()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="installDefaults()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installDefaults()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="installKeyboardActions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installKeyboardActions()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="installListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installListeners()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="installNonRolloverBorders(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installNonRolloverBorders(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="installNormalBorders(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installNormalBorders(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="installRolloverBorders(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installRolloverBorders(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="installUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> installUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isFloating()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isFloating()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isRolloverBorders()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isRolloverBorders()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="navigateFocusedComp(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> navigateFocusedComp(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="paintDragWindow(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintDragWindow(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setBorderToNonRollover(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setBorderToNonRollover(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setBorderToNormal(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setBorderToNormal(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setBorderToRollover(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setBorderToRollover(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setDockingColor(Color)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDockingColor(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setFloating(boolean,Point)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFloating(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span>, <span class="parameter">java.awt.Point arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setFloatingColor(Color)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFloatingColor(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setFloatingLocation(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFloatingLocation(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setOrientation(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setOrientation(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setRolloverBorders(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRolloverBorders(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="uninstallComponents()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallComponents()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="uninstallDefaults()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallDefaults()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="uninstallKeyboardActions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallKeyboardActions()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="uninstallListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallListeners()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="uninstallUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> uninstallUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th class="allZero">Added</th>
+<th>Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#createFloatingFrame(JToolBar)">createFloatingFrame(JToolBar)</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

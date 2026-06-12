@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface java.base/javax.net.ssl.SSLSessionContext</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/javax/net/ssl/package-summary.html">javax.net.ssl</a></div>
+<h1>Interface&nbsp;SSLSessionContext</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> SSLSessionContext </div>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="getIds()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.Enumeration&lt;<span><span class="keyword">byte</span>[]</span>&gt;</span> getIds()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getSession(byte[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.net.ssl.SSLSession getSession(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getSessionCacheSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getSessionCacheSize()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getSessionTimeout()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getSessionTimeout()</div>
+</div>
+</li><li><div class="element" id="setSessionCacheSize(int)"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setSessionCacheSize(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> <span class="diffs"><span class="api" title="JDK17">java.lang.IllegalArgumentException</span><span class="api" title="JDK21">&nbsp;</span></span></span></div>
+</div>
+</li><li><div class="element" id="setSessionTimeout(int)"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setSessionTimeout(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> <span class="diffs"><span class="api" title="JDK17">java.lang.IllegalArgumentException</span><span class="api" title="JDK21">&nbsp;</span></span></span></div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th class="allZero">Added</th>
+<th>Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/javax/net/ssl/SSLSessionContext.html#setSessionCacheSize(int)">setSessionCacheSize(int)</a></th>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/javax/net/ssl/SSLSessionContext.html#setSessionTimeout(int)">setSessionTimeout(int)</a></th>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td></td>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

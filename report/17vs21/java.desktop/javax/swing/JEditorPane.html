@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.JEditorPane</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Class&nbsp;JEditorPane</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="annotation">@JavaBean(defaultProperty="UIClassID"description="A text component to edit various types of content.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> JEditorPane <div class="superclass"><span class="keyword">extends</span> javax.swing.text.JTextComponent</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JEditorPane.AccessibleJEditorPane.html">AccessibleJEditorPane</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JEditorPane.AccessibleJEditorPaneHTML.html">AccessibleJEditorPaneHTML</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JEditorPane.JEditorPaneAccessibleHypertextSupport.html">JEditorPaneAccessibleHypertextSupport</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="HONOR_DISPLAY_PROPERTIES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String HONOR_DISPLAY_PROPERTIES = "JEditorPane.honorDisplayProperties"</div>
+</div>
+</li><li><div class="element" id="W3C_LENGTH_UNITS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String W3C_LENGTH_UNITS = "JEditorPane.w3cLengthUnits"</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JEditorPane()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JEditorPane(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JEditorPane(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(URL)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JEditorPane(<span class="parameters"><span class="parameter">java.net.URL arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addHyperlinkListener(HyperlinkListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addHyperlinkListener(<span class="parameters"><span class="parameter">javax.swing.event.HyperlinkListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createDefaultEditorKit()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.text.EditorKit createDefaultEditorKit()</div>
+</div>
+</li><li><div class="element" id="createEditorKitForContentType(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.text.EditorKit createEditorKitForContentType(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fireHyperlinkUpdate(HyperlinkEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> fireHyperlinkUpdate(<span class="parameters"><span class="parameter">javax.swing.event.HyperlinkEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAccessibleContext()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.accessibility.AccessibleContext getAccessibleContext()</div>
+</div>
+</li><li><div class="element" id="getContentType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.String getContentType()</div>
+</div>
+</li><li><div class="element" id="getEditorKit()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.EditorKit getEditorKit()</div>
+</div>
+</li><li><div class="element" id="getEditorKitClassNameForContentType(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String getEditorKitClassNameForContentType(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getEditorKitForContentType(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.EditorKit getEditorKitForContentType(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getHyperlinkListeners()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.event.HyperlinkListener[]</span> getHyperlinkListeners()</div>
+</div>
+</li><li><div class="element" id="getPage()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.net.URL getPage()</div>
+</div>
+</li><li><div class="element" id="getPreferredSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getPreferredSize()</div>
+</div>
+</li><li><div class="element" id="getScrollableTracksViewportHeight()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getScrollableTracksViewportHeight()</div>
+</div>
+</li><li><div class="element" id="getScrollableTracksViewportWidth()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getScrollableTracksViewportWidth()</div>
+</div>
+</li><li><div class="element" id="getStream(URL)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.io.InputStream getStream(<span class="parameters"><span class="parameter">java.net.URL arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="getText()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getText()</div>
+</div>
+</li><li><div class="element" id="getUIClassID()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.lang.String getUIClassID()</div>
+</div>
+</li><li><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String paramString()</div>
+</div>
+</li><li><div class="element" id="read(InputStream,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> read(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="registerEditorKitForContentType(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> registerEditorKitForContentType(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="registerEditorKitForContentType(String,String,ClassLoader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> registerEditorKitForContentType(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.ClassLoader arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeHyperlinkListener(HyperlinkListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeHyperlinkListener(<span class="parameters"><span class="parameter">javax.swing.event.HyperlinkListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="replaceSelection(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> replaceSelection(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="scrollToReference(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> scrollToReference(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setContentType(String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="the type of content")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setContentType(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEditorKit(EditorKit)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=truedescription="the currently installed kit for handling content")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setEditorKit(<span class="parameters"><span class="parameter">javax.swing.text.EditorKit arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEditorKitForContentType(String,EditorKit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setEditorKitForContentType(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">javax.swing.text.EditorKit arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setPage(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setPage(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="setPage(URL)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=truedescription="the URL used to set content")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setPage(<span class="parameters"><span class="parameter">java.net.URL arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="setText(String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="the text of this component")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setText(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-2177751434425293255<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;isUserSetEditorKit</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.text.EditorKit&nbsp;kit</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>javax.swing.SwingWorker&lt;java.net.URL, java.lang.Object&gt;</span>&nbsp;pageLoader</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.util.Hashtable&lt;java.lang.String, java.lang.Object&gt;</span>&nbsp;pageProperties</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.util.Hashtable&lt;java.lang.String, javax.swing.text.EditorKit&gt;</span>&nbsp;typeHandlers</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

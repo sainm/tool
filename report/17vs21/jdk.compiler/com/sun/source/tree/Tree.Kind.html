@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: enum jdk.compiler/com.sun.source.tree.Tree.Kind</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../jdk.compiler/module-summary.html">jdk.compiler</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../jdk.compiler/com/sun/source/tree/package-summary.html">com.sun.source.tree</a></div>
+<h1>Enum&nbsp;Tree.Kind</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">enum</span> Kind <div class="superclass"><span class="keyword">extends</span> <span>java.lang.Enum&lt;com.sun.source.tree.Tree.Kind&gt;</span></div>
+</div>
+</div>
+<section class="enclosed"><h2>Enum Constants</h2>
+<ul><li class="unchanged"><div class="element" id="AND"><span class="same">&equals;</span><div class="signature">AND</div>
+</div>
+</li><li class="unchanged"><div class="element" id="AND_ASSIGNMENT"><span class="same">&equals;</span><div class="signature">AND_ASSIGNMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ANNOTATED_TYPE"><span class="same">&equals;</span><div class="signature">ANNOTATED_TYPE</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ANNOTATION"><span class="same">&equals;</span><div class="signature">ANNOTATION</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ANNOTATION_TYPE"><span class="same">&equals;</span><div class="signature">ANNOTATION_TYPE</div>
+</div>
+</li><li><div class="element" id="ANY_PATTERN"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature">ANY_PATTERN</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ARRAY_ACCESS"><span class="same">&equals;</span><div class="signature">ARRAY_ACCESS</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ARRAY_TYPE"><span class="same">&equals;</span><div class="signature">ARRAY_TYPE</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ASSERT"><span class="same">&equals;</span><div class="signature">ASSERT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ASSIGNMENT"><span class="same">&equals;</span><div class="signature">ASSIGNMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="BINDING_PATTERN"><span class="same">&equals;</span><div class="signature">BINDING_PATTERN</div>
+</div>
+</li><li class="unchanged"><div class="element" id="BITWISE_COMPLEMENT"><span class="same">&equals;</span><div class="signature">BITWISE_COMPLEMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="BLOCK"><span class="same">&equals;</span><div class="signature">BLOCK</div>
+</div>
+</li><li class="unchanged"><div class="element" id="BOOLEAN_LITERAL"><span class="same">&equals;</span><div class="signature">BOOLEAN_LITERAL</div>
+</div>
+</li><li class="unchanged"><div class="element" id="BREAK"><span class="same">&equals;</span><div class="signature">BREAK</div>
+</div>
+</li><li class="unchanged"><div class="element" id="CASE"><span class="same">&equals;</span><div class="signature">CASE</div>
+</div>
+</li><li class="unchanged"><div class="element" id="CATCH"><span class="same">&equals;</span><div class="signature">CATCH</div>
+</div>
+</li><li class="unchanged"><div class="element" id="CHAR_LITERAL"><span class="same">&equals;</span><div class="signature">CHAR_LITERAL</div>
+</div>
+</li><li class="unchanged"><div class="element" id="CLASS"><span class="same">&equals;</span><div class="signature">CLASS</div>
+</div>
+</li><li class="unchanged"><div class="element" id="COMPILATION_UNIT"><span class="same">&equals;</span><div class="signature">COMPILATION_UNIT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="CONDITIONAL_AND"><span class="same">&equals;</span><div class="signature">CONDITIONAL_AND</div>
+</div>
+</li><li class="unchanged"><div class="element" id="CONDITIONAL_EXPRESSION"><span class="same">&equals;</span><div class="signature">CONDITIONAL_EXPRESSION</div>
+</div>
+</li><li class="unchanged"><div class="element" id="CONDITIONAL_OR"><span class="same">&equals;</span><div class="signature">CONDITIONAL_OR</div>
+</div>
+</li><li><div class="element" id="CONSTANT_CASE_LABEL"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature">CONSTANT_CASE_LABEL</div>
+</div>
+</li><li class="unchanged"><div class="element" id="CONTINUE"><span class="same">&equals;</span><div class="signature">CONTINUE</div>
+</div>
+</li><li><div class="element" id="DECONSTRUCTION_PATTERN"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature">DECONSTRUCTION_PATTERN</div>
+</div>
+</li><li class="unchanged"><div class="element" id="DEFAULT_CASE_LABEL"><span class="same">&equals;</span><div class="signature">DEFAULT_CASE_LABEL</div>
+</div>
+</li><li class="unchanged"><div class="element" id="DIVIDE"><span class="same">&equals;</span><div class="signature">DIVIDE</div>
+</div>
+</li><li class="unchanged"><div class="element" id="DIVIDE_ASSIGNMENT"><span class="same">&equals;</span><div class="signature">DIVIDE_ASSIGNMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="DOUBLE_LITERAL"><span class="same">&equals;</span><div class="signature">DOUBLE_LITERAL</div>
+</div>
+</li><li class="unchanged"><div class="element" id="DO_WHILE_LOOP"><span class="same">&equals;</span><div class="signature">DO_WHILE_LOOP</div>
+</div>
+</li><li class="unchanged"><div class="element" id="EMPTY_STATEMENT"><span class="same">&equals;</span><div class="signature">EMPTY_STATEMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ENHANCED_FOR_LOOP"><span class="same">&equals;</span><div class="signature">ENHANCED_FOR_LOOP</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ENUM"><span class="same">&equals;</span><div class="signature">ENUM</div>
+</div>
+</li><li class="unchanged"><div class="element" id="EQUAL_TO"><span class="same">&equals;</span><div class="signature">EQUAL_TO</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ERRONEOUS"><span class="same">&equals;</span><div class="signature">ERRONEOUS</div>
+</div>
+</li><li class="unchanged"><div class="element" id="EXPORTS"><span class="same">&equals;</span><div class="signature">EXPORTS</div>
+</div>
+</li><li class="unchanged"><div class="element" id="EXPRESSION_STATEMENT"><span class="same">&equals;</span><div class="signature">EXPRESSION_STATEMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="EXTENDS_WILDCARD"><span class="same">&equals;</span><div class="signature">EXTENDS_WILDCARD</div>
+</div>
+</li><li class="unchanged"><div class="element" id="FLOAT_LITERAL"><span class="same">&equals;</span><div class="signature">FLOAT_LITERAL</div>
+</div>
+</li><li class="unchanged"><div class="element" id="FOR_LOOP"><span class="same">&equals;</span><div class="signature">FOR_LOOP</div>
+</div>
+</li><li class="unchanged"><div class="element" id="GREATER_THAN"><span class="same">&equals;</span><div class="signature">GREATER_THAN</div>
+</div>
+</li><li class="unchanged"><div class="element" id="GREATER_THAN_EQUAL"><span class="same">&equals;</span><div class="signature">GREATER_THAN_EQUAL</div>
+</div>
+</li><li><div class="element" id="GUARDED_PATTERN"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK17; not in: JDK21.</span><div class="signature">GUARDED_PATTERN</div>
+</div>
+</li><li class="unchanged"><div class="element" id="IDENTIFIER"><span class="same">&equals;</span><div class="signature">IDENTIFIER</div>
+</div>
+</li><li class="unchanged"><div class="element" id="IF"><span class="same">&equals;</span><div class="signature">IF</div>
+</div>
+</li><li class="unchanged"><div class="element" id="IMPORT"><span class="same">&equals;</span><div class="signature">IMPORT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="INSTANCE_OF"><span class="same">&equals;</span><div class="signature">INSTANCE_OF</div>
+</div>
+</li><li class="unchanged"><div class="element" id="INTERFACE"><span class="same">&equals;</span><div class="signature">INTERFACE</div>
+</div>
+</li><li class="unchanged"><div class="element" id="INTERSECTION_TYPE"><span class="same">&equals;</span><div class="signature">INTERSECTION_TYPE</div>
+</div>
+</li><li class="unchanged"><div class="element" id="INT_LITERAL"><span class="same">&equals;</span><div class="signature">INT_LITERAL</div>
+</div>
+</li><li class="unchanged"><div class="element" id="LABELED_STATEMENT"><span class="same">&equals;</span><div class="signature">LABELED_STATEMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="LAMBDA_EXPRESSION"><span class="same">&equals;</span><div class="signature">LAMBDA_EXPRESSION</div>
+</div>
+</li><li class="unchanged"><div class="element" id="LEFT_SHIFT"><span class="same">&equals;</span><div class="signature">LEFT_SHIFT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="LEFT_SHIFT_ASSIGNMENT"><span class="same">&equals;</span><div class="signature">LEFT_SHIFT_ASSIGNMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="LESS_THAN"><span class="same">&equals;</span><div class="signature">LESS_THAN</div>
+</div>
+</li><li class="unchanged"><div class="element" id="LESS_THAN_EQUAL"><span class="same">&equals;</span><div class="signature">LESS_THAN_EQUAL</div>
+</div>
+</li><li class="unchanged"><div class="element" id="LOGICAL_COMPLEMENT"><span class="same">&equals;</span><div class="signature">LOGICAL_COMPLEMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="LONG_LITERAL"><span class="same">&equals;</span><div class="signature">LONG_LITERAL</div>
+</div>
+</li><li class="unchanged"><div class="element" id="MEMBER_REFERENCE"><span class="same">&equals;</span><div class="signature">MEMBER_REFERENCE</div>
+</div>
+</li><li class="unchanged"><div class="element" id="MEMBER_SELECT"><span class="same">&equals;</span><div class="signature">MEMBER_SELECT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="METHOD"><span class="same">&equals;</span><div class="signature">METHOD</div>
+</div>
+</li><li class="unchanged"><div class="element" id="METHOD_INVOCATION"><span class="same">&equals;</span><div class="signature">METHOD_INVOCATION</div>
+</div>
+</li><li class="unchanged"><div class="element" id="MINUS"><span class="same">&equals;</span><div class="signature">MINUS</div>
+</div>
+</li><li class="unchanged"><div class="element" id="MINUS_ASSIGNMENT"><span class="same">&equals;</span><div class="signature">MINUS_ASSIGNMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="MODIFIERS"><span class="same">&equals;</span><div class="signature">MODIFIERS</div>
+</div>
+</li><li class="unchanged"><div class="element" id="MODULE"><span class="same">&equals;</span><div class="signature">MODULE</div>
+</div>
+</li><li class="unchanged"><div class="element" id="MULTIPLY"><span class="same">&equals;</span><div class="signature">MULTIPLY</div>
+</div>
+</li><li class="unchanged"><div class="element" id="MULTIPLY_ASSIGNMENT"><span class="same">&equals;</span><div class="signature">MULTIPLY_ASSIGNMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="NEW_ARRAY"><span class="same">&equals;</span><div class="signature">NEW_ARRAY</div>
+</div>
+</li><li class="unchanged"><div class="element" id="NEW_CLASS"><span class="same">&equals;</span><div class="signature">NEW_CLASS</div>
+</div>
+</li><li class="unchanged"><div class="element" id="NOT_EQUAL_TO"><span class="same">&equals;</span><div class="signature">NOT_EQUAL_TO</div>
+</div>
+</li><li class="unchanged"><div class="element" id="NULL_LITERAL"><span class="same">&equals;</span><div class="signature">NULL_LITERAL</div>
+</div>
+</li><li class="unchanged"><div class="element" id="OPENS"><span class="same">&equals;</span><div class="signature">OPENS</div>
+</div>
+</li><li class="unchanged"><div class="element" id="OR"><span class="same">&equals;</span><div class="signature">OR</div>
+</div>
+</li><li class="unchanged"><div class="element" id="OR_ASSIGNMENT"><span class="same">&equals;</span><div class="signature">OR_ASSIGNMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="OTHER"><span class="same">&equals;</span><div class="signature">OTHER</div>
+</div>
+</li><li class="unchanged"><div class="element" id="PACKAGE"><span class="same">&equals;</span><div class="signature">PACKAGE</div>
+</div>
+</li><li class="unchanged"><div class="element" id="PARAMETERIZED_TYPE"><span class="same">&equals;</span><div class="signature">PARAMETERIZED_TYPE</div>
+</div>
+</li><li class="unchanged"><div class="element" id="PARENTHESIZED"><span class="same">&equals;</span><div class="signature">PARENTHESIZED</div>
+</div>
+</li><li><div class="element" id="PARENTHESIZED_PATTERN"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK17; not in: JDK21.</span><div class="signature">PARENTHESIZED_PATTERN</div>
+</div>
+</li><li><div class="element" id="PATTERN_CASE_LABEL"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature">PATTERN_CASE_LABEL</div>
+</div>
+</li><li class="unchanged"><div class="element" id="PLUS"><span class="same">&equals;</span><div class="signature">PLUS</div>
+</div>
+</li><li class="unchanged"><div class="element" id="PLUS_ASSIGNMENT"><span class="same">&equals;</span><div class="signature">PLUS_ASSIGNMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="POSTFIX_DECREMENT"><span class="same">&equals;</span><div class="signature">POSTFIX_DECREMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="POSTFIX_INCREMENT"><span class="same">&equals;</span><div class="signature">POSTFIX_INCREMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="PREFIX_DECREMENT"><span class="same">&equals;</span><div class="signature">PREFIX_DECREMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="PREFIX_INCREMENT"><span class="same">&equals;</span><div class="signature">PREFIX_INCREMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="PRIMITIVE_TYPE"><span class="same">&equals;</span><div class="signature">PRIMITIVE_TYPE</div>
+</div>
+</li><li class="unchanged"><div class="element" id="PROVIDES"><span class="same">&equals;</span><div class="signature">PROVIDES</div>
+</div>
+</li><li class="unchanged"><div class="element" id="RECORD"><span class="same">&equals;</span><div class="signature">RECORD</div>
+</div>
+</li><li class="unchanged"><div class="element" id="REMAINDER"><span class="same">&equals;</span><div class="signature">REMAINDER</div>
+</div>
+</li><li class="unchanged"><div class="element" id="REMAINDER_ASSIGNMENT"><span class="same">&equals;</span><div class="signature">REMAINDER_ASSIGNMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="REQUIRES"><span class="same">&equals;</span><div class="signature">REQUIRES</div>
+</div>
+</li><li class="unchanged"><div class="element" id="RETURN"><span class="same">&equals;</span><div class="signature">RETURN</div>
+</div>
+</li><li class="unchanged"><div class="element" id="RIGHT_SHIFT"><span class="same">&equals;</span><div class="signature">RIGHT_SHIFT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="RIGHT_SHIFT_ASSIGNMENT"><span class="same">&equals;</span><div class="signature">RIGHT_SHIFT_ASSIGNMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="STRING_LITERAL"><span class="same">&equals;</span><div class="signature">STRING_LITERAL</div>
+</div>
+</li><li class="unchanged"><div class="element" id="SUPER_WILDCARD"><span class="same">&equals;</span><div class="signature">SUPER_WILDCARD</div>
+</div>
+</li><li class="unchanged"><div class="element" id="SWITCH"><span class="same">&equals;</span><div class="signature">SWITCH</div>
+</div>
+</li><li class="unchanged"><div class="element" id="SWITCH_EXPRESSION"><span class="same">&equals;</span><div class="signature">SWITCH_EXPRESSION</div>
+</div>
+</li><li class="unchanged"><div class="element" id="SYNCHRONIZED"><span class="same">&equals;</span><div class="signature">SYNCHRONIZED</div>
+</div>
+</li><li><div class="element" id="TEMPLATE"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature">TEMPLATE</div>
+</div>
+</li><li class="unchanged"><div class="element" id="THROW"><span class="same">&equals;</span><div class="signature">THROW</div>
+</div>
+</li><li class="unchanged"><div class="element" id="TRY"><span class="same">&equals;</span><div class="signature">TRY</div>
+</div>
+</li><li class="unchanged"><div class="element" id="TYPE_ANNOTATION"><span class="same">&equals;</span><div class="signature">TYPE_ANNOTATION</div>
+</div>
+</li><li class="unchanged"><div class="element" id="TYPE_CAST"><span class="same">&equals;</span><div class="signature">TYPE_CAST</div>
+</div>
+</li><li class="unchanged"><div class="element" id="TYPE_PARAMETER"><span class="same">&equals;</span><div class="signature">TYPE_PARAMETER</div>
+</div>
+</li><li class="unchanged"><div class="element" id="UNARY_MINUS"><span class="same">&equals;</span><div class="signature">UNARY_MINUS</div>
+</div>
+</li><li class="unchanged"><div class="element" id="UNARY_PLUS"><span class="same">&equals;</span><div class="signature">UNARY_PLUS</div>
+</div>
+</li><li class="unchanged"><div class="element" id="UNBOUNDED_WILDCARD"><span class="same">&equals;</span><div class="signature">UNBOUNDED_WILDCARD</div>
+</div>
+</li><li class="unchanged"><div class="element" id="UNION_TYPE"><span class="same">&equals;</span><div class="signature">UNION_TYPE</div>
+</div>
+</li><li class="unchanged"><div class="element" id="UNSIGNED_RIGHT_SHIFT"><span class="same">&equals;</span><div class="signature">UNSIGNED_RIGHT_SHIFT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="UNSIGNED_RIGHT_SHIFT_ASSIGNMENT"><span class="same">&equals;</span><div class="signature">UNSIGNED_RIGHT_SHIFT_ASSIGNMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="USES"><span class="same">&equals;</span><div class="signature">USES</div>
+</div>
+</li><li class="unchanged"><div class="element" id="VARIABLE"><span class="same">&equals;</span><div class="signature">VARIABLE</div>
+</div>
+</li><li class="unchanged"><div class="element" id="WHILE_LOOP"><span class="same">&equals;</span><div class="signature">WHILE_LOOP</div>
+</div>
+</li><li class="unchanged"><div class="element" id="XOR"><span class="same">&equals;</span><div class="signature">XOR</div>
+</div>
+</li><li class="unchanged"><div class="element" id="XOR_ASSIGNMENT"><span class="same">&equals;</span><div class="signature">XOR_ASSIGNMENT</div>
+</div>
+</li><li class="unchanged"><div class="element" id="YIELD"><span class="same">&equals;</span><div class="signature">YIELD</div>
+</div>
+</li></ul>
+</section>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="asInterface()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;<span>? <span class="keyword">extends</span> com.sun.source.tree.Tree</span>&gt;</span> asInterface()</div>
+</div>
+</li><li><div class="element" id="valueOf(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> com.sun.source.tree.Tree.Kind valueOf(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="values()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>com.sun.source.tree.Tree.Kind[]</span> values()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/tree/Tree.Kind.html#ANY_PATTERN">ANY_PATTERN</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/tree/Tree.Kind.html#CONSTANT_CASE_LABEL">CONSTANT_CASE_LABEL</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/tree/Tree.Kind.html#DECONSTRUCTION_PATTERN">DECONSTRUCTION_PATTERN</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/tree/Tree.Kind.html#GUARDED_PATTERN">GUARDED_PATTERN</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/tree/Tree.Kind.html#PARENTHESIZED_PATTERN">PARENTHESIZED_PATTERN</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/tree/Tree.Kind.html#PATTERN_CASE_LABEL">PATTERN_CASE_LABEL</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/tree/Tree.Kind.html#TEMPLATE">TEMPLATE</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>5</td>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

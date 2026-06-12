@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.sql/javax.sql.RowSetMetaData</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.sql/module-summary.html">java.sql</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.sql/javax/sql/package-summary.html">javax.sql</a></div>
+<h1>Interface&nbsp;RowSetMetaData</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> RowSetMetaData <div class="superinterfaces"><span class="keyword">extends</span> java.sql.ResultSetMetaData</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="setAutoIncrement(int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setAutoIncrement(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setCaseSensitive(int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setCaseSensitive(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setCatalogName(int,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setCatalogName(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setColumnCount(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setColumnCount(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setColumnDisplaySize(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setColumnDisplaySize(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setColumnLabel(int,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setColumnLabel(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setColumnName(int,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setColumnName(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setColumnType(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setColumnType(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setColumnTypeName(int,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setColumnTypeName(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setCurrency(int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setCurrency(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setNullable(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setNullable(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setPrecision(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setPrecision(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setScale(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setScale(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setSchemaName(int,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setSchemaName(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setSearchable(int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setSearchable(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setSigned(int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setSigned(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setTableName(int,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setTableName(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

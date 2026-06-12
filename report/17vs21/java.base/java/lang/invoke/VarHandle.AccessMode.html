@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: enum java.base/java.lang.invoke.VarHandle.AccessMode</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/lang/invoke/package-summary.html">java.lang.invoke</a></div>
+<h1>Enum&nbsp;VarHandle.AccessMode</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">enum</span> AccessMode <div class="superclass"><span class="keyword">extends</span> <span>java.lang.Enum&lt;java.lang.invoke.VarHandle.AccessMode&gt;</span></div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Enum Constants</h2>
+<ul><li><div class="element" id="COMPARE_AND_EXCHANGE"><span class="same">&equals;</span><div class="signature">COMPARE_AND_EXCHANGE</div>
+</div>
+</li><li><div class="element" id="COMPARE_AND_EXCHANGE_ACQUIRE"><span class="same">&equals;</span><div class="signature">COMPARE_AND_EXCHANGE_ACQUIRE</div>
+</div>
+</li><li><div class="element" id="COMPARE_AND_EXCHANGE_RELEASE"><span class="same">&equals;</span><div class="signature">COMPARE_AND_EXCHANGE_RELEASE</div>
+</div>
+</li><li><div class="element" id="COMPARE_AND_SET"><span class="same">&equals;</span><div class="signature">COMPARE_AND_SET</div>
+</div>
+</li><li><div class="element" id="GET"><span class="same">&equals;</span><div class="signature">GET</div>
+</div>
+</li><li><div class="element" id="GET_ACQUIRE"><span class="same">&equals;</span><div class="signature">GET_ACQUIRE</div>
+</div>
+</li><li><div class="element" id="GET_AND_ADD"><span class="same">&equals;</span><div class="signature">GET_AND_ADD</div>
+</div>
+</li><li><div class="element" id="GET_AND_ADD_ACQUIRE"><span class="same">&equals;</span><div class="signature">GET_AND_ADD_ACQUIRE</div>
+</div>
+</li><li><div class="element" id="GET_AND_ADD_RELEASE"><span class="same">&equals;</span><div class="signature">GET_AND_ADD_RELEASE</div>
+</div>
+</li><li><div class="element" id="GET_AND_BITWISE_AND"><span class="same">&equals;</span><div class="signature">GET_AND_BITWISE_AND</div>
+</div>
+</li><li><div class="element" id="GET_AND_BITWISE_AND_ACQUIRE"><span class="same">&equals;</span><div class="signature">GET_AND_BITWISE_AND_ACQUIRE</div>
+</div>
+</li><li><div class="element" id="GET_AND_BITWISE_AND_RELEASE"><span class="same">&equals;</span><div class="signature">GET_AND_BITWISE_AND_RELEASE</div>
+</div>
+</li><li><div class="element" id="GET_AND_BITWISE_OR"><span class="same">&equals;</span><div class="signature">GET_AND_BITWISE_OR</div>
+</div>
+</li><li><div class="element" id="GET_AND_BITWISE_OR_ACQUIRE"><span class="same">&equals;</span><div class="signature">GET_AND_BITWISE_OR_ACQUIRE</div>
+</div>
+</li><li><div class="element" id="GET_AND_BITWISE_OR_RELEASE"><span class="same">&equals;</span><div class="signature">GET_AND_BITWISE_OR_RELEASE</div>
+</div>
+</li><li><div class="element" id="GET_AND_BITWISE_XOR"><span class="same">&equals;</span><div class="signature">GET_AND_BITWISE_XOR</div>
+</div>
+</li><li><div class="element" id="GET_AND_BITWISE_XOR_ACQUIRE"><span class="same">&equals;</span><div class="signature">GET_AND_BITWISE_XOR_ACQUIRE</div>
+</div>
+</li><li><div class="element" id="GET_AND_BITWISE_XOR_RELEASE"><span class="same">&equals;</span><div class="signature">GET_AND_BITWISE_XOR_RELEASE</div>
+</div>
+</li><li><div class="element" id="GET_AND_SET"><span class="same">&equals;</span><div class="signature">GET_AND_SET</div>
+</div>
+</li><li><div class="element" id="GET_AND_SET_ACQUIRE"><span class="same">&equals;</span><div class="signature">GET_AND_SET_ACQUIRE</div>
+</div>
+</li><li><div class="element" id="GET_AND_SET_RELEASE"><span class="same">&equals;</span><div class="signature">GET_AND_SET_RELEASE</div>
+</div>
+</li><li><div class="element" id="GET_OPAQUE"><span class="same">&equals;</span><div class="signature">GET_OPAQUE</div>
+</div>
+</li><li><div class="element" id="GET_VOLATILE"><span class="same">&equals;</span><div class="signature">GET_VOLATILE</div>
+</div>
+</li><li><div class="element" id="SET"><span class="same">&equals;</span><div class="signature">SET</div>
+</div>
+</li><li><div class="element" id="SET_OPAQUE"><span class="same">&equals;</span><div class="signature">SET_OPAQUE</div>
+</div>
+</li><li><div class="element" id="SET_RELEASE"><span class="same">&equals;</span><div class="signature">SET_RELEASE</div>
+</div>
+</li><li><div class="element" id="SET_VOLATILE"><span class="same">&equals;</span><div class="signature">SET_VOLATILE</div>
+</div>
+</li><li><div class="element" id="WEAK_COMPARE_AND_SET"><span class="same">&equals;</span><div class="signature">WEAK_COMPARE_AND_SET</div>
+</div>
+</li><li><div class="element" id="WEAK_COMPARE_AND_SET_ACQUIRE"><span class="same">&equals;</span><div class="signature">WEAK_COMPARE_AND_SET_ACQUIRE</div>
+</div>
+</li><li><div class="element" id="WEAK_COMPARE_AND_SET_PLAIN"><span class="same">&equals;</span><div class="signature">WEAK_COMPARE_AND_SET_PLAIN</div>
+</div>
+</li><li><div class="element" id="WEAK_COMPARE_AND_SET_RELEASE"><span class="same">&equals;</span><div class="signature">WEAK_COMPARE_AND_SET_RELEASE</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="methodName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String methodName()</div>
+</div>
+</li><li><div class="element" id="valueFromMethodName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.invoke.VarHandle.AccessMode valueFromMethodName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="valueOf(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.invoke.VarHandle.AccessMode valueOf(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="values()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.invoke.VarHandle.AccessMode[]</span> values()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.sql/java.sql.Statement</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.sql/module-summary.html">java.sql</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.sql/java/sql/package-summary.html">java.sql</a></div>
+<h1>Interface&nbsp;Statement</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> Statement <div class="superinterfaces"><span class="keyword">extends</span> java.lang.AutoCloseable, java.sql.Wrapper</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="CLOSE_ALL_RESULTS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CLOSE_ALL_RESULTS = 3</div>
+</div>
+</li><li><div class="element" id="CLOSE_CURRENT_RESULT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CLOSE_CURRENT_RESULT = 1</div>
+</div>
+</li><li><div class="element" id="EXECUTE_FAILED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXECUTE_FAILED = -3</div>
+</div>
+</li><li><div class="element" id="KEEP_CURRENT_RESULT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> KEEP_CURRENT_RESULT = 2</div>
+</div>
+</li><li><div class="element" id="NO_GENERATED_KEYS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> NO_GENERATED_KEYS = 2</div>
+</div>
+</li><li><div class="element" id="RETURN_GENERATED_KEYS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> RETURN_GENERATED_KEYS = 1</div>
+</div>
+</li><li><div class="element" id="SUCCESS_NO_INFO"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SUCCESS_NO_INFO = -2</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addBatch(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> addBatch(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="cancel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> cancel() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="clearBatch()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> clearBatch() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="clearWarnings()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> clearWarnings() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="close()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> close() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="closeOnCompletion()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> closeOnCompletion() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="enquoteIdentifier(String,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.String enquoteIdentifier(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="enquoteLiteral(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.String enquoteLiteral(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="enquoteNCharLiteral(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.String enquoteNCharLiteral(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="execute(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> execute(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="execute(String,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> execute(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="execute(String,int[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> execute(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span><span class="keyword">int</span>[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="execute(String,String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> execute(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>java.lang.String[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="executeBatch()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span><span class="keyword">int</span>[]</span> executeBatch() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="executeLargeBatch()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span><span class="keyword">long</span>[]</span> executeLargeBatch() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="executeLargeUpdate(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">long</span> executeLargeUpdate(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="executeLargeUpdate(String,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">long</span> executeLargeUpdate(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="executeLargeUpdate(String,int[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">long</span> executeLargeUpdate(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span><span class="keyword">int</span>[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="executeLargeUpdate(String,String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">long</span> executeLargeUpdate(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>java.lang.String[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="executeQuery(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.sql.ResultSet executeQuery(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="executeUpdate(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> executeUpdate(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="executeUpdate(String,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> executeUpdate(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="executeUpdate(String,int[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> executeUpdate(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span><span class="keyword">int</span>[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="executeUpdate(String,String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> executeUpdate(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>java.lang.String[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getConnection()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.sql.Connection getConnection() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getFetchDirection()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getFetchDirection() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getFetchSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getFetchSize() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getGeneratedKeys()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.sql.ResultSet getGeneratedKeys() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getLargeMaxRows()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">long</span> getLargeMaxRows() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getLargeUpdateCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">long</span> getLargeUpdateCount() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getMaxFieldSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getMaxFieldSize() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getMaxRows()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getMaxRows() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getMoreResults()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> getMoreResults() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getMoreResults(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> getMoreResults(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getQueryTimeout()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getQueryTimeout() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getResultSet()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.sql.ResultSet getResultSet() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getResultSetConcurrency()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getResultSetConcurrency() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getResultSetHoldability()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getResultSetHoldability() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getResultSetType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getResultSetType() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getUpdateCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getUpdateCount() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getWarnings()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.sql.SQLWarning getWarnings() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="isCloseOnCompletion()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isCloseOnCompletion() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="isClosed()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isClosed() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="isPoolable()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isPoolable() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="isSimpleIdentifier(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">boolean</span> isSimpleIdentifier(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setCursorName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setCursorName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setEscapeProcessing(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setEscapeProcessing(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setFetchDirection(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setFetchDirection(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setFetchSize(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setFetchSize(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setLargeMaxRows(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">void</span> setLargeMaxRows(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setMaxFieldSize(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setMaxFieldSize(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setMaxRows(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setMaxRows(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setPoolable(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setPoolable(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setQueryTimeout(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setQueryTimeout(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

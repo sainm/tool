@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.ImageIcon</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Class&nbsp;ImageIcon</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> ImageIcon <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable, javax.accessibility.Accessible, javax.swing.Icon</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/ImageIcon.AccessibleImageIcon.html">AccessibleImageIcon</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="component"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.Component component</div>
+</div>
+</li><li><div class="element" id="tracker"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.MediaTracker tracker</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ImageIcon()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(byte[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ImageIcon(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(byte[],String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ImageIcon(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@ConstructorProperties({"description"})</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> ImageIcon(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ImageIcon(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(URL)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ImageIcon(<span class="parameters"><span class="parameter">java.net.URL arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(URL,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ImageIcon(<span class="parameters"><span class="parameter">java.net.URL arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Image)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ImageIcon(<span class="parameters"><span class="parameter">java.awt.Image arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Image,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ImageIcon(<span class="parameters"><span class="parameter">java.awt.Image arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getAccessibleContext()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=truedescription="The AccessibleContext associated with this ImageIcon.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.accessibility.AccessibleContext getAccessibleContext()</div>
+</div>
+</li><li><div class="element" id="getDescription()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getDescription()</div>
+</div>
+</li><li><div class="element" id="getIconHeight()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getIconHeight()</div>
+</div>
+</li><li><div class="element" id="getIconWidth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getIconWidth()</div>
+</div>
+</li><li><div class="element" id="getImage()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Image getImage()</div>
+</div>
+</li><li><div class="element" id="getImageLoadStatus()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getImageLoadStatus()</div>
+</div>
+</li><li><div class="element" id="getImageObserver()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.image.ImageObserver getImageObserver()</div>
+</div>
+</li><li><div class="element" id="loadImage(Image)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> loadImage(<span class="parameters"><span class="parameter">java.awt.Image arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintIcon(Component,Graphics,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paintIcon(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.awt.Graphics arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDescription(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDescription(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setImage(Image)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setImage(<span class="parameters"><span class="parameter">java.awt.Image arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setImageObserver(ImageObserver)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setImageObserver(<span class="parameters"><span class="parameter">java.awt.image.ImageObserver arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>8847139174105758798<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.ImageIcon.AccessibleImageIcon&nbsp;accessibleContext</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.lang.String&nbsp;description</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;height</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.image.ImageObserver&nbsp;imageObserver</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;width</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

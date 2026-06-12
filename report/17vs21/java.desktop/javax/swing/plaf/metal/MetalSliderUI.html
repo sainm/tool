@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.plaf.metal.MetalSliderUI</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/swing/plaf/metal/package-summary.html">javax.swing.plaf.metal</a></div>
+<h1>Class&nbsp;MetalSliderUI</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> MetalSliderUI <div class="superclass"><span class="keyword">extends</span> javax.swing.plaf.basic.BasicSliderUI</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/metal/MetalSliderUI.MetalPropertyListener.html">MetalPropertyListener</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="SLIDER_FILL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> java.lang.String SLIDER_FILL = "JSlider.isFilled"</div>
+</div>
+</li><li><div class="element" id="TICK_BUFFER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TICK_BUFFER = 4</div>
+</div>
+</li><li><div class="element" id="darkShadowColor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span></span> java.awt.Color darkShadowColor</div>
+</div>
+</li><li><div class="element" id="filledSlider"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> filledSlider</div>
+</div>
+</li><li><div class="element" id="highlightColor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span></span> java.awt.Color highlightColor</div>
+</div>
+</li><li><div class="element" id="horizThumbIcon"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span></span> javax.swing.Icon horizThumbIcon</div>
+</div>
+</li><li><div class="element" id="thumbColor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span></span> java.awt.Color thumbColor</div>
+</div>
+</li><li><div class="element" id="tickLength"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span></span> <span class="keyword">int</span> tickLength</div>
+</div>
+</li><li><div class="element" id="trackWidth"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span></span> <span class="keyword">int</span> trackWidth</div>
+</div>
+</li><li><div class="element" id="vertThumbIcon"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span></span> javax.swing.Icon vertThumbIcon</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> MetalSliderUI()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="createPropertyChangeListener(JSlider)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.beans.PropertyChangeListener createPropertyChangeListener(<span class="parameters"><span class="parameter">javax.swing.JSlider arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.plaf.ComponentUI createUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getThumbOverhang()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> getThumbOverhang()</div>
+</div>
+</li><li><div class="element" id="getThumbSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Dimension getThumbSize()</div>
+</div>
+</li><li><div class="element" id="getTickLength()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getTickLength()</div>
+</div>
+</li><li><div class="element" id="getTrackLength()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> getTrackLength()</div>
+</div>
+</li><li><div class="element" id="getTrackWidth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> getTrackWidth()</div>
+</div>
+</li><li><div class="element" id="installUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> installUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintFocus(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paintFocus(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintMajorTickForHorizSlider(Graphics,Rectangle,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintMajorTickForHorizSlider(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">java.awt.Rectangle arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintMajorTickForVertSlider(Graphics,Rectangle,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintMajorTickForVertSlider(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">java.awt.Rectangle arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintMinorTickForHorizSlider(Graphics,Rectangle,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintMinorTickForHorizSlider(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">java.awt.Rectangle arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintMinorTickForVertSlider(Graphics,Rectangle,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintMinorTickForVertSlider(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">java.awt.Rectangle arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintThumb(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paintThumb(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintTrack(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paintTrack(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="scrollDueToClickInTrack(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> scrollDueToClickInTrack(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

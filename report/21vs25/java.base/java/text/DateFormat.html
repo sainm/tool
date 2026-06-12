@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/java.text.DateFormat</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/text/package-summary.html">java.text</a></div>
+<h1>Class&nbsp;DateFormat</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> DateFormat <div class="superclass"><span class="keyword">extends</span> java.text.Format</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/DateFormat.Field.html">Field</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="AM_PM_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> AM_PM_FIELD = 14</div>
+</div>
+</li><li><div class="element" id="DATE_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> DATE_FIELD = 3</div>
+</div>
+</li><li><div class="element" id="DAY_OF_WEEK_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> DAY_OF_WEEK_FIELD = 9</div>
+</div>
+</li><li><div class="element" id="DAY_OF_WEEK_IN_MONTH_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> DAY_OF_WEEK_IN_MONTH_FIELD = 11</div>
+</div>
+</li><li><div class="element" id="DAY_OF_YEAR_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> DAY_OF_YEAR_FIELD = 10</div>
+</div>
+</li><li><div class="element" id="DEFAULT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> DEFAULT = 2</div>
+</div>
+</li><li><div class="element" id="ERA_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ERA_FIELD = 0</div>
+</div>
+</li><li><div class="element" id="FULL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FULL = 0</div>
+</div>
+</li><li><div class="element" id="HOUR0_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HOUR0_FIELD = 16</div>
+</div>
+</li><li><div class="element" id="HOUR1_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HOUR1_FIELD = 15</div>
+</div>
+</li><li><div class="element" id="HOUR_OF_DAY0_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HOUR_OF_DAY0_FIELD = 5</div>
+</div>
+</li><li><div class="element" id="HOUR_OF_DAY1_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HOUR_OF_DAY1_FIELD = 4</div>
+</div>
+</li><li><div class="element" id="LONG"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LONG = 1</div>
+</div>
+</li><li><div class="element" id="MEDIUM"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MEDIUM = 2</div>
+</div>
+</li><li><div class="element" id="MILLISECOND_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MILLISECOND_FIELD = 8</div>
+</div>
+</li><li><div class="element" id="MINUTE_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MINUTE_FIELD = 6</div>
+</div>
+</li><li><div class="element" id="MONTH_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MONTH_FIELD = 2</div>
+</div>
+</li><li><div class="element" id="SECOND_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SECOND_FIELD = 7</div>
+</div>
+</li><li><div class="element" id="SHORT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SHORT = 3</div>
+</div>
+</li><li><div class="element" id="TIMEZONE_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TIMEZONE_FIELD = 17</div>
+</div>
+</li><li><div class="element" id="WEEK_OF_MONTH_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> WEEK_OF_MONTH_FIELD = 13</div>
+</div>
+</li><li><div class="element" id="WEEK_OF_YEAR_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> WEEK_OF_YEAR_FIELD = 12</div>
+</div>
+</li><li><div class="element" id="YEAR_FIELD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> YEAR_FIELD = 1</div>
+</div>
+</li><li><div class="element" id="calendar"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.util.Calendar calendar</div>
+</div>
+</li><li><div class="element" id="numberFormat"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.text.NumberFormat numberFormat</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> DateFormat()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="clone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object clone()</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="format(Object,StringBuffer,FieldPosition)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.StringBuffer format(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.lang.StringBuffer arg1</span>, <span class="parameter">java.text.FieldPosition arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="format(Date)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.String format(<span class="parameters"><span class="parameter">java.util.Date arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="format(Date,StringBuffer,FieldPosition)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.StringBuffer format(<span class="parameters"><span class="parameter">java.util.Date arg0</span>, <span class="parameter">java.lang.StringBuffer arg1</span>, <span class="parameter">java.text.FieldPosition arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAvailableLocales()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Locale[]</span> getAvailableLocales()</div>
+</div>
+</li><li><div class="element" id="getCalendar()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.Calendar getCalendar()</div>
+</div>
+</li><li><div class="element" id="getDateInstance()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.text.DateFormat getDateInstance()</div>
+</div>
+</li><li><div class="element" id="getDateInstance(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.text.DateFormat getDateInstance(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDateInstance(int,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.text.DateFormat getDateInstance(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.util.Locale arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDateTimeInstance()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.text.DateFormat getDateTimeInstance()</div>
+</div>
+</li><li><div class="element" id="getDateTimeInstance(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.text.DateFormat getDateTimeInstance(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDateTimeInstance(int,int,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.text.DateFormat getDateTimeInstance(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">java.util.Locale arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getInstance()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.text.DateFormat getInstance()</div>
+</div>
+</li><li><div class="element" id="getNumberFormat()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.text.NumberFormat getNumberFormat()</div>
+</div>
+</li><li><div class="element" id="getTimeInstance()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.text.DateFormat getTimeInstance()</div>
+</div>
+</li><li><div class="element" id="getTimeInstance(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.text.DateFormat getTimeInstance(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getTimeInstance(int,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.text.DateFormat getTimeInstance(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.util.Locale arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getTimeZone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.TimeZone getTimeZone()</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="isLenient()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isLenient()</div>
+</div>
+</li><li><div class="element" id="parse(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.Date parse(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.text.ParseException</span></div>
+</div>
+</li><li><div class="element" id="parse(String,ParsePosition)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.Date parse(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.text.ParsePosition arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="parseObject(String,ParsePosition)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object parseObject(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.text.ParsePosition arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setCalendar(Calendar)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCalendar(<span class="parameters"><span class="parameter">java.util.Calendar arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLenient(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLenient(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setNumberFormat(NumberFormat)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setNumberFormat(<span class="parameters"><span class="parameter">java.text.NumberFormat arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setTimeZone(TimeZone)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setTimeZone(<span class="parameters"><span class="parameter">java.util.TimeZone arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>7218322306649953788<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">java.util.Calendar&nbsp;calendar</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.text.NumberFormat&nbsp;numberFormat</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.imageio.ImageWriter</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/imageio/package-summary.html">javax.imageio</a></div>
+<h1>Class&nbsp;ImageWriter</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> ImageWriter <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.imageio.ImageTranscoder</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="availableLocales"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.util.Locale[]</span> availableLocales</div>
+</div>
+</li><li><div class="element" id="locale"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.util.Locale locale</div>
+</div>
+</li><li><div class="element" id="originatingProvider"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.imageio.spi.ImageWriterSpi originatingProvider</div>
+</div>
+</li><li><div class="element" id="output"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.Object output</div>
+</div>
+</li><li><div class="element" id="progressListeners"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.util.List&lt;javax.imageio.event.IIOWriteProgressListener&gt;</span> progressListeners</div>
+</div>
+</li><li><div class="element" id="warningListeners"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.util.List&lt;javax.imageio.event.IIOWriteWarningListener&gt;</span> warningListeners</div>
+</div>
+</li><li><div class="element" id="warningLocales"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.util.List&lt;java.util.Locale&gt;</span> warningLocales</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(ImageWriterSpi)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> ImageWriter(<span class="parameters"><span class="parameter">javax.imageio.spi.ImageWriterSpi arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="abort()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> abort()</div>
+</div>
+</li><li><div class="element" id="abortRequested()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> abortRequested()</div>
+</div>
+</li><li><div class="element" id="addIIOWriteProgressListener(IIOWriteProgressListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addIIOWriteProgressListener(<span class="parameters"><span class="parameter">javax.imageio.event.IIOWriteProgressListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addIIOWriteWarningListener(IIOWriteWarningListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addIIOWriteWarningListener(<span class="parameters"><span class="parameter">javax.imageio.event.IIOWriteWarningListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="canInsertEmpty(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> canInsertEmpty(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="canInsertImage(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> canInsertImage(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="canRemoveImage(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> canRemoveImage(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="canReplaceImageMetadata(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> canReplaceImageMetadata(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="canReplacePixels(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> canReplacePixels(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="canReplaceStreamMetadata()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> canReplaceStreamMetadata() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="canWriteEmpty()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> canWriteEmpty() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="canWriteRasters()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> canWriteRasters()</div>
+</div>
+</li><li><div class="element" id="canWriteSequence()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> canWriteSequence()</div>
+</div>
+</li><li><div class="element" id="clearAbortRequest()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> clearAbortRequest()</div>
+</div>
+</li><li><div class="element" id="convertImageMetadata(IIOMetadata,ImageTypeSpecifier,ImageWriteParam)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.imageio.metadata.IIOMetadata convertImageMetadata(<span class="parameters"><span class="parameter">javax.imageio.metadata.IIOMetadata arg0</span>, <span class="parameter">javax.imageio.ImageTypeSpecifier arg1</span>, <span class="parameter">javax.imageio.ImageWriteParam arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="convertStreamMetadata(IIOMetadata,ImageWriteParam)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.imageio.metadata.IIOMetadata convertStreamMetadata(<span class="parameters"><span class="parameter">javax.imageio.metadata.IIOMetadata arg0</span>, <span class="parameter">javax.imageio.ImageWriteParam arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="dispose()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> dispose()</div>
+</div>
+</li><li><div class="element" id="endInsertEmpty()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> endInsertEmpty() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="endReplacePixels()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> endReplacePixels() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="endWriteEmpty()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> endWriteEmpty() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="endWriteSequence()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> endWriteSequence() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="getAvailableLocales()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Locale[]</span> getAvailableLocales()</div>
+</div>
+</li><li><div class="element" id="getDefaultImageMetadata(ImageTypeSpecifier,ImageWriteParam)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.imageio.metadata.IIOMetadata getDefaultImageMetadata(<span class="parameters"><span class="parameter">javax.imageio.ImageTypeSpecifier arg0</span>, <span class="parameter">javax.imageio.ImageWriteParam arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDefaultStreamMetadata(ImageWriteParam)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.imageio.metadata.IIOMetadata getDefaultStreamMetadata(<span class="parameters"><span class="parameter">javax.imageio.ImageWriteParam arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDefaultWriteParam()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.imageio.ImageWriteParam getDefaultWriteParam()</div>
+</div>
+</li><li><div class="element" id="getLocale()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.Locale getLocale()</div>
+</div>
+</li><li><div class="element" id="getNumThumbnailsSupported(ImageTypeSpecifier,ImageWriteParam,IIOMetadata,IIOMetadata)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getNumThumbnailsSupported(<span class="parameters"><span class="parameter">javax.imageio.ImageTypeSpecifier arg0</span>, <span class="parameter">javax.imageio.ImageWriteParam arg1</span>, <span class="parameter">javax.imageio.metadata.IIOMetadata arg2</span>, <span class="parameter">javax.imageio.metadata.IIOMetadata arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="getOriginatingProvider()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.imageio.spi.ImageWriterSpi getOriginatingProvider()</div>
+</div>
+</li><li><div class="element" id="getOutput()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getOutput()</div>
+</div>
+</li><li><div class="element" id="getPreferredThumbnailSizes(ImageTypeSpecifier,ImageWriteParam,IIOMetadata,IIOMetadata)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.Dimension[]</span> getPreferredThumbnailSizes(<span class="parameters"><span class="parameter">javax.imageio.ImageTypeSpecifier arg0</span>, <span class="parameter">javax.imageio.ImageWriteParam arg1</span>, <span class="parameter">javax.imageio.metadata.IIOMetadata arg2</span>, <span class="parameter">javax.imageio.metadata.IIOMetadata arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="prepareInsertEmpty(int,ImageTypeSpecifier,int,int,IIOMetadata,List,ImageWriteParam)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> prepareInsertEmpty(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">javax.imageio.ImageTypeSpecifier arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter">javax.imageio.metadata.IIOMetadata arg4</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> java.awt.image.BufferedImage</span>&gt;</span> arg5</span>, <span class="parameter">javax.imageio.ImageWriteParam arg6</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="prepareReplacePixels(int,Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> prepareReplacePixels(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.awt.Rectangle arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="prepareWriteEmpty(IIOMetadata,ImageTypeSpecifier,int,int,IIOMetadata,List,ImageWriteParam)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> prepareWriteEmpty(<span class="parameters"><span class="parameter">javax.imageio.metadata.IIOMetadata arg0</span>, <span class="parameter">javax.imageio.ImageTypeSpecifier arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter">javax.imageio.metadata.IIOMetadata arg4</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> java.awt.image.BufferedImage</span>&gt;</span> arg5</span>, <span class="parameter">javax.imageio.ImageWriteParam arg6</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="prepareWriteSequence(IIOMetadata)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> prepareWriteSequence(<span class="parameters"><span class="parameter">javax.imageio.metadata.IIOMetadata arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="processImageComplete()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processImageComplete()</div>
+</div>
+</li><li><div class="element" id="processImageProgress(float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processImageProgress(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="processImageStarted(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processImageStarted(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="processThumbnailComplete()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processThumbnailComplete()</div>
+</div>
+</li><li><div class="element" id="processThumbnailProgress(float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processThumbnailProgress(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="processThumbnailStarted(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processThumbnailStarted(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="processWarningOccurred(int,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processWarningOccurred(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="processWarningOccurred(int,String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processWarningOccurred(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.String arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="processWriteAborted()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processWriteAborted()</div>
+</div>
+</li><li><div class="element" id="removeAllIIOWriteProgressListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeAllIIOWriteProgressListeners()</div>
+</div>
+</li><li><div class="element" id="removeAllIIOWriteWarningListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeAllIIOWriteWarningListeners()</div>
+</div>
+</li><li><div class="element" id="removeIIOWriteProgressListener(IIOWriteProgressListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeIIOWriteProgressListener(<span class="parameters"><span class="parameter">javax.imageio.event.IIOWriteProgressListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeIIOWriteWarningListener(IIOWriteWarningListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeIIOWriteWarningListener(<span class="parameters"><span class="parameter">javax.imageio.event.IIOWriteWarningListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeImage(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeImage(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="replaceImageMetadata(int,IIOMetadata)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> replaceImageMetadata(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">javax.imageio.metadata.IIOMetadata arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="replacePixels(Raster,ImageWriteParam)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> replacePixels(<span class="parameters"><span class="parameter">java.awt.image.Raster arg0</span>, <span class="parameter">javax.imageio.ImageWriteParam arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="replacePixels(RenderedImage,ImageWriteParam)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> replacePixels(<span class="parameters"><span class="parameter">java.awt.image.RenderedImage arg0</span>, <span class="parameter">javax.imageio.ImageWriteParam arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="replaceStreamMetadata(IIOMetadata)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> replaceStreamMetadata(<span class="parameters"><span class="parameter">javax.imageio.metadata.IIOMetadata arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="reset()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reset()</div>
+</div>
+</li><li><div class="element" id="setLocale(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLocale(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setOutput(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setOutput(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="write(RenderedImage)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> write(<span class="parameters"><span class="parameter">java.awt.image.RenderedImage arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="write(IIOImage)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> write(<span class="parameters"><span class="parameter">javax.imageio.IIOImage arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="write(IIOMetadata,IIOImage,ImageWriteParam)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> write(<span class="parameters"><span class="parameter">javax.imageio.metadata.IIOMetadata arg0</span>, <span class="parameter">javax.imageio.IIOImage arg1</span>, <span class="parameter">javax.imageio.ImageWriteParam arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="writeInsert(int,IIOImage,ImageWriteParam)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> writeInsert(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">javax.imageio.IIOImage arg1</span>, <span class="parameter">javax.imageio.ImageWriteParam arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="writeToSequence(IIOImage,ImageWriteParam)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> writeToSequence(<span class="parameters"><span class="parameter">javax.imageio.IIOImage arg0</span>, <span class="parameter">javax.imageio.ImageWriteParam arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

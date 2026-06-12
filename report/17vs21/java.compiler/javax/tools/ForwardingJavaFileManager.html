@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.compiler/javax.tools.ForwardingJavaFileManager</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.compiler/module-summary.html">java.compiler</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.compiler/javax/tools/package-summary.html">javax.tools</a></div>
+<h1>Class&nbsp;ForwardingJavaFileManager</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> ForwardingJavaFileManager<span class="typarams">&lt;<span>M</span>&gt;</span> <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.tools.JavaFileManager</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="fileManager"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> M fileManager</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(M)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> ForwardingJavaFileManager(<span class="parameters"><span class="parameter">M arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="close()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> close() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="contains(Location,FileObject)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> contains(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span>, <span class="parameter">javax.tools.FileObject arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="flush()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> flush() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getClassLoader(Location)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ClassLoader getClassLoader(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFileForInput(Location,String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.tools.FileObject getFileForInput(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.String arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFileForOutput(Location,String,String,FileObject)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.tools.FileObject getFileForOutput(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter">javax.tools.FileObject arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="getFileForOutputForOriginatingFiles(Location,String,String,FileObject[])"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.tools.FileObject getFileForOutputForOriginatingFiles(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span>javax.tools.FileObject[]</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getJavaFileForInput(Location,String,Kind)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.tools.JavaFileObject getJavaFileForInput(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">javax.tools.JavaFileObject.Kind arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getJavaFileForOutput(Location,String,Kind,FileObject)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.tools.JavaFileObject getJavaFileForOutput(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">javax.tools.JavaFileObject.Kind arg2</span>, <span class="parameter">javax.tools.FileObject arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="getJavaFileForOutputForOriginatingFiles(Location,String,Kind,FileObject[])"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.tools.JavaFileObject getJavaFileForOutputForOriginatingFiles(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">javax.tools.JavaFileObject.Kind arg2</span>, <span class="parameter"><span>javax.tools.FileObject[]</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getLocationForModule(Location,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.tools.JavaFileManager.Location getLocationForModule(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getLocationForModule(Location,JavaFileObject)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.tools.JavaFileManager.Location getLocationForModule(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span>, <span class="parameter">javax.tools.JavaFileObject arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getServiceLoader(Location,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>S</span>&gt;</span> <span>java.util.ServiceLoader&lt;S&gt;</span> getServiceLoader(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span>, <span class="parameter"><span>java.lang.Class&lt;S&gt;</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="handleOption(String,Iterator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> handleOption(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>java.util.Iterator&lt;java.lang.String&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="hasLocation(Location)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> hasLocation(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="inferBinaryName(Location,JavaFileObject)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String inferBinaryName(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span>, <span class="parameter">javax.tools.JavaFileObject arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="inferModuleName(Location)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String inferModuleName(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="isSameFile(FileObject,FileObject)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSameFile(<span class="parameters"><span class="parameter">javax.tools.FileObject arg0</span>, <span class="parameter">javax.tools.FileObject arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isSupportedOption(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> isSupportedOption(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="list(Location,String,Set,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Iterable&lt;javax.tools.JavaFileObject&gt;</span> list(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter"><span>java.util.Set&lt;javax.tools.JavaFileObject.Kind&gt;</span> arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="listLocationsForModules(Location)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Iterable&lt;<span>java.util.Set&lt;javax.tools.JavaFileManager.Location&gt;</span>&gt;</span> listLocationsForModules(<span class="parameters"><span class="parameter">javax.tools.JavaFileManager.Location arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.compiler/javax/tools/ForwardingJavaFileManager.html#getFileForOutputForOriginatingFiles(Location,String,String,FileObject%5B%5D)">getFileForOutputForOriginatingFiles(JavaFileManager.Location,String,String,FileObject[])</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.compiler/javax/tools/ForwardingJavaFileManager.html#getJavaFileForOutputForOriginatingFiles(Location,String,Kind,FileObject%5B%5D)">getJavaFileForOutputForOriginatingFiles(JavaFileManager.Location,String,JavaFileObject.Kind,FileObject[])</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

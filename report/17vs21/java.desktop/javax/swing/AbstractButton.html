@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.AbstractButton</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Class&nbsp;AbstractButton</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="annotation">@JavaBean(defaultProperty="UI")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> AbstractButton <div class="superclass"><span class="keyword">extends</span> javax.swing.JComponent</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.awt.ItemSelectable, javax.swing.SwingConstants</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/AbstractButton.AccessibleAbstractButton.html">AccessibleAbstractButton</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/AbstractButton.ButtonChangeListener.html">ButtonChangeListener</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="BORDER_PAINTED_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String BORDER_PAINTED_CHANGED_PROPERTY = "borderPainted"</div>
+</div>
+</li><li><div class="element" id="CONTENT_AREA_FILLED_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String CONTENT_AREA_FILLED_CHANGED_PROPERTY = "contentAreaFilled"</div>
+</div>
+</li><li><div class="element" id="DISABLED_ICON_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DISABLED_ICON_CHANGED_PROPERTY = "disabledIcon"</div>
+</div>
+</li><li><div class="element" id="DISABLED_SELECTED_ICON_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DISABLED_SELECTED_ICON_CHANGED_PROPERTY = "disabledSelectedIcon"</div>
+</div>
+</li><li><div class="element" id="FOCUS_PAINTED_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String FOCUS_PAINTED_CHANGED_PROPERTY = "focusPainted"</div>
+</div>
+</li><li><div class="element" id="HORIZONTAL_ALIGNMENT_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String HORIZONTAL_ALIGNMENT_CHANGED_PROPERTY = "horizontalAlignment"</div>
+</div>
+</li><li><div class="element" id="HORIZONTAL_TEXT_POSITION_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String HORIZONTAL_TEXT_POSITION_CHANGED_PROPERTY = "horizontalTextPosition"</div>
+</div>
+</li><li><div class="element" id="ICON_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String ICON_CHANGED_PROPERTY = "icon"</div>
+</div>
+</li><li><div class="element" id="MARGIN_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String MARGIN_CHANGED_PROPERTY = "margin"</div>
+</div>
+</li><li><div class="element" id="MNEMONIC_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String MNEMONIC_CHANGED_PROPERTY = "mnemonic"</div>
+</div>
+</li><li><div class="element" id="MODEL_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String MODEL_CHANGED_PROPERTY = "model"</div>
+</div>
+</li><li><div class="element" id="PRESSED_ICON_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String PRESSED_ICON_CHANGED_PROPERTY = "pressedIcon"</div>
+</div>
+</li><li><div class="element" id="ROLLOVER_ENABLED_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String ROLLOVER_ENABLED_CHANGED_PROPERTY = "rolloverEnabled"</div>
+</div>
+</li><li><div class="element" id="ROLLOVER_ICON_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String ROLLOVER_ICON_CHANGED_PROPERTY = "rolloverIcon"</div>
+</div>
+</li><li><div class="element" id="ROLLOVER_SELECTED_ICON_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String ROLLOVER_SELECTED_ICON_CHANGED_PROPERTY = "rolloverSelectedIcon"</div>
+</div>
+</li><li><div class="element" id="SELECTED_ICON_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SELECTED_ICON_CHANGED_PROPERTY = "selectedIcon"</div>
+</div>
+</li><li><div class="element" id="TEXT_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String TEXT_CHANGED_PROPERTY = "text"</div>
+</div>
+</li><li><div class="element" id="VERTICAL_ALIGNMENT_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String VERTICAL_ALIGNMENT_CHANGED_PROPERTY = "verticalAlignment"</div>
+</div>
+</li><li><div class="element" id="VERTICAL_TEXT_POSITION_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String VERTICAL_TEXT_POSITION_CHANGED_PROPERTY = "verticalTextPosition"</div>
+</div>
+</li><li><div class="element" id="actionListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.ActionListener actionListener</div>
+</div>
+</li><li><div class="element" id="changeEvent"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.event.ChangeEvent changeEvent</div>
+</div>
+</li><li><div class="element" id="changeListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.ChangeListener changeListener</div>
+</div>
+</li><li><div class="element" id="itemListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.ItemListener itemListener</div>
+</div>
+</li><li><div class="element" id="model"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.ButtonModel model</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> AbstractButton()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="actionPropertyChanged(Action,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> actionPropertyChanged(<span class="parameters"><span class="parameter">javax.swing.Action arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="addActionListener(ActionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addActionListener(<span class="parameters"><span class="parameter">java.awt.event.ActionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addChangeListener(ChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addChangeListener(<span class="parameters"><span class="parameter">javax.swing.event.ChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addImpl(Component,Object,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> addImpl(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="addItemListener(ItemListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addItemListener(<span class="parameters"><span class="parameter">java.awt.event.ItemListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="checkHorizontalKey(int,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> checkHorizontalKey(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="checkVerticalKey(int,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> checkVerticalKey(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="configurePropertiesFromAction(Action)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> configurePropertiesFromAction(<span class="parameters"><span class="parameter">javax.swing.Action arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createActionListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.ActionListener createActionListener()</div>
+</div>
+</li><li><div class="element" id="createActionPropertyChangeListener(Action)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.beans.PropertyChangeListener createActionPropertyChangeListener(<span class="parameters"><span class="parameter">javax.swing.Action arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createChangeListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.ChangeListener createChangeListener()</div>
+</div>
+</li><li><div class="element" id="createItemListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.ItemListener createItemListener()</div>
+</div>
+</li><li><div class="element" id="doClick()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> doClick()</div>
+</div>
+</li><li><div class="element" id="doClick(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> doClick(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fireActionPerformed(ActionEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireActionPerformed(<span class="parameters"><span class="parameter">java.awt.event.ActionEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fireItemStateChanged(ItemEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireItemStateChanged(<span class="parameters"><span class="parameter">java.awt.event.ItemEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fireStateChanged()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireStateChanged()</div>
+</div>
+</li><li><div class="element" id="getAction()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Action getAction()</div>
+</div>
+</li><li><div class="element" id="getActionCommand()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getActionCommand()</div>
+</div>
+</li><li><div class="element" id="getActionListeners()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.event.ActionListener[]</span> getActionListeners()</div>
+</div>
+</li><li><div class="element" id="getChangeListeners()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.event.ChangeListener[]</span> getChangeListeners()</div>
+</div>
+</li><li><div class="element" id="getDisabledIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getDisabledIcon()</div>
+</div>
+</li><li><div class="element" id="getDisabledSelectedIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getDisabledSelectedIcon()</div>
+</div>
+</li><li><div class="element" id="getDisplayedMnemonicIndex()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getDisplayedMnemonicIndex()</div>
+</div>
+</li><li><div class="element" id="getHideActionText()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getHideActionText()</div>
+</div>
+</li><li><div class="element" id="getHorizontalAlignment()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getHorizontalAlignment()</div>
+</div>
+</li><li><div class="element" id="getHorizontalTextPosition()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getHorizontalTextPosition()</div>
+</div>
+</li><li><div class="element" id="getIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getIcon()</div>
+</div>
+</li><li><div class="element" id="getIconTextGap()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getIconTextGap()</div>
+</div>
+</li><li><div class="element" id="getItemListeners()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.event.ItemListener[]</span> getItemListeners()</div>
+</div>
+</li><li><div class="element" id="getLabel()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.lang.String getLabel()</div>
+</div>
+</li><li><div class="element" id="getMargin()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Insets getMargin()</div>
+</div>
+</li><li><div class="element" id="getMnemonic()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMnemonic()</div>
+</div>
+</li><li><div class="element" id="getModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.ButtonModel getModel()</div>
+</div>
+</li><li><div class="element" id="getMultiClickThreshhold()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getMultiClickThreshhold()</div>
+</div>
+</li><li><div class="element" id="getPressedIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getPressedIcon()</div>
+</div>
+</li><li><div class="element" id="getRolloverIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getRolloverIcon()</div>
+</div>
+</li><li><div class="element" id="getRolloverSelectedIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getRolloverSelectedIcon()</div>
+</div>
+</li><li><div class="element" id="getSelectedIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getSelectedIcon()</div>
+</div>
+</li><li><div class="element" id="getSelectedObjects()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Object[]</span> getSelectedObjects()</div>
+</div>
+</li><li><div class="element" id="getText()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getText()</div>
+</div>
+</li><li><div class="element" id="getUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.plaf.ButtonUI getUI()</div>
+</div>
+</li><li><div class="element" id="getVerticalAlignment()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getVerticalAlignment()</div>
+</div>
+</li><li><div class="element" id="getVerticalTextPosition()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getVerticalTextPosition()</div>
+</div>
+</li><li><div class="element" id="imageUpdate(Image,int,int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> imageUpdate(<span class="parameters"><span class="parameter">java.awt.Image arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="init(String,Icon)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> init(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">javax.swing.Icon arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isBorderPainted()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isBorderPainted()</div>
+</div>
+</li><li><div class="element" id="isContentAreaFilled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isContentAreaFilled()</div>
+</div>
+</li><li><div class="element" id="isFocusPainted()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isFocusPainted()</div>
+</div>
+</li><li><div class="element" id="isRolloverEnabled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isRolloverEnabled()</div>
+</div>
+</li><li><div class="element" id="isSelected()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSelected()</div>
+</div>
+</li><li><div class="element" id="paintBorder(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintBorder(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String paramString()</div>
+</div>
+</li><li><div class="element" id="removeActionListener(ActionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeActionListener(<span class="parameters"><span class="parameter">java.awt.event.ActionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeChangeListener(ChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeChangeListener(<span class="parameters"><span class="parameter">javax.swing.event.ChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeItemListener(ItemListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeItemListener(<span class="parameters"><span class="parameter">java.awt.event.ItemListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeNotify()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeNotify()</div>
+</div>
+</li><li><div class="element" id="setAction(Action)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="the Action instance connected with this ActionEvent source")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAction(<span class="parameters"><span class="parameter">javax.swing.Action arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setActionCommand(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setActionCommand(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setBorderPainted(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="Whether the border should be painted.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBorderPainted(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setContentAreaFilled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="Whether the button should paint the content area or leave it transparent.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setContentAreaFilled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDisabledIcon(Icon)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="The disabled icon for the button.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDisabledIcon(<span class="parameters"><span class="parameter">javax.swing.Icon arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDisabledSelectedIcon(Icon)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="The disabled selection icon for the button.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDisabledSelectedIcon(<span class="parameters"><span class="parameter">javax.swing.Icon arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDisplayedMnemonicIndex(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="the index into the String to draw the keyboard character mnemonic at")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDisplayedMnemonicIndex(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li><div class="element" id="setEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFocusPainted(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="Whether focus should be painted")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFocusPainted(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setHideActionText(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=truedescription="Whether the text of the button should come from the &lt;code&gt;Action&lt;/code&gt;.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setHideActionText(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setHorizontalAlignment(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=trueenumerationValues={"SwingConstants.LEFT", "SwingConstants.CENTER", "SwingConstants.RIGHT", "SwingConstants.LEADING", "SwingConstants.TRAILING"}description="The horizontal alignment of the icon and text.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setHorizontalAlignment(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setHorizontalTextPosition(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=trueenumerationValues={"SwingConstants.LEFT", "SwingConstants.CENTER", "SwingConstants.RIGHT", "SwingConstants.LEADING", "SwingConstants.TRAILING"}description="The horizontal position of the text relative to the icon.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setHorizontalTextPosition(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setIcon(Icon)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="The button\'s default icon")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setIcon(<span class="parameters"><span class="parameter">javax.swing.Icon arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setIconTextGap(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="If both the icon and text properties are set, this property defines the space between them.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setIconTextGap(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLabel(String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="annotation">@BeanProperty(description="Replace by setText(text)")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLabel(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLayout(LayoutManager)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLayout(<span class="parameters"><span class="parameter">java.awt.LayoutManager arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMargin(Insets)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="The space between the button\'s border and the label.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMargin(<span class="parameters"><span class="parameter">java.awt.Insets arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMnemonic(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="the keyboard character mnemonic")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMnemonic(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMnemonic(char)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="the keyboard character mnemonic")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMnemonic(<span class="parameters"><span class="parameter"><span class="keyword">char</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setModel(ButtonModel)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="Model that the Button uses.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setModel(<span class="parameters"><span class="parameter">javax.swing.ButtonModel arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMultiClickThreshhold(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMultiClickThreshhold(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setPressedIcon(Icon)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="The pressed icon for the button.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setPressedIcon(<span class="parameters"><span class="parameter">javax.swing.Icon arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRolloverEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="Whether rollover effects should be enabled.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRolloverEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRolloverIcon(Icon)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="The rollover icon for the button.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRolloverIcon(<span class="parameters"><span class="parameter">javax.swing.Icon arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRolloverSelectedIcon(Icon)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="The rollover selected icon for the button.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRolloverSelectedIcon(<span class="parameters"><span class="parameter">javax.swing.Icon arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelected(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelected(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectedIcon(Icon)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="The selected icon for the button.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectedIcon(<span class="parameters"><span class="parameter">javax.swing.Icon arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setText(String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truevisualUpdate=truedescription="The button\'s text.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setText(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setUI(ButtonUI)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(hidden=truevisualUpdate=truedescription="The UI object that implements the LookAndFeel.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setUI(<span class="parameters"><span class="parameter">javax.swing.plaf.ButtonUI arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setVerticalAlignment(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=trueenumerationValues={"SwingConstants.TOP", "SwingConstants.CENTER", "SwingConstants.BOTTOM"}description="The vertical alignment of the icon and text.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setVerticalAlignment(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setVerticalTextPosition(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=trueenumerationValues={"SwingConstants.TOP", "SwingConstants.CENTER", "SwingConstants.BOTTOM"}description="The vertical position of the text relative to the icon.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setVerticalTextPosition(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> updateUI()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>5837973129215958806<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.Action&nbsp;action</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.event.ActionListener&nbsp;actionListener</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.beans.PropertyChangeListener&nbsp;actionPropertyChangeListener</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;borderPaintedSet</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.event.ChangeListener&nbsp;changeListener</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;contentAreaFilled</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;contentAreaFilledSet</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;defaultCapable</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.Icon&nbsp;defaultIcon</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Insets&nbsp;defaultMargin</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.Icon&nbsp;disabledIcon</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.Icon&nbsp;disabledSelectedIcon</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.AbstractButton.Handler&nbsp;handler</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;hideActionText</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;horizontalAlignment</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;horizontalTextPosition</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;iconTextGap</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;iconTextGapSet</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.event.ItemListener&nbsp;itemListener</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Insets&nbsp;margin</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;mnemonic</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;mnemonicIndex</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.ButtonModel&nbsp;model</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">long</span>&nbsp;multiClickThreshhold</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;paintBorder</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;paintFocus</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.Icon&nbsp;pressedIcon</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;rolloverEnabled</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;rolloverEnabledSet</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.Icon&nbsp;rolloverIcon</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.Icon&nbsp;rolloverSelectedIcon</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.Icon&nbsp;selectedIcon</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;setLayout</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.lang.String&nbsp;text</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;verticalAlignment</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;verticalTextPosition</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

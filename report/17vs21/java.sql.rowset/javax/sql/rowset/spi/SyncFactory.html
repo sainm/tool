@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.sql.rowset/javax.sql.rowset.spi.SyncFactory</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.sql.rowset/module-summary.html">java.sql.rowset</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.sql.rowset/javax/sql/rowset/spi/package-summary.html">javax.sql.rowset.spi</a></div>
+<h1>Class&nbsp;SyncFactory</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> SyncFactory <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="ROWSET_SYNC_PROVIDER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String ROWSET_SYNC_PROVIDER = "rowset.provider.classname"</div>
+</div>
+</li><li><div class="element" id="ROWSET_SYNC_PROVIDER_VERSION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String ROWSET_SYNC_PROVIDER_VERSION = "rowset.provider.version"</div>
+</div>
+</li><li><div class="element" id="ROWSET_SYNC_VENDOR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String ROWSET_SYNC_VENDOR = "rowset.provider.vendor"</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getInstance(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sql.rowset.spi.SyncProvider getInstance(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.sql.rowset.spi.SyncFactoryException</span></div>
+</div>
+</li><li><div class="element" id="getLogger()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.logging.Logger getLogger() <span class="throws"><span class="keyword">throws</span> javax.sql.rowset.spi.SyncFactoryException</span></div>
+</div>
+</li><li><div class="element" id="getRegisteredProviders()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Enumeration&lt;javax.sql.rowset.spi.SyncProvider&gt;</span> getRegisteredProviders() <span class="throws"><span class="keyword">throws</span> javax.sql.rowset.spi.SyncFactoryException</span></div>
+</div>
+</li><li><div class="element" id="getSyncFactory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sql.rowset.spi.SyncFactory getSyncFactory()</div>
+</div>
+</li><li><div class="element" id="registerProvider(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> registerProvider(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.sql.rowset.spi.SyncFactoryException</span></div>
+</div>
+</li><li><div class="element" id="setJNDIContext(Context)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setJNDIContext(<span class="parameters"><span class="parameter">javax.naming.Context arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.sql.rowset.spi.SyncFactoryException</span></div>
+</div>
+</li><li><div class="element" id="setLogger(Logger)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setLogger(<span class="parameters"><span class="parameter">java.util.logging.Logger arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLogger(Logger,Level)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setLogger(<span class="parameters"><span class="parameter">java.util.logging.Logger arg0</span>, <span class="parameter">java.util.logging.Level arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="unregisterProvider(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> unregisterProvider(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.sql.rowset.spi.SyncFactoryException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

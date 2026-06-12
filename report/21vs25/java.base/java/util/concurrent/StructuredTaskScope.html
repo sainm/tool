@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: (various) java.base/java.util.concurrent.StructuredTaskScope</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/util/concurrent/package-summary.html">java.util.concurrent</a></div>
+<h1>(Various)&nbsp;StructuredTaskScope</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="diffs"><span class="api" title="JDK21">&nbsp;</span><span class="api" title="JDK25"><span class="keyword">abstract</span></span></span> <span class="diffs"><span class="api" title="JDK21">&nbsp;</span><span class="api" title="JDK25"><span class="keyword">sealed</span></span></span></span> <span class="diffs"><span class="api" title="JDK21"><span class="keyword">class</span></span><span class="api" title="JDK25"><span class="keyword">interface</span></span></span> StructuredTaskScope<span class="typarams">&lt;<span>T</span>, <span class="diffs"><span class="api" title="JDK21">&nbsp;</span><span class="api" title="JDK25"><span>R</span></span></span>&gt;</span> <div class="superclass"><span class="keyword">extends</span> <span class="diffs"><span class="api" title="JDK21">java.lang.Object</span><span class="api" title="JDK25">&nbsp;</span></span></div>
+<div class="superinterfaces"><span class="diffs"><span><span class="keyword">implements</span></span><span><span class="keyword">extends</span></span></span> java.lang.AutoCloseable</div>
+<div class="permitted-subclasses"><span class="keyword">permits</span> <span class="diffs"><span class="api" title="JDK21">&nbsp;</span><span class="api" title="JDK25"><span>java.util.concurrent.StructuredTaskScopeImpl&lt;T, R&gt;</span></span></span></div>
+</div>
+</div>
+<section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.Configuration.html">Configuration</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.FailedException.html">FailedException</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.Joiner.html">Joiner</a></span></li><li><span><span class="remove">&minus;</span> <a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.ShutdownOnFailure.html">ShutdownOnFailure</a></span></li><li><span><span class="remove">&minus;</span> <a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.ShutdownOnSuccess.html">ShutdownOnSuccess</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.Subtask.html">Subtask</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.TimeoutException.html">TimeoutException</a></span></li></ul>
+</section>
+<section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK21; not in: JDK25.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> StructuredTaskScope()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,ThreadFactory)"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK21; not in: JDK25.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> StructuredTaskScope(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.util.concurrent.ThreadFactory arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="close()"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="diffs"><span class="api" title="JDK21">&nbsp;</span><span class="api" title="JDK25"><span class="keyword">abstract</span></span></span></span> <span class="keyword">void</span> close()</div>
+</div>
+</li><li><div class="element" id="ensureOwnerAndJoined()"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK21; not in: JDK25.</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> <span class="keyword">void</span> ensureOwnerAndJoined()</div>
+</div>
+</li><li><div class="element" id="fork(Runnable)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.StructuredTaskScope.Subtask&lt;U&gt;</span> fork(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fork(Callable)"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="diffs"><span class="api" title="JDK21">&nbsp;</span><span class="api" title="JDK25"><span class="keyword">abstract</span></span></span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.StructuredTaskScope.Subtask&lt;U&gt;</span> fork(<span class="parameters"><span class="parameter"><span>java.util.concurrent.Callable&lt;<span>? <span class="keyword">extends</span> U</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="handleComplete(Subtask)"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK21; not in: JDK25.</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> handleComplete(<span class="parameters"><span class="parameter"><span>java.util.concurrent.StructuredTaskScope.Subtask&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isCancelled()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isCancelled()</div>
+</div>
+</li><li><div class="element" id="isShutdown()"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK21; not in: JDK25.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isShutdown()</div>
+</div>
+</li><li><div class="element" id="join()"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="diffs"><span class="api" title="JDK21">&nbsp;</span><span class="api" title="JDK25"><span class="keyword">abstract</span></span></span></span> <span class="diffs"><span class="api" title="JDK21"><span>java.util.concurrent.StructuredTaskScope&lt;T&gt;</span></span><span class="api" title="JDK25">R</span></span> join() <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException</span></div>
+</div>
+</li><li><div class="element" id="joinUntil(Instant)"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK21; not in: JDK25.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.StructuredTaskScope&lt;T&gt;</span> joinUntil(<span class="parameters"><span class="parameter">java.time.Instant arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException, java.util.concurrent.TimeoutException</span></div>
+</div>
+</li><li><div class="element" id="open()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.concurrent.StructuredTaskScope&lt;T, java.lang.Void&gt;</span> open()</div>
+</div>
+</li><li><div class="element" id="open(Joiner)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>, <span>R</span>&gt;</span> <span>java.util.concurrent.StructuredTaskScope&lt;T, R&gt;</span> open(<span class="parameters"><span class="parameter"><span>java.util.concurrent.StructuredTaskScope.Joiner&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">extends</span> R</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="open(Joiner,Function)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>, <span>R</span>&gt;</span> <span>java.util.concurrent.StructuredTaskScope&lt;T, R&gt;</span> open(<span class="parameters"><span class="parameter"><span>java.util.concurrent.StructuredTaskScope.Joiner&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">extends</span> R</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.Function&lt;java.util.concurrent.StructuredTaskScope.Configuration, java.util.concurrent.StructuredTaskScope.Configuration&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="shutdown()"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK21; not in: JDK25.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> shutdown()</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK21; not in: JDK25.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th>Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html">StructuredTaskScope</a></th>
+<td></td>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.Configuration.html">StructuredTaskScope.Configuration</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.FailedException.html">StructuredTaskScope.FailedException</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.Joiner.html">StructuredTaskScope.Joiner</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.ShutdownOnFailure.html">StructuredTaskScope.ShutdownOnFailure</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.ShutdownOnSuccess.html">StructuredTaskScope.ShutdownOnSuccess</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.Subtask.html">StructuredTaskScope.Subtask</a></th>
+<td></td>
+<td>3</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.TimeoutException.html">StructuredTaskScope.TimeoutException</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#close()">close()</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#ensureOwnerAndJoined()">ensureOwnerAndJoined()</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#fork(Runnable)">fork(Runnable)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#fork(Callable)">fork(Callable)</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#handleComplete(Subtask)">handleComplete(StructuredTaskScope.Subtask)</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#isCancelled()">isCancelled()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#isShutdown()">isShutdown()</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#join()">join()</a></th>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#joinUntil(Instant)">joinUntil(Instant)</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#open()">open()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#open(Joiner)">open(StructuredTaskScope.Joiner)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#open(Joiner,Function)">open(StructuredTaskScope.Joiner,Function)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#shutdown()">shutdown()</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#toString()">toString()</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#%3Cinit%3E()">&lt;init&gt;()</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html#%3Cinit%3E(String,ThreadFactory)">&lt;init&gt;(String,ThreadFactory)</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>9</td>
+<td>12</td>
+<td>11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>32</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

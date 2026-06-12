@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.util.Locale</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/util/package-summary.html">java.util</a></div>
+<h1>Class&nbsp;Locale</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> Locale <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable, java.lang.Cloneable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Locale.Builder.html">Builder</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Locale.Category.html">Category</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Locale.FilteringMode.html">FilteringMode</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Locale.IsoCountryCode.html">IsoCountryCode</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.base/java/util/Locale.LanguageRange.html">LanguageRange</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="CANADA"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale CANADA</div>
+</div>
+</li><li><div class="element" id="CANADA_FRENCH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale CANADA_FRENCH</div>
+</div>
+</li><li><div class="element" id="CHINA"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale CHINA</div>
+</div>
+</li><li><div class="element" id="CHINESE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale CHINESE</div>
+</div>
+</li><li><div class="element" id="ENGLISH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale ENGLISH</div>
+</div>
+</li><li><div class="element" id="FRANCE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale FRANCE</div>
+</div>
+</li><li><div class="element" id="FRENCH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale FRENCH</div>
+</div>
+</li><li><div class="element" id="GERMAN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale GERMAN</div>
+</div>
+</li><li><div class="element" id="GERMANY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale GERMANY</div>
+</div>
+</li><li><div class="element" id="ITALIAN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale ITALIAN</div>
+</div>
+</li><li><div class="element" id="ITALY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale ITALY</div>
+</div>
+</li><li><div class="element" id="JAPAN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale JAPAN</div>
+</div>
+</li><li><div class="element" id="JAPANESE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale JAPANESE</div>
+</div>
+</li><li><div class="element" id="KOREA"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale KOREA</div>
+</div>
+</li><li><div class="element" id="KOREAN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale KOREAN</div>
+</div>
+</li><li><div class="element" id="PRC"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale PRC</div>
+</div>
+</li><li><div class="element" id="PRIVATE_USE_EXTENSION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">char</span> PRIVATE_USE_EXTENSION = 'x'</div>
+</div>
+</li><li><div class="element" id="ROOT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale ROOT</div>
+</div>
+</li><li><div class="element" id="SIMPLIFIED_CHINESE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale SIMPLIFIED_CHINESE</div>
+</div>
+</li><li><div class="element" id="TAIWAN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale TAIWAN</div>
+</div>
+</li><li><div class="element" id="TRADITIONAL_CHINESE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale TRADITIONAL_CHINESE</div>
+</div>
+</li><li><div class="element" id="UK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale UK</div>
+</div>
+</li><li><div class="element" id="UNICODE_LOCALE_EXTENSION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">char</span> UNICODE_LOCALE_EXTENSION = 'u'</div>
+</div>
+</li><li><div class="element" id="US"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Locale US</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="19")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> Locale(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="19")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> Locale(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,String,String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="19")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> Locale(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.String arg2</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="availableLocales()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.stream.Stream&lt;java.util.Locale&gt;</span> availableLocales()</div>
+</div>
+</li><li><div class="element" id="caseFoldLanguageTag(String)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String caseFoldLanguageTag(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="clone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object clone()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="filter(List,Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.List&lt;java.util.Locale&gt;</span> filter(<span class="parameters"><span class="parameter"><span>java.util.List&lt;java.util.Locale.LanguageRange&gt;</span> arg0</span>, <span class="parameter"><span>java.util.Collection&lt;java.util.Locale&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="filter(List,Collection,FilteringMode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.List&lt;java.util.Locale&gt;</span> filter(<span class="parameters"><span class="parameter"><span>java.util.List&lt;java.util.Locale.LanguageRange&gt;</span> arg0</span>, <span class="parameter"><span>java.util.Collection&lt;java.util.Locale&gt;</span> arg1</span>, <span class="parameter">java.util.Locale.FilteringMode arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="filterTags(List,Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.List&lt;java.lang.String&gt;</span> filterTags(<span class="parameters"><span class="parameter"><span>java.util.List&lt;java.util.Locale.LanguageRange&gt;</span> arg0</span>, <span class="parameter"><span>java.util.Collection&lt;java.lang.String&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="filterTags(List,Collection,FilteringMode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.List&lt;java.lang.String&gt;</span> filterTags(<span class="parameters"><span class="parameter"><span>java.util.List&lt;java.util.Locale.LanguageRange&gt;</span> arg0</span>, <span class="parameter"><span>java.util.Collection&lt;java.lang.String&gt;</span> arg1</span>, <span class="parameter">java.util.Locale.FilteringMode arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="forLanguageTag(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.Locale forLanguageTag(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAvailableLocales()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Locale[]</span> getAvailableLocales()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getCountry()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getCountry()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDefault()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.Locale getDefault()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDefault(Category)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.Locale getDefault(<span class="parameters"><span class="parameter">java.util.Locale.Category arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDisplayCountry()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.String getDisplayCountry()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDisplayCountry(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getDisplayCountry(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDisplayLanguage()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.String getDisplayLanguage()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDisplayLanguage(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getDisplayLanguage(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDisplayName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.String getDisplayName()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDisplayName(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getDisplayName(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDisplayScript()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getDisplayScript()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDisplayScript(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getDisplayScript(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDisplayVariant()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.String getDisplayVariant()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDisplayVariant(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getDisplayVariant(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getExtension(char)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getExtension(<span class="parameters"><span class="parameter"><span class="keyword">char</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getExtensionKeys()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Set&lt;java.lang.Character&gt;</span> getExtensionKeys()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getISO3Country()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getISO3Country() <span class="throws"><span class="keyword">throws</span> java.util.MissingResourceException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getISO3Language()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getISO3Language() <span class="throws"><span class="keyword">throws</span> java.util.MissingResourceException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getISOCountries()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.String[]</span> getISOCountries()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getISOCountries(IsoCountryCode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Set&lt;java.lang.String&gt;</span> getISOCountries(<span class="parameters"><span class="parameter">java.util.Locale.IsoCountryCode arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getISOLanguages()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.String[]</span> getISOLanguages()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getLanguage()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getLanguage()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getScript()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getScript()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getUnicodeLocaleAttributes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Set&lt;java.lang.String&gt;</span> getUnicodeLocaleAttributes()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getUnicodeLocaleKeys()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Set&lt;java.lang.String&gt;</span> getUnicodeLocaleKeys()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getUnicodeLocaleType(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getUnicodeLocaleType(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getVariant()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getVariant()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="hasExtensions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> hasExtensions()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="lookup(List,Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.Locale lookup(<span class="parameters"><span class="parameter"><span>java.util.List&lt;java.util.Locale.LanguageRange&gt;</span> arg0</span>, <span class="parameter"><span>java.util.Collection&lt;java.util.Locale&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="lookupTag(List,Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String lookupTag(<span class="parameters"><span class="parameter"><span>java.util.List&lt;java.util.Locale.LanguageRange&gt;</span> arg0</span>, <span class="parameter"><span>java.util.Collection&lt;java.lang.String&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(String)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.Locale of(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(String,String)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.Locale of(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(String,String,String)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.Locale of(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.String arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setDefault(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setDefault(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setDefault(Category,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setDefault(<span class="parameters"><span class="parameter">java.util.Locale.Category arg0</span>, <span class="parameter">java.util.Locale arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="stripExtensions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.Locale stripExtensions()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toLanguageTag()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toLanguageTag()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>9149081749638150636<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-readResolve"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> java.lang.Object readResolve() <span class="throws"><span class="keyword">throws</span> java.io.ObjectStreamException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.base/java/util/Locale.html#availableLocales()">availableLocales()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/Locale.html#caseFoldLanguageTag(String)">caseFoldLanguageTag(String)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/Locale.html#of(String)">of(String)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/Locale.html#of(String,String)">of(String,String)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/Locale.html#of(String,String,String)">of(String,String,String)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

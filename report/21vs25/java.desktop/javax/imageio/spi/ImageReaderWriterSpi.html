@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.imageio.spi.ImageReaderWriterSpi</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/imageio/spi/package-summary.html">javax.imageio.spi</a></div>
+<h1>Class&nbsp;ImageReaderWriterSpi</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> ImageReaderWriterSpi <div class="superclass"><span class="keyword">extends</span> javax.imageio.spi.IIOServiceProvider</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="MIMETypes"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.lang.String[]</span> MIMETypes</div>
+</div>
+</li><li><div class="element" id="extraImageMetadataFormatClassNames"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.lang.String[]</span> extraImageMetadataFormatClassNames</div>
+</div>
+</li><li><div class="element" id="extraImageMetadataFormatNames"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.lang.String[]</span> extraImageMetadataFormatNames</div>
+</div>
+</li><li><div class="element" id="extraStreamMetadataFormatClassNames"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.lang.String[]</span> extraStreamMetadataFormatClassNames</div>
+</div>
+</li><li><div class="element" id="extraStreamMetadataFormatNames"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.lang.String[]</span> extraStreamMetadataFormatNames</div>
+</div>
+</li><li><div class="element" id="names"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.lang.String[]</span> names</div>
+</div>
+</li><li><div class="element" id="nativeImageMetadataFormatClassName"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String nativeImageMetadataFormatClassName</div>
+</div>
+</li><li><div class="element" id="nativeImageMetadataFormatName"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String nativeImageMetadataFormatName</div>
+</div>
+</li><li><div class="element" id="nativeStreamMetadataFormatClassName"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String nativeStreamMetadataFormatClassName</div>
+</div>
+</li><li><div class="element" id="nativeStreamMetadataFormatName"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String nativeStreamMetadataFormatName</div>
+</div>
+</li><li><div class="element" id="pluginClassName"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String pluginClassName</div>
+</div>
+</li><li><div class="element" id="suffixes"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.lang.String[]</span> suffixes</div>
+</div>
+</li><li><div class="element" id="supportsStandardImageMetadataFormat"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> supportsStandardImageMetadataFormat</div>
+</div>
+</li><li><div class="element" id="supportsStandardStreamMetadataFormat"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> supportsStandardStreamMetadataFormat</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ImageReaderWriterSpi()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,String,String[],String[],String[],String,boolean,String,String,String[],String[],boolean,String,String,String[],String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ImageReaderWriterSpi(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter"><span>java.lang.String[]</span> arg2</span>, <span class="parameter"><span>java.lang.String[]</span> arg3</span>, <span class="parameter"><span>java.lang.String[]</span> arg4</span>, <span class="parameter">java.lang.String arg5</span>, <span class="parameter"><span class="keyword">boolean</span> arg6</span>, <span class="parameter">java.lang.String arg7</span>, <span class="parameter">java.lang.String arg8</span>, <span class="parameter"><span>java.lang.String[]</span> arg9</span>, <span class="parameter"><span>java.lang.String[]</span> arg10</span>, <span class="parameter"><span class="keyword">boolean</span> arg11</span>, <span class="parameter">java.lang.String arg12</span>, <span class="parameter">java.lang.String arg13</span>, <span class="parameter"><span>java.lang.String[]</span> arg14</span>, <span class="parameter"><span>java.lang.String[]</span> arg15</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getExtraImageMetadataFormatNames()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getExtraImageMetadataFormatNames()</div>
+</div>
+</li><li><div class="element" id="getExtraStreamMetadataFormatNames()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getExtraStreamMetadataFormatNames()</div>
+</div>
+</li><li><div class="element" id="getFileSuffixes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getFileSuffixes()</div>
+</div>
+</li><li><div class="element" id="getFormatNames()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getFormatNames()</div>
+</div>
+</li><li><div class="element" id="getImageMetadataFormat(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.imageio.metadata.IIOMetadataFormat getImageMetadataFormat(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getMIMETypes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getMIMETypes()</div>
+</div>
+</li><li><div class="element" id="getNativeImageMetadataFormatName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getNativeImageMetadataFormatName()</div>
+</div>
+</li><li><div class="element" id="getNativeStreamMetadataFormatName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getNativeStreamMetadataFormatName()</div>
+</div>
+</li><li><div class="element" id="getPluginClassName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getPluginClassName()</div>
+</div>
+</li><li><div class="element" id="getStreamMetadataFormat(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.imageio.metadata.IIOMetadataFormat getStreamMetadataFormat(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isStandardImageMetadataFormatSupported()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isStandardImageMetadataFormatSupported()</div>
+</div>
+</li><li><div class="element" id="isStandardStreamMetadataFormatSupported()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isStandardStreamMetadataFormatSupported()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

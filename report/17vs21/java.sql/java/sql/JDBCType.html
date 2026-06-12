@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: enum java.sql/java.sql.JDBCType</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.sql/module-summary.html">java.sql</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.sql/java/sql/package-summary.html">java.sql</a></div>
+<h1>Enum&nbsp;JDBCType</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">enum</span> JDBCType <div class="superclass"><span class="keyword">extends</span> <span>java.lang.Enum&lt;java.sql.JDBCType&gt;</span></div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.sql.SQLType</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Enum Constants</h2>
+<ul><li><div class="element" id="ARRAY"><span class="same">&equals;</span><div class="signature">ARRAY</div>
+</div>
+</li><li><div class="element" id="BIGINT"><span class="same">&equals;</span><div class="signature">BIGINT</div>
+</div>
+</li><li><div class="element" id="BINARY"><span class="same">&equals;</span><div class="signature">BINARY</div>
+</div>
+</li><li><div class="element" id="BIT"><span class="same">&equals;</span><div class="signature">BIT</div>
+</div>
+</li><li><div class="element" id="BLOB"><span class="same">&equals;</span><div class="signature">BLOB</div>
+</div>
+</li><li><div class="element" id="BOOLEAN"><span class="same">&equals;</span><div class="signature">BOOLEAN</div>
+</div>
+</li><li><div class="element" id="CHAR"><span class="same">&equals;</span><div class="signature">CHAR</div>
+</div>
+</li><li><div class="element" id="CLOB"><span class="same">&equals;</span><div class="signature">CLOB</div>
+</div>
+</li><li><div class="element" id="DATALINK"><span class="same">&equals;</span><div class="signature">DATALINK</div>
+</div>
+</li><li><div class="element" id="DATE"><span class="same">&equals;</span><div class="signature">DATE</div>
+</div>
+</li><li><div class="element" id="DECIMAL"><span class="same">&equals;</span><div class="signature">DECIMAL</div>
+</div>
+</li><li><div class="element" id="DISTINCT"><span class="same">&equals;</span><div class="signature">DISTINCT</div>
+</div>
+</li><li><div class="element" id="DOUBLE"><span class="same">&equals;</span><div class="signature">DOUBLE</div>
+</div>
+</li><li><div class="element" id="FLOAT"><span class="same">&equals;</span><div class="signature">FLOAT</div>
+</div>
+</li><li><div class="element" id="INTEGER"><span class="same">&equals;</span><div class="signature">INTEGER</div>
+</div>
+</li><li><div class="element" id="JAVA_OBJECT"><span class="same">&equals;</span><div class="signature">JAVA_OBJECT</div>
+</div>
+</li><li><div class="element" id="LONGNVARCHAR"><span class="same">&equals;</span><div class="signature">LONGNVARCHAR</div>
+</div>
+</li><li><div class="element" id="LONGVARBINARY"><span class="same">&equals;</span><div class="signature">LONGVARBINARY</div>
+</div>
+</li><li><div class="element" id="LONGVARCHAR"><span class="same">&equals;</span><div class="signature">LONGVARCHAR</div>
+</div>
+</li><li><div class="element" id="NCHAR"><span class="same">&equals;</span><div class="signature">NCHAR</div>
+</div>
+</li><li><div class="element" id="NCLOB"><span class="same">&equals;</span><div class="signature">NCLOB</div>
+</div>
+</li><li><div class="element" id="NULL"><span class="same">&equals;</span><div class="signature">NULL</div>
+</div>
+</li><li><div class="element" id="NUMERIC"><span class="same">&equals;</span><div class="signature">NUMERIC</div>
+</div>
+</li><li><div class="element" id="NVARCHAR"><span class="same">&equals;</span><div class="signature">NVARCHAR</div>
+</div>
+</li><li><div class="element" id="OTHER"><span class="same">&equals;</span><div class="signature">OTHER</div>
+</div>
+</li><li><div class="element" id="REAL"><span class="same">&equals;</span><div class="signature">REAL</div>
+</div>
+</li><li><div class="element" id="REF"><span class="same">&equals;</span><div class="signature">REF</div>
+</div>
+</li><li><div class="element" id="REF_CURSOR"><span class="same">&equals;</span><div class="signature">REF_CURSOR</div>
+</div>
+</li><li><div class="element" id="ROWID"><span class="same">&equals;</span><div class="signature">ROWID</div>
+</div>
+</li><li><div class="element" id="SMALLINT"><span class="same">&equals;</span><div class="signature">SMALLINT</div>
+</div>
+</li><li><div class="element" id="SQLXML"><span class="same">&equals;</span><div class="signature">SQLXML</div>
+</div>
+</li><li><div class="element" id="STRUCT"><span class="same">&equals;</span><div class="signature">STRUCT</div>
+</div>
+</li><li><div class="element" id="TIME"><span class="same">&equals;</span><div class="signature">TIME</div>
+</div>
+</li><li><div class="element" id="TIMESTAMP"><span class="same">&equals;</span><div class="signature">TIMESTAMP</div>
+</div>
+</li><li><div class="element" id="TIMESTAMP_WITH_TIMEZONE"><span class="same">&equals;</span><div class="signature">TIMESTAMP_WITH_TIMEZONE</div>
+</div>
+</li><li><div class="element" id="TIME_WITH_TIMEZONE"><span class="same">&equals;</span><div class="signature">TIME_WITH_TIMEZONE</div>
+</div>
+</li><li><div class="element" id="TINYINT"><span class="same">&equals;</span><div class="signature">TINYINT</div>
+</div>
+</li><li><div class="element" id="VARBINARY"><span class="same">&equals;</span><div class="signature">VARBINARY</div>
+</div>
+</li><li><div class="element" id="VARCHAR"><span class="same">&equals;</span><div class="signature">VARCHAR</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getName()</div>
+</div>
+</li><li><div class="element" id="getVendor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getVendor()</div>
+</div>
+</li><li><div class="element" id="getVendorTypeNumber()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Integer getVendorTypeNumber()</div>
+</div>
+</li><li><div class="element" id="valueOf(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.sql.JDBCType valueOf(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="valueOf(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.sql.JDBCType valueOf(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="values()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.sql.JDBCType[]</span> values()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

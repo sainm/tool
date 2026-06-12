@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.JScrollPane</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Class&nbsp;JScrollPane</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="annotation">@JavaBean(defaultProperty="UI"description="A specialized container that manages a viewport, optional scrollbars and headers")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> JScrollPane <div class="superclass"><span class="keyword">extends</span> javax.swing.JComponent</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.accessibility.Accessible, javax.swing.ScrollPaneConstants</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JScrollPane.AccessibleJScrollPane.html">AccessibleJScrollPane</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JScrollPane.ScrollBar.html">ScrollBar</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="columnHeader"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JViewport columnHeader</div>
+</div>
+</li><li><div class="element" id="horizontalScrollBar"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JScrollBar horizontalScrollBar</div>
+</div>
+</li><li><div class="element" id="horizontalScrollBarPolicy"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> horizontalScrollBarPolicy</div>
+</div>
+</li><li><div class="element" id="lowerLeft"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Component lowerLeft</div>
+</div>
+</li><li><div class="element" id="lowerRight"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Component lowerRight</div>
+</div>
+</li><li><div class="element" id="rowHeader"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JViewport rowHeader</div>
+</div>
+</li><li><div class="element" id="upperLeft"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Component upperLeft</div>
+</div>
+</li><li><div class="element" id="upperRight"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Component upperRight</div>
+</div>
+</li><li><div class="element" id="verticalScrollBar"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JScrollBar verticalScrollBar</div>
+</div>
+</li><li><div class="element" id="verticalScrollBarPolicy"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> verticalScrollBarPolicy</div>
+</div>
+</li><li><div class="element" id="viewport"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JViewport viewport</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JScrollPane()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JScrollPane(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JScrollPane(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Component,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JScrollPane(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="createHorizontalScrollBar()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JScrollBar createHorizontalScrollBar()</div>
+</div>
+</li><li><div class="element" id="createVerticalScrollBar()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JScrollBar createVerticalScrollBar()</div>
+</div>
+</li><li><div class="element" id="createViewport()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JViewport createViewport()</div>
+</div>
+</li><li><div class="element" id="getAccessibleContext()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.accessibility.AccessibleContext getAccessibleContext()</div>
+</div>
+</li><li><div class="element" id="getColumnHeader()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JViewport getColumnHeader()</div>
+</div>
+</li><li><div class="element" id="getCorner(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getCorner(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getHorizontalScrollBar()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JScrollBar getHorizontalScrollBar()</div>
+</div>
+</li><li><div class="element" id="getHorizontalScrollBarPolicy()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getHorizontalScrollBarPolicy()</div>
+</div>
+</li><li><div class="element" id="getRowHeader()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JViewport getRowHeader()</div>
+</div>
+</li><li><div class="element" id="getUI()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(hidden=truevisualUpdate=truedescription="The UI object that implements the Component's LookAndFeel.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.swing.plaf.ScrollPaneUI getUI()</div>
+</div>
+</li><li><div class="element" id="getUIClassID()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsehidden=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.lang.String getUIClassID()</div>
+</div>
+</li><li><div class="element" id="getVerticalScrollBar()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JScrollBar getVerticalScrollBar()</div>
+</div>
+</li><li><div class="element" id="getVerticalScrollBarPolicy()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getVerticalScrollBarPolicy()</div>
+</div>
+</li><li><div class="element" id="getViewport()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JViewport getViewport()</div>
+</div>
+</li><li><div class="element" id="getViewportBorder()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.border.Border getViewportBorder()</div>
+</div>
+</li><li><div class="element" id="getViewportBorderBounds()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.awt.Rectangle getViewportBorderBounds()</div>
+</div>
+</li><li><div class="element" id="isValidateRoot()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(hidden=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isValidateRoot()</div>
+</div>
+</li><li><div class="element" id="isWheelScrollingEnabled()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="Flag for enabling/disabling mouse wheel scrolling")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isWheelScrollingEnabled()</div>
+</div>
+</li><li><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String paramString()</div>
+</div>
+</li><li><div class="element" id="setColumnHeader(JViewport)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="The column header child for this scrollpane")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setColumnHeader(<span class="parameters"><span class="parameter">javax.swing.JViewport arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setColumnHeaderView(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setColumnHeaderView(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setComponentOrientation(ComponentOrientation)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setComponentOrientation(<span class="parameters"><span class="parameter">java.awt.ComponentOrientation arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setCorner(String,Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCorner(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.awt.Component arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setHorizontalScrollBar(JScrollBar)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=truedescription="The horizontal scrollbar.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setHorizontalScrollBar(<span class="parameters"><span class="parameter">javax.swing.JScrollBar arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setHorizontalScrollBarPolicy(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=trueenumerationValues={"ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED", "ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER", "ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS"}description="The scrollpane scrollbar policy")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setHorizontalScrollBarPolicy(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLayout(LayoutManager)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLayout(<span class="parameters"><span class="parameter">java.awt.LayoutManager arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRowHeader(JViewport)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=truedescription="The row header child for this scrollpane")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRowHeader(<span class="parameters"><span class="parameter">javax.swing.JViewport arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRowHeaderView(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRowHeaderView(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setUI(ScrollPaneUI)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setUI(<span class="parameters"><span class="parameter">javax.swing.plaf.ScrollPaneUI arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setVerticalScrollBar(JScrollBar)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=truedescription="The vertical scrollbar.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setVerticalScrollBar(<span class="parameters"><span class="parameter">javax.swing.JScrollBar arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setVerticalScrollBarPolicy(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=trueenumerationValues={"ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED", "ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER", "ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS"}description="The scrollpane vertical scrollbar policy")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setVerticalScrollBarPolicy(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setViewport(JViewport)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=truevisualUpdate=truedescription="The viewport child for this scrollpane")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setViewport(<span class="parameters"><span class="parameter">javax.swing.JViewport arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setViewportBorder(Border)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="The border around the viewport.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setViewportBorder(<span class="parameters"><span class="parameter">javax.swing.border.Border arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setViewportView(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setViewportView(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setWheelScrollingEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="Flag for enabling/disabling mouse wheel scrolling")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setWheelScrollingEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> updateUI()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>5203525440012340014<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.JViewport&nbsp;columnHeader</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.JScrollBar&nbsp;horizontalScrollBar</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;horizontalScrollBarPolicy</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Component&nbsp;lowerLeft</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Component&nbsp;lowerRight</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.JViewport&nbsp;rowHeader</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Component&nbsp;upperLeft</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Component&nbsp;upperRight</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.JScrollBar&nbsp;verticalScrollBar</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;verticalScrollBarPolicy</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.JViewport&nbsp;viewport</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.border.Border&nbsp;viewportBorder</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;wheelScrollState</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

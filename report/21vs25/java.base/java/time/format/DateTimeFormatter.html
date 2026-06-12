@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/java.time.format.DateTimeFormatter</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/time/format/package-summary.html">java.time.format</a></div>
+<h1>Class&nbsp;DateTimeFormatter</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> DateTimeFormatter <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="BASIC_ISO_DATE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.format.DateTimeFormatter BASIC_ISO_DATE</div>
+</div>
+</li><li><div class="element" id="ISO_DATE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.format.DateTimeFormatter ISO_DATE</div>
+</div>
+</li><li><div class="element" id="ISO_DATE_TIME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.format.DateTimeFormatter ISO_DATE_TIME</div>
+</div>
+</li><li><div class="element" id="ISO_INSTANT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.format.DateTimeFormatter ISO_INSTANT</div>
+</div>
+</li><li><div class="element" id="ISO_LOCAL_DATE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.format.DateTimeFormatter ISO_LOCAL_DATE</div>
+</div>
+</li><li><div class="element" id="ISO_LOCAL_DATE_TIME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.format.DateTimeFormatter ISO_LOCAL_DATE_TIME</div>
+</div>
+</li><li><div class="element" id="ISO_LOCAL_TIME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.format.DateTimeFormatter ISO_LOCAL_TIME</div>
+</div>
+</li><li><div class="element" id="ISO_OFFSET_DATE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.format.DateTimeFormatter ISO_OFFSET_DATE</div>
+</div>
+</li><li><div class="element" id="ISO_OFFSET_DATE_TIME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.format.DateTimeFormatter ISO_OFFSET_DATE_TIME</div>
+</div>
+</li><li><div class="element" id="ISO_OFFSET_TIME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.format.DateTimeFormatter ISO_OFFSET_TIME</div>
+</div>
+</li><li><div class="element" id="ISO_ORDINAL_DATE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.format.DateTimeFormatter ISO_ORDINAL_DATE</div>
+</div>
+</li><li><div class="element" id="ISO_TIME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.format.DateTimeFormatter ISO_TIME</div>
+</div>
+</li><li><div class="element" id="ISO_WEEK_DATE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.format.DateTimeFormatter ISO_WEEK_DATE</div>
+</div>
+</li><li><div class="element" id="ISO_ZONED_DATE_TIME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.format.DateTimeFormatter ISO_ZONED_DATE_TIME</div>
+</div>
+</li><li><div class="element" id="RFC_1123_DATE_TIME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.format.DateTimeFormatter RFC_1123_DATE_TIME</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="format(TemporalAccessor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String format(<span class="parameters"><span class="parameter">java.time.temporal.TemporalAccessor arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="formatTo(TemporalAccessor,Appendable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> formatTo(<span class="parameters"><span class="parameter">java.time.temporal.TemporalAccessor arg0</span>, <span class="parameter">java.lang.Appendable arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getChronology()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.chrono.Chronology getChronology()</div>
+</div>
+</li><li><div class="element" id="getDecimalStyle()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DecimalStyle getDecimalStyle()</div>
+</div>
+</li><li><div class="element" id="getLocale()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.Locale getLocale()</div>
+</div>
+</li><li><div class="element" id="getResolverFields()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Set&lt;java.time.temporal.TemporalField&gt;</span> getResolverFields()</div>
+</div>
+</li><li><div class="element" id="getResolverStyle()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.ResolverStyle getResolverStyle()</div>
+</div>
+</li><li><div class="element" id="getZone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.ZoneId getZone()</div>
+</div>
+</li><li><div class="element" id="localizedBy(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatter localizedBy(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofLocalizedDate(FormatStyle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.format.DateTimeFormatter ofLocalizedDate(<span class="parameters"><span class="parameter">java.time.format.FormatStyle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofLocalizedDateTime(FormatStyle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.format.DateTimeFormatter ofLocalizedDateTime(<span class="parameters"><span class="parameter">java.time.format.FormatStyle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofLocalizedDateTime(FormatStyle,FormatStyle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.format.DateTimeFormatter ofLocalizedDateTime(<span class="parameters"><span class="parameter">java.time.format.FormatStyle arg0</span>, <span class="parameter">java.time.format.FormatStyle arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofLocalizedPattern(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.format.DateTimeFormatter ofLocalizedPattern(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofLocalizedTime(FormatStyle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.format.DateTimeFormatter ofLocalizedTime(<span class="parameters"><span class="parameter">java.time.format.FormatStyle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofPattern(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.format.DateTimeFormatter ofPattern(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofPattern(String,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.format.DateTimeFormatter ofPattern(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.util.Locale arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="parse(CharSequence)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.temporal.TemporalAccessor parse(<span class="parameters"><span class="parameter">java.lang.CharSequence arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="parse(CharSequence,ParsePosition)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.temporal.TemporalAccessor parse(<span class="parameters"><span class="parameter">java.lang.CharSequence arg0</span>, <span class="parameter">java.text.ParsePosition arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="parse(CharSequence,TemporalQuery)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T parse(<span class="parameters"><span class="parameter">java.lang.CharSequence arg0</span>, <span class="parameter"><span>java.time.temporal.TemporalQuery&lt;T&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="parseBest(CharSequence,TemporalQuery[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.temporal.TemporalAccessor parseBest(<span class="parameters"><span class="parameter">java.lang.CharSequence arg0</span>, <span class="parameter"><span><span>java.time.temporal.TemporalQuery&lt;?&gt;</span>[]</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="parseUnresolved(CharSequence,ParsePosition)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.temporal.TemporalAccessor parseUnresolved(<span class="parameters"><span class="parameter">java.lang.CharSequence arg0</span>, <span class="parameter">java.text.ParsePosition arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="parsedExcessDays()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span>java.time.temporal.TemporalQuery&lt;java.time.Period&gt;</span> parsedExcessDays()</div>
+</div>
+</li><li><div class="element" id="parsedLeapSecond()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span>java.time.temporal.TemporalQuery&lt;java.lang.Boolean&gt;</span> parsedLeapSecond()</div>
+</div>
+</li><li><div class="element" id="toFormat()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.text.Format toFormat()</div>
+</div>
+</li><li><div class="element" id="toFormat(TemporalQuery)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.text.Format toFormat(<span class="parameters"><span class="parameter"><span>java.time.temporal.TemporalQuery&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li><li><div class="element" id="withChronology(Chronology)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatter withChronology(<span class="parameters"><span class="parameter">java.time.chrono.Chronology arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withDecimalStyle(DecimalStyle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatter withDecimalStyle(<span class="parameters"><span class="parameter">java.time.format.DecimalStyle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withLocale(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatter withLocale(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withResolverFields(TemporalField[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatter withResolverFields(<span class="parameters"><span class="parameter"><span>java.time.temporal.TemporalField[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withResolverFields(Set)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatter withResolverFields(<span class="parameters"><span class="parameter"><span>java.util.Set&lt;java.time.temporal.TemporalField&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withResolverStyle(ResolverStyle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatter withResolverStyle(<span class="parameters"><span class="parameter">java.time.format.ResolverStyle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withZone(ZoneId)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatter withZone(<span class="parameters"><span class="parameter">java.time.ZoneId arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

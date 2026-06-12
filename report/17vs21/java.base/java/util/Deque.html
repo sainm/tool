@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface java.base/java.util.Deque</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/util/package-summary.html">java.util</a></div>
+<h1>Interface&nbsp;Deque</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> Deque<span class="typarams">&lt;<span>E</span>&gt;</span> <div class="superinterfaces"><span class="keyword">extends</span> <span>java.util.Queue&lt;E&gt;</span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21"><span>java.util.SequencedCollection&lt;E&gt;</span></span></span></div>
+</div>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="add(E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> add(<span class="parameters"><span class="parameter">E arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="addAll(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> addAll(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">extends</span> E</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="addFirst(E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> addFirst(<span class="parameters"><span class="parameter">E arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="addLast(E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> addLast(<span class="parameters"><span class="parameter">E arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="contains(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> contains(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="descendingIterator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.Iterator&lt;E&gt;</span> descendingIterator()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="element()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E element()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFirst()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E getFirst()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getLast()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E getLast()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="iterator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.Iterator&lt;E&gt;</span> iterator()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="offer(E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> offer(<span class="parameters"><span class="parameter">E arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="offerFirst(E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> offerFirst(<span class="parameters"><span class="parameter">E arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="offerLast(E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> offerLast(<span class="parameters"><span class="parameter">E arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="peek()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E peek()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="peekFirst()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E peekFirst()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="peekLast()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E peekLast()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="poll()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E poll()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="pollFirst()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E pollFirst()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="pollLast()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E pollLast()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="pop()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E pop()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="push(E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> push(<span class="parameters"><span class="parameter">E arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="remove()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E remove()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="remove(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> remove(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="removeFirst()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E removeFirst()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="removeFirstOccurrence(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> removeFirstOccurrence(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="removeLast()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> E removeLast()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="removeLastOccurrence(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> removeLastOccurrence(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="reversed()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>java.util.Deque&lt;E&gt;</span> reversed()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="size()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> size()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th>Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.base/java/util/Deque.html">Deque</a></th>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/Deque.html#reversed()">reversed()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>1</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

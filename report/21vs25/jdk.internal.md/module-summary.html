@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: module jdk.internal.md</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../resources/apidiff.css">
+</head>
+<body class="module"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><h1>Module&nbsp;jdk.internal.md</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"> <span class="keyword">module</span> jdk.internal.md</div>
+</div>
+<section class="enclosed"><h2>Packages</h2>
+<ul><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/markdown/package-summary.html">jdk.internal.markdown</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/package-summary.html">jdk.internal.org.commonmark</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/ext/gfm/tables/package-summary.html">jdk.internal.org.commonmark.ext.gfm.tables</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/ext/gfm/tables/internal/package-summary.html">jdk.internal.org.commonmark.ext.gfm.tables.internal</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/internal/package-summary.html">jdk.internal.org.commonmark.internal</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/internal/inline/package-summary.html">jdk.internal.org.commonmark.internal.inline</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/internal/renderer/package-summary.html">jdk.internal.org.commonmark.internal.renderer</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/internal/renderer/text/package-summary.html">jdk.internal.org.commonmark.internal.renderer.text</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/internal/util/package-summary.html">jdk.internal.org.commonmark.internal.util</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/node/package-summary.html">jdk.internal.org.commonmark.node</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/parser/package-summary.html">jdk.internal.org.commonmark.parser</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/parser/beta/package-summary.html">jdk.internal.org.commonmark.parser.beta</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/parser/block/package-summary.html">jdk.internal.org.commonmark.parser.block</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/parser/delimiter/package-summary.html">jdk.internal.org.commonmark.parser.delimiter</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/renderer/package-summary.html">jdk.internal.org.commonmark.renderer</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/renderer/html/package-summary.html">jdk.internal.org.commonmark.renderer.html</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/renderer/markdown/package-summary.html">jdk.internal.org.commonmark.renderer.markdown</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/renderer/text/package-summary.html">jdk.internal.org.commonmark.renderer.text</a></span></li><li><span><span class="add">&plus;</span> <a href="../jdk.internal.md/jdk/internal/org/commonmark/text/package-summary.html">jdk.internal.org.commonmark.text</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../jdk.internal.md/module-summary.html">jdk.internal.md</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/markdown/package-summary.html">jdk.internal.markdown</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/package-summary.html">jdk.internal.org.commonmark</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/ext/gfm/tables/package-summary.html">jdk.internal.org.commonmark.ext.gfm.tables</a></th>
+<td>8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/ext/gfm/tables/internal/package-summary.html">jdk.internal.org.commonmark.ext.gfm.tables.internal</a></th>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/internal/package-summary.html">jdk.internal.org.commonmark.internal</a></th>
+<td>27</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>27</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/internal/inline/package-summary.html">jdk.internal.org.commonmark.internal.inline</a></th>
+<td>15</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>15</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/internal/renderer/package-summary.html">jdk.internal.org.commonmark.internal.renderer</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/internal/renderer/text/package-summary.html">jdk.internal.org.commonmark.internal.renderer.text</a></th>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/internal/util/package-summary.html">jdk.internal.org.commonmark.internal.util</a></th>
+<td>8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/node/package-summary.html">jdk.internal.org.commonmark.node</a></th>
+<td>33</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>33</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/parser/package-summary.html">jdk.internal.org.commonmark.parser</a></th>
+<td>11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>11</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/parser/beta/package-summary.html">jdk.internal.org.commonmark.parser.beta</a></th>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/parser/block/package-summary.html">jdk.internal.org.commonmark.parser.block</a></th>
+<td>9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/parser/delimiter/package-summary.html">jdk.internal.org.commonmark.parser.delimiter</a></th>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/renderer/package-summary.html">jdk.internal.org.commonmark.renderer</a></th>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/renderer/html/package-summary.html">jdk.internal.org.commonmark.renderer.html</a></th>
+<td>13</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>13</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/renderer/markdown/package-summary.html">jdk.internal.org.commonmark.renderer.markdown</a></th>
+<td>8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/renderer/text/package-summary.html">jdk.internal.org.commonmark.renderer.text</a></th>
+<td>8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+</tr>
+<tr><th scope="row"><a href="../jdk.internal.md/jdk/internal/org/commonmark/text/package-summary.html">jdk.internal.org.commonmark.text</a></th>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>171</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>171</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

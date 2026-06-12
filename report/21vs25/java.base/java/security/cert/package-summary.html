@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package java.base/java.security.cert</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<h1>Package&nbsp;java.security.cert</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="keyword">package</span> java.security.cert</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CRL.html">CRL</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CRLException.html">CRLException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CRLReason.html">CRLReason</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CRLSelector.html">CRLSelector</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertPath.html">CertPath</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertPathBuilder.html">CertPathBuilder</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertPathBuilderException.html">CertPathBuilderException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertPathBuilderResult.html">CertPathBuilderResult</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertPathBuilderSpi.html">CertPathBuilderSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertPathChecker.html">CertPathChecker</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertPathParameters.html">CertPathParameters</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertPathValidator.html">CertPathValidator</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertPathValidatorException.html">CertPathValidatorException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertPathValidatorResult.html">CertPathValidatorResult</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertPathValidatorSpi.html">CertPathValidatorSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertSelector.html">CertSelector</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertStore.html">CertStore</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertStoreException.html">CertStoreException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertStoreParameters.html">CertStoreParameters</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertStoreSpi.html">CertStoreSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/Certificate.html">Certificate</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertificateEncodingException.html">CertificateEncodingException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertificateException.html">CertificateException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertificateExpiredException.html">CertificateExpiredException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertificateFactory.html">CertificateFactory</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertificateFactorySpi.html">CertificateFactorySpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertificateNotYetValidException.html">CertificateNotYetValidException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertificateParsingException.html">CertificateParsingException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CertificateRevokedException.html">CertificateRevokedException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/CollectionCertStoreParameters.html">CollectionCertStoreParameters</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/Extension.html">Extension</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/LDAPCertStoreParameters.html">LDAPCertStoreParameters</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/PKIXBuilderParameters.html">PKIXBuilderParameters</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/PKIXCertPathBuilderResult.html">PKIXCertPathBuilderResult</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/PKIXCertPathChecker.html">PKIXCertPathChecker</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/PKIXCertPathValidatorResult.html">PKIXCertPathValidatorResult</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/PKIXParameters.html">PKIXParameters</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/PKIXReason.html">PKIXReason</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/PKIXRevocationChecker.html">PKIXRevocationChecker</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/PolicyNode.html">PolicyNode</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/PolicyQualifierInfo.html">PolicyQualifierInfo</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/TrustAnchor.html">TrustAnchor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/URICertStoreParameters.html">URICertStoreParameters</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/security/cert/X509CRL.html">X509CRL</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/X509CRLEntry.html">X509CRLEntry</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/X509CRLSelector.html">X509CRLSelector</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/X509CertSelector.html">X509CertSelector</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/security/cert/X509Certificate.html">X509Certificate</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/security/cert/X509Extension.html">X509Extension</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th class="allZero">Added</th>
+<th>Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/security/cert/X509CRL.html">X509CRL</a></th>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/security/cert/X509Certificate.html">X509Certificate</a></th>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td></td>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

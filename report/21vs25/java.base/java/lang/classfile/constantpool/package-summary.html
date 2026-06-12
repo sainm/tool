@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package java.base/java.lang.classfile.constantpool</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.base/module-summary.html">java.base</a></div>
+<h1>Package&nbsp;java.lang.classfile.constantpool</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="keyword">package</span> java.lang.classfile.constantpool</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/AnnotationConstantValueEntry.html">AnnotationConstantValueEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/ClassEntry.html">ClassEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/ConstantDynamicEntry.html">ConstantDynamicEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/ConstantPool.html">ConstantPool</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/ConstantPoolBuilder.html">ConstantPoolBuilder</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/ConstantPoolException.html">ConstantPoolException</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/ConstantValueEntry.html">ConstantValueEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/DoubleEntry.html">DoubleEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/DynamicConstantPoolEntry.html">DynamicConstantPoolEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/FieldRefEntry.html">FieldRefEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/FloatEntry.html">FloatEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/IntegerEntry.html">IntegerEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/InterfaceMethodRefEntry.html">InterfaceMethodRefEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/InvokeDynamicEntry.html">InvokeDynamicEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/LoadableConstantEntry.html">LoadableConstantEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/LongEntry.html">LongEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/MemberRefEntry.html">MemberRefEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/MethodHandleEntry.html">MethodHandleEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/MethodRefEntry.html">MethodRefEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/MethodTypeEntry.html">MethodTypeEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/ModuleEntry.html">ModuleEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/NameAndTypeEntry.html">NameAndTypeEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/PackageEntry.html">PackageEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/PoolEntry.html">PoolEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/StringEntry.html">StringEntry</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/constantpool/Utf8Entry.html">Utf8Entry</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/package-summary.html">java.lang.classfile.constantpool</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/AnnotationConstantValueEntry.html">AnnotationConstantValueEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/ClassEntry.html">ClassEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/ConstantDynamicEntry.html">ConstantDynamicEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/ConstantPool.html">ConstantPool</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/ConstantPoolBuilder.html">ConstantPoolBuilder</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/ConstantPoolException.html">ConstantPoolException</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/ConstantValueEntry.html">ConstantValueEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/DoubleEntry.html">DoubleEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/DynamicConstantPoolEntry.html">DynamicConstantPoolEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/FieldRefEntry.html">FieldRefEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/FloatEntry.html">FloatEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/IntegerEntry.html">IntegerEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/InterfaceMethodRefEntry.html">InterfaceMethodRefEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/InvokeDynamicEntry.html">InvokeDynamicEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/LoadableConstantEntry.html">LoadableConstantEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/LongEntry.html">LongEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/MemberRefEntry.html">MemberRefEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/MethodHandleEntry.html">MethodHandleEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/MethodRefEntry.html">MethodRefEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/MethodTypeEntry.html">MethodTypeEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/ModuleEntry.html">ModuleEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/NameAndTypeEntry.html">NameAndTypeEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/PackageEntry.html">PackageEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/PoolEntry.html">PoolEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/StringEntry.html">StringEntry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/constantpool/Utf8Entry.html">Utf8Entry</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>27</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>27</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

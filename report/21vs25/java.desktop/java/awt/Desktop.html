@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/java.awt.Desktop</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/java/awt/package-summary.html">java.awt</a></div>
+<h1>Class&nbsp;Desktop</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> Desktop <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Desktop.Action.html">Action</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addAppEventListener(SystemEventListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addAppEventListener(<span class="parameters"><span class="parameter">java.awt.desktop.SystemEventListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="browse(URI)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> browse(<span class="parameters"><span class="parameter">java.net.URI arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="browseFileDirectory(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> browseFileDirectory(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="disableSuddenTermination()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> disableSuddenTermination()</div>
+</div>
+</li><li><div class="element" id="edit(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> edit(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="enableSuddenTermination()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> enableSuddenTermination()</div>
+</div>
+</li><li><div class="element" id="getDesktop()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Desktop getDesktop()</div>
+</div>
+</li><li><div class="element" id="isDesktopSupported()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isDesktopSupported()</div>
+</div>
+</li><li><div class="element" id="isSupported(Action)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSupported(<span class="parameters"><span class="parameter">java.awt.Desktop.Action arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mail()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> mail() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="mail(URI)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> mail(<span class="parameters"><span class="parameter">java.net.URI arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="moveToTrash(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> moveToTrash(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="open(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> open(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="openHelpViewer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> openHelpViewer()</div>
+</div>
+</li><li><div class="element" id="print(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> print(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="removeAppEventListener(SystemEventListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeAppEventListener(<span class="parameters"><span class="parameter">java.awt.desktop.SystemEventListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="requestForeground(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> requestForeground(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setAboutHandler(AboutHandler)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAboutHandler(<span class="parameters"><span class="parameter">java.awt.desktop.AboutHandler arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDefaultMenuBar(JMenuBar)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDefaultMenuBar(<span class="parameters"><span class="parameter">javax.swing.JMenuBar arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setOpenFileHandler(OpenFilesHandler)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setOpenFileHandler(<span class="parameters"><span class="parameter">java.awt.desktop.OpenFilesHandler arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setOpenURIHandler(OpenURIHandler)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setOpenURIHandler(<span class="parameters"><span class="parameter">java.awt.desktop.OpenURIHandler arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setPreferencesHandler(PreferencesHandler)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setPreferencesHandler(<span class="parameters"><span class="parameter">java.awt.desktop.PreferencesHandler arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setPrintFileHandler(PrintFilesHandler)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setPrintFileHandler(<span class="parameters"><span class="parameter">java.awt.desktop.PrintFilesHandler arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setQuitHandler(QuitHandler)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setQuitHandler(<span class="parameters"><span class="parameter">java.awt.desktop.QuitHandler arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setQuitStrategy(QuitStrategy)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setQuitStrategy(<span class="parameters"><span class="parameter">java.awt.desktop.QuitStrategy arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

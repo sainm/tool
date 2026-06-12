@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.naming/javax.naming.InitialContext</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.naming/module-summary.html">java.naming</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.naming/javax/naming/package-summary.html">javax.naming</a></div>
+<h1>Class&nbsp;InitialContext</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> InitialContext <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.naming.Context</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="defaultInitCtx"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.naming.Context defaultInitCtx</div>
+</div>
+</li><li><div class="element" id="gotDefault"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> gotDefault</div>
+</div>
+</li><li><div class="element" id="myProps"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.util.Hashtable&lt;java.lang.Object, java.lang.Object&gt;</span> myProps</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> InitialContext() <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> InitialContext(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Hashtable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> InitialContext(<span class="parameters"><span class="parameter"><span>java.util.Hashtable&lt;?, ?&gt;</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addToEnvironment(String,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object addToEnvironment(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="bind(String,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> bind(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="bind(Name,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> bind(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="close()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> close() <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="composeName(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String composeName(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="composeName(Name,Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.Name composeName(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span>, <span class="parameter">javax.naming.Name arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="createSubcontext(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.Context createSubcontext(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="createSubcontext(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.Context createSubcontext(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="destroySubcontext(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> destroySubcontext(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="destroySubcontext(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> destroySubcontext(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="doLookup(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doLookup(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="doLookup(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doLookup(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getDefaultInitCtx()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.naming.Context getDefaultInitCtx() <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getEnvironment()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Hashtable&lt;?, ?&gt;</span> getEnvironment() <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getNameInNamespace()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getNameInNamespace() <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getNameParser(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.NameParser getNameParser(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getNameParser(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.NameParser getNameParser(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getURLOrDefaultInitCtx(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.naming.Context getURLOrDefaultInitCtx(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getURLOrDefaultInitCtx(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.naming.Context getURLOrDefaultInitCtx(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="init(Hashtable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> init(<span class="parameters"><span class="parameter"><span>java.util.Hashtable&lt;?, ?&gt;</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="list(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.naming.NamingEnumeration&lt;javax.naming.NameClassPair&gt;</span> list(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="list(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.naming.NamingEnumeration&lt;javax.naming.NameClassPair&gt;</span> list(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="listBindings(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.naming.NamingEnumeration&lt;javax.naming.Binding&gt;</span> listBindings(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="listBindings(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.naming.NamingEnumeration&lt;javax.naming.Binding&gt;</span> listBindings(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="lookup(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object lookup(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="lookup(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object lookup(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="lookupLink(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object lookupLink(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="lookupLink(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object lookupLink(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="rebind(String,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> rebind(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="rebind(Name,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> rebind(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="removeFromEnvironment(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object removeFromEnvironment(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="rename(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> rename(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="rename(Name,Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> rename(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span>, <span class="parameter">javax.naming.Name arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="unbind(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> unbind(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="unbind(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> unbind(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

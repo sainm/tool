@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.lang.reflect.Field</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/lang/reflect/package-summary.html">java.lang.reflect</a></div>
+<h1>Class&nbsp;Field</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> Field <div class="superclass"><span class="keyword">extends</span> java.lang.reflect.AccessibleObject</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.lang.reflect.Member</div>
+</div>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="accessFlags()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Set&lt;java.lang.reflect.AccessFlag&gt;</span> accessFlags()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="get(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object get(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAnnotatedType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.reflect.AnnotatedType getAnnotatedType()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAnnotation(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T getAnnotation(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAnnotationsByType(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>T[]</span> getAnnotationsByType(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getBoolean(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getBoolean(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getByte(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">byte</span> getByte(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getChar(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">char</span> getChar(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDeclaredAnnotations()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.annotation.Annotation[]</span> getDeclaredAnnotations()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDeclaringClass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> getDeclaringClass()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDouble(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">double</span> getDouble(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFloat(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getFloat(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getGenericType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.reflect.Type getGenericType()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getInt(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getInt(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getLong(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getLong(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getModifiers()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getModifiers()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getName()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getShort(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">short</span> getShort(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> getType()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isEnumConstant()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isEnumConstant()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isSynthetic()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSynthetic()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="set(Object,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> set(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="setAccessible(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAccessible(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setBoolean(Object,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBoolean(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="setByte(Object,byte)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setByte(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">byte</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="setChar(Object,char)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setChar(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">char</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="setDouble(Object,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDouble(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="setFloat(Object,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFloat(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="setInt(Object,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setInt(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="setLong(Object,long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLong(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="setShort(Object,short)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setShort(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">short</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="toGenericString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toGenericString()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/lang/reflect/Field.html#accessFlags()">accessFlags()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

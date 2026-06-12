@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.sql/java.sql.Clob</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.sql/module-summary.html">java.sql</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.sql/java/sql/package-summary.html">java.sql</a></div>
+<h1>Interface&nbsp;Clob</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> Clob </div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="free()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> free() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getAsciiStream()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.io.InputStream getAsciiStream() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getCharacterStream()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.io.Reader getCharacterStream() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getCharacterStream(long,long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.io.Reader getCharacterStream(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="getSubString(long,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getSubString(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="length()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">long</span> length() <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="position(String,long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">long</span> position(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="position(Clob,long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">long</span> position(<span class="parameters"><span class="parameter">java.sql.Clob arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setAsciiStream(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.io.OutputStream setAsciiStream(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setCharacterStream(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.io.Writer setCharacterStream(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setString(long,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> setString(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="setString(long,String,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> setString(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li><li><div class="element" id="truncate(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> truncate(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.sql.SQLException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

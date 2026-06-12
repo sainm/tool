@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class jdk.accessibility/com.sun.java.accessibility.util.SwingEventMonitor</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../../jdk.accessibility/module-summary.html">jdk.accessibility</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../../jdk.accessibility/com/sun/java/accessibility/util/package-summary.html">com.sun.java.accessibility.util</a></div>
+<h1>Class&nbsp;SwingEventMonitor</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> SwingEventMonitor <div class="superclass"><span class="keyword">extends</span> com.sun.java.accessibility.util.AWTEventMonitor</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="listenerList"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> javax.swing.event.EventListenerList listenerList</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> SwingEventMonitor()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addAncestorListener(AncestorListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addAncestorListener(<span class="parameters"><span class="parameter">javax.swing.event.AncestorListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addCaretListener(CaretListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addCaretListener(<span class="parameters"><span class="parameter">javax.swing.event.CaretListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addCellEditorListener(CellEditorListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addCellEditorListener(<span class="parameters"><span class="parameter">javax.swing.event.CellEditorListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addChangeListener(ChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addChangeListener(<span class="parameters"><span class="parameter">javax.swing.event.ChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addColumnModelListener(TableColumnModelListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addColumnModelListener(<span class="parameters"><span class="parameter">javax.swing.event.TableColumnModelListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addDocumentListener(DocumentListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addDocumentListener(<span class="parameters"><span class="parameter">javax.swing.event.DocumentListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addInternalFrameListener(InternalFrameListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addInternalFrameListener(<span class="parameters"><span class="parameter">javax.swing.event.InternalFrameListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addListDataListener(ListDataListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addListDataListener(<span class="parameters"><span class="parameter">javax.swing.event.ListDataListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addListSelectionListener(ListSelectionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addListSelectionListener(<span class="parameters"><span class="parameter">javax.swing.event.ListSelectionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addMenuListener(MenuListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addMenuListener(<span class="parameters"><span class="parameter">javax.swing.event.MenuListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addPopupMenuListener(PopupMenuListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addPopupMenuListener(<span class="parameters"><span class="parameter">javax.swing.event.PopupMenuListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addPropertyChangeListener(PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addPropertyChangeListener(<span class="parameters"><span class="parameter">java.beans.PropertyChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addTableModelListener(TableModelListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addTableModelListener(<span class="parameters"><span class="parameter">javax.swing.event.TableModelListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addTreeExpansionListener(TreeExpansionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addTreeExpansionListener(<span class="parameters"><span class="parameter">javax.swing.event.TreeExpansionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addTreeModelListener(TreeModelListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addTreeModelListener(<span class="parameters"><span class="parameter">javax.swing.event.TreeModelListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addTreeSelectionListener(TreeSelectionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addTreeSelectionListener(<span class="parameters"><span class="parameter">javax.swing.event.TreeSelectionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addUndoableEditListener(UndoableEditListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addUndoableEditListener(<span class="parameters"><span class="parameter">javax.swing.event.UndoableEditListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addVetoableChangeListener(VetoableChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> addVetoableChangeListener(<span class="parameters"><span class="parameter">java.beans.VetoableChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeAncestorListener(AncestorListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeAncestorListener(<span class="parameters"><span class="parameter">javax.swing.event.AncestorListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeCaretListener(CaretListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeCaretListener(<span class="parameters"><span class="parameter">javax.swing.event.CaretListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeCellEditorListener(CellEditorListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeCellEditorListener(<span class="parameters"><span class="parameter">javax.swing.event.CellEditorListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeChangeListener(ChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeChangeListener(<span class="parameters"><span class="parameter">javax.swing.event.ChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeColumnModelListener(TableColumnModelListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeColumnModelListener(<span class="parameters"><span class="parameter">javax.swing.event.TableColumnModelListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeDocumentListener(DocumentListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeDocumentListener(<span class="parameters"><span class="parameter">javax.swing.event.DocumentListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeInternalFrameListener(InternalFrameListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeInternalFrameListener(<span class="parameters"><span class="parameter">javax.swing.event.InternalFrameListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeListDataListener(ListDataListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeListDataListener(<span class="parameters"><span class="parameter">javax.swing.event.ListDataListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeListSelectionListener(ListSelectionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeListSelectionListener(<span class="parameters"><span class="parameter">javax.swing.event.ListSelectionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeMenuListener(MenuListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeMenuListener(<span class="parameters"><span class="parameter">javax.swing.event.MenuListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removePopupMenuListener(PopupMenuListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removePopupMenuListener(<span class="parameters"><span class="parameter">javax.swing.event.PopupMenuListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removePropertyChangeListener(PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removePropertyChangeListener(<span class="parameters"><span class="parameter">java.beans.PropertyChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeTableModelListener(TableModelListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeTableModelListener(<span class="parameters"><span class="parameter">javax.swing.event.TableModelListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeTreeExpansionListener(TreeExpansionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeTreeExpansionListener(<span class="parameters"><span class="parameter">javax.swing.event.TreeExpansionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeTreeModelListener(TreeModelListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeTreeModelListener(<span class="parameters"><span class="parameter">javax.swing.event.TreeModelListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeTreeSelectionListener(TreeSelectionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeTreeSelectionListener(<span class="parameters"><span class="parameter">javax.swing.event.TreeSelectionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeUndoableEditListener(UndoableEditListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeUndoableEditListener(<span class="parameters"><span class="parameter">javax.swing.event.UndoableEditListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeVetoableChangeListener(VetoableChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> removeVetoableChangeListener(<span class="parameters"><span class="parameter">java.beans.VetoableChangeListener arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

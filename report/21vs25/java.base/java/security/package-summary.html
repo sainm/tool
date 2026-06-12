@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package java.base/java.security</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<h1>Package&nbsp;java.security</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="keyword">package</span> java.security</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/AccessControlContext.html">AccessControlContext</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/AccessControlException.html">AccessControlException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/AccessController.html">AccessController</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/AlgorithmConstraints.html">AlgorithmConstraints</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/AlgorithmParameterGenerator.html">AlgorithmParameterGenerator</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/AlgorithmParameterGeneratorSpi.html">AlgorithmParameterGeneratorSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/AlgorithmParameters.html">AlgorithmParameters</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/AlgorithmParametersSpi.html">AlgorithmParametersSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/AllPermission.html">AllPermission</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../java.base/java/security/AsymmetricKey.html">AsymmetricKey</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/AuthProvider.html">AuthProvider</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/BasicPermission.html">BasicPermission</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/Certificate.html">Certificate</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/CodeSigner.html">CodeSigner</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/CodeSource.html">CodeSource</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/CryptoPrimitive.html">CryptoPrimitive</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../java.base/java/security/DEREncodable.html">DEREncodable</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/DigestException.html">DigestException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/DigestInputStream.html">DigestInputStream</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/DigestOutputStream.html">DigestOutputStream</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/DomainCombiner.html">DomainCombiner</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/DomainLoadStoreParameter.html">DomainLoadStoreParameter</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/security/DrbgParameters.html">DrbgParameters</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/GeneralSecurityException.html">GeneralSecurityException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/Guard.html">Guard</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/GuardedObject.html">GuardedObject</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/Identity.html">Identity</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/IdentityScope.html">IdentityScope</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/InvalidAlgorithmParameterException.html">InvalidAlgorithmParameterException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/InvalidKeyException.html">InvalidKeyException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/InvalidParameterException.html">InvalidParameterException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/Key.html">Key</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/KeyException.html">KeyException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/KeyFactory.html">KeyFactory</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/KeyFactorySpi.html">KeyFactorySpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/KeyManagementException.html">KeyManagementException</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/security/KeyPair.html">KeyPair</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/KeyPairGenerator.html">KeyPairGenerator</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/KeyPairGeneratorSpi.html">KeyPairGeneratorSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/KeyRep.html">KeyRep</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/KeyStore.html">KeyStore</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/KeyStoreException.html">KeyStoreException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/KeyStoreSpi.html">KeyStoreSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/MessageDigest.html">MessageDigest</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/MessageDigestSpi.html">MessageDigestSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/NoSuchAlgorithmException.html">NoSuchAlgorithmException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/NoSuchProviderException.html">NoSuchProviderException</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../java.base/java/security/PEMDecoder.html">PEMDecoder</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../java.base/java/security/PEMEncoder.html">PEMEncoder</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../java.base/java/security/PEMRecord.html">PEMRecord</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/PKCS12Attribute.html">PKCS12Attribute</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/Permission.html">Permission</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/PermissionCollection.html">PermissionCollection</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/Permissions.html">Permissions</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/Policy.html">Policy</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/PolicySpi.html">PolicySpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/Principal.html">Principal</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/security/PrivateKey.html">PrivateKey</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/PrivilegedAction.html">PrivilegedAction</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/PrivilegedActionException.html">PrivilegedActionException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/PrivilegedExceptionAction.html">PrivilegedExceptionAction</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/ProtectionDomain.html">ProtectionDomain</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/Provider.html">Provider</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/ProviderException.html">ProviderException</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/security/PublicKey.html">PublicKey</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/SecureClassLoader.html">SecureClassLoader</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/SecureRandom.html">SecureRandom</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/SecureRandomParameters.html">SecureRandomParameters</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/SecureRandomSpi.html">SecureRandomSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/Security.html">Security</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/SecurityPermission.html">SecurityPermission</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/Signature.html">Signature</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/SignatureException.html">SignatureException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/SignatureSpi.html">SignatureSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/SignedObject.html">SignedObject</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/Signer.html">Signer</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/Timestamp.html">Timestamp</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/URIParameter.html">URIParameter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/UnrecoverableEntryException.html">UnrecoverableEntryException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/UnrecoverableKeyException.html">UnrecoverableKeyException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/security/UnresolvedPermission.html">UnresolvedPermission</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th>Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.base/java/security/AsymmetricKey.html">AsymmetricKey</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/security/DEREncodable.html">DEREncodable</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/security/DrbgParameters.html">DrbgParameters</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/security/KeyPair.html">KeyPair</a></th>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/security/PEMDecoder.html">PEMDecoder</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/security/PEMEncoder.html">PEMEncoder</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/security/PEMRecord.html">PEMRecord</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/security/PrivateKey.html">PrivateKey</a></th>
+<td></td>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/security/PublicKey.html">PublicKey</a></th>
+<td></td>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>5</td>
+<td>9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>14</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

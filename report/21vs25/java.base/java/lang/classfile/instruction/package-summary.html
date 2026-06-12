@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package java.base/java.lang.classfile.instruction</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.base/module-summary.html">java.base</a></div>
+<h1>Package&nbsp;java.lang.classfile.instruction</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="keyword">package</span> java.lang.classfile.instruction</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/ArrayLoadInstruction.html">ArrayLoadInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/ArrayStoreInstruction.html">ArrayStoreInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/BranchInstruction.html">BranchInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/CharacterRange.html">CharacterRange</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/ConstantInstruction.html">ConstantInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/ConvertInstruction.html">ConvertInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/DiscontinuedInstruction.html">DiscontinuedInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/ExceptionCatch.html">ExceptionCatch</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/FieldInstruction.html">FieldInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/IncrementInstruction.html">IncrementInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/InvokeDynamicInstruction.html">InvokeDynamicInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/InvokeInstruction.html">InvokeInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/LabelTarget.html">LabelTarget</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/LineNumber.html">LineNumber</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/LoadInstruction.html">LoadInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/LocalVariable.html">LocalVariable</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/LocalVariableType.html">LocalVariableType</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/LookupSwitchInstruction.html">LookupSwitchInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/MonitorInstruction.html">MonitorInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/NewMultiArrayInstruction.html">NewMultiArrayInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/NewObjectInstruction.html">NewObjectInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/NewPrimitiveArrayInstruction.html">NewPrimitiveArrayInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/NewReferenceArrayInstruction.html">NewReferenceArrayInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/NopInstruction.html">NopInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/OperatorInstruction.html">OperatorInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/ReturnInstruction.html">ReturnInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/StackInstruction.html">StackInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/StoreInstruction.html">StoreInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/SwitchCase.html">SwitchCase</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/TableSwitchInstruction.html">TableSwitchInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/ThrowInstruction.html">ThrowInstruction</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/instruction/TypeCheckInstruction.html">TypeCheckInstruction</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/package-summary.html">java.lang.classfile.instruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/ArrayLoadInstruction.html">ArrayLoadInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/ArrayStoreInstruction.html">ArrayStoreInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/BranchInstruction.html">BranchInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/CharacterRange.html">CharacterRange</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/ConstantInstruction.html">ConstantInstruction</a></th>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/ConvertInstruction.html">ConvertInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/DiscontinuedInstruction.html">DiscontinuedInstruction</a></th>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/ExceptionCatch.html">ExceptionCatch</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/FieldInstruction.html">FieldInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/IncrementInstruction.html">IncrementInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/InvokeDynamicInstruction.html">InvokeDynamicInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/InvokeInstruction.html">InvokeInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/LabelTarget.html">LabelTarget</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/LineNumber.html">LineNumber</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/LoadInstruction.html">LoadInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/LocalVariable.html">LocalVariable</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/LocalVariableType.html">LocalVariableType</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/LookupSwitchInstruction.html">LookupSwitchInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/MonitorInstruction.html">MonitorInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/NewMultiArrayInstruction.html">NewMultiArrayInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/NewObjectInstruction.html">NewObjectInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/NewPrimitiveArrayInstruction.html">NewPrimitiveArrayInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/NewReferenceArrayInstruction.html">NewReferenceArrayInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/NopInstruction.html">NopInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/OperatorInstruction.html">OperatorInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/ReturnInstruction.html">ReturnInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/StackInstruction.html">StackInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/StoreInstruction.html">StoreInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/SwitchCase.html">SwitchCase</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/TableSwitchInstruction.html">TableSwitchInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/ThrowInstruction.html">ThrowInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/instruction/TypeCheckInstruction.html">TypeCheckInstruction</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>38</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>38</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/java.awt.color.ICC_Profile</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/java/awt/color/package-summary.html">java.awt.color</a></div>
+<h1>Class&nbsp;ICC_Profile</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21"><span class="keyword">sealed</span></span></span></span> <span class="keyword">class</span> ICC_Profile <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable</div>
+<div class="permitted-subclasses"><span class="keyword">permits</span> <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.awt.color.ICC_ProfileGray</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.awt.color.ICC_ProfileRGB</span></span></div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="CLASS_ABSTRACT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CLASS_ABSTRACT = 5</div>
+</div>
+</li><li><div class="element" id="CLASS_COLORSPACECONVERSION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CLASS_COLORSPACECONVERSION = 4</div>
+</div>
+</li><li><div class="element" id="CLASS_DEVICELINK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CLASS_DEVICELINK = 3</div>
+</div>
+</li><li><div class="element" id="CLASS_DISPLAY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CLASS_DISPLAY = 1</div>
+</div>
+</li><li><div class="element" id="CLASS_INPUT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CLASS_INPUT = 0</div>
+</div>
+</li><li><div class="element" id="CLASS_NAMEDCOLOR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CLASS_NAMEDCOLOR = 6</div>
+</div>
+</li><li><div class="element" id="CLASS_OUTPUT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CLASS_OUTPUT = 2</div>
+</div>
+</li><li><div class="element" id="icAbsoluteColorimetric"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icAbsoluteColorimetric = 3</div>
+</div>
+</li><li><div class="element" id="icCurveCount"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icCurveCount = 8</div>
+</div>
+</li><li><div class="element" id="icCurveData"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icCurveData = 12</div>
+</div>
+</li><li><div class="element" id="icHdrAttributes"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrAttributes = 56</div>
+</div>
+</li><li><div class="element" id="icHdrCmmId"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrCmmId = 4</div>
+</div>
+</li><li><div class="element" id="icHdrColorSpace"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrColorSpace = 16</div>
+</div>
+</li><li><div class="element" id="icHdrCreator"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrCreator = 80</div>
+</div>
+</li><li><div class="element" id="icHdrDate"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrDate = 24</div>
+</div>
+</li><li><div class="element" id="icHdrDeviceClass"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrDeviceClass = 12</div>
+</div>
+</li><li><div class="element" id="icHdrFlags"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrFlags = 44</div>
+</div>
+</li><li><div class="element" id="icHdrIlluminant"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrIlluminant = 68</div>
+</div>
+</li><li><div class="element" id="icHdrMagic"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrMagic = 36</div>
+</div>
+</li><li><div class="element" id="icHdrManufacturer"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrManufacturer = 48</div>
+</div>
+</li><li><div class="element" id="icHdrModel"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrModel = 52</div>
+</div>
+</li><li><div class="element" id="icHdrPcs"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrPcs = 20</div>
+</div>
+</li><li><div class="element" id="icHdrPlatform"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrPlatform = 40</div>
+</div>
+</li><li><div class="element" id="icHdrProfileID"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrProfileID = 84</div>
+</div>
+</li><li><div class="element" id="icHdrRenderingIntent"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrRenderingIntent = 64</div>
+</div>
+</li><li><div class="element" id="icHdrSize"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrSize = 0</div>
+</div>
+</li><li><div class="element" id="icHdrVersion"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icHdrVersion = 8</div>
+</div>
+</li><li><div class="element" id="icICCAbsoluteColorimetric"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icICCAbsoluteColorimetric = 3</div>
+</div>
+</li><li><div class="element" id="icMediaRelativeColorimetric"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icMediaRelativeColorimetric = 1</div>
+</div>
+</li><li><div class="element" id="icPerceptual"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icPerceptual = 0</div>
+</div>
+</li><li><div class="element" id="icRelativeColorimetric"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icRelativeColorimetric = 1</div>
+</div>
+</li><li><div class="element" id="icSaturation"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSaturation = 2</div>
+</div>
+</li><li><div class="element" id="icSigAToB0Tag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigAToB0Tag = 1093812784</div>
+</div>
+</li><li><div class="element" id="icSigAToB1Tag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigAToB1Tag = 1093812785</div>
+</div>
+</li><li><div class="element" id="icSigAToB2Tag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigAToB2Tag = 1093812786</div>
+</div>
+</li><li><div class="element" id="icSigAbstractClass"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigAbstractClass = 1633842036</div>
+</div>
+</li><li><div class="element" id="icSigBToA0Tag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigBToA0Tag = 1110589744</div>
+</div>
+</li><li><div class="element" id="icSigBToA1Tag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigBToA1Tag = 1110589745</div>
+</div>
+</li><li><div class="element" id="icSigBToA2Tag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigBToA2Tag = 1110589746</div>
+</div>
+</li><li><div class="element" id="icSigBlueColorantTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigBlueColorantTag = 1649957210</div>
+</div>
+</li><li><div class="element" id="icSigBlueMatrixColumnTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigBlueMatrixColumnTag = 1649957210</div>
+</div>
+</li><li><div class="element" id="icSigBlueTRCTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigBlueTRCTag = 1649693251</div>
+</div>
+</li><li><div class="element" id="icSigCalibrationDateTimeTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigCalibrationDateTimeTag = 1667329140</div>
+</div>
+</li><li><div class="element" id="icSigCharTargetTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigCharTargetTag = 1952543335</div>
+</div>
+</li><li><div class="element" id="icSigChromaticAdaptationTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigChromaticAdaptationTag = 1667785060</div>
+</div>
+</li><li><div class="element" id="icSigChromaticityTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigChromaticityTag = 1667789421</div>
+</div>
+</li><li><div class="element" id="icSigCmyData"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigCmyData = 1129142560</div>
+</div>
+</li><li><div class="element" id="icSigCmykData"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigCmykData = 1129142603</div>
+</div>
+</li><li><div class="element" id="icSigColorSpaceClass"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigColorSpaceClass = 1936744803</div>
+</div>
+</li><li><div class="element" id="icSigColorantOrderTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigColorantOrderTag = 1668051567</div>
+</div>
+</li><li><div class="element" id="icSigColorantTableTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigColorantTableTag = 1668051572</div>
+</div>
+</li><li><div class="element" id="icSigCopyrightTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigCopyrightTag = 1668313716</div>
+</div>
+</li><li><div class="element" id="icSigCrdInfoTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigCrdInfoTag = 1668441193</div>
+</div>
+</li><li><div class="element" id="icSigDeviceMfgDescTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigDeviceMfgDescTag = 1684893284</div>
+</div>
+</li><li><div class="element" id="icSigDeviceModelDescTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigDeviceModelDescTag = 1684890724</div>
+</div>
+</li><li><div class="element" id="icSigDeviceSettingsTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigDeviceSettingsTag = 1684371059</div>
+</div>
+</li><li><div class="element" id="icSigDisplayClass"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigDisplayClass = 1835955314</div>
+</div>
+</li><li><div class="element" id="icSigGamutTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigGamutTag = 1734438260</div>
+</div>
+</li><li><div class="element" id="icSigGrayData"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigGrayData = 1196573017</div>
+</div>
+</li><li><div class="element" id="icSigGrayTRCTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigGrayTRCTag = 1800688195</div>
+</div>
+</li><li><div class="element" id="icSigGreenColorantTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigGreenColorantTag = 1733843290</div>
+</div>
+</li><li><div class="element" id="icSigGreenMatrixColumnTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigGreenMatrixColumnTag = 1733843290</div>
+</div>
+</li><li><div class="element" id="icSigGreenTRCTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigGreenTRCTag = 1733579331</div>
+</div>
+</li><li><div class="element" id="icSigHead"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigHead = 1751474532</div>
+</div>
+</li><li><div class="element" id="icSigHlsData"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigHlsData = 1212961568</div>
+</div>
+</li><li><div class="element" id="icSigHsvData"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigHsvData = 1213421088</div>
+</div>
+</li><li><div class="element" id="icSigInputClass"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigInputClass = 1935896178</div>
+</div>
+</li><li><div class="element" id="icSigLabData"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigLabData = 1281450528</div>
+</div>
+</li><li><div class="element" id="icSigLinkClass"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigLinkClass = 1818848875</div>
+</div>
+</li><li><div class="element" id="icSigLuminanceTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigLuminanceTag = 1819635049</div>
+</div>
+</li><li><div class="element" id="icSigLuvData"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigLuvData = 1282766368</div>
+</div>
+</li><li><div class="element" id="icSigMeasurementTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigMeasurementTag = 1835360627</div>
+</div>
+</li><li><div class="element" id="icSigMediaBlackPointTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigMediaBlackPointTag = 1651208308</div>
+</div>
+</li><li><div class="element" id="icSigMediaWhitePointTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigMediaWhitePointTag = 2004119668</div>
+</div>
+</li><li><div class="element" id="icSigNamedColor2Tag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigNamedColor2Tag = 1852009522</div>
+</div>
+</li><li><div class="element" id="icSigNamedColorClass"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigNamedColorClass = 1852662636</div>
+</div>
+</li><li><div class="element" id="icSigOutputClass"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigOutputClass = 1886549106</div>
+</div>
+</li><li><div class="element" id="icSigOutputResponseTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigOutputResponseTag = 1919251312</div>
+</div>
+</li><li><div class="element" id="icSigPreview0Tag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigPreview0Tag = 1886545200</div>
+</div>
+</li><li><div class="element" id="icSigPreview1Tag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigPreview1Tag = 1886545201</div>
+</div>
+</li><li><div class="element" id="icSigPreview2Tag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigPreview2Tag = 1886545202</div>
+</div>
+</li><li><div class="element" id="icSigProfileDescriptionTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigProfileDescriptionTag = 1684370275</div>
+</div>
+</li><li><div class="element" id="icSigProfileSequenceDescTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigProfileSequenceDescTag = 1886610801</div>
+</div>
+</li><li><div class="element" id="icSigPs2CRD0Tag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigPs2CRD0Tag = 1886610480</div>
+</div>
+</li><li><div class="element" id="icSigPs2CRD1Tag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigPs2CRD1Tag = 1886610481</div>
+</div>
+</li><li><div class="element" id="icSigPs2CRD2Tag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigPs2CRD2Tag = 1886610482</div>
+</div>
+</li><li><div class="element" id="icSigPs2CRD3Tag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigPs2CRD3Tag = 1886610483</div>
+</div>
+</li><li><div class="element" id="icSigPs2CSATag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigPs2CSATag = 1886597747</div>
+</div>
+</li><li><div class="element" id="icSigPs2RenderingIntentTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigPs2RenderingIntentTag = 1886597737</div>
+</div>
+</li><li><div class="element" id="icSigRedColorantTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigRedColorantTag = 1918392666</div>
+</div>
+</li><li><div class="element" id="icSigRedMatrixColumnTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigRedMatrixColumnTag = 1918392666</div>
+</div>
+</li><li><div class="element" id="icSigRedTRCTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigRedTRCTag = 1918128707</div>
+</div>
+</li><li><div class="element" id="icSigRgbData"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigRgbData = 1380401696</div>
+</div>
+</li><li><div class="element" id="icSigScreeningDescTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigScreeningDescTag = 1935897188</div>
+</div>
+</li><li><div class="element" id="icSigScreeningTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigScreeningTag = 1935897198</div>
+</div>
+</li><li><div class="element" id="icSigSpace2CLR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigSpace2CLR = 843271250</div>
+</div>
+</li><li><div class="element" id="icSigSpace3CLR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigSpace3CLR = 860048466</div>
+</div>
+</li><li><div class="element" id="icSigSpace4CLR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigSpace4CLR = 876825682</div>
+</div>
+</li><li><div class="element" id="icSigSpace5CLR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigSpace5CLR = 893602898</div>
+</div>
+</li><li><div class="element" id="icSigSpace6CLR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigSpace6CLR = 910380114</div>
+</div>
+</li><li><div class="element" id="icSigSpace7CLR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigSpace7CLR = 927157330</div>
+</div>
+</li><li><div class="element" id="icSigSpace8CLR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigSpace8CLR = 943934546</div>
+</div>
+</li><li><div class="element" id="icSigSpace9CLR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigSpace9CLR = 960711762</div>
+</div>
+</li><li><div class="element" id="icSigSpaceACLR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigSpaceACLR = 1094929490</div>
+</div>
+</li><li><div class="element" id="icSigSpaceBCLR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigSpaceBCLR = 1111706706</div>
+</div>
+</li><li><div class="element" id="icSigSpaceCCLR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigSpaceCCLR = 1128483922</div>
+</div>
+</li><li><div class="element" id="icSigSpaceDCLR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigSpaceDCLR = 1145261138</div>
+</div>
+</li><li><div class="element" id="icSigSpaceECLR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigSpaceECLR = 1162038354</div>
+</div>
+</li><li><div class="element" id="icSigSpaceFCLR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigSpaceFCLR = 1178815570</div>
+</div>
+</li><li><div class="element" id="icSigTechnologyTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigTechnologyTag = 1952801640</div>
+</div>
+</li><li><div class="element" id="icSigUcrBgTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigUcrBgTag = 1650877472</div>
+</div>
+</li><li><div class="element" id="icSigViewingCondDescTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigViewingCondDescTag = 1987405156</div>
+</div>
+</li><li><div class="element" id="icSigViewingConditionsTag"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigViewingConditionsTag = 1986618743</div>
+</div>
+</li><li><div class="element" id="icSigXYZData"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigXYZData = 1482250784</div>
+</div>
+</li><li><div class="element" id="icSigYCbCrData"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigYCbCrData = 1497588338</div>
+</div>
+</li><li><div class="element" id="icSigYxyData"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icSigYxyData = 1501067552</div>
+</div>
+</li><li><div class="element" id="icTagReserved"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icTagReserved = 4</div>
+</div>
+</li><li><div class="element" id="icTagType"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icTagType = 0</div>
+</div>
+</li><li><div class="element" id="icXYZNumberX"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> icXYZNumberX = 8</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="finalize()"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK17; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> finalize()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getColorSpaceType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getColorSpaceType()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getData()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span class="keyword">byte</span>[]</span> getData()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getData(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span class="keyword">byte</span>[]</span> getData(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getInstance(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.color.ICC_Profile getInstance(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getInstance(byte[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.color.ICC_Profile getInstance(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getInstance(InputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.color.ICC_Profile getInstance(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getInstance(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.color.ICC_Profile getInstance(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getMajorVersion()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMajorVersion()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getMinorVersion()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMinorVersion()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getNumComponents()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getNumComponents()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getPCSType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getPCSType()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getProfileClass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getProfileClass()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="readResolve()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.Object readResolve() <span class="throws"><span class="keyword">throws</span> java.io.ObjectStreamException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="setData(int,byte[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setData(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span><span class="keyword">byte</span>[]</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="write(OutputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> write(<span class="parameters"><span class="parameter">java.io.OutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="write(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> write(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-3938515861990936766<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;iccProfileSerializedDataVersion</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-readResolve"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.Object readResolve() <span class="throws"><span class="keyword">throws</span> java.io.ObjectStreamException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th class="allZero">Added</th>
+<th>Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.desktop/java/awt/color/ICC_Profile.html">ICC_Profile</a></th>
+<td></td>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.desktop/java/awt/color/ICC_Profile.html#finalize()">finalize()</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td></td>
+<td>4</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

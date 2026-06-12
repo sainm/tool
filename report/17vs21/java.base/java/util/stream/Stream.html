@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface java.base/java.util.stream.Stream</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/util/stream/package-summary.html">java.util.stream</a></div>
+<h1>Interface&nbsp;Stream</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> Stream<span class="typarams">&lt;<span>T</span>&gt;</span> <div class="superinterfaces"><span class="keyword">extends</span> <span>java.util.stream.BaseStream&lt;T, <span>java.util.stream.Stream&lt;T&gt;</span>&gt;</span></div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/stream/Stream.Builder.html">Builder</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="allMatch(Predicate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> allMatch(<span class="parameters"><span class="parameter"><span>java.util.function.Predicate&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="anyMatch(Predicate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> anyMatch(<span class="parameters"><span class="parameter"><span>java.util.function.Predicate&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="builder()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.stream.Stream.Builder&lt;T&gt;</span> builder()</div>
+</div>
+</li><li><div class="element" id="collect(Supplier,BiConsumer,BiConsumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="typarams">&lt;<span>R</span>&gt;</span> R collect(<span class="parameters"><span class="parameter"><span>java.util.function.Supplier&lt;R&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.BiConsumer&lt;R, <span>? <span class="keyword">super</span> T</span>&gt;</span> arg1</span>, <span class="parameter"><span>java.util.function.BiConsumer&lt;R, R&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="collect(Collector)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="typarams">&lt;<span>R</span>, <span>A</span>&gt;</span> R collect(<span class="parameters"><span class="parameter"><span>java.util.stream.Collector&lt;<span>? <span class="keyword">super</span> T</span>, A, R&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="concat(Stream,Stream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.stream.Stream&lt;T&gt;</span> concat(<span class="parameters"><span class="parameter"><span>java.util.stream.Stream&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.stream.Stream&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="count()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">long</span> count()</div>
+</div>
+</li><li><div class="element" id="distinct()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.stream.Stream&lt;T&gt;</span> distinct()</div>
+</div>
+</li><li><div class="element" id="dropWhile(Predicate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>java.util.stream.Stream&lt;T&gt;</span> dropWhile(<span class="parameters"><span class="parameter"><span>java.util.function.Predicate&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="empty()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.stream.Stream&lt;T&gt;</span> empty()</div>
+</div>
+</li><li><div class="element" id="filter(Predicate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.stream.Stream&lt;T&gt;</span> filter(<span class="parameters"><span class="parameter"><span>java.util.function.Predicate&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="findAny()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.Optional&lt;T&gt;</span> findAny()</div>
+</div>
+</li><li><div class="element" id="findFirst()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.Optional&lt;T&gt;</span> findFirst()</div>
+</div>
+</li><li><div class="element" id="flatMap(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="typarams">&lt;<span>R</span>&gt;</span> <span>java.util.stream.Stream&lt;R&gt;</span> flatMap(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">extends</span> <span>java.util.stream.Stream&lt;<span>? <span class="keyword">extends</span> R</span>&gt;</span></span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="flatMapToDouble(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.DoubleStream flatMapToDouble(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">extends</span> java.util.stream.DoubleStream</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="flatMapToInt(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.IntStream flatMapToInt(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">extends</span> java.util.stream.IntStream</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="flatMapToLong(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.LongStream flatMapToLong(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">extends</span> java.util.stream.LongStream</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="forEach(Consumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> forEach(<span class="parameters"><span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="forEachOrdered(Consumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> forEachOrdered(<span class="parameters"><span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="generate(Supplier)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.stream.Stream&lt;T&gt;</span> generate(<span class="parameters"><span class="parameter"><span>java.util.function.Supplier&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="iterate(T,Predicate,UnaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.stream.Stream&lt;T&gt;</span> iterate(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter"><span>java.util.function.Predicate&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg1</span>, <span class="parameter"><span>java.util.function.UnaryOperator&lt;T&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="iterate(T,UnaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.stream.Stream&lt;T&gt;</span> iterate(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter"><span>java.util.function.UnaryOperator&lt;T&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="limit(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.stream.Stream&lt;T&gt;</span> limit(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="map(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="typarams">&lt;<span>R</span>&gt;</span> <span>java.util.stream.Stream&lt;R&gt;</span> map(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">extends</span> R</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mapMulti(BiConsumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="typarams">&lt;<span>R</span>&gt;</span> <span>java.util.stream.Stream&lt;R&gt;</span> mapMulti(<span class="parameters"><span class="parameter"><span>java.util.function.BiConsumer&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">super</span> <span>java.util.function.Consumer&lt;R&gt;</span></span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mapMultiToDouble(BiConsumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.util.stream.DoubleStream mapMultiToDouble(<span class="parameters"><span class="parameter"><span>java.util.function.BiConsumer&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">super</span> java.util.function.DoubleConsumer</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mapMultiToInt(BiConsumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.util.stream.IntStream mapMultiToInt(<span class="parameters"><span class="parameter"><span>java.util.function.BiConsumer&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">super</span> java.util.function.IntConsumer</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mapMultiToLong(BiConsumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.util.stream.LongStream mapMultiToLong(<span class="parameters"><span class="parameter"><span>java.util.function.BiConsumer&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">super</span> java.util.function.LongConsumer</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mapToDouble(ToDoubleFunction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.DoubleStream mapToDouble(<span class="parameters"><span class="parameter"><span>java.util.function.ToDoubleFunction&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mapToInt(ToIntFunction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.IntStream mapToInt(<span class="parameters"><span class="parameter"><span>java.util.function.ToIntFunction&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mapToLong(ToLongFunction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.LongStream mapToLong(<span class="parameters"><span class="parameter"><span>java.util.function.ToLongFunction&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="max(Comparator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.Optional&lt;T&gt;</span> max(<span class="parameters"><span class="parameter"><span>java.util.Comparator&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="min(Comparator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.Optional&lt;T&gt;</span> min(<span class="parameters"><span class="parameter"><span>java.util.Comparator&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="noneMatch(Predicate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> noneMatch(<span class="parameters"><span class="parameter"><span>java.util.function.Predicate&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(T[])"><span class="same">&equals;</span><div class="signature"><span class="annotation">@SafeVarargs</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.stream.Stream&lt;T&gt;</span> of(<span class="parameters"><span class="parameter"><span>T[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.stream.Stream&lt;T&gt;</span> of(<span class="parameters"><span class="parameter">T arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofNullable(T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.stream.Stream&lt;T&gt;</span> ofNullable(<span class="parameters"><span class="parameter">T arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="peek(Consumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.stream.Stream&lt;T&gt;</span> peek(<span class="parameters"><span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="reduce(BinaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.Optional&lt;T&gt;</span> reduce(<span class="parameters"><span class="parameter"><span>java.util.function.BinaryOperator&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="reduce(T,BinaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> T reduce(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter"><span>java.util.function.BinaryOperator&lt;T&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reduce(U,BiFunction,BinaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> U reduce(<span class="parameters"><span class="parameter">U arg0</span>, <span class="parameter"><span>java.util.function.BiFunction&lt;U, <span>? <span class="keyword">super</span> T</span>, U&gt;</span> arg1</span>, <span class="parameter"><span>java.util.function.BinaryOperator&lt;U&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="skip(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.stream.Stream&lt;T&gt;</span> skip(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="sorted()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.stream.Stream&lt;T&gt;</span> sorted()</div>
+</div>
+</li><li><div class="element" id="sorted(Comparator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.stream.Stream&lt;T&gt;</span> sorted(<span class="parameters"><span class="parameter"><span>java.util.Comparator&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="takeWhile(Predicate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>java.util.stream.Stream&lt;T&gt;</span> takeWhile(<span class="parameters"><span class="parameter"><span>java.util.function.Predicate&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toArray()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.lang.Object[]</span> toArray()</div>
+</div>
+</li><li><div class="element" id="toArray(IntFunction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="typarams">&lt;<span>A</span>&gt;</span> <span>A[]</span> toArray(<span class="parameters"><span class="parameter"><span>java.util.function.IntFunction&lt;<span>A[]</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toList()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>java.util.List&lt;T&gt;</span> toList()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

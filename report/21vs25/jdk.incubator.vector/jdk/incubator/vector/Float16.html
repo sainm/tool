@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class jdk.incubator.vector/jdk.incubator.vector.Float16</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../jdk.incubator.vector/module-summary.html">jdk.incubator.vector</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../jdk.incubator.vector/jdk/incubator/vector/package-summary.html">jdk.incubator.vector</a></div>
+<h1>Class&nbsp;Float16</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> Float16 <div class="superclass"><span class="keyword">extends</span> java.lang.Number</div>
+<div class="superinterfaces"><span class="keyword">implements</span> <span>java.lang.Comparable&lt;jdk.incubator.vector.Float16&gt;</span></div>
+</div>
+</div>
+<section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="BYTES"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> BYTES = 2</div>
+</div>
+</li><li><div class="element" id="MAX_EXPONENT"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MAX_EXPONENT = 15</div>
+</div>
+</li><li><div class="element" id="MAX_VALUE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> jdk.incubator.vector.Float16 MAX_VALUE</div>
+</div>
+</li><li><div class="element" id="MIN_EXPONENT"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MIN_EXPONENT = -14</div>
+</div>
+</li><li><div class="element" id="MIN_NORMAL"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> jdk.incubator.vector.Float16 MIN_NORMAL</div>
+</div>
+</li><li><div class="element" id="MIN_VALUE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> jdk.incubator.vector.Float16 MIN_VALUE</div>
+</div>
+</li><li><div class="element" id="NEGATIVE_INFINITY"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> jdk.incubator.vector.Float16 NEGATIVE_INFINITY</div>
+</div>
+</li><li><div class="element" id="NaN"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> jdk.incubator.vector.Float16 NaN</div>
+</div>
+</li><li><div class="element" id="POSITIVE_INFINITY"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> jdk.incubator.vector.Float16 POSITIVE_INFINITY</div>
+</div>
+</li><li><div class="element" id="PRECISION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PRECISION = 11</div>
+</div>
+</li><li><div class="element" id="SIZE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SIZE = 16</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="abs(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 abs(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(Float16,Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 add(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span>, <span class="parameter">jdk.incubator.vector.Float16 arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="byteValue()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">byte</span> byteValue()</div>
+</div>
+</li><li><div class="element" id="compare(Float16,Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> compare(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span>, <span class="parameter">jdk.incubator.vector.Float16 arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="compareTo(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> compareTo(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="copySign(Float16,Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 copySign(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span>, <span class="parameter">jdk.incubator.vector.Float16 arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="divide(Float16,Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 divide(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span>, <span class="parameter">jdk.incubator.vector.Float16 arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="doubleValue()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">double</span> doubleValue()</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="float16ToRawShortBits(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">short</span> float16ToRawShortBits(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="float16ToShortBits(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">short</span> float16ToShortBits(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="floatValue()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> floatValue()</div>
+</div>
+</li><li><div class="element" id="fma(Float16,Float16,Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 fma(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span>, <span class="parameter">jdk.incubator.vector.Float16 arg1</span>, <span class="parameter">jdk.incubator.vector.Float16 arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getExponent(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> getExponent(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="hashCode(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> hashCode(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="intValue()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> intValue()</div>
+</div>
+</li><li><div class="element" id="isFinite(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isFinite(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isInfinite(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isInfinite(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isNaN(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isNaN(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="longValue()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> longValue()</div>
+</div>
+</li><li><div class="element" id="max(Float16,Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 max(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span>, <span class="parameter">jdk.incubator.vector.Float16 arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="min(Float16,Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 min(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span>, <span class="parameter">jdk.incubator.vector.Float16 arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="multiply(Float16,Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 multiply(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span>, <span class="parameter">jdk.incubator.vector.Float16 arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="negate(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 negate(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="nextDown(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 nextDown(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="nextUp(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 nextUp(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="scalb(Float16,int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 scalb(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="shortBitsToFloat16(short)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 shortBitsToFloat16(<span class="parameters"><span class="parameter"><span class="keyword">short</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="shortValue()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">short</span> shortValue()</div>
+</div>
+</li><li><div class="element" id="signum(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 signum(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="sqrt(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 sqrt(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="subtract(Float16,Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 subtract(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span>, <span class="parameter">jdk.incubator.vector.Float16 arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="toHexString(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String toHexString(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li><li><div class="element" id="toString(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String toString(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ulp(Float16)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 ulp(<span class="parameters"><span class="parameter">jdk.incubator.vector.Float16 arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="valueOf(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 valueOf(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="valueOf(long)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 valueOf(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="valueOf(float)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 valueOf(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="valueOf(double)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 valueOf(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="valueOf(String)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 valueOf(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.NumberFormatException</span></div>
+</div>
+</li><li><div class="element" id="valueOf(BigDecimal)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.incubator.vector.Float16 valueOf(<span class="parameters"><span class="parameter">java.math.BigDecimal arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../jdk.incubator.vector/jdk/incubator/vector/Float16.html">Float16</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

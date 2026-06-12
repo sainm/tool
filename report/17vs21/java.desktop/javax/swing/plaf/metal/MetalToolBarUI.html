@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.plaf.metal.MetalToolBarUI</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/swing/plaf/metal/package-summary.html">javax.swing.plaf.metal</a></div>
+<h1>Class&nbsp;MetalToolBarUI</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> MetalToolBarUI <div class="superclass"><span class="keyword">extends</span> javax.swing.plaf.basic.BasicToolBarUI</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/metal/MetalToolBarUI.MetalContainerListener.html">MetalContainerListener</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/metal/MetalToolBarUI.MetalDockingListener.html">MetalDockingListener</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/metal/MetalToolBarUI.MetalRolloverListener.html">MetalRolloverListener</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="contListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.ContainerListener contListener</div>
+</div>
+</li><li><div class="element" id="rolloverListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.beans.PropertyChangeListener rolloverListener</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> MetalToolBarUI()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="createContainerListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.ContainerListener createContainerListener()</div>
+</div>
+</li><li><div class="element" id="createDockingListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.MouseInputListener createDockingListener()</div>
+</div>
+</li><li><div class="element" id="createNonRolloverBorder()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.border.Border createNonRolloverBorder()</div>
+</div>
+</li><li><div class="element" id="createRolloverBorder()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.border.Border createRolloverBorder()</div>
+</div>
+</li><li><div class="element" id="createRolloverListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.beans.PropertyChangeListener createRolloverListener()</div>
+</div>
+</li><li><div class="element" id="createUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.plaf.ComponentUI createUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="installListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installListeners()</div>
+</div>
+</li><li><div class="element" id="installUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> installUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setBorderToNonRollover(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setBorderToNonRollover(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDragOffset(Point)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setDragOffset(<span class="parameters"><span class="parameter">java.awt.Point arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="uninstallListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallListeners()</div>
+</div>
+</li><li><div class="element" id="uninstallUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> uninstallUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="update(Graphics,JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> update(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">javax.swing.JComponent arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

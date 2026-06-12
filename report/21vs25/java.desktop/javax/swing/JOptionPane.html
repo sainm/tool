@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.JOptionPane</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Class&nbsp;JOptionPane</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="annotation">@JavaBean(defaultProperty="UI"description="A component which implements standard dialog box controls.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> JOptionPane <div class="superclass"><span class="keyword">extends</span> javax.swing.JComponent</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.accessibility.Accessible</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JOptionPane.AccessibleJOptionPane.html">AccessibleJOptionPane</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="CANCEL_OPTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CANCEL_OPTION = 2</div>
+</div>
+</li><li><div class="element" id="CLOSED_OPTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CLOSED_OPTION = -1</div>
+</div>
+</li><li><div class="element" id="DEFAULT_OPTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> DEFAULT_OPTION = -1</div>
+</div>
+</li><li><div class="element" id="ERROR_MESSAGE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ERROR_MESSAGE = 0</div>
+</div>
+</li><li><div class="element" id="ICON_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String ICON_PROPERTY = "icon"</div>
+</div>
+</li><li><div class="element" id="INFORMATION_MESSAGE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> INFORMATION_MESSAGE = 1</div>
+</div>
+</li><li><div class="element" id="INITIAL_SELECTION_VALUE_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String INITIAL_SELECTION_VALUE_PROPERTY = "initialSelectionValue"</div>
+</div>
+</li><li><div class="element" id="INITIAL_VALUE_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String INITIAL_VALUE_PROPERTY = "initialValue"</div>
+</div>
+</li><li><div class="element" id="INPUT_VALUE_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String INPUT_VALUE_PROPERTY = "inputValue"</div>
+</div>
+</li><li><div class="element" id="MESSAGE_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String MESSAGE_PROPERTY = "message"</div>
+</div>
+</li><li><div class="element" id="MESSAGE_TYPE_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String MESSAGE_TYPE_PROPERTY = "messageType"</div>
+</div>
+</li><li><div class="element" id="NO_OPTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> NO_OPTION = 1</div>
+</div>
+</li><li><div class="element" id="OK_CANCEL_OPTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> OK_CANCEL_OPTION = 2</div>
+</div>
+</li><li><div class="element" id="OK_OPTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> OK_OPTION = 0</div>
+</div>
+</li><li><div class="element" id="OPTIONS_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String OPTIONS_PROPERTY = "options"</div>
+</div>
+</li><li><div class="element" id="OPTION_TYPE_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String OPTION_TYPE_PROPERTY = "optionType"</div>
+</div>
+</li><li><div class="element" id="PLAIN_MESSAGE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PLAIN_MESSAGE = -1</div>
+</div>
+</li><li><div class="element" id="QUESTION_MESSAGE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> QUESTION_MESSAGE = 3</div>
+</div>
+</li><li><div class="element" id="SELECTION_VALUES_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SELECTION_VALUES_PROPERTY = "selectionValues"</div>
+</div>
+</li><li><div class="element" id="UNINITIALIZED_VALUE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.Object UNINITIALIZED_VALUE</div>
+</div>
+</li><li><div class="element" id="VALUE_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String VALUE_PROPERTY = "value"</div>
+</div>
+</li><li><div class="element" id="WANTS_INPUT_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String WANTS_INPUT_PROPERTY = "wantsInput"</div>
+</div>
+</li><li><div class="element" id="WARNING_MESSAGE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> WARNING_MESSAGE = 2</div>
+</div>
+</li><li><div class="element" id="YES_NO_CANCEL_OPTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> YES_NO_CANCEL_OPTION = 1</div>
+</div>
+</li><li><div class="element" id="YES_NO_OPTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> YES_NO_OPTION = 0</div>
+</div>
+</li><li><div class="element" id="YES_OPTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> YES_OPTION = 0</div>
+</div>
+</li><li><div class="element" id="icon"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.Icon icon</div>
+</div>
+</li><li><div class="element" id="initialSelectionValue"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> java.lang.Object initialSelectionValue</div>
+</div>
+</li><li><div class="element" id="initialValue"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> java.lang.Object initialValue</div>
+</div>
+</li><li><div class="element" id="inputValue"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> java.lang.Object inputValue</div>
+</div>
+</li><li><div class="element" id="message"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> java.lang.Object message</div>
+</div>
+</li><li><div class="element" id="messageType"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> messageType</div>
+</div>
+</li><li><div class="element" id="optionType"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> optionType</div>
+</div>
+</li><li><div class="element" id="options"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> <span>java.lang.Object[]</span> options</div>
+</div>
+</li><li><div class="element" id="selectionValues"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> <span>java.lang.Object[]</span> selectionValues</div>
+</div>
+</li><li><div class="element" id="value"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> java.lang.Object value</div>
+</div>
+</li><li><div class="element" id="wantsInput"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> wantsInput</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JOptionPane()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JOptionPane(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Object,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JOptionPane(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Object,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JOptionPane(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Object,int,int,Icon)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JOptionPane(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">javax.swing.Icon arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Object,int,int,Icon,Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JOptionPane(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">javax.swing.Icon arg3</span>, <span class="parameter"><span>java.lang.Object[]</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Object,int,int,Icon,Object[],Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JOptionPane(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">javax.swing.Icon arg3</span>, <span class="parameter"><span>java.lang.Object[]</span> arg4</span>, <span class="parameter">java.lang.Object arg5</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="createDialog(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JDialog createDialog(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="createDialog(Component,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JDialog createDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="createInternalFrame(Component,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JInternalFrame createInternalFrame(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAccessibleContext()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falseexpert=truedescription="The AccessibleContext associated with this option pane")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.accessibility.AccessibleContext getAccessibleContext()</div>
+</div>
+</li><li><div class="element" id="getDesktopPaneForComponent(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.JDesktopPane getDesktopPaneForComponent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getFrameForComponent(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Frame getFrameForComponent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="getIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getIcon()</div>
+</div>
+</li><li><div class="element" id="getInitialSelectionValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getInitialSelectionValue()</div>
+</div>
+</li><li><div class="element" id="getInitialValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getInitialValue()</div>
+</div>
+</li><li><div class="element" id="getInputValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getInputValue()</div>
+</div>
+</li><li><div class="element" id="getMaxCharactersPerLineCount()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMaxCharactersPerLineCount()</div>
+</div>
+</li><li><div class="element" id="getMessage()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getMessage()</div>
+</div>
+</li><li><div class="element" id="getMessageType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMessageType()</div>
+</div>
+</li><li><div class="element" id="getOptionType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getOptionType()</div>
+</div>
+</li><li><div class="element" id="getOptions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Object[]</span> getOptions()</div>
+</div>
+</li><li><div class="element" id="getRootFrame()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Frame getRootFrame() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="getSelectionValues()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Object[]</span> getSelectionValues()</div>
+</div>
+</li><li><div class="element" id="getUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.plaf.OptionPaneUI getUI()</div>
+</div>
+</li><li><div class="element" id="getUIClassID()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.lang.String getUIClassID()</div>
+</div>
+</li><li><div class="element" id="getValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getValue()</div>
+</div>
+</li><li><div class="element" id="getWantsInput()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getWantsInput()</div>
+</div>
+</li><li><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String paramString()</div>
+</div>
+</li><li><div class="element" id="selectInitialValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> selectInitialValue()</div>
+</div>
+</li><li><div class="element" id="setIcon(Icon)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="The option pane's type icon.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setIcon(<span class="parameters"><span class="parameter">javax.swing.Icon arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setInitialSelectionValue(Object)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The option pane's initial selection value object.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setInitialSelectionValue(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setInitialValue(Object)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="The option pane's initial value object.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setInitialValue(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setInputValue(Object)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="The option pane's input value object.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setInputValue(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMessage(Object)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="The optionpane's message object.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMessage(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMessageType(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="The option pane's message type.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMessageType(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setOptionType(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="The option pane's option type.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setOptionType(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setOptions(Object[])"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The option pane's options objects.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setOptions(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRootFrame(Frame)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setRootFrame(<span class="parameters"><span class="parameter">java.awt.Frame arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionValues(Object[])"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The option pane's selection values.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectionValues(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setUI(OptionPaneUI)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(hidden=truedescription="The UI object that implements the optionpane's LookAndFeel")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setUI(<span class="parameters"><span class="parameter">javax.swing.plaf.OptionPaneUI arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setValue(Object)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="The option pane's value object.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setValue(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setWantsInput(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="Flag which allows the user to input a value.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setWantsInput(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="showConfirmDialog(Component,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> showConfirmDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="showConfirmDialog(Component,Object,String,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> showConfirmDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="showConfirmDialog(Component,Object,String,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> showConfirmDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="showConfirmDialog(Component,Object,String,int,int,Icon)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> showConfirmDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter">javax.swing.Icon arg5</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="showInputDialog(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String showInputDialog(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="showInputDialog(Object,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String showInputDialog(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="showInputDialog(Component,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String showInputDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="showInputDialog(Component,Object,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String showInputDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.Object arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="showInputDialog(Component,Object,String,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String showInputDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="showInputDialog(Component,Object,String,int,Icon,Object[],Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.Object showInputDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter">javax.swing.Icon arg4</span>, <span class="parameter"><span>java.lang.Object[]</span> arg5</span>, <span class="parameter">java.lang.Object arg6</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="showInternalConfirmDialog(Component,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> showInternalConfirmDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="showInternalConfirmDialog(Component,Object,String,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> showInternalConfirmDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="showInternalConfirmDialog(Component,Object,String,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> showInternalConfirmDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="showInternalConfirmDialog(Component,Object,String,int,int,Icon)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> showInternalConfirmDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter">javax.swing.Icon arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="showInternalInputDialog(Component,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String showInternalInputDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="showInternalInputDialog(Component,Object,String,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String showInternalInputDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="showInternalInputDialog(Component,Object,String,int,Icon,Object[],Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.Object showInternalInputDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter">javax.swing.Icon arg4</span>, <span class="parameter"><span>java.lang.Object[]</span> arg5</span>, <span class="parameter">java.lang.Object arg6</span></span>)</div>
+</div>
+</li><li><div class="element" id="showInternalMessageDialog(Component,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> showInternalMessageDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="showInternalMessageDialog(Component,Object,String,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> showInternalMessageDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="showInternalMessageDialog(Component,Object,String,int,Icon)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> showInternalMessageDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter">javax.swing.Icon arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="showInternalOptionDialog(Component,Object,String,int,int,Icon,Object[],Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> showInternalOptionDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter">javax.swing.Icon arg5</span>, <span class="parameter"><span>java.lang.Object[]</span> arg6</span>, <span class="parameter">java.lang.Object arg7</span></span>)</div>
+</div>
+</li><li><div class="element" id="showMessageDialog(Component,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> showMessageDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="showMessageDialog(Component,Object,String,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> showMessageDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="showMessageDialog(Component,Object,String,int,Icon)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> showMessageDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter">javax.swing.Icon arg4</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="showOptionDialog(Component,Object,String,int,int,Icon,Object[],Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> showOptionDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter">javax.swing.Icon arg5</span>, <span class="parameter"><span>java.lang.Object[]</span> arg6</span>, <span class="parameter">java.lang.Object arg7</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="updateUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> updateUI()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-647739126578704844<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;messageType</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;optionType</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;wantsInput</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

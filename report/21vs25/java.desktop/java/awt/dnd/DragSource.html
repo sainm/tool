@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/java.awt.dnd.DragSource</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/java/awt/dnd/package-summary.html">java.awt.dnd</a></div>
+<h1>Class&nbsp;DragSource</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> DragSource <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="DefaultCopyDrop"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.Cursor DefaultCopyDrop</div>
+</div>
+</li><li><div class="element" id="DefaultCopyNoDrop"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.Cursor DefaultCopyNoDrop</div>
+</div>
+</li><li><div class="element" id="DefaultLinkDrop"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.Cursor DefaultLinkDrop</div>
+</div>
+</li><li><div class="element" id="DefaultLinkNoDrop"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.Cursor DefaultLinkNoDrop</div>
+</div>
+</li><li><div class="element" id="DefaultMoveDrop"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.Cursor DefaultMoveDrop</div>
+</div>
+</li><li><div class="element" id="DefaultMoveNoDrop"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.Cursor DefaultMoveNoDrop</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DragSource() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addDragSourceListener(DragSourceListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addDragSourceListener(<span class="parameters"><span class="parameter">java.awt.dnd.DragSourceListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addDragSourceMotionListener(DragSourceMotionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addDragSourceMotionListener(<span class="parameters"><span class="parameter">java.awt.dnd.DragSourceMotionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createDefaultDragGestureRecognizer(Component,int,DragGestureListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.dnd.DragGestureRecognizer createDefaultDragGestureRecognizer(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">java.awt.dnd.DragGestureListener arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="createDragGestureRecognizer(Class,Component,int,DragGestureListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T createDragGestureRecognizer(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg0</span>, <span class="parameter">java.awt.Component arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">java.awt.dnd.DragGestureListener arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="createDragSourceContext(DragGestureEvent,Cursor,Image,Point,Transferable,DragSourceListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.dnd.DragSourceContext createDragSourceContext(<span class="parameters"><span class="parameter">java.awt.dnd.DragGestureEvent arg0</span>, <span class="parameter">java.awt.Cursor arg1</span>, <span class="parameter">java.awt.Image arg2</span>, <span class="parameter">java.awt.Point arg3</span>, <span class="parameter">java.awt.datatransfer.Transferable arg4</span>, <span class="parameter">java.awt.dnd.DragSourceListener arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDefaultDragSource()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.dnd.DragSource getDefaultDragSource()</div>
+</div>
+</li><li><div class="element" id="getDragSourceListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.dnd.DragSourceListener[]</span> getDragSourceListeners()</div>
+</div>
+</li><li><div class="element" id="getDragSourceMotionListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.dnd.DragSourceMotionListener[]</span> getDragSourceMotionListeners()</div>
+</div>
+</li><li><div class="element" id="getDragThreshold()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> getDragThreshold()</div>
+</div>
+</li><li><div class="element" id="getFlavorMap()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.datatransfer.FlavorMap getFlavorMap()</div>
+</div>
+</li><li><div class="element" id="getListeners(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>T[]</span> getListeners(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isDragImageSupported()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isDragImageSupported()</div>
+</div>
+</li><li><div class="element" id="removeDragSourceListener(DragSourceListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeDragSourceListener(<span class="parameters"><span class="parameter">java.awt.dnd.DragSourceListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeDragSourceMotionListener(DragSourceMotionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeDragSourceMotionListener(<span class="parameters"><span class="parameter">java.awt.dnd.DragSourceMotionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="startDrag(DragGestureEvent,Cursor,Transferable,DragSourceListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> startDrag(<span class="parameters"><span class="parameter">java.awt.dnd.DragGestureEvent arg0</span>, <span class="parameter">java.awt.Cursor arg1</span>, <span class="parameter">java.awt.datatransfer.Transferable arg2</span>, <span class="parameter">java.awt.dnd.DragSourceListener arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.dnd.InvalidDnDOperationException</span></div>
+</div>
+</li><li><div class="element" id="startDrag(DragGestureEvent,Cursor,Transferable,DragSourceListener,FlavorMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> startDrag(<span class="parameters"><span class="parameter">java.awt.dnd.DragGestureEvent arg0</span>, <span class="parameter">java.awt.Cursor arg1</span>, <span class="parameter">java.awt.datatransfer.Transferable arg2</span>, <span class="parameter">java.awt.dnd.DragSourceListener arg3</span>, <span class="parameter">java.awt.datatransfer.FlavorMap arg4</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.dnd.InvalidDnDOperationException</span></div>
+</div>
+</li><li><div class="element" id="startDrag(DragGestureEvent,Cursor,Image,Point,Transferable,DragSourceListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> startDrag(<span class="parameters"><span class="parameter">java.awt.dnd.DragGestureEvent arg0</span>, <span class="parameter">java.awt.Cursor arg1</span>, <span class="parameter">java.awt.Image arg2</span>, <span class="parameter">java.awt.Point arg3</span>, <span class="parameter">java.awt.datatransfer.Transferable arg4</span>, <span class="parameter">java.awt.dnd.DragSourceListener arg5</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.dnd.InvalidDnDOperationException</span></div>
+</div>
+</li><li><div class="element" id="startDrag(DragGestureEvent,Cursor,Image,Point,Transferable,DragSourceListener,FlavorMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> startDrag(<span class="parameters"><span class="parameter">java.awt.dnd.DragGestureEvent arg0</span>, <span class="parameter">java.awt.Cursor arg1</span>, <span class="parameter">java.awt.Image arg2</span>, <span class="parameter">java.awt.Point arg3</span>, <span class="parameter">java.awt.datatransfer.Transferable arg4</span>, <span class="parameter">java.awt.dnd.DragSourceListener arg5</span>, <span class="parameter">java.awt.datatransfer.FlavorMap arg6</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.dnd.InvalidDnDOperationException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>6236096958971414066<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

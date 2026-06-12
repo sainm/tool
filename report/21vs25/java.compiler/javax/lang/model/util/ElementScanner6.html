@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.compiler/javax.lang.model.util.ElementScanner6</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.compiler/module-summary.html">java.compiler</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.compiler/javax/lang/model/util/package-summary.html">javax.lang.model.util</a></div>
+<h1>Class&nbsp;ElementScanner6</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="annotation">@SupportedSourceVersion(RELEASE_6)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> ElementScanner6<span class="typarams">&lt;<span>R</span>, <span>P</span>&gt;</span> <div class="superclass"><span class="keyword">extends</span> <span>javax.lang.model.util.AbstractElementVisitor6&lt;R, P&gt;</span></div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="DEFAULT_VALUE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> R DEFAULT_VALUE</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> ElementScanner6()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(R)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> ElementScanner6(<span class="parameters"><span class="parameter">R arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="scan(Iterable,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> R scan(<span class="parameters"><span class="parameter"><span>java.lang.Iterable&lt;<span>? <span class="keyword">extends</span> javax.lang.model.element.Element</span>&gt;</span> arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="scan(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> R scan(<span class="parameters"><span class="parameter">javax.lang.model.element.Element arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="scan(Element,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> R scan(<span class="parameters"><span class="parameter">javax.lang.model.element.Element arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitExecutable(ExecutableElement,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> R visitExecutable(<span class="parameters"><span class="parameter">javax.lang.model.element.ExecutableElement arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitPackage(PackageElement,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> R visitPackage(<span class="parameters"><span class="parameter">javax.lang.model.element.PackageElement arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="visitRecordComponent(RecordComponentElement,P)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> R visitRecordComponent(<span class="parameters"><span class="parameter">javax.lang.model.element.RecordComponentElement arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitType(TypeElement,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> R visitType(<span class="parameters"><span class="parameter">javax.lang.model.element.TypeElement arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitTypeParameter(TypeParameterElement,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> R visitTypeParameter(<span class="parameters"><span class="parameter">javax.lang.model.element.TypeParameterElement arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitVariable(VariableElement,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> R visitVariable(<span class="parameters"><span class="parameter">javax.lang.model.element.VariableElement arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../../java.compiler/javax/lang/model/util/ElementScanner6.html#visitRecordComponent(RecordComponentElement,P)">visitRecordComponent(RecordComponentElement,P)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

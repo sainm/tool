@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface java.base/javax.net.ssl.SSLSession</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/javax/net/ssl/package-summary.html">javax.net.ssl</a></div>
+<h1>Interface&nbsp;SSLSession</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> SSLSession </div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getApplicationBufferSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getApplicationBufferSize()</div>
+</div>
+</li><li><div class="element" id="getCipherSuite()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getCipherSuite()</div>
+</div>
+</li><li><div class="element" id="getCreationTime()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">long</span> getCreationTime()</div>
+</div>
+</li><li><div class="element" id="getId()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span><span class="keyword">byte</span>[]</span> getId()</div>
+</div>
+</li><li><div class="element" id="getLastAccessedTime()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">long</span> getLastAccessedTime()</div>
+</div>
+</li><li><div class="element" id="getLocalCertificates()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.security.cert.Certificate[]</span> getLocalCertificates()</div>
+</div>
+</li><li><div class="element" id="getLocalPrincipal()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.security.Principal getLocalPrincipal()</div>
+</div>
+</li><li><div class="element" id="getPacketBufferSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getPacketBufferSize()</div>
+</div>
+</li><li><div class="element" id="getPeerCertificateChain()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9"forRemoval=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>javax.security.cert.X509Certificate[]</span> getPeerCertificateChain() <span class="throws"><span class="keyword">throws</span> javax.net.ssl.SSLPeerUnverifiedException</span></div>
+</div>
+</li><li><div class="element" id="getPeerCertificates()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.security.cert.Certificate[]</span> getPeerCertificates() <span class="throws"><span class="keyword">throws</span> javax.net.ssl.SSLPeerUnverifiedException</span></div>
+</div>
+</li><li><div class="element" id="getPeerHost()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getPeerHost()</div>
+</div>
+</li><li><div class="element" id="getPeerPort()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getPeerPort()</div>
+</div>
+</li><li><div class="element" id="getPeerPrincipal()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.security.Principal getPeerPrincipal() <span class="throws"><span class="keyword">throws</span> javax.net.ssl.SSLPeerUnverifiedException</span></div>
+</div>
+</li><li><div class="element" id="getProtocol()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getProtocol()</div>
+</div>
+</li><li><div class="element" id="getSessionContext()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.net.ssl.SSLSessionContext getSessionContext()</div>
+</div>
+</li><li><div class="element" id="getValue(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.Object getValue(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getValueNames()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.lang.String[]</span> getValueNames()</div>
+</div>
+</li><li><div class="element" id="invalidate()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> invalidate()</div>
+</div>
+</li><li><div class="element" id="isValid()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isValid()</div>
+</div>
+</li><li><div class="element" id="putValue(String,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> putValue(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeValue(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> removeValue(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

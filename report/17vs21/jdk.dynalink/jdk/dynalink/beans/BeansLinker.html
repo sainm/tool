@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class jdk.dynalink/jdk.dynalink.beans.BeansLinker</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../jdk.dynalink/module-summary.html">jdk.dynalink</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../jdk.dynalink/jdk/dynalink/beans/package-summary.html">jdk.dynalink.beans</a></div>
+<h1>Class&nbsp;BeansLinker</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> BeansLinker <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> jdk.dynalink.linker.GuardingDynamicLinker</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BeansLinker()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(MissingMemberHandlerFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BeansLinker(<span class="parameters"><span class="parameter">jdk.dynalink.beans.MissingMemberHandlerFactory arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getConstructorMethod(Class,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.Object getConstructorMethod(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getGuardedInvocation(LinkRequest,LinkerServices)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.dynalink.linker.GuardedInvocation getGuardedInvocation(<span class="parameters"><span class="parameter">jdk.dynalink.linker.LinkRequest arg0</span>, <span class="parameter">jdk.dynalink.linker.LinkerServices arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.Exception</span></div>
+</div>
+</li><li><div class="element" id="getInstanceMethodNames(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Set&lt;java.lang.String&gt;</span> getInstanceMethodNames(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLinkerForClass(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.dynalink.linker.TypeBasedGuardingDynamicLinker getLinkerForClass(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getReadableInstancePropertyNames(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Set&lt;java.lang.String&gt;</span> getReadableInstancePropertyNames(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getReadableStaticPropertyNames(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Set&lt;java.lang.String&gt;</span> getReadableStaticPropertyNames(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getStaticMethodNames(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Set&lt;java.lang.String&gt;</span> getStaticMethodNames(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getWritableInstancePropertyNames(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Set&lt;java.lang.String&gt;</span> getWritableInstancePropertyNames(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getWritableStaticPropertyNames(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Set&lt;java.lang.String&gt;</span> getWritableStaticPropertyNames(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isDynamicConstructor(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isDynamicConstructor(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isDynamicMethod(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isDynamicMethod(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

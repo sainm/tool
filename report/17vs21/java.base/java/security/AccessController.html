@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.security.AccessController</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/security/package-summary.html">java.security</a></div>
+<h1>Class&nbsp;AccessController</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="17"forRemoval=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> AccessController <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="checkPermission(Permission)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> checkPermission(<span class="parameters"><span class="parameter">java.security.Permission arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.security.AccessControlException</span></div>
+</div>
+</li><li><div class="element" id="doPrivileged(PrivilegedAction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doPrivileged(<span class="parameters"><span class="parameter"><span>java.security.PrivilegedAction&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="doPrivileged(PrivilegedAction,AccessControlContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doPrivileged(<span class="parameters"><span class="parameter"><span>java.security.PrivilegedAction&lt;T&gt;</span> arg0</span>, <span class="parameter">java.security.AccessControlContext arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="doPrivileged(PrivilegedAction,AccessControlContext,Permission[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doPrivileged(<span class="parameters"><span class="parameter"><span>java.security.PrivilegedAction&lt;T&gt;</span> arg0</span>, <span class="parameter">java.security.AccessControlContext arg1</span>, <span class="parameter"><span>java.security.Permission[]</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="doPrivileged(PrivilegedExceptionAction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doPrivileged(<span class="parameters"><span class="parameter"><span>java.security.PrivilegedExceptionAction&lt;T&gt;</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.security.PrivilegedActionException</span></div>
+</div>
+</li><li><div class="element" id="doPrivileged(PrivilegedExceptionAction,AccessControlContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doPrivileged(<span class="parameters"><span class="parameter"><span>java.security.PrivilegedExceptionAction&lt;T&gt;</span> arg0</span>, <span class="parameter">java.security.AccessControlContext arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.security.PrivilegedActionException</span></div>
+</div>
+</li><li><div class="element" id="doPrivileged(PrivilegedExceptionAction,AccessControlContext,Permission[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doPrivileged(<span class="parameters"><span class="parameter"><span>java.security.PrivilegedExceptionAction&lt;T&gt;</span> arg0</span>, <span class="parameter">java.security.AccessControlContext arg1</span>, <span class="parameter"><span>java.security.Permission[]</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.security.PrivilegedActionException</span></div>
+</div>
+</li><li><div class="element" id="doPrivilegedWithCombiner(PrivilegedAction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doPrivilegedWithCombiner(<span class="parameters"><span class="parameter"><span>java.security.PrivilegedAction&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="doPrivilegedWithCombiner(PrivilegedAction,AccessControlContext,Permission[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doPrivilegedWithCombiner(<span class="parameters"><span class="parameter"><span>java.security.PrivilegedAction&lt;T&gt;</span> arg0</span>, <span class="parameter">java.security.AccessControlContext arg1</span>, <span class="parameter"><span>java.security.Permission[]</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="doPrivilegedWithCombiner(PrivilegedExceptionAction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doPrivilegedWithCombiner(<span class="parameters"><span class="parameter"><span>java.security.PrivilegedExceptionAction&lt;T&gt;</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.security.PrivilegedActionException</span></div>
+</div>
+</li><li><div class="element" id="doPrivilegedWithCombiner(PrivilegedExceptionAction,AccessControlContext,Permission[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T doPrivilegedWithCombiner(<span class="parameters"><span class="parameter"><span>java.security.PrivilegedExceptionAction&lt;T&gt;</span> arg0</span>, <span class="parameter">java.security.AccessControlContext arg1</span>, <span class="parameter"><span>java.security.Permission[]</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.security.PrivilegedActionException</span></div>
+</div>
+</li><li><div class="element" id="getContext()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.security.AccessControlContext getContext()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

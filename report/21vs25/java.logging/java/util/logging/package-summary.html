@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package java.logging/java.util.logging</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.logging/module-summary.html">java.logging</a></div>
+<h1>Package&nbsp;java.util.logging</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="keyword">package</span> java.util.logging</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.logging/java/util/logging/ConsoleHandler.html">ConsoleHandler</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.logging/java/util/logging/ErrorManager.html">ErrorManager</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.logging/java/util/logging/FileHandler.html">FileHandler</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.logging/java/util/logging/Filter.html">Filter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.logging/java/util/logging/Formatter.html">Formatter</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.logging/java/util/logging/Handler.html">Handler</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.logging/java/util/logging/Level.html">Level</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.logging/java/util/logging/LogManager.html">LogManager</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.logging/java/util/logging/LogRecord.html">LogRecord</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.logging/java/util/logging/Logger.html">Logger</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.logging/java/util/logging/LoggingMXBean.html">LoggingMXBean</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.logging/java/util/logging/LoggingPermission.html">LoggingPermission</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.logging/java/util/logging/MemoryHandler.html">MemoryHandler</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.logging/java/util/logging/SimpleFormatter.html">SimpleFormatter</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.logging/java/util/logging/SocketHandler.html">SocketHandler</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.logging/java/util/logging/StreamHandler.html">StreamHandler</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.logging/java/util/logging/XMLFormatter.html">XMLFormatter</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th class="allZero">Added</th>
+<th>Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.logging/java/util/logging/FileHandler.html">FileHandler</a></th>
+<td></td>
+<td>12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.logging/java/util/logging/Handler.html">Handler</a></th>
+<td></td>
+<td>10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.logging/java/util/logging/LogManager.html">LogManager</a></th>
+<td></td>
+<td>8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.logging/java/util/logging/Logger.html">Logger</a></th>
+<td></td>
+<td>8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.logging/java/util/logging/MemoryHandler.html">MemoryHandler</a></th>
+<td></td>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.logging/java/util/logging/SocketHandler.html">SocketHandler</a></th>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.logging/java/util/logging/StreamHandler.html">StreamHandler</a></th>
+<td></td>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td></td>
+<td>50</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>50</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

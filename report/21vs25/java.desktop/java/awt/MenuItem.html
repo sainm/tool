@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/java.awt.MenuItem</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/java/awt/package-summary.html">java.awt</a></div>
+<h1>Class&nbsp;MenuItem</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> MenuItem <div class="superclass"><span class="keyword">extends</span> java.awt.MenuComponent</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.accessibility.Accessible</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/MenuItem.AccessibleAWTMenuItem.html">AccessibleAWTMenuItem</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> MenuItem() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> MenuItem(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,MenuShortcut)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> MenuItem(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.awt.MenuShortcut arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addActionListener(ActionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addActionListener(<span class="parameters"><span class="parameter">java.awt.event.ActionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addNotify()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addNotify()</div>
+</div>
+</li><li><div class="element" id="deleteShortcut()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> deleteShortcut()</div>
+</div>
+</li><li><div class="element" id="disable()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> disable()</div>
+</div>
+</li><li><div class="element" id="disableEvents(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> <span class="keyword">void</span> disableEvents(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="enable()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> enable()</div>
+</div>
+</li><li><div class="element" id="enable(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> enable(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="enableEvents(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> <span class="keyword">void</span> enableEvents(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAccessibleContext()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.accessibility.AccessibleContext getAccessibleContext()</div>
+</div>
+</li><li><div class="element" id="getActionCommand()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getActionCommand()</div>
+</div>
+</li><li><div class="element" id="getActionListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.event.ActionListener[]</span> getActionListeners()</div>
+</div>
+</li><li><div class="element" id="getLabel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getLabel()</div>
+</div>
+</li><li><div class="element" id="getListeners(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>T[]</span> getListeners(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getShortcut()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.MenuShortcut getShortcut()</div>
+</div>
+</li><li><div class="element" id="isEnabled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isEnabled()</div>
+</div>
+</li><li><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String paramString()</div>
+</div>
+</li><li><div class="element" id="processActionEvent(ActionEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processActionEvent(<span class="parameters"><span class="parameter">java.awt.event.ActionEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="processEvent(AWTEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processEvent(<span class="parameters"><span class="parameter">java.awt.AWTEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeActionListener(ActionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeActionListener(<span class="parameters"><span class="parameter">java.awt.event.ActionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setActionCommand(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setActionCommand(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLabel(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLabel(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setShortcut(MenuShortcut)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setShortcut(<span class="parameters"><span class="parameter">java.awt.MenuShortcut arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-21757335363267194<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">java.lang.String&nbsp;actionCommand</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;enabled</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">long</span>&nbsp;eventMask</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.lang.String&nbsp;label</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;menuItemSerializedDataVersion</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.MenuShortcut&nbsp;shortcut</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException, java.awt.HeadlessException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

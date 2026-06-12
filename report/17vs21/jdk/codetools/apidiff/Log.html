@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class jdk.codetools.apidiff.Log</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Package</span>&nbsp;<a href="../../../jdk/codetools/apidiff/package-summary.html">jdk.codetools.apidiff</a></div>
+<h1>Class&nbsp;Log</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> Log <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="err"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.io.PrintWriter err</div>
+</div>
+</li><li><div class="element" id="out"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.io.PrintWriter out</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(PrintWriter,PrintWriter)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Log(<span class="parameters"><span class="parameter">java.io.PrintWriter arg0</span>, <span class="parameter">java.io.PrintWriter arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="error(String,Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> error(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>java.lang.Object[]</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="error(Path,long,String,Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> error(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span>java.lang.Object[]</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="errorCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> errorCount()</div>
+</div>
+</li><li><div class="element" id="flush()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> flush()</div>
+</div>
+</li><li><div class="element" id="note(Path,long,String,Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> note(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span>java.lang.Object[]</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="report(String,Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> report(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>java.lang.Object[]</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="warning(String,Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> warning(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>java.lang.Object[]</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="warning(Path,long,String,Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> warning(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span>java.lang.Object[]</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="warningCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> warningCount()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.net.http/java.net.http.HttpClient.Builder</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.net.http/module-summary.html">java.net.http</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.net.http/java/net/http/package-summary.html">java.net.http</a></div>
+<h1>Interface&nbsp;HttpClient.Builder</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">static</span></span> <span class="keyword">interface</span> Builder </div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="NO_PROXY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.net.ProxySelector NO_PROXY</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="authenticator(Authenticator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.net.http.HttpClient.Builder authenticator(<span class="parameters"><span class="parameter">java.net.Authenticator arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="build()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.net.http.HttpClient build()</div>
+</div>
+</li><li><div class="element" id="connectTimeout(Duration)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.net.http.HttpClient.Builder connectTimeout(<span class="parameters"><span class="parameter">java.time.Duration arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="cookieHandler(CookieHandler)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.net.http.HttpClient.Builder cookieHandler(<span class="parameters"><span class="parameter">java.net.CookieHandler arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="executor(Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.net.http.HttpClient.Builder executor(<span class="parameters"><span class="parameter">java.util.concurrent.Executor arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="followRedirects(Redirect)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.net.http.HttpClient.Builder followRedirects(<span class="parameters"><span class="parameter">java.net.http.HttpClient.Redirect arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="localAddress(InetAddress)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.net.http.HttpClient.Builder localAddress(<span class="parameters"><span class="parameter">java.net.InetAddress arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="priority(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.net.http.HttpClient.Builder priority(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="proxy(ProxySelector)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.net.http.HttpClient.Builder proxy(<span class="parameters"><span class="parameter">java.net.ProxySelector arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="sslContext(SSLContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.net.http.HttpClient.Builder sslContext(<span class="parameters"><span class="parameter">javax.net.ssl.SSLContext arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="sslParameters(SSLParameters)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.net.http.HttpClient.Builder sslParameters(<span class="parameters"><span class="parameter">javax.net.ssl.SSLParameters arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="version(Version)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.net.http.HttpClient.Builder version(<span class="parameters"><span class="parameter">java.net.http.HttpClient.Version arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

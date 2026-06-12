@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package java.desktop/java.awt</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<h1>Package&nbsp;java.awt</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="keyword">package</span> java.awt</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/AWTError.html">AWTError</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/AWTEvent.html">AWTEvent</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/AWTEventMulticaster.html">AWTEventMulticaster</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/AWTException.html">AWTException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/AWTKeyStroke.html">AWTKeyStroke</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/AWTPermission.html">AWTPermission</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/ActiveEvent.html">ActiveEvent</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Adjustable.html">Adjustable</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/AlphaComposite.html">AlphaComposite</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/BasicStroke.html">BasicStroke</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/BorderLayout.html">BorderLayout</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/BufferCapabilities.html">BufferCapabilities</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Button.html">Button</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Canvas.html">Canvas</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/CardLayout.html">CardLayout</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Checkbox.html">Checkbox</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/CheckboxGroup.html">CheckboxGroup</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/CheckboxMenuItem.html">CheckboxMenuItem</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Choice.html">Choice</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Color.html">Color</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Component.html">Component</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/ComponentOrientation.html">ComponentOrientation</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Composite.html">Composite</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/CompositeContext.html">CompositeContext</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Container.html">Container</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/ContainerOrderFocusTraversalPolicy.html">ContainerOrderFocusTraversalPolicy</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Cursor.html">Cursor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/DefaultFocusTraversalPolicy.html">DefaultFocusTraversalPolicy</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/DefaultKeyboardFocusManager.html">DefaultKeyboardFocusManager</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Desktop.html">Desktop</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Dialog.html">Dialog</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Dimension.html">Dimension</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/DisplayMode.html">DisplayMode</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Event.html">Event</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/EventQueue.html">EventQueue</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/FileDialog.html">FileDialog</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/FlowLayout.html">FlowLayout</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/FocusTraversalPolicy.html">FocusTraversalPolicy</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Font.html">Font</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/FontFormatException.html">FontFormatException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/FontMetrics.html">FontMetrics</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Frame.html">Frame</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/GradientPaint.html">GradientPaint</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Graphics.html">Graphics</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Graphics2D.html">Graphics2D</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/GraphicsConfigTemplate.html">GraphicsConfigTemplate</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/GraphicsConfiguration.html">GraphicsConfiguration</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/GraphicsDevice.html">GraphicsDevice</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/GraphicsEnvironment.html">GraphicsEnvironment</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/GridBagConstraints.html">GridBagConstraints</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/GridBagLayout.html">GridBagLayout</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/GridBagLayoutInfo.html">GridBagLayoutInfo</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/GridLayout.html">GridLayout</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/HeadlessException.html">HeadlessException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/IllegalComponentStateException.html">IllegalComponentStateException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Image.html">Image</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/ImageCapabilities.html">ImageCapabilities</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Insets.html">Insets</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/ItemSelectable.html">ItemSelectable</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/JobAttributes.html">JobAttributes</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/KeyEventDispatcher.html">KeyEventDispatcher</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/KeyEventPostProcessor.html">KeyEventPostProcessor</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.desktop/java/awt/KeyboardFocusManager.html">KeyboardFocusManager</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Label.html">Label</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/LayoutManager.html">LayoutManager</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/LayoutManager2.html">LayoutManager2</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/LinearGradientPaint.html">LinearGradientPaint</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/List.html">List</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/MediaTracker.html">MediaTracker</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Menu.html">Menu</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/MenuBar.html">MenuBar</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/MenuComponent.html">MenuComponent</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/MenuContainer.html">MenuContainer</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/MenuItem.html">MenuItem</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/MenuShortcut.html">MenuShortcut</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/MouseInfo.html">MouseInfo</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/MultipleGradientPaint.html">MultipleGradientPaint</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/PageAttributes.html">PageAttributes</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Paint.html">Paint</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/PaintContext.html">PaintContext</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Panel.html">Panel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Point.html">Point</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/PointerInfo.html">PointerInfo</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Polygon.html">Polygon</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/PopupMenu.html">PopupMenu</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/PrintGraphics.html">PrintGraphics</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/PrintJob.html">PrintJob</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/RadialGradientPaint.html">RadialGradientPaint</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Rectangle.html">Rectangle</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/RenderingHints.html">RenderingHints</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Robot.html">Robot</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/ScrollPane.html">ScrollPane</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/ScrollPaneAdjustable.html">ScrollPaneAdjustable</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Scrollbar.html">Scrollbar</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/SecondaryLoop.html">SecondaryLoop</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Shape.html">Shape</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/SplashScreen.html">SplashScreen</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Stroke.html">Stroke</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/SystemColor.html">SystemColor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/SystemTray.html">SystemTray</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Taskbar.html">Taskbar</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/TextArea.html">TextArea</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/TextComponent.html">TextComponent</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/TextField.html">TextField</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/TexturePaint.html">TexturePaint</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Toolkit.html">Toolkit</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Transparency.html">Transparency</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/TrayIcon.html">TrayIcon</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.desktop/java/awt/Window.html">Window</a></span></li></ul>
+</section>
+<section class="doc-files"><h2>Additional Files</h2>
+<ul><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>BorderLayout-1.png<table class="details"><caption>Source File Details for BorderLayout-1.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>11081</td>
+<td>5cde71b37db76c81</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for BorderLayout-1.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>Button-1.gif<table class="details"><caption>Source File Details for Button-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>1920</td>
+<td>a4c155cddb4b8219</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for Button-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>Checkbox-1.gif<table class="details"><caption>Source File Details for Checkbox-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>2375</td>
+<td>7d32df4bef1c0b30</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for Checkbox-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>CheckboxGroup-1.gif<table class="details"><caption>Source File Details for CheckboxGroup-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>712</td>
+<td>7f12489141ccc8a6</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for CheckboxGroup-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>Choice-1.gif<table class="details"><caption>Source File Details for Choice-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>486</td>
+<td>d5179088d0f7d7f8</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for Choice-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>FlowLayout-1.png<table class="details"><caption>Source File Details for FlowLayout-1.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>6030</td>
+<td>79d0ab66bdf78636</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for FlowLayout-1.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>FontMetrics-1.gif<table class="details"><caption>Source File Details for FontMetrics-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>290</td>
+<td>73a695c3b7d551a8</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for FontMetrics-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>GridBagLayout-1.png<table class="details"><caption>Source File Details for GridBagLayout-1.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>13808</td>
+<td>d869ed6ed47a767c</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for GridBagLayout-1.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>GridBagLayout-2.png<table class="details"><caption>Source File Details for GridBagLayout-2.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>13828</td>
+<td>e940a4bf1239c082</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for GridBagLayout-2.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>GridBagLayout-baseline.png<table class="details"><caption>Source File Details for GridBagLayout-baseline.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>722</td>
+<td>b711eb9ed42801a9</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for GridBagLayout-baseline.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>GridLayout-1.png<table class="details"><caption>Source File Details for GridLayout-1.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>7888</td>
+<td>fd326235e1b123b8</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for GridLayout-1.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>GridLayout-2.png<table class="details"><caption>Source File Details for GridLayout-2.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>7846</td>
+<td>d439e418941377bf</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for GridLayout-2.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>Label-1.gif<table class="details"><caption>Source File Details for Label-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>819</td>
+<td>ff348975445ea58d</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for Label-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>LinearGradientPaint.png<table class="details"><caption>Source File Details for LinearGradientPaint.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>3347</td>
+<td>1b809f6f333271f8</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for LinearGradientPaint.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>List-1.gif<table class="details"><caption>Source File Details for List-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>4193</td>
+<td>975ade62ae843307</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for List-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>MenuBar-1.gif<table class="details"><caption>Source File Details for MenuBar-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>2268</td>
+<td>3833669c3817c024</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for MenuBar-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>MultiScreen.gif<table class="details"><caption>Source File Details for MultiScreen.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>3131</td>
+<td>0a85318aeb63c2a8</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for MultiScreen.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>RadialGradientPaint-1.png<table class="details"><caption>Source File Details for RadialGradientPaint-1.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>21911</td>
+<td>c565e47b2a8f3e4a</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for RadialGradientPaint-1.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>RadialGradientPaint-2.png<table class="details"><caption>Source File Details for RadialGradientPaint-2.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>25468</td>
+<td>4507ab17fbb01769</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for RadialGradientPaint-2.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>RadialGradientPaint-3.png<table class="details"><caption>Source File Details for RadialGradientPaint-3.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>14389</td>
+<td>4367be33ab44d6f2</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for RadialGradientPaint-3.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>RadialGradientPaint-4.png<table class="details"><caption>Source File Details for RadialGradientPaint-4.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>9784</td>
+<td>7b63fd408a9ee7c8</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for RadialGradientPaint-4.png</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>Scrollbar-1.gif<table class="details"><caption>Source File Details for Scrollbar-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>968</td>
+<td>bac512447f6088a0</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for Scrollbar-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>Scrollbar-2.gif<table class="details"><caption>Source File Details for Scrollbar-2.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>1938</td>
+<td>3778ad2158f157d9</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for Scrollbar-2.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>TextArea-1.gif<table class="details"><caption>Source File Details for TextArea-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>2234</td>
+<td>eeb4c31020a2f92b</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for TextArea-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li><li><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span>TextField-1.gif<table class="details"><caption>Source File Details for TextField-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row">JDK25</th>
+<td>2522</td>
+<td>2372d068b2b506e9</td>
+</tr>
+</tbody>
+</table>
+<table class="details"><caption>API File Details for TextField-1.gif</caption>
+<thead><tr><th>API</th>
+<th>File Size</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th>Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.desktop/java/awt/package-summary.html">java.awt</a></th>
+<td>25</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>25</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.desktop/java/awt/KeyboardFocusManager.html">KeyboardFocusManager</a></th>
+<td></td>
+<td>24</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>24</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.desktop/java/awt/Window.html">Window</a></th>
+<td></td>
+<td>2</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>25</td>
+<td>26</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>52</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

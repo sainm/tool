@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/java.awt.geom.Path2D</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/java/awt/geom/package-summary.html">java.awt.geom</a></div>
+<h1>Class&nbsp;Path2D</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">sealed</span></span> <span class="keyword">class</span> Path2D <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.lang.Cloneable, java.awt.Shape</div>
+<div class="permitted-subclasses"><span class="keyword">permits</span> java.awt.geom.Path2D.Double, java.awt.geom.Path2D.Float</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../java.desktop/java/awt/geom/Path2D.Double.html">Double</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.desktop/java/awt/geom/Path2D.Float.html">Float</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="WIND_EVEN_ODD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> WIND_EVEN_ODD = 0</div>
+</div>
+</li><li><div class="element" id="WIND_NON_ZERO"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> WIND_NON_ZERO = 1</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="append(Shape,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> append(<span class="parameters"><span class="parameter">java.awt.Shape arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="append(PathIterator,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> append(<span class="parameters"><span class="parameter">java.awt.geom.PathIterator arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="clone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.Object clone()</div>
+</div>
+</li><li><div class="element" id="closePath()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> closePath()</div>
+</div>
+</li><li><div class="element" id="contains(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> contains(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="contains(double,double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> contains(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span>, <span class="parameter"><span class="keyword">double</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="contains(PathIterator,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> contains(<span class="parameters"><span class="parameter">java.awt.geom.PathIterator arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="contains(PathIterator,double,double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> contains(<span class="parameters"><span class="parameter">java.awt.geom.PathIterator arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span>, <span class="parameter"><span class="keyword">double</span> arg3</span>, <span class="parameter"><span class="keyword">double</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="contains(PathIterator,Point2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> contains(<span class="parameters"><span class="parameter">java.awt.geom.PathIterator arg0</span>, <span class="parameter">java.awt.geom.Point2D arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="contains(PathIterator,Rectangle2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> contains(<span class="parameters"><span class="parameter">java.awt.geom.PathIterator arg0</span>, <span class="parameter">java.awt.geom.Rectangle2D arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="contains(Point2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> contains(<span class="parameters"><span class="parameter">java.awt.geom.Point2D arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="contains(Rectangle2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> contains(<span class="parameters"><span class="parameter">java.awt.geom.Rectangle2D arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createTransformedShape(AffineTransform)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.awt.Shape createTransformedShape(<span class="parameters"><span class="parameter">java.awt.geom.AffineTransform arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="curveTo(double,double,double,double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> curveTo(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span>, <span class="parameter"><span class="keyword">double</span> arg3</span>, <span class="parameter"><span class="keyword">double</span> arg4</span>, <span class="parameter"><span class="keyword">double</span> arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBounds()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.awt.Rectangle getBounds()</div>
+</div>
+</li><li><div class="element" id="getCurrentPoint()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.awt.geom.Point2D getCurrentPoint()</div>
+</div>
+</li><li><div class="element" id="getPathIterator(AffineTransform,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.awt.geom.PathIterator getPathIterator(<span class="parameters"><span class="parameter">java.awt.geom.AffineTransform arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getWindingRule()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">int</span> getWindingRule()</div>
+</div>
+</li><li><div class="element" id="intersects(double,double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> intersects(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span>, <span class="parameter"><span class="keyword">double</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="intersects(PathIterator,double,double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> intersects(<span class="parameters"><span class="parameter">java.awt.geom.PathIterator arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span>, <span class="parameter"><span class="keyword">double</span> arg3</span>, <span class="parameter"><span class="keyword">double</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="intersects(PathIterator,Rectangle2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> intersects(<span class="parameters"><span class="parameter">java.awt.geom.PathIterator arg0</span>, <span class="parameter">java.awt.geom.Rectangle2D arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="intersects(Rectangle2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> intersects(<span class="parameters"><span class="parameter">java.awt.geom.Rectangle2D arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="lineTo(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> lineTo(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="moveTo(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> moveTo(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="quadTo(double,double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> quadTo(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span>, <span class="parameter"><span class="keyword">double</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="reset()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> reset()</div>
+</div>
+</li><li><div class="element" id="setWindingRule(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setWindingRule(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="transform(AffineTransform)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> transform(<span class="parameters"><span class="parameter">java.awt.geom.AffineTransform arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="trimToSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> trimToSize()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

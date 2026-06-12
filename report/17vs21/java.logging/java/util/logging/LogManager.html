@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.logging/java.util.logging.LogManager</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.logging/module-summary.html">java.logging</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.logging/java/util/logging/package-summary.html">java.util.logging</a></div>
+<h1>Class&nbsp;LogManager</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> LogManager <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="LOGGING_MXBEAN_NAME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String LOGGING_MXBEAN_NAME = "java.util.logging:type=Logging"</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> LogManager()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addConfigurationListener(Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.logging.LogManager addConfigurationListener(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addLogger(Logger)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> addLogger(<span class="parameters"><span class="parameter">java.util.logging.Logger arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="checkAccess()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="17"forRemoval=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> checkAccess() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="getLogManager()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.logging.LogManager getLogManager()</div>
+</div>
+</li><li><div class="element" id="getLogger(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.logging.Logger getLogger(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLoggerNames()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Enumeration&lt;java.lang.String&gt;</span> getLoggerNames()</div>
+</div>
+</li><li><div class="element" id="getLoggingMXBean()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.logging.LoggingMXBean getLoggingMXBean()</div>
+</div>
+</li><li><div class="element" id="getProperty(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getProperty(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="readConfiguration()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> readConfiguration() <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="readConfiguration(InputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> readConfiguration(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="removeConfigurationListener(Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeConfigurationListener(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="reset()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reset() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="updateConfiguration(InputStream,Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> updateConfiguration(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span>, <span class="parameter"><span>java.util.function.Function&lt;java.lang.String, <span>java.util.function.BiFunction&lt;java.lang.String, java.lang.String, java.lang.String&gt;</span>&gt;</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="updateConfiguration(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> updateConfiguration(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;java.lang.String, <span>java.util.function.BiFunction&lt;java.lang.String, java.lang.String, java.lang.String&gt;</span>&gt;</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.time.chrono.JapaneseDate</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/time/chrono/package-summary.html">java.time.chrono</a></div>
+<h1>Class&nbsp;JapaneseDate</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> JapaneseDate <div class="superclass"><span class="keyword">extends</span> <span>java.time.chrono.ChronoLocalDateImpl&lt;java.time.chrono.JapaneseDate&gt;</span></div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable, java.time.chrono.ChronoLocalDate</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="atTime(LocalTime)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span>java.time.chrono.ChronoLocalDateTime&lt;java.time.chrono.JapaneseDate&gt;</span> atTime(<span class="parameters"><span class="parameter">java.time.LocalTime arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="from(TemporalAccessor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.chrono.JapaneseDate from(<span class="parameters"><span class="parameter">java.time.temporal.TemporalAccessor arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getChronology()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.chrono.JapaneseChronology getChronology()</div>
+</div>
+</li><li><div class="element" id="getEra()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.chrono.JapaneseEra getEra()</div>
+</div>
+</li><li><div class="element" id="getLong(TemporalField)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getLong(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="isSupported(TemporalField)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSupported(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="lengthOfMonth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> lengthOfMonth()</div>
+</div>
+</li><li><div class="element" id="lengthOfYear()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> lengthOfYear()</div>
+</div>
+</li><li><div class="element" id="minus(long,TemporalUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.chrono.JapaneseDate minus(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.time.temporal.TemporalUnit arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="minus(TemporalAmount)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.chrono.JapaneseDate minus(<span class="parameters"><span class="parameter">java.time.temporal.TemporalAmount arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="now()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.chrono.JapaneseDate now()</div>
+</div>
+</li><li><div class="element" id="now(Clock)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.chrono.JapaneseDate now(<span class="parameters"><span class="parameter">java.time.Clock arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="now(ZoneId)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.chrono.JapaneseDate now(<span class="parameters"><span class="parameter">java.time.ZoneId arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.chrono.JapaneseDate of(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(JapaneseEra,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.chrono.JapaneseDate of(<span class="parameters"><span class="parameter">java.time.chrono.JapaneseEra arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="plus(long,TemporalUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.chrono.JapaneseDate plus(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.time.temporal.TemporalUnit arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="plus(TemporalAmount)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.chrono.JapaneseDate plus(<span class="parameters"><span class="parameter">java.time.temporal.TemporalAmount arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="range(TemporalField)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.temporal.ValueRange range(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toEpochDay()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> toEpochDay()</div>
+</div>
+</li><li><div class="element" id="until(ChronoLocalDate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.chrono.ChronoPeriod until(<span class="parameters"><span class="parameter">java.time.chrono.ChronoLocalDate arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="with(TemporalAdjuster)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.chrono.JapaneseDate with(<span class="parameters"><span class="parameter">java.time.temporal.TemporalAdjuster arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="with(TemporalField,long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.chrono.JapaneseDate with(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-305327627230580483<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.InvalidObjectException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeReplace"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> java.lang.Object writeReplace()</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

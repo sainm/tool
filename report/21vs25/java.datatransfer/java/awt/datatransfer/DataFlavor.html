@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.datatransfer/java.awt.datatransfer.DataFlavor</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.datatransfer/module-summary.html">java.datatransfer</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.datatransfer/java/awt/datatransfer/package-summary.html">java.awt.datatransfer</a></div>
+<h1>Class&nbsp;DataFlavor</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> DataFlavor <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Externalizable, java.lang.Cloneable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="allHtmlFlavor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.datatransfer.DataFlavor allHtmlFlavor</div>
+</div>
+</li><li><div class="element" id="fragmentHtmlFlavor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.datatransfer.DataFlavor fragmentHtmlFlavor</div>
+</div>
+</li><li><div class="element" id="imageFlavor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.datatransfer.DataFlavor imageFlavor</div>
+</div>
+</li><li><div class="element" id="javaFileListFlavor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.datatransfer.DataFlavor javaFileListFlavor</div>
+</div>
+</li><li><div class="element" id="javaJVMLocalObjectMimeType"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String javaJVMLocalObjectMimeType = "application/x-java-jvm-local-objectref"</div>
+</div>
+</li><li><div class="element" id="javaRemoteObjectMimeType"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String javaRemoteObjectMimeType = "application/x-java-remote-object"</div>
+</div>
+</li><li><div class="element" id="javaSerializedObjectMimeType"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String javaSerializedObjectMimeType = "application/x-java-serialized-object"</div>
+</div>
+</li><li><div class="element" id="plainTextFlavor"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.datatransfer.DataFlavor plainTextFlavor</div>
+</div>
+</li><li><div class="element" id="selectionHtmlFlavor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.datatransfer.DataFlavor selectionHtmlFlavor</div>
+</div>
+</li><li><div class="element" id="stringFlavor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.datatransfer.DataFlavor stringFlavor</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DataFlavor()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Class,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DataFlavor(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DataFlavor(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DataFlavor(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,String,ClassLoader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DataFlavor(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.ClassLoader arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.ClassNotFoundException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="clone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object clone() <span class="throws"><span class="keyword">throws</span> java.lang.CloneNotSupportedException</span></div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="equals(String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="equals(DataFlavor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.awt.datatransfer.DataFlavor arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDefaultRepresentationClass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span>java.lang.Class&lt;?&gt;</span> getDefaultRepresentationClass()</div>
+</div>
+</li><li><div class="element" id="getDefaultRepresentationClassAsString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.String getDefaultRepresentationClassAsString()</div>
+</div>
+</li><li><div class="element" id="getHumanPresentableName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getHumanPresentableName()</div>
+</div>
+</li><li><div class="element" id="getMimeType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getMimeType()</div>
+</div>
+</li><li><div class="element" id="getParameter(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getParameter(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPrimaryType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getPrimaryType()</div>
+</div>
+</li><li><div class="element" id="getReaderForText(Transferable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.Reader getReaderForText(<span class="parameters"><span class="parameter">java.awt.datatransfer.Transferable arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.awt.datatransfer.UnsupportedFlavorException</span></div>
+</div>
+</li><li><div class="element" id="getRepresentationClass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> getRepresentationClass()</div>
+</div>
+</li><li><div class="element" id="getSubType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getSubType()</div>
+</div>
+</li><li><div class="element" id="getTextPlainUnicodeFlavor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.datatransfer.DataFlavor getTextPlainUnicodeFlavor()</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="isFlavorJavaFileListType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isFlavorJavaFileListType()</div>
+</div>
+</li><li><div class="element" id="isFlavorRemoteObjectType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isFlavorRemoteObjectType()</div>
+</div>
+</li><li><div class="element" id="isFlavorSerializedObjectType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isFlavorSerializedObjectType()</div>
+</div>
+</li><li><div class="element" id="isFlavorTextType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isFlavorTextType()</div>
+</div>
+</li><li><div class="element" id="isMimeTypeEqual(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isMimeTypeEqual(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isMimeTypeEqual(DataFlavor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isMimeTypeEqual(<span class="parameters"><span class="parameter">java.awt.datatransfer.DataFlavor arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isMimeTypeSerializedObject()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isMimeTypeSerializedObject()</div>
+</div>
+</li><li><div class="element" id="isRepresentationClassByteBuffer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isRepresentationClassByteBuffer()</div>
+</div>
+</li><li><div class="element" id="isRepresentationClassCharBuffer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isRepresentationClassCharBuffer()</div>
+</div>
+</li><li><div class="element" id="isRepresentationClassInputStream()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isRepresentationClassInputStream()</div>
+</div>
+</li><li><div class="element" id="isRepresentationClassReader()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isRepresentationClassReader()</div>
+</div>
+</li><li><div class="element" id="isRepresentationClassRemote()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isRepresentationClassRemote()</div>
+</div>
+</li><li><div class="element" id="isRepresentationClassSerializable()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isRepresentationClassSerializable()</div>
+</div>
+</li><li><div class="element" id="match(DataFlavor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> match(<span class="parameters"><span class="parameter">java.awt.datatransfer.DataFlavor arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="normalizeMimeType(String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> java.lang.String normalizeMimeType(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="normalizeMimeTypeParameter(String,String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> java.lang.String normalizeMimeTypeParameter(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="readExternal(ObjectInput)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> readExternal(<span class="parameters"><span class="parameter">java.io.ObjectInput arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li><div class="element" id="selectBestTextFlavor(DataFlavor[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.datatransfer.DataFlavor selectBestTextFlavor(<span class="parameters"><span class="parameter"><span>java.awt.datatransfer.DataFlavor[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setHumanPresentableName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setHumanPresentableName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li><li><div class="element" id="tryToLoadClass(String,ClassLoader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span>java.lang.Class&lt;?&gt;</span> tryToLoadClass(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.ClassLoader arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li><div class="element" id="writeExternal(ObjectOutput)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> writeExternal(<span class="parameters"><span class="parameter">java.io.ObjectOutput arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>8367026044764648243<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readExternal"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> readExternal(<span class="parameters"><span class="parameter">java.io.ObjectInput arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeExternal"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> writeExternal(<span class="parameters"><span class="parameter">java.io.ObjectOutput arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

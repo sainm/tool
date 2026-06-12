@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/java.awt.AWTEventMulticaster</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/java/awt/package-summary.html">java.awt</a></div>
+<h1>Class&nbsp;AWTEventMulticaster</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> AWTEventMulticaster <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.awt.event.ActionListener, java.awt.event.AdjustmentListener, java.awt.event.ComponentListener, java.awt.event.ContainerListener, java.awt.event.FocusListener, java.awt.event.HierarchyBoundsListener, java.awt.event.HierarchyListener, java.awt.event.InputMethodListener, java.awt.event.ItemListener, java.awt.event.KeyListener, java.awt.event.MouseListener, java.awt.event.MouseMotionListener, java.awt.event.MouseWheelListener, java.awt.event.TextListener, java.awt.event.WindowFocusListener, java.awt.event.WindowListener, java.awt.event.WindowStateListener</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="a"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> java.util.EventListener a</div>
+</div>
+</li><li><div class="element" id="b"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> java.util.EventListener b</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(EventListener,EventListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> AWTEventMulticaster(<span class="parameters"><span class="parameter">java.util.EventListener arg0</span>, <span class="parameter">java.util.EventListener arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="actionPerformed(ActionEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> actionPerformed(<span class="parameters"><span class="parameter">java.awt.event.ActionEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(ActionListener,ActionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.ActionListener add(<span class="parameters"><span class="parameter">java.awt.event.ActionListener arg0</span>, <span class="parameter">java.awt.event.ActionListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(AdjustmentListener,AdjustmentListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.AdjustmentListener add(<span class="parameters"><span class="parameter">java.awt.event.AdjustmentListener arg0</span>, <span class="parameter">java.awt.event.AdjustmentListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(ComponentListener,ComponentListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.ComponentListener add(<span class="parameters"><span class="parameter">java.awt.event.ComponentListener arg0</span>, <span class="parameter">java.awt.event.ComponentListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(ContainerListener,ContainerListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.ContainerListener add(<span class="parameters"><span class="parameter">java.awt.event.ContainerListener arg0</span>, <span class="parameter">java.awt.event.ContainerListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(FocusListener,FocusListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.FocusListener add(<span class="parameters"><span class="parameter">java.awt.event.FocusListener arg0</span>, <span class="parameter">java.awt.event.FocusListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(HierarchyBoundsListener,HierarchyBoundsListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.HierarchyBoundsListener add(<span class="parameters"><span class="parameter">java.awt.event.HierarchyBoundsListener arg0</span>, <span class="parameter">java.awt.event.HierarchyBoundsListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(HierarchyListener,HierarchyListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.HierarchyListener add(<span class="parameters"><span class="parameter">java.awt.event.HierarchyListener arg0</span>, <span class="parameter">java.awt.event.HierarchyListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(InputMethodListener,InputMethodListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.InputMethodListener add(<span class="parameters"><span class="parameter">java.awt.event.InputMethodListener arg0</span>, <span class="parameter">java.awt.event.InputMethodListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(ItemListener,ItemListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.ItemListener add(<span class="parameters"><span class="parameter">java.awt.event.ItemListener arg0</span>, <span class="parameter">java.awt.event.ItemListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(KeyListener,KeyListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.KeyListener add(<span class="parameters"><span class="parameter">java.awt.event.KeyListener arg0</span>, <span class="parameter">java.awt.event.KeyListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(MouseListener,MouseListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.MouseListener add(<span class="parameters"><span class="parameter">java.awt.event.MouseListener arg0</span>, <span class="parameter">java.awt.event.MouseListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(MouseMotionListener,MouseMotionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.MouseMotionListener add(<span class="parameters"><span class="parameter">java.awt.event.MouseMotionListener arg0</span>, <span class="parameter">java.awt.event.MouseMotionListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(MouseWheelListener,MouseWheelListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.MouseWheelListener add(<span class="parameters"><span class="parameter">java.awt.event.MouseWheelListener arg0</span>, <span class="parameter">java.awt.event.MouseWheelListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(TextListener,TextListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.TextListener add(<span class="parameters"><span class="parameter">java.awt.event.TextListener arg0</span>, <span class="parameter">java.awt.event.TextListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(WindowFocusListener,WindowFocusListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.WindowFocusListener add(<span class="parameters"><span class="parameter">java.awt.event.WindowFocusListener arg0</span>, <span class="parameter">java.awt.event.WindowFocusListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(WindowListener,WindowListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.WindowListener add(<span class="parameters"><span class="parameter">java.awt.event.WindowListener arg0</span>, <span class="parameter">java.awt.event.WindowListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="add(WindowStateListener,WindowStateListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.WindowStateListener add(<span class="parameters"><span class="parameter">java.awt.event.WindowStateListener arg0</span>, <span class="parameter">java.awt.event.WindowStateListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="addInternal(EventListener,EventListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span></span> java.util.EventListener addInternal(<span class="parameters"><span class="parameter">java.util.EventListener arg0</span>, <span class="parameter">java.util.EventListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="adjustmentValueChanged(AdjustmentEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> adjustmentValueChanged(<span class="parameters"><span class="parameter">java.awt.event.AdjustmentEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ancestorMoved(HierarchyEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> ancestorMoved(<span class="parameters"><span class="parameter">java.awt.event.HierarchyEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ancestorResized(HierarchyEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> ancestorResized(<span class="parameters"><span class="parameter">java.awt.event.HierarchyEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="caretPositionChanged(InputMethodEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> caretPositionChanged(<span class="parameters"><span class="parameter">java.awt.event.InputMethodEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="componentAdded(ContainerEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> componentAdded(<span class="parameters"><span class="parameter">java.awt.event.ContainerEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="componentHidden(ComponentEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> componentHidden(<span class="parameters"><span class="parameter">java.awt.event.ComponentEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="componentMoved(ComponentEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> componentMoved(<span class="parameters"><span class="parameter">java.awt.event.ComponentEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="componentRemoved(ContainerEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> componentRemoved(<span class="parameters"><span class="parameter">java.awt.event.ContainerEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="componentResized(ComponentEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> componentResized(<span class="parameters"><span class="parameter">java.awt.event.ComponentEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="componentShown(ComponentEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> componentShown(<span class="parameters"><span class="parameter">java.awt.event.ComponentEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="focusGained(FocusEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> focusGained(<span class="parameters"><span class="parameter">java.awt.event.FocusEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="focusLost(FocusEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> focusLost(<span class="parameters"><span class="parameter">java.awt.event.FocusEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getListeners(EventListener,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>T[]</span> getListeners(<span class="parameters"><span class="parameter">java.util.EventListener arg0</span>, <span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="hierarchyChanged(HierarchyEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> hierarchyChanged(<span class="parameters"><span class="parameter">java.awt.event.HierarchyEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="inputMethodTextChanged(InputMethodEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> inputMethodTextChanged(<span class="parameters"><span class="parameter">java.awt.event.InputMethodEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="itemStateChanged(ItemEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> itemStateChanged(<span class="parameters"><span class="parameter">java.awt.event.ItemEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="keyPressed(KeyEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> keyPressed(<span class="parameters"><span class="parameter">java.awt.event.KeyEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="keyReleased(KeyEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> keyReleased(<span class="parameters"><span class="parameter">java.awt.event.KeyEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="keyTyped(KeyEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> keyTyped(<span class="parameters"><span class="parameter">java.awt.event.KeyEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mouseClicked(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> mouseClicked(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mouseDragged(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> mouseDragged(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mouseEntered(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> mouseEntered(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mouseExited(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> mouseExited(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mouseMoved(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> mouseMoved(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mousePressed(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> mousePressed(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mouseReleased(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> mouseReleased(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mouseWheelMoved(MouseWheelEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> mouseWheelMoved(<span class="parameters"><span class="parameter">java.awt.event.MouseWheelEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(EventListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.util.EventListener remove(<span class="parameters"><span class="parameter">java.util.EventListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(ActionListener,ActionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.ActionListener remove(<span class="parameters"><span class="parameter">java.awt.event.ActionListener arg0</span>, <span class="parameter">java.awt.event.ActionListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(AdjustmentListener,AdjustmentListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.AdjustmentListener remove(<span class="parameters"><span class="parameter">java.awt.event.AdjustmentListener arg0</span>, <span class="parameter">java.awt.event.AdjustmentListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(ComponentListener,ComponentListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.ComponentListener remove(<span class="parameters"><span class="parameter">java.awt.event.ComponentListener arg0</span>, <span class="parameter">java.awt.event.ComponentListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(ContainerListener,ContainerListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.ContainerListener remove(<span class="parameters"><span class="parameter">java.awt.event.ContainerListener arg0</span>, <span class="parameter">java.awt.event.ContainerListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(FocusListener,FocusListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.FocusListener remove(<span class="parameters"><span class="parameter">java.awt.event.FocusListener arg0</span>, <span class="parameter">java.awt.event.FocusListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(HierarchyBoundsListener,HierarchyBoundsListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.HierarchyBoundsListener remove(<span class="parameters"><span class="parameter">java.awt.event.HierarchyBoundsListener arg0</span>, <span class="parameter">java.awt.event.HierarchyBoundsListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(HierarchyListener,HierarchyListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.HierarchyListener remove(<span class="parameters"><span class="parameter">java.awt.event.HierarchyListener arg0</span>, <span class="parameter">java.awt.event.HierarchyListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(InputMethodListener,InputMethodListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.InputMethodListener remove(<span class="parameters"><span class="parameter">java.awt.event.InputMethodListener arg0</span>, <span class="parameter">java.awt.event.InputMethodListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(ItemListener,ItemListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.ItemListener remove(<span class="parameters"><span class="parameter">java.awt.event.ItemListener arg0</span>, <span class="parameter">java.awt.event.ItemListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(KeyListener,KeyListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.KeyListener remove(<span class="parameters"><span class="parameter">java.awt.event.KeyListener arg0</span>, <span class="parameter">java.awt.event.KeyListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(MouseListener,MouseListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.MouseListener remove(<span class="parameters"><span class="parameter">java.awt.event.MouseListener arg0</span>, <span class="parameter">java.awt.event.MouseListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(MouseMotionListener,MouseMotionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.MouseMotionListener remove(<span class="parameters"><span class="parameter">java.awt.event.MouseMotionListener arg0</span>, <span class="parameter">java.awt.event.MouseMotionListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(MouseWheelListener,MouseWheelListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.MouseWheelListener remove(<span class="parameters"><span class="parameter">java.awt.event.MouseWheelListener arg0</span>, <span class="parameter">java.awt.event.MouseWheelListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(TextListener,TextListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.TextListener remove(<span class="parameters"><span class="parameter">java.awt.event.TextListener arg0</span>, <span class="parameter">java.awt.event.TextListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(WindowFocusListener,WindowFocusListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.WindowFocusListener remove(<span class="parameters"><span class="parameter">java.awt.event.WindowFocusListener arg0</span>, <span class="parameter">java.awt.event.WindowFocusListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(WindowListener,WindowListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.WindowListener remove(<span class="parameters"><span class="parameter">java.awt.event.WindowListener arg0</span>, <span class="parameter">java.awt.event.WindowListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(WindowStateListener,WindowStateListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.WindowStateListener remove(<span class="parameters"><span class="parameter">java.awt.event.WindowStateListener arg0</span>, <span class="parameter">java.awt.event.WindowStateListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeInternal(EventListener,EventListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span></span> java.util.EventListener removeInternal(<span class="parameters"><span class="parameter">java.util.EventListener arg0</span>, <span class="parameter">java.util.EventListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="save(ObjectOutputStream,String,EventListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span></span> <span class="keyword">void</span> save(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.util.EventListener arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="saveInternal(ObjectOutputStream,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> saveInternal(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="textValueChanged(TextEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> textValueChanged(<span class="parameters"><span class="parameter">java.awt.event.TextEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="windowActivated(WindowEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> windowActivated(<span class="parameters"><span class="parameter">java.awt.event.WindowEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="windowClosed(WindowEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> windowClosed(<span class="parameters"><span class="parameter">java.awt.event.WindowEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="windowClosing(WindowEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> windowClosing(<span class="parameters"><span class="parameter">java.awt.event.WindowEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="windowDeactivated(WindowEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> windowDeactivated(<span class="parameters"><span class="parameter">java.awt.event.WindowEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="windowDeiconified(WindowEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> windowDeiconified(<span class="parameters"><span class="parameter">java.awt.event.WindowEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="windowGainedFocus(WindowEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> windowGainedFocus(<span class="parameters"><span class="parameter">java.awt.event.WindowEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="windowIconified(WindowEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> windowIconified(<span class="parameters"><span class="parameter">java.awt.event.WindowEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="windowLostFocus(WindowEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> windowLostFocus(<span class="parameters"><span class="parameter">java.awt.event.WindowEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="windowOpened(WindowEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> windowOpened(<span class="parameters"><span class="parameter">java.awt.event.WindowEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="windowStateChanged(WindowEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> windowStateChanged(<span class="parameters"><span class="parameter">java.awt.event.WindowEvent arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

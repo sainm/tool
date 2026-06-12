@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.scripting/javax.script.ScriptEngineManager</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.scripting/module-summary.html">java.scripting</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.scripting/javax/script/package-summary.html">javax.script</a></div>
+<h1>Class&nbsp;ScriptEngineManager</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> ScriptEngineManager <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ScriptEngineManager()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(ClassLoader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ScriptEngineManager(<span class="parameters"><span class="parameter">java.lang.ClassLoader arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="get(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object get(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBindings()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.script.Bindings getBindings()</div>
+</div>
+</li><li><div class="element" id="getEngineByExtension(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.script.ScriptEngine getEngineByExtension(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getEngineByMimeType(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.script.ScriptEngine getEngineByMimeType(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getEngineByName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.script.ScriptEngine getEngineByName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getEngineFactories()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.List&lt;javax.script.ScriptEngineFactory&gt;</span> getEngineFactories()</div>
+</div>
+</li><li><div class="element" id="put(String,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> put(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="registerEngineExtension(String,ScriptEngineFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> registerEngineExtension(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">javax.script.ScriptEngineFactory arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="registerEngineMimeType(String,ScriptEngineFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> registerEngineMimeType(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">javax.script.ScriptEngineFactory arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="registerEngineName(String,ScriptEngineFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> registerEngineName(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">javax.script.ScriptEngineFactory arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setBindings(Bindings)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBindings(<span class="parameters"><span class="parameter">javax.script.Bindings arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

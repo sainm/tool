@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/java.awt.print.PrinterJob</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/java/awt/print/package-summary.html">java.awt.print</a></div>
+<h1>Class&nbsp;PrinterJob</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> PrinterJob <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> PrinterJob()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="cancel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> cancel()</div>
+</div>
+</li><li><div class="element" id="defaultPage()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.print.PageFormat defaultPage()</div>
+</div>
+</li><li><div class="element" id="defaultPage(PageFormat)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.awt.print.PageFormat defaultPage(<span class="parameters"><span class="parameter">java.awt.print.PageFormat arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCopies()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getCopies()</div>
+</div>
+</li><li><div class="element" id="getJobName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getJobName()</div>
+</div>
+</li><li><div class="element" id="getPageFormat(PrintRequestAttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.print.PageFormat getPageFormat(<span class="parameters"><span class="parameter">javax.print.attribute.PrintRequestAttributeSet arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPrintService()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.print.PrintService getPrintService()</div>
+</div>
+</li><li><div class="element" id="getPrinterJob()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.print.PrinterJob getPrinterJob()</div>
+</div>
+</li><li><div class="element" id="getUserName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getUserName()</div>
+</div>
+</li><li><div class="element" id="isCancelled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isCancelled()</div>
+</div>
+</li><li><div class="element" id="lookupPrintServices()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>javax.print.PrintService[]</span> lookupPrintServices()</div>
+</div>
+</li><li><div class="element" id="lookupStreamPrintServices(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>javax.print.StreamPrintServiceFactory[]</span> lookupStreamPrintServices(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="pageDialog(PageFormat)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.awt.print.PageFormat pageDialog(<span class="parameters"><span class="parameter">java.awt.print.PageFormat arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="pageDialog(PrintRequestAttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.print.PageFormat pageDialog(<span class="parameters"><span class="parameter">javax.print.attribute.PrintRequestAttributeSet arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="print()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> print() <span class="throws"><span class="keyword">throws</span> java.awt.print.PrinterException</span></div>
+</div>
+</li><li><div class="element" id="print(PrintRequestAttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> print(<span class="parameters"><span class="parameter">javax.print.attribute.PrintRequestAttributeSet arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.print.PrinterException</span></div>
+</div>
+</li><li><div class="element" id="printDialog()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> printDialog() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="printDialog(PrintRequestAttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> printDialog(<span class="parameters"><span class="parameter">javax.print.attribute.PrintRequestAttributeSet arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="setCopies(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setCopies(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setJobName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setJobName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setPageable(Pageable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setPageable(<span class="parameters"><span class="parameter">java.awt.print.Pageable arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.NullPointerException</span></div>
+</div>
+</li><li><div class="element" id="setPrintService(PrintService)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setPrintService(<span class="parameters"><span class="parameter">javax.print.PrintService arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.print.PrinterException</span></div>
+</div>
+</li><li><div class="element" id="setPrintable(Printable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setPrintable(<span class="parameters"><span class="parameter">java.awt.print.Printable arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setPrintable(Printable,PageFormat)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setPrintable(<span class="parameters"><span class="parameter">java.awt.print.Printable arg0</span>, <span class="parameter">java.awt.print.PageFormat arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="validatePage(PageFormat)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.awt.print.PageFormat validatePage(<span class="parameters"><span class="parameter">java.awt.print.PageFormat arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

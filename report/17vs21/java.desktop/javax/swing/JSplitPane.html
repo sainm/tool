@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.JSplitPane</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Class&nbsp;JSplitPane</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="annotation">@JavaBean(defaultProperty="UI")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> JSplitPane <div class="superclass"><span class="keyword">extends</span> javax.swing.JComponent</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.accessibility.Accessible</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JSplitPane.AccessibleJSplitPane.html">AccessibleJSplitPane</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="BOTTOM"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String BOTTOM = "bottom"</div>
+</div>
+</li><li><div class="element" id="CONTINUOUS_LAYOUT_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String CONTINUOUS_LAYOUT_PROPERTY = "continuousLayout"</div>
+</div>
+</li><li><div class="element" id="DIVIDER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DIVIDER = "divider"</div>
+</div>
+</li><li><div class="element" id="DIVIDER_LOCATION_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DIVIDER_LOCATION_PROPERTY = "dividerLocation"</div>
+</div>
+</li><li><div class="element" id="DIVIDER_SIZE_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DIVIDER_SIZE_PROPERTY = "dividerSize"</div>
+</div>
+</li><li><div class="element" id="HORIZONTAL_SPLIT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HORIZONTAL_SPLIT = 1</div>
+</div>
+</li><li><div class="element" id="LAST_DIVIDER_LOCATION_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String LAST_DIVIDER_LOCATION_PROPERTY = "lastDividerLocation"</div>
+</div>
+</li><li><div class="element" id="LEFT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String LEFT = "left"</div>
+</div>
+</li><li><div class="element" id="ONE_TOUCH_EXPANDABLE_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String ONE_TOUCH_EXPANDABLE_PROPERTY = "oneTouchExpandable"</div>
+</div>
+</li><li><div class="element" id="ORIENTATION_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String ORIENTATION_PROPERTY = "orientation"</div>
+</div>
+</li><li><div class="element" id="RESIZE_WEIGHT_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String RESIZE_WEIGHT_PROPERTY = "resizeWeight"</div>
+</div>
+</li><li><div class="element" id="RIGHT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String RIGHT = "right"</div>
+</div>
+</li><li><div class="element" id="TOP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String TOP = "top"</div>
+</div>
+</li><li><div class="element" id="VERTICAL_SPLIT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VERTICAL_SPLIT = 0</div>
+</div>
+</li><li><div class="element" id="continuousLayout"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> continuousLayout</div>
+</div>
+</li><li><div class="element" id="dividerSize"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> dividerSize</div>
+</div>
+</li><li><div class="element" id="lastDividerLocation"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> lastDividerLocation</div>
+</div>
+</li><li><div class="element" id="leftComponent"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Component leftComponent</div>
+</div>
+</li><li><div class="element" id="oneTouchExpandable"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> oneTouchExpandable</div>
+</div>
+</li><li><div class="element" id="orientation"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> orientation</div>
+</div>
+</li><li><div class="element" id="rightComponent"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Component rightComponent</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JSplitPane()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@ConstructorProperties({"orientation"})</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> JSplitPane(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JSplitPane(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,boolean,Component,Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JSplitPane(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span>, <span class="parameter">java.awt.Component arg2</span>, <span class="parameter">java.awt.Component arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,Component,Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JSplitPane(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.awt.Component arg1</span>, <span class="parameter">java.awt.Component arg2</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addImpl(Component,Object,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> addImpl(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAccessibleContext()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falseexpert=truedescription="The AccessibleContext associated with this SplitPane.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.accessibility.AccessibleContext getAccessibleContext()</div>
+</div>
+</li><li><div class="element" id="getBottomComponent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getBottomComponent()</div>
+</div>
+</li><li><div class="element" id="getDividerLocation()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getDividerLocation()</div>
+</div>
+</li><li><div class="element" id="getDividerSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getDividerSize()</div>
+</div>
+</li><li><div class="element" id="getLastDividerLocation()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getLastDividerLocation()</div>
+</div>
+</li><li><div class="element" id="getLeftComponent()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsepreferred=truedescription="The component to the left (or above) the divider.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getLeftComponent()</div>
+</div>
+</li><li><div class="element" id="getMaximumDividerLocation()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMaximumDividerLocation()</div>
+</div>
+</li><li><div class="element" id="getMinimumDividerLocation()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="The minimum location of the divider from the L&amp;F.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMinimumDividerLocation()</div>
+</div>
+</li><li><div class="element" id="getOrientation()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getOrientation()</div>
+</div>
+</li><li><div class="element" id="getResizeWeight()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">double</span> getResizeWeight()</div>
+</div>
+</li><li><div class="element" id="getRightComponent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getRightComponent()</div>
+</div>
+</li><li><div class="element" id="getTopComponent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getTopComponent()</div>
+</div>
+</li><li><div class="element" id="getUI()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falseexpert=truedescription="The L&amp;F object that renders this component.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.swing.plaf.SplitPaneUI getUI()</div>
+</div>
+</li><li><div class="element" id="getUIClassID()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falseexpert=truedescription="A string that specifies the name of the L&amp;F class.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.lang.String getUIClassID()</div>
+</div>
+</li><li><div class="element" id="isContinuousLayout()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isContinuousLayout()</div>
+</div>
+</li><li><div class="element" id="isOneTouchExpandable()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isOneTouchExpandable()</div>
+</div>
+</li><li><div class="element" id="isValidateRoot()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(hidden=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isValidateRoot()</div>
+</div>
+</li><li><div class="element" id="paintChildren(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintChildren(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String paramString()</div>
+</div>
+</li><li><div class="element" id="remove(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> remove(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> remove(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeAll()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeAll()</div>
+</div>
+</li><li><div class="element" id="resetToPreferredSizes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> resetToPreferredSizes()</div>
+</div>
+</li><li><div class="element" id="setBottomComponent(Component)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="The component below, or to the right of the divider.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBottomComponent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setContinuousLayout(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="Whether the child components are continuously redisplayed and laid out during user intervention.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setContinuousLayout(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDividerLocation(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The location of the divider.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDividerLocation(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDividerLocation(double)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The location of the divider.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDividerLocation(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDividerSize(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The size of the divider.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDividerSize(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLastDividerLocation(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The last location the divider was at.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLastDividerLocation(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLeftComponent(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLeftComponent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setOneTouchExpandable(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="UI widget on the divider to quickly expand/collapse the divider.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setOneTouchExpandable(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setOrientation(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(enumerationValues={"JSplitPane.HORIZONTAL_SPLIT", "JSplitPane.VERTICAL_SPLIT"}description="The orientation, or how the splitter is divided.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setOrientation(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setResizeWeight(double)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="Specifies how to distribute extra space when the split pane resizes.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setResizeWeight(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRightComponent(Component)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsepreferred=truedescription="The component to the right (or below) the divider.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRightComponent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setTopComponent(Component)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="The component above, or to the left of the divider.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setTopComponent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setUI(SplitPaneUI)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setUI(<span class="parameters"><span class="parameter">javax.swing.plaf.SplitPaneUI arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> updateUI()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>5596396338952401074<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;continuousLayout</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;dividerLocation</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;dividerSize</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;dividerSizeSet</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;lastDividerLocation</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Component&nbsp;leftComponent</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;oneTouchExpandable</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;oneTouchExpandableSet</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;orientation</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">double</span>&nbsp;resizeWeight</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Component&nbsp;rightComponent</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

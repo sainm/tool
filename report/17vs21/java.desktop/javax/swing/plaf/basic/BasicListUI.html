@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.plaf.basic.BasicListUI</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/swing/plaf/basic/package-summary.html">javax.swing.plaf.basic</a></div>
+<h1>Class&nbsp;BasicListUI</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> BasicListUI <div class="superclass"><span class="keyword">extends</span> javax.swing.plaf.ListUI</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html">FocusHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html">ListDataHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicListUI.ListSelectionHandler.html">ListSelectionHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicListUI.MouseInputHandler.html">MouseInputHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicListUI.PropertyChangeHandler.html">PropertyChangeHandler</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="cellHeight"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> cellHeight</div>
+</div>
+</li><li><div class="element" id="cellHeights"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span><span class="keyword">int</span>[]</span> cellHeights</div>
+</div>
+</li><li><div class="element" id="cellRendererChanged"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> cellRendererChanged = 64</div>
+</div>
+</li><li><div class="element" id="cellWidth"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> cellWidth</div>
+</div>
+</li><li><div class="element" id="fixedCellHeightChanged"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> fixedCellHeightChanged = 16</div>
+</div>
+</li><li><div class="element" id="fixedCellWidthChanged"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> fixedCellWidthChanged = 8</div>
+</div>
+</li><li><div class="element" id="focusListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.FocusListener focusListener</div>
+</div>
+</li><li><div class="element" id="fontChanged"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> fontChanged = 4</div>
+</div>
+</li><li><div class="element" id="list"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>javax.swing.JList&lt;java.lang.Object&gt;</span> list</div>
+</div>
+</li><li><div class="element" id="listDataListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.ListDataListener listDataListener</div>
+</div>
+</li><li><div class="element" id="listSelectionListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.ListSelectionListener listSelectionListener</div>
+</div>
+</li><li><div class="element" id="modelChanged"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> modelChanged = 1</div>
+</div>
+</li><li><div class="element" id="mouseInputListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.MouseInputListener mouseInputListener</div>
+</div>
+</li><li><div class="element" id="propertyChangeListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.beans.PropertyChangeListener propertyChangeListener</div>
+</div>
+</li><li><div class="element" id="prototypeCellValueChanged"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> prototypeCellValueChanged = 32</div>
+</div>
+</li><li><div class="element" id="rendererPane"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.CellRendererPane rendererPane</div>
+</div>
+</li><li><div class="element" id="selectionModelChanged"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> selectionModelChanged = 2</div>
+</div>
+</li><li><div class="element" id="updateLayoutStateNeeded"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> updateLayoutStateNeeded</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BasicListUI()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="convertRowToY(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> convertRowToY(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="convertYToRow(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> convertYToRow(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createFocusListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.FocusListener createFocusListener()</div>
+</div>
+</li><li><div class="element" id="createListDataListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.ListDataListener createListDataListener()</div>
+</div>
+</li><li><div class="element" id="createListSelectionListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.ListSelectionListener createListSelectionListener()</div>
+</div>
+</li><li><div class="element" id="createMouseInputListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.MouseInputListener createMouseInputListener()</div>
+</div>
+</li><li><div class="element" id="createPropertyChangeListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.beans.PropertyChangeListener createPropertyChangeListener()</div>
+</div>
+</li><li><div class="element" id="createUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.plaf.ComponentUI createUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBaseline(JComponent,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getBaseline(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBaselineResizeBehavior(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component.BaselineResizeBehavior getBaselineResizeBehavior(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCellBounds(JList,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Rectangle getCellBounds(<span class="parameters"><span class="parameter"><span>javax.swing.JList&lt;?&gt;</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPreferredSize(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getPreferredSize(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getRowHeight(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> getRowHeight(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="indexToLocation(JList,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Point indexToLocation(<span class="parameters"><span class="parameter"><span>javax.swing.JList&lt;?&gt;</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="installDefaults()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installDefaults()</div>
+</div>
+</li><li><div class="element" id="installKeyboardActions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installKeyboardActions()</div>
+</div>
+</li><li><div class="element" id="installListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installListeners()</div>
+</div>
+</li><li><div class="element" id="installUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> installUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="locationToIndex(JList,Point)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> locationToIndex(<span class="parameters"><span class="parameter"><span>javax.swing.JList&lt;?&gt;</span> arg0</span>, <span class="parameter">java.awt.Point arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="maybeUpdateLayoutState()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> maybeUpdateLayoutState()</div>
+</div>
+</li><li><div class="element" id="paint(Graphics,JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paint(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">javax.swing.JComponent arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintCell(Graphics,int,Rectangle,ListCellRenderer,ListModel,ListSelectionModel,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintCell(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">java.awt.Rectangle arg2</span>, <span class="parameter"><span>javax.swing.ListCellRenderer&lt;java.lang.Object&gt;</span> arg3</span>, <span class="parameter"><span>javax.swing.ListModel&lt;java.lang.Object&gt;</span> arg4</span>, <span class="parameter">javax.swing.ListSelectionModel arg5</span>, <span class="parameter"><span class="keyword">int</span> arg6</span></span>)</div>
+</div>
+</li><li><div class="element" id="selectNextIndex()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> selectNextIndex()</div>
+</div>
+</li><li><div class="element" id="selectPreviousIndex()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> selectPreviousIndex()</div>
+</div>
+</li><li><div class="element" id="uninstallDefaults()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallDefaults()</div>
+</div>
+</li><li><div class="element" id="uninstallKeyboardActions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallKeyboardActions()</div>
+</div>
+</li><li><div class="element" id="uninstallListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallListeners()</div>
+</div>
+</li><li><div class="element" id="uninstallUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> uninstallUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateLayoutState()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> updateLayoutState()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

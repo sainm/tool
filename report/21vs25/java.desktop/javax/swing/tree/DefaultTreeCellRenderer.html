@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.tree.DefaultTreeCellRenderer</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/swing/tree/package-summary.html">javax.swing.tree</a></div>
+<h1>Class&nbsp;DefaultTreeCellRenderer</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> DefaultTreeCellRenderer <div class="superclass"><span class="keyword">extends</span> javax.swing.JLabel</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.swing.tree.TreeCellRenderer</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="backgroundNonSelectionColor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Color backgroundNonSelectionColor</div>
+</div>
+</li><li><div class="element" id="backgroundSelectionColor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Color backgroundSelectionColor</div>
+</div>
+</li><li><div class="element" id="borderSelectionColor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Color borderSelectionColor</div>
+</div>
+</li><li><div class="element" id="closedIcon"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.Icon closedIcon</div>
+</div>
+</li><li><div class="element" id="hasFocus"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> hasFocus</div>
+</div>
+</li><li><div class="element" id="leafIcon"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.Icon leafIcon</div>
+</div>
+</li><li><div class="element" id="openIcon"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.Icon openIcon</div>
+</div>
+</li><li><div class="element" id="selected"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> selected</div>
+</div>
+</li><li><div class="element" id="textNonSelectionColor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Color textNonSelectionColor</div>
+</div>
+</li><li><div class="element" id="textSelectionColor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Color textSelectionColor</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DefaultTreeCellRenderer()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="firePropertyChange(String,boolean,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="firePropertyChange(String,byte,byte)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">byte</span> arg1</span>, <span class="parameter"><span class="keyword">byte</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="firePropertyChange(String,short,short)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">short</span> arg1</span>, <span class="parameter"><span class="keyword">short</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="firePropertyChange(String,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="firePropertyChange(String,long,long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="firePropertyChange(String,char,char)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">char</span> arg1</span>, <span class="parameter"><span class="keyword">char</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="firePropertyChange(String,float,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter"><span class="keyword">float</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="firePropertyChange(String,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="firePropertyChange(String,Object,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.Object arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBackgroundNonSelectionColor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getBackgroundNonSelectionColor()</div>
+</div>
+</li><li><div class="element" id="getBackgroundSelectionColor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getBackgroundSelectionColor()</div>
+</div>
+</li><li><div class="element" id="getBorderSelectionColor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getBorderSelectionColor()</div>
+</div>
+</li><li><div class="element" id="getClosedIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getClosedIcon()</div>
+</div>
+</li><li><div class="element" id="getDefaultClosedIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getDefaultClosedIcon()</div>
+</div>
+</li><li><div class="element" id="getDefaultLeafIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getDefaultLeafIcon()</div>
+</div>
+</li><li><div class="element" id="getDefaultOpenIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getDefaultOpenIcon()</div>
+</div>
+</li><li><div class="element" id="getFont()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Font getFont()</div>
+</div>
+</li><li><div class="element" id="getLeafIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getLeafIcon()</div>
+</div>
+</li><li><div class="element" id="getOpenIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getOpenIcon()</div>
+</div>
+</li><li><div class="element" id="getPreferredSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getPreferredSize()</div>
+</div>
+</li><li><div class="element" id="getTextNonSelectionColor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getTextNonSelectionColor()</div>
+</div>
+</li><li><div class="element" id="getTextSelectionColor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getTextSelectionColor()</div>
+</div>
+</li><li><div class="element" id="getTreeCellRendererComponent(JTree,Object,boolean,boolean,boolean,int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getTreeCellRendererComponent(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span>, <span class="parameter"><span class="keyword">boolean</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span class="keyword">boolean</span> arg6</span></span>)</div>
+</div>
+</li><li><div class="element" id="invalidate()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> invalidate()</div>
+</div>
+</li><li><div class="element" id="paint(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paint(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="repaint()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> repaint()</div>
+</div>
+</li><li><div class="element" id="repaint(long,int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> repaint(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="repaint(Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> repaint(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="revalidate()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> revalidate()</div>
+</div>
+</li><li><div class="element" id="setBackground(Color)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBackground(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setBackgroundNonSelectionColor(Color)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBackgroundNonSelectionColor(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setBackgroundSelectionColor(Color)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBackgroundSelectionColor(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setBorderSelectionColor(Color)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBorderSelectionColor(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setClosedIcon(Icon)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setClosedIcon(<span class="parameters"><span class="parameter">javax.swing.Icon arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFont(Font)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFont(<span class="parameters"><span class="parameter">java.awt.Font arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLeafIcon(Icon)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLeafIcon(<span class="parameters"><span class="parameter">javax.swing.Icon arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setOpenIcon(Icon)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setOpenIcon(<span class="parameters"><span class="parameter">javax.swing.Icon arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setTextNonSelectionColor(Color)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setTextNonSelectionColor(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setTextSelectionColor(Color)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setTextSelectionColor(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> updateUI()</div>
+</div>
+</li><li><div class="element" id="validate()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> validate()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>7658603079665050101<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;backgroundNonSelectionColor</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;backgroundSelectionColor</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;borderSelectionColor</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;drawDashedFocusIndicator</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;drawsFocusBorderAroundIcon</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;fillBackground</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;focusBGColor</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;hasFocus</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;inited</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;isDropCell</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;selected</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;textNonSelectionColor</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;textSelectionColor</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.JTree&nbsp;tree</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;treeBGColor</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

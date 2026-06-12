@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.table.DefaultTableColumnModel</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/swing/table/package-summary.html">javax.swing.table</a></div>
+<h1>Class&nbsp;DefaultTableColumnModel</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> DefaultTableColumnModel <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable, java.beans.PropertyChangeListener, javax.swing.event.ListSelectionListener, javax.swing.table.TableColumnModel</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="changeEvent"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.event.ChangeEvent changeEvent</div>
+</div>
+</li><li><div class="element" id="columnMargin"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> columnMargin</div>
+</div>
+</li><li><div class="element" id="columnSelectionAllowed"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> columnSelectionAllowed</div>
+</div>
+</li><li><div class="element" id="listenerList"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.EventListenerList listenerList</div>
+</div>
+</li><li><div class="element" id="selectionModel"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.ListSelectionModel selectionModel</div>
+</div>
+</li><li><div class="element" id="tableColumns"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.util.Vector&lt;javax.swing.table.TableColumn&gt;</span> tableColumns</div>
+</div>
+</li><li><div class="element" id="totalColumnWidth"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> totalColumnWidth</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DefaultTableColumnModel()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addColumn(TableColumn)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addColumn(<span class="parameters"><span class="parameter">javax.swing.table.TableColumn arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addColumnModelListener(TableColumnModelListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addColumnModelListener(<span class="parameters"><span class="parameter">javax.swing.event.TableColumnModelListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createSelectionModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.ListSelectionModel createSelectionModel()</div>
+</div>
+</li><li><div class="element" id="fireColumnAdded(TableColumnModelEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireColumnAdded(<span class="parameters"><span class="parameter">javax.swing.event.TableColumnModelEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fireColumnMarginChanged()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireColumnMarginChanged()</div>
+</div>
+</li><li><div class="element" id="fireColumnMoved(TableColumnModelEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireColumnMoved(<span class="parameters"><span class="parameter">javax.swing.event.TableColumnModelEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fireColumnRemoved(TableColumnModelEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireColumnRemoved(<span class="parameters"><span class="parameter">javax.swing.event.TableColumnModelEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fireColumnSelectionChanged(ListSelectionEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireColumnSelectionChanged(<span class="parameters"><span class="parameter">javax.swing.event.ListSelectionEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getColumn(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.table.TableColumn getColumn(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getColumnCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getColumnCount()</div>
+</div>
+</li><li><div class="element" id="getColumnIndex(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getColumnIndex(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getColumnIndexAtX(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getColumnIndexAtX(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getColumnMargin()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getColumnMargin()</div>
+</div>
+</li><li><div class="element" id="getColumnModelListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.event.TableColumnModelListener[]</span> getColumnModelListeners()</div>
+</div>
+</li><li><div class="element" id="getColumnSelectionAllowed()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getColumnSelectionAllowed()</div>
+</div>
+</li><li><div class="element" id="getColumns()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Enumeration&lt;javax.swing.table.TableColumn&gt;</span> getColumns()</div>
+</div>
+</li><li><div class="element" id="getListeners(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>T[]</span> getListeners(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getSelectedColumnCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getSelectedColumnCount()</div>
+</div>
+</li><li><div class="element" id="getSelectedColumns()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span class="keyword">int</span>[]</span> getSelectedColumns()</div>
+</div>
+</li><li><div class="element" id="getSelectionModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.ListSelectionModel getSelectionModel()</div>
+</div>
+</li><li><div class="element" id="getTotalColumnWidth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getTotalColumnWidth()</div>
+</div>
+</li><li><div class="element" id="moveColumn(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> moveColumn(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="propertyChange(PropertyChangeEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> propertyChange(<span class="parameters"><span class="parameter">java.beans.PropertyChangeEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="recalcWidthCache()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> recalcWidthCache()</div>
+</div>
+</li><li><div class="element" id="removeColumn(TableColumn)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeColumn(<span class="parameters"><span class="parameter">javax.swing.table.TableColumn arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeColumnModelListener(TableColumnModelListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeColumnModelListener(<span class="parameters"><span class="parameter">javax.swing.event.TableColumnModelListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setColumnMargin(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setColumnMargin(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setColumnSelectionAllowed(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setColumnSelectionAllowed(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionModel(ListSelectionModel)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectionModel(<span class="parameters"><span class="parameter">javax.swing.ListSelectionModel arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="valueChanged(ListSelectionEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> valueChanged(<span class="parameters"><span class="parameter">javax.swing.event.ListSelectionEvent arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>7044743341891344205<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;columnMargin</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;columnSelectionAllowed</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.event.EventListenerList&nbsp;listenerList</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.ListSelectionModel&nbsp;selectionModel</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.util.Vector&lt;javax.swing.table.TableColumn&gt;</span>&nbsp;tableColumns</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;totalColumnWidth</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

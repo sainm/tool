@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class jdk.internal.md/jdk.internal.org.commonmark.internal.Delimiter</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../../jdk.internal.md/module-summary.html">jdk.internal.md</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../../jdk.internal.md/jdk/internal/org/commonmark/internal/package-summary.html">jdk.internal.org.commonmark.internal</a></div>
+<h1>Class&nbsp;Delimiter</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> Delimiter <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> jdk.internal.org.commonmark.parser.delimiter.DelimiterRun</div>
+</div>
+</div>
+<section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="characters"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span>java.util.List&lt;jdk.internal.org.commonmark.node.Text&gt;</span> characters</div>
+</div>
+</li><li><div class="element" id="delimiterChar"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">char</span> delimiterChar</div>
+</div>
+</li><li><div class="element" id="next"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.internal.org.commonmark.internal.Delimiter next</div>
+</div>
+</li><li><div class="element" id="previous"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.internal.org.commonmark.internal.Delimiter previous</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(List,char,boolean,boolean,Delimiter)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Delimiter(<span class="parameters"><span class="parameter"><span>java.util.List&lt;jdk.internal.org.commonmark.node.Text&gt;</span> arg0</span>, <span class="parameter"><span class="keyword">char</span> arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span>, <span class="parameter">jdk.internal.org.commonmark.internal.Delimiter arg4</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="canClose()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> canClose()</div>
+</div>
+</li><li><div class="element" id="canOpen()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> canOpen()</div>
+</div>
+</li><li><div class="element" id="getCloser()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.internal.org.commonmark.node.Text getCloser()</div>
+</div>
+</li><li><div class="element" id="getClosers(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Iterable&lt;jdk.internal.org.commonmark.node.Text&gt;</span> getClosers(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getOpener()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.internal.org.commonmark.node.Text getOpener()</div>
+</div>
+</li><li><div class="element" id="getOpeners(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Iterable&lt;jdk.internal.org.commonmark.node.Text&gt;</span> getOpeners(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="length()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> length()</div>
+</div>
+</li><li><div class="element" id="originalLength()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> originalLength()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../../../jdk.internal.md/jdk/internal/org/commonmark/internal/Delimiter.html">Delimiter</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

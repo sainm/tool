@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/java.time.MonthDay</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/time/package-summary.html">java.time</a></div>
+<h1>Class&nbsp;MonthDay</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> MonthDay <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable, <span>java.lang.Comparable&lt;java.time.MonthDay&gt;</span>, java.time.temporal.TemporalAccessor, java.time.temporal.TemporalAdjuster</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="adjustInto(Temporal)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.temporal.Temporal adjustInto(<span class="parameters"><span class="parameter">java.time.temporal.Temporal arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="atYear(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.LocalDate atYear(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="compareTo(MonthDay)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> compareTo(<span class="parameters"><span class="parameter">java.time.MonthDay arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="format(DateTimeFormatter)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String format(<span class="parameters"><span class="parameter">java.time.format.DateTimeFormatter arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="from(TemporalAccessor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.MonthDay from(<span class="parameters"><span class="parameter">java.time.temporal.TemporalAccessor arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="get(TemporalField)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> get(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDayOfMonth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getDayOfMonth()</div>
+</div>
+</li><li><div class="element" id="getLong(TemporalField)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getLong(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getMonth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.Month getMonth()</div>
+</div>
+</li><li><div class="element" id="getMonthValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMonthValue()</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="isAfter(MonthDay)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isAfter(<span class="parameters"><span class="parameter">java.time.MonthDay arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isBefore(MonthDay)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isBefore(<span class="parameters"><span class="parameter">java.time.MonthDay arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isSupported(TemporalField)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSupported(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isValidYear(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isValidYear(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="now()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.MonthDay now()</div>
+</div>
+</li><li><div class="element" id="now(Clock)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.MonthDay now(<span class="parameters"><span class="parameter">java.time.Clock arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="now(ZoneId)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.MonthDay now(<span class="parameters"><span class="parameter">java.time.ZoneId arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.MonthDay of(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(Month,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.MonthDay of(<span class="parameters"><span class="parameter">java.time.Month arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="parse(CharSequence)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.MonthDay parse(<span class="parameters"><span class="parameter">java.lang.CharSequence arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="parse(CharSequence,DateTimeFormatter)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.MonthDay parse(<span class="parameters"><span class="parameter">java.lang.CharSequence arg0</span>, <span class="parameter">java.time.format.DateTimeFormatter arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="query(TemporalQuery)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>R</span>&gt;</span> R query(<span class="parameters"><span class="parameter"><span>java.time.temporal.TemporalQuery&lt;R&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="range(TemporalField)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.temporal.ValueRange range(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li><li><div class="element" id="with(Month)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.MonthDay with(<span class="parameters"><span class="parameter">java.time.Month arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withDayOfMonth(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.MonthDay withDayOfMonth(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withMonth(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.MonthDay withMonth(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-939150713474957432<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;day</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;month</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.InvalidObjectException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeReplace"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> java.lang.Object writeReplace()</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

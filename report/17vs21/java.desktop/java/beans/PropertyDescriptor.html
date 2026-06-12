@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/java.beans.PropertyDescriptor</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/java/beans/package-summary.html">java.beans</a></div>
+<h1>Class&nbsp;PropertyDescriptor</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> PropertyDescriptor <div class="superclass"><span class="keyword">extends</span> java.beans.FeatureDescriptor</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(String,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> PropertyDescriptor(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.beans.IntrospectionException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,Class,String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> PropertyDescriptor(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter">java.lang.String arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.beans.IntrospectionException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,Method,Method)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> PropertyDescriptor(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.reflect.Method arg1</span>, <span class="parameter">java.lang.reflect.Method arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.beans.IntrospectionException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="createPropertyEditor(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.beans.PropertyEditor createPropertyEditor(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPropertyEditorClass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> getPropertyEditorClass()</div>
+</div>
+</li><li><div class="element" id="getPropertyType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> getPropertyType()</div>
+</div>
+</li><li><div class="element" id="getReadMethod()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.reflect.Method getReadMethod()</div>
+</div>
+</li><li><div class="element" id="getWriteMethod()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.reflect.Method getWriteMethod()</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="isBound()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isBound()</div>
+</div>
+</li><li><div class="element" id="isConstrained()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isConstrained()</div>
+</div>
+</li><li><div class="element" id="setBound(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBound(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setConstrained(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setConstrained(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setPropertyEditorClass(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setPropertyEditorClass(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setReadMethod(Method)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setReadMethod(<span class="parameters"><span class="parameter">java.lang.reflect.Method arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.beans.IntrospectionException</span></div>
+</div>
+</li><li><div class="element" id="setWriteMethod(Method)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setWriteMethod(<span class="parameters"><span class="parameter">java.lang.reflect.Method arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.beans.IntrospectionException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

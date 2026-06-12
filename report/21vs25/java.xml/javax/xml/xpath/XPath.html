@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.xml/javax.xml.xpath.XPath</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.xml/module-summary.html">java.xml</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.xml/javax/xml/xpath/package-summary.html">javax.xml.xpath</a></div>
+<h1>Interface&nbsp;XPath</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> XPath </div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="compile(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.xpath.XPathExpression compile(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.xpath.XPathExpressionException</span></div>
+</div>
+</li><li><div class="element" id="evaluate(String,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String evaluate(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.xpath.XPathExpressionException</span></div>
+</div>
+</li><li><div class="element" id="evaluate(String,Object,QName)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.Object evaluate(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">javax.xml.namespace.QName arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.xpath.XPathExpressionException</span></div>
+</div>
+</li><li><div class="element" id="evaluate(String,InputSource)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String evaluate(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">org.xml.sax.InputSource arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.xpath.XPathExpressionException</span></div>
+</div>
+</li><li><div class="element" id="evaluate(String,InputSource,QName)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.Object evaluate(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">org.xml.sax.InputSource arg1</span>, <span class="parameter">javax.xml.namespace.QName arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.xpath.XPathExpressionException</span></div>
+</div>
+</li><li><div class="element" id="evaluateExpression(String,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>javax.xml.xpath.XPathEvaluationResult&lt;?&gt;</span> evaluateExpression(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.xpath.XPathExpressionException</span></div>
+</div>
+</li><li><div class="element" id="evaluateExpression(String,Object,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T evaluateExpression(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.xpath.XPathExpressionException</span></div>
+</div>
+</li><li><div class="element" id="evaluateExpression(String,InputSource)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>javax.xml.xpath.XPathEvaluationResult&lt;?&gt;</span> evaluateExpression(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">org.xml.sax.InputSource arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.xpath.XPathExpressionException</span></div>
+</div>
+</li><li><div class="element" id="evaluateExpression(String,InputSource,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T evaluateExpression(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">org.xml.sax.InputSource arg1</span>, <span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.xpath.XPathExpressionException</span></div>
+</div>
+</li><li><div class="element" id="getNamespaceContext()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.namespace.NamespaceContext getNamespaceContext()</div>
+</div>
+</li><li><div class="element" id="getXPathFunctionResolver()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.xpath.XPathFunctionResolver getXPathFunctionResolver()</div>
+</div>
+</li><li><div class="element" id="getXPathVariableResolver()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.xpath.XPathVariableResolver getXPathVariableResolver()</div>
+</div>
+</li><li><div class="element" id="reset()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> reset()</div>
+</div>
+</li><li><div class="element" id="setNamespaceContext(NamespaceContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setNamespaceContext(<span class="parameters"><span class="parameter">javax.xml.namespace.NamespaceContext arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setXPathFunctionResolver(XPathFunctionResolver)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setXPathFunctionResolver(<span class="parameters"><span class="parameter">javax.xml.xpath.XPathFunctionResolver arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setXPathVariableResolver(XPathVariableResolver)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setXPathVariableResolver(<span class="parameters"><span class="parameter">javax.xml.xpath.XPathVariableResolver arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

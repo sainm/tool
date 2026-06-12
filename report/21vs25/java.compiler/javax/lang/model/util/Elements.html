@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.compiler/javax.lang.model.util.Elements</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.compiler/module-summary.html">java.compiler</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.compiler/javax/lang/model/util/package-summary.html">javax.lang.model.util</a></div>
+<h1>Interface&nbsp;Elements</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> Elements </div>
+</div>
+<section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="add">&plus;</span> <a href="../../../../../java.compiler/javax/lang/model/util/Elements.DocCommentKind.html">DocCommentKind</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../java.compiler/javax/lang/model/util/Elements.Origin.html">Origin</a></span></li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="getAllAnnotationMirrors(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;<span>? <span class="keyword">extends</span> javax.lang.model.element.AnnotationMirror</span>&gt;</span> getAllAnnotationMirrors(<span class="parameters"><span class="parameter">javax.lang.model.element.Element arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAllMembers(TypeElement)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;<span>? <span class="keyword">extends</span> javax.lang.model.element.Element</span>&gt;</span> getAllMembers(<span class="parameters"><span class="parameter">javax.lang.model.element.TypeElement arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAllModuleElements()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>java.util.Set&lt;<span>? <span class="keyword">extends</span> javax.lang.model.element.ModuleElement</span>&gt;</span> getAllModuleElements()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAllPackageElements(CharSequence)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>java.util.Set&lt;<span>? <span class="keyword">extends</span> javax.lang.model.element.PackageElement</span>&gt;</span> getAllPackageElements(<span class="parameters"><span class="parameter">java.lang.CharSequence arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAllTypeElements(CharSequence)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>java.util.Set&lt;<span>? <span class="keyword">extends</span> javax.lang.model.element.TypeElement</span>&gt;</span> getAllTypeElements(<span class="parameters"><span class="parameter">java.lang.CharSequence arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getBinaryName(TypeElement)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.element.Name getBinaryName(<span class="parameters"><span class="parameter">javax.lang.model.element.TypeElement arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getConstantExpression(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getConstantExpression(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDocComment(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getDocComment(<span class="parameters"><span class="parameter">javax.lang.model.element.Element arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDocCommentKind(Element)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> javax.lang.model.util.Elements.DocCommentKind getDocCommentKind(<span class="parameters"><span class="parameter">javax.lang.model.element.Element arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getElementValuesWithDefaults(AnnotationMirror)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.Map&lt;<span>? <span class="keyword">extends</span> javax.lang.model.element.ExecutableElement</span>, <span>? <span class="keyword">extends</span> javax.lang.model.element.AnnotationValue</span>&gt;</span> getElementValuesWithDefaults(<span class="parameters"><span class="parameter">javax.lang.model.element.AnnotationMirror arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getEnumConstantBody(VariableElement)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> javax.lang.model.element.TypeElement getEnumConstantBody(<span class="parameters"><span class="parameter">javax.lang.model.element.VariableElement arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFileObjectOf(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> javax.tools.JavaFileObject getFileObjectOf(<span class="parameters"><span class="parameter">javax.lang.model.element.Element arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getModuleElement(CharSequence)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> javax.lang.model.element.ModuleElement getModuleElement(<span class="parameters"><span class="parameter">java.lang.CharSequence arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getModuleOf(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> javax.lang.model.element.ModuleElement getModuleOf(<span class="parameters"><span class="parameter">javax.lang.model.element.Element arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getName(CharSequence)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.element.Name getName(<span class="parameters"><span class="parameter">java.lang.CharSequence arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getOrigin(AnnotatedConstruct,AnnotationMirror)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> javax.lang.model.util.Elements.Origin getOrigin(<span class="parameters"><span class="parameter">javax.lang.model.AnnotatedConstruct arg0</span>, <span class="parameter">javax.lang.model.element.AnnotationMirror arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getOrigin(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> javax.lang.model.util.Elements.Origin getOrigin(<span class="parameters"><span class="parameter">javax.lang.model.element.Element arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getOrigin(ModuleElement,Directive)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> javax.lang.model.util.Elements.Origin getOrigin(<span class="parameters"><span class="parameter">javax.lang.model.element.ModuleElement arg0</span>, <span class="parameter">javax.lang.model.element.ModuleElement.Directive arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getOutermostTypeElement(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> javax.lang.model.element.TypeElement getOutermostTypeElement(<span class="parameters"><span class="parameter">javax.lang.model.element.Element arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getPackageElement(CharSequence)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.element.PackageElement getPackageElement(<span class="parameters"><span class="parameter">java.lang.CharSequence arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getPackageElement(ModuleElement,CharSequence)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> javax.lang.model.element.PackageElement getPackageElement(<span class="parameters"><span class="parameter">javax.lang.model.element.ModuleElement arg0</span>, <span class="parameter">java.lang.CharSequence arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getPackageOf(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.element.PackageElement getPackageOf(<span class="parameters"><span class="parameter">javax.lang.model.element.Element arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getTypeElement(CharSequence)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.lang.model.element.TypeElement getTypeElement(<span class="parameters"><span class="parameter">java.lang.CharSequence arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getTypeElement(ModuleElement,CharSequence)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> javax.lang.model.element.TypeElement getTypeElement(<span class="parameters"><span class="parameter">javax.lang.model.element.ModuleElement arg0</span>, <span class="parameter">java.lang.CharSequence arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="hides(Element,Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> hides(<span class="parameters"><span class="parameter">javax.lang.model.element.Element arg0</span>, <span class="parameter">javax.lang.model.element.Element arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isAutomaticModule(ModuleElement)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">boolean</span> isAutomaticModule(<span class="parameters"><span class="parameter">javax.lang.model.element.ModuleElement arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isBridge(ExecutableElement)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">boolean</span> isBridge(<span class="parameters"><span class="parameter">javax.lang.model.element.ExecutableElement arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isCanonicalConstructor(ExecutableElement)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">boolean</span> isCanonicalConstructor(<span class="parameters"><span class="parameter">javax.lang.model.element.ExecutableElement arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isCompactConstructor(ExecutableElement)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">boolean</span> isCompactConstructor(<span class="parameters"><span class="parameter">javax.lang.model.element.ExecutableElement arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isDeprecated(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isDeprecated(<span class="parameters"><span class="parameter">javax.lang.model.element.Element arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isFunctionalInterface(TypeElement)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isFunctionalInterface(<span class="parameters"><span class="parameter">javax.lang.model.element.TypeElement arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="overrides(ExecutableElement,ExecutableElement,TypeElement)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> overrides(<span class="parameters"><span class="parameter">javax.lang.model.element.ExecutableElement arg0</span>, <span class="parameter">javax.lang.model.element.ExecutableElement arg1</span>, <span class="parameter">javax.lang.model.element.TypeElement arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="printElements(Writer,Element[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> printElements(<span class="parameters"><span class="parameter">java.io.Writer arg0</span>, <span class="parameter"><span>javax.lang.model.element.Element[]</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="recordComponentFor(ExecutableElement)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> javax.lang.model.element.RecordComponentElement recordComponentFor(<span class="parameters"><span class="parameter">javax.lang.model.element.ExecutableElement arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../../java.compiler/javax/lang/model/util/Elements.DocCommentKind.html">Elements.DocCommentKind</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.compiler/javax/lang/model/util/Elements.html#getDocCommentKind(Element)">getDocCommentKind(Element)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.compiler/javax/lang/model/util/Elements.html#getEnumConstantBody(VariableElement)">getEnumConstantBody(VariableElement)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

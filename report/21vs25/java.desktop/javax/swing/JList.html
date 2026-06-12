@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.JList</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Class&nbsp;JList</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="annotation">@JavaBean(defaultProperty="UI"description="A component which allows for the selection of one or more objects from a list.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> JList<span class="typarams">&lt;<span>E</span>&gt;</span> <div class="superclass"><span class="keyword">extends</span> javax.swing.JComponent</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.accessibility.Accessible, javax.swing.Scrollable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JList.AccessibleJList.html">AccessibleJList</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JList.DropLocation.html">DropLocation</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="HORIZONTAL_WRAP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HORIZONTAL_WRAP = 2</div>
+</div>
+</li><li><div class="element" id="VERTICAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VERTICAL = 0</div>
+</div>
+</li><li><div class="element" id="VERTICAL_WRAP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VERTICAL_WRAP = 1</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JList()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(E[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JList(<span class="parameters"><span class="parameter"><span>E[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Vector)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JList(<span class="parameters"><span class="parameter"><span>java.util.Vector&lt;<span>? <span class="keyword">extends</span> E</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(ListModel)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JList(<span class="parameters"><span class="parameter"><span>javax.swing.ListModel&lt;E&gt;</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addListSelectionListener(ListSelectionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addListSelectionListener(<span class="parameters"><span class="parameter">javax.swing.event.ListSelectionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addSelectionInterval(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addSelectionInterval(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="clearSelection()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> clearSelection()</div>
+</div>
+</li><li><div class="element" id="createSelectionModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.ListSelectionModel createSelectionModel()</div>
+</div>
+</li><li><div class="element" id="ensureIndexIsVisible(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> ensureIndexIsVisible(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fireSelectionValueChanged(int,int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireSelectionValueChanged(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAccessibleContext()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.accessibility.AccessibleContext getAccessibleContext()</div>
+</div>
+</li><li><div class="element" id="getAnchorSelectionIndex()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getAnchorSelectionIndex()</div>
+</div>
+</li><li><div class="element" id="getCellBounds(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Rectangle getCellBounds(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCellRenderer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.ListCellRenderer&lt;<span>? <span class="keyword">super</span> E</span>&gt;</span> getCellRenderer()</div>
+</div>
+</li><li><div class="element" id="getDragEnabled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getDragEnabled()</div>
+</div>
+</li><li><div class="element" id="getDropLocation()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> javax.swing.JList.DropLocation getDropLocation()</div>
+</div>
+</li><li><div class="element" id="getDropMode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> javax.swing.DropMode getDropMode()</div>
+</div>
+</li><li><div class="element" id="getFirstVisibleIndex()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getFirstVisibleIndex()</div>
+</div>
+</li><li><div class="element" id="getFixedCellHeight()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getFixedCellHeight()</div>
+</div>
+</li><li><div class="element" id="getFixedCellWidth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getFixedCellWidth()</div>
+</div>
+</li><li><div class="element" id="getLastVisibleIndex()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getLastVisibleIndex()</div>
+</div>
+</li><li><div class="element" id="getLayoutOrientation()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getLayoutOrientation()</div>
+</div>
+</li><li><div class="element" id="getLeadSelectionIndex()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="The lead selection index.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getLeadSelectionIndex()</div>
+</div>
+</li><li><div class="element" id="getListSelectionListeners()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.event.ListSelectionListener[]</span> getListSelectionListeners()</div>
+</div>
+</li><li><div class="element" id="getMaxSelectionIndex()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMaxSelectionIndex()</div>
+</div>
+</li><li><div class="element" id="getMinSelectionIndex()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMinSelectionIndex()</div>
+</div>
+</li><li><div class="element" id="getModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.ListModel&lt;E&gt;</span> getModel()</div>
+</div>
+</li><li><div class="element" id="getNextMatch(String,int,Bias)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getNextMatch(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">javax.swing.text.Position.Bias arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPreferredScrollableViewportSize()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getPreferredScrollableViewportSize()</div>
+</div>
+</li><li><div class="element" id="getPrototypeCellValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> E getPrototypeCellValue()</div>
+</div>
+</li><li><div class="element" id="getScrollableBlockIncrement(Rectangle,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getScrollableBlockIncrement(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getScrollableTracksViewportHeight()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getScrollableTracksViewportHeight()</div>
+</div>
+</li><li><div class="element" id="getScrollableTracksViewportWidth()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getScrollableTracksViewportWidth()</div>
+</div>
+</li><li><div class="element" id="getScrollableUnitIncrement(Rectangle,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getScrollableUnitIncrement(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getSelectedIndex()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getSelectedIndex()</div>
+</div>
+</li><li><div class="element" id="getSelectedIndices()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span class="keyword">int</span>[]</span> getSelectedIndices()</div>
+</div>
+</li><li><div class="element" id="getSelectedValue()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> E getSelectedValue()</div>
+</div>
+</li><li><div class="element" id="getSelectedValues()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Object[]</span> getSelectedValues()</div>
+</div>
+</li><li><div class="element" id="getSelectedValuesList()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span>java.util.List&lt;E&gt;</span> getSelectedValuesList()</div>
+</div>
+</li><li><div class="element" id="getSelectionBackground()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getSelectionBackground()</div>
+</div>
+</li><li><div class="element" id="getSelectionForeground()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getSelectionForeground()</div>
+</div>
+</li><li><div class="element" id="getSelectionMode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getSelectionMode()</div>
+</div>
+</li><li><div class="element" id="getSelectionModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.ListSelectionModel getSelectionModel()</div>
+</div>
+</li><li><div class="element" id="getToolTipText(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getToolTipText(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.plaf.ListUI getUI()</div>
+</div>
+</li><li><div class="element" id="getUIClassID()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.lang.String getUIClassID()</div>
+</div>
+</li><li><div class="element" id="getValueIsAdjusting()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getValueIsAdjusting()</div>
+</div>
+</li><li><div class="element" id="getVisibleRowCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getVisibleRowCount()</div>
+</div>
+</li><li><div class="element" id="indexToLocation(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Point indexToLocation(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isSelectedIndex(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSelectedIndex(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isSelectionEmpty()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSelectionEmpty()</div>
+</div>
+</li><li><div class="element" id="locationToIndex(Point)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> locationToIndex(<span class="parameters"><span class="parameter">java.awt.Point arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String paramString()</div>
+</div>
+</li><li><div class="element" id="removeListSelectionListener(ListSelectionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeListSelectionListener(<span class="parameters"><span class="parameter">javax.swing.event.ListSelectionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeSelectionInterval(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeSelectionInterval(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setCellRenderer(ListCellRenderer)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="The component used to draw the cells.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCellRenderer(<span class="parameters"><span class="parameter"><span>javax.swing.ListCellRenderer&lt;<span>? <span class="keyword">super</span> E</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDragEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="determines whether automatic drag handling is enabled")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDragEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDropMode(DropMode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setDropMode(<span class="parameters"><span class="parameter">javax.swing.DropMode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFixedCellHeight(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="Defines a fixed cell height when greater than zero.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFixedCellHeight(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFixedCellWidth(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="Defines a fixed cell width when greater than zero.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFixedCellWidth(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLayoutOrientation(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=trueenumerationValues={"JList.VERTICAL", "JList.HORIZONTAL_WRAP", "JList.VERTICAL_WRAP"}description="Defines the way list cells are laid out.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLayoutOrientation(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setListData(E[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setListData(<span class="parameters"><span class="parameter"><span>E[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setListData(Vector)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setListData(<span class="parameters"><span class="parameter"><span>java.util.Vector&lt;<span>? <span class="keyword">extends</span> E</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setModel(ListModel)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="The object that contains the data to be drawn by this JList.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setModel(<span class="parameters"><span class="parameter"><span>javax.swing.ListModel&lt;E&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setPrototypeCellValue(E)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="The cell prototype value, used to compute cell width and height.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setPrototypeCellValue(<span class="parameters"><span class="parameter">E arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectedIndex(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="The index of the selected cell.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectedIndex(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectedIndices(int[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectedIndices(<span class="parameters"><span class="parameter"><span><span class="keyword">int</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectedValue(Object,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectedValue(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionBackground(Color)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="The background color of selected cells.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectionBackground(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionForeground(Color)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="The foreground color of selected cells.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectionForeground(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionInterval(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectionInterval(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionMode(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falseenumerationValues={"ListSelectionModel.SINGLE_SELECTION", "ListSelectionModel.SINGLE_INTERVAL_SELECTION", "ListSelectionModel.MULTIPLE_INTERVAL_SELECTION"}description="The selection mode.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectionMode(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionModel(ListSelectionModel)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The selection model, recording which cells are selected.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectionModel(<span class="parameters"><span class="parameter">javax.swing.ListSelectionModel arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setUI(ListUI)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(hidden=truevisualUpdate=truedescription="The UI object that implements the Component's LookAndFeel.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setUI(<span class="parameters"><span class="parameter">javax.swing.plaf.ListUI arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setValueIsAdjusting(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setValueIsAdjusting(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setVisibleRowCount(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="The preferred number of rows to display without requiring scrolling")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setVisibleRowCount(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> updateUI()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>8824050149670283700<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>javax.swing.ListCellRenderer&lt;<span>? <span class="keyword">super</span> E</span>&gt;</span>&nbsp;cellRenderer</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>javax.swing.ListModel&lt;E&gt;</span>&nbsp;dataModel</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;dragEnabled</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.DropMode&nbsp;dropMode</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;fixedCellHeight</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;fixedCellWidth</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;horizontalScrollIncrement</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;layoutOrientation</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">E&nbsp;prototypeCellValue</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;selectionBackground</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;selectionForeground</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.event.ListSelectionListener&nbsp;selectionListener</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.ListSelectionModel&nbsp;selectionModel</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;visibleRowCount</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

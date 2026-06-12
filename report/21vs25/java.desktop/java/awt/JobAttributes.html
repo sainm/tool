@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/java.awt.JobAttributes</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/java/awt/package-summary.html">java.awt</a></div>
+<h1>Class&nbsp;JobAttributes</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> JobAttributes <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.lang.Cloneable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/JobAttributes.DefaultSelectionType.html">DefaultSelectionType</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/JobAttributes.DestinationType.html">DestinationType</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/JobAttributes.DialogType.html">DialogType</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html">MultipleDocumentHandlingType</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/JobAttributes.SidesType.html">SidesType</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JobAttributes()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,DefaultSelectionType,DestinationType,DialogType,String,int,int,MultipleDocumentHandlingType,int[][],String,SidesType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JobAttributes(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.awt.JobAttributes.DefaultSelectionType arg1</span>, <span class="parameter">java.awt.JobAttributes.DestinationType arg2</span>, <span class="parameter">java.awt.JobAttributes.DialogType arg3</span>, <span class="parameter">java.lang.String arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span class="keyword">int</span> arg6</span>, <span class="parameter">java.awt.JobAttributes.MultipleDocumentHandlingType arg7</span>, <span class="parameter"><span><span><span class="keyword">int</span>[]</span>[]</span> arg8</span>, <span class="parameter">java.lang.String arg9</span>, <span class="parameter">java.awt.JobAttributes.SidesType arg10</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(JobAttributes)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JobAttributes(<span class="parameters"><span class="parameter">java.awt.JobAttributes arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="clone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object clone()</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCopies()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getCopies()</div>
+</div>
+</li><li><div class="element" id="getDefaultSelection()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.JobAttributes.DefaultSelectionType getDefaultSelection()</div>
+</div>
+</li><li><div class="element" id="getDestination()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.JobAttributes.DestinationType getDestination()</div>
+</div>
+</li><li><div class="element" id="getDialog()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.JobAttributes.DialogType getDialog()</div>
+</div>
+</li><li><div class="element" id="getFileName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getFileName()</div>
+</div>
+</li><li><div class="element" id="getFromPage()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getFromPage()</div>
+</div>
+</li><li><div class="element" id="getMaxPage()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMaxPage()</div>
+</div>
+</li><li><div class="element" id="getMinPage()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMinPage()</div>
+</div>
+</li><li><div class="element" id="getMultipleDocumentHandling()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.JobAttributes.MultipleDocumentHandlingType getMultipleDocumentHandling()</div>
+</div>
+</li><li><div class="element" id="getPageRanges()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span><span class="keyword">int</span>[]</span>[]</span> getPageRanges()</div>
+</div>
+</li><li><div class="element" id="getPrinter()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getPrinter()</div>
+</div>
+</li><li><div class="element" id="getSides()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.JobAttributes.SidesType getSides()</div>
+</div>
+</li><li><div class="element" id="getToPage()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getToPage()</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="set(JobAttributes)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> set(<span class="parameters"><span class="parameter">java.awt.JobAttributes arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setCopies(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCopies(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setCopiesToDefault()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCopiesToDefault()</div>
+</div>
+</li><li><div class="element" id="setDefaultSelection(DefaultSelectionType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDefaultSelection(<span class="parameters"><span class="parameter">java.awt.JobAttributes.DefaultSelectionType arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDestination(DestinationType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDestination(<span class="parameters"><span class="parameter">java.awt.JobAttributes.DestinationType arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDialog(DialogType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDialog(<span class="parameters"><span class="parameter">java.awt.JobAttributes.DialogType arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFileName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFileName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFromPage(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFromPage(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMaxPage(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMaxPage(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMinPage(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMinPage(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMultipleDocumentHandling(MultipleDocumentHandlingType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMultipleDocumentHandling(<span class="parameters"><span class="parameter">java.awt.JobAttributes.MultipleDocumentHandlingType arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMultipleDocumentHandlingToDefault()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMultipleDocumentHandlingToDefault()</div>
+</div>
+</li><li><div class="element" id="setPageRanges(int[][])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setPageRanges(<span class="parameters"><span class="parameter"><span><span><span class="keyword">int</span>[]</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setPrinter(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setPrinter(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSides(SidesType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSides(<span class="parameters"><span class="parameter">java.awt.JobAttributes.SidesType arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSidesToDefault()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSidesToDefault()</div>
+</div>
+</li><li><div class="element" id="setToPage(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setToPage(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/java.util.Optional</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/util/package-summary.html">java.util</a></div>
+<h1>Class&nbsp;Optional</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> Optional<span class="typarams">&lt;<span>T</span>&gt;</span> <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="empty()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Optional&lt;T&gt;</span> empty()</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="filter(Predicate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Optional&lt;T&gt;</span> filter(<span class="parameters"><span class="parameter"><span>java.util.function.Predicate&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="flatMap(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.Optional&lt;U&gt;</span> flatMap(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">extends</span> <span>java.util.Optional&lt;<span>? <span class="keyword">extends</span> U</span>&gt;</span></span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="get()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> T get()</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="ifPresent(Consumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> ifPresent(<span class="parameters"><span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ifPresentOrElse(Consumer,Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> ifPresentOrElse(<span class="parameters"><span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span>, <span class="parameter">java.lang.Runnable arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isEmpty()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isEmpty()</div>
+</div>
+</li><li><div class="element" id="isPresent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isPresent()</div>
+</div>
+</li><li><div class="element" id="map(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.Optional&lt;U&gt;</span> map(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">extends</span> U</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Optional&lt;T&gt;</span> of(<span class="parameters"><span class="parameter">T arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofNullable(T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Optional&lt;T&gt;</span> ofNullable(<span class="parameters"><span class="parameter">T arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="or(Supplier)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Optional&lt;T&gt;</span> or(<span class="parameters"><span class="parameter"><span>java.util.function.Supplier&lt;<span>? <span class="keyword">extends</span> <span>java.util.Optional&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span></span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="orElse(T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> T orElse(<span class="parameters"><span class="parameter">T arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="orElseGet(Supplier)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> T orElseGet(<span class="parameters"><span class="parameter"><span>java.util.function.Supplier&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="orElseThrow()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> T orElseThrow()</div>
+</div>
+</li><li><div class="element" id="orElseThrow(Supplier)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>X</span>&gt;</span> T orElseThrow(<span class="parameters"><span class="parameter"><span>java.util.function.Supplier&lt;<span>? <span class="keyword">extends</span> X</span>&gt;</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> X</span></div>
+</div>
+</li><li><div class="element" id="stream()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.stream.Stream&lt;T&gt;</span> stream()</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

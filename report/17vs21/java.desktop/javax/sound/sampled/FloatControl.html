@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.sound.sampled.FloatControl</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/sound/sampled/package-summary.html">javax.sound.sampled</a></div>
+<h1>Class&nbsp;FloatControl</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> FloatControl <div class="superclass"><span class="keyword">extends</span> javax.sound.sampled.Control</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/sound/sampled/FloatControl.Type.html">Type</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(Type,float,float,float,int,float,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> FloatControl(<span class="parameters"><span class="parameter">javax.sound.sampled.FloatControl.Type arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter"><span class="keyword">float</span> arg2</span>, <span class="parameter"><span class="keyword">float</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span class="keyword">float</span> arg5</span>, <span class="parameter">java.lang.String arg6</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Type,float,float,float,int,float,String,String,String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> FloatControl(<span class="parameters"><span class="parameter">javax.sound.sampled.FloatControl.Type arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter"><span class="keyword">float</span> arg2</span>, <span class="parameter"><span class="keyword">float</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span class="keyword">float</span> arg5</span>, <span class="parameter">java.lang.String arg6</span>, <span class="parameter">java.lang.String arg7</span>, <span class="parameter">java.lang.String arg8</span>, <span class="parameter">java.lang.String arg9</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getMaxLabel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getMaxLabel()</div>
+</div>
+</li><li><div class="element" id="getMaximum()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getMaximum()</div>
+</div>
+</li><li><div class="element" id="getMidLabel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getMidLabel()</div>
+</div>
+</li><li><div class="element" id="getMinLabel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getMinLabel()</div>
+</div>
+</li><li><div class="element" id="getMinimum()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getMinimum()</div>
+</div>
+</li><li><div class="element" id="getPrecision()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getPrecision()</div>
+</div>
+</li><li><div class="element" id="getUnits()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getUnits()</div>
+</div>
+</li><li><div class="element" id="getUpdatePeriod()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getUpdatePeriod()</div>
+</div>
+</li><li><div class="element" id="getValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getValue()</div>
+</div>
+</li><li><div class="element" id="setValue(float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setValue(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="shift(float,float,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> shift(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

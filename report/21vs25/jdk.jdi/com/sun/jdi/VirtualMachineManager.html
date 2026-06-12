@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface jdk.jdi/com.sun.jdi.VirtualMachineManager</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../jdk.jdi/module-summary.html">jdk.jdi</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../jdk.jdi/com/sun/jdi/package-summary.html">com.sun.jdi</a></div>
+<h1>Interface&nbsp;VirtualMachineManager</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> VirtualMachineManager </div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="allConnectors()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.connect.Connector&gt;</span> allConnectors()</div>
+</div>
+</li><li><div class="element" id="attachingConnectors()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.connect.AttachingConnector&gt;</span> attachingConnectors()</div>
+</div>
+</li><li><div class="element" id="connectedVirtualMachines()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.VirtualMachine&gt;</span> connectedVirtualMachines()</div>
+</div>
+</li><li><div class="element" id="createVirtualMachine(Connection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.VirtualMachine createVirtualMachine(<span class="parameters"><span class="parameter">com.sun.jdi.connect.spi.Connection arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="createVirtualMachine(Connection,Process)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.VirtualMachine createVirtualMachine(<span class="parameters"><span class="parameter">com.sun.jdi.connect.spi.Connection arg0</span>, <span class="parameter">java.lang.Process arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="defaultConnector()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.connect.LaunchingConnector defaultConnector()</div>
+</div>
+</li><li><div class="element" id="launchingConnectors()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.connect.LaunchingConnector&gt;</span> launchingConnectors()</div>
+</div>
+</li><li><div class="element" id="listeningConnectors()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.connect.ListeningConnector&gt;</span> listeningConnectors()</div>
+</div>
+</li><li><div class="element" id="majorInterfaceVersion()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> majorInterfaceVersion()</div>
+</div>
+</li><li><div class="element" id="minorInterfaceVersion()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> minorInterfaceVersion()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

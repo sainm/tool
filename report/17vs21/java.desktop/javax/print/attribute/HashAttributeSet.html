@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.print.attribute.HashAttributeSet</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/print/attribute/package-summary.html">javax.print.attribute</a></div>
+<h1>Class&nbsp;HashAttributeSet</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> HashAttributeSet <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable, javax.print.attribute.AttributeSet</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> HashAttributeSet()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Attribute[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> HashAttributeSet(<span class="parameters"><span class="parameter"><span>javax.print.attribute.Attribute[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Attribute[],Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> HashAttributeSet(<span class="parameters"><span class="parameter"><span>javax.print.attribute.Attribute[]</span> arg0</span>, <span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> HashAttributeSet(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Attribute)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> HashAttributeSet(<span class="parameters"><span class="parameter">javax.print.attribute.Attribute arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Attribute,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> HashAttributeSet(<span class="parameters"><span class="parameter">javax.print.attribute.Attribute arg0</span>, <span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(AttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> HashAttributeSet(<span class="parameters"><span class="parameter">javax.print.attribute.AttributeSet arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(AttributeSet,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> HashAttributeSet(<span class="parameters"><span class="parameter">javax.print.attribute.AttributeSet arg0</span>, <span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="add(Attribute)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> add(<span class="parameters"><span class="parameter">javax.print.attribute.Attribute arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addAll(AttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> addAll(<span class="parameters"><span class="parameter">javax.print.attribute.AttributeSet arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="clear()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> clear()</div>
+</div>
+</li><li><div class="element" id="containsKey(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> containsKey(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="containsValue(Attribute)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> containsValue(<span class="parameters"><span class="parameter">javax.print.attribute.Attribute arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="get(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.print.attribute.Attribute get(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="isEmpty()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isEmpty()</div>
+</div>
+</li><li><div class="element" id="remove(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> remove(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(Attribute)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> remove(<span class="parameters"><span class="parameter">javax.print.attribute.Attribute arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="size()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> size()</div>
+</div>
+</li><li><div class="element" id="toArray()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.print.attribute.Attribute[]</span> toArray()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>5311560590283707917<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.lang.Class&lt;?&gt;</span>&nbsp;myInterface</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

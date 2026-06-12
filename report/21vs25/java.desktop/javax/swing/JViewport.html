@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.JViewport</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Class&nbsp;JViewport</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> JViewport <div class="superclass"><span class="keyword">extends</span> javax.swing.JComponent</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.accessibility.Accessible</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JViewport.AccessibleJViewport.html">AccessibleJViewport</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JViewport.ViewListener.html">ViewListener</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="BACKINGSTORE_SCROLL_MODE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> BACKINGSTORE_SCROLL_MODE = 2</div>
+</div>
+</li><li><div class="element" id="BLIT_SCROLL_MODE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> BLIT_SCROLL_MODE = 1</div>
+</div>
+</li><li><div class="element" id="SIMPLE_SCROLL_MODE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SIMPLE_SCROLL_MODE = 0</div>
+</div>
+</li><li><div class="element" id="backingStore"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> backingStore</div>
+</div>
+</li><li><div class="element" id="backingStoreImage"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> java.awt.Image backingStoreImage</div>
+</div>
+</li><li><div class="element" id="isViewSizeSet"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isViewSizeSet</div>
+</div>
+</li><li><div class="element" id="lastPaintPosition"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Point lastPaintPosition</div>
+</div>
+</li><li><div class="element" id="scrollUnderway"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> scrollUnderway</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JViewport()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addChangeListener(ChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addChangeListener(<span class="parameters"><span class="parameter">javax.swing.event.ChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addImpl(Component,Object,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> addImpl(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="computeBlit(int,int,Point,Point,Dimension,Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> computeBlit(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">java.awt.Point arg2</span>, <span class="parameter">java.awt.Point arg3</span>, <span class="parameter">java.awt.Dimension arg4</span>, <span class="parameter">java.awt.Rectangle arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="createLayoutManager()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.LayoutManager createLayoutManager()</div>
+</div>
+</li><li><div class="element" id="createViewListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JViewport.ViewListener createViewListener()</div>
+</div>
+</li><li><div class="element" id="firePropertyChange(String,Object,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.Object arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="fireStateChanged()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireStateChanged()</div>
+</div>
+</li><li><div class="element" id="getAccessibleContext()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.accessibility.AccessibleContext getAccessibleContext()</div>
+</div>
+</li><li><div class="element" id="getChangeListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.event.ChangeListener[]</span> getChangeListeners()</div>
+</div>
+</li><li><div class="element" id="getExtentSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getExtentSize()</div>
+</div>
+</li><li><div class="element" id="getInsets()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.awt.Insets getInsets()</div>
+</div>
+</li><li><div class="element" id="getInsets(Insets)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.awt.Insets getInsets(<span class="parameters"><span class="parameter">java.awt.Insets arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getScrollMode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getScrollMode()</div>
+</div>
+</li><li><div class="element" id="getUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.plaf.ViewportUI getUI()</div>
+</div>
+</li><li><div class="element" id="getUIClassID()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getUIClassID()</div>
+</div>
+</li><li><div class="element" id="getView()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getView()</div>
+</div>
+</li><li><div class="element" id="getViewPosition()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Point getViewPosition()</div>
+</div>
+</li><li><div class="element" id="getViewRect()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Rectangle getViewRect()</div>
+</div>
+</li><li><div class="element" id="getViewSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getViewSize()</div>
+</div>
+</li><li><div class="element" id="isBackingStoreEnabled()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isBackingStoreEnabled()</div>
+</div>
+</li><li><div class="element" id="isOptimizedDrawingEnabled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isOptimizedDrawingEnabled()</div>
+</div>
+</li><li><div class="element" id="isPaintingOrigin()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isPaintingOrigin()</div>
+</div>
+</li><li><div class="element" id="paint(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paint(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String paramString()</div>
+</div>
+</li><li><div class="element" id="remove(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> remove(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeChangeListener(ChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeChangeListener(<span class="parameters"><span class="parameter">javax.swing.event.ChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="repaint(long,int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> repaint(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="reshape(int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reshape(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="scrollRectToVisible(Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> scrollRectToVisible(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setBackingStoreEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBackingStoreEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setBorder(Border)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setBorder(<span class="parameters"><span class="parameter">javax.swing.border.Border arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setExtentSize(Dimension)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setExtentSize(<span class="parameters"><span class="parameter">java.awt.Dimension arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setScrollMode(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falseenumerationValues={"JViewport.BLIT_SCROLL_MODE", "JViewport.BACKINGSTORE_SCROLL_MODE", "JViewport.SIMPLE_SCROLL_MODE"}description="Method of moving contents for incremental scrolls.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setScrollMode(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setUI(ViewportUI)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(hidden=truevisualUpdate=truedescription="The UI object that implements the Component's LookAndFeel.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setUI(<span class="parameters"><span class="parameter">javax.swing.plaf.ViewportUI arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setView(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setView(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setViewPosition(Point)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setViewPosition(<span class="parameters"><span class="parameter">java.awt.Point arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setViewSize(Dimension)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setViewSize(<span class="parameters"><span class="parameter">java.awt.Dimension arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toViewCoordinates(Dimension)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension toViewCoordinates(<span class="parameters"><span class="parameter">java.awt.Dimension arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toViewCoordinates(Point)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Point toViewCoordinates(<span class="parameters"><span class="parameter">java.awt.Point arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> updateUI()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>5580552811176414246<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;backingStore</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;hasHadValidView</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;isViewSizeSet</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Point&nbsp;lastPaintPosition</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;scrollMode</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;scrollUnderway</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;viewChanged</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.event.ComponentListener&nbsp;viewListener</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

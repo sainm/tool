@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/java.awt.geom.Path2D.Float</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/java/awt/geom/package-summary.html">java.awt.geom</a></div>
+<h1>Class&nbsp;Path2D.Float</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">class</span> Float <div class="superclass"><span class="keyword">extends</span> java.awt.geom.Path2D</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Float()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Float(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Float(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Shape)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Float(<span class="parameters"><span class="parameter">java.awt.Shape arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Shape,AffineTransform)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Float(<span class="parameters"><span class="parameter">java.awt.Shape arg0</span>, <span class="parameter">java.awt.geom.AffineTransform arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="append(PathIterator,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> append(<span class="parameters"><span class="parameter">java.awt.geom.PathIterator arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="clone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object clone()</div>
+</div>
+</li><li><div class="element" id="curveTo(float,float,float,float,float,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> curveTo(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter"><span class="keyword">float</span> arg2</span>, <span class="parameter"><span class="keyword">float</span> arg3</span>, <span class="parameter"><span class="keyword">float</span> arg4</span>, <span class="parameter"><span class="keyword">float</span> arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="curveTo(double,double,double,double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> curveTo(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span>, <span class="parameter"><span class="keyword">double</span> arg3</span>, <span class="parameter"><span class="keyword">double</span> arg4</span>, <span class="parameter"><span class="keyword">double</span> arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBounds2D()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.awt.geom.Rectangle2D getBounds2D()</div>
+</div>
+</li><li><div class="element" id="getPathIterator(AffineTransform)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.awt.geom.PathIterator getPathIterator(<span class="parameters"><span class="parameter">java.awt.geom.AffineTransform arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="lineTo(float,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> lineTo(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="lineTo(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> lineTo(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="moveTo(float,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> moveTo(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="moveTo(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> moveTo(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="quadTo(float,float,float,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> quadTo(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter"><span class="keyword">float</span> arg2</span>, <span class="parameter"><span class="keyword">float</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="quadTo(double,double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> quadTo(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span>, <span class="parameter"><span class="keyword">double</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="transform(AffineTransform)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> transform(<span class="parameters"><span class="parameter">java.awt.geom.AffineTransform arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="trimToSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> trimToSize()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>6990832515060788886<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

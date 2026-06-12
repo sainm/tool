@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.plaf.basic.BasicInternalFrameUI</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/swing/plaf/basic/package-summary.html">javax.swing.plaf.basic</a></div>
+<h1>Class&nbsp;BasicInternalFrameUI</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> BasicInternalFrameUI <div class="superclass"><span class="keyword">extends</span> javax.swing.plaf.InternalFrameUI</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.BasicInternalFrameListener.html">BasicInternalFrameListener</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.BorderListener.html">BorderListener</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.ComponentHandler.html">ComponentHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.GlassPaneDispatcher.html">GlassPaneDispatcher</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html">InternalFrameLayout</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFramePropertyChangeListener.html">InternalFramePropertyChangeListener</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="borderListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.MouseInputAdapter borderListener</div>
+</div>
+</li><li><div class="element" id="componentListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.ComponentListener componentListener</div>
+</div>
+</li><li><div class="element" id="eastPane"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JComponent eastPane</div>
+</div>
+</li><li><div class="element" id="frame"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JInternalFrame frame</div>
+</div>
+</li><li><div class="element" id="glassPaneDispatcher"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.MouseInputListener glassPaneDispatcher</div>
+</div>
+</li><li><div class="element" id="internalFrameLayout"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.LayoutManager internalFrameLayout</div>
+</div>
+</li><li><div class="element" id="northPane"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JComponent northPane</div>
+</div>
+</li><li><div class="element" id="openMenuKey"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> javax.swing.KeyStroke openMenuKey</div>
+</div>
+</li><li><div class="element" id="propertyChangeListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.beans.PropertyChangeListener propertyChangeListener</div>
+</div>
+</li><li><div class="element" id="southPane"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JComponent southPane</div>
+</div>
+</li><li><div class="element" id="titlePane"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.plaf.basic.BasicInternalFrameTitlePane titlePane</div>
+</div>
+</li><li><div class="element" id="westPane"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JComponent westPane</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(JInternalFrame)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BasicInternalFrameUI(<span class="parameters"><span class="parameter">javax.swing.JInternalFrame arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="activateFrame(JInternalFrame)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> activateFrame(<span class="parameters"><span class="parameter">javax.swing.JInternalFrame arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="closeFrame(JInternalFrame)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> closeFrame(<span class="parameters"><span class="parameter">javax.swing.JInternalFrame arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createBorderListener(JInternalFrame)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.MouseInputAdapter createBorderListener(<span class="parameters"><span class="parameter">javax.swing.JInternalFrame arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createComponentListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.ComponentListener createComponentListener()</div>
+</div>
+</li><li><div class="element" id="createDesktopManager()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.DesktopManager createDesktopManager()</div>
+</div>
+</li><li><div class="element" id="createEastPane(JInternalFrame)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JComponent createEastPane(<span class="parameters"><span class="parameter">javax.swing.JInternalFrame arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createGlassPaneDispatcher()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.MouseInputListener createGlassPaneDispatcher()</div>
+</div>
+</li><li><div class="element" id="createInternalFrameListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> createInternalFrameListener()</div>
+</div>
+</li><li><div class="element" id="createLayoutManager()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.LayoutManager createLayoutManager()</div>
+</div>
+</li><li><div class="element" id="createNorthPane(JInternalFrame)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JComponent createNorthPane(<span class="parameters"><span class="parameter">javax.swing.JInternalFrame arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createPropertyChangeListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.beans.PropertyChangeListener createPropertyChangeListener()</div>
+</div>
+</li><li><div class="element" id="createSouthPane(JInternalFrame)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JComponent createSouthPane(<span class="parameters"><span class="parameter">javax.swing.JInternalFrame arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.plaf.ComponentUI createUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createWestPane(JInternalFrame)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JComponent createWestPane(<span class="parameters"><span class="parameter">javax.swing.JInternalFrame arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="deactivateFrame(JInternalFrame)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> deactivateFrame(<span class="parameters"><span class="parameter">javax.swing.JInternalFrame arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="deiconifyFrame(JInternalFrame)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> deiconifyFrame(<span class="parameters"><span class="parameter">javax.swing.JInternalFrame arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="deinstallMouseHandlers(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> deinstallMouseHandlers(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDesktopManager()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.DesktopManager getDesktopManager()</div>
+</div>
+</li><li><div class="element" id="getEastPane()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JComponent getEastPane()</div>
+</div>
+</li><li><div class="element" id="getMaximumSize(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getMaximumSize(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getMinimumSize(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getMinimumSize(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getNorthPane()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JComponent getNorthPane()</div>
+</div>
+</li><li><div class="element" id="getPreferredSize(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getPreferredSize(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getSouthPane()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JComponent getSouthPane()</div>
+</div>
+</li><li><div class="element" id="getWestPane()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JComponent getWestPane()</div>
+</div>
+</li><li><div class="element" id="iconifyFrame(JInternalFrame)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> iconifyFrame(<span class="parameters"><span class="parameter">javax.swing.JInternalFrame arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="installComponents()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installComponents()</div>
+</div>
+</li><li><div class="element" id="installDefaults()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installDefaults()</div>
+</div>
+</li><li><div class="element" id="installKeyboardActions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installKeyboardActions()</div>
+</div>
+</li><li><div class="element" id="installListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installListeners()</div>
+</div>
+</li><li><div class="element" id="installMouseHandlers(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installMouseHandlers(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="installUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> installUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isKeyBindingActive()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isKeyBindingActive()</div>
+</div>
+</li><li><div class="element" id="isKeyBindingRegistered()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isKeyBindingRegistered()</div>
+</div>
+</li><li><div class="element" id="maximizeFrame(JInternalFrame)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> maximizeFrame(<span class="parameters"><span class="parameter">javax.swing.JInternalFrame arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="minimizeFrame(JInternalFrame)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> minimizeFrame(<span class="parameters"><span class="parameter">javax.swing.JInternalFrame arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="replacePane(JComponent,JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> replacePane(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span>, <span class="parameter">javax.swing.JComponent arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEastPane(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setEastPane(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setKeyBindingActive(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setKeyBindingActive(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setKeyBindingRegistered(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setKeyBindingRegistered(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setNorthPane(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setNorthPane(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSouthPane(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSouthPane(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setWestPane(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setWestPane(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setupMenuCloseKey()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setupMenuCloseKey()</div>
+</div>
+</li><li><div class="element" id="setupMenuOpenKey()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setupMenuOpenKey()</div>
+</div>
+</li><li><div class="element" id="uninstallComponents()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallComponents()</div>
+</div>
+</li><li><div class="element" id="uninstallDefaults()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallDefaults()</div>
+</div>
+</li><li><div class="element" id="uninstallKeyboardActions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallKeyboardActions()</div>
+</div>
+</li><li><div class="element" id="uninstallListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallListeners()</div>
+</div>
+</li><li><div class="element" id="uninstallUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> uninstallUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

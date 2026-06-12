@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: enum java.base/java.lang.classfile.Opcode.Kind</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/lang/classfile/package-summary.html">java.lang.classfile</a></div>
+<h1>Enum&nbsp;Opcode.Kind</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">enum</span> Kind <div class="superclass"><span class="keyword">extends</span> <span>java.lang.Enum&lt;java.lang.classfile.Opcode.Kind&gt;</span></div>
+</div>
+</div>
+<section class="enclosed"><h2>Enum Constants</h2>
+<ul><li><div class="element" id="ARRAY_LOAD"><span class="add">&plus;</span><div class="signature">ARRAY_LOAD</div>
+</div>
+</li><li><div class="element" id="ARRAY_STORE"><span class="add">&plus;</span><div class="signature">ARRAY_STORE</div>
+</div>
+</li><li><div class="element" id="BRANCH"><span class="add">&plus;</span><div class="signature">BRANCH</div>
+</div>
+</li><li><div class="element" id="CONSTANT"><span class="add">&plus;</span><div class="signature">CONSTANT</div>
+</div>
+</li><li><div class="element" id="CONVERT"><span class="add">&plus;</span><div class="signature">CONVERT</div>
+</div>
+</li><li><div class="element" id="DISCONTINUED_JSR"><span class="add">&plus;</span><div class="signature">DISCONTINUED_JSR</div>
+</div>
+</li><li><div class="element" id="DISCONTINUED_RET"><span class="add">&plus;</span><div class="signature">DISCONTINUED_RET</div>
+</div>
+</li><li><div class="element" id="FIELD_ACCESS"><span class="add">&plus;</span><div class="signature">FIELD_ACCESS</div>
+</div>
+</li><li><div class="element" id="INCREMENT"><span class="add">&plus;</span><div class="signature">INCREMENT</div>
+</div>
+</li><li><div class="element" id="INVOKE"><span class="add">&plus;</span><div class="signature">INVOKE</div>
+</div>
+</li><li><div class="element" id="INVOKE_DYNAMIC"><span class="add">&plus;</span><div class="signature">INVOKE_DYNAMIC</div>
+</div>
+</li><li><div class="element" id="LOAD"><span class="add">&plus;</span><div class="signature">LOAD</div>
+</div>
+</li><li><div class="element" id="LOOKUP_SWITCH"><span class="add">&plus;</span><div class="signature">LOOKUP_SWITCH</div>
+</div>
+</li><li><div class="element" id="MONITOR"><span class="add">&plus;</span><div class="signature">MONITOR</div>
+</div>
+</li><li><div class="element" id="NEW_MULTI_ARRAY"><span class="add">&plus;</span><div class="signature">NEW_MULTI_ARRAY</div>
+</div>
+</li><li><div class="element" id="NEW_OBJECT"><span class="add">&plus;</span><div class="signature">NEW_OBJECT</div>
+</div>
+</li><li><div class="element" id="NEW_PRIMITIVE_ARRAY"><span class="add">&plus;</span><div class="signature">NEW_PRIMITIVE_ARRAY</div>
+</div>
+</li><li><div class="element" id="NEW_REF_ARRAY"><span class="add">&plus;</span><div class="signature">NEW_REF_ARRAY</div>
+</div>
+</li><li><div class="element" id="NOP"><span class="add">&plus;</span><div class="signature">NOP</div>
+</div>
+</li><li><div class="element" id="OPERATOR"><span class="add">&plus;</span><div class="signature">OPERATOR</div>
+</div>
+</li><li><div class="element" id="RETURN"><span class="add">&plus;</span><div class="signature">RETURN</div>
+</div>
+</li><li><div class="element" id="STACK"><span class="add">&plus;</span><div class="signature">STACK</div>
+</div>
+</li><li><div class="element" id="STORE"><span class="add">&plus;</span><div class="signature">STORE</div>
+</div>
+</li><li><div class="element" id="TABLE_SWITCH"><span class="add">&plus;</span><div class="signature">TABLE_SWITCH</div>
+</div>
+</li><li><div class="element" id="THROW_EXCEPTION"><span class="add">&plus;</span><div class="signature">THROW_EXCEPTION</div>
+</div>
+</li><li><div class="element" id="TYPE_CHECK"><span class="add">&plus;</span><div class="signature">TYPE_CHECK</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="valueOf(String)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.Opcode.Kind valueOf(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="values()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.Opcode.Kind[]</span> values()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/Opcode.Kind.html">Opcode.Kind</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

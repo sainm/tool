@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/java.lang.classfile.Attributes</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/lang/classfile/package-summary.html">java.lang.classfile</a></div>
+<h1>Class&nbsp;Attributes</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> Attributes <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="NAME_ANNOTATION_DEFAULT"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_ANNOTATION_DEFAULT = "AnnotationDefault"</div>
+</div>
+</li><li><div class="element" id="NAME_BOOTSTRAP_METHODS"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_BOOTSTRAP_METHODS = "BootstrapMethods"</div>
+</div>
+</li><li><div class="element" id="NAME_CHARACTER_RANGE_TABLE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_CHARACTER_RANGE_TABLE = "CharacterRangeTable"</div>
+</div>
+</li><li><div class="element" id="NAME_CODE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_CODE = "Code"</div>
+</div>
+</li><li><div class="element" id="NAME_COMPILATION_ID"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_COMPILATION_ID = "CompilationID"</div>
+</div>
+</li><li><div class="element" id="NAME_CONSTANT_VALUE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_CONSTANT_VALUE = "ConstantValue"</div>
+</div>
+</li><li><div class="element" id="NAME_DEPRECATED"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_DEPRECATED = "Deprecated"</div>
+</div>
+</li><li><div class="element" id="NAME_ENCLOSING_METHOD"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_ENCLOSING_METHOD = "EnclosingMethod"</div>
+</div>
+</li><li><div class="element" id="NAME_EXCEPTIONS"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_EXCEPTIONS = "Exceptions"</div>
+</div>
+</li><li><div class="element" id="NAME_INNER_CLASSES"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_INNER_CLASSES = "InnerClasses"</div>
+</div>
+</li><li><div class="element" id="NAME_LINE_NUMBER_TABLE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_LINE_NUMBER_TABLE = "LineNumberTable"</div>
+</div>
+</li><li><div class="element" id="NAME_LOCAL_VARIABLE_TABLE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_LOCAL_VARIABLE_TABLE = "LocalVariableTable"</div>
+</div>
+</li><li><div class="element" id="NAME_LOCAL_VARIABLE_TYPE_TABLE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_LOCAL_VARIABLE_TYPE_TABLE = "LocalVariableTypeTable"</div>
+</div>
+</li><li><div class="element" id="NAME_METHOD_PARAMETERS"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_METHOD_PARAMETERS = "MethodParameters"</div>
+</div>
+</li><li><div class="element" id="NAME_MODULE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_MODULE = "Module"</div>
+</div>
+</li><li><div class="element" id="NAME_MODULE_HASHES"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_MODULE_HASHES = "ModuleHashes"</div>
+</div>
+</li><li><div class="element" id="NAME_MODULE_MAIN_CLASS"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_MODULE_MAIN_CLASS = "ModuleMainClass"</div>
+</div>
+</li><li><div class="element" id="NAME_MODULE_PACKAGES"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_MODULE_PACKAGES = "ModulePackages"</div>
+</div>
+</li><li><div class="element" id="NAME_MODULE_RESOLUTION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_MODULE_RESOLUTION = "ModuleResolution"</div>
+</div>
+</li><li><div class="element" id="NAME_MODULE_TARGET"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_MODULE_TARGET = "ModuleTarget"</div>
+</div>
+</li><li><div class="element" id="NAME_NEST_HOST"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_NEST_HOST = "NestHost"</div>
+</div>
+</li><li><div class="element" id="NAME_NEST_MEMBERS"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_NEST_MEMBERS = "NestMembers"</div>
+</div>
+</li><li><div class="element" id="NAME_PERMITTED_SUBCLASSES"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_PERMITTED_SUBCLASSES = "PermittedSubclasses"</div>
+</div>
+</li><li><div class="element" id="NAME_RECORD"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_RECORD = "Record"</div>
+</div>
+</li><li><div class="element" id="NAME_RUNTIME_INVISIBLE_ANNOTATIONS"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_RUNTIME_INVISIBLE_ANNOTATIONS = "RuntimeInvisibleAnnotations"</div>
+</div>
+</li><li><div class="element" id="NAME_RUNTIME_INVISIBLE_PARAMETER_ANNOTATIONS"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_RUNTIME_INVISIBLE_PARAMETER_ANNOTATIONS = "RuntimeInvisibleParameterAnnotations"</div>
+</div>
+</li><li><div class="element" id="NAME_RUNTIME_INVISIBLE_TYPE_ANNOTATIONS"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_RUNTIME_INVISIBLE_TYPE_ANNOTATIONS = "RuntimeInvisibleTypeAnnotations"</div>
+</div>
+</li><li><div class="element" id="NAME_RUNTIME_VISIBLE_ANNOTATIONS"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_RUNTIME_VISIBLE_ANNOTATIONS = "RuntimeVisibleAnnotations"</div>
+</div>
+</li><li><div class="element" id="NAME_RUNTIME_VISIBLE_PARAMETER_ANNOTATIONS"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_RUNTIME_VISIBLE_PARAMETER_ANNOTATIONS = "RuntimeVisibleParameterAnnotations"</div>
+</div>
+</li><li><div class="element" id="NAME_RUNTIME_VISIBLE_TYPE_ANNOTATIONS"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_RUNTIME_VISIBLE_TYPE_ANNOTATIONS = "RuntimeVisibleTypeAnnotations"</div>
+</div>
+</li><li><div class="element" id="NAME_SIGNATURE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_SIGNATURE = "Signature"</div>
+</div>
+</li><li><div class="element" id="NAME_SOURCE_DEBUG_EXTENSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_SOURCE_DEBUG_EXTENSION = "SourceDebugExtension"</div>
+</div>
+</li><li><div class="element" id="NAME_SOURCE_FILE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_SOURCE_FILE = "SourceFile"</div>
+</div>
+</li><li><div class="element" id="NAME_SOURCE_ID"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_SOURCE_ID = "SourceID"</div>
+</div>
+</li><li><div class="element" id="NAME_STACK_MAP_TABLE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_STACK_MAP_TABLE = "StackMapTable"</div>
+</div>
+</li><li><div class="element" id="NAME_SYNTHETIC"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String NAME_SYNTHETIC = "Synthetic"</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="annotationDefault()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.AnnotationDefaultAttribute&gt;</span> annotationDefault()</div>
+</div>
+</li><li><div class="element" id="bootstrapMethods()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.BootstrapMethodsAttribute&gt;</span> bootstrapMethods()</div>
+</div>
+</li><li><div class="element" id="characterRangeTable()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.CharacterRangeTableAttribute&gt;</span> characterRangeTable()</div>
+</div>
+</li><li><div class="element" id="code()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.CodeAttribute&gt;</span> code()</div>
+</div>
+</li><li><div class="element" id="compilationId()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.CompilationIDAttribute&gt;</span> compilationId()</div>
+</div>
+</li><li><div class="element" id="constantValue()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.ConstantValueAttribute&gt;</span> constantValue()</div>
+</div>
+</li><li><div class="element" id="deprecated()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.DeprecatedAttribute&gt;</span> deprecated()</div>
+</div>
+</li><li><div class="element" id="enclosingMethod()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.EnclosingMethodAttribute&gt;</span> enclosingMethod()</div>
+</div>
+</li><li><div class="element" id="exceptions()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.ExceptionsAttribute&gt;</span> exceptions()</div>
+</div>
+</li><li><div class="element" id="innerClasses()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.InnerClassesAttribute&gt;</span> innerClasses()</div>
+</div>
+</li><li><div class="element" id="lineNumberTable()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.LineNumberTableAttribute&gt;</span> lineNumberTable()</div>
+</div>
+</li><li><div class="element" id="localVariableTable()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.LocalVariableTableAttribute&gt;</span> localVariableTable()</div>
+</div>
+</li><li><div class="element" id="localVariableTypeTable()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.LocalVariableTypeTableAttribute&gt;</span> localVariableTypeTable()</div>
+</div>
+</li><li><div class="element" id="methodParameters()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.MethodParametersAttribute&gt;</span> methodParameters()</div>
+</div>
+</li><li><div class="element" id="module()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.ModuleAttribute&gt;</span> module()</div>
+</div>
+</li><li><div class="element" id="moduleHashes()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.ModuleHashesAttribute&gt;</span> moduleHashes()</div>
+</div>
+</li><li><div class="element" id="moduleMainClass()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.ModuleMainClassAttribute&gt;</span> moduleMainClass()</div>
+</div>
+</li><li><div class="element" id="modulePackages()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.ModulePackagesAttribute&gt;</span> modulePackages()</div>
+</div>
+</li><li><div class="element" id="moduleResolution()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.ModuleResolutionAttribute&gt;</span> moduleResolution()</div>
+</div>
+</li><li><div class="element" id="moduleTarget()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.ModuleTargetAttribute&gt;</span> moduleTarget()</div>
+</div>
+</li><li><div class="element" id="nestHost()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.NestHostAttribute&gt;</span> nestHost()</div>
+</div>
+</li><li><div class="element" id="nestMembers()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.NestMembersAttribute&gt;</span> nestMembers()</div>
+</div>
+</li><li><div class="element" id="permittedSubclasses()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.PermittedSubclassesAttribute&gt;</span> permittedSubclasses()</div>
+</div>
+</li><li><div class="element" id="record()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.RecordAttribute&gt;</span> record()</div>
+</div>
+</li><li><div class="element" id="runtimeInvisibleAnnotations()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.RuntimeInvisibleAnnotationsAttribute&gt;</span> runtimeInvisibleAnnotations()</div>
+</div>
+</li><li><div class="element" id="runtimeInvisibleParameterAnnotations()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.RuntimeInvisibleParameterAnnotationsAttribute&gt;</span> runtimeInvisibleParameterAnnotations()</div>
+</div>
+</li><li><div class="element" id="runtimeInvisibleTypeAnnotations()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.RuntimeInvisibleTypeAnnotationsAttribute&gt;</span> runtimeInvisibleTypeAnnotations()</div>
+</div>
+</li><li><div class="element" id="runtimeVisibleAnnotations()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.RuntimeVisibleAnnotationsAttribute&gt;</span> runtimeVisibleAnnotations()</div>
+</div>
+</li><li><div class="element" id="runtimeVisibleParameterAnnotations()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.RuntimeVisibleParameterAnnotationsAttribute&gt;</span> runtimeVisibleParameterAnnotations()</div>
+</div>
+</li><li><div class="element" id="runtimeVisibleTypeAnnotations()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.RuntimeVisibleTypeAnnotationsAttribute&gt;</span> runtimeVisibleTypeAnnotations()</div>
+</div>
+</li><li><div class="element" id="signature()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.SignatureAttribute&gt;</span> signature()</div>
+</div>
+</li><li><div class="element" id="sourceDebugExtension()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.SourceDebugExtensionAttribute&gt;</span> sourceDebugExtension()</div>
+</div>
+</li><li><div class="element" id="sourceFile()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.SourceFileAttribute&gt;</span> sourceFile()</div>
+</div>
+</li><li><div class="element" id="sourceId()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.SourceIDAttribute&gt;</span> sourceId()</div>
+</div>
+</li><li><div class="element" id="stackMapTable()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.StackMapTableAttribute&gt;</span> stackMapTable()</div>
+</div>
+</li><li><div class="element" id="synthetic()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.classfile.AttributeMapper&lt;java.lang.classfile.attribute.SyntheticAttribute&gt;</span> synthetic()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/Attributes.html">Attributes</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.util.concurrent.atomic.AtomicIntegerFieldUpdater</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.base/java/util/concurrent/atomic/package-summary.html">java.util.concurrent.atomic</a></div>
+<h1>Class&nbsp;AtomicIntegerFieldUpdater</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> AtomicIntegerFieldUpdater<span class="typarams">&lt;<span>T</span>&gt;</span> <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> AtomicIntegerFieldUpdater()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="accumulateAndGet(T,int,IntBinaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">int</span> accumulateAndGet(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">java.util.function.IntBinaryOperator arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="addAndGet(T,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> addAndGet(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="compareAndSet(T,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> compareAndSet(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="decrementAndGet(T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> decrementAndGet(<span class="parameters"><span class="parameter">T arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="get(T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> get(<span class="parameters"><span class="parameter">T arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAndAccumulate(T,int,IntBinaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">int</span> getAndAccumulate(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">java.util.function.IntBinaryOperator arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAndAdd(T,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getAndAdd(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAndDecrement(T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getAndDecrement(<span class="parameters"><span class="parameter">T arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAndIncrement(T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getAndIncrement(<span class="parameters"><span class="parameter">T arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAndSet(T,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getAndSet(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAndUpdate(T,IntUnaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">int</span> getAndUpdate(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter">java.util.function.IntUnaryOperator arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="incrementAndGet(T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> incrementAndGet(<span class="parameters"><span class="parameter">T arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="lazySet(T,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> lazySet(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="newUpdater(Class,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.atomic.AtomicIntegerFieldUpdater&lt;U&gt;</span> newUpdater(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;U&gt;</span> arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="set(T,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> set(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateAndGet(T,IntUnaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">int</span> updateAndGet(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter">java.util.function.IntUnaryOperator arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="weakCompareAndSet(T,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> weakCompareAndSet(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

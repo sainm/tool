@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package java.base/java.lang.classfile.attribute</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.base/module-summary.html">java.base</a></div>
+<h1>Package&nbsp;java.lang.classfile.attribute</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="keyword">package</span> java.lang.classfile.attribute</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/AnnotationDefaultAttribute.html">AnnotationDefaultAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/BootstrapMethodsAttribute.html">BootstrapMethodsAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/CharacterRangeInfo.html">CharacterRangeInfo</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/CharacterRangeTableAttribute.html">CharacterRangeTableAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/CodeAttribute.html">CodeAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/CompilationIDAttribute.html">CompilationIDAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/ConstantValueAttribute.html">ConstantValueAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/DeprecatedAttribute.html">DeprecatedAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/EnclosingMethodAttribute.html">EnclosingMethodAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/ExceptionsAttribute.html">ExceptionsAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/InnerClassInfo.html">InnerClassInfo</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/InnerClassesAttribute.html">InnerClassesAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/LineNumberInfo.html">LineNumberInfo</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/LineNumberTableAttribute.html">LineNumberTableAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/LocalVariableInfo.html">LocalVariableInfo</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/LocalVariableTableAttribute.html">LocalVariableTableAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/LocalVariableTypeInfo.html">LocalVariableTypeInfo</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/LocalVariableTypeTableAttribute.html">LocalVariableTypeTableAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/MethodParameterInfo.html">MethodParameterInfo</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/MethodParametersAttribute.html">MethodParametersAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/ModuleAttribute.html">ModuleAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/ModuleExportInfo.html">ModuleExportInfo</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/ModuleHashInfo.html">ModuleHashInfo</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/ModuleHashesAttribute.html">ModuleHashesAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/ModuleMainClassAttribute.html">ModuleMainClassAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/ModuleOpenInfo.html">ModuleOpenInfo</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/ModulePackagesAttribute.html">ModulePackagesAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/ModuleProvideInfo.html">ModuleProvideInfo</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/ModuleRequireInfo.html">ModuleRequireInfo</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/ModuleResolutionAttribute.html">ModuleResolutionAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/ModuleTargetAttribute.html">ModuleTargetAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/NestHostAttribute.html">NestHostAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/NestMembersAttribute.html">NestMembersAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/PermittedSubclassesAttribute.html">PermittedSubclassesAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/RecordAttribute.html">RecordAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/RecordComponentInfo.html">RecordComponentInfo</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/RuntimeInvisibleAnnotationsAttribute.html">RuntimeInvisibleAnnotationsAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/RuntimeInvisibleParameterAnnotationsAttribute.html">RuntimeInvisibleParameterAnnotationsAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/RuntimeInvisibleTypeAnnotationsAttribute.html">RuntimeInvisibleTypeAnnotationsAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/RuntimeVisibleAnnotationsAttribute.html">RuntimeVisibleAnnotationsAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/RuntimeVisibleParameterAnnotationsAttribute.html">RuntimeVisibleParameterAnnotationsAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/RuntimeVisibleTypeAnnotationsAttribute.html">RuntimeVisibleTypeAnnotationsAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/SignatureAttribute.html">SignatureAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/SourceDebugExtensionAttribute.html">SourceDebugExtensionAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/SourceFileAttribute.html">SourceFileAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/SourceIDAttribute.html">SourceIDAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/StackMapFrameInfo.html">StackMapFrameInfo</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/StackMapTableAttribute.html">StackMapTableAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/SyntheticAttribute.html">SyntheticAttribute</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../../java.base/java/lang/classfile/attribute/UnknownAttribute.html">UnknownAttribute</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/package-summary.html">java.lang.classfile.attribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/AnnotationDefaultAttribute.html">AnnotationDefaultAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/BootstrapMethodsAttribute.html">BootstrapMethodsAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/CharacterRangeInfo.html">CharacterRangeInfo</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/CharacterRangeTableAttribute.html">CharacterRangeTableAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/CodeAttribute.html">CodeAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/CompilationIDAttribute.html">CompilationIDAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/ConstantValueAttribute.html">ConstantValueAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/DeprecatedAttribute.html">DeprecatedAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/EnclosingMethodAttribute.html">EnclosingMethodAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/ExceptionsAttribute.html">ExceptionsAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/InnerClassInfo.html">InnerClassInfo</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/InnerClassesAttribute.html">InnerClassesAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/LineNumberInfo.html">LineNumberInfo</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/LineNumberTableAttribute.html">LineNumberTableAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/LocalVariableInfo.html">LocalVariableInfo</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/LocalVariableTableAttribute.html">LocalVariableTableAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/LocalVariableTypeInfo.html">LocalVariableTypeInfo</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/LocalVariableTypeTableAttribute.html">LocalVariableTypeTableAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/MethodParameterInfo.html">MethodParameterInfo</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/MethodParametersAttribute.html">MethodParametersAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/ModuleAttribute.html">ModuleAttribute</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/ModuleExportInfo.html">ModuleExportInfo</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/ModuleHashInfo.html">ModuleHashInfo</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/ModuleHashesAttribute.html">ModuleHashesAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/ModuleMainClassAttribute.html">ModuleMainClassAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/ModuleOpenInfo.html">ModuleOpenInfo</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/ModulePackagesAttribute.html">ModulePackagesAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/ModuleProvideInfo.html">ModuleProvideInfo</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/ModuleRequireInfo.html">ModuleRequireInfo</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/ModuleResolutionAttribute.html">ModuleResolutionAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/ModuleTargetAttribute.html">ModuleTargetAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/NestHostAttribute.html">NestHostAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/NestMembersAttribute.html">NestMembersAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/PermittedSubclassesAttribute.html">PermittedSubclassesAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/RecordAttribute.html">RecordAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/RecordComponentInfo.html">RecordComponentInfo</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/RuntimeInvisibleAnnotationsAttribute.html">RuntimeInvisibleAnnotationsAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/RuntimeInvisibleParameterAnnotationsAttribute.html">RuntimeInvisibleParameterAnnotationsAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/RuntimeInvisibleTypeAnnotationsAttribute.html">RuntimeInvisibleTypeAnnotationsAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/RuntimeVisibleAnnotationsAttribute.html">RuntimeVisibleAnnotationsAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/RuntimeVisibleParameterAnnotationsAttribute.html">RuntimeVisibleParameterAnnotationsAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/RuntimeVisibleTypeAnnotationsAttribute.html">RuntimeVisibleTypeAnnotationsAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/SignatureAttribute.html">SignatureAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/SourceDebugExtensionAttribute.html">SourceDebugExtensionAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/SourceFileAttribute.html">SourceFileAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/SourceIDAttribute.html">SourceIDAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/StackMapFrameInfo.html">StackMapFrameInfo</a></th>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/StackMapTableAttribute.html">StackMapTableAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/SyntheticAttribute.html">SyntheticAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/lang/classfile/attribute/UnknownAttribute.html">UnknownAttribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>56</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>56</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

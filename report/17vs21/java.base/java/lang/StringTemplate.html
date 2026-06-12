@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface java.base/java.lang.StringTemplate</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/lang/package-summary.html">java.lang</a></div>
+<h1>Interface&nbsp;StringTemplate</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> StringTemplate </div>
+</div>
+<section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="add">&plus;</span> <a href="../../../java.base/java/lang/StringTemplate.Processor.html">Processor</a></span></li></ul>
+</section>
+<section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="RAW"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span>java.lang.StringTemplate.Processor&lt;java.lang.StringTemplate, java.lang.RuntimeException&gt;</span> RAW</div>
+</div>
+</li><li><div class="element" id="STR"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span>java.lang.StringTemplate.Processor&lt;java.lang.String, java.lang.RuntimeException&gt;</span> STR</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="combine(StringTemplate[])"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.StringTemplate combine(<span class="parameters"><span class="parameter"><span>java.lang.StringTemplate[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="combine(List)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.StringTemplate combine(<span class="parameters"><span class="parameter"><span>java.util.List&lt;java.lang.StringTemplate&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fragments()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;java.lang.String&gt;</span> fragments()</div>
+</div>
+</li><li><div class="element" id="interpolate()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.String interpolate()</div>
+</div>
+</li><li><div class="element" id="interpolate(List,List)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String interpolate(<span class="parameters"><span class="parameter"><span>java.util.List&lt;java.lang.String&gt;</span> arg0</span>, <span class="parameter"><span>java.util.List&lt;?&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(String)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.StringTemplate of(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(List,List)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.StringTemplate of(<span class="parameters"><span class="parameter"><span>java.util.List&lt;java.lang.String&gt;</span> arg0</span>, <span class="parameter"><span>java.util.List&lt;?&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="process(Processor)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="typarams">&lt;<span>R</span>, <span>E</span>&gt;</span> R process(<span class="parameters"><span class="parameter"><span>java.lang.StringTemplate.Processor&lt;<span>? <span class="keyword">extends</span> R</span>, <span>? <span class="keyword">extends</span> E</span>&gt;</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> E</span></div>
+</div>
+</li><li><div class="element" id="toString(StringTemplate)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String toString(<span class="parameters"><span class="parameter">java.lang.StringTemplate arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="values()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;java.lang.Object&gt;</span> values()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.base/java/lang/StringTemplate.html">StringTemplate</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/lang/StringTemplate.Processor.html">StringTemplate.Processor</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

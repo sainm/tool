@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.plaf.metal.MetalComboBoxButton</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/swing/plaf/metal/package-summary.html">javax.swing.plaf.metal</a></div>
+<h1>Class&nbsp;MetalComboBoxButton</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> MetalComboBoxButton <div class="superclass"><span class="keyword">extends</span> javax.swing.JButton</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="comboBox"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>javax.swing.JComboBox&lt;java.lang.Object&gt;</span> comboBox</div>
+</div>
+</li><li><div class="element" id="comboIcon"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.Icon comboIcon</div>
+</div>
+</li><li><div class="element" id="iconOnly"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> iconOnly</div>
+</div>
+</li><li><div class="element" id="listBox"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>javax.swing.JList&lt;java.lang.Object&gt;</span> listBox</div>
+</div>
+</li><li><div class="element" id="rendererPane"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.CellRendererPane rendererPane</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(JComboBox,Icon,boolean,CellRendererPane,JList)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> MetalComboBoxButton(<span class="parameters"><span class="parameter"><span>javax.swing.JComboBox&lt;java.lang.Object&gt;</span> arg0</span>, <span class="parameter">javax.swing.Icon arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span>, <span class="parameter">javax.swing.CellRendererPane arg3</span>, <span class="parameter"><span>javax.swing.JList&lt;java.lang.Object&gt;</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(JComboBox,Icon,CellRendererPane,JList)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> MetalComboBoxButton(<span class="parameters"><span class="parameter"><span>javax.swing.JComboBox&lt;java.lang.Object&gt;</span> arg0</span>, <span class="parameter">javax.swing.Icon arg1</span>, <span class="parameter">javax.swing.CellRendererPane arg2</span>, <span class="parameter"><span>javax.swing.JList&lt;java.lang.Object&gt;</span> arg3</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getComboBox()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span>javax.swing.JComboBox&lt;java.lang.Object&gt;</span> getComboBox()</div>
+</div>
+</li><li><div class="element" id="getComboIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> javax.swing.Icon getComboIcon()</div>
+</div>
+</li><li><div class="element" id="getMinimumSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getMinimumSize()</div>
+</div>
+</li><li><div class="element" id="isFocusTraversable()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isFocusTraversable()</div>
+</div>
+</li><li><div class="element" id="isIconOnly()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isIconOnly()</div>
+</div>
+</li><li><div class="element" id="paintComponent(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paintComponent(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setComboBox(JComboBox)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setComboBox(<span class="parameters"><span class="parameter"><span>javax.swing.JComboBox&lt;java.lang.Object&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setComboIcon(Icon)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setComboIcon(<span class="parameters"><span class="parameter">javax.swing.Icon arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setIconOnly(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setIconOnly(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>1763813068072902994<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>javax.swing.JComboBox&lt;java.lang.Object&gt;</span>&nbsp;comboBox</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.Icon&nbsp;comboIcon</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;iconOnly</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>javax.swing.JList&lt;java.lang.Object&gt;</span>&nbsp;listBox</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.CellRendererPane&nbsp;rendererPane</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.imageio.ImageIO</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/imageio/package-summary.html">javax.imageio</a></div>
+<h1>Class&nbsp;ImageIO</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> ImageIO <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="createImageInputStream(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.imageio.stream.ImageInputStream createImageInputStream(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="createImageOutputStream(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.imageio.stream.ImageOutputStream createImageOutputStream(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="getCacheDirectory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.io.File getCacheDirectory()</div>
+</div>
+</li><li><div class="element" id="getImageReader(ImageWriter)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.imageio.ImageReader getImageReader(<span class="parameters"><span class="parameter">javax.imageio.ImageWriter arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getImageReaders(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Iterator&lt;javax.imageio.ImageReader&gt;</span> getImageReaders(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getImageReadersByFormatName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Iterator&lt;javax.imageio.ImageReader&gt;</span> getImageReadersByFormatName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getImageReadersByMIMEType(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Iterator&lt;javax.imageio.ImageReader&gt;</span> getImageReadersByMIMEType(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getImageReadersBySuffix(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Iterator&lt;javax.imageio.ImageReader&gt;</span> getImageReadersBySuffix(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getImageTranscoders(ImageReader,ImageWriter)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Iterator&lt;javax.imageio.ImageTranscoder&gt;</span> getImageTranscoders(<span class="parameters"><span class="parameter">javax.imageio.ImageReader arg0</span>, <span class="parameter">javax.imageio.ImageWriter arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getImageWriter(ImageReader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.imageio.ImageWriter getImageWriter(<span class="parameters"><span class="parameter">javax.imageio.ImageReader arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getImageWriters(ImageTypeSpecifier,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Iterator&lt;javax.imageio.ImageWriter&gt;</span> getImageWriters(<span class="parameters"><span class="parameter">javax.imageio.ImageTypeSpecifier arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getImageWritersByFormatName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Iterator&lt;javax.imageio.ImageWriter&gt;</span> getImageWritersByFormatName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getImageWritersByMIMEType(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Iterator&lt;javax.imageio.ImageWriter&gt;</span> getImageWritersByMIMEType(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getImageWritersBySuffix(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Iterator&lt;javax.imageio.ImageWriter&gt;</span> getImageWritersBySuffix(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getReaderFileSuffixes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.String[]</span> getReaderFileSuffixes()</div>
+</div>
+</li><li><div class="element" id="getReaderFormatNames()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.String[]</span> getReaderFormatNames()</div>
+</div>
+</li><li><div class="element" id="getReaderMIMETypes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.String[]</span> getReaderMIMETypes()</div>
+</div>
+</li><li><div class="element" id="getUseCache()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> getUseCache()</div>
+</div>
+</li><li><div class="element" id="getWriterFileSuffixes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.String[]</span> getWriterFileSuffixes()</div>
+</div>
+</li><li><div class="element" id="getWriterFormatNames()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.String[]</span> getWriterFormatNames()</div>
+</div>
+</li><li><div class="element" id="getWriterMIMETypes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.String[]</span> getWriterMIMETypes()</div>
+</div>
+</li><li><div class="element" id="read(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.image.BufferedImage read(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="read(InputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.image.BufferedImage read(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="read(URL)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.image.BufferedImage read(<span class="parameters"><span class="parameter">java.net.URL arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="read(ImageInputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.image.BufferedImage read(<span class="parameters"><span class="parameter">javax.imageio.stream.ImageInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="scanForPlugins()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> scanForPlugins()</div>
+</div>
+</li><li><div class="element" id="setCacheDirectory(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setCacheDirectory(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setUseCache(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setUseCache(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="write(RenderedImage,String,File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> write(<span class="parameters"><span class="parameter">java.awt.image.RenderedImage arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.io.File arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="write(RenderedImage,String,OutputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> write(<span class="parameters"><span class="parameter">java.awt.image.RenderedImage arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.io.OutputStream arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="write(RenderedImage,String,ImageOutputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> write(<span class="parameters"><span class="parameter">java.awt.image.RenderedImage arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">javax.imageio.stream.ImageOutputStream arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

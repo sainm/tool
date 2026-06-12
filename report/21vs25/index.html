@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: JDK 21 → 25 API 变化</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="resources/apidiff.css">
+</head>
+<body class="index"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li>Overview</li></ul>
+</nav>
+</div>
+</header>
+<main><h1>JDK 21 → 25 API 变化</h1>
+<h2>APIs</h2>
+<ul><li>JDK21</li><li>JDK25</li></ul>
+<section class="enclosed"><h2>Modules</h2>
+<ul><li><span><span class="diff">&ne;</span> <a href="java.base/module-summary.html">java.base</a></span></li><li><span><span class="diff">&ne;</span> <a href="java.compiler/module-summary.html">java.compiler</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="java.datatransfer/module-summary.html">java.datatransfer</a></span></li><li><span><span class="diff">&ne;</span> <a href="java.desktop/module-summary.html">java.desktop</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="java.instrument/module-summary.html">java.instrument</a></span></li><li><span><span class="diff">&ne;</span> <a href="java.logging/module-summary.html">java.logging</a></span></li><li><span><span class="diff">&ne;</span> <a href="java.management/module-summary.html">java.management</a></span></li><li><span><span class="diff">&ne;</span> <a href="java.management.rmi/module-summary.html">java.management.rmi</a></span></li><li><span><span class="diff">&ne;</span> <a href="java.naming/module-summary.html">java.naming</a></span></li><li><span><span class="diff">&ne;</span> <a href="java.net.http/module-summary.html">java.net.http</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="java.prefs/module-summary.html">java.prefs</a></span></li><li><span><span class="diff">&ne;</span> <a href="java.rmi/module-summary.html">java.rmi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="java.scripting/module-summary.html">java.scripting</a></span></li><li><span><span class="diff">&ne;</span> <a href="java.se/module-summary.html">java.se</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="java.security.jgss/module-summary.html">java.security.jgss</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="java.security.sasl/module-summary.html">java.security.sasl</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="java.smartcardio/module-summary.html">java.smartcardio</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="java.sql/module-summary.html">java.sql</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="java.sql.rowset/module-summary.html">java.sql.rowset</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="java.transaction.xa/module-summary.html">java.transaction.xa</a></span></li><li><span><span class="diff">&ne;</span> <a href="java.xml/module-summary.html">java.xml</a></span></li><li><span><span class="diff">&ne;</span> <a href="java.xml.crypto/module-summary.html">java.xml.crypto</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.accessibility/module-summary.html">jdk.accessibility</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.attach/module-summary.html">jdk.attach</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.charsets/module-summary.html">jdk.charsets</a></span></li><li><span><span class="diff">&ne;</span> <a href="jdk.compiler/module-summary.html">jdk.compiler</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.crypto.cryptoki/module-summary.html">jdk.crypto.cryptoki</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.crypto.ec/module-summary.html">jdk.crypto.ec</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.dynalink/module-summary.html">jdk.dynalink</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.editpad/module-summary.html">jdk.editpad</a></span></li><li><span><span class="add">&plus;</span> <a href="jdk.graal.compiler/module-summary.html">jdk.graal.compiler</a></span></li><li><span><span class="add">&plus;</span> <a href="jdk.graal.compiler.management/module-summary.html">jdk.graal.compiler.management</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.hotspot.agent/module-summary.html">jdk.hotspot.agent</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.httpserver/module-summary.html">jdk.httpserver</a></span></li><li><span><span class="diff">&ne;</span> <a href="jdk.incubator.vector/module-summary.html">jdk.incubator.vector</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.internal.ed/module-summary.html">jdk.internal.ed</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.internal.jvmstat/module-summary.html">jdk.internal.jvmstat</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.internal.le/module-summary.html">jdk.internal.le</a></span></li><li><span><span class="add">&plus;</span> <a href="jdk.internal.md/module-summary.html">jdk.internal.md</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.internal.opt/module-summary.html">jdk.internal.opt</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.internal.vm.ci/module-summary.html">jdk.internal.vm.ci</a></span></li><li><span><span class="remove">&minus;</span> <a href="jdk.internal.vm.compiler/module-summary.html">jdk.internal.vm.compiler</a></span></li><li><span><span class="remove">&minus;</span> <a href="jdk.internal.vm.compiler.management/module-summary.html">jdk.internal.vm.compiler.management</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.jartool/module-summary.html">jdk.jartool</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.javadoc/module-summary.html">jdk.javadoc</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.jcmd/module-summary.html">jdk.jcmd</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.jconsole/module-summary.html">jdk.jconsole</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.jdeps/module-summary.html">jdk.jdeps</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.jdi/module-summary.html">jdk.jdi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.jdwp.agent/module-summary.html">jdk.jdwp.agent</a></span></li><li><span><span class="diff">&ne;</span> <a href="jdk.jfr/module-summary.html">jdk.jfr</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.jlink/module-summary.html">jdk.jlink</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.jpackage/module-summary.html">jdk.jpackage</a></span></li><li><span><span class="diff">&ne;</span> <a href="jdk.jshell/module-summary.html">jdk.jshell</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.jsobject/module-summary.html">jdk.jsobject</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.jstatd/module-summary.html">jdk.jstatd</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.localedata/module-summary.html">jdk.localedata</a></span></li><li><span><span class="diff">&ne;</span> <a href="jdk.management/module-summary.html">jdk.management</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.management.agent/module-summary.html">jdk.management.agent</a></span></li><li><span><span class="diff">&ne;</span> <a href="jdk.management.jfr/module-summary.html">jdk.management.jfr</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.naming.dns/module-summary.html">jdk.naming.dns</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.naming.rmi/module-summary.html">jdk.naming.rmi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.net/module-summary.html">jdk.net</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.nio.mapmode/module-summary.html">jdk.nio.mapmode</a></span></li><li><span><span class="remove">&minus;</span> <a href="jdk.random/module-summary.html">jdk.random</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.sctp/module-summary.html">jdk.sctp</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.security.auth/module-summary.html">jdk.security.auth</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.security.jgss/module-summary.html">jdk.security.jgss</a></span></li><li><span><span class="diff">&ne;</span> <a href="jdk.unsupported/module-summary.html">jdk.unsupported</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.unsupported.desktop/module-summary.html">jdk.unsupported.desktop</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.xml.dom/module-summary.html">jdk.xml.dom</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="jdk.zipfs/module-summary.html">jdk.zipfs</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th>Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="java.base/module-summary.html">java.base</a></th>
+<td>417</td>
+<td>217</td>
+<td>56</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>690</td>
+</tr>
+<tr><th scope="row"><a href="java.compiler/module-summary.html">java.compiler</a></th>
+<td>20</td>
+<td>9</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>30</td>
+</tr>
+<tr><th scope="row"><a href="java.desktop/module-summary.html">java.desktop</a></th>
+<td>70</td>
+<td>46</td>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>122</td>
+</tr>
+<tr><th scope="row"><a href="java.logging/module-summary.html">java.logging</a></th>
+<td></td>
+<td>50</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>50</td>
+</tr>
+<tr><th scope="row"><a href="java.management/module-summary.html">java.management</a></th>
+<td></td>
+<td>17</td>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>21</td>
+</tr>
+<tr><th scope="row"><a href="java.management.rmi/module-summary.html">java.management.rmi</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="java.naming/module-summary.html">java.naming</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="java.net.http/module-summary.html">java.net.http</a></th>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="java.rmi/module-summary.html">java.rmi</a></th>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="java.se/module-summary.html">java.se</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="java.xml/module-summary.html">java.xml</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="java.xml.crypto/module-summary.html">java.xml.crypto</a></th>
+<td>8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+</tr>
+<tr><th scope="row"><a href="jdk.compiler/module-summary.html">jdk.compiler</a></th>
+<td>10</td>
+<td></td>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>15</td>
+</tr>
+<tr><th scope="row"><a href="jdk.graal.compiler/module-summary.html">jdk.graal.compiler</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="jdk.graal.compiler.management/module-summary.html">jdk.graal.compiler.management</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="jdk.incubator.vector/module-summary.html">jdk.incubator.vector</a></th>
+<td>22</td>
+<td>1</td>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>27</td>
+</tr>
+<tr><th scope="row"><a href="jdk.internal.md/module-summary.html">jdk.internal.md</a></th>
+<td>171</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>171</td>
+</tr>
+<tr><th scope="row"><a href="jdk.internal.vm.compiler/module-summary.html">jdk.internal.vm.compiler</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="jdk.internal.vm.compiler.management/module-summary.html">jdk.internal.vm.compiler.management</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="jdk.jfr/module-summary.html">jdk.jfr</a></th>
+<td>2</td>
+<td>7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+</tr>
+<tr><th scope="row"><a href="jdk.jshell/module-summary.html">jdk.jshell</a></th>
+<td>9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+</tr>
+<tr><th scope="row"><a href="jdk.management/module-summary.html">jdk.management</a></th>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="jdk.management.jfr/module-summary.html">jdk.management.jfr</a></th>
+<td></td>
+<td>10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+</tr>
+<tr><th scope="row"><a href="jdk.random/module-summary.html">jdk.random</a></th>
+<td></td>
+<td></td>
+<td>12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+</tr>
+<tr><th scope="row"><a href="jdk.unsupported/module-summary.html">jdk.unsupported</a></th>
+<td>3</td>
+<td>3</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>743</td>
+<td>362</td>
+<td>94</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1199</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li>Overview</li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

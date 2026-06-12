@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.base/java.util.stream.Gatherer</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/util/stream/package-summary.html">java.util.stream</a></div>
+<h1>Interface&nbsp;Gatherer</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> Gatherer<span class="typarams">&lt;<span>T</span>, <span>A</span>, <span>R</span>&gt;</span> </div>
+</div>
+<section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/util/stream/Gatherer.Downstream.html">Downstream</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/util/stream/Gatherer.Integrator.html">Integrator</a></span></li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="andThen(Gatherer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="typarams">&lt;<span>RR</span>&gt;</span> <span>java.util.stream.Gatherer&lt;T, ?, RR&gt;</span> andThen(<span class="parameters"><span class="parameter"><span>java.util.stream.Gatherer&lt;<span>? <span class="keyword">super</span> R</span>, ?, <span>? <span class="keyword">extends</span> RR</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="combiner()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>java.util.function.BinaryOperator&lt;A&gt;</span> combiner()</div>
+</div>
+</li><li><div class="element" id="defaultCombiner()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>A</span>&gt;</span> <span>java.util.function.BinaryOperator&lt;A&gt;</span> defaultCombiner()</div>
+</div>
+</li><li><div class="element" id="defaultFinisher()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>A</span>, <span>R</span>&gt;</span> <span>java.util.function.BiConsumer&lt;A, <span>java.util.stream.Gatherer.Downstream&lt;<span>? <span class="keyword">super</span> R</span>&gt;</span>&gt;</span> defaultFinisher()</div>
+</div>
+</li><li><div class="element" id="defaultInitializer()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>A</span>&gt;</span> <span>java.util.function.Supplier&lt;A&gt;</span> defaultInitializer()</div>
+</div>
+</li><li><div class="element" id="finisher()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>java.util.function.BiConsumer&lt;A, <span>java.util.stream.Gatherer.Downstream&lt;<span>? <span class="keyword">super</span> R</span>&gt;</span>&gt;</span> finisher()</div>
+</div>
+</li><li><div class="element" id="initializer()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>java.util.function.Supplier&lt;A&gt;</span> initializer()</div>
+</div>
+</li><li><div class="element" id="integrator()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.stream.Gatherer.Integrator&lt;A, T, R&gt;</span> integrator()</div>
+</div>
+</li><li><div class="element" id="of(Supplier,Integrator,BinaryOperator,BiConsumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>, <span>A</span>, <span>R</span>&gt;</span> <span>java.util.stream.Gatherer&lt;T, A, R&gt;</span> of(<span class="parameters"><span class="parameter"><span>java.util.function.Supplier&lt;A&gt;</span> arg0</span>, <span class="parameter"><span>java.util.stream.Gatherer.Integrator&lt;A, T, R&gt;</span> arg1</span>, <span class="parameter"><span>java.util.function.BinaryOperator&lt;A&gt;</span> arg2</span>, <span class="parameter"><span>java.util.function.BiConsumer&lt;A, <span>java.util.stream.Gatherer.Downstream&lt;<span>? <span class="keyword">super</span> R</span>&gt;</span>&gt;</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(Integrator)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>, <span>R</span>&gt;</span> <span>java.util.stream.Gatherer&lt;T, java.lang.Void, R&gt;</span> of(<span class="parameters"><span class="parameter"><span>java.util.stream.Gatherer.Integrator&lt;java.lang.Void, T, R&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(Integrator,BiConsumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>, <span>R</span>&gt;</span> <span>java.util.stream.Gatherer&lt;T, java.lang.Void, R&gt;</span> of(<span class="parameters"><span class="parameter"><span>java.util.stream.Gatherer.Integrator&lt;java.lang.Void, T, R&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.BiConsumer&lt;java.lang.Void, <span>java.util.stream.Gatherer.Downstream&lt;<span>? <span class="keyword">super</span> R</span>&gt;</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofSequential(Supplier,Integrator)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>, <span>A</span>, <span>R</span>&gt;</span> <span>java.util.stream.Gatherer&lt;T, A, R&gt;</span> ofSequential(<span class="parameters"><span class="parameter"><span>java.util.function.Supplier&lt;A&gt;</span> arg0</span>, <span class="parameter"><span>java.util.stream.Gatherer.Integrator&lt;A, T, R&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofSequential(Supplier,Integrator,BiConsumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>, <span>A</span>, <span>R</span>&gt;</span> <span>java.util.stream.Gatherer&lt;T, A, R&gt;</span> ofSequential(<span class="parameters"><span class="parameter"><span>java.util.function.Supplier&lt;A&gt;</span> arg0</span>, <span class="parameter"><span>java.util.stream.Gatherer.Integrator&lt;A, T, R&gt;</span> arg1</span>, <span class="parameter"><span>java.util.function.BiConsumer&lt;A, <span>java.util.stream.Gatherer.Downstream&lt;<span>? <span class="keyword">super</span> R</span>&gt;</span>&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofSequential(Integrator)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>, <span>R</span>&gt;</span> <span>java.util.stream.Gatherer&lt;T, java.lang.Void, R&gt;</span> ofSequential(<span class="parameters"><span class="parameter"><span>java.util.stream.Gatherer.Integrator&lt;java.lang.Void, T, R&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofSequential(Integrator,BiConsumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>, <span>R</span>&gt;</span> <span>java.util.stream.Gatherer&lt;T, java.lang.Void, R&gt;</span> ofSequential(<span class="parameters"><span class="parameter"><span>java.util.stream.Gatherer.Integrator&lt;java.lang.Void, T, R&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.BiConsumer&lt;java.lang.Void, <span>java.util.stream.Gatherer.Downstream&lt;<span>? <span class="keyword">super</span> R</span>&gt;</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/util/stream/Gatherer.html">Gatherer</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/stream/Gatherer.Downstream.html">Gatherer.Downstream</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/stream/Gatherer.Integrator.html">Gatherer.Integrator</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

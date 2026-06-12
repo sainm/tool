@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.text.html.HTMLDocument.HTMLReader</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/swing/text/html/package-summary.html">javax.swing.text.html</a></div>
+<h1>Class&nbsp;HTMLDocument.HTMLReader</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> HTMLReader <div class="superclass"><span class="keyword">extends</span> javax.swing.text.html.HTMLEditorKit.ParserCallback</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.BlockAction.html">BlockAction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.CharacterAction.html">CharacterAction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.FormAction.html">FormAction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.HiddenAction.html">HiddenAction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.IsindexAction.html">IsindexAction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.ParagraphAction.html">ParagraphAction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.PreAction.html">PreAction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.SpecialAction.html">SpecialAction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.TagAction.html">TagAction</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="charAttr"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.text.MutableAttributeSet charAttr</div>
+</div>
+</li><li><div class="element" id="parseBuffer"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.util.Vector&lt;javax.swing.text.DefaultStyledDocument.ElementSpec&gt;</span> parseBuffer</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> HTMLReader(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,int,int,Tag)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> HTMLReader(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">javax.swing.text.html.HTML.Tag arg3</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addContent(char[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> addContent(<span class="parameters"><span class="parameter"><span><span class="keyword">char</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="addContent(char[],int,int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> addContent(<span class="parameters"><span class="parameter"><span><span class="keyword">char</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="addSpecialElement(Tag,MutableAttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> addSpecialElement(<span class="parameters"><span class="parameter">javax.swing.text.html.HTML.Tag arg0</span>, <span class="parameter">javax.swing.text.MutableAttributeSet arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="blockClose(Tag)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> blockClose(<span class="parameters"><span class="parameter">javax.swing.text.html.HTML.Tag arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="blockOpen(Tag,MutableAttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> blockOpen(<span class="parameters"><span class="parameter">javax.swing.text.html.HTML.Tag arg0</span>, <span class="parameter">javax.swing.text.MutableAttributeSet arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="flush()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> flush() <span class="throws"><span class="keyword">throws</span> javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="handleComment(char[],int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> handleComment(<span class="parameters"><span class="parameter"><span><span class="keyword">char</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="handleEndOfLineString(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> handleEndOfLineString(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="handleEndTag(Tag,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> handleEndTag(<span class="parameters"><span class="parameter">javax.swing.text.html.HTML.Tag arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="handleSimpleTag(Tag,MutableAttributeSet,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> handleSimpleTag(<span class="parameters"><span class="parameter">javax.swing.text.html.HTML.Tag arg0</span>, <span class="parameter">javax.swing.text.MutableAttributeSet arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="handleStartTag(Tag,MutableAttributeSet,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> handleStartTag(<span class="parameters"><span class="parameter">javax.swing.text.html.HTML.Tag arg0</span>, <span class="parameter">javax.swing.text.MutableAttributeSet arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="handleText(char[],int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> handleText(<span class="parameters"><span class="parameter"><span><span class="keyword">char</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="popCharacterStyle()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> popCharacterStyle()</div>
+</div>
+</li><li><div class="element" id="preContent(char[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> preContent(<span class="parameters"><span class="parameter"><span><span class="keyword">char</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="pushCharacterStyle()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> pushCharacterStyle()</div>
+</div>
+</li><li><div class="element" id="registerTag(Tag,TagAction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> registerTag(<span class="parameters"><span class="parameter">javax.swing.text.html.HTML.Tag arg0</span>, <span class="parameter">javax.swing.text.html.HTMLDocument.HTMLReader.TagAction arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="textAreaContent(char[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> textAreaContent(<span class="parameters"><span class="parameter"><span><span class="keyword">char</span>[]</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

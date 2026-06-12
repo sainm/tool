@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.SwingUtilities</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Class&nbsp;SwingUtilities</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> SwingUtilities <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.swing.SwingConstants</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="calculateInnerArea(JComponent,Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Rectangle calculateInnerArea(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span>, <span class="parameter">java.awt.Rectangle arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="computeDifference(Rectangle,Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.awt.Rectangle[]</span> computeDifference(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span>, <span class="parameter">java.awt.Rectangle arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="computeIntersection(int,int,int,int,Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Rectangle computeIntersection(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter">java.awt.Rectangle arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="computeStringWidth(FontMetrics,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> computeStringWidth(<span class="parameters"><span class="parameter">java.awt.FontMetrics arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="computeUnion(int,int,int,int,Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Rectangle computeUnion(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter">java.awt.Rectangle arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="convertMouseEvent(Component,MouseEvent,Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.event.MouseEvent convertMouseEvent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.awt.event.MouseEvent arg1</span>, <span class="parameter">java.awt.Component arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="convertPoint(Component,int,int,Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Point convertPoint(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">java.awt.Component arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="convertPoint(Component,Point,Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Point convertPoint(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.awt.Point arg1</span>, <span class="parameter">java.awt.Component arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="convertPointFromScreen(Point,Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> convertPointFromScreen(<span class="parameters"><span class="parameter">java.awt.Point arg0</span>, <span class="parameter">java.awt.Component arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="convertPointToScreen(Point,Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> convertPointToScreen(<span class="parameters"><span class="parameter">java.awt.Point arg0</span>, <span class="parameter">java.awt.Component arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="convertRectangle(Component,Rectangle,Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Rectangle convertRectangle(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.awt.Rectangle arg1</span>, <span class="parameter">java.awt.Component arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="findFocusOwner(Component)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Component findFocusOwner(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAccessibleAt(Component,Point)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.accessibility.Accessible getAccessibleAt(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.awt.Point arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAccessibleChild(Component,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.accessibility.Accessible getAccessibleChild(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAccessibleChildrenCount(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> getAccessibleChildrenCount(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAccessibleIndexInParent(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> getAccessibleIndexInParent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAccessibleStateSet(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.accessibility.AccessibleStateSet getAccessibleStateSet(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAncestorNamed(String,Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Container getAncestorNamed(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.awt.Component arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAncestorOfClass(Class,Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Container getAncestorOfClass(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">java.awt.Component arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDeepestComponentAt(Component,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Component getDeepestComponentAt(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLocalBounds(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Rectangle getLocalBounds(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getRoot(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Component getRoot(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getRootPane(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.JRootPane getRootPane(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getUIActionMap(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.ActionMap getUIActionMap(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getUIInputMap(JComponent,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.InputMap getUIInputMap(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getUnwrappedParent(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Container getUnwrappedParent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getUnwrappedView(JViewport)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Component getUnwrappedView(<span class="parameters"><span class="parameter">javax.swing.JViewport arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getWindowAncestor(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Window getWindowAncestor(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokeAndWait(Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> invokeAndWait(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException, java.lang.reflect.InvocationTargetException</span></div>
+</div>
+</li><li><div class="element" id="invokeLater(Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> invokeLater(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isDescendingFrom(Component,Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isDescendingFrom(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.awt.Component arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isEventDispatchThread()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isEventDispatchThread()</div>
+</div>
+</li><li><div class="element" id="isLeftMouseButton(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isLeftMouseButton(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isMiddleMouseButton(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isMiddleMouseButton(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isRectangleContainingRectangle(Rectangle,Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isRectangleContainingRectangle(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span>, <span class="parameter">java.awt.Rectangle arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isRightMouseButton(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isRightMouseButton(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="layoutCompoundLabel(FontMetrics,String,Icon,int,int,int,int,Rectangle,Rectangle,Rectangle,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String layoutCompoundLabel(<span class="parameters"><span class="parameter">java.awt.FontMetrics arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">javax.swing.Icon arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span class="keyword">int</span> arg6</span>, <span class="parameter">java.awt.Rectangle arg7</span>, <span class="parameter">java.awt.Rectangle arg8</span>, <span class="parameter">java.awt.Rectangle arg9</span>, <span class="parameter"><span class="keyword">int</span> arg10</span></span>)</div>
+</div>
+</li><li><div class="element" id="layoutCompoundLabel(JComponent,FontMetrics,String,Icon,int,int,int,int,Rectangle,Rectangle,Rectangle,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String layoutCompoundLabel(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span>, <span class="parameter">java.awt.FontMetrics arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter">javax.swing.Icon arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span class="keyword">int</span> arg6</span>, <span class="parameter"><span class="keyword">int</span> arg7</span>, <span class="parameter">java.awt.Rectangle arg8</span>, <span class="parameter">java.awt.Rectangle arg9</span>, <span class="parameter">java.awt.Rectangle arg10</span>, <span class="parameter"><span class="keyword">int</span> arg11</span></span>)</div>
+</div>
+</li><li><div class="element" id="notifyAction(Action,KeyStroke,KeyEvent,Object,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> notifyAction(<span class="parameters"><span class="parameter">javax.swing.Action arg0</span>, <span class="parameter">javax.swing.KeyStroke arg1</span>, <span class="parameter">java.awt.event.KeyEvent arg2</span>, <span class="parameter">java.lang.Object arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintComponent(Graphics,Component,Container,int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> paintComponent(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">java.awt.Component arg1</span>, <span class="parameter">java.awt.Container arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span class="keyword">int</span> arg6</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintComponent(Graphics,Component,Container,Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> paintComponent(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">java.awt.Component arg1</span>, <span class="parameter">java.awt.Container arg2</span>, <span class="parameter">java.awt.Rectangle arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="processKeyBindings(KeyEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> processKeyBindings(<span class="parameters"><span class="parameter">java.awt.event.KeyEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="replaceUIActionMap(JComponent,ActionMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> replaceUIActionMap(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span>, <span class="parameter">javax.swing.ActionMap arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="replaceUIInputMap(JComponent,int,InputMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> replaceUIInputMap(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">javax.swing.InputMap arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateComponentTreeUI(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> updateComponentTreeUI(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="windowForComponent(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Window windowForComponent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

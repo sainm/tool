@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/java.awt.Toolkit</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/java/awt/package-summary.html">java.awt</a></div>
+<h1>Class&nbsp;Toolkit</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> Toolkit <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="desktopProperties"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> <span>java.util.Map&lt;java.lang.String, java.lang.Object&gt;</span> desktopProperties</div>
+</div>
+</li><li><div class="element" id="desktopPropsSupport"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> java.beans.PropertyChangeSupport desktopPropsSupport</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> Toolkit()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addAWTEventListener(AWTEventListener,long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addAWTEventListener(<span class="parameters"><span class="parameter">java.awt.event.AWTEventListener arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="addPropertyChangeListener(String,PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addPropertyChangeListener(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.beans.PropertyChangeListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="areExtraMouseButtonsEnabled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> areExtraMouseButtonsEnabled() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="beep()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> beep()</div>
+</div>
+</li><li><div class="element" id="checkImage(Image,int,int,ImageObserver)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> checkImage(<span class="parameters"><span class="parameter">java.awt.Image arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">java.awt.image.ImageObserver arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="createCustomCursor(Image,Point,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Cursor createCustomCursor(<span class="parameters"><span class="parameter">java.awt.Image arg0</span>, <span class="parameter">java.awt.Point arg1</span>, <span class="parameter">java.lang.String arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IndexOutOfBoundsException, java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="createDragGestureRecognizer(Class,DragSource,Component,int,DragGestureListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T createDragGestureRecognizer(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg0</span>, <span class="parameter">java.awt.dnd.DragSource arg1</span>, <span class="parameter">java.awt.Component arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter">java.awt.dnd.DragGestureListener arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="createImage(byte[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Image createImage(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createImage(byte[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.awt.Image createImage(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="createImage(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.awt.Image createImage(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createImage(URL)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.awt.Image createImage(<span class="parameters"><span class="parameter">java.net.URL arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createImage(ImageProducer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.awt.Image createImage(<span class="parameters"><span class="parameter">java.awt.image.ImageProducer arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAWTEventListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.event.AWTEventListener[]</span> getAWTEventListeners()</div>
+</div>
+</li><li><div class="element" id="getAWTEventListeners(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.event.AWTEventListener[]</span> getAWTEventListeners(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBestCursorSize(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getBestCursorSize(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="getColorModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.awt.image.ColorModel getColorModel() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="getDefaultToolkit()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.Toolkit getDefaultToolkit()</div>
+</div>
+</li><li><div class="element" id="getDesktopProperty(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getDesktopProperty(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getFontList()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.lang.String[]</span> getFontList()</div>
+</div>
+</li><li><div class="element" id="getFontMetrics(Font)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.awt.FontMetrics getFontMetrics(<span class="parameters"><span class="parameter">java.awt.Font arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getImage(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.awt.Image getImage(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getImage(URL)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.awt.Image getImage(<span class="parameters"><span class="parameter">java.net.URL arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLockingKeyState(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getLockingKeyState(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.UnsupportedOperationException</span></div>
+</div>
+</li><li><div class="element" id="getMaximumCursorColors()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMaximumCursorColors() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="getMenuShortcutKeyMask()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="10")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMenuShortcutKeyMask() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="getMenuShortcutKeyMaskEx()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMenuShortcutKeyMaskEx() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="getNativeContainer(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span></span> java.awt.Container getNativeContainer(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPrintJob(Frame,String,Properties)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.awt.PrintJob getPrintJob(<span class="parameters"><span class="parameter">java.awt.Frame arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.util.Properties arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPrintJob(Frame,String,JobAttributes,PageAttributes)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.PrintJob getPrintJob(<span class="parameters"><span class="parameter">java.awt.Frame arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.awt.JobAttributes arg2</span>, <span class="parameter">java.awt.PageAttributes arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="getProperty(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String getProperty(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPropertyChangeListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.beans.PropertyChangeListener[]</span> getPropertyChangeListeners()</div>
+</div>
+</li><li><div class="element" id="getPropertyChangeListeners(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.beans.PropertyChangeListener[]</span> getPropertyChangeListeners(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getScreenInsets(GraphicsConfiguration)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Insets getScreenInsets(<span class="parameters"><span class="parameter">java.awt.GraphicsConfiguration arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="getScreenResolution()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getScreenResolution() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="getScreenSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.awt.Dimension getScreenSize() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="getSystemClipboard()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.awt.datatransfer.Clipboard getSystemClipboard() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="getSystemEventQueue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.awt.EventQueue getSystemEventQueue()</div>
+</div>
+</li><li><div class="element" id="getSystemEventQueueImpl()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">abstract</span></span> java.awt.EventQueue getSystemEventQueueImpl()</div>
+</div>
+</li><li><div class="element" id="getSystemSelection()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.datatransfer.Clipboard getSystemSelection() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="initializeDesktopProperties()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> initializeDesktopProperties()</div>
+</div>
+</li><li><div class="element" id="isAlwaysOnTopSupported()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isAlwaysOnTopSupported()</div>
+</div>
+</li><li><div class="element" id="isDynamicLayoutActive()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isDynamicLayoutActive() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="isDynamicLayoutSet()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isDynamicLayoutSet() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="isFrameStateSupported(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isFrameStateSupported(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="isModalExclusionTypeSupported(ModalExclusionType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isModalExclusionTypeSupported(<span class="parameters"><span class="parameter">java.awt.Dialog.ModalExclusionType arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isModalityTypeSupported(ModalityType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isModalityTypeSupported(<span class="parameters"><span class="parameter">java.awt.Dialog.ModalityType arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="lazilyLoadDesktopProperty(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.Object lazilyLoadDesktopProperty(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="loadSystemColors(int[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> loadSystemColors(<span class="parameters"><span class="parameter"><span><span class="keyword">int</span>[]</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="mapInputMethodHighlight(InputMethodHighlight)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.Map&lt;java.awt.font.TextAttribute, ?&gt;</span> mapInputMethodHighlight(<span class="parameters"><span class="parameter">java.awt.im.InputMethodHighlight arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="prepareImage(Image,int,int,ImageObserver)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> prepareImage(<span class="parameters"><span class="parameter">java.awt.Image arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">java.awt.image.ImageObserver arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeAWTEventListener(AWTEventListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeAWTEventListener(<span class="parameters"><span class="parameter">java.awt.event.AWTEventListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removePropertyChangeListener(String,PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removePropertyChangeListener(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.beans.PropertyChangeListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDesktopProperty(String,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setDesktopProperty(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDynamicLayout(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDynamicLayout(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="setLockingKeyState(int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLockingKeyState(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.UnsupportedOperationException</span></div>
+</div>
+</li><li><div class="element" id="sync()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> sync()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

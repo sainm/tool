@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/java.util.concurrent.atomic.AtomicReferenceArray</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.base/java/util/concurrent/atomic/package-summary.html">java.util.concurrent.atomic</a></div>
+<h1>Class&nbsp;AtomicReferenceArray</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> AtomicReferenceArray<span class="typarams">&lt;<span>E</span>&gt;</span> <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> AtomicReferenceArray(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(E[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> AtomicReferenceArray(<span class="parameters"><span class="parameter"><span>E[]</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="accumulateAndGet(int,E,BinaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> E accumulateAndGet(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter"><span>java.util.function.BinaryOperator&lt;E&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="compareAndExchange(int,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> E compareAndExchange(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="compareAndExchangeAcquire(int,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> E compareAndExchangeAcquire(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="compareAndExchangeRelease(int,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> E compareAndExchangeRelease(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="compareAndSet(int,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> compareAndSet(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="get(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> E get(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAcquire(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> E getAcquire(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAndAccumulate(int,E,BinaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> E getAndAccumulate(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter"><span>java.util.function.BinaryOperator&lt;E&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAndSet(int,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> E getAndSet(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAndUpdate(int,UnaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> E getAndUpdate(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span>java.util.function.UnaryOperator&lt;E&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getOpaque(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> E getOpaque(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPlain(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> E getPlain(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="lazySet(int,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> lazySet(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="length()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">int</span> length()</div>
+</div>
+</li><li><div class="element" id="set(int,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> set(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setOpaque(int,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setOpaque(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setPlain(int,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setPlain(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRelease(int,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setRelease(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li><li><div class="element" id="updateAndGet(int,UnaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> E updateAndGet(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span>java.util.function.UnaryOperator&lt;E&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="weakCompareAndSet(int,E,E)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> weakCompareAndSet(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="weakCompareAndSetAcquire(int,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> weakCompareAndSetAcquire(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="weakCompareAndSetPlain(int,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> weakCompareAndSetPlain(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="weakCompareAndSetRelease(int,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> weakCompareAndSetRelease(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="weakCompareAndSetVolatile(int,E,E)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> weakCompareAndSetVolatile(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">E arg1</span>, <span class="parameter">E arg2</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-6209656149925076980<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.lang.Object[]</span>&nbsp;array</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

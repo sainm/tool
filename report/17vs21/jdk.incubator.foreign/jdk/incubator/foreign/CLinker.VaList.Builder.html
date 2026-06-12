@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface jdk.incubator.foreign/jdk.incubator.foreign.CLinker.VaList.Builder</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../jdk.incubator.foreign/module-summary.html">jdk.incubator.foreign</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../jdk.incubator.foreign/jdk/incubator/foreign/package-summary.html">jdk.incubator.foreign</a></div>
+<h1>Interface&nbsp;CLinker.VaList.Builder</h1>
+</div>
+<div class="element"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK17; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">static</span> <span class="keyword">sealed</span></span> <span class="keyword">interface</span> Builder <div class="permitted-subclasses"><span class="keyword">permits</span> jdk.internal.foreign.abi.aarch64.linux.LinuxAArch64VaList.Builder, jdk.internal.foreign.abi.aarch64.macos.MacOsAArch64VaList.Builder, jdk.internal.foreign.abi.x64.sysv.SysVVaList.Builder, jdk.internal.foreign.abi.x64.windows.WinVaList.Builder</div>
+</div>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="vargFromAddress(ValueLayout,Addressable)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> jdk.incubator.foreign.CLinker.VaList.Builder vargFromAddress(<span class="parameters"><span class="parameter">jdk.incubator.foreign.ValueLayout arg0</span>, <span class="parameter">jdk.incubator.foreign.Addressable arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="vargFromDouble(ValueLayout,double)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> jdk.incubator.foreign.CLinker.VaList.Builder vargFromDouble(<span class="parameters"><span class="parameter">jdk.incubator.foreign.ValueLayout arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="vargFromInt(ValueLayout,int)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> jdk.incubator.foreign.CLinker.VaList.Builder vargFromInt(<span class="parameters"><span class="parameter">jdk.incubator.foreign.ValueLayout arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="vargFromLong(ValueLayout,long)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> jdk.incubator.foreign.CLinker.VaList.Builder vargFromLong(<span class="parameters"><span class="parameter">jdk.incubator.foreign.ValueLayout arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="vargFromSegment(GroupLayout,MemorySegment)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> jdk.incubator.foreign.CLinker.VaList.Builder vargFromSegment(<span class="parameters"><span class="parameter">jdk.incubator.foreign.GroupLayout arg0</span>, <span class="parameter">jdk.incubator.foreign.MemorySegment arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../jdk.incubator.foreign/jdk/incubator/foreign/CLinker.VaList.Builder.html">CLinker.VaList.Builder</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/java.lang.invoke.MethodHandles.Lookup</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/lang/invoke/package-summary.html">java.lang.invoke</a></div>
+<h1>Class&nbsp;MethodHandles.Lookup</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">class</span> Lookup <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/invoke/MethodHandles.Lookup.ClassOption.html">ClassOption</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="MODULE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MODULE = 16</div>
+</div>
+</li><li><div class="element" id="ORIGINAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ORIGINAL = 64</div>
+</div>
+</li><li><div class="element" id="PACKAGE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PACKAGE = 8</div>
+</div>
+</li><li><div class="element" id="PRIVATE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PRIVATE = 2</div>
+</div>
+</li><li><div class="element" id="PROTECTED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PROTECTED = 4</div>
+</div>
+</li><li><div class="element" id="PUBLIC"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PUBLIC = 1</div>
+</div>
+</li><li><div class="element" id="UNCONDITIONAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> UNCONDITIONAL = 32</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="accessClass(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.lang.Class&lt;T&gt;</span> accessClass(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException</span></div>
+</div>
+</li><li><div class="element" id="bind(Object,String,MethodType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle bind(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.invoke.MethodType arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.NoSuchMethodException</span></div>
+</div>
+</li><li><div class="element" id="defineClass(byte[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> defineClass(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException</span></div>
+</div>
+</li><li><div class="element" id="defineHiddenClass(byte[],boolean,ClassOption[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandles.Lookup defineHiddenClass(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span>, <span class="parameter"><span>java.lang.invoke.MethodHandles.Lookup.ClassOption[]</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException</span></div>
+</div>
+</li><li><div class="element" id="defineHiddenClassWithClassData(byte[],Object,boolean,ClassOption[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandles.Lookup defineHiddenClassWithClassData(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span>, <span class="parameter"><span>java.lang.invoke.MethodHandles.Lookup.ClassOption[]</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException</span></div>
+</div>
+</li><li><div class="element" id="dropLookupMode(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandles.Lookup dropLookupMode(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ensureInitialized(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.lang.Class&lt;T&gt;</span> ensureInitialized(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException</span></div>
+</div>
+</li><li><div class="element" id="findClass(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> findClass(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.ClassNotFoundException, java.lang.IllegalAccessException</span></div>
+</div>
+</li><li><div class="element" id="findConstructor(Class,MethodType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle findConstructor(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.invoke.MethodType arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.NoSuchMethodException</span></div>
+</div>
+</li><li><div class="element" id="findGetter(Class,String,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle findGetter(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.NoSuchFieldException</span></div>
+</div>
+</li><li><div class="element" id="findSetter(Class,String,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle findSetter(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.NoSuchFieldException</span></div>
+</div>
+</li><li><div class="element" id="findSpecial(Class,String,MethodType,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle findSpecial(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.invoke.MethodType arg2</span>, <span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.NoSuchMethodException</span></div>
+</div>
+</li><li><div class="element" id="findStatic(Class,String,MethodType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle findStatic(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.invoke.MethodType arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.NoSuchMethodException</span></div>
+</div>
+</li><li><div class="element" id="findStaticGetter(Class,String,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle findStaticGetter(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.NoSuchFieldException</span></div>
+</div>
+</li><li><div class="element" id="findStaticSetter(Class,String,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle findStaticSetter(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.NoSuchFieldException</span></div>
+</div>
+</li><li><div class="element" id="findStaticVarHandle(Class,String,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.VarHandle findStaticVarHandle(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.NoSuchFieldException</span></div>
+</div>
+</li><li><div class="element" id="findVarHandle(Class,String,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.VarHandle findVarHandle(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.NoSuchFieldException</span></div>
+</div>
+</li><li><div class="element" id="findVirtual(Class,String,MethodType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle findVirtual(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.invoke.MethodType arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.NoSuchMethodException</span></div>
+</div>
+</li><li><div class="element" id="hasFullPrivilegeAccess()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> hasFullPrivilegeAccess()</div>
+</div>
+</li><li><div class="element" id="hasPrivateAccess()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="14")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> hasPrivateAccess()</div>
+</div>
+</li><li><div class="element" id="in(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandles.Lookup in(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="lookupClass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> lookupClass()</div>
+</div>
+</li><li><div class="element" id="lookupModes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> lookupModes()</div>
+</div>
+</li><li><div class="element" id="previousLookupClass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> previousLookupClass()</div>
+</div>
+</li><li><div class="element" id="revealDirect(MethodHandle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandleInfo revealDirect(<span class="parameters"><span class="parameter">java.lang.invoke.MethodHandle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li><li><div class="element" id="unreflect(Method)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle unreflect(<span class="parameters"><span class="parameter">java.lang.reflect.Method arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException</span></div>
+</div>
+</li><li><div class="element" id="unreflectConstructor(Constructor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle unreflectConstructor(<span class="parameters"><span class="parameter"><span>java.lang.reflect.Constructor&lt;?&gt;</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException</span></div>
+</div>
+</li><li><div class="element" id="unreflectGetter(Field)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle unreflectGetter(<span class="parameters"><span class="parameter">java.lang.reflect.Field arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException</span></div>
+</div>
+</li><li><div class="element" id="unreflectSetter(Field)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle unreflectSetter(<span class="parameters"><span class="parameter">java.lang.reflect.Field arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException</span></div>
+</div>
+</li><li><div class="element" id="unreflectSpecial(Method,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle unreflectSpecial(<span class="parameters"><span class="parameter">java.lang.reflect.Method arg0</span>, <span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException</span></div>
+</div>
+</li><li><div class="element" id="unreflectVarHandle(Field)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.VarHandle unreflectVarHandle(<span class="parameters"><span class="parameter">java.lang.reflect.Field arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

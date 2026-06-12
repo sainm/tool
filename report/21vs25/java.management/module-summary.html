@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: module java.management</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../resources/apidiff.css">
+</head>
+<body class="module"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><h1>Module&nbsp;java.management</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"> <span class="keyword">module</span> java.management</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Exports</h2>
+<ul><li><span><span class="same">&equals;</span> <span class="signature"><span class="keyword">exports</span> java.lang.management</span></span></li><li><span><span class="same">&equals;</span> <span class="signature"><span class="keyword">exports</span> javax.management</span></span></li><li><span><span class="same">&equals;</span> <span class="signature"><span class="keyword">exports</span> javax.management.loading</span></span></li><li><span><span class="same">&equals;</span> <span class="signature"><span class="keyword">exports</span> javax.management.modelmbean</span></span></li><li><span><span class="same">&equals;</span> <span class="signature"><span class="keyword">exports</span> javax.management.monitor</span></span></li><li><span><span class="same">&equals;</span> <span class="signature"><span class="keyword">exports</span> javax.management.openmbean</span></span></li><li><span><span class="same">&equals;</span> <span class="signature"><span class="keyword">exports</span> javax.management.relation</span></span></li><li><span><span class="same">&equals;</span> <span class="signature"><span class="keyword">exports</span> javax.management.remote</span></span></li><li><span><span class="same">&equals;</span> <span class="signature"><span class="keyword">exports</span> javax.management.timer</span></span></li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Packages</h2>
+<ul><li class="unchanged"><span><span class="same">&equals;</span> <a href="../java.management/java/lang/management/package-summary.html">java.lang.management</a></span></li><li><span><span class="diff">&ne;</span> <a href="../java.management/javax/management/package-summary.html">javax.management</a></span></li><li><span><span class="diff">&ne;</span> <a href="../java.management/javax/management/loading/package-summary.html">javax.management.loading</a></span></li><li><span><span class="diff">&ne;</span> <a href="../java.management/javax/management/modelmbean/package-summary.html">javax.management.modelmbean</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../java.management/javax/management/monitor/package-summary.html">javax.management.monitor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../java.management/javax/management/openmbean/package-summary.html">javax.management.openmbean</a></span></li><li><span><span class="diff">&ne;</span> <a href="../java.management/javax/management/relation/package-summary.html">javax.management.relation</a></span></li><li><span><span class="diff">&ne;</span> <a href="../java.management/javax/management/remote/package-summary.html">javax.management.remote</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../java.management/javax/management/timer/package-summary.html">javax.management.timer</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th class="allZero">Added</th>
+<th>Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../java.management/javax/management/package-summary.html">javax.management</a></th>
+<td></td>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="../java.management/javax/management/loading/package-summary.html">javax.management.loading</a></th>
+<td></td>
+<td></td>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr><th scope="row"><a href="../java.management/javax/management/modelmbean/package-summary.html">javax.management.modelmbean</a></th>
+<td></td>
+<td>8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+</tr>
+<tr><th scope="row"><a href="../java.management/javax/management/relation/package-summary.html">javax.management.relation</a></th>
+<td></td>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr><th scope="row"><a href="../java.management/javax/management/remote/package-summary.html">javax.management.remote</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td></td>
+<td>17</td>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>21</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

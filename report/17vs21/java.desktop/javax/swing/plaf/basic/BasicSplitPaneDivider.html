@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.plaf.basic.BasicSplitPaneDivider</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/swing/plaf/basic/package-summary.html">javax.swing.plaf.basic</a></div>
+<h1>Class&nbsp;BasicSplitPaneDivider</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> BasicSplitPaneDivider <div class="superclass"><span class="keyword">extends</span> java.awt.Container</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.beans.PropertyChangeListener</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.DividerLayout.html">DividerLayout</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.DragController.html">DragController</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.MouseHandler.html">MouseHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicSplitPaneDivider.VerticalDragController.html">VerticalDragController</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="ONE_TOUCH_OFFSET"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ONE_TOUCH_OFFSET = 2</div>
+</div>
+</li><li><div class="element" id="ONE_TOUCH_SIZE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ONE_TOUCH_SIZE = 6</div>
+</div>
+</li><li><div class="element" id="dividerSize"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> dividerSize</div>
+</div>
+</li><li><div class="element" id="dragger"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.plaf.basic.BasicSplitPaneDivider.DragController dragger</div>
+</div>
+</li><li><div class="element" id="hiddenDivider"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Component hiddenDivider</div>
+</div>
+</li><li><div class="element" id="leftButton"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JButton leftButton</div>
+</div>
+</li><li><div class="element" id="mouseHandler"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.plaf.basic.BasicSplitPaneDivider.MouseHandler mouseHandler</div>
+</div>
+</li><li><div class="element" id="orientation"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> orientation</div>
+</div>
+</li><li><div class="element" id="rightButton"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JButton rightButton</div>
+</div>
+</li><li><div class="element" id="splitPane"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JSplitPane splitPane</div>
+</div>
+</li><li><div class="element" id="splitPaneUI"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.plaf.basic.BasicSplitPaneUI splitPaneUI</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(BasicSplitPaneUI)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BasicSplitPaneDivider(<span class="parameters"><span class="parameter">javax.swing.plaf.basic.BasicSplitPaneUI arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="createLeftOneTouchButton()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JButton createLeftOneTouchButton()</div>
+</div>
+</li><li><div class="element" id="createRightOneTouchButton()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JButton createRightOneTouchButton()</div>
+</div>
+</li><li><div class="element" id="dragDividerTo(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> dragDividerTo(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="finishDraggingTo(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> finishDraggingTo(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBasicSplitPaneUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.plaf.basic.BasicSplitPaneUI getBasicSplitPaneUI()</div>
+</div>
+</li><li><div class="element" id="getBorder()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.border.Border getBorder()</div>
+</div>
+</li><li><div class="element" id="getDividerSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getDividerSize()</div>
+</div>
+</li><li><div class="element" id="getInsets()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Insets getInsets()</div>
+</div>
+</li><li><div class="element" id="getMinimumSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getMinimumSize()</div>
+</div>
+</li><li><div class="element" id="getPreferredSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getPreferredSize()</div>
+</div>
+</li><li><div class="element" id="isMouseOver()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isMouseOver()</div>
+</div>
+</li><li><div class="element" id="oneTouchExpandableChanged()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> oneTouchExpandableChanged()</div>
+</div>
+</li><li><div class="element" id="paint(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paint(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="prepareForDragging()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> prepareForDragging()</div>
+</div>
+</li><li><div class="element" id="propertyChange(PropertyChangeEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> propertyChange(<span class="parameters"><span class="parameter">java.beans.PropertyChangeEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setBasicSplitPaneUI(BasicSplitPaneUI)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBasicSplitPaneUI(<span class="parameters"><span class="parameter">javax.swing.plaf.basic.BasicSplitPaneUI arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setBorder(Border)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBorder(<span class="parameters"><span class="parameter">javax.swing.border.Border arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDividerSize(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDividerSize(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMouseOver(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setMouseOver(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>4120605698328577632<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.border.Border&nbsp;border</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;centerOneTouchButtons</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;dividerSize</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.plaf.basic.BasicSplitPaneDivider.DragController&nbsp;dragger</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Component&nbsp;hiddenDivider</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.JButton&nbsp;leftButton</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.plaf.basic.BasicSplitPaneDivider.MouseHandler&nbsp;mouseHandler</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;mouseOver</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;oneTouchOffset</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;oneTouchSize</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;orientation</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.JButton&nbsp;rightButton</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.JSplitPane&nbsp;splitPane</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.plaf.basic.BasicSplitPaneUI&nbsp;splitPaneUI</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

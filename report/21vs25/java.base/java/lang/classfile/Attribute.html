@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.base/java.lang.classfile.Attribute</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/lang/classfile/package-summary.html">java.lang.classfile</a></div>
+<h1>Interface&nbsp;Attribute</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">sealed</span></span> <span class="keyword">interface</span> Attribute<span class="typarams">&lt;<span>A</span>&gt;</span> <div class="superinterfaces"><span class="keyword">extends</span> java.lang.classfile.ClassFileElement</div>
+<div class="permitted-subclasses"><span class="keyword">permits</span> <span>java.lang.classfile.CustomAttribute&lt;T&gt;</span>, java.lang.classfile.attribute.AnnotationDefaultAttribute, java.lang.classfile.attribute.BootstrapMethodsAttribute, java.lang.classfile.attribute.CharacterRangeTableAttribute, java.lang.classfile.attribute.CodeAttribute, java.lang.classfile.attribute.CompilationIDAttribute, java.lang.classfile.attribute.ConstantValueAttribute, java.lang.classfile.attribute.DeprecatedAttribute, java.lang.classfile.attribute.EnclosingMethodAttribute, java.lang.classfile.attribute.ExceptionsAttribute, java.lang.classfile.attribute.InnerClassesAttribute, java.lang.classfile.attribute.LineNumberTableAttribute, java.lang.classfile.attribute.LocalVariableTableAttribute, java.lang.classfile.attribute.LocalVariableTypeTableAttribute, java.lang.classfile.attribute.MethodParametersAttribute, java.lang.classfile.attribute.ModuleAttribute, java.lang.classfile.attribute.ModuleHashesAttribute, java.lang.classfile.attribute.ModuleMainClassAttribute, java.lang.classfile.attribute.ModulePackagesAttribute, java.lang.classfile.attribute.ModuleResolutionAttribute, java.lang.classfile.attribute.ModuleTargetAttribute, java.lang.classfile.attribute.NestHostAttribute, java.lang.classfile.attribute.NestMembersAttribute, java.lang.classfile.attribute.PermittedSubclassesAttribute, java.lang.classfile.attribute.RecordAttribute, java.lang.classfile.attribute.RuntimeInvisibleAnnotationsAttribute, java.lang.classfile.attribute.RuntimeInvisibleParameterAnnotationsAttribute, java.lang.classfile.attribute.RuntimeInvisibleTypeAnnotationsAttribute, java.lang.classfile.attribute.RuntimeVisibleAnnotationsAttribute, java.lang.classfile.attribute.RuntimeVisibleParameterAnnotationsAttribute, java.lang.classfile.attribute.RuntimeVisibleTypeAnnotationsAttribute, java.lang.classfile.attribute.SignatureAttribute, java.lang.classfile.attribute.SourceDebugExtensionAttribute, java.lang.classfile.attribute.SourceFileAttribute, java.lang.classfile.attribute.SourceIDAttribute, java.lang.classfile.attribute.StackMapTableAttribute, java.lang.classfile.attribute.SyntheticAttribute, java.lang.classfile.attribute.UnknownAttribute, <span>jdk.internal.classfile.impl.BoundAttribute&lt;T&gt;</span>, <span>jdk.internal.classfile.impl.UnboundAttribute&lt;T&gt;</span></div>
+</div>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="attributeMapper()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.lang.classfile.AttributeMapper&lt;A&gt;</span> attributeMapper()</div>
+</div>
+</li><li><div class="element" id="attributeName()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.classfile.constantpool.Utf8Entry attributeName()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/Attribute.html">Attribute</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

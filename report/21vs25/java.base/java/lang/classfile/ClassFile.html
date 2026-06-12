@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.base/java.lang.classfile.ClassFile</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/lang/classfile/package-summary.html">java.lang.classfile</a></div>
+<h1>Interface&nbsp;ClassFile</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">sealed</span></span> <span class="keyword">interface</span> ClassFile <div class="permitted-subclasses"><span class="keyword">permits</span> jdk.internal.classfile.impl.ClassFileImpl</div>
+</div>
+</div>
+<section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/ClassFile.AttributeMapperOption.html">AttributeMapperOption</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/ClassFile.AttributesProcessingOption.html">AttributesProcessingOption</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/ClassFile.ClassHierarchyResolverOption.html">ClassHierarchyResolverOption</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/ClassFile.ConstantPoolSharingOption.html">ConstantPoolSharingOption</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/ClassFile.DeadCodeOption.html">DeadCodeOption</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/ClassFile.DeadLabelsOption.html">DeadLabelsOption</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/ClassFile.DebugElementsOption.html">DebugElementsOption</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/ClassFile.LineNumbersOption.html">LineNumbersOption</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/ClassFile.Option.html">Option</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/ClassFile.ShortJumpsOption.html">ShortJumpsOption</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/ClassFile.StackMapsOption.html">StackMapsOption</a></span></li></ul>
+</section>
+<section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="ACC_ABSTRACT"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_ABSTRACT = 1024</div>
+</div>
+</li><li><div class="element" id="ACC_ANNOTATION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_ANNOTATION = 8192</div>
+</div>
+</li><li><div class="element" id="ACC_BRIDGE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_BRIDGE = 64</div>
+</div>
+</li><li><div class="element" id="ACC_ENUM"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_ENUM = 16384</div>
+</div>
+</li><li><div class="element" id="ACC_FINAL"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_FINAL = 16</div>
+</div>
+</li><li><div class="element" id="ACC_INTERFACE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_INTERFACE = 512</div>
+</div>
+</li><li><div class="element" id="ACC_MANDATED"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_MANDATED = 32768</div>
+</div>
+</li><li><div class="element" id="ACC_MODULE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_MODULE = 32768</div>
+</div>
+</li><li><div class="element" id="ACC_NATIVE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_NATIVE = 256</div>
+</div>
+</li><li><div class="element" id="ACC_OPEN"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_OPEN = 32</div>
+</div>
+</li><li><div class="element" id="ACC_PRIVATE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_PRIVATE = 2</div>
+</div>
+</li><li><div class="element" id="ACC_PROTECTED"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_PROTECTED = 4</div>
+</div>
+</li><li><div class="element" id="ACC_PUBLIC"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_PUBLIC = 1</div>
+</div>
+</li><li><div class="element" id="ACC_STATIC"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_STATIC = 8</div>
+</div>
+</li><li><div class="element" id="ACC_STATIC_PHASE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_STATIC_PHASE = 64</div>
+</div>
+</li><li><div class="element" id="ACC_STRICT"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_STRICT = 2048</div>
+</div>
+</li><li><div class="element" id="ACC_SUPER"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_SUPER = 32</div>
+</div>
+</li><li><div class="element" id="ACC_SYNCHRONIZED"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_SYNCHRONIZED = 32</div>
+</div>
+</li><li><div class="element" id="ACC_SYNTHETIC"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_SYNTHETIC = 4096</div>
+</div>
+</li><li><div class="element" id="ACC_TRANSIENT"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_TRANSIENT = 128</div>
+</div>
+</li><li><div class="element" id="ACC_TRANSITIVE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_TRANSITIVE = 32</div>
+</div>
+</li><li><div class="element" id="ACC_VARARGS"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_VARARGS = 128</div>
+</div>
+</li><li><div class="element" id="ACC_VOLATILE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ACC_VOLATILE = 64</div>
+</div>
+</li><li><div class="element" id="JAVA_10_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_10_VERSION = 54</div>
+</div>
+</li><li><div class="element" id="JAVA_11_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_11_VERSION = 55</div>
+</div>
+</li><li><div class="element" id="JAVA_12_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_12_VERSION = 56</div>
+</div>
+</li><li><div class="element" id="JAVA_13_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_13_VERSION = 57</div>
+</div>
+</li><li><div class="element" id="JAVA_14_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_14_VERSION = 58</div>
+</div>
+</li><li><div class="element" id="JAVA_15_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_15_VERSION = 59</div>
+</div>
+</li><li><div class="element" id="JAVA_16_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_16_VERSION = 60</div>
+</div>
+</li><li><div class="element" id="JAVA_17_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_17_VERSION = 61</div>
+</div>
+</li><li><div class="element" id="JAVA_18_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_18_VERSION = 62</div>
+</div>
+</li><li><div class="element" id="JAVA_19_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_19_VERSION = 63</div>
+</div>
+</li><li><div class="element" id="JAVA_1_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_1_VERSION = 45</div>
+</div>
+</li><li><div class="element" id="JAVA_20_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_20_VERSION = 64</div>
+</div>
+</li><li><div class="element" id="JAVA_21_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_21_VERSION = 65</div>
+</div>
+</li><li><div class="element" id="JAVA_22_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_22_VERSION = 66</div>
+</div>
+</li><li><div class="element" id="JAVA_23_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_23_VERSION = 67</div>
+</div>
+</li><li><div class="element" id="JAVA_24_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_24_VERSION = 68</div>
+</div>
+</li><li><div class="element" id="JAVA_25_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_25_VERSION = 69</div>
+</div>
+</li><li><div class="element" id="JAVA_2_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_2_VERSION = 46</div>
+</div>
+</li><li><div class="element" id="JAVA_3_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_3_VERSION = 47</div>
+</div>
+</li><li><div class="element" id="JAVA_4_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_4_VERSION = 48</div>
+</div>
+</li><li><div class="element" id="JAVA_5_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_5_VERSION = 49</div>
+</div>
+</li><li><div class="element" id="JAVA_6_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_6_VERSION = 50</div>
+</div>
+</li><li><div class="element" id="JAVA_7_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_7_VERSION = 51</div>
+</div>
+</li><li><div class="element" id="JAVA_8_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_8_VERSION = 52</div>
+</div>
+</li><li><div class="element" id="JAVA_9_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JAVA_9_VERSION = 53</div>
+</div>
+</li><li><div class="element" id="MAGIC_NUMBER"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MAGIC_NUMBER = -889275714</div>
+</div>
+</li><li><div class="element" id="PREVIEW_MINOR_VERSION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PREVIEW_MINOR_VERSION = 65535</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="build(ClassEntry,ConstantPoolBuilder,Consumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span><span class="keyword">byte</span>[]</span> build(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.ClassEntry arg0</span>, <span class="parameter">java.lang.classfile.constantpool.ConstantPoolBuilder arg1</span>, <span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> java.lang.classfile.ClassBuilder</span>&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="build(ClassDesc,Consumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span><span class="keyword">byte</span>[]</span> build(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span>, <span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> java.lang.classfile.ClassBuilder</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="buildModule(ModuleAttribute)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span><span class="keyword">byte</span>[]</span> buildModule(<span class="parameters"><span class="parameter">java.lang.classfile.attribute.ModuleAttribute arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="buildModule(ModuleAttribute,Consumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span><span class="keyword">byte</span>[]</span> buildModule(<span class="parameters"><span class="parameter">java.lang.classfile.attribute.ModuleAttribute arg0</span>, <span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> java.lang.classfile.ClassBuilder</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="buildModuleTo(Path,ModuleAttribute)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">void</span> buildModuleTo(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter">java.lang.classfile.attribute.ModuleAttribute arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="buildModuleTo(Path,ModuleAttribute,Consumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">void</span> buildModuleTo(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter">java.lang.classfile.attribute.ModuleAttribute arg1</span>, <span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> java.lang.classfile.ClassBuilder</span>&gt;</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="buildTo(Path,ClassEntry,ConstantPoolBuilder,Consumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">void</span> buildTo(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter">java.lang.classfile.constantpool.ClassEntry arg1</span>, <span class="parameter">java.lang.classfile.constantpool.ConstantPoolBuilder arg2</span>, <span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> java.lang.classfile.ClassBuilder</span>&gt;</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="buildTo(Path,ClassDesc,Consumer)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">void</span> buildTo(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter">java.lang.constant.ClassDesc arg1</span>, <span class="parameter"><span>java.util.function.Consumer&lt;java.lang.classfile.ClassBuilder&gt;</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="latestMajorVersion()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> latestMajorVersion()</div>
+</div>
+</li><li><div class="element" id="latestMinorVersion()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> latestMinorVersion()</div>
+</div>
+</li><li><div class="element" id="of()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.ClassFile of()</div>
+</div>
+</li><li><div class="element" id="of(Option[])"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.ClassFile of(<span class="parameters"><span class="parameter"><span>java.lang.classfile.ClassFile.Option[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="parse(byte[])"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.classfile.ClassModel parse(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="parse(Path)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.classfile.ClassModel parse(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="transformClass(ClassModel,ClassTransform)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span><span class="keyword">byte</span>[]</span> transformClass(<span class="parameters"><span class="parameter">java.lang.classfile.ClassModel arg0</span>, <span class="parameter">java.lang.classfile.ClassTransform arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="transformClass(ClassModel,ClassEntry,ClassTransform)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span><span class="keyword">byte</span>[]</span> transformClass(<span class="parameters"><span class="parameter">java.lang.classfile.ClassModel arg0</span>, <span class="parameter">java.lang.classfile.constantpool.ClassEntry arg1</span>, <span class="parameter">java.lang.classfile.ClassTransform arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="transformClass(ClassModel,ClassDesc,ClassTransform)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span><span class="keyword">byte</span>[]</span> transformClass(<span class="parameters"><span class="parameter">java.lang.classfile.ClassModel arg0</span>, <span class="parameter">java.lang.constant.ClassDesc arg1</span>, <span class="parameter">java.lang.classfile.ClassTransform arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="verify(byte[])"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;java.lang.VerifyError&gt;</span> verify(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="verify(ClassModel)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;java.lang.VerifyError&gt;</span> verify(<span class="parameters"><span class="parameter">java.lang.classfile.ClassModel arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="verify(Path)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>java.util.List&lt;java.lang.VerifyError&gt;</span> verify(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="withOptions(Option[])"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.classfile.ClassFile withOptions(<span class="parameters"><span class="parameter"><span>java.lang.classfile.ClassFile.Option[]</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/ClassFile.html">ClassFile</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/ClassFile.AttributeMapperOption.html">ClassFile.AttributeMapperOption</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/ClassFile.AttributesProcessingOption.html">ClassFile.AttributesProcessingOption</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/ClassFile.ClassHierarchyResolverOption.html">ClassFile.ClassHierarchyResolverOption</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/ClassFile.ConstantPoolSharingOption.html">ClassFile.ConstantPoolSharingOption</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/ClassFile.DeadCodeOption.html">ClassFile.DeadCodeOption</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/ClassFile.DeadLabelsOption.html">ClassFile.DeadLabelsOption</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/ClassFile.DebugElementsOption.html">ClassFile.DebugElementsOption</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/ClassFile.LineNumbersOption.html">ClassFile.LineNumbersOption</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/ClassFile.Option.html">ClassFile.Option</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/ClassFile.ShortJumpsOption.html">ClassFile.ShortJumpsOption</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/ClassFile.StackMapsOption.html">ClassFile.StackMapsOption</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

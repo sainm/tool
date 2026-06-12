@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/java.time.OffsetDateTime</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/time/package-summary.html">java.time</a></div>
+<h1>Class&nbsp;OffsetDateTime</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> OffsetDateTime <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable, <span>java.lang.Comparable&lt;java.time.OffsetDateTime&gt;</span>, java.time.temporal.Temporal, java.time.temporal.TemporalAdjuster</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="MAX"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.OffsetDateTime MAX</div>
+</div>
+</li><li><div class="element" id="MIN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.time.OffsetDateTime MIN</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="adjustInto(Temporal)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.temporal.Temporal adjustInto(<span class="parameters"><span class="parameter">java.time.temporal.Temporal arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="atZoneSameInstant(ZoneId)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.ZonedDateTime atZoneSameInstant(<span class="parameters"><span class="parameter">java.time.ZoneId arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="atZoneSimilarLocal(ZoneId)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.ZonedDateTime atZoneSimilarLocal(<span class="parameters"><span class="parameter">java.time.ZoneId arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="compareTo(OffsetDateTime)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> compareTo(<span class="parameters"><span class="parameter">java.time.OffsetDateTime arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="format(DateTimeFormatter)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String format(<span class="parameters"><span class="parameter">java.time.format.DateTimeFormatter arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="from(TemporalAccessor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.OffsetDateTime from(<span class="parameters"><span class="parameter">java.time.temporal.TemporalAccessor arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="get(TemporalField)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> get(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDayOfMonth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getDayOfMonth()</div>
+</div>
+</li><li><div class="element" id="getDayOfWeek()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.DayOfWeek getDayOfWeek()</div>
+</div>
+</li><li><div class="element" id="getDayOfYear()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getDayOfYear()</div>
+</div>
+</li><li><div class="element" id="getHour()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getHour()</div>
+</div>
+</li><li><div class="element" id="getLong(TemporalField)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getLong(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getMinute()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMinute()</div>
+</div>
+</li><li><div class="element" id="getMonth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.Month getMonth()</div>
+</div>
+</li><li><div class="element" id="getMonthValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMonthValue()</div>
+</div>
+</li><li><div class="element" id="getNano()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getNano()</div>
+</div>
+</li><li><div class="element" id="getOffset()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.ZoneOffset getOffset()</div>
+</div>
+</li><li><div class="element" id="getSecond()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getSecond()</div>
+</div>
+</li><li><div class="element" id="getYear()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getYear()</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="isAfter(OffsetDateTime)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isAfter(<span class="parameters"><span class="parameter">java.time.OffsetDateTime arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isBefore(OffsetDateTime)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isBefore(<span class="parameters"><span class="parameter">java.time.OffsetDateTime arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isEqual(OffsetDateTime)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isEqual(<span class="parameters"><span class="parameter">java.time.OffsetDateTime arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isSupported(TemporalField)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSupported(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isSupported(TemporalUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSupported(<span class="parameters"><span class="parameter">java.time.temporal.TemporalUnit arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="minus(long,TemporalUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime minus(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.time.temporal.TemporalUnit arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="minus(TemporalAmount)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime minus(<span class="parameters"><span class="parameter">java.time.temporal.TemporalAmount arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="minusDays(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime minusDays(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="minusHours(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime minusHours(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="minusMinutes(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime minusMinutes(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="minusMonths(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime minusMonths(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="minusNanos(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime minusNanos(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="minusSeconds(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime minusSeconds(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="minusWeeks(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime minusWeeks(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="minusYears(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime minusYears(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="now()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.OffsetDateTime now()</div>
+</div>
+</li><li><div class="element" id="now(Clock)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.OffsetDateTime now(<span class="parameters"><span class="parameter">java.time.Clock arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="now(ZoneId)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.OffsetDateTime now(<span class="parameters"><span class="parameter">java.time.ZoneId arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(int,int,int,int,int,int,int,ZoneOffset)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.OffsetDateTime of(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span class="keyword">int</span> arg6</span>, <span class="parameter">java.time.ZoneOffset arg7</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(LocalDate,LocalTime,ZoneOffset)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.OffsetDateTime of(<span class="parameters"><span class="parameter">java.time.LocalDate arg0</span>, <span class="parameter">java.time.LocalTime arg1</span>, <span class="parameter">java.time.ZoneOffset arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(LocalDateTime,ZoneOffset)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.OffsetDateTime of(<span class="parameters"><span class="parameter">java.time.LocalDateTime arg0</span>, <span class="parameter">java.time.ZoneOffset arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofInstant(Instant,ZoneId)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.OffsetDateTime ofInstant(<span class="parameters"><span class="parameter">java.time.Instant arg0</span>, <span class="parameter">java.time.ZoneId arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="parse(CharSequence)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.OffsetDateTime parse(<span class="parameters"><span class="parameter">java.lang.CharSequence arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="parse(CharSequence,DateTimeFormatter)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.OffsetDateTime parse(<span class="parameters"><span class="parameter">java.lang.CharSequence arg0</span>, <span class="parameter">java.time.format.DateTimeFormatter arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="plus(long,TemporalUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime plus(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.time.temporal.TemporalUnit arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="plus(TemporalAmount)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime plus(<span class="parameters"><span class="parameter">java.time.temporal.TemporalAmount arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="plusDays(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime plusDays(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="plusHours(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime plusHours(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="plusMinutes(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime plusMinutes(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="plusMonths(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime plusMonths(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="plusNanos(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime plusNanos(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="plusSeconds(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime plusSeconds(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="plusWeeks(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime plusWeeks(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="plusYears(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime plusYears(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="query(TemporalQuery)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>R</span>&gt;</span> R query(<span class="parameters"><span class="parameter"><span>java.time.temporal.TemporalQuery&lt;R&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="range(TemporalField)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.temporal.ValueRange range(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="timeLineOrder()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Comparator&lt;java.time.OffsetDateTime&gt;</span> timeLineOrder()</div>
+</div>
+</li><li><div class="element" id="toEpochSecond()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> toEpochSecond()</div>
+</div>
+</li><li><div class="element" id="toInstant()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.Instant toInstant()</div>
+</div>
+</li><li><div class="element" id="toLocalDate()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.LocalDate toLocalDate()</div>
+</div>
+</li><li><div class="element" id="toLocalDateTime()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.LocalDateTime toLocalDateTime()</div>
+</div>
+</li><li><div class="element" id="toLocalTime()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.LocalTime toLocalTime()</div>
+</div>
+</li><li><div class="element" id="toOffsetTime()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetTime toOffsetTime()</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li><li><div class="element" id="toZonedDateTime()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.ZonedDateTime toZonedDateTime()</div>
+</div>
+</li><li><div class="element" id="truncatedTo(TemporalUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime truncatedTo(<span class="parameters"><span class="parameter">java.time.temporal.TemporalUnit arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="until(Temporal,TemporalUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> until(<span class="parameters"><span class="parameter">java.time.temporal.Temporal arg0</span>, <span class="parameter">java.time.temporal.TemporalUnit arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="with(TemporalAdjuster)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime with(<span class="parameters"><span class="parameter">java.time.temporal.TemporalAdjuster arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="with(TemporalField,long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime with(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="withDayOfMonth(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime withDayOfMonth(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withDayOfYear(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime withDayOfYear(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withHour(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime withHour(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withMinute(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime withMinute(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withMonth(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime withMonth(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withNano(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime withNano(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withOffsetSameInstant(ZoneOffset)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime withOffsetSameInstant(<span class="parameters"><span class="parameter">java.time.ZoneOffset arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withOffsetSameLocal(ZoneOffset)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime withOffsetSameLocal(<span class="parameters"><span class="parameter">java.time.ZoneOffset arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withSecond(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime withSecond(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withYear(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.OffsetDateTime withYear(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>2287754244819255394<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">java.time.LocalDateTime&nbsp;dateTime</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.time.ZoneOffset&nbsp;offset</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.InvalidObjectException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeReplace"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> java.lang.Object writeReplace()</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

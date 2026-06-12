@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/javax.net.ssl.HttpsURLConnection</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/javax/net/ssl/package-summary.html">javax.net.ssl</a></div>
+<h1>Class&nbsp;HttpsURLConnection</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> HttpsURLConnection <div class="superclass"><span class="keyword">extends</span> java.net.HttpURLConnection</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="hostnameVerifier"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.net.ssl.HostnameVerifier hostnameVerifier</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(URL)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> HttpsURLConnection(<span class="parameters"><span class="parameter">java.net.URL arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getCipherSuite()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getCipherSuite()</div>
+</div>
+</li><li><div class="element" id="getDefaultHostnameVerifier()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.net.ssl.HostnameVerifier getDefaultHostnameVerifier()</div>
+</div>
+</li><li><div class="element" id="getDefaultSSLSocketFactory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.net.ssl.SSLSocketFactory getDefaultSSLSocketFactory()</div>
+</div>
+</li><li><div class="element" id="getHostnameVerifier()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.net.ssl.HostnameVerifier getHostnameVerifier()</div>
+</div>
+</li><li><div class="element" id="getLocalCertificates()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.security.cert.Certificate[]</span> getLocalCertificates()</div>
+</div>
+</li><li><div class="element" id="getLocalPrincipal()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.security.Principal getLocalPrincipal()</div>
+</div>
+</li><li><div class="element" id="getPeerPrincipal()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.security.Principal getPeerPrincipal() <span class="throws"><span class="keyword">throws</span> javax.net.ssl.SSLPeerUnverifiedException</span></div>
+</div>
+</li><li><div class="element" id="getSSLSession()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Optional&lt;javax.net.ssl.SSLSession&gt;</span> getSSLSession()</div>
+</div>
+</li><li><div class="element" id="getSSLSocketFactory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.net.ssl.SSLSocketFactory getSSLSocketFactory()</div>
+</div>
+</li><li><div class="element" id="getServerCertificates()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.security.cert.Certificate[]</span> getServerCertificates() <span class="throws"><span class="keyword">throws</span> javax.net.ssl.SSLPeerUnverifiedException</span></div>
+</div>
+</li><li><div class="element" id="setDefaultHostnameVerifier(HostnameVerifier)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setDefaultHostnameVerifier(<span class="parameters"><span class="parameter">javax.net.ssl.HostnameVerifier arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDefaultSSLSocketFactory(SSLSocketFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setDefaultSSLSocketFactory(<span class="parameters"><span class="parameter">javax.net.ssl.SSLSocketFactory arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setHostnameVerifier(HostnameVerifier)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setHostnameVerifier(<span class="parameters"><span class="parameter">javax.net.ssl.HostnameVerifier arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSSLSocketFactory(SSLSocketFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSSLSocketFactory(<span class="parameters"><span class="parameter">javax.net.ssl.SSLSocketFactory arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

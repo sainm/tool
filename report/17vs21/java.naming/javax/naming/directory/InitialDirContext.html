@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.naming/javax.naming.directory.InitialDirContext</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.naming/module-summary.html">java.naming</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.naming/javax/naming/directory/package-summary.html">javax.naming.directory</a></div>
+<h1>Class&nbsp;InitialDirContext</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> InitialDirContext <div class="superclass"><span class="keyword">extends</span> javax.naming.InitialContext</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.naming.directory.DirContext</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> InitialDirContext() <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> InitialDirContext(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Hashtable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> InitialDirContext(<span class="parameters"><span class="parameter"><span>java.util.Hashtable&lt;?, ?&gt;</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="bind(String,Object,Attributes)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> bind(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">javax.naming.directory.Attributes arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="bind(Name,Object,Attributes)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> bind(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">javax.naming.directory.Attributes arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="createSubcontext(String,Attributes)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.directory.DirContext createSubcontext(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">javax.naming.directory.Attributes arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="createSubcontext(Name,Attributes)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.directory.DirContext createSubcontext(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span>, <span class="parameter">javax.naming.directory.Attributes arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getAttributes(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.directory.Attributes getAttributes(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getAttributes(String,String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.directory.Attributes getAttributes(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>java.lang.String[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getAttributes(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.directory.Attributes getAttributes(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getAttributes(Name,String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.directory.Attributes getAttributes(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span>, <span class="parameter"><span>java.lang.String[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getSchema(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.directory.DirContext getSchema(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getSchema(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.directory.DirContext getSchema(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getSchemaClassDefinition(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.directory.DirContext getSchemaClassDefinition(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getSchemaClassDefinition(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.directory.DirContext getSchemaClassDefinition(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="modifyAttributes(String,int,Attributes)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> modifyAttributes(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">javax.naming.directory.Attributes arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="modifyAttributes(String,ModificationItem[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> modifyAttributes(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>javax.naming.directory.ModificationItem[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="modifyAttributes(Name,int,Attributes)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> modifyAttributes(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">javax.naming.directory.Attributes arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="modifyAttributes(Name,ModificationItem[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> modifyAttributes(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span>, <span class="parameter"><span>javax.naming.directory.ModificationItem[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="rebind(String,Object,Attributes)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> rebind(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">javax.naming.directory.Attributes arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="rebind(Name,Object,Attributes)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> rebind(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">javax.naming.directory.Attributes arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="search(String,String,Object[],SearchControls)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult&gt;</span> search(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter"><span>java.lang.Object[]</span> arg2</span>, <span class="parameter">javax.naming.directory.SearchControls arg3</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="search(String,String,SearchControls)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult&gt;</span> search(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">javax.naming.directory.SearchControls arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="search(String,Attributes)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult&gt;</span> search(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">javax.naming.directory.Attributes arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="search(String,Attributes,String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult&gt;</span> search(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">javax.naming.directory.Attributes arg1</span>, <span class="parameter"><span>java.lang.String[]</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="search(Name,String,Object[],SearchControls)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult&gt;</span> search(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter"><span>java.lang.Object[]</span> arg2</span>, <span class="parameter">javax.naming.directory.SearchControls arg3</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="search(Name,String,SearchControls)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult&gt;</span> search(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">javax.naming.directory.SearchControls arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="search(Name,Attributes)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult&gt;</span> search(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span>, <span class="parameter">javax.naming.directory.Attributes arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="search(Name,Attributes,String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.naming.NamingEnumeration&lt;javax.naming.directory.SearchResult&gt;</span> search(<span class="parameters"><span class="parameter">javax.naming.Name arg0</span>, <span class="parameter">javax.naming.directory.Attributes arg1</span>, <span class="parameter"><span>java.lang.String[]</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/java.awt.geom.AffineTransform</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/java/awt/geom/package-summary.html">java.awt.geom</a></div>
+<h1>Class&nbsp;AffineTransform</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> AffineTransform <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable, java.lang.Cloneable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="TYPE_FLIP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TYPE_FLIP = 64</div>
+</div>
+</li><li><div class="element" id="TYPE_GENERAL_ROTATION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TYPE_GENERAL_ROTATION = 16</div>
+</div>
+</li><li><div class="element" id="TYPE_GENERAL_SCALE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TYPE_GENERAL_SCALE = 4</div>
+</div>
+</li><li><div class="element" id="TYPE_GENERAL_TRANSFORM"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TYPE_GENERAL_TRANSFORM = 32</div>
+</div>
+</li><li><div class="element" id="TYPE_IDENTITY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TYPE_IDENTITY = 0</div>
+</div>
+</li><li><div class="element" id="TYPE_MASK_ROTATION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TYPE_MASK_ROTATION = 24</div>
+</div>
+</li><li><div class="element" id="TYPE_MASK_SCALE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TYPE_MASK_SCALE = 6</div>
+</div>
+</li><li><div class="element" id="TYPE_QUADRANT_ROTATION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TYPE_QUADRANT_ROTATION = 8</div>
+</div>
+</li><li><div class="element" id="TYPE_TRANSLATION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TYPE_TRANSLATION = 1</div>
+</div>
+</li><li><div class="element" id="TYPE_UNIFORM_SCALE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TYPE_UNIFORM_SCALE = 2</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> AffineTransform()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(float,float,float,float,float,float)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@ConstructorProperties({"scaleX", "shearY", "shearX", "scaleY", "translateX", "translateY"})</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> AffineTransform(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter"><span class="keyword">float</span> arg2</span>, <span class="parameter"><span class="keyword">float</span> arg3</span>, <span class="parameter"><span class="keyword">float</span> arg4</span>, <span class="parameter"><span class="keyword">float</span> arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(double,double,double,double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> AffineTransform(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span>, <span class="parameter"><span class="keyword">double</span> arg3</span>, <span class="parameter"><span class="keyword">double</span> arg4</span>, <span class="parameter"><span class="keyword">double</span> arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(float[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> AffineTransform(<span class="parameters"><span class="parameter"><span><span class="keyword">float</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(double[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> AffineTransform(<span class="parameters"><span class="parameter"><span><span class="keyword">double</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(AffineTransform)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> AffineTransform(<span class="parameters"><span class="parameter">java.awt.geom.AffineTransform arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="clone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object clone()</div>
+</div>
+</li><li><div class="element" id="concatenate(AffineTransform)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> concatenate(<span class="parameters"><span class="parameter">java.awt.geom.AffineTransform arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createInverse()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.geom.AffineTransform createInverse() <span class="throws"><span class="keyword">throws</span> java.awt.geom.NoninvertibleTransformException</span></div>
+</div>
+</li><li><div class="element" id="createTransformedShape(Shape)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Shape createTransformedShape(<span class="parameters"><span class="parameter">java.awt.Shape arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="deltaTransform(double[],int,double[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> deltaTransform(<span class="parameters"><span class="parameter"><span><span class="keyword">double</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span><span class="keyword">double</span>[]</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="deltaTransform(Point2D,Point2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.geom.Point2D deltaTransform(<span class="parameters"><span class="parameter">java.awt.geom.Point2D arg0</span>, <span class="parameter">java.awt.geom.Point2D arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDeterminant()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">double</span> getDeterminant()</div>
+</div>
+</li><li><div class="element" id="getMatrix(double[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> getMatrix(<span class="parameters"><span class="parameter"><span><span class="keyword">double</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getQuadrantRotateInstance(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.geom.AffineTransform getQuadrantRotateInstance(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getQuadrantRotateInstance(int,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.geom.AffineTransform getQuadrantRotateInstance(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getRotateInstance(double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.geom.AffineTransform getRotateInstance(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getRotateInstance(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.geom.AffineTransform getRotateInstance(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getRotateInstance(double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.geom.AffineTransform getRotateInstance(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getRotateInstance(double,double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.geom.AffineTransform getRotateInstance(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span>, <span class="parameter"><span class="keyword">double</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="getScaleInstance(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.geom.AffineTransform getScaleInstance(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getScaleX()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">double</span> getScaleX()</div>
+</div>
+</li><li><div class="element" id="getScaleY()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">double</span> getScaleY()</div>
+</div>
+</li><li><div class="element" id="getShearInstance(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.geom.AffineTransform getShearInstance(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getShearX()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">double</span> getShearX()</div>
+</div>
+</li><li><div class="element" id="getShearY()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">double</span> getShearY()</div>
+</div>
+</li><li><div class="element" id="getTranslateInstance(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.geom.AffineTransform getTranslateInstance(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getTranslateX()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">double</span> getTranslateX()</div>
+</div>
+</li><li><div class="element" id="getTranslateY()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">double</span> getTranslateY()</div>
+</div>
+</li><li><div class="element" id="getType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getType()</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="inverseTransform(double[],int,double[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> inverseTransform(<span class="parameters"><span class="parameter"><span><span class="keyword">double</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span><span class="keyword">double</span>[]</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.geom.NoninvertibleTransformException</span></div>
+</div>
+</li><li><div class="element" id="inverseTransform(Point2D,Point2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.geom.Point2D inverseTransform(<span class="parameters"><span class="parameter">java.awt.geom.Point2D arg0</span>, <span class="parameter">java.awt.geom.Point2D arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.geom.NoninvertibleTransformException</span></div>
+</div>
+</li><li><div class="element" id="invert()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> invert() <span class="throws"><span class="keyword">throws</span> java.awt.geom.NoninvertibleTransformException</span></div>
+</div>
+</li><li><div class="element" id="isIdentity()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isIdentity()</div>
+</div>
+</li><li><div class="element" id="preConcatenate(AffineTransform)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> preConcatenate(<span class="parameters"><span class="parameter">java.awt.geom.AffineTransform arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="quadrantRotate(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> quadrantRotate(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="quadrantRotate(int,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> quadrantRotate(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="rotate(double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> rotate(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="rotate(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> rotate(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="rotate(double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> rotate(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="rotate(double,double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> rotate(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span>, <span class="parameter"><span class="keyword">double</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="scale(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> scale(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setToIdentity()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setToIdentity()</div>
+</div>
+</li><li><div class="element" id="setToQuadrantRotation(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setToQuadrantRotation(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setToQuadrantRotation(int,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setToQuadrantRotation(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="setToRotation(double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setToRotation(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setToRotation(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setToRotation(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setToRotation(double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setToRotation(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="setToRotation(double,double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setToRotation(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span>, <span class="parameter"><span class="keyword">double</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="setToScale(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setToScale(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setToShear(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setToShear(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setToTranslation(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setToTranslation(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setTransform(double,double,double,double,double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setTransform(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span>, <span class="parameter"><span class="keyword">double</span> arg2</span>, <span class="parameter"><span class="keyword">double</span> arg3</span>, <span class="parameter"><span class="keyword">double</span> arg4</span>, <span class="parameter"><span class="keyword">double</span> arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="setTransform(AffineTransform)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setTransform(<span class="parameters"><span class="parameter">java.awt.geom.AffineTransform arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="shear(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> shear(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li><li><div class="element" id="transform(float[],int,float[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> transform(<span class="parameters"><span class="parameter"><span><span class="keyword">float</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span><span class="keyword">float</span>[]</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="transform(float[],int,double[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> transform(<span class="parameters"><span class="parameter"><span><span class="keyword">float</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span><span class="keyword">double</span>[]</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="transform(double[],int,float[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> transform(<span class="parameters"><span class="parameter"><span><span class="keyword">double</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span><span class="keyword">float</span>[]</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="transform(double[],int,double[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> transform(<span class="parameters"><span class="parameter"><span><span class="keyword">double</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span><span class="keyword">double</span>[]</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="transform(Point2D[],int,Point2D[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> transform(<span class="parameters"><span class="parameter"><span>java.awt.geom.Point2D[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span>java.awt.geom.Point2D[]</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="transform(Point2D,Point2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.geom.Point2D transform(<span class="parameters"><span class="parameter">java.awt.geom.Point2D arg0</span>, <span class="parameter">java.awt.geom.Point2D arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="translate(double,double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> translate(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter"><span class="keyword">double</span> arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>1330973210523860834<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">double</span>&nbsp;m00</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">double</span>&nbsp;m01</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">double</span>&nbsp;m02</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">double</span>&nbsp;m10</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">double</span>&nbsp;m11</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">double</span>&nbsp;m12</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

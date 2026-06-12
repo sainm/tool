@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/java.awt.font.TextLayout</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/java/awt/font/package-summary.html">java.awt.font</a></div>
+<h1>Class&nbsp;TextLayout</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> TextLayout <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.lang.Cloneable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../java.desktop/java/awt/font/TextLayout.CaretPolicy.html">CaretPolicy</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="DEFAULT_CARET_POLICY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.awt.font.TextLayout.CaretPolicy DEFAULT_CARET_POLICY</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(String,Map,FontRenderContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> TextLayout(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>java.util.Map&lt;<span>? <span class="keyword">extends</span> java.text.AttributedCharacterIterator.Attribute</span>, ?&gt;</span> arg1</span>, <span class="parameter">java.awt.font.FontRenderContext arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,Font,FontRenderContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> TextLayout(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.awt.Font arg1</span>, <span class="parameter">java.awt.font.FontRenderContext arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(AttributedCharacterIterator,FontRenderContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> TextLayout(<span class="parameters"><span class="parameter">java.text.AttributedCharacterIterator arg0</span>, <span class="parameter">java.awt.font.FontRenderContext arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="clone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.Object clone()</div>
+</div>
+</li><li><div class="element" id="draw(Graphics2D,float,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> draw(<span class="parameters"><span class="parameter">java.awt.Graphics2D arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter"><span class="keyword">float</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="equals(TextLayout)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.awt.font.TextLayout arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAdvance()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getAdvance()</div>
+</div>
+</li><li><div class="element" id="getAscent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getAscent()</div>
+</div>
+</li><li><div class="element" id="getBaseline()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">byte</span> getBaseline()</div>
+</div>
+</li><li><div class="element" id="getBaselineOffsets()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span class="keyword">float</span>[]</span> getBaselineOffsets()</div>
+</div>
+</li><li><div class="element" id="getBlackBoxBounds(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Shape getBlackBoxBounds(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBounds()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.geom.Rectangle2D getBounds()</div>
+</div>
+</li><li><div class="element" id="getCaretInfo(TextHitInfo)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span class="keyword">float</span>[]</span> getCaretInfo(<span class="parameters"><span class="parameter">java.awt.font.TextHitInfo arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCaretInfo(TextHitInfo,Rectangle2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span class="keyword">float</span>[]</span> getCaretInfo(<span class="parameters"><span class="parameter">java.awt.font.TextHitInfo arg0</span>, <span class="parameter">java.awt.geom.Rectangle2D arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCaretShape(TextHitInfo)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Shape getCaretShape(<span class="parameters"><span class="parameter">java.awt.font.TextHitInfo arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCaretShape(TextHitInfo,Rectangle2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Shape getCaretShape(<span class="parameters"><span class="parameter">java.awt.font.TextHitInfo arg0</span>, <span class="parameter">java.awt.geom.Rectangle2D arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCaretShapes(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.Shape[]</span> getCaretShapes(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCaretShapes(int,Rectangle2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.Shape[]</span> getCaretShapes(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.awt.geom.Rectangle2D arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCaretShapes(int,Rectangle2D,CaretPolicy)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.Shape[]</span> getCaretShapes(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.awt.geom.Rectangle2D arg1</span>, <span class="parameter">java.awt.font.TextLayout.CaretPolicy arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCharacterCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getCharacterCount()</div>
+</div>
+</li><li><div class="element" id="getCharacterLevel(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">byte</span> getCharacterLevel(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDescent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getDescent()</div>
+</div>
+</li><li><div class="element" id="getJustifiedLayout(float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.TextLayout getJustifiedLayout(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLayoutPath()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.LayoutPath getLayoutPath()</div>
+</div>
+</li><li><div class="element" id="getLeading()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getLeading()</div>
+</div>
+</li><li><div class="element" id="getLogicalHighlightShape(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Shape getLogicalHighlightShape(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLogicalHighlightShape(int,int,Rectangle2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Shape getLogicalHighlightShape(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">java.awt.geom.Rectangle2D arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLogicalRangesForVisualSelection(TextHitInfo,TextHitInfo)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span class="keyword">int</span>[]</span> getLogicalRangesForVisualSelection(<span class="parameters"><span class="parameter">java.awt.font.TextHitInfo arg0</span>, <span class="parameter">java.awt.font.TextHitInfo arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getNextLeftHit(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.TextHitInfo getNextLeftHit(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getNextLeftHit(int,CaretPolicy)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.TextHitInfo getNextLeftHit(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.awt.font.TextLayout.CaretPolicy arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getNextLeftHit(TextHitInfo)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.TextHitInfo getNextLeftHit(<span class="parameters"><span class="parameter">java.awt.font.TextHitInfo arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getNextRightHit(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.TextHitInfo getNextRightHit(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getNextRightHit(int,CaretPolicy)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.TextHitInfo getNextRightHit(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.awt.font.TextLayout.CaretPolicy arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getNextRightHit(TextHitInfo)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.TextHitInfo getNextRightHit(<span class="parameters"><span class="parameter">java.awt.font.TextHitInfo arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getOutline(AffineTransform)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Shape getOutline(<span class="parameters"><span class="parameter">java.awt.geom.AffineTransform arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPixelBounds(FontRenderContext,float,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Rectangle getPixelBounds(<span class="parameters"><span class="parameter">java.awt.font.FontRenderContext arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter"><span class="keyword">float</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getVisibleAdvance()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getVisibleAdvance()</div>
+</div>
+</li><li><div class="element" id="getVisualHighlightShape(TextHitInfo,TextHitInfo)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Shape getVisualHighlightShape(<span class="parameters"><span class="parameter">java.awt.font.TextHitInfo arg0</span>, <span class="parameter">java.awt.font.TextHitInfo arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getVisualHighlightShape(TextHitInfo,TextHitInfo,Rectangle2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Shape getVisualHighlightShape(<span class="parameters"><span class="parameter">java.awt.font.TextHitInfo arg0</span>, <span class="parameter">java.awt.font.TextHitInfo arg1</span>, <span class="parameter">java.awt.geom.Rectangle2D arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getVisualOtherHit(TextHitInfo)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.TextHitInfo getVisualOtherHit(<span class="parameters"><span class="parameter">java.awt.font.TextHitInfo arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="handleJustify(float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> handleJustify(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="hitTestChar(float,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.TextHitInfo hitTestChar(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="hitTestChar(float,float,Rectangle2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.font.TextHitInfo hitTestChar(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter">java.awt.geom.Rectangle2D arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="hitToPoint(TextHitInfo,Point2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> hitToPoint(<span class="parameters"><span class="parameter">java.awt.font.TextHitInfo arg0</span>, <span class="parameter">java.awt.geom.Point2D arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isLeftToRight()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isLeftToRight()</div>
+</div>
+</li><li><div class="element" id="isVertical()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isVertical()</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

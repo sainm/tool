@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.JTable</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Class&nbsp;JTable</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="annotation">@JavaBean(defaultProperty="UI"description="A component which displays data in a two dimensional grid.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> JTable <div class="superclass"><span class="keyword">extends</span> javax.swing.JComponent</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.accessibility.Accessible, javax.swing.Scrollable, javax.swing.event.CellEditorListener, javax.swing.event.ListSelectionListener, javax.swing.event.RowSorterListener, javax.swing.event.TableColumnModelListener, javax.swing.event.TableModelListener</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JTable.AccessibleJTable.html">AccessibleJTable</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JTable.DropLocation.html">DropLocation</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JTable.PrintMode.html">PrintMode</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="AUTO_RESIZE_ALL_COLUMNS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> AUTO_RESIZE_ALL_COLUMNS = 4</div>
+</div>
+</li><li><div class="element" id="AUTO_RESIZE_LAST_COLUMN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> AUTO_RESIZE_LAST_COLUMN = 3</div>
+</div>
+</li><li><div class="element" id="AUTO_RESIZE_NEXT_COLUMN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> AUTO_RESIZE_NEXT_COLUMN = 1</div>
+</div>
+</li><li><div class="element" id="AUTO_RESIZE_OFF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> AUTO_RESIZE_OFF = 0</div>
+</div>
+</li><li><div class="element" id="AUTO_RESIZE_SUBSEQUENT_COLUMNS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> AUTO_RESIZE_SUBSEQUENT_COLUMNS = 2</div>
+</div>
+</li><li><div class="element" id="autoCreateColumnsFromModel"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> autoCreateColumnsFromModel</div>
+</div>
+</li><li><div class="element" id="autoResizeMode"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> autoResizeMode</div>
+</div>
+</li><li><div class="element" id="cellEditor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.table.TableCellEditor cellEditor</div>
+</div>
+</li><li><div class="element" id="cellSelectionEnabled"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> cellSelectionEnabled</div>
+</div>
+</li><li><div class="element" id="columnModel"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.table.TableColumnModel columnModel</div>
+</div>
+</li><li><div class="element" id="dataModel"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.table.TableModel dataModel</div>
+</div>
+</li><li><div class="element" id="defaultEditorsByColumnClass"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> <span>java.util.Hashtable&lt;java.lang.Object, java.lang.Object&gt;</span> defaultEditorsByColumnClass</div>
+</div>
+</li><li><div class="element" id="defaultRenderersByColumnClass"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> <span>java.util.Hashtable&lt;java.lang.Object, java.lang.Object&gt;</span> defaultRenderersByColumnClass</div>
+</div>
+</li><li><div class="element" id="editingColumn"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> <span class="keyword">int</span> editingColumn</div>
+</div>
+</li><li><div class="element" id="editingRow"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> <span class="keyword">int</span> editingRow</div>
+</div>
+</li><li><div class="element" id="editorComp"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> java.awt.Component editorComp</div>
+</div>
+</li><li><div class="element" id="gridColor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Color gridColor</div>
+</div>
+</li><li><div class="element" id="preferredViewportSize"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Dimension preferredViewportSize</div>
+</div>
+</li><li><div class="element" id="rowHeight"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> rowHeight</div>
+</div>
+</li><li><div class="element" id="rowMargin"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> rowMargin</div>
+</div>
+</li><li><div class="element" id="rowSelectionAllowed"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> rowSelectionAllowed</div>
+</div>
+</li><li><div class="element" id="selectionBackground"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Color selectionBackground</div>
+</div>
+</li><li><div class="element" id="selectionForeground"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Color selectionForeground</div>
+</div>
+</li><li><div class="element" id="selectionModel"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.ListSelectionModel selectionModel</div>
+</div>
+</li><li><div class="element" id="showHorizontalLines"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> showHorizontalLines</div>
+</div>
+</li><li><div class="element" id="showVerticalLines"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> showVerticalLines</div>
+</div>
+</li><li><div class="element" id="tableHeader"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.table.JTableHeader tableHeader</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JTable()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JTable(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Object[][],Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JTable(<span class="parameters"><span class="parameter"><span><span>java.lang.Object[]</span>[]</span> arg0</span>, <span class="parameter"><span>java.lang.Object[]</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Vector,Vector)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JTable(<span class="parameters"><span class="parameter"><span>java.util.Vector&lt;<span>? <span class="keyword">extends</span> java.util.Vector</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.Vector&lt;?&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(TableModel)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JTable(<span class="parameters"><span class="parameter">javax.swing.table.TableModel arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(TableModel,TableColumnModel)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JTable(<span class="parameters"><span class="parameter">javax.swing.table.TableModel arg0</span>, <span class="parameter">javax.swing.table.TableColumnModel arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(TableModel,TableColumnModel,ListSelectionModel)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JTable(<span class="parameters"><span class="parameter">javax.swing.table.TableModel arg0</span>, <span class="parameter">javax.swing.table.TableColumnModel arg1</span>, <span class="parameter">javax.swing.ListSelectionModel arg2</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addColumn(TableColumn)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addColumn(<span class="parameters"><span class="parameter">javax.swing.table.TableColumn arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addColumnSelectionInterval(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addColumnSelectionInterval(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="addNotify()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addNotify()</div>
+</div>
+</li><li><div class="element" id="addRowSelectionInterval(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addRowSelectionInterval(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="changeSelection(int,int,boolean,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> changeSelection(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="clearSelection()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> clearSelection()</div>
+</div>
+</li><li><div class="element" id="columnAdded(TableColumnModelEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> columnAdded(<span class="parameters"><span class="parameter">javax.swing.event.TableColumnModelEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="columnAtPoint(Point)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> columnAtPoint(<span class="parameters"><span class="parameter">java.awt.Point arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="columnMarginChanged(ChangeEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> columnMarginChanged(<span class="parameters"><span class="parameter">javax.swing.event.ChangeEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="columnMoved(TableColumnModelEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> columnMoved(<span class="parameters"><span class="parameter">javax.swing.event.TableColumnModelEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="columnRemoved(TableColumnModelEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> columnRemoved(<span class="parameters"><span class="parameter">javax.swing.event.TableColumnModelEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="columnSelectionChanged(ListSelectionEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> columnSelectionChanged(<span class="parameters"><span class="parameter">javax.swing.event.ListSelectionEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="configureEnclosingScrollPane()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> configureEnclosingScrollPane()</div>
+</div>
+</li><li><div class="element" id="convertColumnIndexToModel(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> convertColumnIndexToModel(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="convertColumnIndexToView(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> convertColumnIndexToView(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="convertRowIndexToModel(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> convertRowIndexToModel(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="convertRowIndexToView(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> convertRowIndexToView(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createDefaultColumnModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.table.TableColumnModel createDefaultColumnModel()</div>
+</div>
+</li><li><div class="element" id="createDefaultColumnsFromModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> createDefaultColumnsFromModel()</div>
+</div>
+</li><li><div class="element" id="createDefaultDataModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.table.TableModel createDefaultDataModel()</div>
+</div>
+</li><li><div class="element" id="createDefaultEditors()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> createDefaultEditors()</div>
+</div>
+</li><li><div class="element" id="createDefaultRenderers()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> createDefaultRenderers()</div>
+</div>
+</li><li><div class="element" id="createDefaultSelectionModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.ListSelectionModel createDefaultSelectionModel()</div>
+</div>
+</li><li><div class="element" id="createDefaultTableHeader()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.table.JTableHeader createDefaultTableHeader()</div>
+</div>
+</li><li><div class="element" id="createScrollPaneForTable(JTable)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.JScrollPane createScrollPaneForTable(<span class="parameters"><span class="parameter">javax.swing.JTable arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="doLayout()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> doLayout()</div>
+</div>
+</li><li><div class="element" id="editCellAt(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> editCellAt(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="editCellAt(int,int,EventObject)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> editCellAt(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">java.util.EventObject arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="editingCanceled(ChangeEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> editingCanceled(<span class="parameters"><span class="parameter">javax.swing.event.ChangeEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="editingStopped(ChangeEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> editingStopped(<span class="parameters"><span class="parameter">javax.swing.event.ChangeEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAccessibleContext()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.accessibility.AccessibleContext getAccessibleContext()</div>
+</div>
+</li><li><div class="element" id="getAutoCreateColumnsFromModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getAutoCreateColumnsFromModel()</div>
+</div>
+</li><li><div class="element" id="getAutoCreateRowSorter()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getAutoCreateRowSorter()</div>
+</div>
+</li><li><div class="element" id="getAutoResizeMode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getAutoResizeMode()</div>
+</div>
+</li><li><div class="element" id="getCellEditor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.table.TableCellEditor getCellEditor()</div>
+</div>
+</li><li><div class="element" id="getCellEditor(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.table.TableCellEditor getCellEditor(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCellRect(int,int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Rectangle getCellRect(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCellRenderer(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.table.TableCellRenderer getCellRenderer(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCellSelectionEnabled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getCellSelectionEnabled()</div>
+</div>
+</li><li><div class="element" id="getColumn(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.table.TableColumn getColumn(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getColumnClass(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> getColumnClass(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getColumnCount()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getColumnCount()</div>
+</div>
+</li><li><div class="element" id="getColumnModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.table.TableColumnModel getColumnModel()</div>
+</div>
+</li><li><div class="element" id="getColumnName(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getColumnName(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getColumnSelectionAllowed()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getColumnSelectionAllowed()</div>
+</div>
+</li><li><div class="element" id="getDefaultEditor(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.table.TableCellEditor getDefaultEditor(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDefaultRenderer(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.table.TableCellRenderer getDefaultRenderer(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDragEnabled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getDragEnabled()</div>
+</div>
+</li><li><div class="element" id="getDropLocation()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> javax.swing.JTable.DropLocation getDropLocation()</div>
+</div>
+</li><li><div class="element" id="getDropMode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> javax.swing.DropMode getDropMode()</div>
+</div>
+</li><li><div class="element" id="getEditingColumn()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getEditingColumn()</div>
+</div>
+</li><li><div class="element" id="getEditingRow()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getEditingRow()</div>
+</div>
+</li><li><div class="element" id="getEditorComponent()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getEditorComponent()</div>
+</div>
+</li><li><div class="element" id="getFillsViewportHeight()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getFillsViewportHeight()</div>
+</div>
+</li><li><div class="element" id="getGridColor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getGridColor()</div>
+</div>
+</li><li><div class="element" id="getIntercellSpacing()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getIntercellSpacing()</div>
+</div>
+</li><li><div class="element" id="getModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.table.TableModel getModel()</div>
+</div>
+</li><li><div class="element" id="getPreferredScrollableViewportSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getPreferredScrollableViewportSize()</div>
+</div>
+</li><li><div class="element" id="getPrintable(PrintMode,MessageFormat,MessageFormat)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.print.Printable getPrintable(<span class="parameters"><span class="parameter">javax.swing.JTable.PrintMode arg0</span>, <span class="parameter">java.text.MessageFormat arg1</span>, <span class="parameter">java.text.MessageFormat arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getRowCount()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getRowCount()</div>
+</div>
+</li><li><div class="element" id="getRowHeight()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getRowHeight()</div>
+</div>
+</li><li><div class="element" id="getRowHeight(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getRowHeight(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getRowMargin()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getRowMargin()</div>
+</div>
+</li><li><div class="element" id="getRowSelectionAllowed()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getRowSelectionAllowed()</div>
+</div>
+</li><li><div class="element" id="getRowSorter()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.RowSorter&lt;<span>? <span class="keyword">extends</span> javax.swing.table.TableModel</span>&gt;</span> getRowSorter()</div>
+</div>
+</li><li><div class="element" id="getScrollableBlockIncrement(Rectangle,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getScrollableBlockIncrement(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getScrollableTracksViewportHeight()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getScrollableTracksViewportHeight()</div>
+</div>
+</li><li><div class="element" id="getScrollableTracksViewportWidth()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getScrollableTracksViewportWidth()</div>
+</div>
+</li><li><div class="element" id="getScrollableUnitIncrement(Rectangle,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getScrollableUnitIncrement(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getSelectedColumn()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getSelectedColumn()</div>
+</div>
+</li><li><div class="element" id="getSelectedColumnCount()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getSelectedColumnCount()</div>
+</div>
+</li><li><div class="element" id="getSelectedColumns()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span><span class="keyword">int</span>[]</span> getSelectedColumns()</div>
+</div>
+</li><li><div class="element" id="getSelectedRow()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getSelectedRow()</div>
+</div>
+</li><li><div class="element" id="getSelectedRowCount()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getSelectedRowCount()</div>
+</div>
+</li><li><div class="element" id="getSelectedRows()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span><span class="keyword">int</span>[]</span> getSelectedRows()</div>
+</div>
+</li><li><div class="element" id="getSelectionBackground()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getSelectionBackground()</div>
+</div>
+</li><li><div class="element" id="getSelectionForeground()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getSelectionForeground()</div>
+</div>
+</li><li><div class="element" id="getSelectionModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.ListSelectionModel getSelectionModel()</div>
+</div>
+</li><li><div class="element" id="getShowHorizontalLines()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getShowHorizontalLines()</div>
+</div>
+</li><li><div class="element" id="getShowVerticalLines()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getShowVerticalLines()</div>
+</div>
+</li><li><div class="element" id="getSurrendersFocusOnKeystroke()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getSurrendersFocusOnKeystroke()</div>
+</div>
+</li><li><div class="element" id="getTableHeader()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.table.JTableHeader getTableHeader()</div>
+</div>
+</li><li><div class="element" id="getToolTipText(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getToolTipText(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.plaf.TableUI getUI()</div>
+</div>
+</li><li><div class="element" id="getUIClassID()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.lang.String getUIClassID()</div>
+</div>
+</li><li><div class="element" id="getUpdateSelectionOnSort()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getUpdateSelectionOnSort()</div>
+</div>
+</li><li><div class="element" id="getValueAt(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getValueAt(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="initializeLocalVars()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> initializeLocalVars()</div>
+</div>
+</li><li><div class="element" id="isCellEditable(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isCellEditable(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isCellSelected(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isCellSelected(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isColumnSelected(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isColumnSelected(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isEditing()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isEditing()</div>
+</div>
+</li><li><div class="element" id="isRowSelected(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isRowSelected(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="moveColumn(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> moveColumn(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String paramString()</div>
+</div>
+</li><li><div class="element" id="prepareEditor(TableCellEditor,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component prepareEditor(<span class="parameters"><span class="parameter">javax.swing.table.TableCellEditor arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="prepareRenderer(TableCellRenderer,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component prepareRenderer(<span class="parameters"><span class="parameter">javax.swing.table.TableCellRenderer arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="print()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> print() <span class="throws"><span class="keyword">throws</span> java.awt.print.PrinterException</span></div>
+</div>
+</li><li><div class="element" id="print(PrintMode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> print(<span class="parameters"><span class="parameter">javax.swing.JTable.PrintMode arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.print.PrinterException</span></div>
+</div>
+</li><li><div class="element" id="print(PrintMode,MessageFormat,MessageFormat)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> print(<span class="parameters"><span class="parameter">javax.swing.JTable.PrintMode arg0</span>, <span class="parameter">java.text.MessageFormat arg1</span>, <span class="parameter">java.text.MessageFormat arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.print.PrinterException</span></div>
+</div>
+</li><li><div class="element" id="print(PrintMode,MessageFormat,MessageFormat,boolean,PrintRequestAttributeSet,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> print(<span class="parameters"><span class="parameter">javax.swing.JTable.PrintMode arg0</span>, <span class="parameter">java.text.MessageFormat arg1</span>, <span class="parameter">java.text.MessageFormat arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span>, <span class="parameter">javax.print.attribute.PrintRequestAttributeSet arg4</span>, <span class="parameter"><span class="keyword">boolean</span> arg5</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException, java.awt.print.PrinterException</span></div>
+</div>
+</li><li><div class="element" id="print(PrintMode,MessageFormat,MessageFormat,boolean,PrintRequestAttributeSet,boolean,PrintService)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> print(<span class="parameters"><span class="parameter">javax.swing.JTable.PrintMode arg0</span>, <span class="parameter">java.text.MessageFormat arg1</span>, <span class="parameter">java.text.MessageFormat arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span>, <span class="parameter">javax.print.attribute.PrintRequestAttributeSet arg4</span>, <span class="parameter"><span class="keyword">boolean</span> arg5</span>, <span class="parameter">javax.print.PrintService arg6</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException, java.awt.print.PrinterException</span></div>
+</div>
+</li><li><div class="element" id="processKeyBinding(KeyStroke,KeyEvent,int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> processKeyBinding(<span class="parameters"><span class="parameter">javax.swing.KeyStroke arg0</span>, <span class="parameter">java.awt.event.KeyEvent arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeColumn(TableColumn)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeColumn(<span class="parameters"><span class="parameter">javax.swing.table.TableColumn arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeColumnSelectionInterval(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeColumnSelectionInterval(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeEditor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeEditor()</div>
+</div>
+</li><li><div class="element" id="removeNotify()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeNotify()</div>
+</div>
+</li><li><div class="element" id="removeRowSelectionInterval(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeRowSelectionInterval(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="resizeAndRepaint()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> resizeAndRepaint()</div>
+</div>
+</li><li><div class="element" id="rowAtPoint(Point)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> rowAtPoint(<span class="parameters"><span class="parameter">java.awt.Point arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="selectAll()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> selectAll()</div>
+</div>
+</li><li><div class="element" id="setAutoCreateColumnsFromModel(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="Automatically populates the columnModel when a new TableModel is submitted.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAutoCreateColumnsFromModel(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setAutoCreateRowSorter(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="Whether or not to turn on sorting by default.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAutoCreateRowSorter(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setAutoResizeMode(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(enumerationValues={"JTable.AUTO_RESIZE_OFF", "JTable.AUTO_RESIZE_NEXT_COLUMN", "JTable.AUTO_RESIZE_SUBSEQUENT_COLUMNS", "JTable.AUTO_RESIZE_LAST_COLUMN", "JTable.AUTO_RESIZE_ALL_COLUMNS"}description="Whether the columns should adjust themselves automatically.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAutoResizeMode(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setCellEditor(TableCellEditor)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The table\'s active cell editor.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCellEditor(<span class="parameters"><span class="parameter">javax.swing.table.TableCellEditor arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setCellSelectionEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="Select a rectangular region of cells rather than rows or columns.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCellSelectionEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setColumnModel(TableColumnModel)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The object governing the way columns appear in the view.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setColumnModel(<span class="parameters"><span class="parameter">javax.swing.table.TableColumnModel arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setColumnSelectionAllowed(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="If true, an entire column is selected for each selected cell.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setColumnSelectionAllowed(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setColumnSelectionInterval(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setColumnSelectionInterval(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDefaultEditor(Class,TableCellEditor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDefaultEditor(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">javax.swing.table.TableCellEditor arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDefaultRenderer(Class,TableCellRenderer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDefaultRenderer(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter">javax.swing.table.TableCellRenderer arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDragEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="determines whether automatic drag handling is enabled")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDragEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDropMode(DropMode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setDropMode(<span class="parameters"><span class="parameter">javax.swing.DropMode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEditingColumn(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setEditingColumn(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEditingRow(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setEditingRow(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFillsViewportHeight(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="Whether or not this table is always made large enough to fill the height of an enclosing viewport")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFillsViewportHeight(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setGridColor(Color)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The grid color.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setGridColor(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setIntercellSpacing(Dimension)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="The spacing between the cells, drawn in the background color of the JTable.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setIntercellSpacing(<span class="parameters"><span class="parameter">java.awt.Dimension arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setModel(TableModel)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The model that is the source of the data for this view.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setModel(<span class="parameters"><span class="parameter">javax.swing.table.TableModel arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setPreferredScrollableViewportSize(Dimension)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="The preferred size of the viewport.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setPreferredScrollableViewportSize(<span class="parameters"><span class="parameter">java.awt.Dimension arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRowHeight(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The height of the specified row.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRowHeight(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRowHeight(int,int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The height in pixels of the cells in &lt;code&gt;row&lt;/code&gt;")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRowHeight(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRowMargin(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The amount of space between cells.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRowMargin(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRowSelectionAllowed(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(visualUpdate=truedescription="If true, an entire row is selected for each selected cell.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRowSelectionAllowed(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRowSelectionInterval(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRowSelectionInterval(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRowSorter(RowSorter)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The table\'s RowSorter")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRowSorter(<span class="parameters"><span class="parameter"><span>javax.swing.RowSorter&lt;<span>? <span class="keyword">extends</span> javax.swing.table.TableModel</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionBackground(Color)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="A default background color for selected cells.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectionBackground(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionForeground(Color)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="A default foreground color for selected cells.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectionForeground(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionMode(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(enumerationValues={"ListSelectionModel.SINGLE_SELECTION", "ListSelectionModel.SINGLE_INTERVAL_SELECTION", "ListSelectionModel.MULTIPLE_INTERVAL_SELECTION"}description="The selection mode used by the row and column selection models.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectionMode(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionModel(ListSelectionModel)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The selection model for rows.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectionModel(<span class="parameters"><span class="parameter">javax.swing.ListSelectionModel arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setShowGrid(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The color used to draw the grid lines.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setShowGrid(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setShowHorizontalLines(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="Whether horizontal lines should be drawn in between the cells.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setShowHorizontalLines(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setShowVerticalLines(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="Whether vertical lines should be drawn in between the cells.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setShowVerticalLines(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSurrendersFocusOnKeystroke(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSurrendersFocusOnKeystroke(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setTableHeader(JTableHeader)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The JTableHeader instance which renders the column headers.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setTableHeader(<span class="parameters"><span class="parameter">javax.swing.table.JTableHeader arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setUI(TableUI)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(hidden=truevisualUpdate=truedescription="The UI object that implements the Component\'s LookAndFeel.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setUI(<span class="parameters"><span class="parameter">javax.swing.plaf.TableUI arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setUpdateSelectionOnSort(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=truedescription="Whether or not to update the selection on sorting")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setUpdateSelectionOnSort(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setValueAt(Object,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setValueAt(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="sizeColumnsToFit(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> sizeColumnsToFit(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="sizeColumnsToFit(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> sizeColumnsToFit(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="sorterChanged(RowSorterEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> sorterChanged(<span class="parameters"><span class="parameter">javax.swing.event.RowSorterEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="tableChanged(TableModelEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> tableChanged(<span class="parameters"><span class="parameter">javax.swing.event.TableModelEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="unconfigureEnclosingScrollPane()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> unconfigureEnclosingScrollPane()</div>
+</div>
+</li><li><div class="element" id="updateUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> updateUI()</div>
+</div>
+</li><li><div class="element" id="valueChanged(ListSelectionEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> valueChanged(<span class="parameters"><span class="parameter">javax.swing.event.ListSelectionEvent arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>1367169393251577433<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;autoCreateColumnsFromModel</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;autoCreateRowSorter</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;autoResizeMode</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;cellSelectionEnabled</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.table.TableColumnModel&nbsp;columnModel</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;columnSelectionAdjusting</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.table.TableModel&nbsp;dataModel</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;dragEnabled</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.DropMode&nbsp;dropMode</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.beans.PropertyChangeListener&nbsp;editorRemover</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;fillsViewportHeight</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;gridColor</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;ignoreSortChange</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;isRowHeightSet</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Dimension&nbsp;preferredViewportSize</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.lang.Throwable&nbsp;printError</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;rowHeight</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;rowMargin</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.SizeSequence&nbsp;rowModel</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;rowSelectionAdjusting</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;rowSelectionAllowed</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;selectionBackground</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;selectionForeground</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.ListSelectionModel&nbsp;selectionModel</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;showHorizontalLines</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;showVerticalLines</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;sorterChanged</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;surrendersFocusOnKeystroke</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.table.JTableHeader&nbsp;tableHeader</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;updateSelectionOnSort</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

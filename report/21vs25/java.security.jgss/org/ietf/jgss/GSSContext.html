@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.security.jgss/org.ietf.jgss.GSSContext</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.security.jgss/module-summary.html">java.security.jgss</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.security.jgss/org/ietf/jgss/package-summary.html">org.ietf.jgss</a></div>
+<h1>Interface&nbsp;GSSContext</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> GSSContext </div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="DEFAULT_LIFETIME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> DEFAULT_LIFETIME = 0</div>
+</div>
+</li><li><div class="element" id="INDEFINITE_LIFETIME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> INDEFINITE_LIFETIME = 2147483647</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="acceptSecContext(byte[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span><span class="keyword">byte</span>[]</span> acceptSecContext(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="acceptSecContext(InputStream,OutputStream)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="11")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> acceptSecContext(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span>, <span class="parameter">java.io.OutputStream arg1</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="dispose()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> dispose() <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="export()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span><span class="keyword">byte</span>[]</span> export() <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="getAnonymityState()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> getAnonymityState()</div>
+</div>
+</li><li><div class="element" id="getConfState()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> getConfState()</div>
+</div>
+</li><li><div class="element" id="getCredDelegState()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> getCredDelegState()</div>
+</div>
+</li><li><div class="element" id="getDelegCred()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> org.ietf.jgss.GSSCredential getDelegCred() <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="getIntegState()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> getIntegState()</div>
+</div>
+</li><li><div class="element" id="getLifetime()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getLifetime()</div>
+</div>
+</li><li><div class="element" id="getMIC(byte[],int,int,MessageProp)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span><span class="keyword">byte</span>[]</span> getMIC(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">org.ietf.jgss.MessageProp arg3</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="getMIC(InputStream,OutputStream,MessageProp)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="11")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> getMIC(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span>, <span class="parameter">java.io.OutputStream arg1</span>, <span class="parameter">org.ietf.jgss.MessageProp arg2</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="getMech()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> org.ietf.jgss.Oid getMech() <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="getMutualAuthState()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> getMutualAuthState()</div>
+</div>
+</li><li><div class="element" id="getReplayDetState()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> getReplayDetState()</div>
+</div>
+</li><li><div class="element" id="getSequenceDetState()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> getSequenceDetState()</div>
+</div>
+</li><li><div class="element" id="getSrcName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> org.ietf.jgss.GSSName getSrcName() <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="getTargName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> org.ietf.jgss.GSSName getTargName() <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="getWrapSizeLimit(int,boolean,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getWrapSizeLimit(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="initSecContext(byte[],int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span><span class="keyword">byte</span>[]</span> initSecContext(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="initSecContext(InputStream,OutputStream)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="11")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> initSecContext(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span>, <span class="parameter">java.io.OutputStream arg1</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="isEstablished()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isEstablished()</div>
+</div>
+</li><li><div class="element" id="isInitiator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isInitiator() <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="isProtReady()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isProtReady()</div>
+</div>
+</li><li><div class="element" id="isTransferable()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isTransferable() <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="requestAnonymity(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> requestAnonymity(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="requestConf(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> requestConf(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="requestCredDeleg(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> requestCredDeleg(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="requestInteg(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> requestInteg(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="requestLifetime(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> requestLifetime(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="requestMutualAuth(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> requestMutualAuth(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="requestReplayDet(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> requestReplayDet(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="requestSequenceDet(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> requestSequenceDet(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="setChannelBinding(ChannelBinding)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setChannelBinding(<span class="parameters"><span class="parameter">org.ietf.jgss.ChannelBinding arg0</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="unwrap(byte[],int,int,MessageProp)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span><span class="keyword">byte</span>[]</span> unwrap(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">org.ietf.jgss.MessageProp arg3</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="unwrap(InputStream,OutputStream,MessageProp)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="11")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> unwrap(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span>, <span class="parameter">java.io.OutputStream arg1</span>, <span class="parameter">org.ietf.jgss.MessageProp arg2</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="verifyMIC(byte[],int,int,byte[],int,int,MessageProp)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> verifyMIC(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span><span class="keyword">byte</span>[]</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter">org.ietf.jgss.MessageProp arg6</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="verifyMIC(InputStream,InputStream,MessageProp)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="11")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> verifyMIC(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span>, <span class="parameter">java.io.InputStream arg1</span>, <span class="parameter">org.ietf.jgss.MessageProp arg2</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="wrap(byte[],int,int,MessageProp)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span><span class="keyword">byte</span>[]</span> wrap(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">org.ietf.jgss.MessageProp arg3</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li><li><div class="element" id="wrap(InputStream,OutputStream,MessageProp)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="11")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> wrap(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span>, <span class="parameter">java.io.OutputStream arg1</span>, <span class="parameter">org.ietf.jgss.MessageProp arg2</span></span>) <span class="throws"><span class="keyword">throws</span> org.ietf.jgss.GSSException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

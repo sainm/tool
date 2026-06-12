@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface java.rmi/java.rmi.server.RemoteRef</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.rmi/module-summary.html">java.rmi</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.rmi/java/rmi/server/package-summary.html">java.rmi.server</a></div>
+<h1>Interface&nbsp;RemoteRef</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> RemoteRef <div class="superinterfaces"><span class="keyword">extends</span> java.io.Externalizable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="packagePrefix"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String packagePrefix = "sun.rmi.server"</div>
+</div>
+</li><li><div class="element" id="serialVersionUID"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">long</span> serialVersionUID = 3632638527362204081</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="done(RemoteCall)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> done(<span class="parameters"><span class="parameter">java.rmi.server.RemoteCall arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.rmi.RemoteException</span></div>
+</div>
+</li><li><div class="element" id="getRefClass(ObjectOutput)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getRefClass(<span class="parameters"><span class="parameter">java.io.ObjectOutput arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="invoke(Remote,Method,Object[],long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.Object invoke(<span class="parameters"><span class="parameter">java.rmi.Remote arg0</span>, <span class="parameter">java.lang.reflect.Method arg1</span>, <span class="parameter"><span>java.lang.Object[]</span> arg2</span>, <span class="parameter"><span class="keyword">long</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.Exception</span></div>
+</div>
+</li><li><div class="element" id="invoke(RemoteCall)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> invoke(<span class="parameters"><span class="parameter">java.rmi.server.RemoteCall arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.Exception</span></div>
+</div>
+</li><li><div class="element" id="newCall(RemoteObject,Operation[],int,long)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.rmi.server.RemoteCall newCall(<span class="parameters"><span class="parameter">java.rmi.server.RemoteObject arg0</span>, <span class="parameter"><span>java.rmi.server.Operation[]</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">long</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.rmi.RemoteException</span></div>
+</div>
+</li><li><div class="element" id="remoteEquals(RemoteRef)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> remoteEquals(<span class="parameters"><span class="parameter">java.rmi.server.RemoteRef arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="remoteHashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> remoteHashCode()</div>
+</div>
+</li><li><div class="element" id="remoteToString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String remoteToString()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>3632638527362204081<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readExternal"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> readExternal(<span class="parameters"><span class="parameter">java.io.ObjectInput arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeExternal"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> writeExternal(<span class="parameters"><span class="parameter">java.io.ObjectOutput arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

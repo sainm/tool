@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: enum java.base/java.time.temporal.ChronoUnit</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/time/temporal/package-summary.html">java.time.temporal</a></div>
+<h1>Enum&nbsp;ChronoUnit</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">enum</span> ChronoUnit <div class="superclass"><span class="keyword">extends</span> <span>java.lang.Enum&lt;java.time.temporal.ChronoUnit&gt;</span></div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.time.temporal.TemporalUnit</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Enum Constants</h2>
+<ul><li><div class="element" id="CENTURIES"><span class="same">&equals;</span><div class="signature">CENTURIES</div>
+</div>
+</li><li><div class="element" id="DAYS"><span class="same">&equals;</span><div class="signature">DAYS</div>
+</div>
+</li><li><div class="element" id="DECADES"><span class="same">&equals;</span><div class="signature">DECADES</div>
+</div>
+</li><li><div class="element" id="ERAS"><span class="same">&equals;</span><div class="signature">ERAS</div>
+</div>
+</li><li><div class="element" id="FOREVER"><span class="same">&equals;</span><div class="signature">FOREVER</div>
+</div>
+</li><li><div class="element" id="HALF_DAYS"><span class="same">&equals;</span><div class="signature">HALF_DAYS</div>
+</div>
+</li><li><div class="element" id="HOURS"><span class="same">&equals;</span><div class="signature">HOURS</div>
+</div>
+</li><li><div class="element" id="MICROS"><span class="same">&equals;</span><div class="signature">MICROS</div>
+</div>
+</li><li><div class="element" id="MILLENNIA"><span class="same">&equals;</span><div class="signature">MILLENNIA</div>
+</div>
+</li><li><div class="element" id="MILLIS"><span class="same">&equals;</span><div class="signature">MILLIS</div>
+</div>
+</li><li><div class="element" id="MINUTES"><span class="same">&equals;</span><div class="signature">MINUTES</div>
+</div>
+</li><li><div class="element" id="MONTHS"><span class="same">&equals;</span><div class="signature">MONTHS</div>
+</div>
+</li><li><div class="element" id="NANOS"><span class="same">&equals;</span><div class="signature">NANOS</div>
+</div>
+</li><li><div class="element" id="SECONDS"><span class="same">&equals;</span><div class="signature">SECONDS</div>
+</div>
+</li><li><div class="element" id="WEEKS"><span class="same">&equals;</span><div class="signature">WEEKS</div>
+</div>
+</li><li><div class="element" id="YEARS"><span class="same">&equals;</span><div class="signature">YEARS</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addTo(R,long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>R</span>&gt;</span> R addTo(<span class="parameters"><span class="parameter">R arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="between(Temporal,Temporal)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> between(<span class="parameters"><span class="parameter">java.time.temporal.Temporal arg0</span>, <span class="parameter">java.time.temporal.Temporal arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDuration()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.Duration getDuration()</div>
+</div>
+</li><li><div class="element" id="isDateBased()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isDateBased()</div>
+</div>
+</li><li><div class="element" id="isDurationEstimated()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isDurationEstimated()</div>
+</div>
+</li><li><div class="element" id="isSupportedBy(Temporal)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSupportedBy(<span class="parameters"><span class="parameter">java.time.temporal.Temporal arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isTimeBased()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isTimeBased()</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li><li><div class="element" id="valueOf(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.temporal.ChronoUnit valueOf(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="values()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.time.temporal.ChronoUnit[]</span> values()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

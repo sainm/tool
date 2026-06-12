@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.naming/javax.naming.ldap.InitialLdapContext</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.naming/module-summary.html">java.naming</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.naming/javax/naming/ldap/package-summary.html">javax.naming.ldap</a></div>
+<h1>Class&nbsp;InitialLdapContext</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> InitialLdapContext <div class="superclass"><span class="keyword">extends</span> javax.naming.directory.InitialDirContext</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.naming.ldap.LdapContext</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> InitialLdapContext() <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Hashtable,Control[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> InitialLdapContext(<span class="parameters"><span class="parameter"><span>java.util.Hashtable&lt;?, ?&gt;</span> arg0</span>, <span class="parameter"><span>javax.naming.ldap.Control[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="extendedOperation(ExtendedRequest)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.ldap.ExtendedResponse extendedOperation(<span class="parameters"><span class="parameter">javax.naming.ldap.ExtendedRequest arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getConnectControls()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.naming.ldap.Control[]</span> getConnectControls() <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getRequestControls()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.naming.ldap.Control[]</span> getRequestControls() <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="getResponseControls()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.naming.ldap.Control[]</span> getResponseControls() <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="newInstance(Control[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.naming.ldap.LdapContext newInstance(<span class="parameters"><span class="parameter"><span>javax.naming.ldap.Control[]</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="reconnect(Control[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reconnect(<span class="parameters"><span class="parameter"><span>javax.naming.ldap.Control[]</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li><li><div class="element" id="setRequestControls(Control[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRequestControls(<span class="parameters"><span class="parameter"><span>javax.naming.ldap.Control[]</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.naming.NamingException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

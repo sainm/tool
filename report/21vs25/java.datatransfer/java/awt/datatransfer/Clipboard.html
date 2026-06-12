@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.datatransfer/java.awt.datatransfer.Clipboard</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.datatransfer/module-summary.html">java.datatransfer</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.datatransfer/java/awt/datatransfer/package-summary.html">java.awt.datatransfer</a></div>
+<h1>Class&nbsp;Clipboard</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> Clipboard <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="contents"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.datatransfer.Transferable contents</div>
+</div>
+</li><li><div class="element" id="owner"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.datatransfer.ClipboardOwner owner</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Clipboard(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addFlavorListener(FlavorListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addFlavorListener(<span class="parameters"><span class="parameter">java.awt.datatransfer.FlavorListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAvailableDataFlavors()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.datatransfer.DataFlavor[]</span> getAvailableDataFlavors()</div>
+</div>
+</li><li><div class="element" id="getContents(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.datatransfer.Transferable getContents(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getData(DataFlavor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getData(<span class="parameters"><span class="parameter">java.awt.datatransfer.DataFlavor arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.awt.datatransfer.UnsupportedFlavorException</span></div>
+</div>
+</li><li><div class="element" id="getFlavorListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.datatransfer.FlavorListener[]</span> getFlavorListeners()</div>
+</div>
+</li><li><div class="element" id="getName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getName()</div>
+</div>
+</li><li><div class="element" id="isDataFlavorAvailable(DataFlavor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isDataFlavorAvailable(<span class="parameters"><span class="parameter">java.awt.datatransfer.DataFlavor arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeFlavorListener(FlavorListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeFlavorListener(<span class="parameters"><span class="parameter">java.awt.datatransfer.FlavorListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setContents(Transferable,ClipboardOwner)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setContents(<span class="parameters"><span class="parameter">java.awt.datatransfer.Transferable arg0</span>, <span class="parameter">java.awt.datatransfer.ClipboardOwner arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

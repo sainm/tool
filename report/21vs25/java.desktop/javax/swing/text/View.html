@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.text.View</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/swing/text/package-summary.html">javax.swing.text</a></div>
+<h1>Class&nbsp;View</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> View <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.swing.SwingConstants</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="BadBreakWeight"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> BadBreakWeight = 0</div>
+</div>
+</li><li><div class="element" id="ExcellentBreakWeight"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ExcellentBreakWeight = 2000</div>
+</div>
+</li><li><div class="element" id="ForcedBreakWeight"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ForcedBreakWeight = 3000</div>
+</div>
+</li><li><div class="element" id="GoodBreakWeight"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> GoodBreakWeight = 1000</div>
+</div>
+</li><li><div class="element" id="X_AXIS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> X_AXIS = 0</div>
+</div>
+</li><li><div class="element" id="Y_AXIS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> Y_AXIS = 1</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(Element)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> View(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="append(View)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> append(<span class="parameters"><span class="parameter">javax.swing.text.View arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="breakView(int,int,float,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.View breakView(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">float</span> arg2</span>, <span class="parameter"><span class="keyword">float</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="changedUpdate(DocumentEvent,Shape,ViewFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> changedUpdate(<span class="parameters"><span class="parameter">javax.swing.event.DocumentEvent arg0</span>, <span class="parameter">java.awt.Shape arg1</span>, <span class="parameter">javax.swing.text.ViewFactory arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="createFragment(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.View createFragment(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="forwardUpdate(ElementChange,DocumentEvent,Shape,ViewFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> forwardUpdate(<span class="parameters"><span class="parameter">javax.swing.event.DocumentEvent.ElementChange arg0</span>, <span class="parameter">javax.swing.event.DocumentEvent arg1</span>, <span class="parameter">java.awt.Shape arg2</span>, <span class="parameter">javax.swing.text.ViewFactory arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="forwardUpdateToView(View,DocumentEvent,Shape,ViewFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> forwardUpdateToView(<span class="parameters"><span class="parameter">javax.swing.text.View arg0</span>, <span class="parameter">javax.swing.event.DocumentEvent arg1</span>, <span class="parameter">java.awt.Shape arg2</span>, <span class="parameter">javax.swing.text.ViewFactory arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAlignment(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getAlignment(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAttributes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.AttributeSet getAttributes()</div>
+</div>
+</li><li><div class="element" id="getBreakWeight(int,float,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getBreakWeight(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter"><span class="keyword">float</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getChildAllocation(int,Shape)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Shape getChildAllocation(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.awt.Shape arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getContainer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Container getContainer()</div>
+</div>
+</li><li><div class="element" id="getDocument()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.Document getDocument()</div>
+</div>
+</li><li><div class="element" id="getElement()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.Element getElement()</div>
+</div>
+</li><li><div class="element" id="getEndOffset()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getEndOffset()</div>
+</div>
+</li><li><div class="element" id="getGraphics()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Graphics getGraphics()</div>
+</div>
+</li><li><div class="element" id="getMaximumSpan(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getMaximumSpan(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getMinimumSpan(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getMinimumSpan(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getNextVisualPositionFrom(int,Bias,Shape,int,Bias[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getNextVisualPositionFrom(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">javax.swing.text.Position.Bias arg1</span>, <span class="parameter">java.awt.Shape arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span>javax.swing.text.Position.Bias[]</span> arg4</span></span>) <span class="throws"><span class="keyword">throws</span> javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="getParent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.View getParent()</div>
+</div>
+</li><li><div class="element" id="getPreferredSpan(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">float</span> getPreferredSpan(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getResizeWeight(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getResizeWeight(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getStartOffset()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getStartOffset()</div>
+</div>
+</li><li><div class="element" id="getToolTipText(float,float,Shape)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getToolTipText(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter">java.awt.Shape arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getView(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.View getView(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getViewCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getViewCount()</div>
+</div>
+</li><li><div class="element" id="getViewFactory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.ViewFactory getViewFactory()</div>
+</div>
+</li><li><div class="element" id="getViewIndex(int,Bias)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getViewIndex(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">javax.swing.text.Position.Bias arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getViewIndex(float,float,Shape)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getViewIndex(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter">java.awt.Shape arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="insert(int,View)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> insert(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">javax.swing.text.View arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="insertUpdate(DocumentEvent,Shape,ViewFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> insertUpdate(<span class="parameters"><span class="parameter">javax.swing.event.DocumentEvent arg0</span>, <span class="parameter">java.awt.Shape arg1</span>, <span class="parameter">javax.swing.text.ViewFactory arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="isVisible()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isVisible()</div>
+</div>
+</li><li><div class="element" id="modelToView(int,Shape)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.awt.Shape modelToView(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.awt.Shape arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="modelToView(int,Shape,Bias)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.awt.Shape modelToView(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.awt.Shape arg1</span>, <span class="parameter">javax.swing.text.Position.Bias arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="modelToView(int,Bias,int,Bias,Shape)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Shape modelToView(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">javax.swing.text.Position.Bias arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">javax.swing.text.Position.Bias arg3</span>, <span class="parameter">java.awt.Shape arg4</span></span>) <span class="throws"><span class="keyword">throws</span> javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="paint(Graphics,Shape)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> paint(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">java.awt.Shape arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="preferenceChanged(View,boolean,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> preferenceChanged(<span class="parameters"><span class="parameter">javax.swing.text.View arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> remove(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeAll()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeAll()</div>
+</div>
+</li><li><div class="element" id="removeUpdate(DocumentEvent,Shape,ViewFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeUpdate(<span class="parameters"><span class="parameter">javax.swing.event.DocumentEvent arg0</span>, <span class="parameter">java.awt.Shape arg1</span>, <span class="parameter">javax.swing.text.ViewFactory arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="replace(int,int,View[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> replace(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span>javax.swing.text.View[]</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="setParent(View)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setParent(<span class="parameters"><span class="parameter">javax.swing.text.View arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSize(float,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSize(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateChildren(ElementChange,DocumentEvent,ViewFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> updateChildren(<span class="parameters"><span class="parameter">javax.swing.event.DocumentEvent.ElementChange arg0</span>, <span class="parameter">javax.swing.event.DocumentEvent arg1</span>, <span class="parameter">javax.swing.text.ViewFactory arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateLayout(ElementChange,DocumentEvent,Shape)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> updateLayout(<span class="parameters"><span class="parameter">javax.swing.event.DocumentEvent.ElementChange arg0</span>, <span class="parameter">javax.swing.event.DocumentEvent arg1</span>, <span class="parameter">java.awt.Shape arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="viewToModel(float,float,Shape)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> viewToModel(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter">java.awt.Shape arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="viewToModel(float,float,Shape,Bias[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> viewToModel(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter">java.awt.Shape arg2</span>, <span class="parameter"><span>javax.swing.text.Position.Bias[]</span> arg3</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

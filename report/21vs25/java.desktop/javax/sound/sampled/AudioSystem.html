@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.sound.sampled.AudioSystem</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/sound/sampled/package-summary.html">javax.sound.sampled</a></div>
+<h1>Class&nbsp;AudioSystem</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> AudioSystem <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="NOT_SPECIFIED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> NOT_SPECIFIED = -1</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getAudioFileFormat(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.AudioFileFormat getAudioFileFormat(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.sound.sampled.UnsupportedAudioFileException</span></div>
+</div>
+</li><li><div class="element" id="getAudioFileFormat(InputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.AudioFileFormat getAudioFileFormat(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.sound.sampled.UnsupportedAudioFileException</span></div>
+</div>
+</li><li><div class="element" id="getAudioFileFormat(URL)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.AudioFileFormat getAudioFileFormat(<span class="parameters"><span class="parameter">java.net.URL arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.sound.sampled.UnsupportedAudioFileException</span></div>
+</div>
+</li><li><div class="element" id="getAudioFileTypes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>javax.sound.sampled.AudioFileFormat.Type[]</span> getAudioFileTypes()</div>
+</div>
+</li><li><div class="element" id="getAudioFileTypes(AudioInputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>javax.sound.sampled.AudioFileFormat.Type[]</span> getAudioFileTypes(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioInputStream arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAudioInputStream(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.AudioInputStream getAudioInputStream(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.sound.sampled.UnsupportedAudioFileException</span></div>
+</div>
+</li><li><div class="element" id="getAudioInputStream(InputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.AudioInputStream getAudioInputStream(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.sound.sampled.UnsupportedAudioFileException</span></div>
+</div>
+</li><li><div class="element" id="getAudioInputStream(URL)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.AudioInputStream getAudioInputStream(<span class="parameters"><span class="parameter">java.net.URL arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.sound.sampled.UnsupportedAudioFileException</span></div>
+</div>
+</li><li><div class="element" id="getAudioInputStream(AudioFormat,AudioInputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.AudioInputStream getAudioInputStream(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioFormat arg0</span>, <span class="parameter">javax.sound.sampled.AudioInputStream arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAudioInputStream(Encoding,AudioInputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.AudioInputStream getAudioInputStream(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioFormat.Encoding arg0</span>, <span class="parameter">javax.sound.sampled.AudioInputStream arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getClip()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.Clip getClip() <span class="throws"><span class="keyword">throws</span> javax.sound.sampled.LineUnavailableException</span></div>
+</div>
+</li><li><div class="element" id="getClip(Info)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.Clip getClip(<span class="parameters"><span class="parameter">javax.sound.sampled.Mixer.Info arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.sound.sampled.LineUnavailableException</span></div>
+</div>
+</li><li><div class="element" id="getLine(Info)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.Line getLine(<span class="parameters"><span class="parameter">javax.sound.sampled.Line.Info arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.sound.sampled.LineUnavailableException</span></div>
+</div>
+</li><li><div class="element" id="getMixer(Info)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.Mixer getMixer(<span class="parameters"><span class="parameter">javax.sound.sampled.Mixer.Info arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getMixerInfo()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>javax.sound.sampled.Mixer.Info[]</span> getMixerInfo()</div>
+</div>
+</li><li><div class="element" id="getSourceDataLine(AudioFormat)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.SourceDataLine getSourceDataLine(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioFormat arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.sound.sampled.LineUnavailableException</span></div>
+</div>
+</li><li><div class="element" id="getSourceDataLine(AudioFormat,Info)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.SourceDataLine getSourceDataLine(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioFormat arg0</span>, <span class="parameter">javax.sound.sampled.Mixer.Info arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.sound.sampled.LineUnavailableException</span></div>
+</div>
+</li><li><div class="element" id="getSourceLineInfo(Info)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>javax.sound.sampled.Line.Info[]</span> getSourceLineInfo(<span class="parameters"><span class="parameter">javax.sound.sampled.Line.Info arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getTargetDataLine(AudioFormat)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.TargetDataLine getTargetDataLine(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioFormat arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.sound.sampled.LineUnavailableException</span></div>
+</div>
+</li><li><div class="element" id="getTargetDataLine(AudioFormat,Info)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.sound.sampled.TargetDataLine getTargetDataLine(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioFormat arg0</span>, <span class="parameter">javax.sound.sampled.Mixer.Info arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.sound.sampled.LineUnavailableException</span></div>
+</div>
+</li><li><div class="element" id="getTargetEncodings(AudioFormat)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>javax.sound.sampled.AudioFormat.Encoding[]</span> getTargetEncodings(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioFormat arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getTargetEncodings(Encoding)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>javax.sound.sampled.AudioFormat.Encoding[]</span> getTargetEncodings(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioFormat.Encoding arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getTargetFormats(Encoding,AudioFormat)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>javax.sound.sampled.AudioFormat[]</span> getTargetFormats(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioFormat.Encoding arg0</span>, <span class="parameter">javax.sound.sampled.AudioFormat arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getTargetLineInfo(Info)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>javax.sound.sampled.Line.Info[]</span> getTargetLineInfo(<span class="parameters"><span class="parameter">javax.sound.sampled.Line.Info arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isConversionSupported(AudioFormat,AudioFormat)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isConversionSupported(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioFormat arg0</span>, <span class="parameter">javax.sound.sampled.AudioFormat arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isConversionSupported(Encoding,AudioFormat)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isConversionSupported(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioFormat.Encoding arg0</span>, <span class="parameter">javax.sound.sampled.AudioFormat arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isFileTypeSupported(Type)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isFileTypeSupported(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioFileFormat.Type arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isFileTypeSupported(Type,AudioInputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isFileTypeSupported(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioFileFormat.Type arg0</span>, <span class="parameter">javax.sound.sampled.AudioInputStream arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isLineSupported(Info)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isLineSupported(<span class="parameters"><span class="parameter">javax.sound.sampled.Line.Info arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="write(AudioInputStream,Type,File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> write(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioInputStream arg0</span>, <span class="parameter">javax.sound.sampled.AudioFileFormat.Type arg1</span>, <span class="parameter">java.io.File arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="write(AudioInputStream,Type,OutputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> write(<span class="parameters"><span class="parameter">javax.sound.sampled.AudioInputStream arg0</span>, <span class="parameter">javax.sound.sampled.AudioFileFormat.Type arg1</span>, <span class="parameter">java.io.OutputStream arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

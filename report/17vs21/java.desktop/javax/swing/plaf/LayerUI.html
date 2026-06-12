@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.plaf.LayerUI</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/swing/plaf/package-summary.html">javax.swing.plaf</a></div>
+<h1>Class&nbsp;LayerUI</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> LayerUI<span class="typarams">&lt;<span>V</span>&gt;</span> <div class="superclass"><span class="keyword">extends</span> javax.swing.plaf.ComponentUI</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> LayerUI()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addPropertyChangeListener(String,PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addPropertyChangeListener(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.beans.PropertyChangeListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="addPropertyChangeListener(PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addPropertyChangeListener(<span class="parameters"><span class="parameter">java.beans.PropertyChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="applyPropertyChange(PropertyChangeEvent,JLayer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> applyPropertyChange(<span class="parameters"><span class="parameter">java.beans.PropertyChangeEvent arg0</span>, <span class="parameter"><span>javax.swing.JLayer&lt;<span>? <span class="keyword">extends</span> V</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="doLayout(JLayer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> doLayout(<span class="parameters"><span class="parameter"><span>javax.swing.JLayer&lt;<span>? <span class="keyword">extends</span> V</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="eventDispatched(AWTEvent,JLayer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> eventDispatched(<span class="parameters"><span class="parameter">java.awt.AWTEvent arg0</span>, <span class="parameter"><span>javax.swing.JLayer&lt;<span>? <span class="keyword">extends</span> V</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="firePropertyChange(String,Object,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.Object arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBaseline(JComponent,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getBaseline(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBaselineResizeBehavior(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component.BaselineResizeBehavior getBaselineResizeBehavior(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getMaximumSize(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getMaximumSize(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getMinimumSize(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getMinimumSize(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPreferredSize(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getPreferredSize(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPropertyChangeListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.beans.PropertyChangeListener[]</span> getPropertyChangeListeners()</div>
+</div>
+</li><li><div class="element" id="getPropertyChangeListeners(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.beans.PropertyChangeListener[]</span> getPropertyChangeListeners(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="imageUpdate(Image,int,int,int,int,int,JLayer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> imageUpdate(<span class="parameters"><span class="parameter">java.awt.Image arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span>javax.swing.JLayer&lt;<span>? <span class="keyword">extends</span> V</span>&gt;</span> arg6</span></span>)</div>
+</div>
+</li><li><div class="element" id="installUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> installUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paint(Graphics,JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paint(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">javax.swing.JComponent arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintImmediately(int,int,int,int,JLayer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paintImmediately(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span>javax.swing.JLayer&lt;<span>? <span class="keyword">extends</span> V</span>&gt;</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="processComponentEvent(ComponentEvent,JLayer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processComponentEvent(<span class="parameters"><span class="parameter">java.awt.event.ComponentEvent arg0</span>, <span class="parameter"><span>javax.swing.JLayer&lt;<span>? <span class="keyword">extends</span> V</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="processFocusEvent(FocusEvent,JLayer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processFocusEvent(<span class="parameters"><span class="parameter">java.awt.event.FocusEvent arg0</span>, <span class="parameter"><span>javax.swing.JLayer&lt;<span>? <span class="keyword">extends</span> V</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="processHierarchyBoundsEvent(HierarchyEvent,JLayer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processHierarchyBoundsEvent(<span class="parameters"><span class="parameter">java.awt.event.HierarchyEvent arg0</span>, <span class="parameter"><span>javax.swing.JLayer&lt;<span>? <span class="keyword">extends</span> V</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="processHierarchyEvent(HierarchyEvent,JLayer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processHierarchyEvent(<span class="parameters"><span class="parameter">java.awt.event.HierarchyEvent arg0</span>, <span class="parameter"><span>javax.swing.JLayer&lt;<span>? <span class="keyword">extends</span> V</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="processInputMethodEvent(InputMethodEvent,JLayer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processInputMethodEvent(<span class="parameters"><span class="parameter">java.awt.event.InputMethodEvent arg0</span>, <span class="parameter"><span>javax.swing.JLayer&lt;<span>? <span class="keyword">extends</span> V</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="processKeyEvent(KeyEvent,JLayer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processKeyEvent(<span class="parameters"><span class="parameter">java.awt.event.KeyEvent arg0</span>, <span class="parameter"><span>javax.swing.JLayer&lt;<span>? <span class="keyword">extends</span> V</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="processMouseEvent(MouseEvent,JLayer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processMouseEvent(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span>, <span class="parameter"><span>javax.swing.JLayer&lt;<span>? <span class="keyword">extends</span> V</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="processMouseMotionEvent(MouseEvent,JLayer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processMouseMotionEvent(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span>, <span class="parameter"><span>javax.swing.JLayer&lt;<span>? <span class="keyword">extends</span> V</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="processMouseWheelEvent(MouseWheelEvent,JLayer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processMouseWheelEvent(<span class="parameters"><span class="parameter">java.awt.event.MouseWheelEvent arg0</span>, <span class="parameter"><span>javax.swing.JLayer&lt;<span>? <span class="keyword">extends</span> V</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="removePropertyChangeListener(String,PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removePropertyChangeListener(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.beans.PropertyChangeListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="removePropertyChangeListener(PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removePropertyChangeListener(<span class="parameters"><span class="parameter">java.beans.PropertyChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="uninstallUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> uninstallUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateUI(JLayer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> updateUI(<span class="parameters"><span class="parameter"><span>javax.swing.JLayer&lt;<span>? <span class="keyword">extends</span> V</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>3308943990491939921<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">java.beans.PropertyChangeSupport&nbsp;propertyChangeSupport</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

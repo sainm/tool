@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class jdk.jshell/jdk.jshell.execution.RemoteExecutionControl</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../jdk.jshell/module-summary.html">jdk.jshell</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../jdk.jshell/jdk/jshell/execution/package-summary.html">jdk.jshell.execution</a></div>
+<h1>Class&nbsp;RemoteExecutionControl</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> RemoteExecutionControl <div class="superclass"><span class="keyword">extends</span> jdk.jshell.execution.DirectExecutionControl</div>
+<div class="superinterfaces"><span class="keyword">implements</span> jdk.jshell.spi.ExecutionControl</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> RemoteExecutionControl()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(LoaderDelegate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> RemoteExecutionControl(<span class="parameters"><span class="parameter">jdk.jshell.execution.LoaderDelegate arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="clientCodeEnter()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> clientCodeEnter()</div>
+</div>
+</li><li><div class="element" id="clientCodeLeave()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> clientCodeLeave() <span class="throws"><span class="keyword">throws</span> jdk.jshell.spi.ExecutionControl.InternalException</span></div>
+</div>
+</li><li><div class="element" id="invoke(Method)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String invoke(<span class="parameters"><span class="parameter">java.lang.reflect.Method arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.Exception</span></div>
+</div>
+</li><li><div class="element" id="main(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> main(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.Exception</span></div>
+</div>
+</li><li><div class="element" id="redefine(ClassBytecodes[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> redefine(<span class="parameters"><span class="parameter"><span>jdk.jshell.spi.ExecutionControl.ClassBytecodes[]</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> jdk.jshell.spi.ExecutionControl.ClassInstallException, jdk.jshell.spi.ExecutionControl.EngineTerminationException, jdk.jshell.spi.ExecutionControl.NotImplementedException</span></div>
+</div>
+</li><li><div class="element" id="stop()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> stop() <span class="throws"><span class="keyword">throws</span> jdk.jshell.spi.ExecutionControl.EngineTerminationException, jdk.jshell.spi.ExecutionControl.InternalException</span></div>
+</div>
+</li><li><div class="element" id="throwConvertedInvocationException(Throwable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String throwConvertedInvocationException(<span class="parameters"><span class="parameter">java.lang.Throwable arg0</span></span>) <span class="throws"><span class="keyword">throws</span> jdk.jshell.spi.ExecutionControl.InternalException, jdk.jshell.spi.ExecutionControl.RunException</span></div>
+</div>
+</li><li><div class="element" id="throwConvertedOtherException(Throwable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String throwConvertedOtherException(<span class="parameters"><span class="parameter">java.lang.Throwable arg0</span></span>) <span class="throws"><span class="keyword">throws</span> jdk.jshell.spi.ExecutionControl.InternalException, jdk.jshell.spi.ExecutionControl.RunException</span></div>
+</div>
+</li><li><div class="element" id="varValue(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String varValue(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> jdk.jshell.spi.ExecutionControl.EngineTerminationException, jdk.jshell.spi.ExecutionControl.InternalException, jdk.jshell.spi.ExecutionControl.RunException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

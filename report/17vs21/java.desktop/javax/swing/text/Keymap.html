@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface java.desktop/javax.swing.text.Keymap</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/swing/text/package-summary.html">javax.swing.text</a></div>
+<h1>Interface&nbsp;Keymap</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> Keymap </div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addActionForKeyStroke(KeyStroke,Action)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> addActionForKeyStroke(<span class="parameters"><span class="parameter">javax.swing.KeyStroke arg0</span>, <span class="parameter">javax.swing.Action arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAction(KeyStroke)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.swing.Action getAction(<span class="parameters"><span class="parameter">javax.swing.KeyStroke arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBoundActions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>javax.swing.Action[]</span> getBoundActions()</div>
+</div>
+</li><li><div class="element" id="getBoundKeyStrokes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>javax.swing.KeyStroke[]</span> getBoundKeyStrokes()</div>
+</div>
+</li><li><div class="element" id="getDefaultAction()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.swing.Action getDefaultAction()</div>
+</div>
+</li><li><div class="element" id="getKeyStrokesForAction(Action)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>javax.swing.KeyStroke[]</span> getKeyStrokesForAction(<span class="parameters"><span class="parameter">javax.swing.Action arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getName()</div>
+</div>
+</li><li><div class="element" id="getResolveParent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.swing.text.Keymap getResolveParent()</div>
+</div>
+</li><li><div class="element" id="isLocallyDefined(KeyStroke)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isLocallyDefined(<span class="parameters"><span class="parameter">javax.swing.KeyStroke arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeBindings()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> removeBindings()</div>
+</div>
+</li><li><div class="element" id="removeKeyStrokeBinding(KeyStroke)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> removeKeyStrokeBinding(<span class="parameters"><span class="parameter">javax.swing.KeyStroke arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDefaultAction(Action)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setDefaultAction(<span class="parameters"><span class="parameter">javax.swing.Action arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setResolveParent(Keymap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setResolveParent(<span class="parameters"><span class="parameter">javax.swing.text.Keymap arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

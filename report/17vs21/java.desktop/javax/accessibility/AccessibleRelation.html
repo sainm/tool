@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.accessibility.AccessibleRelation</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/accessibility/package-summary.html">javax.accessibility</a></div>
+<h1>Class&nbsp;AccessibleRelation</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> AccessibleRelation <div class="superclass"><span class="keyword">extends</span> javax.accessibility.AccessibleBundle</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="CHILD_NODE_OF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String CHILD_NODE_OF = "childNodeOf"</div>
+</div>
+</li><li><div class="element" id="CHILD_NODE_OF_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String CHILD_NODE_OF_PROPERTY = "childNodeOfProperty"</div>
+</div>
+</li><li><div class="element" id="CONTROLLED_BY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String CONTROLLED_BY</div>
+</div>
+</li><li><div class="element" id="CONTROLLED_BY_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String CONTROLLED_BY_PROPERTY = "controlledByProperty"</div>
+</div>
+</li><li><div class="element" id="CONTROLLER_FOR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String CONTROLLER_FOR</div>
+</div>
+</li><li><div class="element" id="CONTROLLER_FOR_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String CONTROLLER_FOR_PROPERTY = "controllerForProperty"</div>
+</div>
+</li><li><div class="element" id="EMBEDDED_BY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String EMBEDDED_BY = "embeddedBy"</div>
+</div>
+</li><li><div class="element" id="EMBEDDED_BY_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String EMBEDDED_BY_PROPERTY = "embeddedByProperty"</div>
+</div>
+</li><li><div class="element" id="EMBEDS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String EMBEDS = "embeds"</div>
+</div>
+</li><li><div class="element" id="EMBEDS_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String EMBEDS_PROPERTY = "embedsProperty"</div>
+</div>
+</li><li><div class="element" id="FLOWS_FROM"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String FLOWS_FROM = "flowsFrom"</div>
+</div>
+</li><li><div class="element" id="FLOWS_FROM_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String FLOWS_FROM_PROPERTY = "flowsFromProperty"</div>
+</div>
+</li><li><div class="element" id="FLOWS_TO"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String FLOWS_TO = "flowsTo"</div>
+</div>
+</li><li><div class="element" id="FLOWS_TO_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String FLOWS_TO_PROPERTY = "flowsToProperty"</div>
+</div>
+</li><li><div class="element" id="LABELED_BY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String LABELED_BY</div>
+</div>
+</li><li><div class="element" id="LABELED_BY_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String LABELED_BY_PROPERTY = "labeledByProperty"</div>
+</div>
+</li><li><div class="element" id="LABEL_FOR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String LABEL_FOR</div>
+</div>
+</li><li><div class="element" id="LABEL_FOR_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String LABEL_FOR_PROPERTY = "labelForProperty"</div>
+</div>
+</li><li><div class="element" id="MEMBER_OF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String MEMBER_OF</div>
+</div>
+</li><li><div class="element" id="MEMBER_OF_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String MEMBER_OF_PROPERTY = "memberOfProperty"</div>
+</div>
+</li><li><div class="element" id="PARENT_WINDOW_OF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String PARENT_WINDOW_OF = "parentWindowOf"</div>
+</div>
+</li><li><div class="element" id="PARENT_WINDOW_OF_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String PARENT_WINDOW_OF_PROPERTY = "parentWindowOfProperty"</div>
+</div>
+</li><li><div class="element" id="SUBWINDOW_OF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SUBWINDOW_OF = "subwindowOf"</div>
+</div>
+</li><li><div class="element" id="SUBWINDOW_OF_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SUBWINDOW_OF_PROPERTY = "subwindowOfProperty"</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> AccessibleRelation(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> AccessibleRelation(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>java.lang.Object[]</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> AccessibleRelation(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getKey()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getKey()</div>
+</div>
+</li><li><div class="element" id="getTarget()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Object[]</span> getTarget()</div>
+</div>
+</li><li><div class="element" id="setTarget(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setTarget(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setTarget(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setTarget(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

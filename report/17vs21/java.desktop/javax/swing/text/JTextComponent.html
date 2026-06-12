@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.text.JTextComponent</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/swing/text/package-summary.html">javax.swing.text</a></div>
+<h1>Class&nbsp;JTextComponent</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="annotation">@JavaBean(defaultProperty="UI")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> JTextComponent <div class="superclass"><span class="keyword">extends</span> javax.swing.JComponent</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.accessibility.Accessible, javax.swing.Scrollable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/JTextComponent.AccessibleJTextComponent.html">AccessibleJTextComponent</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/JTextComponent.DropLocation.html">DropLocation</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/text/JTextComponent.KeyBinding.html">KeyBinding</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="DEFAULT_KEYMAP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DEFAULT_KEYMAP = "default"</div>
+</div>
+</li><li><div class="element" id="FOCUS_ACCELERATOR_KEY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String FOCUS_ACCELERATOR_KEY = "focusAcceleratorKey"</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JTextComponent()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addCaretListener(CaretListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addCaretListener(<span class="parameters"><span class="parameter">javax.swing.event.CaretListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addInputMethodListener(InputMethodListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addInputMethodListener(<span class="parameters"><span class="parameter">java.awt.event.InputMethodListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addKeymap(String,Keymap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.text.Keymap addKeymap(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">javax.swing.text.Keymap arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="copy()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> copy()</div>
+</div>
+</li><li><div class="element" id="cut()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> cut()</div>
+</div>
+</li><li><div class="element" id="fireCaretUpdate(CaretEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireCaretUpdate(<span class="parameters"><span class="parameter">javax.swing.event.CaretEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAccessibleContext()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.accessibility.AccessibleContext getAccessibleContext()</div>
+</div>
+</li><li><div class="element" id="getActions()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.Action[]</span> getActions()</div>
+</div>
+</li><li><div class="element" id="getCaret()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.Caret getCaret()</div>
+</div>
+</li><li><div class="element" id="getCaretColor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getCaretColor()</div>
+</div>
+</li><li><div class="element" id="getCaretListeners()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.event.CaretListener[]</span> getCaretListeners()</div>
+</div>
+</li><li><div class="element" id="getCaretPosition()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getCaretPosition()</div>
+</div>
+</li><li><div class="element" id="getDisabledTextColor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getDisabledTextColor()</div>
+</div>
+</li><li><div class="element" id="getDocument()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.Document getDocument()</div>
+</div>
+</li><li><div class="element" id="getDragEnabled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getDragEnabled()</div>
+</div>
+</li><li><div class="element" id="getDropLocation()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> javax.swing.text.JTextComponent.DropLocation getDropLocation()</div>
+</div>
+</li><li><div class="element" id="getDropMode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> javax.swing.DropMode getDropMode()</div>
+</div>
+</li><li><div class="element" id="getFocusAccelerator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">char</span> getFocusAccelerator()</div>
+</div>
+</li><li><div class="element" id="getHighlighter()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.Highlighter getHighlighter()</div>
+</div>
+</li><li><div class="element" id="getInputMethodRequests()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.awt.im.InputMethodRequests getInputMethodRequests()</div>
+</div>
+</li><li><div class="element" id="getKeymap()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.Keymap getKeymap()</div>
+</div>
+</li><li><div class="element" id="getKeymap(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.text.Keymap getKeymap(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getMargin()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Insets getMargin()</div>
+</div>
+</li><li><div class="element" id="getNavigationFilter()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.NavigationFilter getNavigationFilter()</div>
+</div>
+</li><li><div class="element" id="getPreferredScrollableViewportSize()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getPreferredScrollableViewportSize()</div>
+</div>
+</li><li><div class="element" id="getPrintable(MessageFormat,MessageFormat)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.print.Printable getPrintable(<span class="parameters"><span class="parameter">java.text.MessageFormat arg0</span>, <span class="parameter">java.text.MessageFormat arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getScrollableBlockIncrement(Rectangle,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getScrollableBlockIncrement(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getScrollableTracksViewportHeight()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getScrollableTracksViewportHeight()</div>
+</div>
+</li><li><div class="element" id="getScrollableTracksViewportWidth()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getScrollableTracksViewportWidth()</div>
+</div>
+</li><li><div class="element" id="getScrollableUnitIncrement(Rectangle,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getScrollableUnitIncrement(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getSelectedText()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.lang.String getSelectedText()</div>
+</div>
+</li><li><div class="element" id="getSelectedTextColor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getSelectedTextColor()</div>
+</div>
+</li><li><div class="element" id="getSelectionColor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getSelectionColor()</div>
+</div>
+</li><li><div class="element" id="getSelectionEnd()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getSelectionEnd()</div>
+</div>
+</li><li><div class="element" id="getSelectionStart()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getSelectionStart()</div>
+</div>
+</li><li><div class="element" id="getText()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getText()</div>
+</div>
+</li><li><div class="element" id="getText(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getText(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="getToolTipText(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getToolTipText(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.plaf.TextUI getUI()</div>
+</div>
+</li><li><div class="element" id="isEditable()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isEditable()</div>
+</div>
+</li><li><div class="element" id="loadKeymap(Keymap,KeyBinding[],Action[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> loadKeymap(<span class="parameters"><span class="parameter">javax.swing.text.Keymap arg0</span>, <span class="parameter"><span>javax.swing.text.JTextComponent.KeyBinding[]</span> arg1</span>, <span class="parameter"><span>javax.swing.Action[]</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="modelToView(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.awt.Rectangle modelToView(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="modelToView2D(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.geom.Rectangle2D modelToView2D(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="moveCaretPosition(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> moveCaretPosition(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String paramString()</div>
+</div>
+</li><li><div class="element" id="paste()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paste()</div>
+</div>
+</li><li><div class="element" id="print()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> print() <span class="throws"><span class="keyword">throws</span> java.awt.print.PrinterException</span></div>
+</div>
+</li><li><div class="element" id="print(MessageFormat,MessageFormat)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> print(<span class="parameters"><span class="parameter">java.text.MessageFormat arg0</span>, <span class="parameter">java.text.MessageFormat arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.print.PrinterException</span></div>
+</div>
+</li><li><div class="element" id="print(MessageFormat,MessageFormat,boolean,PrintService,PrintRequestAttributeSet,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> print(<span class="parameters"><span class="parameter">java.text.MessageFormat arg0</span>, <span class="parameter">java.text.MessageFormat arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span>, <span class="parameter">javax.print.PrintService arg3</span>, <span class="parameter">javax.print.attribute.PrintRequestAttributeSet arg4</span>, <span class="parameter"><span class="keyword">boolean</span> arg5</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.print.PrinterException</span></div>
+</div>
+</li><li><div class="element" id="processInputMethodEvent(InputMethodEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processInputMethodEvent(<span class="parameters"><span class="parameter">java.awt.event.InputMethodEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="read(Reader,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> read(<span class="parameters"><span class="parameter">java.io.Reader arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="removeCaretListener(CaretListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeCaretListener(<span class="parameters"><span class="parameter">javax.swing.event.CaretListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeKeymap(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.text.Keymap removeKeymap(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeNotify()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeNotify()</div>
+</div>
+</li><li><div class="element" id="replaceSelection(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> replaceSelection(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="restoreComposedText()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> restoreComposedText()</div>
+</div>
+</li><li><div class="element" id="saveComposedText(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> saveComposedText(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="select(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> select(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="selectAll()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> selectAll()</div>
+</div>
+</li><li><div class="element" id="setCaret(Caret)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=truedescription="the caret used to select/navigate")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCaret(<span class="parameters"><span class="parameter">javax.swing.text.Caret arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setCaretColor(Color)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="the color used to render the caret")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCaretColor(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setCaretPosition(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="the caret position")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCaretPosition(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setComponentOrientation(ComponentOrientation)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setComponentOrientation(<span class="parameters"><span class="parameter">java.awt.ComponentOrientation arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDisabledTextColor(Color)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="color used to render disabled text")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDisabledTextColor(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDocument(Document)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=truedescription="the text document model")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDocument(<span class="parameters"><span class="parameter">javax.swing.text.Document arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDragEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="determines whether automatic drag handling is enabled")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDragEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDropMode(DropMode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setDropMode(<span class="parameters"><span class="parameter">javax.swing.DropMode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEditable(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="specifies if the text can be edited")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setEditable(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFocusAccelerator(char)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="accelerator character used to grab focus")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFocusAccelerator(<span class="parameters"><span class="parameter"><span class="keyword">char</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setHighlighter(Highlighter)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=truedescription="object responsible for background highlights")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setHighlighter(<span class="parameters"><span class="parameter">javax.swing.text.Highlighter arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setKeymap(Keymap)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="set of key event to action bindings to use")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setKeymap(<span class="parameters"><span class="parameter">javax.swing.text.Keymap arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMargin(Insets)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="desired space between the border and text area")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMargin(<span class="parameters"><span class="parameter">java.awt.Insets arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setNavigationFilter(NavigationFilter)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setNavigationFilter(<span class="parameters"><span class="parameter">javax.swing.text.NavigationFilter arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectedTextColor(Color)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="color used to render selected text")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectedTextColor(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionColor(Color)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="color used to render selection background")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectionColor(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionEnd(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="ending location of the selection.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectionEnd(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionStart(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="starting location of the selection.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectionStart(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setText(String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="the text of this component")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setText(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setUI(TextUI)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setUI(<span class="parameters"><span class="parameter">javax.swing.plaf.TextUI arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> updateUI()</div>
+</div>
+</li><li><div class="element" id="viewToModel(Point)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> viewToModel(<span class="parameters"><span class="parameter">java.awt.Point arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="viewToModel2D(Point2D)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> viewToModel2D(<span class="parameters"><span class="parameter">java.awt.geom.Point2D arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="write(Writer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> write(<span class="parameters"><span class="parameter">java.io.Writer arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>8654456998392764340<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;caretColor</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;checkedInputOverride</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.text.SimpleAttributeSet&nbsp;composedTextAttribute</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.text.JTextComponent.ComposedTextCaret&nbsp;composedTextCaret</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.lang.String&nbsp;composedTextContent</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.text.Position&nbsp;composedTextEnd</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.text.Position&nbsp;composedTextStart</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;disabledTextColor</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;dragEnabled</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.DropMode&nbsp;dropMode</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;editable</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">char</span>&nbsp;focusAccelerator</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.text.Position&nbsp;latestCommittedTextEnd</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.text.Position&nbsp;latestCommittedTextStart</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Insets&nbsp;margin</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.text.Document&nbsp;model</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.text.NavigationFilter&nbsp;navigationFilter</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;needToSendKeyTypedEvent</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;selectedTextColor</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Color&nbsp;selectionColor</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

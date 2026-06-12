@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/java.util.concurrent.ForkJoinPool</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/util/concurrent/package-summary.html">java.util.concurrent</a></div>
+<h1>Class&nbsp;ForkJoinPool</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> ForkJoinPool <div class="superclass"><span class="keyword">extends</span> java.util.concurrent.AbstractExecutorService</div>
+<div class="superinterfaces"><span class="keyword">implements</span> <span class="diffs"><span class="api" title="JDK21">&nbsp;</span><span class="api" title="JDK25">java.util.concurrent.ScheduledExecutorService</span></span></div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.html">ForkJoinWorkerThreadFactory</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ForkJoinPool.ManagedBlocker.html">ManagedBlocker</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="defaultForkJoinWorkerThreadFactory"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory defaultForkJoinWorkerThreadFactory</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ForkJoinPool()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ForkJoinPool(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,ForkJoinWorkerThreadFactory,UncaughtExceptionHandler,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ForkJoinPool(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory arg1</span>, <span class="parameter">java.lang.Thread.UncaughtExceptionHandler arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,ForkJoinWorkerThreadFactory,UncaughtExceptionHandler,boolean,int,int,int,Predicate,long,TimeUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ForkJoinPool(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory arg1</span>, <span class="parameter">java.lang.Thread.UncaughtExceptionHandler arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span class="keyword">int</span> arg6</span>, <span class="parameter"><span>java.util.function.Predicate&lt;<span>? <span class="keyword">super</span> java.util.concurrent.ForkJoinPool</span>&gt;</span> arg7</span>, <span class="parameter"><span class="keyword">long</span> arg8</span>, <span class="parameter">java.util.concurrent.TimeUnit arg9</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="awaitQuiescence(long,TimeUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> awaitQuiescence(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.util.concurrent.TimeUnit arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="awaitTermination(long,TimeUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> awaitTermination(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.util.concurrent.TimeUnit arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException</span></div>
+</div>
+</li><li><div class="element" id="cancelDelayedTasksOnShutdown()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> cancelDelayedTasksOnShutdown()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="close()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> close()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="commonPool()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.concurrent.ForkJoinPool commonPool()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="drainTasksTo(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> drainTasksTo(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">super</span> <span>java.util.concurrent.ForkJoinTask&lt;?&gt;</span></span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="execute(Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> execute(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="execute(ForkJoinTask)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> execute(<span class="parameters"><span class="parameter"><span>java.util.concurrent.ForkJoinTask&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="externalSubmit(ForkJoinTask)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.concurrent.ForkJoinTask&lt;T&gt;</span> externalSubmit(<span class="parameters"><span class="parameter"><span>java.util.concurrent.ForkJoinTask&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getActiveThreadCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getActiveThreadCount()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAsyncMode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getAsyncMode()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getCommonPoolParallelism()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> getCommonPoolParallelism()</div>
+</div>
+</li><li><div class="element" id="getDelayedTaskCount()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getDelayedTaskCount()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFactory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory getFactory()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getParallelism()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getParallelism()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getPoolSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getPoolSize()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getQueuedSubmissionCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getQueuedSubmissionCount()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getQueuedTaskCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getQueuedTaskCount()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getRunningThreadCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getRunningThreadCount()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getStealCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getStealCount()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getUncaughtExceptionHandler()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Thread.UncaughtExceptionHandler getUncaughtExceptionHandler()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="hasQueuedSubmissions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> hasQueuedSubmissions()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="invoke(ForkJoinTask)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T invoke(<span class="parameters"><span class="parameter"><span>java.util.concurrent.ForkJoinTask&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="invokeAll(Collection)"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.List&lt;<span>java.util.concurrent.Future&lt;T&gt;</span>&gt;</span> invokeAll(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">extends</span> <span>java.util.concurrent.Callable&lt;T&gt;</span></span>&gt;</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> <span class="diffs"><span class="api" title="JDK21">&nbsp;</span><span class="api" title="JDK25">java.lang.InterruptedException</span></span></span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="invokeAll(Collection,long,TimeUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.List&lt;<span>java.util.concurrent.Future&lt;T&gt;</span>&gt;</span> invokeAll(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">extends</span> <span>java.util.concurrent.Callable&lt;T&gt;</span></span>&gt;</span> arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span>, <span class="parameter">java.util.concurrent.TimeUnit arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException</span></div>
+</div>
+</li><li><div class="element" id="invokeAllUninterruptibly(Collection)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.List&lt;<span>java.util.concurrent.Future&lt;T&gt;</span>&gt;</span> invokeAllUninterruptibly(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">extends</span> <span>java.util.concurrent.Callable&lt;T&gt;</span></span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="invokeAny(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T invokeAny(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">extends</span> <span>java.util.concurrent.Callable&lt;T&gt;</span></span>&gt;</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException, java.util.concurrent.ExecutionException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="invokeAny(Collection,long,TimeUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T invokeAny(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">extends</span> <span>java.util.concurrent.Callable&lt;T&gt;</span></span>&gt;</span> arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span>, <span class="parameter">java.util.concurrent.TimeUnit arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException, java.util.concurrent.ExecutionException, java.util.concurrent.TimeoutException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="isQuiescent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isQuiescent()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isShutdown()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isShutdown()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isTerminated()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isTerminated()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isTerminating()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isTerminating()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="lazySubmit(ForkJoinTask)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.concurrent.ForkJoinTask&lt;T&gt;</span> lazySubmit(<span class="parameters"><span class="parameter"><span>java.util.concurrent.ForkJoinTask&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="managedBlock(ManagedBlocker)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> managedBlock(<span class="parameters"><span class="parameter">java.util.concurrent.ForkJoinPool.ManagedBlocker arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="newTaskFor(Runnable,T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.concurrent.RunnableFuture&lt;T&gt;</span> newTaskFor(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span>, <span class="parameter">T arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newTaskFor(Callable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.concurrent.RunnableFuture&lt;T&gt;</span> newTaskFor(<span class="parameters"><span class="parameter"><span>java.util.concurrent.Callable&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="pollSubmission()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.util.concurrent.ForkJoinTask&lt;?&gt;</span> pollSubmission()</div>
+</div>
+</li><li><div class="element" id="schedule(Runnable,long,TimeUnit)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.ScheduledFuture&lt;?&gt;</span> schedule(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span>, <span class="parameter">java.util.concurrent.TimeUnit arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="schedule(Callable,long,TimeUnit)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>V</span>&gt;</span> <span>java.util.concurrent.ScheduledFuture&lt;V&gt;</span> schedule(<span class="parameters"><span class="parameter"><span>java.util.concurrent.Callable&lt;V&gt;</span> arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span>, <span class="parameter">java.util.concurrent.TimeUnit arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="scheduleAtFixedRate(Runnable,long,long,TimeUnit)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.ScheduledFuture&lt;?&gt;</span> scheduleAtFixedRate(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span>, <span class="parameter">java.util.concurrent.TimeUnit arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="scheduleWithFixedDelay(Runnable,long,long,TimeUnit)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.ScheduledFuture&lt;?&gt;</span> scheduleWithFixedDelay(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span>, <span class="parameter">java.util.concurrent.TimeUnit arg3</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setParallelism(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> setParallelism(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="shutdown()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> shutdown()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="shutdownNow()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.List&lt;java.lang.Runnable&gt;</span> shutdownNow()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="submit(Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.ForkJoinTask&lt;?&gt;</span> submit(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="submit(Runnable,T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.concurrent.ForkJoinTask&lt;T&gt;</span> submit(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span>, <span class="parameter">T arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="submit(Callable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.concurrent.ForkJoinTask&lt;T&gt;</span> submit(<span class="parameters"><span class="parameter"><span>java.util.concurrent.Callable&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="submit(ForkJoinTask)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.concurrent.ForkJoinTask&lt;T&gt;</span> submit(<span class="parameters"><span class="parameter"><span>java.util.concurrent.ForkJoinTask&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="submitWithTimeout(Callable,long,TimeUnit,Consumer)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>V</span>&gt;</span> <span>java.util.concurrent.ForkJoinTask&lt;V&gt;</span> submitWithTimeout(<span class="parameters"><span class="parameter"><span>java.util.concurrent.Callable&lt;V&gt;</span> arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span>, <span class="parameter">java.util.concurrent.TimeUnit arg2</span>, <span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> <span>java.util.concurrent.ForkJoinTask&lt;V&gt;</span></span>&gt;</span> arg3</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th>Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ForkJoinPool.html">ForkJoinPool</a></th>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ForkJoinPool.html#cancelDelayedTasksOnShutdown()">cancelDelayedTasksOnShutdown()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ForkJoinPool.html#getDelayedTaskCount()">getDelayedTaskCount()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ForkJoinPool.html#invokeAll(Collection)">invokeAll(Collection)</a></th>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ForkJoinPool.html#invokeAllUninterruptibly(Collection)">invokeAllUninterruptibly(Collection)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ForkJoinPool.html#schedule(Runnable,long,TimeUnit)">schedule(Runnable,long,TimeUnit)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ForkJoinPool.html#schedule(Callable,long,TimeUnit)">schedule(Callable,long,TimeUnit)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ForkJoinPool.html#scheduleAtFixedRate(Runnable,long,long,TimeUnit)">scheduleAtFixedRate(Runnable,long,long,TimeUnit)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ForkJoinPool.html#scheduleWithFixedDelay(Runnable,long,long,TimeUnit)">scheduleWithFixedDelay(Runnable,long,long,TimeUnit)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ForkJoinPool.html#submitWithTimeout(Callable,long,TimeUnit,Consumer)">submitWithTimeout(Callable,long,TimeUnit,Consumer)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>8</td>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>12</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

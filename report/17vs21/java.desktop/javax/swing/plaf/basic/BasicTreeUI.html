@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.plaf.basic.BasicTreeUI</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/swing/plaf/basic/package-summary.html">javax.swing.plaf.basic</a></div>
+<h1>Class&nbsp;BasicTreeUI</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> BasicTreeUI <div class="superclass"><span class="keyword">extends</span> javax.swing.plaf.TreeUI</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.CellEditorHandler.html">CellEditorHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.ComponentHandler.html">ComponentHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.FocusHandler.html">FocusHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.KeyHandler.html">KeyHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.MouseHandler.html">MouseHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.MouseInputHandler.html">MouseInputHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.NodeDimensionsHandler.html">NodeDimensionsHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.PropertyChangeHandler.html">PropertyChangeHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.SelectionModelPropertyChangeHandler.html">SelectionModelPropertyChangeHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeCancelEditingAction.html">TreeCancelEditingAction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeExpansionHandler.html">TreeExpansionHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeHomeAction.html">TreeHomeAction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeIncrementAction.html">TreeIncrementAction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeModelHandler.html">TreeModelHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreePageAction.html">TreePageAction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeSelectionHandler.html">TreeSelectionHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeToggleAction.html">TreeToggleAction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicTreeUI.TreeTraverseAction.html">TreeTraverseAction</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="cellEditor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.tree.TreeCellEditor cellEditor</div>
+</div>
+</li><li><div class="element" id="collapsedIcon"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.Icon collapsedIcon</div>
+</div>
+</li><li><div class="element" id="createdCellEditor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> createdCellEditor</div>
+</div>
+</li><li><div class="element" id="createdRenderer"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> createdRenderer</div>
+</div>
+</li><li><div class="element" id="currentCellRenderer"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.tree.TreeCellRenderer currentCellRenderer</div>
+</div>
+</li><li><div class="element" id="depthOffset"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> depthOffset</div>
+</div>
+</li><li><div class="element" id="drawingCache"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.util.Hashtable&lt;javax.swing.tree.TreePath, java.lang.Boolean&gt;</span> drawingCache</div>
+</div>
+</li><li><div class="element" id="editingComponent"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Component editingComponent</div>
+</div>
+</li><li><div class="element" id="editingPath"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.TreePath editingPath</div>
+</div>
+</li><li><div class="element" id="editingRow"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> editingRow</div>
+</div>
+</li><li><div class="element" id="editorHasDifferentSize"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> editorHasDifferentSize</div>
+</div>
+</li><li><div class="element" id="expandedIcon"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.Icon expandedIcon</div>
+</div>
+</li><li><div class="element" id="largeModel"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> largeModel</div>
+</div>
+</li><li><div class="element" id="lastSelectedRow"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> lastSelectedRow</div>
+</div>
+</li><li><div class="element" id="leftChildIndent"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> leftChildIndent</div>
+</div>
+</li><li><div class="element" id="nodeDimensions"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.AbstractLayoutCache.NodeDimensions nodeDimensions</div>
+</div>
+</li><li><div class="element" id="preferredMinSize"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Dimension preferredMinSize</div>
+</div>
+</li><li><div class="element" id="preferredSize"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Dimension preferredSize</div>
+</div>
+</li><li><div class="element" id="rendererPane"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.CellRendererPane rendererPane</div>
+</div>
+</li><li><div class="element" id="rightChildIndent"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> rightChildIndent</div>
+</div>
+</li><li><div class="element" id="stopEditingInCompleteEditing"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> stopEditingInCompleteEditing</div>
+</div>
+</li><li><div class="element" id="totalChildIndent"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> totalChildIndent</div>
+</div>
+</li><li><div class="element" id="tree"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JTree tree</div>
+</div>
+</li><li><div class="element" id="treeModel"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.TreeModel treeModel</div>
+</div>
+</li><li><div class="element" id="treeSelectionModel"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.TreeSelectionModel treeSelectionModel</div>
+</div>
+</li><li><div class="element" id="treeState"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.AbstractLayoutCache treeState</div>
+</div>
+</li><li><div class="element" id="validCachedPreferredSize"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> validCachedPreferredSize</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BasicTreeUI()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="cancelEditing(JTree)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> cancelEditing(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="checkForClickInExpandControl(TreePath,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> checkForClickInExpandControl(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="completeEditing()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> completeEditing()</div>
+</div>
+</li><li><div class="element" id="completeEditing(boolean,boolean,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> completeEditing(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="completeUIInstall()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> completeUIInstall()</div>
+</div>
+</li><li><div class="element" id="completeUIUninstall()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> completeUIUninstall()</div>
+</div>
+</li><li><div class="element" id="configureLayoutCache()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> configureLayoutCache()</div>
+</div>
+</li><li><div class="element" id="createCellEditorListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.CellEditorListener createCellEditorListener()</div>
+</div>
+</li><li><div class="element" id="createCellRendererPane()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.CellRendererPane createCellRendererPane()</div>
+</div>
+</li><li><div class="element" id="createComponentListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.ComponentListener createComponentListener()</div>
+</div>
+</li><li><div class="element" id="createDefaultCellEditor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.TreeCellEditor createDefaultCellEditor()</div>
+</div>
+</li><li><div class="element" id="createDefaultCellRenderer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.TreeCellRenderer createDefaultCellRenderer()</div>
+</div>
+</li><li><div class="element" id="createFocusListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.FocusListener createFocusListener()</div>
+</div>
+</li><li><div class="element" id="createKeyListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.KeyListener createKeyListener()</div>
+</div>
+</li><li><div class="element" id="createLayoutCache()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.AbstractLayoutCache createLayoutCache()</div>
+</div>
+</li><li><div class="element" id="createMouseListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.MouseListener createMouseListener()</div>
+</div>
+</li><li><div class="element" id="createNodeDimensions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.AbstractLayoutCache.NodeDimensions createNodeDimensions()</div>
+</div>
+</li><li><div class="element" id="createPropertyChangeListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.beans.PropertyChangeListener createPropertyChangeListener()</div>
+</div>
+</li><li><div class="element" id="createSelectionModelPropertyChangeListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.beans.PropertyChangeListener createSelectionModelPropertyChangeListener()</div>
+</div>
+</li><li><div class="element" id="createTreeExpansionListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.TreeExpansionListener createTreeExpansionListener()</div>
+</div>
+</li><li><div class="element" id="createTreeModelListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.TreeModelListener createTreeModelListener()</div>
+</div>
+</li><li><div class="element" id="createTreeSelectionListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.TreeSelectionListener createTreeSelectionListener()</div>
+</div>
+</li><li><div class="element" id="createUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.swing.plaf.ComponentUI createUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="drawCentered(Component,Graphics,Icon,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> drawCentered(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.awt.Graphics arg1</span>, <span class="parameter">javax.swing.Icon arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="drawDashedHorizontalLine(Graphics,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> drawDashedHorizontalLine(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="drawDashedVerticalLine(Graphics,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> drawDashedVerticalLine(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="ensureRowsAreVisible(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> ensureRowsAreVisible(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBaseline(JComponent,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getBaseline(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBaselineResizeBehavior(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component.BaselineResizeBehavior getBaselineResizeBehavior(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCellEditor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.TreeCellEditor getCellEditor()</div>
+</div>
+</li><li><div class="element" id="getCellRenderer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.TreeCellRenderer getCellRenderer()</div>
+</div>
+</li><li><div class="element" id="getClosestPathForLocation(JTree,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.TreePath getClosestPathForLocation(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCollapsedIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getCollapsedIcon()</div>
+</div>
+</li><li><div class="element" id="getDropLineRect(DropLocation)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Rectangle getDropLineRect(<span class="parameters"><span class="parameter">javax.swing.JTree.DropLocation arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getEditingPath(JTree)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.TreePath getEditingPath(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getExpandedIcon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getExpandedIcon()</div>
+</div>
+</li><li><div class="element" id="getHashColor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Color getHashColor()</div>
+</div>
+</li><li><div class="element" id="getHorizontalLegBuffer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> getHorizontalLegBuffer()</div>
+</div>
+</li><li><div class="element" id="getLastChildPath(TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.TreePath getLastChildPath(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLeadSelectionRow()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> getLeadSelectionRow()</div>
+</div>
+</li><li><div class="element" id="getLeftChildIndent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getLeftChildIndent()</div>
+</div>
+</li><li><div class="element" id="getMaximumSize(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getMaximumSize(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getMinimumSize(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getMinimumSize(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.TreeModel getModel()</div>
+</div>
+</li><li><div class="element" id="getPathBounds(JTree,TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Rectangle getPathBounds(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span>, <span class="parameter">javax.swing.tree.TreePath arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPathForRow(JTree,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.TreePath getPathForRow(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPreferredMinSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getPreferredMinSize()</div>
+</div>
+</li><li><div class="element" id="getPreferredSize(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getPreferredSize(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPreferredSize(JComponent,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getPreferredSize(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getRightChildIndent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getRightChildIndent()</div>
+</div>
+</li><li><div class="element" id="getRowCount(JTree)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getRowCount(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getRowForPath(JTree,TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getRowForPath(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span>, <span class="parameter">javax.swing.tree.TreePath arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getRowHeight()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> getRowHeight()</div>
+</div>
+</li><li><div class="element" id="getRowX(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> getRowX(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getSelectionModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.TreeSelectionModel getSelectionModel()</div>
+</div>
+</li><li><div class="element" id="getShowsRootHandles()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> getShowsRootHandles()</div>
+</div>
+</li><li><div class="element" id="getVerticalLegBuffer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> getVerticalLegBuffer()</div>
+</div>
+</li><li><div class="element" id="handleExpandControlClick(TreePath,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> handleExpandControlClick(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="installComponents()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installComponents()</div>
+</div>
+</li><li><div class="element" id="installDefaults()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installDefaults()</div>
+</div>
+</li><li><div class="element" id="installKeyboardActions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installKeyboardActions()</div>
+</div>
+</li><li><div class="element" id="installListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installListeners()</div>
+</div>
+</li><li><div class="element" id="installUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> installUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isDropLine(DropLocation)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isDropLine(<span class="parameters"><span class="parameter">javax.swing.JTree.DropLocation arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isEditable()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isEditable()</div>
+</div>
+</li><li><div class="element" id="isEditing(JTree)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isEditing(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isLargeModel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isLargeModel()</div>
+</div>
+</li><li><div class="element" id="isLeaf(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isLeaf(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isLocationInExpandControl(TreePath,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isLocationInExpandControl(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="isMultiSelectEvent(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isMultiSelectEvent(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isRootVisible()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isRootVisible()</div>
+</div>
+</li><li><div class="element" id="isToggleEvent(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isToggleEvent(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isToggleSelectionEvent(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isToggleSelectionEvent(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paint(Graphics,JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paint(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">javax.swing.JComponent arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintDropLine(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintDropLine(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintExpandControl(Graphics,Rectangle,Insets,Rectangle,TreePath,int,boolean,boolean,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintExpandControl(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">java.awt.Rectangle arg1</span>, <span class="parameter">java.awt.Insets arg2</span>, <span class="parameter">java.awt.Rectangle arg3</span>, <span class="parameter">javax.swing.tree.TreePath arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span class="keyword">boolean</span> arg6</span>, <span class="parameter"><span class="keyword">boolean</span> arg7</span>, <span class="parameter"><span class="keyword">boolean</span> arg8</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintHorizontalLine(Graphics,JComponent,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintHorizontalLine(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">javax.swing.JComponent arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintHorizontalPartOfLeg(Graphics,Rectangle,Insets,Rectangle,TreePath,int,boolean,boolean,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintHorizontalPartOfLeg(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">java.awt.Rectangle arg1</span>, <span class="parameter">java.awt.Insets arg2</span>, <span class="parameter">java.awt.Rectangle arg3</span>, <span class="parameter">javax.swing.tree.TreePath arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span class="keyword">boolean</span> arg6</span>, <span class="parameter"><span class="keyword">boolean</span> arg7</span>, <span class="parameter"><span class="keyword">boolean</span> arg8</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintRow(Graphics,Rectangle,Insets,Rectangle,TreePath,int,boolean,boolean,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintRow(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">java.awt.Rectangle arg1</span>, <span class="parameter">java.awt.Insets arg2</span>, <span class="parameter">java.awt.Rectangle arg3</span>, <span class="parameter">javax.swing.tree.TreePath arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span>, <span class="parameter"><span class="keyword">boolean</span> arg6</span>, <span class="parameter"><span class="keyword">boolean</span> arg7</span>, <span class="parameter"><span class="keyword">boolean</span> arg8</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintVerticalLine(Graphics,JComponent,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintVerticalLine(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">javax.swing.JComponent arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintVerticalPartOfLeg(Graphics,Rectangle,Insets,TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintVerticalPartOfLeg(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span>, <span class="parameter">java.awt.Rectangle arg1</span>, <span class="parameter">java.awt.Insets arg2</span>, <span class="parameter">javax.swing.tree.TreePath arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="pathWasCollapsed(TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> pathWasCollapsed(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="pathWasExpanded(TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> pathWasExpanded(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="prepareForUIInstall()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> prepareForUIInstall()</div>
+</div>
+</li><li><div class="element" id="prepareForUIUninstall()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> prepareForUIUninstall()</div>
+</div>
+</li><li><div class="element" id="selectPathForEvent(TreePath,MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> selectPathForEvent(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span>, <span class="parameter">java.awt.event.MouseEvent arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setCellEditor(TreeCellEditor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setCellEditor(<span class="parameters"><span class="parameter">javax.swing.tree.TreeCellEditor arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setCellRenderer(TreeCellRenderer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setCellRenderer(<span class="parameters"><span class="parameter">javax.swing.tree.TreeCellRenderer arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setCollapsedIcon(Icon)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCollapsedIcon(<span class="parameters"><span class="parameter">javax.swing.Icon arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEditable(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setEditable(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setExpandedIcon(Icon)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setExpandedIcon(<span class="parameters"><span class="parameter">javax.swing.Icon arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setHashColor(Color)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setHashColor(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLargeModel(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setLargeModel(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLeftChildIndent(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLeftChildIndent(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setModel(TreeModel)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setModel(<span class="parameters"><span class="parameter">javax.swing.tree.TreeModel arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setPreferredMinSize(Dimension)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setPreferredMinSize(<span class="parameters"><span class="parameter">java.awt.Dimension arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRightChildIndent(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRightChildIndent(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRootVisible(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setRootVisible(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRowHeight(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setRowHeight(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionModel(TreeSelectionModel)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setSelectionModel(<span class="parameters"><span class="parameter">javax.swing.tree.TreeSelectionModel arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setShowsRootHandles(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setShowsRootHandles(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="shouldPaintExpandControl(TreePath,int,boolean,boolean,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> shouldPaintExpandControl(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span>, <span class="parameter"><span class="keyword">boolean</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="startEditing(TreePath,MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> startEditing(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span>, <span class="parameter">java.awt.event.MouseEvent arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="startEditingAtPath(JTree,TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> startEditingAtPath(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span>, <span class="parameter">javax.swing.tree.TreePath arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="stopEditing(JTree)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> stopEditing(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toggleExpandState(TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> toggleExpandState(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="uninstallComponents()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallComponents()</div>
+</div>
+</li><li><div class="element" id="uninstallDefaults()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallDefaults()</div>
+</div>
+</li><li><div class="element" id="uninstallKeyboardActions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallKeyboardActions()</div>
+</div>
+</li><li><div class="element" id="uninstallListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallListeners()</div>
+</div>
+</li><li><div class="element" id="uninstallUI(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> uninstallUI(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateCachedPreferredSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> updateCachedPreferredSize()</div>
+</div>
+</li><li><div class="element" id="updateCellEditor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> updateCellEditor()</div>
+</div>
+</li><li><div class="element" id="updateDepthOffset()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> updateDepthOffset()</div>
+</div>
+</li><li><div class="element" id="updateExpandedDescendants(TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> updateExpandedDescendants(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateLayoutCacheExpandedNodes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> updateLayoutCacheExpandedNodes()</div>
+</div>
+</li><li><div class="element" id="updateLeadSelectionRow()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> updateLeadSelectionRow()</div>
+</div>
+</li><li><div class="element" id="updateRenderer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> updateRenderer()</div>
+</div>
+</li><li><div class="element" id="updateSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> updateSize()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

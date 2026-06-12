@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.base/java.lang.constant.ClassDesc</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/lang/constant/package-summary.html">java.lang.constant</a></div>
+<h1>Interface&nbsp;ClassDesc</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">sealed</span></span> <span class="keyword">interface</span> ClassDesc <div class="superinterfaces"><span class="keyword">extends</span> java.lang.constant.ConstantDesc, <span>java.lang.invoke.TypeDescriptor.OfField&lt;java.lang.constant.ClassDesc&gt;</span></div>
+<div class="permitted-subclasses"><span class="keyword">permits</span> <span class="diffs"><span class="api" title="JDK21">java.lang.constant.PrimitiveClassDescImpl</span><span class="api" title="JDK25">&nbsp;</span></span>, <span class="diffs"><span class="api" title="JDK21">java.lang.constant.ReferenceClassDescImpl</span><span class="api" title="JDK25">&nbsp;</span></span>, <span class="diffs"><span class="api" title="JDK21">&nbsp;</span><span class="api" title="JDK25">jdk.internal.constant.ArrayClassDescImpl</span></span>, <span class="diffs"><span class="api" title="JDK21">&nbsp;</span><span class="api" title="JDK25">jdk.internal.constant.ClassOrInterfaceDescImpl</span></span>, <span class="diffs"><span class="api" title="JDK21">&nbsp;</span><span class="api" title="JDK25">jdk.internal.constant.PrimitiveClassDescImpl</span></span></div>
+</div>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="arrayType()"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="diffs"><span class="api" title="JDK21">&nbsp;</span><span class="api" title="JDK25"><span class="keyword">abstract</span></span></span> <span class="diffs"><span class="api" title="JDK21"><span class="keyword">default</span></span><span class="api" title="JDK25">&nbsp;</span></span></span> java.lang.constant.ClassDesc arrayType()</div>
+</div>
+</li><li><div class="element" id="arrayType(int)"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="diffs"><span class="api" title="JDK21">&nbsp;</span><span class="api" title="JDK25"><span class="keyword">abstract</span></span></span> <span class="diffs"><span class="api" title="JDK21"><span class="keyword">default</span></span><span class="api" title="JDK25">&nbsp;</span></span></span> java.lang.constant.ClassDesc arrayType(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="componentType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.constant.ClassDesc componentType()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="descriptorString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String descriptorString()</div>
+</div>
+</li><li><div class="element" id="displayName()"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="diffs"><span class="api" title="JDK21">&nbsp;</span><span class="api" title="JDK25"><span class="keyword">abstract</span></span></span> <span class="diffs"><span class="api" title="JDK21"><span class="keyword">default</span></span><span class="api" title="JDK25">&nbsp;</span></span></span> java.lang.String displayName()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isArray()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">boolean</span> isArray()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isClassOrInterface()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">boolean</span> isClassOrInterface()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isPrimitive()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">boolean</span> isPrimitive()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="nested(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.constant.ClassDesc nested(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="nested(String,String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.constant.ClassDesc nested(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>java.lang.String[]</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="of(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.constant.ClassDesc of(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="of(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.constant.ClassDesc of(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ofDescriptor(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.constant.ClassDesc ofDescriptor(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ofInternalName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.constant.ClassDesc ofInternalName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="packageName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.lang.String packageName()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="resolveConstantDesc(Lookup)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.lang.Class&lt;?&gt;</span> resolveConstantDesc(<span class="parameters"><span class="parameter">java.lang.invoke.MethodHandles.Lookup arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.ReflectiveOperationException</span></div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th class="allZero">Added</th>
+<th>Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/lang/constant/ClassDesc.html">ClassDesc</a></th>
+<td></td>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/constant/ClassDesc.html#arrayType()">arrayType()</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/constant/ClassDesc.html#arrayType(int)">arrayType(int)</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/constant/ClassDesc.html#displayName()">displayName()</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td></td>
+<td>9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>9</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

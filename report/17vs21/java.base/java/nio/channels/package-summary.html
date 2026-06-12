@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: package java.base/java.nio.channels</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<h1>Package&nbsp;java.nio.channels</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="keyword">package</span> java.nio.channels</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/AcceptPendingException.html">AcceptPendingException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/AlreadyBoundException.html">AlreadyBoundException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/AlreadyConnectedException.html">AlreadyConnectedException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/AsynchronousByteChannel.html">AsynchronousByteChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/AsynchronousChannel.html">AsynchronousChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/AsynchronousChannelGroup.html">AsynchronousChannelGroup</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/AsynchronousCloseException.html">AsynchronousCloseException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/AsynchronousFileChannel.html">AsynchronousFileChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/AsynchronousServerSocketChannel.html">AsynchronousServerSocketChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/AsynchronousSocketChannel.html">AsynchronousSocketChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/ByteChannel.html">ByteChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/CancelledKeyException.html">CancelledKeyException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/Channel.html">Channel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/Channels.html">Channels</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/ClosedByInterruptException.html">ClosedByInterruptException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/ClosedChannelException.html">ClosedChannelException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/ClosedSelectorException.html">ClosedSelectorException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/CompletionHandler.html">CompletionHandler</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/ConnectionPendingException.html">ConnectionPendingException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/DatagramChannel.html">DatagramChannel</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/nio/channels/FileChannel.html">FileChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/FileLock.html">FileLock</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/FileLockInterruptionException.html">FileLockInterruptionException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/GatheringByteChannel.html">GatheringByteChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/IllegalBlockingModeException.html">IllegalBlockingModeException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/IllegalChannelGroupException.html">IllegalChannelGroupException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/IllegalSelectorException.html">IllegalSelectorException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/InterruptedByTimeoutException.html">InterruptedByTimeoutException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/InterruptibleChannel.html">InterruptibleChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/MembershipKey.html">MembershipKey</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/MulticastChannel.html">MulticastChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/NetworkChannel.html">NetworkChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/NoConnectionPendingException.html">NoConnectionPendingException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/NonReadableChannelException.html">NonReadableChannelException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/NonWritableChannelException.html">NonWritableChannelException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/NotYetBoundException.html">NotYetBoundException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/NotYetConnectedException.html">NotYetConnectedException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/OverlappingFileLockException.html">OverlappingFileLockException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/Pipe.html">Pipe</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/ReadPendingException.html">ReadPendingException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/ReadableByteChannel.html">ReadableByteChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/ScatteringByteChannel.html">ScatteringByteChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/SeekableByteChannel.html">SeekableByteChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/SelectableChannel.html">SelectableChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/SelectionKey.html">SelectionKey</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/Selector.html">Selector</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/ServerSocketChannel.html">ServerSocketChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/ShutdownChannelGroupException.html">ShutdownChannelGroupException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/SocketChannel.html">SocketChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/UnresolvedAddressException.html">UnresolvedAddressException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/UnsupportedAddressTypeException.html">UnsupportedAddressTypeException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/WritableByteChannel.html">WritableByteChannel</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/nio/channels/WritePendingException.html">WritePendingException</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/nio/channels/FileChannel.html">FileChannel</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

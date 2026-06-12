@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.base/java.lang.classfile.AnnotationValue</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/lang/classfile/package-summary.html">java.lang.classfile</a></div>
+<h1>Interface&nbsp;AnnotationValue</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">sealed</span></span> <span class="keyword">interface</span> AnnotationValue <div class="permitted-subclasses"><span class="keyword">permits</span> java.lang.classfile.AnnotationValue.OfAnnotation, java.lang.classfile.AnnotationValue.OfArray, java.lang.classfile.AnnotationValue.OfClass, java.lang.classfile.AnnotationValue.OfConstant, java.lang.classfile.AnnotationValue.OfEnum</div>
+</div>
+</div>
+<section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfAnnotation.html">OfAnnotation</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfArray.html">OfArray</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfBoolean.html">OfBoolean</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfByte.html">OfByte</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfChar.html">OfChar</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfClass.html">OfClass</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfConstant.html">OfConstant</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfDouble.html">OfDouble</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfEnum.html">OfEnum</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfFloat.html">OfFloat</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfInt.html">OfInt</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfLong.html">OfLong</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfShort.html">OfShort</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfString.html">OfString</a></span></li></ul>
+</section>
+<section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="TAG_ANNOTATION"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_ANNOTATION = 64</div>
+</div>
+</li><li><div class="element" id="TAG_ARRAY"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_ARRAY = 91</div>
+</div>
+</li><li><div class="element" id="TAG_BOOLEAN"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_BOOLEAN = 90</div>
+</div>
+</li><li><div class="element" id="TAG_BYTE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_BYTE = 66</div>
+</div>
+</li><li><div class="element" id="TAG_CHAR"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_CHAR = 67</div>
+</div>
+</li><li><div class="element" id="TAG_CLASS"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_CLASS = 99</div>
+</div>
+</li><li><div class="element" id="TAG_DOUBLE"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_DOUBLE = 68</div>
+</div>
+</li><li><div class="element" id="TAG_ENUM"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_ENUM = 101</div>
+</div>
+</li><li><div class="element" id="TAG_FLOAT"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_FLOAT = 70</div>
+</div>
+</li><li><div class="element" id="TAG_INT"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_INT = 73</div>
+</div>
+</li><li><div class="element" id="TAG_LONG"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_LONG = 74</div>
+</div>
+</li><li><div class="element" id="TAG_SHORT"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SHORT = 83</div>
+</div>
+</li><li><div class="element" id="TAG_STRING"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_STRING = 115</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="of(Object)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue of(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofAnnotation(Annotation)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfAnnotation ofAnnotation(<span class="parameters"><span class="parameter">java.lang.classfile.Annotation arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofArray(AnnotationValue[])"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfArray ofArray(<span class="parameters"><span class="parameter"><span>java.lang.classfile.AnnotationValue[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofArray(List)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfArray ofArray(<span class="parameters"><span class="parameter"><span>java.util.List&lt;java.lang.classfile.AnnotationValue&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofBoolean(boolean)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfBoolean ofBoolean(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofBoolean(IntegerEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfBoolean ofBoolean(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.IntegerEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofByte(byte)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfByte ofByte(<span class="parameters"><span class="parameter"><span class="keyword">byte</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofByte(IntegerEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfByte ofByte(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.IntegerEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofChar(char)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfChar ofChar(<span class="parameters"><span class="parameter"><span class="keyword">char</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofChar(IntegerEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfChar ofChar(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.IntegerEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofClass(Utf8Entry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfClass ofClass(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.Utf8Entry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofClass(ClassDesc)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfClass ofClass(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofDouble(double)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfDouble ofDouble(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofDouble(DoubleEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfDouble ofDouble(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.DoubleEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofEnum(Utf8Entry,Utf8Entry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfEnum ofEnum(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.Utf8Entry arg0</span>, <span class="parameter">java.lang.classfile.constantpool.Utf8Entry arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofEnum(ClassDesc,String)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfEnum ofEnum(<span class="parameters"><span class="parameter">java.lang.constant.ClassDesc arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofFloat(float)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfFloat ofFloat(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofFloat(FloatEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfFloat ofFloat(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.FloatEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofInt(int)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfInt ofInt(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofInt(IntegerEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfInt ofInt(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.IntegerEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofLong(long)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfLong ofLong(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofLong(LongEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfLong ofLong(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.LongEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofShort(short)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfShort ofShort(<span class="parameters"><span class="parameter"><span class="keyword">short</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofShort(IntegerEntry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfShort ofShort(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.IntegerEntry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofString(String)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfString ofString(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofString(Utf8Entry)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.AnnotationValue.OfString ofString(<span class="parameters"><span class="parameter">java.lang.classfile.constantpool.Utf8Entry arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="tag()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> tag()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/AnnotationValue.html">AnnotationValue</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfAnnotation.html">AnnotationValue.OfAnnotation</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfArray.html">AnnotationValue.OfArray</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfBoolean.html">AnnotationValue.OfBoolean</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfByte.html">AnnotationValue.OfByte</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfChar.html">AnnotationValue.OfChar</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfClass.html">AnnotationValue.OfClass</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfConstant.html">AnnotationValue.OfConstant</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfDouble.html">AnnotationValue.OfDouble</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfEnum.html">AnnotationValue.OfEnum</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfFloat.html">AnnotationValue.OfFloat</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfInt.html">AnnotationValue.OfInt</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfLong.html">AnnotationValue.OfLong</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfShort.html">AnnotationValue.OfShort</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/AnnotationValue.OfString.html">AnnotationValue.OfString</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>15</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>15</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

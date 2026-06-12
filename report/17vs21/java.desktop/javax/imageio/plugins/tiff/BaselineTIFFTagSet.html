@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.imageio.plugins.tiff.BaselineTIFFTagSet</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/imageio/plugins/tiff/package-summary.html">javax.imageio.plugins.tiff</a></div>
+<h1>Class&nbsp;BaselineTIFFTagSet</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> BaselineTIFFTagSet <div class="superclass"><span class="keyword">extends</span> javax.imageio.plugins.tiff.TIFFTagSet</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="COMPRESSION_CCITT_RLE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPRESSION_CCITT_RLE = 2</div>
+</div>
+</li><li><div class="element" id="COMPRESSION_CCITT_T_4"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPRESSION_CCITT_T_4 = 3</div>
+</div>
+</li><li><div class="element" id="COMPRESSION_CCITT_T_6"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPRESSION_CCITT_T_6 = 4</div>
+</div>
+</li><li><div class="element" id="COMPRESSION_DEFLATE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPRESSION_DEFLATE = 32946</div>
+</div>
+</li><li><div class="element" id="COMPRESSION_JPEG"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPRESSION_JPEG = 7</div>
+</div>
+</li><li><div class="element" id="COMPRESSION_LZW"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPRESSION_LZW = 5</div>
+</div>
+</li><li><div class="element" id="COMPRESSION_NONE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPRESSION_NONE = 1</div>
+</div>
+</li><li><div class="element" id="COMPRESSION_OLD_JPEG"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPRESSION_OLD_JPEG = 6</div>
+</div>
+</li><li><div class="element" id="COMPRESSION_PACKBITS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPRESSION_PACKBITS = 32773</div>
+</div>
+</li><li><div class="element" id="COMPRESSION_ZLIB"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPRESSION_ZLIB = 8</div>
+</div>
+</li><li><div class="element" id="EXTRA_SAMPLES_ASSOCIATED_ALPHA"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXTRA_SAMPLES_ASSOCIATED_ALPHA = 1</div>
+</div>
+</li><li><div class="element" id="EXTRA_SAMPLES_UNASSOCIATED_ALPHA"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXTRA_SAMPLES_UNASSOCIATED_ALPHA = 2</div>
+</div>
+</li><li><div class="element" id="EXTRA_SAMPLES_UNSPECIFIED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXTRA_SAMPLES_UNSPECIFIED = 0</div>
+</div>
+</li><li><div class="element" id="FILL_ORDER_LEFT_TO_RIGHT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FILL_ORDER_LEFT_TO_RIGHT = 1</div>
+</div>
+</li><li><div class="element" id="FILL_ORDER_RIGHT_TO_LEFT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FILL_ORDER_RIGHT_TO_LEFT = 2</div>
+</div>
+</li><li><div class="element" id="GRAY_RESPONSE_UNIT_HUNDREDTHS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> GRAY_RESPONSE_UNIT_HUNDREDTHS = 2</div>
+</div>
+</li><li><div class="element" id="GRAY_RESPONSE_UNIT_HUNDRED_THOUSANDTHS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> GRAY_RESPONSE_UNIT_HUNDRED_THOUSANDTHS = 5</div>
+</div>
+</li><li><div class="element" id="GRAY_RESPONSE_UNIT_TENTHS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> GRAY_RESPONSE_UNIT_TENTHS = 1</div>
+</div>
+</li><li><div class="element" id="GRAY_RESPONSE_UNIT_TEN_THOUSANDTHS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> GRAY_RESPONSE_UNIT_TEN_THOUSANDTHS = 4</div>
+</div>
+</li><li><div class="element" id="GRAY_RESPONSE_UNIT_THOUSANDTHS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> GRAY_RESPONSE_UNIT_THOUSANDTHS = 3</div>
+</div>
+</li><li><div class="element" id="INK_SET_CMYK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> INK_SET_CMYK = 1</div>
+</div>
+</li><li><div class="element" id="INK_SET_NOT_CMYK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> INK_SET_NOT_CMYK = 2</div>
+</div>
+</li><li><div class="element" id="JPEG_PROC_BASELINE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JPEG_PROC_BASELINE = 1</div>
+</div>
+</li><li><div class="element" id="JPEG_PROC_LOSSLESS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> JPEG_PROC_LOSSLESS = 14</div>
+</div>
+</li><li><div class="element" id="NEW_SUBFILE_TYPE_REDUCED_RESOLUTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> NEW_SUBFILE_TYPE_REDUCED_RESOLUTION = 1</div>
+</div>
+</li><li><div class="element" id="NEW_SUBFILE_TYPE_SINGLE_PAGE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> NEW_SUBFILE_TYPE_SINGLE_PAGE = 2</div>
+</div>
+</li><li><div class="element" id="NEW_SUBFILE_TYPE_TRANSPARENCY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> NEW_SUBFILE_TYPE_TRANSPARENCY = 4</div>
+</div>
+</li><li><div class="element" id="ORIENTATION_ROW_0_BOTTOM_COLUMN_0_LEFT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ORIENTATION_ROW_0_BOTTOM_COLUMN_0_LEFT = 4</div>
+</div>
+</li><li><div class="element" id="ORIENTATION_ROW_0_BOTTOM_COLUMN_0_RIGHT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ORIENTATION_ROW_0_BOTTOM_COLUMN_0_RIGHT = 3</div>
+</div>
+</li><li><div class="element" id="ORIENTATION_ROW_0_LEFT_COLUMN_0_BOTTOM"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ORIENTATION_ROW_0_LEFT_COLUMN_0_BOTTOM = 8</div>
+</div>
+</li><li><div class="element" id="ORIENTATION_ROW_0_LEFT_COLUMN_0_TOP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ORIENTATION_ROW_0_LEFT_COLUMN_0_TOP = 5</div>
+</div>
+</li><li><div class="element" id="ORIENTATION_ROW_0_RIGHT_COLUMN_0_BOTTOM"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ORIENTATION_ROW_0_RIGHT_COLUMN_0_BOTTOM = 7</div>
+</div>
+</li><li><div class="element" id="ORIENTATION_ROW_0_RIGHT_COLUMN_0_TOP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ORIENTATION_ROW_0_RIGHT_COLUMN_0_TOP = 6</div>
+</div>
+</li><li><div class="element" id="ORIENTATION_ROW_0_TOP_COLUMN_0_LEFT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ORIENTATION_ROW_0_TOP_COLUMN_0_LEFT = 1</div>
+</div>
+</li><li><div class="element" id="ORIENTATION_ROW_0_TOP_COLUMN_0_RIGHT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ORIENTATION_ROW_0_TOP_COLUMN_0_RIGHT = 2</div>
+</div>
+</li><li><div class="element" id="PHOTOMETRIC_INTERPRETATION_BLACK_IS_ZERO"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PHOTOMETRIC_INTERPRETATION_BLACK_IS_ZERO = 1</div>
+</div>
+</li><li><div class="element" id="PHOTOMETRIC_INTERPRETATION_CIELAB"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PHOTOMETRIC_INTERPRETATION_CIELAB = 8</div>
+</div>
+</li><li><div class="element" id="PHOTOMETRIC_INTERPRETATION_CMYK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PHOTOMETRIC_INTERPRETATION_CMYK = 5</div>
+</div>
+</li><li><div class="element" id="PHOTOMETRIC_INTERPRETATION_ICCLAB"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PHOTOMETRIC_INTERPRETATION_ICCLAB = 9</div>
+</div>
+</li><li><div class="element" id="PHOTOMETRIC_INTERPRETATION_PALETTE_COLOR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PHOTOMETRIC_INTERPRETATION_PALETTE_COLOR = 3</div>
+</div>
+</li><li><div class="element" id="PHOTOMETRIC_INTERPRETATION_RGB"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PHOTOMETRIC_INTERPRETATION_RGB = 2</div>
+</div>
+</li><li><div class="element" id="PHOTOMETRIC_INTERPRETATION_TRANSPARENCY_MASK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PHOTOMETRIC_INTERPRETATION_TRANSPARENCY_MASK = 4</div>
+</div>
+</li><li><div class="element" id="PHOTOMETRIC_INTERPRETATION_WHITE_IS_ZERO"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PHOTOMETRIC_INTERPRETATION_WHITE_IS_ZERO = 0</div>
+</div>
+</li><li><div class="element" id="PHOTOMETRIC_INTERPRETATION_Y_CB_CR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PHOTOMETRIC_INTERPRETATION_Y_CB_CR = 6</div>
+</div>
+</li><li><div class="element" id="PLANAR_CONFIGURATION_CHUNKY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PLANAR_CONFIGURATION_CHUNKY = 1</div>
+</div>
+</li><li><div class="element" id="PLANAR_CONFIGURATION_PLANAR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PLANAR_CONFIGURATION_PLANAR = 2</div>
+</div>
+</li><li><div class="element" id="PREDICTOR_HORIZONTAL_DIFFERENCING"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PREDICTOR_HORIZONTAL_DIFFERENCING = 2</div>
+</div>
+</li><li><div class="element" id="PREDICTOR_NONE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> PREDICTOR_NONE = 1</div>
+</div>
+</li><li><div class="element" id="RESOLUTION_UNIT_CENTIMETER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> RESOLUTION_UNIT_CENTIMETER = 3</div>
+</div>
+</li><li><div class="element" id="RESOLUTION_UNIT_INCH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> RESOLUTION_UNIT_INCH = 2</div>
+</div>
+</li><li><div class="element" id="RESOLUTION_UNIT_NONE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> RESOLUTION_UNIT_NONE = 1</div>
+</div>
+</li><li><div class="element" id="SAMPLE_FORMAT_FLOATING_POINT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SAMPLE_FORMAT_FLOATING_POINT = 3</div>
+</div>
+</li><li><div class="element" id="SAMPLE_FORMAT_SIGNED_INTEGER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SAMPLE_FORMAT_SIGNED_INTEGER = 2</div>
+</div>
+</li><li><div class="element" id="SAMPLE_FORMAT_UNDEFINED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SAMPLE_FORMAT_UNDEFINED = 4</div>
+</div>
+</li><li><div class="element" id="SAMPLE_FORMAT_UNSIGNED_INTEGER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SAMPLE_FORMAT_UNSIGNED_INTEGER = 1</div>
+</div>
+</li><li><div class="element" id="SUBFILE_TYPE_FULL_RESOLUTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SUBFILE_TYPE_FULL_RESOLUTION = 1</div>
+</div>
+</li><li><div class="element" id="SUBFILE_TYPE_REDUCED_RESOLUTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SUBFILE_TYPE_REDUCED_RESOLUTION = 2</div>
+</div>
+</li><li><div class="element" id="SUBFILE_TYPE_SINGLE_PAGE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SUBFILE_TYPE_SINGLE_PAGE = 3</div>
+</div>
+</li><li><div class="element" id="T4_OPTIONS_2D_CODING"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> T4_OPTIONS_2D_CODING = 1</div>
+</div>
+</li><li><div class="element" id="T4_OPTIONS_EOL_BYTE_ALIGNED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> T4_OPTIONS_EOL_BYTE_ALIGNED = 4</div>
+</div>
+</li><li><div class="element" id="T4_OPTIONS_UNCOMPRESSED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> T4_OPTIONS_UNCOMPRESSED = 2</div>
+</div>
+</li><li><div class="element" id="T6_OPTIONS_UNCOMPRESSED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> T6_OPTIONS_UNCOMPRESSED = 2</div>
+</div>
+</li><li><div class="element" id="TAG_ARTIST"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_ARTIST = 315</div>
+</div>
+</li><li><div class="element" id="TAG_BITS_PER_SAMPLE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_BITS_PER_SAMPLE = 258</div>
+</div>
+</li><li><div class="element" id="TAG_CELL_LENGTH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_CELL_LENGTH = 265</div>
+</div>
+</li><li><div class="element" id="TAG_CELL_WIDTH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_CELL_WIDTH = 264</div>
+</div>
+</li><li><div class="element" id="TAG_COLOR_MAP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_COLOR_MAP = 320</div>
+</div>
+</li><li><div class="element" id="TAG_COMPRESSION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_COMPRESSION = 259</div>
+</div>
+</li><li><div class="element" id="TAG_COPYRIGHT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_COPYRIGHT = 33432</div>
+</div>
+</li><li><div class="element" id="TAG_DATE_TIME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_DATE_TIME = 306</div>
+</div>
+</li><li><div class="element" id="TAG_DOCUMENT_NAME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_DOCUMENT_NAME = 269</div>
+</div>
+</li><li><div class="element" id="TAG_DOT_RANGE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_DOT_RANGE = 336</div>
+</div>
+</li><li><div class="element" id="TAG_EXTRA_SAMPLES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_EXTRA_SAMPLES = 338</div>
+</div>
+</li><li><div class="element" id="TAG_FILL_ORDER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_FILL_ORDER = 266</div>
+</div>
+</li><li><div class="element" id="TAG_FREE_BYTE_COUNTS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_FREE_BYTE_COUNTS = 289</div>
+</div>
+</li><li><div class="element" id="TAG_FREE_OFFSETS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_FREE_OFFSETS = 288</div>
+</div>
+</li><li><div class="element" id="TAG_GRAY_RESPONSE_CURVE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GRAY_RESPONSE_CURVE = 291</div>
+</div>
+</li><li><div class="element" id="TAG_GRAY_RESPONSE_UNIT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GRAY_RESPONSE_UNIT = 290</div>
+</div>
+</li><li><div class="element" id="TAG_HALFTONE_HINTS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_HALFTONE_HINTS = 321</div>
+</div>
+</li><li><div class="element" id="TAG_HOST_COMPUTER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_HOST_COMPUTER = 316</div>
+</div>
+</li><li><div class="element" id="TAG_ICC_PROFILE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_ICC_PROFILE = 34675</div>
+</div>
+</li><li><div class="element" id="TAG_IMAGE_DESCRIPTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_IMAGE_DESCRIPTION = 270</div>
+</div>
+</li><li><div class="element" id="TAG_IMAGE_LENGTH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_IMAGE_LENGTH = 257</div>
+</div>
+</li><li><div class="element" id="TAG_IMAGE_WIDTH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_IMAGE_WIDTH = 256</div>
+</div>
+</li><li><div class="element" id="TAG_INK_NAMES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_INK_NAMES = 333</div>
+</div>
+</li><li><div class="element" id="TAG_INK_SET"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_INK_SET = 332</div>
+</div>
+</li><li><div class="element" id="TAG_JPEG_AC_TABLES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_JPEG_AC_TABLES = 521</div>
+</div>
+</li><li><div class="element" id="TAG_JPEG_DC_TABLES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_JPEG_DC_TABLES = 520</div>
+</div>
+</li><li><div class="element" id="TAG_JPEG_INTERCHANGE_FORMAT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_JPEG_INTERCHANGE_FORMAT = 513</div>
+</div>
+</li><li><div class="element" id="TAG_JPEG_INTERCHANGE_FORMAT_LENGTH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_JPEG_INTERCHANGE_FORMAT_LENGTH = 514</div>
+</div>
+</li><li><div class="element" id="TAG_JPEG_LOSSLESS_PREDICTORS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_JPEG_LOSSLESS_PREDICTORS = 517</div>
+</div>
+</li><li><div class="element" id="TAG_JPEG_POINT_TRANSFORMS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_JPEG_POINT_TRANSFORMS = 518</div>
+</div>
+</li><li><div class="element" id="TAG_JPEG_PROC"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_JPEG_PROC = 512</div>
+</div>
+</li><li><div class="element" id="TAG_JPEG_Q_TABLES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_JPEG_Q_TABLES = 519</div>
+</div>
+</li><li><div class="element" id="TAG_JPEG_RESTART_INTERVAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_JPEG_RESTART_INTERVAL = 515</div>
+</div>
+</li><li><div class="element" id="TAG_JPEG_TABLES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_JPEG_TABLES = 347</div>
+</div>
+</li><li><div class="element" id="TAG_MAKE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_MAKE = 271</div>
+</div>
+</li><li><div class="element" id="TAG_MAX_SAMPLE_VALUE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_MAX_SAMPLE_VALUE = 281</div>
+</div>
+</li><li><div class="element" id="TAG_MIN_SAMPLE_VALUE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_MIN_SAMPLE_VALUE = 280</div>
+</div>
+</li><li><div class="element" id="TAG_MODEL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_MODEL = 272</div>
+</div>
+</li><li><div class="element" id="TAG_NEW_SUBFILE_TYPE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_NEW_SUBFILE_TYPE = 254</div>
+</div>
+</li><li><div class="element" id="TAG_NUMBER_OF_INKS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_NUMBER_OF_INKS = 334</div>
+</div>
+</li><li><div class="element" id="TAG_ORIENTATION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_ORIENTATION = 274</div>
+</div>
+</li><li><div class="element" id="TAG_PAGE_NAME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_PAGE_NAME = 285</div>
+</div>
+</li><li><div class="element" id="TAG_PAGE_NUMBER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_PAGE_NUMBER = 297</div>
+</div>
+</li><li><div class="element" id="TAG_PHOTOMETRIC_INTERPRETATION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_PHOTOMETRIC_INTERPRETATION = 262</div>
+</div>
+</li><li><div class="element" id="TAG_PLANAR_CONFIGURATION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_PLANAR_CONFIGURATION = 284</div>
+</div>
+</li><li><div class="element" id="TAG_PREDICTOR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_PREDICTOR = 317</div>
+</div>
+</li><li><div class="element" id="TAG_PRIMARY_CHROMATICITES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_PRIMARY_CHROMATICITES = 319</div>
+</div>
+</li><li><div class="element" id="TAG_REFERENCE_BLACK_WHITE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_REFERENCE_BLACK_WHITE = 532</div>
+</div>
+</li><li><div class="element" id="TAG_RESOLUTION_UNIT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_RESOLUTION_UNIT = 296</div>
+</div>
+</li><li><div class="element" id="TAG_ROWS_PER_STRIP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_ROWS_PER_STRIP = 278</div>
+</div>
+</li><li><div class="element" id="TAG_SAMPLES_PER_PIXEL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SAMPLES_PER_PIXEL = 277</div>
+</div>
+</li><li><div class="element" id="TAG_SAMPLE_FORMAT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SAMPLE_FORMAT = 339</div>
+</div>
+</li><li><div class="element" id="TAG_SOFTWARE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SOFTWARE = 305</div>
+</div>
+</li><li><div class="element" id="TAG_STRIP_BYTE_COUNTS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_STRIP_BYTE_COUNTS = 279</div>
+</div>
+</li><li><div class="element" id="TAG_STRIP_OFFSETS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_STRIP_OFFSETS = 273</div>
+</div>
+</li><li><div class="element" id="TAG_SUBFILE_TYPE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SUBFILE_TYPE = 255</div>
+</div>
+</li><li><div class="element" id="TAG_S_MAX_SAMPLE_VALUE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_S_MAX_SAMPLE_VALUE = 341</div>
+</div>
+</li><li><div class="element" id="TAG_S_MIN_SAMPLE_VALUE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_S_MIN_SAMPLE_VALUE = 340</div>
+</div>
+</li><li><div class="element" id="TAG_T4_OPTIONS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_T4_OPTIONS = 292</div>
+</div>
+</li><li><div class="element" id="TAG_T6_OPTIONS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_T6_OPTIONS = 293</div>
+</div>
+</li><li><div class="element" id="TAG_TARGET_PRINTER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_TARGET_PRINTER = 337</div>
+</div>
+</li><li><div class="element" id="TAG_THRESHHOLDING"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_THRESHHOLDING = 263</div>
+</div>
+</li><li><div class="element" id="TAG_TILE_BYTE_COUNTS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_TILE_BYTE_COUNTS = 325</div>
+</div>
+</li><li><div class="element" id="TAG_TILE_LENGTH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_TILE_LENGTH = 323</div>
+</div>
+</li><li><div class="element" id="TAG_TILE_OFFSETS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_TILE_OFFSETS = 324</div>
+</div>
+</li><li><div class="element" id="TAG_TILE_WIDTH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_TILE_WIDTH = 322</div>
+</div>
+</li><li><div class="element" id="TAG_TRANSFER_FUNCTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_TRANSFER_FUNCTION = 301</div>
+</div>
+</li><li><div class="element" id="TAG_TRANSFER_RANGE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_TRANSFER_RANGE = 342</div>
+</div>
+</li><li><div class="element" id="TAG_WHITE_POINT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_WHITE_POINT = 318</div>
+</div>
+</li><li><div class="element" id="TAG_X_POSITION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_X_POSITION = 286</div>
+</div>
+</li><li><div class="element" id="TAG_X_RESOLUTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_X_RESOLUTION = 282</div>
+</div>
+</li><li><div class="element" id="TAG_Y_CB_CR_COEFFICIENTS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_Y_CB_CR_COEFFICIENTS = 529</div>
+</div>
+</li><li><div class="element" id="TAG_Y_CB_CR_POSITIONING"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_Y_CB_CR_POSITIONING = 531</div>
+</div>
+</li><li><div class="element" id="TAG_Y_CB_CR_SUBSAMPLING"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_Y_CB_CR_SUBSAMPLING = 530</div>
+</div>
+</li><li><div class="element" id="TAG_Y_POSITION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_Y_POSITION = 287</div>
+</div>
+</li><li><div class="element" id="TAG_Y_RESOLUTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_Y_RESOLUTION = 283</div>
+</div>
+</li><li><div class="element" id="THRESHHOLDING_NONE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> THRESHHOLDING_NONE = 1</div>
+</div>
+</li><li><div class="element" id="THRESHHOLDING_ORDERED_DITHER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> THRESHHOLDING_ORDERED_DITHER = 2</div>
+</div>
+</li><li><div class="element" id="THRESHHOLDING_RANDOMIZED_DITHER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> THRESHHOLDING_RANDOMIZED_DITHER = 3</div>
+</div>
+</li><li><div class="element" id="Y_CB_CR_POSITIONING_CENTERED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> Y_CB_CR_POSITIONING_CENTERED = 1</div>
+</div>
+</li><li><div class="element" id="Y_CB_CR_POSITIONING_COSITED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> Y_CB_CR_POSITIONING_COSITED = 2</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getInstance()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.imageio.plugins.tiff.BaselineTIFFTagSet getInstance()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

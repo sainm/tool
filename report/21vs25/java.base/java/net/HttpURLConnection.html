@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/java.net.HttpURLConnection</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/net/package-summary.html">java.net</a></div>
+<h1>Class&nbsp;HttpURLConnection</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> HttpURLConnection <div class="superclass"><span class="keyword">extends</span> java.net.URLConnection</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="HTTP_ACCEPTED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_ACCEPTED = 202</div>
+</div>
+</li><li><div class="element" id="HTTP_BAD_GATEWAY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_BAD_GATEWAY = 502</div>
+</div>
+</li><li><div class="element" id="HTTP_BAD_METHOD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_BAD_METHOD = 405</div>
+</div>
+</li><li><div class="element" id="HTTP_BAD_REQUEST"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_BAD_REQUEST = 400</div>
+</div>
+</li><li><div class="element" id="HTTP_CLIENT_TIMEOUT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_CLIENT_TIMEOUT = 408</div>
+</div>
+</li><li><div class="element" id="HTTP_CONFLICT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_CONFLICT = 409</div>
+</div>
+</li><li><div class="element" id="HTTP_CREATED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_CREATED = 201</div>
+</div>
+</li><li><div class="element" id="HTTP_ENTITY_TOO_LARGE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_ENTITY_TOO_LARGE = 413</div>
+</div>
+</li><li><div class="element" id="HTTP_FORBIDDEN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_FORBIDDEN = 403</div>
+</div>
+</li><li><div class="element" id="HTTP_GATEWAY_TIMEOUT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_GATEWAY_TIMEOUT = 504</div>
+</div>
+</li><li><div class="element" id="HTTP_GONE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_GONE = 410</div>
+</div>
+</li><li><div class="element" id="HTTP_INTERNAL_ERROR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_INTERNAL_ERROR = 500</div>
+</div>
+</li><li><div class="element" id="HTTP_LENGTH_REQUIRED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_LENGTH_REQUIRED = 411</div>
+</div>
+</li><li><div class="element" id="HTTP_MOVED_PERM"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_MOVED_PERM = 301</div>
+</div>
+</li><li><div class="element" id="HTTP_MOVED_TEMP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_MOVED_TEMP = 302</div>
+</div>
+</li><li><div class="element" id="HTTP_MULT_CHOICE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_MULT_CHOICE = 300</div>
+</div>
+</li><li><div class="element" id="HTTP_NOT_ACCEPTABLE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_NOT_ACCEPTABLE = 406</div>
+</div>
+</li><li><div class="element" id="HTTP_NOT_AUTHORITATIVE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_NOT_AUTHORITATIVE = 203</div>
+</div>
+</li><li><div class="element" id="HTTP_NOT_FOUND"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_NOT_FOUND = 404</div>
+</div>
+</li><li><div class="element" id="HTTP_NOT_IMPLEMENTED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_NOT_IMPLEMENTED = 501</div>
+</div>
+</li><li><div class="element" id="HTTP_NOT_MODIFIED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_NOT_MODIFIED = 304</div>
+</div>
+</li><li><div class="element" id="HTTP_NO_CONTENT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_NO_CONTENT = 204</div>
+</div>
+</li><li><div class="element" id="HTTP_OK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_OK = 200</div>
+</div>
+</li><li><div class="element" id="HTTP_PARTIAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_PARTIAL = 206</div>
+</div>
+</li><li><div class="element" id="HTTP_PAYMENT_REQUIRED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_PAYMENT_REQUIRED = 402</div>
+</div>
+</li><li><div class="element" id="HTTP_PRECON_FAILED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_PRECON_FAILED = 412</div>
+</div>
+</li><li><div class="element" id="HTTP_PROXY_AUTH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_PROXY_AUTH = 407</div>
+</div>
+</li><li><div class="element" id="HTTP_REQ_TOO_LONG"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_REQ_TOO_LONG = 414</div>
+</div>
+</li><li><div class="element" id="HTTP_RESET"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_RESET = 205</div>
+</div>
+</li><li><div class="element" id="HTTP_SEE_OTHER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_SEE_OTHER = 303</div>
+</div>
+</li><li><div class="element" id="HTTP_SERVER_ERROR"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_SERVER_ERROR = 500</div>
+</div>
+</li><li><div class="element" id="HTTP_UNAUTHORIZED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_UNAUTHORIZED = 401</div>
+</div>
+</li><li><div class="element" id="HTTP_UNAVAILABLE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_UNAVAILABLE = 503</div>
+</div>
+</li><li><div class="element" id="HTTP_UNSUPPORTED_TYPE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_UNSUPPORTED_TYPE = 415</div>
+</div>
+</li><li><div class="element" id="HTTP_USE_PROXY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_USE_PROXY = 305</div>
+</div>
+</li><li><div class="element" id="HTTP_VERSION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> HTTP_VERSION = 505</div>
+</div>
+</li><li><div class="element" id="chunkLength"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> chunkLength</div>
+</div>
+</li><li><div class="element" id="fixedContentLength"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> fixedContentLength</div>
+</div>
+</li><li><div class="element" id="fixedContentLengthLong"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">long</span> fixedContentLengthLong</div>
+</div>
+</li><li><div class="element" id="instanceFollowRedirects"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> instanceFollowRedirects</div>
+</div>
+</li><li><div class="element" id="method"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String method</div>
+</div>
+</li><li><div class="element" id="responseCode"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> responseCode</div>
+</div>
+</li><li><div class="element" id="responseMessage"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String responseMessage</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(URL)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> HttpURLConnection(<span class="parameters"><span class="parameter">java.net.URL arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="disconnect()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> disconnect()</div>
+</div>
+</li><li><div class="element" id="getErrorStream()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.InputStream getErrorStream()</div>
+</div>
+</li><li><div class="element" id="getFollowRedirects()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> getFollowRedirects()</div>
+</div>
+</li><li><div class="element" id="getHeaderField(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getHeaderField(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getHeaderFieldDate(String,long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getHeaderFieldDate(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getHeaderFieldKey(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getHeaderFieldKey(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getInstanceFollowRedirects()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getInstanceFollowRedirects()</div>
+</div>
+</li><li><div class="element" id="getPermission()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="25"forRemoval=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.security.Permission getPermission() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="getRequestMethod()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getRequestMethod()</div>
+</div>
+</li><li><div class="element" id="getResponseCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getResponseCode() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="getResponseMessage()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getResponseMessage() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="setAuthenticator(Authenticator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAuthenticator(<span class="parameters"><span class="parameter">java.net.Authenticator arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setChunkedStreamingMode(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setChunkedStreamingMode(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFixedLengthStreamingMode(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFixedLengthStreamingMode(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFixedLengthStreamingMode(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFixedLengthStreamingMode(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFollowRedirects(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setFollowRedirects(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setInstanceFollowRedirects(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setInstanceFollowRedirects(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRequestMethod(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRequestMethod(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.net.ProtocolException</span></div>
+</div>
+</li><li><div class="element" id="usingProxy()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> usingProxy()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

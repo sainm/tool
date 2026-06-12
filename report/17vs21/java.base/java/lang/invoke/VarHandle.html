@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.lang.invoke.VarHandle</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/lang/invoke/package-summary.html">java.lang.invoke</a></div>
+<h1>Class&nbsp;VarHandle</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21"><span class="keyword">sealed</span></span></span></span> <span class="keyword">class</span> VarHandle <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.lang.constant.Constable</div>
+<div class="permitted-subclasses"><span class="keyword">permits</span> <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.IndirectVarHandle</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleSegmentViewBase</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleBooleans.Array</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleBooleans.FieldInstanceReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleBooleans.FieldStaticReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleByteArrayAsChars.ByteArrayViewVarHandle</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleByteArrayAsDoubles.ByteArrayViewVarHandle</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleByteArrayAsFloats.ByteArrayViewVarHandle</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleByteArrayAsInts.ByteArrayViewVarHandle</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleByteArrayAsLongs.ByteArrayViewVarHandle</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleByteArrayAsShorts.ByteArrayViewVarHandle</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleBytes.Array</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleBytes.FieldInstanceReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleBytes.FieldStaticReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleChars.Array</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleChars.FieldInstanceReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleChars.FieldStaticReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleDoubles.Array</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleDoubles.FieldInstanceReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleDoubles.FieldStaticReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleFloats.Array</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleFloats.FieldInstanceReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleFloats.FieldStaticReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleInts.Array</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleInts.FieldInstanceReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleInts.FieldStaticReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleLongs.Array</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleLongs.FieldInstanceReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleLongs.FieldStaticReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleReferences.Array</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleReferences.FieldInstanceReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleReferences.FieldStaticReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleShorts.Array</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleShorts.FieldInstanceReadOnly</span></span>, <span class="diffs"><span class="api" title="JDK17">&nbsp;</span><span class="api" title="JDK21">java.lang.invoke.VarHandleShorts.FieldStaticReadOnly</span></span></div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/invoke/VarHandle.AccessMode.html">AccessMode</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/invoke/VarHandle.VarHandleDesc.html">VarHandleDesc</a></span></li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="accessModeType(AccessMode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.invoke.MethodType accessModeType(<span class="parameters"><span class="parameter">java.lang.invoke.VarHandle.AccessMode arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="acquireFence()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> acquireFence()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="compareAndExchange(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object compareAndExchange(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="compareAndExchangeAcquire(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object compareAndExchangeAcquire(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="compareAndExchangeRelease(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object compareAndExchangeRelease(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="compareAndSet(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> compareAndSet(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="coordinateTypes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.List&lt;<span>java.lang.Class&lt;?&gt;</span>&gt;</span> coordinateTypes()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="describeConstable()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Optional&lt;java.lang.invoke.VarHandle.VarHandleDesc&gt;</span> describeConstable()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="fullFence()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> fullFence()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="get(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object get(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAcquire(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAcquire(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAndAdd(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAndAdd(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAndAddAcquire(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAndAddAcquire(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAndAddRelease(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAndAddRelease(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAndBitwiseAnd(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAndBitwiseAnd(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAndBitwiseAndAcquire(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAndBitwiseAndAcquire(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAndBitwiseAndRelease(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAndBitwiseAndRelease(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAndBitwiseOr(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAndBitwiseOr(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAndBitwiseOrAcquire(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAndBitwiseOrAcquire(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAndBitwiseOrRelease(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAndBitwiseOrRelease(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAndBitwiseXor(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAndBitwiseXor(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAndBitwiseXorAcquire(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAndBitwiseXorAcquire(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAndBitwiseXorRelease(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAndBitwiseXorRelease(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAndSet(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAndSet(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAndSetAcquire(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAndSetAcquire(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAndSetRelease(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getAndSetRelease(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getOpaque(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getOpaque(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getVolatile(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getVolatile(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="hasInvokeExactBehavior()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> hasInvokeExactBehavior()</div>
+</div>
+</li><li><div class="element" id="isAccessModeSupported(AccessMode)"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="diffs"><span class="api" title="JDK17"><span class="keyword">final</span></span><span class="api" title="JDK21">&nbsp;</span></span></span> <span class="keyword">boolean</span> isAccessModeSupported(<span class="parameters"><span class="parameter">java.lang.invoke.VarHandle.AccessMode arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="loadLoadFence()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> loadLoadFence()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="releaseFence()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> releaseFence()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="set(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> set(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setOpaque(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setOpaque(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setRelease(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setRelease(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setVolatile(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setVolatile(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="storeStoreFence()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> storeStoreFence()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toMethodHandle(AccessMode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle toMethodHandle(<span class="parameters"><span class="parameter">java.lang.invoke.VarHandle.AccessMode arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.String toString()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="varType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> varType()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="weakCompareAndSet(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> weakCompareAndSet(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="weakCompareAndSetAcquire(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> weakCompareAndSetAcquire(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="weakCompareAndSetPlain(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> weakCompareAndSetPlain(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="weakCompareAndSetRelease(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> weakCompareAndSetRelease(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="withInvokeBehavior()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.invoke.VarHandle withInvokeBehavior()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="withInvokeExactBehavior()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.invoke.VarHandle withInvokeExactBehavior()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th class="allZero">Added</th>
+<th>Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/lang/invoke/VarHandle.html">VarHandle</a></th>
+<td></td>
+<td>37</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>37</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/invoke/VarHandle.html#isAccessModeSupported(AccessMode)">isAccessModeSupported(VarHandle.AccessMode)</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td></td>
+<td>38</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>38</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/java.awt.event.KeyEvent</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/java/awt/event/package-summary.html">java.awt.event</a></div>
+<h1>Class&nbsp;KeyEvent</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> KeyEvent <div class="superclass"><span class="keyword">extends</span> java.awt.event.InputEvent</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="CHAR_UNDEFINED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">char</span> CHAR_UNDEFINED = '￿'</div>
+</div>
+</li><li><div class="element" id="KEY_FIRST"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> KEY_FIRST = 400</div>
+</div>
+</li><li><div class="element" id="KEY_LAST"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> KEY_LAST = 402</div>
+</div>
+</li><li><div class="element" id="KEY_LOCATION_LEFT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> KEY_LOCATION_LEFT = 2</div>
+</div>
+</li><li><div class="element" id="KEY_LOCATION_NUMPAD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> KEY_LOCATION_NUMPAD = 4</div>
+</div>
+</li><li><div class="element" id="KEY_LOCATION_RIGHT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> KEY_LOCATION_RIGHT = 3</div>
+</div>
+</li><li><div class="element" id="KEY_LOCATION_STANDARD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> KEY_LOCATION_STANDARD = 1</div>
+</div>
+</li><li><div class="element" id="KEY_LOCATION_UNKNOWN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> KEY_LOCATION_UNKNOWN = 0</div>
+</div>
+</li><li><div class="element" id="KEY_PRESSED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> KEY_PRESSED = 401</div>
+</div>
+</li><li><div class="element" id="KEY_RELEASED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> KEY_RELEASED = 402</div>
+</div>
+</li><li><div class="element" id="KEY_TYPED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> KEY_TYPED = 400</div>
+</div>
+</li><li><div class="element" id="VK_0"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_0 = 48</div>
+</div>
+</li><li><div class="element" id="VK_1"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_1 = 49</div>
+</div>
+</li><li><div class="element" id="VK_2"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_2 = 50</div>
+</div>
+</li><li><div class="element" id="VK_3"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_3 = 51</div>
+</div>
+</li><li><div class="element" id="VK_4"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_4 = 52</div>
+</div>
+</li><li><div class="element" id="VK_5"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_5 = 53</div>
+</div>
+</li><li><div class="element" id="VK_6"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_6 = 54</div>
+</div>
+</li><li><div class="element" id="VK_7"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_7 = 55</div>
+</div>
+</li><li><div class="element" id="VK_8"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_8 = 56</div>
+</div>
+</li><li><div class="element" id="VK_9"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_9 = 57</div>
+</div>
+</li><li><div class="element" id="VK_A"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_A = 65</div>
+</div>
+</li><li><div class="element" id="VK_ACCEPT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_ACCEPT = 30</div>
+</div>
+</li><li><div class="element" id="VK_ADD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_ADD = 107</div>
+</div>
+</li><li><div class="element" id="VK_AGAIN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_AGAIN = 65481</div>
+</div>
+</li><li><div class="element" id="VK_ALL_CANDIDATES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_ALL_CANDIDATES = 256</div>
+</div>
+</li><li><div class="element" id="VK_ALPHANUMERIC"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_ALPHANUMERIC = 240</div>
+</div>
+</li><li><div class="element" id="VK_ALT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_ALT = 18</div>
+</div>
+</li><li><div class="element" id="VK_ALT_GRAPH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_ALT_GRAPH = 65406</div>
+</div>
+</li><li><div class="element" id="VK_AMPERSAND"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_AMPERSAND = 150</div>
+</div>
+</li><li><div class="element" id="VK_ASTERISK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_ASTERISK = 151</div>
+</div>
+</li><li><div class="element" id="VK_AT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_AT = 512</div>
+</div>
+</li><li><div class="element" id="VK_B"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_B = 66</div>
+</div>
+</li><li><div class="element" id="VK_BACK_QUOTE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_BACK_QUOTE = 192</div>
+</div>
+</li><li><div class="element" id="VK_BACK_SLASH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_BACK_SLASH = 92</div>
+</div>
+</li><li><div class="element" id="VK_BACK_SPACE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_BACK_SPACE = 8</div>
+</div>
+</li><li><div class="element" id="VK_BEGIN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_BEGIN = 65368</div>
+</div>
+</li><li><div class="element" id="VK_BRACELEFT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_BRACELEFT = 161</div>
+</div>
+</li><li><div class="element" id="VK_BRACERIGHT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_BRACERIGHT = 162</div>
+</div>
+</li><li><div class="element" id="VK_C"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_C = 67</div>
+</div>
+</li><li><div class="element" id="VK_CANCEL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_CANCEL = 3</div>
+</div>
+</li><li><div class="element" id="VK_CAPS_LOCK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_CAPS_LOCK = 20</div>
+</div>
+</li><li><div class="element" id="VK_CIRCUMFLEX"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_CIRCUMFLEX = 514</div>
+</div>
+</li><li><div class="element" id="VK_CLEAR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_CLEAR = 12</div>
+</div>
+</li><li><div class="element" id="VK_CLOSE_BRACKET"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_CLOSE_BRACKET = 93</div>
+</div>
+</li><li><div class="element" id="VK_CODE_INPUT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_CODE_INPUT = 258</div>
+</div>
+</li><li><div class="element" id="VK_COLON"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_COLON = 513</div>
+</div>
+</li><li><div class="element" id="VK_COMMA"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_COMMA = 44</div>
+</div>
+</li><li><div class="element" id="VK_COMPOSE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_COMPOSE = 65312</div>
+</div>
+</li><li><div class="element" id="VK_CONTEXT_MENU"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_CONTEXT_MENU = 525</div>
+</div>
+</li><li><div class="element" id="VK_CONTROL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_CONTROL = 17</div>
+</div>
+</li><li><div class="element" id="VK_CONVERT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_CONVERT = 28</div>
+</div>
+</li><li><div class="element" id="VK_COPY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_COPY = 65485</div>
+</div>
+</li><li><div class="element" id="VK_CUT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_CUT = 65489</div>
+</div>
+</li><li><div class="element" id="VK_D"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_D = 68</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_ABOVEDOT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_ABOVEDOT = 134</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_ABOVERING"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_ABOVERING = 136</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_ACUTE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_ACUTE = 129</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_BREVE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_BREVE = 133</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_CARON"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_CARON = 138</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_CEDILLA"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_CEDILLA = 139</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_CIRCUMFLEX"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_CIRCUMFLEX = 130</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_DIAERESIS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_DIAERESIS = 135</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_DOUBLEACUTE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_DOUBLEACUTE = 137</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_GRAVE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_GRAVE = 128</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_IOTA"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_IOTA = 141</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_MACRON"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_MACRON = 132</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_OGONEK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_OGONEK = 140</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_SEMIVOICED_SOUND"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_SEMIVOICED_SOUND = 143</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_TILDE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_TILDE = 131</div>
+</div>
+</li><li><div class="element" id="VK_DEAD_VOICED_SOUND"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DEAD_VOICED_SOUND = 142</div>
+</div>
+</li><li><div class="element" id="VK_DECIMAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DECIMAL = 110</div>
+</div>
+</li><li><div class="element" id="VK_DELETE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DELETE = 127</div>
+</div>
+</li><li><div class="element" id="VK_DIVIDE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DIVIDE = 111</div>
+</div>
+</li><li><div class="element" id="VK_DOLLAR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DOLLAR = 515</div>
+</div>
+</li><li><div class="element" id="VK_DOWN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_DOWN = 40</div>
+</div>
+</li><li><div class="element" id="VK_E"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_E = 69</div>
+</div>
+</li><li><div class="element" id="VK_END"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_END = 35</div>
+</div>
+</li><li><div class="element" id="VK_ENTER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_ENTER = 10</div>
+</div>
+</li><li><div class="element" id="VK_EQUALS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_EQUALS = 61</div>
+</div>
+</li><li><div class="element" id="VK_ESCAPE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_ESCAPE = 27</div>
+</div>
+</li><li><div class="element" id="VK_EURO_SIGN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_EURO_SIGN = 516</div>
+</div>
+</li><li><div class="element" id="VK_EXCLAMATION_MARK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_EXCLAMATION_MARK = 517</div>
+</div>
+</li><li><div class="element" id="VK_F"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F = 70</div>
+</div>
+</li><li><div class="element" id="VK_F1"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F1 = 112</div>
+</div>
+</li><li><div class="element" id="VK_F10"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F10 = 121</div>
+</div>
+</li><li><div class="element" id="VK_F11"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F11 = 122</div>
+</div>
+</li><li><div class="element" id="VK_F12"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F12 = 123</div>
+</div>
+</li><li><div class="element" id="VK_F13"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F13 = 61440</div>
+</div>
+</li><li><div class="element" id="VK_F14"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F14 = 61441</div>
+</div>
+</li><li><div class="element" id="VK_F15"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F15 = 61442</div>
+</div>
+</li><li><div class="element" id="VK_F16"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F16 = 61443</div>
+</div>
+</li><li><div class="element" id="VK_F17"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F17 = 61444</div>
+</div>
+</li><li><div class="element" id="VK_F18"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F18 = 61445</div>
+</div>
+</li><li><div class="element" id="VK_F19"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F19 = 61446</div>
+</div>
+</li><li><div class="element" id="VK_F2"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F2 = 113</div>
+</div>
+</li><li><div class="element" id="VK_F20"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F20 = 61447</div>
+</div>
+</li><li><div class="element" id="VK_F21"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F21 = 61448</div>
+</div>
+</li><li><div class="element" id="VK_F22"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F22 = 61449</div>
+</div>
+</li><li><div class="element" id="VK_F23"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F23 = 61450</div>
+</div>
+</li><li><div class="element" id="VK_F24"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F24 = 61451</div>
+</div>
+</li><li><div class="element" id="VK_F3"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F3 = 114</div>
+</div>
+</li><li><div class="element" id="VK_F4"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F4 = 115</div>
+</div>
+</li><li><div class="element" id="VK_F5"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F5 = 116</div>
+</div>
+</li><li><div class="element" id="VK_F6"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F6 = 117</div>
+</div>
+</li><li><div class="element" id="VK_F7"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F7 = 118</div>
+</div>
+</li><li><div class="element" id="VK_F8"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F8 = 119</div>
+</div>
+</li><li><div class="element" id="VK_F9"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_F9 = 120</div>
+</div>
+</li><li><div class="element" id="VK_FINAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_FINAL = 24</div>
+</div>
+</li><li><div class="element" id="VK_FIND"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_FIND = 65488</div>
+</div>
+</li><li><div class="element" id="VK_FULL_WIDTH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_FULL_WIDTH = 243</div>
+</div>
+</li><li><div class="element" id="VK_G"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_G = 71</div>
+</div>
+</li><li><div class="element" id="VK_GREATER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_GREATER = 160</div>
+</div>
+</li><li><div class="element" id="VK_H"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_H = 72</div>
+</div>
+</li><li><div class="element" id="VK_HALF_WIDTH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_HALF_WIDTH = 244</div>
+</div>
+</li><li><div class="element" id="VK_HELP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_HELP = 156</div>
+</div>
+</li><li><div class="element" id="VK_HIRAGANA"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_HIRAGANA = 242</div>
+</div>
+</li><li><div class="element" id="VK_HOME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_HOME = 36</div>
+</div>
+</li><li><div class="element" id="VK_I"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_I = 73</div>
+</div>
+</li><li><div class="element" id="VK_INPUT_METHOD_ON_OFF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_INPUT_METHOD_ON_OFF = 263</div>
+</div>
+</li><li><div class="element" id="VK_INSERT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_INSERT = 155</div>
+</div>
+</li><li><div class="element" id="VK_INVERTED_EXCLAMATION_MARK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_INVERTED_EXCLAMATION_MARK = 518</div>
+</div>
+</li><li><div class="element" id="VK_J"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_J = 74</div>
+</div>
+</li><li><div class="element" id="VK_JAPANESE_HIRAGANA"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_JAPANESE_HIRAGANA = 260</div>
+</div>
+</li><li><div class="element" id="VK_JAPANESE_KATAKANA"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_JAPANESE_KATAKANA = 259</div>
+</div>
+</li><li><div class="element" id="VK_JAPANESE_ROMAN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_JAPANESE_ROMAN = 261</div>
+</div>
+</li><li><div class="element" id="VK_K"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_K = 75</div>
+</div>
+</li><li><div class="element" id="VK_KANA"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_KANA = 21</div>
+</div>
+</li><li><div class="element" id="VK_KANA_LOCK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_KANA_LOCK = 262</div>
+</div>
+</li><li><div class="element" id="VK_KANJI"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_KANJI = 25</div>
+</div>
+</li><li><div class="element" id="VK_KATAKANA"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_KATAKANA = 241</div>
+</div>
+</li><li><div class="element" id="VK_KP_DOWN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_KP_DOWN = 225</div>
+</div>
+</li><li><div class="element" id="VK_KP_LEFT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_KP_LEFT = 226</div>
+</div>
+</li><li><div class="element" id="VK_KP_RIGHT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_KP_RIGHT = 227</div>
+</div>
+</li><li><div class="element" id="VK_KP_UP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_KP_UP = 224</div>
+</div>
+</li><li><div class="element" id="VK_L"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_L = 76</div>
+</div>
+</li><li><div class="element" id="VK_LEFT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_LEFT = 37</div>
+</div>
+</li><li><div class="element" id="VK_LEFT_PARENTHESIS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_LEFT_PARENTHESIS = 519</div>
+</div>
+</li><li><div class="element" id="VK_LESS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_LESS = 153</div>
+</div>
+</li><li><div class="element" id="VK_M"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_M = 77</div>
+</div>
+</li><li><div class="element" id="VK_META"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_META = 157</div>
+</div>
+</li><li><div class="element" id="VK_MINUS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_MINUS = 45</div>
+</div>
+</li><li><div class="element" id="VK_MODECHANGE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_MODECHANGE = 31</div>
+</div>
+</li><li><div class="element" id="VK_MULTIPLY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_MULTIPLY = 106</div>
+</div>
+</li><li><div class="element" id="VK_N"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_N = 78</div>
+</div>
+</li><li><div class="element" id="VK_NONCONVERT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_NONCONVERT = 29</div>
+</div>
+</li><li><div class="element" id="VK_NUMBER_SIGN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_NUMBER_SIGN = 520</div>
+</div>
+</li><li><div class="element" id="VK_NUMPAD0"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_NUMPAD0 = 96</div>
+</div>
+</li><li><div class="element" id="VK_NUMPAD1"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_NUMPAD1 = 97</div>
+</div>
+</li><li><div class="element" id="VK_NUMPAD2"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_NUMPAD2 = 98</div>
+</div>
+</li><li><div class="element" id="VK_NUMPAD3"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_NUMPAD3 = 99</div>
+</div>
+</li><li><div class="element" id="VK_NUMPAD4"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_NUMPAD4 = 100</div>
+</div>
+</li><li><div class="element" id="VK_NUMPAD5"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_NUMPAD5 = 101</div>
+</div>
+</li><li><div class="element" id="VK_NUMPAD6"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_NUMPAD6 = 102</div>
+</div>
+</li><li><div class="element" id="VK_NUMPAD7"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_NUMPAD7 = 103</div>
+</div>
+</li><li><div class="element" id="VK_NUMPAD8"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_NUMPAD8 = 104</div>
+</div>
+</li><li><div class="element" id="VK_NUMPAD9"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_NUMPAD9 = 105</div>
+</div>
+</li><li><div class="element" id="VK_NUM_LOCK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_NUM_LOCK = 144</div>
+</div>
+</li><li><div class="element" id="VK_O"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_O = 79</div>
+</div>
+</li><li><div class="element" id="VK_OPEN_BRACKET"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_OPEN_BRACKET = 91</div>
+</div>
+</li><li><div class="element" id="VK_P"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_P = 80</div>
+</div>
+</li><li><div class="element" id="VK_PAGE_DOWN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_PAGE_DOWN = 34</div>
+</div>
+</li><li><div class="element" id="VK_PAGE_UP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_PAGE_UP = 33</div>
+</div>
+</li><li><div class="element" id="VK_PASTE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_PASTE = 65487</div>
+</div>
+</li><li><div class="element" id="VK_PAUSE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_PAUSE = 19</div>
+</div>
+</li><li><div class="element" id="VK_PERIOD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_PERIOD = 46</div>
+</div>
+</li><li><div class="element" id="VK_PLUS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_PLUS = 521</div>
+</div>
+</li><li><div class="element" id="VK_PREVIOUS_CANDIDATE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_PREVIOUS_CANDIDATE = 257</div>
+</div>
+</li><li><div class="element" id="VK_PRINTSCREEN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_PRINTSCREEN = 154</div>
+</div>
+</li><li><div class="element" id="VK_PROPS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_PROPS = 65482</div>
+</div>
+</li><li><div class="element" id="VK_Q"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_Q = 81</div>
+</div>
+</li><li><div class="element" id="VK_QUOTE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_QUOTE = 222</div>
+</div>
+</li><li><div class="element" id="VK_QUOTEDBL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_QUOTEDBL = 152</div>
+</div>
+</li><li><div class="element" id="VK_R"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_R = 82</div>
+</div>
+</li><li><div class="element" id="VK_RIGHT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_RIGHT = 39</div>
+</div>
+</li><li><div class="element" id="VK_RIGHT_PARENTHESIS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_RIGHT_PARENTHESIS = 522</div>
+</div>
+</li><li><div class="element" id="VK_ROMAN_CHARACTERS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_ROMAN_CHARACTERS = 245</div>
+</div>
+</li><li><div class="element" id="VK_S"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_S = 83</div>
+</div>
+</li><li><div class="element" id="VK_SCROLL_LOCK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_SCROLL_LOCK = 145</div>
+</div>
+</li><li><div class="element" id="VK_SEMICOLON"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_SEMICOLON = 59</div>
+</div>
+</li><li><div class="element" id="VK_SEPARATER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_SEPARATER = 108</div>
+</div>
+</li><li><div class="element" id="VK_SEPARATOR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_SEPARATOR = 108</div>
+</div>
+</li><li><div class="element" id="VK_SHIFT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_SHIFT = 16</div>
+</div>
+</li><li><div class="element" id="VK_SLASH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_SLASH = 47</div>
+</div>
+</li><li><div class="element" id="VK_SPACE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_SPACE = 32</div>
+</div>
+</li><li><div class="element" id="VK_STOP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_STOP = 65480</div>
+</div>
+</li><li><div class="element" id="VK_SUBTRACT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_SUBTRACT = 109</div>
+</div>
+</li><li><div class="element" id="VK_T"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_T = 84</div>
+</div>
+</li><li><div class="element" id="VK_TAB"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_TAB = 9</div>
+</div>
+</li><li><div class="element" id="VK_U"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_U = 85</div>
+</div>
+</li><li><div class="element" id="VK_UNDEFINED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_UNDEFINED = 0</div>
+</div>
+</li><li><div class="element" id="VK_UNDERSCORE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_UNDERSCORE = 523</div>
+</div>
+</li><li><div class="element" id="VK_UNDO"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_UNDO = 65483</div>
+</div>
+</li><li><div class="element" id="VK_UP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_UP = 38</div>
+</div>
+</li><li><div class="element" id="VK_V"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_V = 86</div>
+</div>
+</li><li><div class="element" id="VK_W"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_W = 87</div>
+</div>
+</li><li><div class="element" id="VK_WINDOWS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_WINDOWS = 524</div>
+</div>
+</li><li><div class="element" id="VK_X"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_X = 88</div>
+</div>
+</li><li><div class="element" id="VK_Y"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_Y = 89</div>
+</div>
+</li><li><div class="element" id="VK_Z"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> VK_Z = 90</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(Component,int,long,int,int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> KeyEvent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Component,int,long,int,int,char)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> KeyEvent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span class="keyword">char</span> arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Component,int,long,int,int,char,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> KeyEvent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span class="keyword">char</span> arg5</span>, <span class="parameter"><span class="keyword">int</span> arg6</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getExtendedKeyCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getExtendedKeyCode()</div>
+</div>
+</li><li><div class="element" id="getExtendedKeyCodeForChar(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> getExtendedKeyCodeForChar(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getKeyChar()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">char</span> getKeyChar()</div>
+</div>
+</li><li><div class="element" id="getKeyCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getKeyCode()</div>
+</div>
+</li><li><div class="element" id="getKeyLocation()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getKeyLocation()</div>
+</div>
+</li><li><div class="element" id="getKeyModifiersText(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String getKeyModifiersText(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getKeyText(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String getKeyText(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isActionKey()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isActionKey()</div>
+</div>
+</li><li><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String paramString()</div>
+</div>
+</li><li><div class="element" id="setKeyChar(char)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setKeyChar(<span class="parameters"><span class="parameter"><span class="keyword">char</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setKeyCode(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setKeyCode(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setModifiers(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setModifiers(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-2352130953028126954<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;isProxyActive</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">char</span>&nbsp;keyChar</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;keyCode</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;keyLocation</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Component&nbsp;originalSource</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

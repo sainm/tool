@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.xml/javax.xml.stream.XMLInputFactory</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.xml/module-summary.html">java.xml</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.xml/javax/xml/stream/package-summary.html">javax.xml.stream</a></div>
+<h1>Class&nbsp;XMLInputFactory</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> XMLInputFactory <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="ALLOCATOR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String ALLOCATOR = "javax.xml.stream.allocator"</div>
+</div>
+</li><li><div class="element" id="IS_COALESCING"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String IS_COALESCING = "javax.xml.stream.isCoalescing"</div>
+</div>
+</li><li><div class="element" id="IS_NAMESPACE_AWARE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String IS_NAMESPACE_AWARE = "javax.xml.stream.isNamespaceAware"</div>
+</div>
+</li><li><div class="element" id="IS_REPLACING_ENTITY_REFERENCES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String IS_REPLACING_ENTITY_REFERENCES = "javax.xml.stream.isReplacingEntityReferences"</div>
+</div>
+</li><li><div class="element" id="IS_SUPPORTING_EXTERNAL_ENTITIES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String IS_SUPPORTING_EXTERNAL_ENTITIES = "javax.xml.stream.isSupportingExternalEntities"</div>
+</div>
+</li><li><div class="element" id="IS_VALIDATING"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String IS_VALIDATING = "javax.xml.stream.isValidating"</div>
+</div>
+</li><li><div class="element" id="REPORTER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String REPORTER = "javax.xml.stream.reporter"</div>
+</div>
+</li><li><div class="element" id="RESOLVER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String RESOLVER = "javax.xml.stream.resolver"</div>
+</div>
+</li><li><div class="element" id="SUPPORT_DTD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SUPPORT_DTD = "javax.xml.stream.supportDTD"</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> XMLInputFactory()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="createFilteredReader(XMLEventReader,EventFilter)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLEventReader createFilteredReader(<span class="parameters"><span class="parameter">javax.xml.stream.XMLEventReader arg0</span>, <span class="parameter">javax.xml.stream.EventFilter arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.XMLStreamException</span></div>
+</div>
+</li><li><div class="element" id="createFilteredReader(XMLStreamReader,StreamFilter)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLStreamReader createFilteredReader(<span class="parameters"><span class="parameter">javax.xml.stream.XMLStreamReader arg0</span>, <span class="parameter">javax.xml.stream.StreamFilter arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.XMLStreamException</span></div>
+</div>
+</li><li><div class="element" id="createXMLEventReader(InputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLEventReader createXMLEventReader(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.XMLStreamException</span></div>
+</div>
+</li><li><div class="element" id="createXMLEventReader(InputStream,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLEventReader createXMLEventReader(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.XMLStreamException</span></div>
+</div>
+</li><li><div class="element" id="createXMLEventReader(Reader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLEventReader createXMLEventReader(<span class="parameters"><span class="parameter">java.io.Reader arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.XMLStreamException</span></div>
+</div>
+</li><li><div class="element" id="createXMLEventReader(String,InputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLEventReader createXMLEventReader(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.io.InputStream arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.XMLStreamException</span></div>
+</div>
+</li><li><div class="element" id="createXMLEventReader(String,Reader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLEventReader createXMLEventReader(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.io.Reader arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.XMLStreamException</span></div>
+</div>
+</li><li><div class="element" id="createXMLEventReader(XMLStreamReader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLEventReader createXMLEventReader(<span class="parameters"><span class="parameter">javax.xml.stream.XMLStreamReader arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.XMLStreamException</span></div>
+</div>
+</li><li><div class="element" id="createXMLEventReader(Source)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLEventReader createXMLEventReader(<span class="parameters"><span class="parameter">javax.xml.transform.Source arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.XMLStreamException</span></div>
+</div>
+</li><li><div class="element" id="createXMLStreamReader(InputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLStreamReader createXMLStreamReader(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.XMLStreamException</span></div>
+</div>
+</li><li><div class="element" id="createXMLStreamReader(InputStream,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLStreamReader createXMLStreamReader(<span class="parameters"><span class="parameter">java.io.InputStream arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.XMLStreamException</span></div>
+</div>
+</li><li><div class="element" id="createXMLStreamReader(Reader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLStreamReader createXMLStreamReader(<span class="parameters"><span class="parameter">java.io.Reader arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.XMLStreamException</span></div>
+</div>
+</li><li><div class="element" id="createXMLStreamReader(String,InputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLStreamReader createXMLStreamReader(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.io.InputStream arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.XMLStreamException</span></div>
+</div>
+</li><li><div class="element" id="createXMLStreamReader(String,Reader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLStreamReader createXMLStreamReader(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.io.Reader arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.XMLStreamException</span></div>
+</div>
+</li><li><div class="element" id="createXMLStreamReader(Source)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLStreamReader createXMLStreamReader(<span class="parameters"><span class="parameter">javax.xml.transform.Source arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.XMLStreamException</span></div>
+</div>
+</li><li><div class="element" id="getEventAllocator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.util.XMLEventAllocator getEventAllocator()</div>
+</div>
+</li><li><div class="element" id="getProperty(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.Object getProperty(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li><div class="element" id="getXMLReporter()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLReporter getXMLReporter()</div>
+</div>
+</li><li><div class="element" id="getXMLResolver()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.xml.stream.XMLResolver getXMLResolver()</div>
+</div>
+</li><li><div class="element" id="isPropertySupported(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isPropertySupported(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="newDefaultFactory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.xml.stream.XMLInputFactory newDefaultFactory()</div>
+</div>
+</li><li><div class="element" id="newFactory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.xml.stream.XMLInputFactory newFactory() <span class="throws"><span class="keyword">throws</span> javax.xml.stream.FactoryConfigurationError</span></div>
+</div>
+</li><li><div class="element" id="newFactory(String,ClassLoader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.xml.stream.XMLInputFactory newFactory(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.ClassLoader arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.FactoryConfigurationError</span></div>
+</div>
+</li><li><div class="element" id="newInstance()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.xml.stream.XMLInputFactory newInstance() <span class="throws"><span class="keyword">throws</span> javax.xml.stream.FactoryConfigurationError</span></div>
+</div>
+</li><li><div class="element" id="newInstance(String,ClassLoader)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="1.7")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.xml.stream.XMLInputFactory newInstance(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.ClassLoader arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.xml.stream.FactoryConfigurationError</span></div>
+</div>
+</li><li><div class="element" id="setEventAllocator(XMLEventAllocator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setEventAllocator(<span class="parameters"><span class="parameter">javax.xml.stream.util.XMLEventAllocator arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setProperty(String,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setProperty(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.IllegalArgumentException</span></div>
+</div>
+</li><li><div class="element" id="setXMLReporter(XMLReporter)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setXMLReporter(<span class="parameters"><span class="parameter">javax.xml.stream.XMLReporter arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setXMLResolver(XMLResolver)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setXMLResolver(<span class="parameters"><span class="parameter">javax.xml.stream.XMLResolver arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

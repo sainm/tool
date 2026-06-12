@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/java.awt.KeyboardFocusManager</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/java/awt/package-summary.html">java.awt</a></div>
+<h1>Class&nbsp;KeyboardFocusManager</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> KeyboardFocusManager <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.awt.KeyEventDispatcher, java.awt.KeyEventPostProcessor</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="BACKWARD_TRAVERSAL_KEYS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> BACKWARD_TRAVERSAL_KEYS = 1</div>
+</div>
+</li><li><div class="element" id="DOWN_CYCLE_TRAVERSAL_KEYS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> DOWN_CYCLE_TRAVERSAL_KEYS = 3</div>
+</div>
+</li><li><div class="element" id="FORWARD_TRAVERSAL_KEYS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FORWARD_TRAVERSAL_KEYS = 0</div>
+</div>
+</li><li><div class="element" id="UP_CYCLE_TRAVERSAL_KEYS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> UP_CYCLE_TRAVERSAL_KEYS = 2</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> KeyboardFocusManager()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addKeyEventDispatcher(KeyEventDispatcher)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addKeyEventDispatcher(<span class="parameters"><span class="parameter">java.awt.KeyEventDispatcher arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addKeyEventPostProcessor(KeyEventPostProcessor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addKeyEventPostProcessor(<span class="parameters"><span class="parameter">java.awt.KeyEventPostProcessor arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addPropertyChangeListener(String,PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addPropertyChangeListener(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.beans.PropertyChangeListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="addPropertyChangeListener(PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addPropertyChangeListener(<span class="parameters"><span class="parameter">java.beans.PropertyChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addVetoableChangeListener(String,VetoableChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addVetoableChangeListener(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.beans.VetoableChangeListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="addVetoableChangeListener(VetoableChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addVetoableChangeListener(<span class="parameters"><span class="parameter">java.beans.VetoableChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="clearFocusOwner()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> clearFocusOwner()</div>
+</div>
+</li><li><div class="element" id="clearGlobalFocusOwner()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> clearGlobalFocusOwner() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="dequeueKeyEvents(long,Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> dequeueKeyEvents(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.awt.Component arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="discardKeyEvents(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> discardKeyEvents(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="dispatchEvent(AWTEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> dispatchEvent(<span class="parameters"><span class="parameter">java.awt.AWTEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="dispatchKeyEvent(KeyEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> dispatchKeyEvent(<span class="parameters"><span class="parameter">java.awt.event.KeyEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="downFocusCycle()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> downFocusCycle()</div>
+</div>
+</li><li><div class="element" id="downFocusCycle(Container)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> downFocusCycle(<span class="parameters"><span class="parameter">java.awt.Container arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="enqueueKeyEvents(long,Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> enqueueKeyEvents(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.awt.Component arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="firePropertyChange(String,Object,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.Object arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="fireVetoableChange(String,Object,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireVetoableChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.Object arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.beans.PropertyVetoException</span></div>
+</div>
+</li><li><div class="element" id="focusNextComponent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> focusNextComponent()</div>
+</div>
+</li><li><div class="element" id="focusNextComponent(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> focusNextComponent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="focusPreviousComponent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> focusPreviousComponent()</div>
+</div>
+</li><li><div class="element" id="focusPreviousComponent(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> focusPreviousComponent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getActiveWindow()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Window getActiveWindow()</div>
+</div>
+</li><li><div class="element" id="getCurrentFocusCycleRoot()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Container getCurrentFocusCycleRoot()</div>
+</div>
+</li><li><div class="element" id="getCurrentKeyboardFocusManager()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.awt.KeyboardFocusManager getCurrentKeyboardFocusManager()</div>
+</div>
+</li><li><div class="element" id="getDefaultFocusTraversalKeys(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Set&lt;java.awt.AWTKeyStroke&gt;</span> getDefaultFocusTraversalKeys(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDefaultFocusTraversalPolicy()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.FocusTraversalPolicy getDefaultFocusTraversalPolicy()</div>
+</div>
+</li><li><div class="element" id="getFocusOwner()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getFocusOwner()</div>
+</div>
+</li><li><div class="element" id="getFocusedWindow()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Window getFocusedWindow()</div>
+</div>
+</li><li><div class="element" id="getGlobalActiveWindow()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Window getGlobalActiveWindow() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="getGlobalCurrentFocusCycleRoot()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Container getGlobalCurrentFocusCycleRoot() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="getGlobalFocusOwner()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Component getGlobalFocusOwner() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="getGlobalFocusedWindow()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Window getGlobalFocusedWindow() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="getGlobalPermanentFocusOwner()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Component getGlobalPermanentFocusOwner() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="getKeyEventDispatchers()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.util.List&lt;java.awt.KeyEventDispatcher&gt;</span> getKeyEventDispatchers()</div>
+</div>
+</li><li><div class="element" id="getKeyEventPostProcessors()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.util.List&lt;java.awt.KeyEventPostProcessor&gt;</span> getKeyEventPostProcessors()</div>
+</div>
+</li><li><div class="element" id="getPermanentFocusOwner()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getPermanentFocusOwner()</div>
+</div>
+</li><li><div class="element" id="getPropertyChangeListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.beans.PropertyChangeListener[]</span> getPropertyChangeListeners()</div>
+</div>
+</li><li><div class="element" id="getPropertyChangeListeners(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.beans.PropertyChangeListener[]</span> getPropertyChangeListeners(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getVetoableChangeListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.beans.VetoableChangeListener[]</span> getVetoableChangeListeners()</div>
+</div>
+</li><li><div class="element" id="getVetoableChangeListeners(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.beans.VetoableChangeListener[]</span> getVetoableChangeListeners(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="postProcessKeyEvent(KeyEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> postProcessKeyEvent(<span class="parameters"><span class="parameter">java.awt.event.KeyEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="processKeyEvent(Component,KeyEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> processKeyEvent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.awt.event.KeyEvent arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="redispatchEvent(Component,AWTEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> redispatchEvent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.awt.AWTEvent arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeKeyEventDispatcher(KeyEventDispatcher)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeKeyEventDispatcher(<span class="parameters"><span class="parameter">java.awt.KeyEventDispatcher arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeKeyEventPostProcessor(KeyEventPostProcessor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeKeyEventPostProcessor(<span class="parameters"><span class="parameter">java.awt.KeyEventPostProcessor arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removePropertyChangeListener(String,PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removePropertyChangeListener(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.beans.PropertyChangeListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="removePropertyChangeListener(PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removePropertyChangeListener(<span class="parameters"><span class="parameter">java.beans.PropertyChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeVetoableChangeListener(String,VetoableChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeVetoableChangeListener(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.beans.VetoableChangeListener arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeVetoableChangeListener(VetoableChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeVetoableChangeListener(<span class="parameters"><span class="parameter">java.beans.VetoableChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setCurrentKeyboardFocusManager(KeyboardFocusManager)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setCurrentKeyboardFocusManager(<span class="parameters"><span class="parameter">java.awt.KeyboardFocusManager arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="setDefaultFocusTraversalKeys(int,Set)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDefaultFocusTraversalKeys(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span>java.util.Set&lt;<span>? <span class="keyword">extends</span> java.awt.AWTKeyStroke</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDefaultFocusTraversalPolicy(FocusTraversalPolicy)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDefaultFocusTraversalPolicy(<span class="parameters"><span class="parameter">java.awt.FocusTraversalPolicy arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setGlobalActiveWindow(Window)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setGlobalActiveWindow(<span class="parameters"><span class="parameter">java.awt.Window arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="setGlobalCurrentFocusCycleRoot(Container)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setGlobalCurrentFocusCycleRoot(<span class="parameters"><span class="parameter">java.awt.Container arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="setGlobalFocusOwner(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setGlobalFocusOwner(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="setGlobalFocusedWindow(Window)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setGlobalFocusedWindow(<span class="parameters"><span class="parameter">java.awt.Window arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="setGlobalPermanentFocusOwner(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setGlobalPermanentFocusOwner(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li><div class="element" id="upFocusCycle()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> upFocusCycle()</div>
+</div>
+</li><li><div class="element" id="upFocusCycle(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> upFocusCycle(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

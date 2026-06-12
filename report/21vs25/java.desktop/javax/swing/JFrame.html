@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.JFrame</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Class&nbsp;JFrame</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="annotation">@JavaBean(defaultProperty="JMenuBar"description="A toplevel window which can be minimized to an icon.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> JFrame <div class="superclass"><span class="keyword">extends</span> java.awt.Frame</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.accessibility.Accessible, javax.swing.RootPaneContainer, javax.swing.WindowConstants, javax.swing.TransferHandler.HasGetTransferHandler</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JFrame.AccessibleJFrame.html">AccessibleJFrame</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="accessibleContext"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.accessibility.AccessibleContext accessibleContext</div>
+</div>
+</li><li><div class="element" id="rootPane"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JRootPane rootPane</div>
+</div>
+</li><li><div class="element" id="rootPaneCheckingEnabled"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> rootPaneCheckingEnabled</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JFrame() <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JFrame(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,GraphicsConfiguration)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JFrame(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.awt.GraphicsConfiguration arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(GraphicsConfiguration)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JFrame(<span class="parameters"><span class="parameter">java.awt.GraphicsConfiguration arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addImpl(Component,Object,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> addImpl(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="createRootPane()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JRootPane createRootPane()</div>
+</div>
+</li><li><div class="element" id="frameInit()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> frameInit()</div>
+</div>
+</li><li><div class="element" id="getAccessibleContext()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.accessibility.AccessibleContext getAccessibleContext()</div>
+</div>
+</li><li><div class="element" id="getContentPane()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Container getContentPane()</div>
+</div>
+</li><li><div class="element" id="getDefaultCloseOperation()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getDefaultCloseOperation()</div>
+</div>
+</li><li><div class="element" id="getGlassPane()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getGlassPane()</div>
+</div>
+</li><li><div class="element" id="getGraphics()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.awt.Graphics getGraphics()</div>
+</div>
+</li><li><div class="element" id="getJMenuBar()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JMenuBar getJMenuBar()</div>
+</div>
+</li><li><div class="element" id="getLayeredPane()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JLayeredPane getLayeredPane()</div>
+</div>
+</li><li><div class="element" id="getRootPane()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsehidden=truedescription="the RootPane object for this frame.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.swing.JRootPane getRootPane()</div>
+</div>
+</li><li><div class="element" id="getTransferHandler()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.TransferHandler getTransferHandler()</div>
+</div>
+</li><li><div class="element" id="isDefaultLookAndFeelDecorated()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isDefaultLookAndFeelDecorated()</div>
+</div>
+</li><li><div class="element" id="isRootPaneCheckingEnabled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isRootPaneCheckingEnabled()</div>
+</div>
+</li><li><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String paramString()</div>
+</div>
+</li><li><div class="element" id="processWindowEvent(WindowEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processWindowEvent(<span class="parameters"><span class="parameter">java.awt.event.WindowEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> remove(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="repaint(long,int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> repaint(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="setContentPane(Container)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsehidden=truedescription="The client area of the frame where child components are normally inserted.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setContentPane(<span class="parameters"><span class="parameter">java.awt.Container arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDefaultCloseOperation(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=trueenumerationValues={"WindowConstants.DO_NOTHING_ON_CLOSE", "WindowConstants.HIDE_ON_CLOSE", "WindowConstants.DISPOSE_ON_CLOSE", "WindowConstants.EXIT_ON_CLOSE"}description="The frame's default close operation.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDefaultCloseOperation(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDefaultLookAndFeelDecorated(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setDefaultLookAndFeelDecorated(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setGlassPane(Component)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsehidden=truedescription="A transparent pane used for menu rendering.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setGlassPane(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setIconImage(Image)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setIconImage(<span class="parameters"><span class="parameter">java.awt.Image arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setJMenuBar(JMenuBar)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsehidden=truedescription="The menubar for accessing pulldown menus from this frame.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setJMenuBar(<span class="parameters"><span class="parameter">javax.swing.JMenuBar arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLayeredPane(JLayeredPane)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsehidden=truedescription="The pane that holds the various frame layers.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLayeredPane(<span class="parameters"><span class="parameter">javax.swing.JLayeredPane arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLayout(LayoutManager)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLayout(<span class="parameters"><span class="parameter">java.awt.LayoutManager arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRootPane(JRootPane)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setRootPane(<span class="parameters"><span class="parameter">javax.swing.JRootPane arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRootPaneCheckingEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(hidden=truedescription="Whether the add and setLayout methods are forwarded")</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setRootPaneCheckingEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setTransferHandler(TransferHandler)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(hidden=truedescription="Mechanism for transfer of data into the component")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setTransferHandler(<span class="parameters"><span class="parameter">javax.swing.TransferHandler arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="update(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> update(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>985128257383997881<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.accessibility.AccessibleContext&nbsp;accessibleContext</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;defaultCloseOperation</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.JRootPane&nbsp;rootPane</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;rootPaneCheckingEnabled</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.TransferHandler&nbsp;transferHandler</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

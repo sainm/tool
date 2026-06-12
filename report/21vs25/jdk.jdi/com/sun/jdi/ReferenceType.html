@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface jdk.jdi/com.sun.jdi.ReferenceType</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../jdk.jdi/module-summary.html">jdk.jdi</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../jdk.jdi/com/sun/jdi/package-summary.html">com.sun.jdi</a></div>
+<h1>Interface&nbsp;ReferenceType</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> ReferenceType <div class="superinterfaces"><span class="keyword">extends</span> <span>java.lang.Comparable&lt;com.sun.jdi.ReferenceType&gt;</span>, com.sun.jdi.Accessible, com.sun.jdi.Type</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="allFields()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.Field&gt;</span> allFields()</div>
+</div>
+</li><li><div class="element" id="allLineLocations()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.Location&gt;</span> allLineLocations() <span class="throws"><span class="keyword">throws</span> com.sun.jdi.AbsentInformationException</span></div>
+</div>
+</li><li><div class="element" id="allLineLocations(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.Location&gt;</span> allLineLocations(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> com.sun.jdi.AbsentInformationException</span></div>
+</div>
+</li><li><div class="element" id="allMethods()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.Method&gt;</span> allMethods()</div>
+</div>
+</li><li><div class="element" id="availableStrata()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;java.lang.String&gt;</span> availableStrata()</div>
+</div>
+</li><li><div class="element" id="classLoader()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.ClassLoaderReference classLoader()</div>
+</div>
+</li><li><div class="element" id="classObject()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.ClassObjectReference classObject()</div>
+</div>
+</li><li><div class="element" id="constantPool()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span><span class="keyword">byte</span>[]</span> constantPool()</div>
+</div>
+</li><li><div class="element" id="constantPoolCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> constantPoolCount()</div>
+</div>
+</li><li><div class="element" id="defaultStratum()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String defaultStratum()</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="failedToInitialize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> failedToInitialize()</div>
+</div>
+</li><li><div class="element" id="fieldByName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.Field fieldByName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fields()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.Field&gt;</span> fields()</div>
+</div>
+</li><li><div class="element" id="genericSignature()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String genericSignature()</div>
+</div>
+</li><li><div class="element" id="getValue(Field)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.Value getValue(<span class="parameters"><span class="parameter">com.sun.jdi.Field arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getValues(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.Map&lt;com.sun.jdi.Field, com.sun.jdi.Value&gt;</span> getValues(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.jdi.Field</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="instances(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.ObjectReference&gt;</span> instances(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isAbstract()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isAbstract()</div>
+</div>
+</li><li><div class="element" id="isFinal()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isFinal()</div>
+</div>
+</li><li><div class="element" id="isInitialized()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isInitialized()</div>
+</div>
+</li><li><div class="element" id="isPrepared()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isPrepared()</div>
+</div>
+</li><li><div class="element" id="isStatic()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isStatic()</div>
+</div>
+</li><li><div class="element" id="isVerified()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isVerified()</div>
+</div>
+</li><li><div class="element" id="locationsOfLine(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.Location&gt;</span> locationsOfLine(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> com.sun.jdi.AbsentInformationException</span></div>
+</div>
+</li><li><div class="element" id="locationsOfLine(String,String,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.Location&gt;</span> locationsOfLine(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> com.sun.jdi.AbsentInformationException</span></div>
+</div>
+</li><li><div class="element" id="majorVersion()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> majorVersion()</div>
+</div>
+</li><li><div class="element" id="methods()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.Method&gt;</span> methods()</div>
+</div>
+</li><li><div class="element" id="methodsByName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.Method&gt;</span> methodsByName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="methodsByName(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.Method&gt;</span> methodsByName(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="minorVersion()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> minorVersion()</div>
+</div>
+</li><li><div class="element" id="module()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> com.sun.jdi.ModuleReference module()</div>
+</div>
+</li><li><div class="element" id="name()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String name()</div>
+</div>
+</li><li><div class="element" id="nestedTypes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.ReferenceType&gt;</span> nestedTypes()</div>
+</div>
+</li><li><div class="element" id="sourceDebugExtension()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String sourceDebugExtension() <span class="throws"><span class="keyword">throws</span> com.sun.jdi.AbsentInformationException</span></div>
+</div>
+</li><li><div class="element" id="sourceName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String sourceName() <span class="throws"><span class="keyword">throws</span> com.sun.jdi.AbsentInformationException</span></div>
+</div>
+</li><li><div class="element" id="sourceNames(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;java.lang.String&gt;</span> sourceNames(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> com.sun.jdi.AbsentInformationException</span></div>
+</div>
+</li><li><div class="element" id="sourcePaths(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;java.lang.String&gt;</span> sourcePaths(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> com.sun.jdi.AbsentInformationException</span></div>
+</div>
+</li><li><div class="element" id="visibleFields()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.Field&gt;</span> visibleFields()</div>
+</div>
+</li><li><div class="element" id="visibleMethods()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.Method&gt;</span> visibleMethods()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

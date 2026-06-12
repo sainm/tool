@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package java.base/java.lang.reflect</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<h1>Package&nbsp;java.lang.reflect</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="keyword">package</span> java.lang.reflect</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/lang/reflect/AccessFlag.html">AccessFlag</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/AccessibleObject.html">AccessibleObject</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/AnnotatedArrayType.html">AnnotatedArrayType</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/AnnotatedElement.html">AnnotatedElement</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/AnnotatedParameterizedType.html">AnnotatedParameterizedType</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/AnnotatedType.html">AnnotatedType</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/AnnotatedTypeVariable.html">AnnotatedTypeVariable</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/AnnotatedWildcardType.html">AnnotatedWildcardType</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/Array.html">Array</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/lang/reflect/ClassFileFormatVersion.html">ClassFileFormatVersion</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/Constructor.html">Constructor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/Executable.html">Executable</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/Field.html">Field</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/GenericArrayType.html">GenericArrayType</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/GenericDeclaration.html">GenericDeclaration</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/GenericSignatureFormatError.html">GenericSignatureFormatError</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/InaccessibleObjectException.html">InaccessibleObjectException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/InvocationHandler.html">InvocationHandler</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/InvocationTargetException.html">InvocationTargetException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/MalformedParameterizedTypeException.html">MalformedParameterizedTypeException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/MalformedParametersException.html">MalformedParametersException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/Member.html">Member</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/Method.html">Method</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/lang/reflect/Modifier.html">Modifier</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/Parameter.html">Parameter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/ParameterizedType.html">ParameterizedType</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/Proxy.html">Proxy</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/RecordComponent.html">RecordComponent</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/ReflectPermission.html">ReflectPermission</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/Type.html">Type</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/TypeVariable.html">TypeVariable</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/UndeclaredThrowableException.html">UndeclaredThrowableException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/lang/reflect/WildcardType.html">WildcardType</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th>Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/lang/reflect/AccessFlag.html">AccessFlag</a></th>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/reflect/ClassFileFormatVersion.html">ClassFileFormatVersion</a></th>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/reflect/Modifier.html">Modifier</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>9</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

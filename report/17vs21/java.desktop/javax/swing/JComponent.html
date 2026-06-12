@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.JComponent</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Class&nbsp;JComponent</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="annotation">@JavaBean(defaultProperty="UIClassID")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> JComponent <div class="superclass"><span class="keyword">extends</span> java.awt.Container</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable, javax.swing.TransferHandler.HasGetTransferHandler</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JComponent.AccessibleJComponent.html">AccessibleJComponent</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="TOOL_TIP_TEXT_KEY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String TOOL_TIP_TEXT_KEY = "ToolTipText"</div>
+</div>
+</li><li><div class="element" id="UNDEFINED_CONDITION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> UNDEFINED_CONDITION = -1</div>
+</div>
+</li><li><div class="element" id="WHEN_ANCESTOR_OF_FOCUSED_COMPONENT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> WHEN_ANCESTOR_OF_FOCUSED_COMPONENT = 1</div>
+</div>
+</li><li><div class="element" id="WHEN_FOCUSED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> WHEN_FOCUSED = 0</div>
+</div>
+</li><li><div class="element" id="WHEN_IN_FOCUSED_WINDOW"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> WHEN_IN_FOCUSED_WINDOW = 2</div>
+</div>
+</li><li><div class="element" id="listenerList"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.EventListenerList listenerList</div>
+</div>
+</li><li><div class="element" id="ui"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.plaf.ComponentUI ui</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JComponent()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addAncestorListener(AncestorListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addAncestorListener(<span class="parameters"><span class="parameter">javax.swing.event.AncestorListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addNotify()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addNotify()</div>
+</div>
+</li><li><div class="element" id="addVetoableChangeListener(VetoableChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addVetoableChangeListener(<span class="parameters"><span class="parameter">java.beans.VetoableChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="computeVisibleRect(Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> computeVisibleRect(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="contains(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> contains(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="createToolTip()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JToolTip createToolTip()</div>
+</div>
+</li><li><div class="element" id="disable()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> disable()</div>
+</div>
+</li><li><div class="element" id="enable()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> enable()</div>
+</div>
+</li><li><div class="element" id="firePropertyChange(String,boolean,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="firePropertyChange(String,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="firePropertyChange(String,char,char)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> firePropertyChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">char</span> arg1</span>, <span class="parameter"><span class="keyword">char</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="fireVetoableChange(String,Object,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireVetoableChange(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.Object arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.beans.PropertyVetoException</span></div>
+</div>
+</li><li><div class="element" id="getActionForKeyStroke(KeyStroke)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.event.ActionListener getActionForKeyStroke(<span class="parameters"><span class="parameter">javax.swing.KeyStroke arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getActionMap()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> javax.swing.ActionMap getActionMap()</div>
+</div>
+</li><li><div class="element" id="getAlignmentX()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getAlignmentX()</div>
+</div>
+</li><li><div class="element" id="getAlignmentY()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getAlignmentY()</div>
+</div>
+</li><li><div class="element" id="getAncestorListeners()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.event.AncestorListener[]</span> getAncestorListeners()</div>
+</div>
+</li><li><div class="element" id="getAutoscrolls()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getAutoscrolls()</div>
+</div>
+</li><li><div class="element" id="getBaseline(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getBaseline(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBaselineResizeBehavior()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.awt.Component.BaselineResizeBehavior getBaselineResizeBehavior()</div>
+</div>
+</li><li><div class="element" id="getBorder()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.border.Border getBorder()</div>
+</div>
+</li><li><div class="element" id="getBounds(Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Rectangle getBounds(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getClientProperty(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.Object getClientProperty(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getComponentGraphics(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Graphics getComponentGraphics(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getComponentPopupMenu()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JPopupMenu getComponentPopupMenu()</div>
+</div>
+</li><li><div class="element" id="getConditionForKeyStroke(KeyStroke)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getConditionForKeyStroke(<span class="parameters"><span class="parameter">javax.swing.KeyStroke arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDebugGraphicsOptions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getDebugGraphicsOptions()</div>
+</div>
+</li><li><div class="element" id="getDefaultLocale()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.Locale getDefaultLocale()</div>
+</div>
+</li><li><div class="element" id="getFontMetrics(Font)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.FontMetrics getFontMetrics(<span class="parameters"><span class="parameter">java.awt.Font arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getGraphics()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.awt.Graphics getGraphics()</div>
+</div>
+</li><li><div class="element" id="getHeight()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getHeight()</div>
+</div>
+</li><li><div class="element" id="getInheritsPopupMenu()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getInheritsPopupMenu()</div>
+</div>
+</li><li><div class="element" id="getInputMap()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> javax.swing.InputMap getInputMap()</div>
+</div>
+</li><li><div class="element" id="getInputMap(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> javax.swing.InputMap getInputMap(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getInputVerifier()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.InputVerifier getInputVerifier()</div>
+</div>
+</li><li><div class="element" id="getInsets()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.awt.Insets getInsets()</div>
+</div>
+</li><li><div class="element" id="getInsets(Insets)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Insets getInsets(<span class="parameters"><span class="parameter">java.awt.Insets arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getListeners(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>T[]</span> getListeners(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLocation(Point)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Point getLocation(<span class="parameters"><span class="parameter">java.awt.Point arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getMaximumSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getMaximumSize()</div>
+</div>
+</li><li><div class="element" id="getMinimumSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getMinimumSize()</div>
+</div>
+</li><li><div class="element" id="getNextFocusableComponent()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getNextFocusableComponent()</div>
+</div>
+</li><li><div class="element" id="getPopupLocation(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Point getPopupLocation(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPreferredSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getPreferredSize()</div>
+</div>
+</li><li><div class="element" id="getRegisteredKeyStrokes()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.KeyStroke[]</span> getRegisteredKeyStrokes()</div>
+</div>
+</li><li><div class="element" id="getRootPane()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.swing.JRootPane getRootPane()</div>
+</div>
+</li><li><div class="element" id="getSize(Dimension)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dimension getSize(<span class="parameters"><span class="parameter">java.awt.Dimension arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getToolTipLocation(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Point getToolTipLocation(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getToolTipText()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getToolTipText()</div>
+</div>
+</li><li><div class="element" id="getToolTipText(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getToolTipText(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getTopLevelAncestor()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.awt.Container getTopLevelAncestor()</div>
+</div>
+</li><li><div class="element" id="getTransferHandler()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.TransferHandler getTransferHandler()</div>
+</div>
+</li><li><div class="element" id="getUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.plaf.ComponentUI getUI()</div>
+</div>
+</li><li><div class="element" id="getUIClassID()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falseexpert=truedescription="UIClassID")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.lang.String getUIClassID()</div>
+</div>
+</li><li><div class="element" id="getVerifyInputWhenFocusTarget()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getVerifyInputWhenFocusTarget()</div>
+</div>
+</li><li><div class="element" id="getVetoableChangeListeners()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span>java.beans.VetoableChangeListener[]</span> getVetoableChangeListeners()</div>
+</div>
+</li><li><div class="element" id="getVisibleRect()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.awt.Rectangle getVisibleRect()</div>
+</div>
+</li><li><div class="element" id="getWidth()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getWidth()</div>
+</div>
+</li><li><div class="element" id="getX()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getX()</div>
+</div>
+</li><li><div class="element" id="getY()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getY()</div>
+</div>
+</li><li><div class="element" id="grabFocus()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> grabFocus()</div>
+</div>
+</li><li><div class="element" id="hide()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> hide()</div>
+</div>
+</li><li><div class="element" id="isDoubleBuffered()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isDoubleBuffered()</div>
+</div>
+</li><li><div class="element" id="isLightweightComponent(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> isLightweightComponent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isManagingFocus()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isManagingFocus()</div>
+</div>
+</li><li><div class="element" id="isOpaque()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isOpaque()</div>
+</div>
+</li><li><div class="element" id="isOptimizedDrawingEnabled()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isOptimizedDrawingEnabled()</div>
+</div>
+</li><li><div class="element" id="isPaintingForPrint()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isPaintingForPrint()</div>
+</div>
+</li><li><div class="element" id="isPaintingOrigin()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isPaintingOrigin()</div>
+</div>
+</li><li><div class="element" id="isPaintingTile()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isPaintingTile()</div>
+</div>
+</li><li><div class="element" id="isRequestFocusEnabled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isRequestFocusEnabled()</div>
+</div>
+</li><li><div class="element" id="isValidateRoot()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isValidateRoot()</div>
+</div>
+</li><li><div class="element" id="paint(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paint(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintBorder(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintBorder(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintChildren(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintChildren(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintComponent(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> paintComponent(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintImmediately(int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paintImmediately(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="paintImmediately(Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paintImmediately(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String paramString()</div>
+</div>
+</li><li><div class="element" id="print(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> print(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="printAll(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> printAll(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="printBorder(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> printBorder(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="printChildren(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> printChildren(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="printComponent(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> printComponent(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="processComponentKeyEvent(KeyEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processComponentKeyEvent(<span class="parameters"><span class="parameter">java.awt.event.KeyEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="processKeyBinding(KeyStroke,KeyEvent,int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> processKeyBinding(<span class="parameters"><span class="parameter">javax.swing.KeyStroke arg0</span>, <span class="parameter">java.awt.event.KeyEvent arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="processKeyEvent(KeyEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processKeyEvent(<span class="parameters"><span class="parameter">java.awt.event.KeyEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="processMouseEvent(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processMouseEvent(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="processMouseMotionEvent(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processMouseMotionEvent(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="putClientProperty(Object,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> putClientProperty(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="registerKeyboardAction(ActionListener,String,KeyStroke,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> registerKeyboardAction(<span class="parameters"><span class="parameter">java.awt.event.ActionListener arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">javax.swing.KeyStroke arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="registerKeyboardAction(ActionListener,KeyStroke,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> registerKeyboardAction(<span class="parameters"><span class="parameter">java.awt.event.ActionListener arg0</span>, <span class="parameter">javax.swing.KeyStroke arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeAncestorListener(AncestorListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeAncestorListener(<span class="parameters"><span class="parameter">javax.swing.event.AncestorListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeNotify()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeNotify()</div>
+</div>
+</li><li><div class="element" id="removeVetoableChangeListener(VetoableChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeVetoableChangeListener(<span class="parameters"><span class="parameter">java.beans.VetoableChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="repaint(long,int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> repaint(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="repaint(Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> repaint(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="requestDefaultFocus()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> requestDefaultFocus()</div>
+</div>
+</li><li><div class="element" id="requestFocus()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> requestFocus()</div>
+</div>
+</li><li><div class="element" id="requestFocus(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> requestFocus(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="requestFocusInWindow()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> requestFocusInWindow()</div>
+</div>
+</li><li><div class="element" id="requestFocusInWindow(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> requestFocusInWindow(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="resetKeyboardActions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> resetKeyboardActions()</div>
+</div>
+</li><li><div class="element" id="reshape(int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reshape(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="revalidate()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> revalidate()</div>
+</div>
+</li><li><div class="element" id="scrollRectToVisible(Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> scrollRectToVisible(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setActionMap(ActionMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setActionMap(<span class="parameters"><span class="parameter">javax.swing.ActionMap arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setAlignmentX(float)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The preferred horizontal alignment of the component.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAlignmentX(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setAlignmentY(float)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The preferred vertical alignment of the component.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAlignmentY(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setAutoscrolls(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falseexpert=truedescription="Determines if this component automatically scrolls its contents when dragged.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAutoscrolls(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setBackground(Color)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truevisualUpdate=truedescription="The background color of the component.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBackground(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setBorder(Border)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truevisualUpdate=truedescription="The component\'s border.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBorder(<span class="parameters"><span class="parameter">javax.swing.border.Border arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setComponentPopupMenu(JPopupMenu)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="Popup to show")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setComponentPopupMenu(<span class="parameters"><span class="parameter">javax.swing.JPopupMenu arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDebugGraphicsOptions(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsepreferred=trueenumerationValues={"DebugGraphics.NONE_OPTION", "DebugGraphics.LOG_OPTION", "DebugGraphics.FLASH_OPTION", "DebugGraphics.BUFFERED_OPTION"}description="Diagnostic options for graphics operations.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDebugGraphicsOptions(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDefaultLocale(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setDefaultLocale(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDoubleBuffered(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDoubleBuffered(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=truepreferred=truevisualUpdate=truedescription="The enabled state of the component.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFocusTraversalKeys(int,Set)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFocusTraversalKeys(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span>java.util.Set&lt;<span>? <span class="keyword">extends</span> java.awt.AWTKeyStroke</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFont(Font)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truevisualUpdate=truedescription="The font for the component.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFont(<span class="parameters"><span class="parameter">java.awt.Font arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setForeground(Color)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truevisualUpdate=truedescription="The foreground color of the component.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setForeground(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setInheritsPopupMenu(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="Whether or not the JPopupMenu is inherited")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setInheritsPopupMenu(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setInputMap(int,InputMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setInputMap(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">javax.swing.InputMap arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setInputVerifier(InputVerifier)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The component\'s input verifier.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setInputVerifier(<span class="parameters"><span class="parameter">javax.swing.InputVerifier arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMaximumSize(Dimension)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The maximum size of the component.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMaximumSize(<span class="parameters"><span class="parameter">java.awt.Dimension arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMinimumSize(Dimension)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The minimum size of the component.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMinimumSize(<span class="parameters"><span class="parameter">java.awt.Dimension arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setNextFocusableComponent(Component)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setNextFocusableComponent(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setOpaque(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(expert=truedescription="The component\'s opacity")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setOpaque(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setPreferredSize(Dimension)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="The preferred size of the component.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setPreferredSize(<span class="parameters"><span class="parameter">java.awt.Dimension arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRequestFocusEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRequestFocusEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setToolTipText(String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsepreferred=truedescription="The text to display in a tool tip.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setToolTipText(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setTransferHandler(TransferHandler)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(hidden=truedescription="Mechanism for transfer of data to and from the component")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setTransferHandler(<span class="parameters"><span class="parameter">javax.swing.TransferHandler arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setUI(ComponentUI)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(hidden=truevisualUpdate=truedescription="The component\'s look and feel delegate.")</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setUI(<span class="parameters"><span class="parameter">javax.swing.plaf.ComponentUI arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setVerifyInputWhenFocusTarget(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="Whether the Component verifies input before accepting focus.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setVerifyInputWhenFocusTarget(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setVisible(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(hidden=truevisualUpdate=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setVisible(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="unregisterKeyboardAction(KeyStroke)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> unregisterKeyboardAction(<span class="parameters"><span class="parameter">javax.swing.KeyStroke arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="update(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> update(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="updateUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> updateUI()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-1475365217891568796<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.ActionMap&nbsp;actionMap</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">float</span>&nbsp;alignmentX</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">float</span>&nbsp;alignmentY</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.InputMap&nbsp;ancestorInputMap</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;autoscrolls</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.border.Border&nbsp;border</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;flags</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.InputMap&nbsp;focusInputMap</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.InputVerifier&nbsp;inputVerifier</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;isAlignmentXSet</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;isAlignmentYSet</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.event.EventListenerList&nbsp;listenerList</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.JPopupMenu&nbsp;popupMenu</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;verifyInputWhenFocusTarget</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.beans.VetoableChangeSupport&nbsp;vetoableChangeSupport</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.ComponentInputMap&nbsp;windowInputMap</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

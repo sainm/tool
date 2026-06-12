@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.imageio.plugins.tiff.ExifGPSTagSet</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/imageio/plugins/tiff/package-summary.html">javax.imageio.plugins.tiff</a></div>
+<h1>Class&nbsp;ExifGPSTagSet</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> ExifGPSTagSet <div class="superclass"><span class="keyword">extends</span> javax.imageio.plugins.tiff.TIFFTagSet</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="ALTITUDE_REF_SEA_LEVEL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ALTITUDE_REF_SEA_LEVEL = 0</div>
+</div>
+</li><li><div class="element" id="ALTITUDE_REF_SEA_LEVEL_REFERENCE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ALTITUDE_REF_SEA_LEVEL_REFERENCE = 1</div>
+</div>
+</li><li><div class="element" id="DEST_DISTANCE_REF_KILOMETERS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DEST_DISTANCE_REF_KILOMETERS = "K"</div>
+</div>
+</li><li><div class="element" id="DEST_DISTANCE_REF_KNOTS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DEST_DISTANCE_REF_KNOTS = "N"</div>
+</div>
+</li><li><div class="element" id="DEST_DISTANCE_REF_MILES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DEST_DISTANCE_REF_MILES = "M"</div>
+</div>
+</li><li><div class="element" id="DIFFERENTIAL_CORRECTION_APPLIED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> DIFFERENTIAL_CORRECTION_APPLIED = 1</div>
+</div>
+</li><li><div class="element" id="DIFFERENTIAL_CORRECTION_NONE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> DIFFERENTIAL_CORRECTION_NONE = 0</div>
+</div>
+</li><li><div class="element" id="DIRECTION_REF_MAGNETIC"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DIRECTION_REF_MAGNETIC = "M"</div>
+</div>
+</li><li><div class="element" id="DIRECTION_REF_TRUE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DIRECTION_REF_TRUE = "T"</div>
+</div>
+</li><li><div class="element" id="GPS_VERSION_2_2"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String GPS_VERSION_2_2 = "2200"</div>
+</div>
+</li><li><div class="element" id="LATITUDE_REF_NORTH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String LATITUDE_REF_NORTH = "N"</div>
+</div>
+</li><li><div class="element" id="LATITUDE_REF_SOUTH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String LATITUDE_REF_SOUTH = "S"</div>
+</div>
+</li><li><div class="element" id="LONGITUDE_REF_EAST"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String LONGITUDE_REF_EAST = "E"</div>
+</div>
+</li><li><div class="element" id="LONGITUDE_REF_WEST"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String LONGITUDE_REF_WEST = "W"</div>
+</div>
+</li><li><div class="element" id="MEASURE_MODE_2D"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String MEASURE_MODE_2D = "2"</div>
+</div>
+</li><li><div class="element" id="MEASURE_MODE_3D"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String MEASURE_MODE_3D = "3"</div>
+</div>
+</li><li><div class="element" id="SPEED_REF_KILOMETERS_PER_HOUR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SPEED_REF_KILOMETERS_PER_HOUR = "K"</div>
+</div>
+</li><li><div class="element" id="SPEED_REF_KNOTS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SPEED_REF_KNOTS = "N"</div>
+</div>
+</li><li><div class="element" id="SPEED_REF_MILES_PER_HOUR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SPEED_REF_MILES_PER_HOUR = "M"</div>
+</div>
+</li><li><div class="element" id="STATUS_MEASUREMENT_INTEROPERABILITY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String STATUS_MEASUREMENT_INTEROPERABILITY = "V"</div>
+</div>
+</li><li><div class="element" id="STATUS_MEASUREMENT_IN_PROGRESS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String STATUS_MEASUREMENT_IN_PROGRESS = "A"</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_ALTITUDE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_ALTITUDE = 6</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_ALTITUDE_REF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_ALTITUDE_REF = 5</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_AREA_INFORMATION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_AREA_INFORMATION = 28</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_DATE_STAMP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_DATE_STAMP = 29</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_DEST_BEARING"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_DEST_BEARING = 24</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_DEST_BEARING_REF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_DEST_BEARING_REF = 23</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_DEST_DISTANCE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_DEST_DISTANCE = 26</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_DEST_DISTANCE_REF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_DEST_DISTANCE_REF = 25</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_DEST_LATITUDE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_DEST_LATITUDE = 20</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_DEST_LATITUDE_REF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_DEST_LATITUDE_REF = 19</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_DEST_LONGITUDE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_DEST_LONGITUDE = 22</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_DEST_LONGITUDE_REF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_DEST_LONGITUDE_REF = 21</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_DIFFERENTIAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_DIFFERENTIAL = 30</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_DOP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_DOP = 11</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_IMG_DIRECTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_IMG_DIRECTION = 17</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_IMG_DIRECTION_REF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_IMG_DIRECTION_REF = 16</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_LATITUDE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_LATITUDE = 2</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_LATITUDE_REF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_LATITUDE_REF = 1</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_LONGITUDE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_LONGITUDE = 4</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_LONGITUDE_REF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_LONGITUDE_REF = 3</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_MAP_DATUM"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_MAP_DATUM = 18</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_MEASURE_MODE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_MEASURE_MODE = 10</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_PROCESSING_METHOD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_PROCESSING_METHOD = 27</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_SATELLITES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_SATELLITES = 8</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_SPEED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_SPEED = 13</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_SPEED_REF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_SPEED_REF = 12</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_STATUS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_STATUS = 9</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_TIME_STAMP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_TIME_STAMP = 7</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_TRACK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_TRACK = 15</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_TRACK_REF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_TRACK_REF = 14</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_VERSION_ID"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_VERSION_ID = 0</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getInstance()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.imageio.plugins.tiff.ExifGPSTagSet getInstance()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

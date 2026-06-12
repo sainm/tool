@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.tree.DefaultMutableTreeNode</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/swing/tree/package-summary.html">javax.swing.tree</a></div>
+<h1>Class&nbsp;DefaultMutableTreeNode</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> DefaultMutableTreeNode <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable, java.lang.Cloneable, javax.swing.tree.MutableTreeNode</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="EMPTY_ENUMERATION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span>java.util.Enumeration&lt;javax.swing.tree.TreeNode&gt;</span> EMPTY_ENUMERATION</div>
+</div>
+</li><li><div class="element" id="allowsChildren"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> allowsChildren</div>
+</div>
+</li><li><div class="element" id="children"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.util.Vector&lt;javax.swing.tree.TreeNode&gt;</span> children</div>
+</div>
+</li><li><div class="element" id="parent"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.MutableTreeNode parent</div>
+</div>
+</li><li><div class="element" id="userObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> java.lang.Object userObject</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DefaultMutableTreeNode()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DefaultMutableTreeNode(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Object,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DefaultMutableTreeNode(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="add(MutableTreeNode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> add(<span class="parameters"><span class="parameter">javax.swing.tree.MutableTreeNode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="breadthFirstEnumeration()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Enumeration&lt;javax.swing.tree.TreeNode&gt;</span> breadthFirstEnumeration()</div>
+</div>
+</li><li><div class="element" id="children()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Enumeration&lt;javax.swing.tree.TreeNode&gt;</span> children()</div>
+</div>
+</li><li><div class="element" id="clone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object clone()</div>
+</div>
+</li><li><div class="element" id="depthFirstEnumeration()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Enumeration&lt;javax.swing.tree.TreeNode&gt;</span> depthFirstEnumeration()</div>
+</div>
+</li><li><div class="element" id="getAllowsChildren()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getAllowsChildren()</div>
+</div>
+</li><li><div class="element" id="getChildAfter(TreeNode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.TreeNode getChildAfter(<span class="parameters"><span class="parameter">javax.swing.tree.TreeNode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getChildAt(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.TreeNode getChildAt(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getChildBefore(TreeNode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.TreeNode getChildBefore(<span class="parameters"><span class="parameter">javax.swing.tree.TreeNode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getChildCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getChildCount()</div>
+</div>
+</li><li><div class="element" id="getDepth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getDepth()</div>
+</div>
+</li><li><div class="element" id="getFirstChild()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.TreeNode getFirstChild()</div>
+</div>
+</li><li><div class="element" id="getFirstLeaf()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.DefaultMutableTreeNode getFirstLeaf()</div>
+</div>
+</li><li><div class="element" id="getIndex(TreeNode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getIndex(<span class="parameters"><span class="parameter">javax.swing.tree.TreeNode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLastChild()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.TreeNode getLastChild()</div>
+</div>
+</li><li><div class="element" id="getLastLeaf()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.DefaultMutableTreeNode getLastLeaf()</div>
+</div>
+</li><li><div class="element" id="getLeafCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getLeafCount()</div>
+</div>
+</li><li><div class="element" id="getLevel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getLevel()</div>
+</div>
+</li><li><div class="element" id="getNextLeaf()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.DefaultMutableTreeNode getNextLeaf()</div>
+</div>
+</li><li><div class="element" id="getNextNode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.DefaultMutableTreeNode getNextNode()</div>
+</div>
+</li><li><div class="element" id="getNextSibling()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.DefaultMutableTreeNode getNextSibling()</div>
+</div>
+</li><li><div class="element" id="getParent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.TreeNode getParent()</div>
+</div>
+</li><li><div class="element" id="getPath()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.tree.TreeNode[]</span> getPath()</div>
+</div>
+</li><li><div class="element" id="getPathToRoot(TreeNode,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>javax.swing.tree.TreeNode[]</span> getPathToRoot(<span class="parameters"><span class="parameter">javax.swing.tree.TreeNode arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPreviousLeaf()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.DefaultMutableTreeNode getPreviousLeaf()</div>
+</div>
+</li><li><div class="element" id="getPreviousNode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.DefaultMutableTreeNode getPreviousNode()</div>
+</div>
+</li><li><div class="element" id="getPreviousSibling()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.DefaultMutableTreeNode getPreviousSibling()</div>
+</div>
+</li><li><div class="element" id="getRoot()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.TreeNode getRoot()</div>
+</div>
+</li><li><div class="element" id="getSharedAncestor(DefaultMutableTreeNode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.TreeNode getSharedAncestor(<span class="parameters"><span class="parameter">javax.swing.tree.DefaultMutableTreeNode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getSiblingCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getSiblingCount()</div>
+</div>
+</li><li><div class="element" id="getUserObject()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getUserObject()</div>
+</div>
+</li><li><div class="element" id="getUserObjectPath()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Object[]</span> getUserObjectPath()</div>
+</div>
+</li><li><div class="element" id="insert(MutableTreeNode,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> insert(<span class="parameters"><span class="parameter">javax.swing.tree.MutableTreeNode arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isLeaf()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isLeaf()</div>
+</div>
+</li><li><div class="element" id="isNodeAncestor(TreeNode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isNodeAncestor(<span class="parameters"><span class="parameter">javax.swing.tree.TreeNode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isNodeChild(TreeNode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isNodeChild(<span class="parameters"><span class="parameter">javax.swing.tree.TreeNode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isNodeDescendant(DefaultMutableTreeNode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isNodeDescendant(<span class="parameters"><span class="parameter">javax.swing.tree.DefaultMutableTreeNode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isNodeRelated(DefaultMutableTreeNode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isNodeRelated(<span class="parameters"><span class="parameter">javax.swing.tree.DefaultMutableTreeNode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isNodeSibling(TreeNode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isNodeSibling(<span class="parameters"><span class="parameter">javax.swing.tree.TreeNode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isRoot()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isRoot()</div>
+</div>
+</li><li><div class="element" id="pathFromAncestorEnumeration(TreeNode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Enumeration&lt;javax.swing.tree.TreeNode&gt;</span> pathFromAncestorEnumeration(<span class="parameters"><span class="parameter">javax.swing.tree.TreeNode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="postorderEnumeration()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Enumeration&lt;javax.swing.tree.TreeNode&gt;</span> postorderEnumeration()</div>
+</div>
+</li><li><div class="element" id="preorderEnumeration()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Enumeration&lt;javax.swing.tree.TreeNode&gt;</span> preorderEnumeration()</div>
+</div>
+</li><li><div class="element" id="remove(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> remove(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(MutableTreeNode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> remove(<span class="parameters"><span class="parameter">javax.swing.tree.MutableTreeNode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeAllChildren()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeAllChildren()</div>
+</div>
+</li><li><div class="element" id="removeFromParent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeFromParent()</div>
+</div>
+</li><li><div class="element" id="setAllowsChildren(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAllowsChildren(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setParent(MutableTreeNode)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setParent(<span class="parameters"><span class="parameter">javax.swing.tree.MutableTreeNode arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setUserObject(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setUserObject(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-4298474751201349152<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;allowsChildren</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.util.Vector&lt;javax.swing.tree.TreeNode&gt;</span>&nbsp;children</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.tree.MutableTreeNode&nbsp;parent</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

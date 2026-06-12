@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/java.awt.dnd.DragGestureEvent</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/java/awt/dnd/package-summary.html">java.awt.dnd</a></div>
+<h1>Class&nbsp;DragGestureEvent</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> DragGestureEvent <div class="superclass"><span class="keyword">extends</span> java.util.EventObject</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(DragGestureRecognizer,int,Point,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DragGestureEvent(<span class="parameters"><span class="parameter">java.awt.dnd.DragGestureRecognizer arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">java.awt.Point arg2</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> java.awt.event.InputEvent</span>&gt;</span> arg3</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getComponent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getComponent()</div>
+</div>
+</li><li><div class="element" id="getDragAction()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getDragAction()</div>
+</div>
+</li><li><div class="element" id="getDragOrigin()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Point getDragOrigin()</div>
+</div>
+</li><li><div class="element" id="getDragSource()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.dnd.DragSource getDragSource()</div>
+</div>
+</li><li><div class="element" id="getSourceAsDragGestureRecognizer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.dnd.DragGestureRecognizer getSourceAsDragGestureRecognizer()</div>
+</div>
+</li><li><div class="element" id="getTriggerEvent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.event.InputEvent getTriggerEvent()</div>
+</div>
+</li><li><div class="element" id="iterator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Iterator&lt;java.awt.event.InputEvent&gt;</span> iterator()</div>
+</div>
+</li><li><div class="element" id="startDrag(Cursor,Transferable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> startDrag(<span class="parameters"><span class="parameter">java.awt.Cursor arg0</span>, <span class="parameter">java.awt.datatransfer.Transferable arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.dnd.InvalidDnDOperationException</span></div>
+</div>
+</li><li><div class="element" id="startDrag(Cursor,Transferable,DragSourceListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> startDrag(<span class="parameters"><span class="parameter">java.awt.Cursor arg0</span>, <span class="parameter">java.awt.datatransfer.Transferable arg1</span>, <span class="parameter">java.awt.dnd.DragSourceListener arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.dnd.InvalidDnDOperationException</span></div>
+</div>
+</li><li><div class="element" id="startDrag(Cursor,Image,Point,Transferable,DragSourceListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> startDrag(<span class="parameters"><span class="parameter">java.awt.Cursor arg0</span>, <span class="parameter">java.awt.Image arg1</span>, <span class="parameter">java.awt.Point arg2</span>, <span class="parameter">java.awt.datatransfer.Transferable arg3</span>, <span class="parameter">java.awt.dnd.DragSourceListener arg4</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.dnd.InvalidDnDOperationException</span></div>
+</div>
+</li><li><div class="element" id="toArray()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Object[]</span> toArray()</div>
+</div>
+</li><li><div class="element" id="toArray(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Object[]</span> toArray(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>9080172649166731306<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;action</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Component&nbsp;component</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.dnd.DragSource&nbsp;dragSource</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Point&nbsp;origin</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

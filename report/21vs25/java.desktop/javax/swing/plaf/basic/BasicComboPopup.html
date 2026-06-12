@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.plaf.basic.BasicComboPopup</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/swing/plaf/basic/package-summary.html">javax.swing.plaf.basic</a></div>
+<h1>Class&nbsp;BasicComboPopup</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> BasicComboPopup <div class="superclass"><span class="keyword">extends</span> javax.swing.JPopupMenu</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.swing.plaf.basic.ComboPopup</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicComboPopup.InvocationKeyHandler.html">InvocationKeyHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicComboPopup.InvocationMouseHandler.html">InvocationMouseHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicComboPopup.InvocationMouseMotionHandler.html">InvocationMouseMotionHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicComboPopup.ItemHandler.html">ItemHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListDataHandler.html">ListDataHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListMouseHandler.html">ListMouseHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListMouseMotionHandler.html">ListMouseMotionHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicComboPopup.ListSelectionHandler.html">ListSelectionHandler</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/plaf/basic/BasicComboPopup.PropertyChangeHandler.html">PropertyChangeHandler</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="SCROLL_DOWN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SCROLL_DOWN = 1</div>
+</div>
+</li><li><div class="element" id="SCROLL_UP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SCROLL_UP = 0</div>
+</div>
+</li><li><div class="element" id="autoscrollTimer"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.Timer autoscrollTimer</div>
+</div>
+</li><li><div class="element" id="comboBox"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>javax.swing.JComboBox&lt;java.lang.Object&gt;</span> comboBox</div>
+</div>
+</li><li><div class="element" id="hasEntered"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> hasEntered</div>
+</div>
+</li><li><div class="element" id="isAutoScrolling"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> isAutoScrolling</div>
+</div>
+</li><li><div class="element" id="itemListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.ItemListener itemListener</div>
+</div>
+</li><li><div class="element" id="keyListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.KeyListener keyListener</div>
+</div>
+</li><li><div class="element" id="list"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>javax.swing.JList&lt;java.lang.Object&gt;</span> list</div>
+</div>
+</li><li><div class="element" id="listDataListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.ListDataListener listDataListener</div>
+</div>
+</li><li><div class="element" id="listMouseListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.MouseListener listMouseListener</div>
+</div>
+</li><li><div class="element" id="listMouseMotionListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.MouseMotionListener listMouseMotionListener</div>
+</div>
+</li><li><div class="element" id="listSelectionListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.ListSelectionListener listSelectionListener</div>
+</div>
+</li><li><div class="element" id="mouseListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.MouseListener mouseListener</div>
+</div>
+</li><li><div class="element" id="mouseMotionListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.MouseMotionListener mouseMotionListener</div>
+</div>
+</li><li><div class="element" id="propertyChangeListener"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.beans.PropertyChangeListener propertyChangeListener</div>
+</div>
+</li><li><div class="element" id="scrollDirection"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> scrollDirection</div>
+</div>
+</li><li><div class="element" id="scroller"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JScrollPane scroller</div>
+</div>
+</li><li><div class="element" id="valueIsAdjusting"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> valueIsAdjusting</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(JComboBox)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BasicComboPopup(<span class="parameters"><span class="parameter"><span>javax.swing.JComboBox&lt;java.lang.Object&gt;</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="autoScrollDown()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> autoScrollDown()</div>
+</div>
+</li><li><div class="element" id="autoScrollUp()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> autoScrollUp()</div>
+</div>
+</li><li><div class="element" id="computePopupBounds(int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Rectangle computePopupBounds(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="configureList()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> configureList()</div>
+</div>
+</li><li><div class="element" id="configurePopup()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> configurePopup()</div>
+</div>
+</li><li><div class="element" id="configureScroller()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> configureScroller()</div>
+</div>
+</li><li><div class="element" id="convertMouseEvent(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.MouseEvent convertMouseEvent(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createItemListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.ItemListener createItemListener()</div>
+</div>
+</li><li><div class="element" id="createKeyListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.KeyListener createKeyListener()</div>
+</div>
+</li><li><div class="element" id="createList()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>javax.swing.JList&lt;java.lang.Object&gt;</span> createList()</div>
+</div>
+</li><li><div class="element" id="createListDataListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.ListDataListener createListDataListener()</div>
+</div>
+</li><li><div class="element" id="createListMouseListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.MouseListener createListMouseListener()</div>
+</div>
+</li><li><div class="element" id="createListMouseMotionListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.MouseMotionListener createListMouseMotionListener()</div>
+</div>
+</li><li><div class="element" id="createListSelectionListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.event.ListSelectionListener createListSelectionListener()</div>
+</div>
+</li><li><div class="element" id="createMouseListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.MouseListener createMouseListener()</div>
+</div>
+</li><li><div class="element" id="createMouseMotionListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.event.MouseMotionListener createMouseMotionListener()</div>
+</div>
+</li><li><div class="element" id="createPropertyChangeListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.beans.PropertyChangeListener createPropertyChangeListener()</div>
+</div>
+</li><li><div class="element" id="createScroller()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JScrollPane createScroller()</div>
+</div>
+</li><li><div class="element" id="delegateFocus(MouseEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> delegateFocus(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="firePopupMenuCanceled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> firePopupMenuCanceled()</div>
+</div>
+</li><li><div class="element" id="firePopupMenuWillBecomeInvisible()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> firePopupMenuWillBecomeInvisible()</div>
+</div>
+</li><li><div class="element" id="firePopupMenuWillBecomeVisible()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> firePopupMenuWillBecomeVisible()</div>
+</div>
+</li><li><div class="element" id="getAccessibleContext()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.accessibility.AccessibleContext getAccessibleContext()</div>
+</div>
+</li><li><div class="element" id="getKeyListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.event.KeyListener getKeyListener()</div>
+</div>
+</li><li><div class="element" id="getList()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.JList&lt;java.lang.Object&gt;</span> getList()</div>
+</div>
+</li><li><div class="element" id="getMouseListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.event.MouseListener getMouseListener()</div>
+</div>
+</li><li><div class="element" id="getMouseMotionListener()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.event.MouseMotionListener getMouseMotionListener()</div>
+</div>
+</li><li><div class="element" id="getPopupHeightForRowCount(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> getPopupHeightForRowCount(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="hide()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> hide()</div>
+</div>
+</li><li><div class="element" id="installComboBoxListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installComboBoxListeners()</div>
+</div>
+</li><li><div class="element" id="installComboBoxModelListeners(ComboBoxModel)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installComboBoxModelListeners(<span class="parameters"><span class="parameter"><span>javax.swing.ComboBoxModel&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="installKeyboardActions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installKeyboardActions()</div>
+</div>
+</li><li><div class="element" id="installListListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> installListListeners()</div>
+</div>
+</li><li><div class="element" id="isFocusTraversable()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isFocusTraversable()</div>
+</div>
+</li><li><div class="element" id="show()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> show()</div>
+</div>
+</li><li><div class="element" id="startAutoScrolling(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> startAutoScrolling(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="stopAutoScrolling()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> stopAutoScrolling()</div>
+</div>
+</li><li><div class="element" id="togglePopup()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> togglePopup()</div>
+</div>
+</li><li><div class="element" id="uninstallComboBoxModelListeners(ComboBoxModel)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallComboBoxModelListeners(<span class="parameters"><span class="parameter"><span>javax.swing.ComboBoxModel&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="uninstallKeyboardActions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> uninstallKeyboardActions()</div>
+</div>
+</li><li><div class="element" id="uninstallingUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> uninstallingUI()</div>
+</div>
+</li><li><div class="element" id="updateListBoxSelectionForEvent(MouseEvent,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> updateListBoxSelectionForEvent(<span class="parameters"><span class="parameter">java.awt.event.MouseEvent arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-4744595965746839997<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.Timer&nbsp;autoscrollTimer</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>javax.swing.JComboBox&lt;java.lang.Object&gt;</span>&nbsp;comboBox</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.plaf.basic.BasicComboPopup.Handler&nbsp;handler</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;hasEntered</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;isAutoScrolling</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.event.ItemListener&nbsp;itemListener</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.event.KeyListener&nbsp;keyListener</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>javax.swing.JList&lt;java.lang.Object&gt;</span>&nbsp;list</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.event.ListDataListener&nbsp;listDataListener</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.event.MouseListener&nbsp;listMouseListener</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.event.MouseMotionListener&nbsp;listMouseMotionListener</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.event.ListSelectionListener&nbsp;listSelectionListener</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.event.MouseListener&nbsp;mouseListener</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.event.MouseMotionListener&nbsp;mouseMotionListener</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.beans.PropertyChangeListener&nbsp;propertyChangeListener</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;scrollDirection</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.JScrollPane&nbsp;scroller</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.event.MouseWheelListener&nbsp;scrollerMouseWheelListener</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;valueIsAdjusting</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

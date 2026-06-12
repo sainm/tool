@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.tree.FixedHeightLayoutCache</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/swing/tree/package-summary.html">javax.swing.tree</a></div>
+<h1>Class&nbsp;FixedHeightLayoutCache</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> FixedHeightLayoutCache <div class="superclass"><span class="keyword">extends</span> javax.swing.tree.AbstractLayoutCache</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> FixedHeightLayoutCache()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getBounds(TreePath,Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Rectangle getBounds(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span>, <span class="parameter">java.awt.Rectangle arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getExpandedState(TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getExpandedState(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPathClosestTo(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.TreePath getPathClosestTo(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getPathForRow(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.tree.TreePath getPathForRow(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getRowCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getRowCount()</div>
+</div>
+</li><li><div class="element" id="getRowForPath(TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getRowForPath(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getVisibleChildCount(TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getVisibleChildCount(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getVisiblePathsFrom(TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Enumeration&lt;javax.swing.tree.TreePath&gt;</span> getVisiblePathsFrom(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="invalidatePathBounds(TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> invalidatePathBounds(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="invalidateSizes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> invalidateSizes()</div>
+</div>
+</li><li><div class="element" id="isExpanded(TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isExpanded(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setExpandedState(TreePath,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setExpandedState(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setModel(TreeModel)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setModel(<span class="parameters"><span class="parameter">javax.swing.tree.TreeModel arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRootVisible(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRootVisible(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRowHeight(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRowHeight(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="treeNodesChanged(TreeModelEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> treeNodesChanged(<span class="parameters"><span class="parameter">javax.swing.event.TreeModelEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="treeNodesInserted(TreeModelEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> treeNodesInserted(<span class="parameters"><span class="parameter">javax.swing.event.TreeModelEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="treeNodesRemoved(TreeModelEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> treeNodesRemoved(<span class="parameters"><span class="parameter">javax.swing.event.TreeModelEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="treeStructureChanged(TreeModelEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> treeStructureChanged(<span class="parameters"><span class="parameter">javax.swing.event.TreeModelEvent arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

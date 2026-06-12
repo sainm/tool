@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/java.lang.Thread</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/lang/package-summary.html">java.lang</a></div>
+<h1>Class&nbsp;Thread</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> Thread <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.lang.Runnable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.base/java/lang/Thread.Builder.html">Builder</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.base/java/lang/Thread.State.html">State</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.base/java/lang/Thread.UncaughtExceptionHandler.html">UncaughtExceptionHandler</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="MAX_PRIORITY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MAX_PRIORITY = 10</div>
+</div>
+</li><li><div class="element" id="MIN_PRIORITY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> MIN_PRIORITY = 1</div>
+</div>
+</li><li><div class="element" id="NORM_PRIORITY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> NORM_PRIORITY = 5</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Thread()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Thread(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Runnable,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Thread(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Thread(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(ThreadGroup,Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Thread(<span class="parameters"><span class="parameter">java.lang.ThreadGroup arg0</span>, <span class="parameter">java.lang.Runnable arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(ThreadGroup,Runnable,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Thread(<span class="parameters"><span class="parameter">java.lang.ThreadGroup arg0</span>, <span class="parameter">java.lang.Runnable arg1</span>, <span class="parameter">java.lang.String arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(ThreadGroup,Runnable,String,long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Thread(<span class="parameters"><span class="parameter">java.lang.ThreadGroup arg0</span>, <span class="parameter">java.lang.Runnable arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">long</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(ThreadGroup,Runnable,String,long,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Thread(<span class="parameters"><span class="parameter">java.lang.ThreadGroup arg0</span>, <span class="parameter">java.lang.Runnable arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span class="keyword">long</span> arg3</span>, <span class="parameter"><span class="keyword">boolean</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(ThreadGroup,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Thread(<span class="parameters"><span class="parameter">java.lang.ThreadGroup arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="activeCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> activeCount()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="checkAccess()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="17"forRemoval=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> checkAccess()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="clone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.Object clone() <span class="throws"><span class="keyword">throws</span> java.lang.CloneNotSupportedException</span></div>
+</div>
+</li><li><div class="element" id="countStackFrames()"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK21; not in: JDK25.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> countStackFrames()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="currentThread()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.Thread currentThread()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="dumpStack()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> dumpStack()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="enumerate(Thread[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> enumerate(<span class="parameters"><span class="parameter"><span>java.lang.Thread[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAllStackTraces()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.Map&lt;java.lang.Thread, <span>java.lang.StackTraceElement[]</span>&gt;</span> getAllStackTraces()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getContextClassLoader()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ClassLoader getContextClassLoader()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDefaultUncaughtExceptionHandler()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.Thread.UncaughtExceptionHandler getDefaultUncaughtExceptionHandler()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getId()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="19")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getId()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.String getName()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getPriority()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">int</span> getPriority()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getStackTrace()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.StackTraceElement[]</span> getStackTrace()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getState()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Thread.State getState()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getThreadGroup()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.ThreadGroup getThreadGroup()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getUncaughtExceptionHandler()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Thread.UncaughtExceptionHandler getUncaughtExceptionHandler()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="holdsLock(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> holdsLock(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="interrupt()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> interrupt()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="interrupted()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> interrupted()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isAlive()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isAlive()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isDaemon()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isDaemon()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isInterrupted()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isInterrupted()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isVirtual()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isVirtual()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="join()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> join() <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="join(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> join(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="join(long,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> join(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="join(Duration)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> join(<span class="parameters"><span class="parameter">java.time.Duration arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="ofPlatform()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.Thread.Builder.OfPlatform ofPlatform()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="ofVirtual()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.Thread.Builder.OfVirtual ofVirtual()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="onSpinWait()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> onSpinWait()</div>
+</div>
+</li><li><div class="element" id="resume()"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK21; not in: JDK25.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> resume()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="run()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> run()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setContextClassLoader(ClassLoader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setContextClassLoader(<span class="parameters"><span class="parameter">java.lang.ClassLoader arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setDaemon(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setDaemon(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setDefaultUncaughtExceptionHandler(UncaughtExceptionHandler)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> setDefaultUncaughtExceptionHandler(<span class="parameters"><span class="parameter">java.lang.Thread.UncaughtExceptionHandler arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setPriority(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setPriority(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setUncaughtExceptionHandler(UncaughtExceptionHandler)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setUncaughtExceptionHandler(<span class="parameters"><span class="parameter">java.lang.Thread.UncaughtExceptionHandler arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="sleep(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> sleep(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="sleep(long,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> sleep(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="sleep(Duration)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> sleep(<span class="parameters"><span class="parameter">java.time.Duration arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="start()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> start()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="startVirtualThread(Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.Thread startVirtualThread(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="stop()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="1.2"forRemoval=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> stop()</div>
+</div>
+</li><li><div class="element" id="suspend()"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK21; not in: JDK25.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> suspend()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="threadId()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">long</span> threadId()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="yield()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> yield()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.base/java/lang/Thread.html#countStackFrames()">countStackFrames()</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/lang/Thread.html#resume()">resume()</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/lang/Thread.html#suspend()">suspend()</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td></td>
+<td></td>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

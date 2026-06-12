@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package java.base/javax.crypto</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<h1>Package&nbsp;javax.crypto</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="keyword">package</span> javax.crypto</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/AEADBadTagException.html">AEADBadTagException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/BadPaddingException.html">BadPaddingException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/Cipher.html">Cipher</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/CipherInputStream.html">CipherInputStream</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/CipherOutputStream.html">CipherOutputStream</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/CipherSpi.html">CipherSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/DecapsulateException.html">DecapsulateException</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/javax/crypto/EncryptedPrivateKeyInfo.html">EncryptedPrivateKeyInfo</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/ExemptionMechanism.html">ExemptionMechanism</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/ExemptionMechanismException.html">ExemptionMechanismException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/ExemptionMechanismSpi.html">ExemptionMechanismSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/IllegalBlockSizeException.html">IllegalBlockSizeException</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../java.base/javax/crypto/KDF.html">KDF</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../java.base/javax/crypto/KDFParameters.html">KDFParameters</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../java.base/javax/crypto/KDFSpi.html">KDFSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/KEM.html">KEM</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/KEMSpi.html">KEMSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/KeyAgreement.html">KeyAgreement</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/KeyAgreementSpi.html">KeyAgreementSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/KeyGenerator.html">KeyGenerator</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/KeyGeneratorSpi.html">KeyGeneratorSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/Mac.html">Mac</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/MacSpi.html">MacSpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/NoSuchPaddingException.html">NoSuchPaddingException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/NullCipher.html">NullCipher</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/SealedObject.html">SealedObject</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/SecretKey.html">SecretKey</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/SecretKeyFactory.html">SecretKeyFactory</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/SecretKeyFactorySpi.html">SecretKeyFactorySpi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/javax/crypto/ShortBufferException.html">ShortBufferException</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th>Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.base/javax/crypto/EncryptedPrivateKeyInfo.html">EncryptedPrivateKeyInfo</a></th>
+<td>5</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/javax/crypto/KDF.html">KDF</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/javax/crypto/KDFParameters.html">KDFParameters</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/javax/crypto/KDFSpi.html">KDFSpi</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>8</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>10</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

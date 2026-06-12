@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class jdk.dynalink/jdk.dynalink.linker.GuardedInvocation</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../jdk.dynalink/module-summary.html">jdk.dynalink</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../jdk.dynalink/jdk/dynalink/linker/package-summary.html">jdk.dynalink.linker</a></div>
+<h1>Class&nbsp;GuardedInvocation</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> GuardedInvocation <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(MethodHandle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> GuardedInvocation(<span class="parameters"><span class="parameter">java.lang.invoke.MethodHandle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(MethodHandle,MethodHandle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> GuardedInvocation(<span class="parameters"><span class="parameter">java.lang.invoke.MethodHandle arg0</span>, <span class="parameter">java.lang.invoke.MethodHandle arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(MethodHandle,MethodHandle,SwitchPoint[],Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> GuardedInvocation(<span class="parameters"><span class="parameter">java.lang.invoke.MethodHandle arg0</span>, <span class="parameter">java.lang.invoke.MethodHandle arg1</span>, <span class="parameter"><span>java.lang.invoke.SwitchPoint[]</span> arg2</span>, <span class="parameter"><span>java.lang.Class&lt;<span>? <span class="keyword">extends</span> java.lang.Throwable</span>&gt;</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(MethodHandle,MethodHandle,SwitchPoint)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> GuardedInvocation(<span class="parameters"><span class="parameter">java.lang.invoke.MethodHandle arg0</span>, <span class="parameter">java.lang.invoke.MethodHandle arg1</span>, <span class="parameter">java.lang.invoke.SwitchPoint arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(MethodHandle,MethodHandle,SwitchPoint,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> GuardedInvocation(<span class="parameters"><span class="parameter">java.lang.invoke.MethodHandle arg0</span>, <span class="parameter">java.lang.invoke.MethodHandle arg1</span>, <span class="parameter">java.lang.invoke.SwitchPoint arg2</span>, <span class="parameter"><span>java.lang.Class&lt;<span>? <span class="keyword">extends</span> java.lang.Throwable</span>&gt;</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(MethodHandle,SwitchPoint)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> GuardedInvocation(<span class="parameters"><span class="parameter">java.lang.invoke.MethodHandle arg0</span>, <span class="parameter">java.lang.invoke.SwitchPoint arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addSwitchPoint(SwitchPoint)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.dynalink.linker.GuardedInvocation addSwitchPoint(<span class="parameters"><span class="parameter">java.lang.invoke.SwitchPoint arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="asType(MethodType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.dynalink.linker.GuardedInvocation asType(<span class="parameters"><span class="parameter">java.lang.invoke.MethodType arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="asType(CallSiteDescriptor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.dynalink.linker.GuardedInvocation asType(<span class="parameters"><span class="parameter">jdk.dynalink.CallSiteDescriptor arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="asType(LinkerServices,MethodType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.dynalink.linker.GuardedInvocation asType(<span class="parameters"><span class="parameter">jdk.dynalink.linker.LinkerServices arg0</span>, <span class="parameter">java.lang.invoke.MethodType arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="asTypeSafeReturn(LinkerServices,MethodType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.dynalink.linker.GuardedInvocation asTypeSafeReturn(<span class="parameters"><span class="parameter">jdk.dynalink.linker.LinkerServices arg0</span>, <span class="parameter">java.lang.invoke.MethodType arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="compose(MethodHandle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle compose(<span class="parameters"><span class="parameter">java.lang.invoke.MethodHandle arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="compose(MethodHandle,MethodHandle,MethodHandle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle compose(<span class="parameters"><span class="parameter">java.lang.invoke.MethodHandle arg0</span>, <span class="parameter">java.lang.invoke.MethodHandle arg1</span>, <span class="parameter">java.lang.invoke.MethodHandle arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="dropArguments(int,Class[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.dynalink.linker.GuardedInvocation dropArguments(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span><span>java.lang.Class&lt;?&gt;</span>[]</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="dropArguments(int,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.dynalink.linker.GuardedInvocation dropArguments(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>java.lang.Class&lt;?&gt;</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="filterArguments(int,MethodHandle[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.dynalink.linker.GuardedInvocation filterArguments(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span>java.lang.invoke.MethodHandle[]</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getException()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;<span>? <span class="keyword">extends</span> java.lang.Throwable</span>&gt;</span> getException()</div>
+</div>
+</li><li><div class="element" id="getGuard()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle getGuard()</div>
+</div>
+</li><li><div class="element" id="getInvocation()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.invoke.MethodHandle getInvocation()</div>
+</div>
+</li><li><div class="element" id="getSwitchPoints()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.invoke.SwitchPoint[]</span> getSwitchPoints()</div>
+</div>
+</li><li><div class="element" id="hasBeenInvalidated()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> hasBeenInvalidated()</div>
+</div>
+</li><li><div class="element" id="replaceMethods(MethodHandle,MethodHandle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.dynalink.linker.GuardedInvocation replaceMethods(<span class="parameters"><span class="parameter">java.lang.invoke.MethodHandle arg0</span>, <span class="parameter">java.lang.invoke.MethodHandle arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

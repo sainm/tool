@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.util.Collections</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/util/package-summary.html">java.util</a></div>
+<h1>Class&nbsp;Collections</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> Collections <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="EMPTY_LIST"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.List EMPTY_LIST</div>
+</div>
+</li><li><div class="element" id="EMPTY_MAP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Map EMPTY_MAP</div>
+</div>
+</li><li><div class="element" id="EMPTY_SET"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.util.Set EMPTY_SET</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="addAll(Collection,T[])"><span class="same">&equals;</span><div class="signature"><span class="annotation">@SafeVarargs</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span class="keyword">boolean</span> addAll(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span>, <span class="parameter"><span>T[]</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="asLifoQueue(Deque)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Queue&lt;T&gt;</span> asLifoQueue(<span class="parameters"><span class="parameter"><span>java.util.Deque&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="binarySearch(List,T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span class="keyword">int</span> binarySearch(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> <span>java.lang.Comparable&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span></span>&gt;</span> arg0</span>, <span class="parameter">T arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="binarySearch(List,T,Comparator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span class="keyword">int</span> binarySearch(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span>, <span class="parameter">T arg1</span>, <span class="parameter"><span>java.util.Comparator&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="checkedCollection(Collection,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.Collection&lt;E&gt;</span> checkedCollection(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;E&gt;</span> arg0</span>, <span class="parameter"><span>java.lang.Class&lt;E&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="checkedList(List,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.List&lt;E&gt;</span> checkedList(<span class="parameters"><span class="parameter"><span>java.util.List&lt;E&gt;</span> arg0</span>, <span class="parameter"><span>java.lang.Class&lt;E&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="checkedMap(Map,Class,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>K</span>, <span>V</span>&gt;</span> <span>java.util.Map&lt;K, V&gt;</span> checkedMap(<span class="parameters"><span class="parameter"><span>java.util.Map&lt;K, V&gt;</span> arg0</span>, <span class="parameter"><span>java.lang.Class&lt;K&gt;</span> arg1</span>, <span class="parameter"><span>java.lang.Class&lt;V&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="checkedNavigableMap(NavigableMap,Class,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>K</span>, <span>V</span>&gt;</span> <span>java.util.NavigableMap&lt;K, V&gt;</span> checkedNavigableMap(<span class="parameters"><span class="parameter"><span>java.util.NavigableMap&lt;K, V&gt;</span> arg0</span>, <span class="parameter"><span>java.lang.Class&lt;K&gt;</span> arg1</span>, <span class="parameter"><span>java.lang.Class&lt;V&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="checkedNavigableSet(NavigableSet,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.NavigableSet&lt;E&gt;</span> checkedNavigableSet(<span class="parameters"><span class="parameter"><span>java.util.NavigableSet&lt;E&gt;</span> arg0</span>, <span class="parameter"><span>java.lang.Class&lt;E&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="checkedQueue(Queue,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.Queue&lt;E&gt;</span> checkedQueue(<span class="parameters"><span class="parameter"><span>java.util.Queue&lt;E&gt;</span> arg0</span>, <span class="parameter"><span>java.lang.Class&lt;E&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="checkedSet(Set,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.Set&lt;E&gt;</span> checkedSet(<span class="parameters"><span class="parameter"><span>java.util.Set&lt;E&gt;</span> arg0</span>, <span class="parameter"><span>java.lang.Class&lt;E&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="checkedSortedMap(SortedMap,Class,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>K</span>, <span>V</span>&gt;</span> <span>java.util.SortedMap&lt;K, V&gt;</span> checkedSortedMap(<span class="parameters"><span class="parameter"><span>java.util.SortedMap&lt;K, V&gt;</span> arg0</span>, <span class="parameter"><span>java.lang.Class&lt;K&gt;</span> arg1</span>, <span class="parameter"><span>java.lang.Class&lt;V&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="checkedSortedSet(SortedSet,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.SortedSet&lt;E&gt;</span> checkedSortedSet(<span class="parameters"><span class="parameter"><span>java.util.SortedSet&lt;E&gt;</span> arg0</span>, <span class="parameter"><span>java.lang.Class&lt;E&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="copy(List,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span class="keyword">void</span> copy(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="disjoint(Collection,Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">boolean</span> disjoint(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;?&gt;</span> arg0</span>, <span class="parameter"><span>java.util.Collection&lt;?&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="emptyEnumeration()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Enumeration&lt;T&gt;</span> emptyEnumeration()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="emptyIterator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Iterator&lt;T&gt;</span> emptyIterator()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="emptyList()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.List&lt;T&gt;</span> emptyList()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="emptyListIterator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.ListIterator&lt;T&gt;</span> emptyListIterator()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="emptyMap()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="typarams">&lt;<span>K</span>, <span>V</span>&gt;</span> <span>java.util.Map&lt;K, V&gt;</span> emptyMap()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="emptyNavigableMap()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="typarams">&lt;<span>K</span>, <span>V</span>&gt;</span> <span>java.util.NavigableMap&lt;K, V&gt;</span> emptyNavigableMap()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="emptyNavigableSet()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.NavigableSet&lt;E&gt;</span> emptyNavigableSet()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="emptySet()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Set&lt;T&gt;</span> emptySet()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="emptySortedMap()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="typarams">&lt;<span>K</span>, <span>V</span>&gt;</span> <span>java.util.SortedMap&lt;K, V&gt;</span> emptySortedMap()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="emptySortedSet()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.SortedSet&lt;E&gt;</span> emptySortedSet()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="enumeration(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Enumeration&lt;T&gt;</span> enumeration(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="fill(List,T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span class="keyword">void</span> fill(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span>, <span class="parameter">T arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="frequency(Collection,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> frequency(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="indexOfSubList(List,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> indexOfSubList(<span class="parameters"><span class="parameter"><span>java.util.List&lt;?&gt;</span> arg0</span>, <span class="parameter"><span>java.util.List&lt;?&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="lastIndexOfSubList(List,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> lastIndexOfSubList(<span class="parameters"><span class="parameter"><span>java.util.List&lt;?&gt;</span> arg0</span>, <span class="parameter"><span>java.util.List&lt;?&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="list(Enumeration)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.ArrayList&lt;T&gt;</span> list(<span class="parameters"><span class="parameter"><span>java.util.Enumeration&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="max(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T max(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="max(Collection,Comparator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T max(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.Comparator&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="min(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T min(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="min(Collection,Comparator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> T min(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.Comparator&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="nCopies(int,T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.List&lt;T&gt;</span> nCopies(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">T arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="newSequencedSetFromMap(SequencedMap)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.SequencedSet&lt;E&gt;</span> newSequencedSetFromMap(<span class="parameters"><span class="parameter"><span>java.util.SequencedMap&lt;E, java.lang.Boolean&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newSetFromMap(Map)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>java.util.Set&lt;E&gt;</span> newSetFromMap(<span class="parameters"><span class="parameter"><span>java.util.Map&lt;E, java.lang.Boolean&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="replaceAll(List,T,T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span class="keyword">boolean</span> replaceAll(<span class="parameters"><span class="parameter"><span>java.util.List&lt;T&gt;</span> arg0</span>, <span class="parameter">T arg1</span>, <span class="parameter">T arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="reverse(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> reverse(<span class="parameters"><span class="parameter"><span>java.util.List&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="reverseOrder()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Comparator&lt;T&gt;</span> reverseOrder()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="reverseOrder(Comparator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Comparator&lt;T&gt;</span> reverseOrder(<span class="parameters"><span class="parameter"><span>java.util.Comparator&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="rotate(List,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> rotate(<span class="parameters"><span class="parameter"><span>java.util.List&lt;?&gt;</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="shuffle(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> shuffle(<span class="parameters"><span class="parameter"><span>java.util.List&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="shuffle(List,Random)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> shuffle(<span class="parameters"><span class="parameter"><span>java.util.List&lt;?&gt;</span> arg0</span>, <span class="parameter">java.util.Random arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="shuffle(List,RandomGenerator)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> shuffle(<span class="parameters"><span class="parameter"><span>java.util.List&lt;?&gt;</span> arg0</span>, <span class="parameter">java.util.random.RandomGenerator arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="singleton(T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Set&lt;T&gt;</span> singleton(<span class="parameters"><span class="parameter">T arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="singletonList(T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.List&lt;T&gt;</span> singletonList(<span class="parameters"><span class="parameter">T arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="singletonMap(K,V)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>K</span>, <span>V</span>&gt;</span> <span>java.util.Map&lt;K, V&gt;</span> singletonMap(<span class="parameters"><span class="parameter">K arg0</span>, <span class="parameter">V arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="sort(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span class="keyword">void</span> sort(<span class="parameters"><span class="parameter"><span>java.util.List&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="sort(List,Comparator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span class="keyword">void</span> sort(<span class="parameters"><span class="parameter"><span>java.util.List&lt;T&gt;</span> arg0</span>, <span class="parameter"><span>java.util.Comparator&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="swap(List,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">void</span> swap(<span class="parameters"><span class="parameter"><span>java.util.List&lt;?&gt;</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="synchronizedCollection(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Collection&lt;T&gt;</span> synchronizedCollection(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="synchronizedList(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.List&lt;T&gt;</span> synchronizedList(<span class="parameters"><span class="parameter"><span>java.util.List&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="synchronizedMap(Map)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>K</span>, <span>V</span>&gt;</span> <span>java.util.Map&lt;K, V&gt;</span> synchronizedMap(<span class="parameters"><span class="parameter"><span>java.util.Map&lt;K, V&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="synchronizedNavigableMap(NavigableMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>K</span>, <span>V</span>&gt;</span> <span>java.util.NavigableMap&lt;K, V&gt;</span> synchronizedNavigableMap(<span class="parameters"><span class="parameter"><span>java.util.NavigableMap&lt;K, V&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="synchronizedNavigableSet(NavigableSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.NavigableSet&lt;T&gt;</span> synchronizedNavigableSet(<span class="parameters"><span class="parameter"><span>java.util.NavigableSet&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="synchronizedSet(Set)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Set&lt;T&gt;</span> synchronizedSet(<span class="parameters"><span class="parameter"><span>java.util.Set&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="synchronizedSortedMap(SortedMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>K</span>, <span>V</span>&gt;</span> <span>java.util.SortedMap&lt;K, V&gt;</span> synchronizedSortedMap(<span class="parameters"><span class="parameter"><span>java.util.SortedMap&lt;K, V&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="synchronizedSortedSet(SortedSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.SortedSet&lt;T&gt;</span> synchronizedSortedSet(<span class="parameters"><span class="parameter"><span>java.util.SortedSet&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="unmodifiableCollection(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Collection&lt;T&gt;</span> unmodifiableCollection(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="unmodifiableList(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.List&lt;T&gt;</span> unmodifiableList(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="unmodifiableMap(Map)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>K</span>, <span>V</span>&gt;</span> <span>java.util.Map&lt;K, V&gt;</span> unmodifiableMap(<span class="parameters"><span class="parameter"><span>java.util.Map&lt;<span>? <span class="keyword">extends</span> K</span>, <span>? <span class="keyword">extends</span> V</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="unmodifiableNavigableMap(NavigableMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>K</span>, <span>V</span>&gt;</span> <span>java.util.NavigableMap&lt;K, V&gt;</span> unmodifiableNavigableMap(<span class="parameters"><span class="parameter"><span>java.util.NavigableMap&lt;K, <span>? <span class="keyword">extends</span> V</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="unmodifiableNavigableSet(NavigableSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.NavigableSet&lt;T&gt;</span> unmodifiableNavigableSet(<span class="parameters"><span class="parameter"><span>java.util.NavigableSet&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="unmodifiableSequencedCollection(SequencedCollection)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.SequencedCollection&lt;T&gt;</span> unmodifiableSequencedCollection(<span class="parameters"><span class="parameter"><span>java.util.SequencedCollection&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="unmodifiableSequencedMap(SequencedMap)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>K</span>, <span>V</span>&gt;</span> <span>java.util.SequencedMap&lt;K, V&gt;</span> unmodifiableSequencedMap(<span class="parameters"><span class="parameter"><span>java.util.SequencedMap&lt;<span>? <span class="keyword">extends</span> K</span>, <span>? <span class="keyword">extends</span> V</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="unmodifiableSequencedSet(SequencedSet)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.SequencedSet&lt;T&gt;</span> unmodifiableSequencedSet(<span class="parameters"><span class="parameter"><span>java.util.SequencedSet&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="unmodifiableSet(Set)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.Set&lt;T&gt;</span> unmodifiableSet(<span class="parameters"><span class="parameter"><span>java.util.Set&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="unmodifiableSortedMap(SortedMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>K</span>, <span>V</span>&gt;</span> <span>java.util.SortedMap&lt;K, V&gt;</span> unmodifiableSortedMap(<span class="parameters"><span class="parameter"><span>java.util.SortedMap&lt;K, <span>? <span class="keyword">extends</span> V</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="unmodifiableSortedSet(SortedSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>java.util.SortedSet&lt;T&gt;</span> unmodifiableSortedSet(<span class="parameters"><span class="parameter"><span>java.util.SortedSet&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.base/java/util/Collections.html#newSequencedSetFromMap(SequencedMap)">newSequencedSetFromMap(SequencedMap)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/Collections.html#shuffle(List,RandomGenerator)">shuffle(List,RandomGenerator)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/Collections.html#unmodifiableSequencedCollection(SequencedCollection)">unmodifiableSequencedCollection(SequencedCollection)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/Collections.html#unmodifiableSequencedMap(SequencedMap)">unmodifiableSequencedMap(SequencedMap)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/util/Collections.html#unmodifiableSequencedSet(SequencedSet)">unmodifiableSequencedSet(SequencedSet)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

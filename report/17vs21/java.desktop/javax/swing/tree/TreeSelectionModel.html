@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface java.desktop/javax.swing.tree.TreeSelectionModel</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/swing/tree/package-summary.html">javax.swing.tree</a></div>
+<h1>Interface&nbsp;TreeSelectionModel</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> TreeSelectionModel </div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="CONTIGUOUS_TREE_SELECTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CONTIGUOUS_TREE_SELECTION = 2</div>
+</div>
+</li><li><div class="element" id="DISCONTIGUOUS_TREE_SELECTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> DISCONTIGUOUS_TREE_SELECTION = 4</div>
+</div>
+</li><li><div class="element" id="SINGLE_TREE_SELECTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SINGLE_TREE_SELECTION = 1</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="addPropertyChangeListener(PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> addPropertyChangeListener(<span class="parameters"><span class="parameter">java.beans.PropertyChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addSelectionPath(TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> addSelectionPath(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addSelectionPaths(TreePath[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> addSelectionPaths(<span class="parameters"><span class="parameter"><span>javax.swing.tree.TreePath[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addTreeSelectionListener(TreeSelectionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> addTreeSelectionListener(<span class="parameters"><span class="parameter">javax.swing.event.TreeSelectionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="clearSelection()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> clearSelection()</div>
+</div>
+</li><li><div class="element" id="getLeadSelectionPath()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.swing.tree.TreePath getLeadSelectionPath()</div>
+</div>
+</li><li><div class="element" id="getLeadSelectionRow()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getLeadSelectionRow()</div>
+</div>
+</li><li><div class="element" id="getMaxSelectionRow()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getMaxSelectionRow()</div>
+</div>
+</li><li><div class="element" id="getMinSelectionRow()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getMinSelectionRow()</div>
+</div>
+</li><li><div class="element" id="getRowMapper()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.swing.tree.RowMapper getRowMapper()</div>
+</div>
+</li><li><div class="element" id="getSelectionCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getSelectionCount()</div>
+</div>
+</li><li><div class="element" id="getSelectionMode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getSelectionMode()</div>
+</div>
+</li><li><div class="element" id="getSelectionPath()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> javax.swing.tree.TreePath getSelectionPath()</div>
+</div>
+</li><li><div class="element" id="getSelectionPaths()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>javax.swing.tree.TreePath[]</span> getSelectionPaths()</div>
+</div>
+</li><li><div class="element" id="getSelectionRows()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span><span class="keyword">int</span>[]</span> getSelectionRows()</div>
+</div>
+</li><li><div class="element" id="isPathSelected(TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isPathSelected(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isRowSelected(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isRowSelected(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="isSelectionEmpty()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isSelectionEmpty()</div>
+</div>
+</li><li><div class="element" id="removePropertyChangeListener(PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> removePropertyChangeListener(<span class="parameters"><span class="parameter">java.beans.PropertyChangeListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeSelectionPath(TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> removeSelectionPath(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeSelectionPaths(TreePath[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> removeSelectionPaths(<span class="parameters"><span class="parameter"><span>javax.swing.tree.TreePath[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeTreeSelectionListener(TreeSelectionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> removeTreeSelectionListener(<span class="parameters"><span class="parameter">javax.swing.event.TreeSelectionListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="resetRowSelection()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> resetRowSelection()</div>
+</div>
+</li><li><div class="element" id="setRowMapper(RowMapper)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setRowMapper(<span class="parameters"><span class="parameter">javax.swing.tree.RowMapper arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionMode(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setSelectionMode(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionPath(TreePath)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setSelectionPath(<span class="parameters"><span class="parameter">javax.swing.tree.TreePath arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSelectionPaths(TreePath[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setSelectionPaths(<span class="parameters"><span class="parameter"><span>javax.swing.tree.TreePath[]</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

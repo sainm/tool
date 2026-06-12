@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/java.awt.Window</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/java/awt/package-summary.html">java.awt</a></div>
+<h1>Class&nbsp;Window</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> Window <div class="superclass"><span class="keyword">extends</span> java.awt.Container</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.accessibility.Accessible</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Window.AccessibleAWTWindow.html">AccessibleAWTWindow</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/java/awt/Window.Type.html">Type</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(Frame)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Window(<span class="parameters"><span class="parameter">java.awt.Frame arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Window)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Window(<span class="parameters"><span class="parameter">java.awt.Window arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Window,GraphicsConfiguration)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> Window(<span class="parameters"><span class="parameter">java.awt.Window arg0</span>, <span class="parameter">java.awt.GraphicsConfiguration arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="addNotify()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addNotify()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="addPropertyChangeListener(String,PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addPropertyChangeListener(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.beans.PropertyChangeListener arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="addPropertyChangeListener(PropertyChangeListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addPropertyChangeListener(<span class="parameters"><span class="parameter">java.beans.PropertyChangeListener arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="addWindowFocusListener(WindowFocusListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addWindowFocusListener(<span class="parameters"><span class="parameter">java.awt.event.WindowFocusListener arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="addWindowListener(WindowListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addWindowListener(<span class="parameters"><span class="parameter">java.awt.event.WindowListener arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="addWindowStateListener(WindowStateListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addWindowStateListener(<span class="parameters"><span class="parameter">java.awt.event.WindowStateListener arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="applyResourceBundle(String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> applyResourceBundle(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="applyResourceBundle(ResourceBundle)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> applyResourceBundle(<span class="parameters"><span class="parameter">java.util.ResourceBundle arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="createBufferStrategy(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> createBufferStrategy(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="createBufferStrategy(int,BufferCapabilities)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> createBufferStrategy(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.awt.BufferCapabilities arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.AWTException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="dispose()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> dispose()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAccessibleContext()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.accessibility.AccessibleContext getAccessibleContext()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getBackground()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getBackground()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getBufferStrategy()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.image.BufferStrategy getBufferStrategy()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFocusCycleRootAncestor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.awt.Container getFocusCycleRootAncestor()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFocusOwner()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getFocusOwner()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFocusTraversalKeys(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Set&lt;java.awt.AWTKeyStroke&gt;</span> getFocusTraversalKeys(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFocusableWindowState()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getFocusableWindowState()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getIconImages()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.List&lt;java.awt.Image&gt;</span> getIconImages()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getInputContext()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.im.InputContext getInputContext()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getListeners(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> <span>T[]</span> getListeners(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getLocale()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.Locale getLocale()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getModalExclusionType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Dialog.ModalExclusionType getModalExclusionType()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getMostRecentFocusOwner()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getMostRecentFocusOwner()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getOpacity()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">float</span> getOpacity()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getOwnedWindows()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.Window[]</span> getOwnedWindows()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getOwner()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Window getOwner()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getOwnerlessWindows()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.awt.Window[]</span> getOwnerlessWindows()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getShape()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Shape getShape()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getToolkit()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Toolkit getToolkit()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Window.Type getType()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getWarningString()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="24"forRemoval=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.String getWarningString()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getWindowFocusListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.event.WindowFocusListener[]</span> getWindowFocusListeners()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getWindowListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.event.WindowListener[]</span> getWindowListeners()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getWindowStateListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.event.WindowStateListener[]</span> getWindowStateListeners()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getWindows()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.awt.Window[]</span> getWindows()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="hide()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> hide()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isActive()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isActive()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isAlwaysOnTop()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isAlwaysOnTop()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isAlwaysOnTopSupported()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isAlwaysOnTopSupported()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isAutoRequestFocus()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isAutoRequestFocus()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isFocusCycleRoot()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isFocusCycleRoot()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isFocusableWindow()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isFocusableWindow()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isFocused()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isFocused()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isLocationByPlatform()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isLocationByPlatform()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isOpaque()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isOpaque()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isShowing()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isShowing()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isValidateRoot()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isValidateRoot()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="pack()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> pack()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="paint(Graphics)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> paint(<span class="parameters"><span class="parameter">java.awt.Graphics arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="postEvent(Event)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> postEvent(<span class="parameters"><span class="parameter">java.awt.Event arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="processEvent(AWTEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processEvent(<span class="parameters"><span class="parameter">java.awt.AWTEvent arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="processWindowEvent(WindowEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processWindowEvent(<span class="parameters"><span class="parameter">java.awt.event.WindowEvent arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="processWindowFocusEvent(WindowEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processWindowFocusEvent(<span class="parameters"><span class="parameter">java.awt.event.WindowEvent arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="processWindowStateEvent(WindowEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> processWindowStateEvent(<span class="parameters"><span class="parameter">java.awt.event.WindowEvent arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="removeNotify()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeNotify()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="removeWindowFocusListener(WindowFocusListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeWindowFocusListener(<span class="parameters"><span class="parameter">java.awt.event.WindowFocusListener arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="removeWindowListener(WindowListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeWindowListener(<span class="parameters"><span class="parameter">java.awt.event.WindowListener arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="removeWindowStateListener(WindowStateListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeWindowStateListener(<span class="parameters"><span class="parameter">java.awt.event.WindowStateListener arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="reshape(int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reshape(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="setAlwaysOnTop(boolean)"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setAlwaysOnTop(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> <span class="diffs"><span class="api" title="JDK21">java.lang.SecurityException</span><span class="api" title="JDK25">&nbsp;</span></span></span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="setAutoRequestFocus(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAutoRequestFocus(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setBackground(Color)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBackground(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setBounds(int,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBounds(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setBounds(Rectangle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBounds(<span class="parameters"><span class="parameter">java.awt.Rectangle arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setCursor(Cursor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCursor(<span class="parameters"><span class="parameter">java.awt.Cursor arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setFocusCycleRoot(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setFocusCycleRoot(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setFocusableWindowState(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFocusableWindowState(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setIconImage(Image)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setIconImage(<span class="parameters"><span class="parameter">java.awt.Image arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setIconImages(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setIconImages(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> java.awt.Image</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setLocation(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLocation(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setLocation(Point)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLocation(<span class="parameters"><span class="parameter">java.awt.Point arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setLocationByPlatform(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLocationByPlatform(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setLocationRelativeTo(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLocationRelativeTo(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setMinimumSize(Dimension)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMinimumSize(<span class="parameters"><span class="parameter">java.awt.Dimension arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setModalExclusionType(ModalExclusionType)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setModalExclusionType(<span class="parameters"><span class="parameter">java.awt.Dialog.ModalExclusionType arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setOpacity(float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setOpacity(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setShape(Shape)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setShape(<span class="parameters"><span class="parameter">java.awt.Shape arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setSize(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSize(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setSize(Dimension)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSize(<span class="parameters"><span class="parameter">java.awt.Dimension arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setType(Type)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setType(<span class="parameters"><span class="parameter">java.awt.Window.Type arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setVisible(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setVisible(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="show()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> show()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toBack()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> toBack()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toFront()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> toFront()</div>
+</div>
+</li></ul>
+</section>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="diff">&ne;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>4497834738069338734<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;alwaysOnTop</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;autoRequestFocus</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.FocusManager&nbsp;focusMgr</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;focusableWindowState</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;locationByPlatform</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Dialog.ModalExclusionType&nbsp;modalExclusionType</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">float</span>&nbsp;opacity</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Shape&nbsp;shape</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;state</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;syncLWRequests</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.awt.Window.Type&nbsp;type</div>
+</div>
+</li><li><div class="element"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK21; not in: JDK25.</span><div class="signature">java.lang.String&nbsp;warningString</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;windowSerializedDataVersion</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException, java.awt.HeadlessException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th class="allZero">Added</th>
+<th>Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.desktop/java/awt/Window.html">Window</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.desktop/java/awt/Window.html#setAlwaysOnTop(boolean)">setAlwaysOnTop(boolean)</a></th>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td></td>
+<td>2</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

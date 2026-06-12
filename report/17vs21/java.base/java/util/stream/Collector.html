@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface java.base/java.util.stream.Collector</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/util/stream/package-summary.html">java.util.stream</a></div>
+<h1>Interface&nbsp;Collector</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> Collector<span class="typarams">&lt;<span>T</span>, <span>A</span>, <span>R</span>&gt;</span> </div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/stream/Collector.Characteristics.html">Characteristics</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="accumulator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.function.BiConsumer&lt;A, T&gt;</span> accumulator()</div>
+</div>
+</li><li><div class="element" id="characteristics()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.Set&lt;java.util.stream.Collector.Characteristics&gt;</span> characteristics()</div>
+</div>
+</li><li><div class="element" id="combiner()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.function.BinaryOperator&lt;A&gt;</span> combiner()</div>
+</div>
+</li><li><div class="element" id="finisher()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.function.Function&lt;A, R&gt;</span> finisher()</div>
+</div>
+</li><li><div class="element" id="of(Supplier,BiConsumer,BinaryOperator,Function,Characteristics[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>, <span>A</span>, <span>R</span>&gt;</span> <span>java.util.stream.Collector&lt;T, A, R&gt;</span> of(<span class="parameters"><span class="parameter"><span>java.util.function.Supplier&lt;A&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.BiConsumer&lt;A, T&gt;</span> arg1</span>, <span class="parameter"><span>java.util.function.BinaryOperator&lt;A&gt;</span> arg2</span>, <span class="parameter"><span>java.util.function.Function&lt;A, R&gt;</span> arg3</span>, <span class="parameter"><span>java.util.stream.Collector.Characteristics[]</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(Supplier,BiConsumer,BinaryOperator,Characteristics[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>T</span>, <span>R</span>&gt;</span> <span>java.util.stream.Collector&lt;T, R, R&gt;</span> of(<span class="parameters"><span class="parameter"><span>java.util.function.Supplier&lt;R&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.BiConsumer&lt;R, T&gt;</span> arg1</span>, <span class="parameter"><span>java.util.function.BinaryOperator&lt;R&gt;</span> arg2</span>, <span class="parameter"><span>java.util.stream.Collector.Characteristics[]</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="supplier()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.function.Supplier&lt;A&gt;</span> supplier()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

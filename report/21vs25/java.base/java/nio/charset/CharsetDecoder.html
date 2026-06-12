@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/java.nio.charset.CharsetDecoder</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/nio/charset/package-summary.html">java.nio.charset</a></div>
+<h1>Class&nbsp;CharsetDecoder</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> CharsetDecoder <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(Charset,float,float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> CharsetDecoder(<span class="parameters"><span class="parameter">java.nio.charset.Charset arg0</span>, <span class="parameter"><span class="keyword">float</span> arg1</span>, <span class="parameter"><span class="keyword">float</span> arg2</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="averageCharsPerByte()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">float</span> averageCharsPerByte()</div>
+</div>
+</li><li><div class="element" id="charset()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.nio.charset.Charset charset()</div>
+</div>
+</li><li><div class="element" id="decode(ByteBuffer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.nio.CharBuffer decode(<span class="parameters"><span class="parameter">java.nio.ByteBuffer arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.nio.charset.CharacterCodingException</span></div>
+</div>
+</li><li><div class="element" id="decode(ByteBuffer,CharBuffer,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.nio.charset.CoderResult decode(<span class="parameters"><span class="parameter">java.nio.ByteBuffer arg0</span>, <span class="parameter">java.nio.CharBuffer arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="decodeLoop(ByteBuffer,CharBuffer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">abstract</span></span> java.nio.charset.CoderResult decodeLoop(<span class="parameters"><span class="parameter">java.nio.ByteBuffer arg0</span>, <span class="parameter">java.nio.CharBuffer arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="detectedCharset()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.nio.charset.Charset detectedCharset()</div>
+</div>
+</li><li><div class="element" id="flush(CharBuffer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.nio.charset.CoderResult flush(<span class="parameters"><span class="parameter">java.nio.CharBuffer arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="implFlush(CharBuffer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.nio.charset.CoderResult implFlush(<span class="parameters"><span class="parameter">java.nio.CharBuffer arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="implOnMalformedInput(CodingErrorAction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> implOnMalformedInput(<span class="parameters"><span class="parameter">java.nio.charset.CodingErrorAction arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="implOnUnmappableCharacter(CodingErrorAction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> implOnUnmappableCharacter(<span class="parameters"><span class="parameter">java.nio.charset.CodingErrorAction arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="implReplaceWith(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> implReplaceWith(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="implReset()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> implReset()</div>
+</div>
+</li><li><div class="element" id="isAutoDetecting()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isAutoDetecting()</div>
+</div>
+</li><li><div class="element" id="isCharsetDetected()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isCharsetDetected()</div>
+</div>
+</li><li><div class="element" id="malformedInputAction()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.nio.charset.CodingErrorAction malformedInputAction()</div>
+</div>
+</li><li><div class="element" id="maxCharsPerByte()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">float</span> maxCharsPerByte()</div>
+</div>
+</li><li><div class="element" id="onMalformedInput(CodingErrorAction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.nio.charset.CharsetDecoder onMalformedInput(<span class="parameters"><span class="parameter">java.nio.charset.CodingErrorAction arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="onUnmappableCharacter(CodingErrorAction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.nio.charset.CharsetDecoder onUnmappableCharacter(<span class="parameters"><span class="parameter">java.nio.charset.CodingErrorAction arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="replaceWith(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.nio.charset.CharsetDecoder replaceWith(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="replacement()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.lang.String replacement()</div>
+</div>
+</li><li><div class="element" id="reset()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.nio.charset.CharsetDecoder reset()</div>
+</div>
+</li><li><div class="element" id="unmappableCharacterAction()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.nio.charset.CodingErrorAction unmappableCharacterAction()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

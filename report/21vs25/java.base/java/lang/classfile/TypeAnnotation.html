@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.base/java.lang.classfile.TypeAnnotation</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/lang/classfile/package-summary.html">java.lang.classfile</a></div>
+<h1>Interface&nbsp;TypeAnnotation</h1>
+</div>
+<div class="element"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">sealed</span></span> <span class="keyword">interface</span> TypeAnnotation <div class="permitted-subclasses"><span class="keyword">permits</span> jdk.internal.classfile.impl.UnboundAttribute.UnboundTypeAnnotation</div>
+</div>
+</div>
+<section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/TypeAnnotation.CatchTarget.html">CatchTarget</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/TypeAnnotation.EmptyTarget.html">EmptyTarget</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/TypeAnnotation.FormalParameterTarget.html">FormalParameterTarget</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/TypeAnnotation.LocalVarTarget.html">LocalVarTarget</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/TypeAnnotation.LocalVarTargetInfo.html">LocalVarTargetInfo</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/TypeAnnotation.OffsetTarget.html">OffsetTarget</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/TypeAnnotation.SupertypeTarget.html">SupertypeTarget</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html">TargetInfo</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/TypeAnnotation.TargetType.html">TargetType</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/TypeAnnotation.ThrowsTarget.html">ThrowsTarget</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/TypeAnnotation.TypeArgumentTarget.html">TypeArgumentTarget</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/TypeAnnotation.TypeParameterBoundTarget.html">TypeParameterBoundTarget</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/TypeAnnotation.TypeParameterTarget.html">TypeParameterTarget</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/lang/classfile/TypeAnnotation.TypePathComponent.html">TypePathComponent</a></span></li></ul>
+</section>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="annotation()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.classfile.Annotation annotation()</div>
+</div>
+</li><li><div class="element" id="of(TargetInfo,List,Annotation)"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.classfile.TypeAnnotation of(<span class="parameters"><span class="parameter">java.lang.classfile.TypeAnnotation.TargetInfo arg0</span>, <span class="parameter"><span>java.util.List&lt;java.lang.classfile.TypeAnnotation.TypePathComponent&gt;</span> arg1</span>, <span class="parameter">java.lang.classfile.Annotation arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="targetInfo()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.classfile.TypeAnnotation.TargetInfo targetInfo()</div>
+</div>
+</li><li><div class="element" id="targetPath()"><span class="add">&plus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;java.lang.classfile.TypeAnnotation.TypePathComponent&gt;</span> targetPath()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/TypeAnnotation.html">TypeAnnotation</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/TypeAnnotation.CatchTarget.html">TypeAnnotation.CatchTarget</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/TypeAnnotation.EmptyTarget.html">TypeAnnotation.EmptyTarget</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/TypeAnnotation.FormalParameterTarget.html">TypeAnnotation.FormalParameterTarget</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/TypeAnnotation.LocalVarTarget.html">TypeAnnotation.LocalVarTarget</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/TypeAnnotation.LocalVarTargetInfo.html">TypeAnnotation.LocalVarTargetInfo</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/TypeAnnotation.OffsetTarget.html">TypeAnnotation.OffsetTarget</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/TypeAnnotation.SupertypeTarget.html">TypeAnnotation.SupertypeTarget</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/TypeAnnotation.TargetInfo.html">TypeAnnotation.TargetInfo</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/TypeAnnotation.TargetType.html">TypeAnnotation.TargetType</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/TypeAnnotation.ThrowsTarget.html">TypeAnnotation.ThrowsTarget</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/TypeAnnotation.TypeArgumentTarget.html">TypeAnnotation.TypeArgumentTarget</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/TypeAnnotation.TypeParameterBoundTarget.html">TypeAnnotation.TypeParameterBoundTarget</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/TypeAnnotation.TypeParameterTarget.html">TypeAnnotation.TypeParameterTarget</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/lang/classfile/TypeAnnotation.TypePathComponent.html">TypeAnnotation.TypePathComponent</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>16</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>16</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

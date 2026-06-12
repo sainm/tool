@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface jdk.compiler/com.sun.source.util.DocTreeFactory</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../jdk.compiler/module-summary.html">jdk.compiler</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../jdk.compiler/com/sun/source/util/package-summary.html">com.sun.source.util</a></div>
+<h1>Interface&nbsp;DocTreeFactory</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> DocTreeFactory </div>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="at(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.util.DocTreeFactory at(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFirstSentence(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.source.doctree.DocTree&gt;</span> getFirstSentence(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newAttributeTree(Name,ValueKind,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.AttributeTree newAttributeTree(<span class="parameters"><span class="parameter">javax.lang.model.element.Name arg0</span>, <span class="parameter">com.sun.source.doctree.AttributeTree.ValueKind arg1</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newAuthorTree(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.AuthorTree newAuthorTree(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newCodeTree(TextTree)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.LiteralTree newCodeTree(<span class="parameters"><span class="parameter">com.sun.source.doctree.TextTree arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newCommentTree(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.CommentTree newCommentTree(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newDeprecatedTree(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.DeprecatedTree newDeprecatedTree(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newDocCommentTree(List,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.DocCommentTree newDocCommentTree(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newDocCommentTree(List,List,List,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.DocCommentTree newDocCommentTree(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg1</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg2</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg3</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newDocRootTree()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.DocRootTree newDocRootTree()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newDocTypeTree(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.DocTypeTree newDocTypeTree(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newEndElementTree(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.EndElementTree newEndElementTree(<span class="parameters"><span class="parameter">javax.lang.model.element.Name arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newEntityTree(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.EntityTree newEntityTree(<span class="parameters"><span class="parameter">javax.lang.model.element.Name arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newErroneousTree(String,Diagnostic)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.ErroneousTree newErroneousTree(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>javax.tools.Diagnostic&lt;javax.tools.JavaFileObject&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="newEscapeTree(char)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.EscapeTree newEscapeTree(<span class="parameters"><span class="parameter"><span class="keyword">char</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newExceptionTree(ReferenceTree,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.ThrowsTree newExceptionTree(<span class="parameters"><span class="parameter">com.sun.source.doctree.ReferenceTree arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newHiddenTree(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.HiddenTree newHiddenTree(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newIdentifierTree(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.IdentifierTree newIdentifierTree(<span class="parameters"><span class="parameter">javax.lang.model.element.Name arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newIndexTree(DocTree,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.IndexTree newIndexTree(<span class="parameters"><span class="parameter">com.sun.source.doctree.DocTree arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newInheritDocTree()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.InheritDocTree newInheritDocTree()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newLinkPlainTree(ReferenceTree,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.LinkTree newLinkPlainTree(<span class="parameters"><span class="parameter">com.sun.source.doctree.ReferenceTree arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newLinkTree(ReferenceTree,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.LinkTree newLinkTree(<span class="parameters"><span class="parameter">com.sun.source.doctree.ReferenceTree arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newLiteralTree(TextTree)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.LiteralTree newLiteralTree(<span class="parameters"><span class="parameter">com.sun.source.doctree.TextTree arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newParamTree(boolean,IdentifierTree,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.ParamTree newParamTree(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span>, <span class="parameter">com.sun.source.doctree.IdentifierTree arg1</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newProvidesTree(ReferenceTree,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.ProvidesTree newProvidesTree(<span class="parameters"><span class="parameter">com.sun.source.doctree.ReferenceTree arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newReferenceTree(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.ReferenceTree newReferenceTree(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newReturnTree(boolean,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> com.sun.source.doctree.ReturnTree newReturnTree(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newReturnTree(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.ReturnTree newReturnTree(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newSeeTree(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.SeeTree newSeeTree(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newSerialDataTree(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.SerialDataTree newSerialDataTree(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newSerialFieldTree(IdentifierTree,ReferenceTree,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.SerialFieldTree newSerialFieldTree(<span class="parameters"><span class="parameter">com.sun.source.doctree.IdentifierTree arg0</span>, <span class="parameter">com.sun.source.doctree.ReferenceTree arg1</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newSerialTree(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.SerialTree newSerialTree(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newSinceTree(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.SinceTree newSinceTree(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="newSnippetTree(List,TextTree)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.SnippetTree newSnippetTree(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg0</span>, <span class="parameter">com.sun.source.doctree.TextTree arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="newSpecTree(TextTree,List)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.SpecTree newSpecTree(<span class="parameters"><span class="parameter">com.sun.source.doctree.TextTree arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newStartElementTree(Name,List,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.StartElementTree newStartElementTree(<span class="parameters"><span class="parameter">javax.lang.model.element.Name arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newSummaryTree(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> com.sun.source.doctree.SummaryTree newSummaryTree(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newSystemPropertyTree(Name)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.SystemPropertyTree newSystemPropertyTree(<span class="parameters"><span class="parameter">javax.lang.model.element.Name arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newTextTree(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.TextTree newTextTree(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newThrowsTree(ReferenceTree,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.ThrowsTree newThrowsTree(<span class="parameters"><span class="parameter">com.sun.source.doctree.ReferenceTree arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newUnknownBlockTagTree(Name,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.UnknownBlockTagTree newUnknownBlockTagTree(<span class="parameters"><span class="parameter">javax.lang.model.element.Name arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newUnknownInlineTagTree(Name,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.UnknownInlineTagTree newUnknownInlineTagTree(<span class="parameters"><span class="parameter">javax.lang.model.element.Name arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newUsesTree(ReferenceTree,List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.UsesTree newUsesTree(<span class="parameters"><span class="parameter">com.sun.source.doctree.ReferenceTree arg0</span>, <span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newValueTree(ReferenceTree)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.ValueTree newValueTree(<span class="parameters"><span class="parameter">com.sun.source.doctree.ReferenceTree arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="newValueTree(TextTree,ReferenceTree)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> com.sun.source.doctree.ValueTree newValueTree(<span class="parameters"><span class="parameter">com.sun.source.doctree.TextTree arg0</span>, <span class="parameter">com.sun.source.doctree.ReferenceTree arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newVersionTree(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.source.doctree.VersionTree newVersionTree(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.source.doctree.DocTree</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/util/DocTreeFactory.html#newEscapeTree(char)">newEscapeTree(char)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/util/DocTreeFactory.html#newSnippetTree(List,TextTree)">newSnippetTree(List,TextTree)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/util/DocTreeFactory.html#newSpecTree(TextTree,List)">newSpecTree(TextTree,List)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/util/DocTreeFactory.html#newValueTree(TextTree,ReferenceTree)">newValueTree(TextTree,ReferenceTree)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

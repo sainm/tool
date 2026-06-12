@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface jdk.jdi/com.sun.jdi.VirtualMachine</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../jdk.jdi/module-summary.html">jdk.jdi</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../jdk.jdi/com/sun/jdi/package-summary.html">com.sun.jdi</a></div>
+<h1>Interface&nbsp;VirtualMachine</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> VirtualMachine <div class="superinterfaces"><span class="keyword">extends</span> com.sun.jdi.Mirror</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="TRACE_ALL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TRACE_ALL = 16777215</div>
+</div>
+</li><li><div class="element" id="TRACE_EVENTS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TRACE_EVENTS = 4</div>
+</div>
+</li><li><div class="element" id="TRACE_NONE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TRACE_NONE = 0</div>
+</div>
+</li><li><div class="element" id="TRACE_OBJREFS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TRACE_OBJREFS = 16</div>
+</div>
+</li><li><div class="element" id="TRACE_RECEIVES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TRACE_RECEIVES = 2</div>
+</div>
+</li><li><div class="element" id="TRACE_REFTYPES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TRACE_REFTYPES = 8</div>
+</div>
+</li><li><div class="element" id="TRACE_SENDS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TRACE_SENDS = 1</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="allClasses()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.ReferenceType&gt;</span> allClasses()</div>
+</div>
+</li><li><div class="element" id="allModules()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span>java.util.List&lt;com.sun.jdi.ModuleReference&gt;</span> allModules()</div>
+</div>
+</li><li><div class="element" id="allThreads()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.ThreadReference&gt;</span> allThreads()</div>
+</div>
+</li><li><div class="element" id="canAddMethod()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="15")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canAddMethod()</div>
+</div>
+</li><li><div class="element" id="canBeModified()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canBeModified()</div>
+</div>
+</li><li><div class="element" id="canForceEarlyReturn()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canForceEarlyReturn()</div>
+</div>
+</li><li><div class="element" id="canGetBytecodes()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canGetBytecodes()</div>
+</div>
+</li><li><div class="element" id="canGetClassFileVersion()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canGetClassFileVersion()</div>
+</div>
+</li><li><div class="element" id="canGetConstantPool()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canGetConstantPool()</div>
+</div>
+</li><li><div class="element" id="canGetCurrentContendedMonitor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canGetCurrentContendedMonitor()</div>
+</div>
+</li><li><div class="element" id="canGetInstanceInfo()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canGetInstanceInfo()</div>
+</div>
+</li><li><div class="element" id="canGetMethodReturnValues()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canGetMethodReturnValues()</div>
+</div>
+</li><li><div class="element" id="canGetModuleInfo()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> <span class="keyword">boolean</span> canGetModuleInfo()</div>
+</div>
+</li><li><div class="element" id="canGetMonitorFrameInfo()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canGetMonitorFrameInfo()</div>
+</div>
+</li><li><div class="element" id="canGetMonitorInfo()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canGetMonitorInfo()</div>
+</div>
+</li><li><div class="element" id="canGetOwnedMonitorInfo()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canGetOwnedMonitorInfo()</div>
+</div>
+</li><li><div class="element" id="canGetSourceDebugExtension()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canGetSourceDebugExtension()</div>
+</div>
+</li><li><div class="element" id="canGetSyntheticAttribute()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canGetSyntheticAttribute()</div>
+</div>
+</li><li><div class="element" id="canPopFrames()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canPopFrames()</div>
+</div>
+</li><li><div class="element" id="canRedefineClasses()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canRedefineClasses()</div>
+</div>
+</li><li><div class="element" id="canRequestMonitorEvents()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canRequestMonitorEvents()</div>
+</div>
+</li><li><div class="element" id="canRequestVMDeathEvent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canRequestVMDeathEvent()</div>
+</div>
+</li><li><div class="element" id="canUnrestrictedlyRedefineClasses()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="15")</span><br>
+<span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canUnrestrictedlyRedefineClasses()</div>
+</div>
+</li><li><div class="element" id="canUseInstanceFilters()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canUseInstanceFilters()</div>
+</div>
+</li><li><div class="element" id="canUseSourceNameFilters()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canUseSourceNameFilters()</div>
+</div>
+</li><li><div class="element" id="canWatchFieldAccess()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canWatchFieldAccess()</div>
+</div>
+</li><li><div class="element" id="canWatchFieldModification()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> canWatchFieldModification()</div>
+</div>
+</li><li><div class="element" id="classesByName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.ReferenceType&gt;</span> classesByName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="description()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String description()</div>
+</div>
+</li><li><div class="element" id="dispose()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> dispose()</div>
+</div>
+</li><li><div class="element" id="eventQueue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.event.EventQueue eventQueue()</div>
+</div>
+</li><li><div class="element" id="eventRequestManager()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.EventRequestManager eventRequestManager()</div>
+</div>
+</li><li><div class="element" id="exit(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> exit(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDefaultStratum()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getDefaultStratum()</div>
+</div>
+</li><li><div class="element" id="instanceCounts(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span><span class="keyword">long</span>[]</span> instanceCounts(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.jdi.ReferenceType</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mirrorOf(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.BooleanValue mirrorOf(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mirrorOf(byte)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.ByteValue mirrorOf(<span class="parameters"><span class="parameter"><span class="keyword">byte</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mirrorOf(short)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.ShortValue mirrorOf(<span class="parameters"><span class="parameter"><span class="keyword">short</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mirrorOf(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.IntegerValue mirrorOf(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mirrorOf(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.LongValue mirrorOf(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mirrorOf(char)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.CharValue mirrorOf(<span class="parameters"><span class="parameter"><span class="keyword">char</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mirrorOf(float)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.FloatValue mirrorOf(<span class="parameters"><span class="parameter"><span class="keyword">float</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mirrorOf(double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.DoubleValue mirrorOf(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mirrorOf(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.StringReference mirrorOf(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mirrorOfVoid()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.VoidValue mirrorOfVoid()</div>
+</div>
+</li><li><div class="element" id="name()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String name()</div>
+</div>
+</li><li><div class="element" id="process()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.Process process()</div>
+</div>
+</li><li><div class="element" id="redefineClasses(Map)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> redefineClasses(<span class="parameters"><span class="parameter"><span>java.util.Map&lt;<span>? <span class="keyword">extends</span> com.sun.jdi.ReferenceType</span>, <span><span class="keyword">byte</span>[]</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="resume()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> resume()</div>
+</div>
+</li><li><div class="element" id="setDebugTraceMode(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setDebugTraceMode(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setDefaultStratum(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setDefaultStratum(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="suspend()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> suspend()</div>
+</div>
+</li><li><div class="element" id="topLevelThreadGroups()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.ThreadGroupReference&gt;</span> topLevelThreadGroups()</div>
+</div>
+</li><li><div class="element" id="version()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String version()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

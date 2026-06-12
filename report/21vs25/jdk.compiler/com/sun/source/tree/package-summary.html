@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package jdk.compiler/com.sun.source.tree</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../jdk.compiler/module-summary.html">jdk.compiler</a></div>
+<h1>Package&nbsp;com.sun.source.tree</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="keyword">package</span> com.sun.source.tree</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/AnnotatedTypeTree.html">AnnotatedTypeTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/AnnotationTree.html">AnnotationTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/AnyPatternTree.html">AnyPatternTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ArrayAccessTree.html">ArrayAccessTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ArrayTypeTree.html">ArrayTypeTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/AssertTree.html">AssertTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/AssignmentTree.html">AssignmentTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/BinaryTree.html">BinaryTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/BindingPatternTree.html">BindingPatternTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/BlockTree.html">BlockTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/BreakTree.html">BreakTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/CaseLabelTree.html">CaseLabelTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/CaseTree.html">CaseTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/CatchTree.html">CatchTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ClassTree.html">ClassTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/CompilationUnitTree.html">CompilationUnitTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/CompoundAssignmentTree.html">CompoundAssignmentTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ConditionalExpressionTree.html">ConditionalExpressionTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ConstantCaseLabelTree.html">ConstantCaseLabelTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ContinueTree.html">ContinueTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/DeconstructionPatternTree.html">DeconstructionPatternTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/DefaultCaseLabelTree.html">DefaultCaseLabelTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/DirectiveTree.html">DirectiveTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/DoWhileLoopTree.html">DoWhileLoopTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/EmptyStatementTree.html">EmptyStatementTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/EnhancedForLoopTree.html">EnhancedForLoopTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ErroneousTree.html">ErroneousTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ExportsTree.html">ExportsTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ExpressionStatementTree.html">ExpressionStatementTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ExpressionTree.html">ExpressionTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ForLoopTree.html">ForLoopTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/IdentifierTree.html">IdentifierTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/IfTree.html">IfTree</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ImportTree.html">ImportTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/InstanceOfTree.html">InstanceOfTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/IntersectionTypeTree.html">IntersectionTypeTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/LabeledStatementTree.html">LabeledStatementTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/LambdaExpressionTree.html">LambdaExpressionTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/LineMap.html">LineMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/LiteralTree.html">LiteralTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/MemberReferenceTree.html">MemberReferenceTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/MemberSelectTree.html">MemberSelectTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/MethodInvocationTree.html">MethodInvocationTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/MethodTree.html">MethodTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ModifiersTree.html">ModifiersTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ModuleTree.html">ModuleTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/NewArrayTree.html">NewArrayTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/NewClassTree.html">NewClassTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/OpensTree.html">OpensTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/PackageTree.html">PackageTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ParameterizedTypeTree.html">ParameterizedTypeTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ParenthesizedTree.html">ParenthesizedTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/PatternCaseLabelTree.html">PatternCaseLabelTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/PatternTree.html">PatternTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/PrimitiveTypeTree.html">PrimitiveTypeTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ProvidesTree.html">ProvidesTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/RequiresTree.html">RequiresTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ReturnTree.html">ReturnTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/Scope.html">Scope</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/StatementTree.html">StatementTree</a></span></li><li><span><span class="remove">&minus;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/StringTemplateTree.html">StringTemplateTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/SwitchExpressionTree.html">SwitchExpressionTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/SwitchTree.html">SwitchTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/SynchronizedTree.html">SynchronizedTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/ThrowTree.html">ThrowTree</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/Tree.html">Tree</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/TreeVisitor.html">TreeVisitor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/TryTree.html">TryTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/TypeCastTree.html">TypeCastTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/TypeParameterTree.html">TypeParameterTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/UnaryTree.html">UnaryTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/UnionTypeTree.html">UnionTypeTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/UsesTree.html">UsesTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/VariableTree.html">VariableTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/WhileLoopTree.html">WhileLoopTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/WildcardTree.html">WildcardTree</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../../jdk.compiler/com/sun/source/tree/YieldTree.html">YieldTree</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/tree/ImportTree.html">ImportTree</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/tree/StringTemplateTree.html">StringTemplateTree</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/tree/Tree.html">Tree</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/tree/TreeVisitor.html">TreeVisitor</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>1</td>
+<td></td>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.management/javax.management.monitor.MonitorNotification</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.management/module-summary.html">java.management</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.management/javax/management/monitor/package-summary.html">javax.management.monitor</a></div>
+<h1>Class&nbsp;MonitorNotification</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> MonitorNotification <div class="superclass"><span class="keyword">extends</span> javax.management.Notification</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="OBSERVED_ATTRIBUTE_ERROR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String OBSERVED_ATTRIBUTE_ERROR = "jmx.monitor.error.attribute"</div>
+</div>
+</li><li><div class="element" id="OBSERVED_ATTRIBUTE_TYPE_ERROR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String OBSERVED_ATTRIBUTE_TYPE_ERROR = "jmx.monitor.error.type"</div>
+</div>
+</li><li><div class="element" id="OBSERVED_OBJECT_ERROR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String OBSERVED_OBJECT_ERROR = "jmx.monitor.error.mbean"</div>
+</div>
+</li><li><div class="element" id="RUNTIME_ERROR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String RUNTIME_ERROR = "jmx.monitor.error.runtime"</div>
+</div>
+</li><li><div class="element" id="STRING_TO_COMPARE_VALUE_DIFFERED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String STRING_TO_COMPARE_VALUE_DIFFERED = "jmx.monitor.string.differs"</div>
+</div>
+</li><li><div class="element" id="STRING_TO_COMPARE_VALUE_MATCHED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String STRING_TO_COMPARE_VALUE_MATCHED = "jmx.monitor.string.matches"</div>
+</div>
+</li><li><div class="element" id="THRESHOLD_ERROR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String THRESHOLD_ERROR = "jmx.monitor.error.threshold"</div>
+</div>
+</li><li><div class="element" id="THRESHOLD_HIGH_VALUE_EXCEEDED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String THRESHOLD_HIGH_VALUE_EXCEEDED = "jmx.monitor.gauge.high"</div>
+</div>
+</li><li><div class="element" id="THRESHOLD_LOW_VALUE_EXCEEDED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String THRESHOLD_LOW_VALUE_EXCEEDED = "jmx.monitor.gauge.low"</div>
+</div>
+</li><li><div class="element" id="THRESHOLD_VALUE_EXCEEDED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String THRESHOLD_VALUE_EXCEEDED = "jmx.monitor.counter.threshold"</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getDerivedGauge()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getDerivedGauge()</div>
+</div>
+</li><li><div class="element" id="getObservedAttribute()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getObservedAttribute()</div>
+</div>
+</li><li><div class="element" id="getObservedObject()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.management.ObjectName getObservedObject()</div>
+</div>
+</li><li><div class="element" id="getTrigger()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getTrigger()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-4608189663661929204<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">java.lang.Object&nbsp;derivedGauge</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.lang.String&nbsp;observedAttribute</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.management.ObjectName&nbsp;observedObject</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.lang.Object&nbsp;trigger</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

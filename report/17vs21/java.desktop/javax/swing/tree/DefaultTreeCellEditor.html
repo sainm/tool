@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.tree.DefaultTreeCellEditor</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/swing/tree/package-summary.html">javax.swing.tree</a></div>
+<h1>Class&nbsp;DefaultTreeCellEditor</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> DefaultTreeCellEditor <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.awt.event.ActionListener, javax.swing.event.TreeSelectionListener, javax.swing.tree.TreeCellEditor</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/tree/DefaultTreeCellEditor.DefaultTextField.html">DefaultTextField</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.desktop/javax/swing/tree/DefaultTreeCellEditor.EditorContainer.html">EditorContainer</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="borderSelectionColor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Color borderSelectionColor</div>
+</div>
+</li><li><div class="element" id="canEdit"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> canEdit</div>
+</div>
+</li><li><div class="element" id="editingComponent"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> java.awt.Component editingComponent</div>
+</div>
+</li><li><div class="element" id="editingContainer"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Container editingContainer</div>
+</div>
+</li><li><div class="element" id="editingIcon"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.Icon editingIcon</div>
+</div>
+</li><li><div class="element" id="font"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Font font</div>
+</div>
+</li><li><div class="element" id="lastPath"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.tree.TreePath lastPath</div>
+</div>
+</li><li><div class="element" id="lastRow"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> <span class="keyword">int</span> lastRow</div>
+</div>
+</li><li><div class="element" id="offset"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> <span class="keyword">int</span> offset</div>
+</div>
+</li><li><div class="element" id="realEditor"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.TreeCellEditor realEditor</div>
+</div>
+</li><li><div class="element" id="renderer"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.DefaultTreeCellRenderer renderer</div>
+</div>
+</li><li><div class="element" id="timer"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.Timer timer</div>
+</div>
+</li><li><div class="element" id="tree"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> javax.swing.JTree tree</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(JTree,DefaultTreeCellRenderer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DefaultTreeCellEditor(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span>, <span class="parameter">javax.swing.tree.DefaultTreeCellRenderer arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(JTree,DefaultTreeCellRenderer,TreeCellEditor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DefaultTreeCellEditor(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span>, <span class="parameter">javax.swing.tree.DefaultTreeCellRenderer arg1</span>, <span class="parameter">javax.swing.tree.TreeCellEditor arg2</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="actionPerformed(ActionEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> actionPerformed(<span class="parameters"><span class="parameter">java.awt.event.ActionEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addCellEditorListener(CellEditorListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addCellEditorListener(<span class="parameters"><span class="parameter">javax.swing.event.CellEditorListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="canEditImmediately(EventObject)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> canEditImmediately(<span class="parameters"><span class="parameter">java.util.EventObject arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="cancelCellEditing()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> cancelCellEditing()</div>
+</div>
+</li><li><div class="element" id="createContainer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.awt.Container createContainer()</div>
+</div>
+</li><li><div class="element" id="createTreeCellEditor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.tree.TreeCellEditor createTreeCellEditor()</div>
+</div>
+</li><li><div class="element" id="determineOffset(JTree,Object,boolean,boolean,boolean,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> determineOffset(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span>, <span class="parameter"><span class="keyword">boolean</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBorderSelectionColor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Color getBorderSelectionColor()</div>
+</div>
+</li><li><div class="element" id="getCellEditorListeners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.event.CellEditorListener[]</span> getCellEditorListeners()</div>
+</div>
+</li><li><div class="element" id="getCellEditorValue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getCellEditorValue()</div>
+</div>
+</li><li><div class="element" id="getFont()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Font getFont()</div>
+</div>
+</li><li><div class="element" id="getTreeCellEditorComponent(JTree,Object,boolean,boolean,boolean,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.awt.Component getTreeCellEditorComponent(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span>, <span class="parameter"><span class="keyword">boolean</span> arg4</span>, <span class="parameter"><span class="keyword">int</span> arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="inHitRegion(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> inHitRegion(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="isCellEditable(EventObject)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isCellEditable(<span class="parameters"><span class="parameter">java.util.EventObject arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="prepareForEditing()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> prepareForEditing()</div>
+</div>
+</li><li><div class="element" id="removeCellEditorListener(CellEditorListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeCellEditorListener(<span class="parameters"><span class="parameter">javax.swing.event.CellEditorListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setBorderSelectionColor(Color)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBorderSelectionColor(<span class="parameters"><span class="parameter">java.awt.Color arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFont(Font)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFont(<span class="parameters"><span class="parameter">java.awt.Font arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setTree(JTree)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setTree(<span class="parameters"><span class="parameter">javax.swing.JTree arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="shouldSelectCell(EventObject)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> shouldSelectCell(<span class="parameters"><span class="parameter">java.util.EventObject arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="shouldStartEditingTimer(EventObject)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> shouldStartEditingTimer(<span class="parameters"><span class="parameter">java.util.EventObject arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="startEditingTimer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> startEditingTimer()</div>
+</div>
+</li><li><div class="element" id="stopCellEditing()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> stopCellEditing()</div>
+</div>
+</li><li><div class="element" id="valueChanged(TreeSelectionEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> valueChanged(<span class="parameters"><span class="parameter">javax.swing.event.TreeSelectionEvent arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.imageio.metadata.IIOMetadata</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/javax/imageio/metadata/package-summary.html">javax.imageio.metadata</a></div>
+<h1>Class&nbsp;IIOMetadata</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> IIOMetadata <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="controller"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.imageio.metadata.IIOMetadataController controller</div>
+</div>
+</li><li><div class="element" id="defaultController"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.imageio.metadata.IIOMetadataController defaultController</div>
+</div>
+</li><li><div class="element" id="extraMetadataFormatClassNames"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.lang.String[]</span> extraMetadataFormatClassNames</div>
+</div>
+</li><li><div class="element" id="extraMetadataFormatNames"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.lang.String[]</span> extraMetadataFormatNames</div>
+</div>
+</li><li><div class="element" id="nativeMetadataFormatClassName"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String nativeMetadataFormatClassName</div>
+</div>
+</li><li><div class="element" id="nativeMetadataFormatName"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String nativeMetadataFormatName</div>
+</div>
+</li><li><div class="element" id="standardFormatSupported"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> standardFormatSupported</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> IIOMetadata()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(boolean,String,String,String[],String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> IIOMetadata(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.String arg2</span>, <span class="parameter"><span>java.lang.String[]</span> arg3</span>, <span class="parameter"><span>java.lang.String[]</span> arg4</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="activateController()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> activateController()</div>
+</div>
+</li><li><div class="element" id="getAsTree(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> org.w3c.dom.Node getAsTree(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getController()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.imageio.metadata.IIOMetadataController getController()</div>
+</div>
+</li><li><div class="element" id="getDefaultController()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.imageio.metadata.IIOMetadataController getDefaultController()</div>
+</div>
+</li><li><div class="element" id="getExtraMetadataFormatNames()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getExtraMetadataFormatNames()</div>
+</div>
+</li><li><div class="element" id="getMetadataFormat(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.imageio.metadata.IIOMetadataFormat getMetadataFormat(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getMetadataFormatNames()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getMetadataFormatNames()</div>
+</div>
+</li><li><div class="element" id="getNativeMetadataFormatName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getNativeMetadataFormatName()</div>
+</div>
+</li><li><div class="element" id="getStandardChromaNode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.imageio.metadata.IIOMetadataNode getStandardChromaNode()</div>
+</div>
+</li><li><div class="element" id="getStandardCompressionNode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.imageio.metadata.IIOMetadataNode getStandardCompressionNode()</div>
+</div>
+</li><li><div class="element" id="getStandardDataNode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.imageio.metadata.IIOMetadataNode getStandardDataNode()</div>
+</div>
+</li><li><div class="element" id="getStandardDimensionNode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.imageio.metadata.IIOMetadataNode getStandardDimensionNode()</div>
+</div>
+</li><li><div class="element" id="getStandardDocumentNode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.imageio.metadata.IIOMetadataNode getStandardDocumentNode()</div>
+</div>
+</li><li><div class="element" id="getStandardTextNode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.imageio.metadata.IIOMetadataNode getStandardTextNode()</div>
+</div>
+</li><li><div class="element" id="getStandardTileNode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.imageio.metadata.IIOMetadataNode getStandardTileNode()</div>
+</div>
+</li><li><div class="element" id="getStandardTransparencyNode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.imageio.metadata.IIOMetadataNode getStandardTransparencyNode()</div>
+</div>
+</li><li><div class="element" id="getStandardTree()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> javax.imageio.metadata.IIOMetadataNode getStandardTree()</div>
+</div>
+</li><li><div class="element" id="hasController()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> hasController()</div>
+</div>
+</li><li><div class="element" id="isReadOnly()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isReadOnly()</div>
+</div>
+</li><li><div class="element" id="isStandardMetadataFormatSupported()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isStandardMetadataFormatSupported()</div>
+</div>
+</li><li><div class="element" id="mergeTree(String,Node)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> mergeTree(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">org.w3c.dom.Node arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.imageio.metadata.IIOInvalidTreeException</span></div>
+</div>
+</li><li><div class="element" id="reset()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> reset()</div>
+</div>
+</li><li><div class="element" id="setController(IIOMetadataController)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setController(<span class="parameters"><span class="parameter">javax.imageio.metadata.IIOMetadataController arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFromTree(String,Node)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFromTree(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">org.w3c.dom.Node arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.imageio.metadata.IIOInvalidTreeException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

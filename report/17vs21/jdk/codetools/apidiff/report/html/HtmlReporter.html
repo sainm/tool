@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class jdk.codetools.apidiff.report.html.HtmlReporter</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Package</span>&nbsp;<a href="../../../../../jdk/codetools/apidiff/report/html/package-summary.html">jdk.codetools.apidiff.report.html</a></div>
+<h1>Class&nbsp;HtmlReporter</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> HtmlReporter <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> jdk.codetools.apidiff.report.Reporter</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="DEFAULT_STYLESHEET"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DEFAULT_STYLESHEET = "apidiff.css"</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(Set,Options,Notes,Log)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> HtmlReporter(<span class="parameters"><span class="parameter"><span>java.util.Set&lt;jdk.codetools.apidiff.model.API&gt;</span> arg0</span>, <span class="parameter">jdk.codetools.apidiff.Options arg1</span>, <span class="parameter">jdk.codetools.apidiff.Notes arg2</span>, <span class="parameter">jdk.codetools.apidiff.Log arg3</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="comparing(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> comparing(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;?&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="completed(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> completed(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="completed(Position,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> completed(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportDifferentAnnotationValues(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportDifferentAnnotationValues(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;<span>? <span class="keyword">extends</span> javax.lang.model.element.AnnotationValue</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportDifferentAnnotations(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportDifferentAnnotations(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;<span>? <span class="keyword">extends</span> javax.lang.model.element.AnnotationMirror</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportDifferentApiDescriptions(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportDifferentApiDescriptions(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;java.lang.String&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportDifferentDirectives(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportDifferentDirectives(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;<span>? <span class="keyword">extends</span> javax.lang.model.element.ModuleElement.Directive</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportDifferentDocFiles(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportDifferentDocFiles(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;jdk.codetools.apidiff.model.DocFile&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportDifferentKinds(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportDifferentKinds(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;<span>? <span class="keyword">extends</span> javax.lang.model.element.Element</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportDifferentModifiers(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportDifferentModifiers(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;<span>? <span class="keyword">extends</span> javax.lang.model.element.Element</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportDifferentNames(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportDifferentNames(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;<span>? <span class="keyword">extends</span> javax.lang.model.element.Element</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportDifferentPermittedSubclasses(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportDifferentPermittedSubclasses(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;<span>java.util.List&lt;<span>? <span class="keyword">extends</span> javax.lang.model.type.TypeMirror</span>&gt;</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportDifferentRawDocComments(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportDifferentRawDocComments(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;java.lang.String&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportDifferentSuperinterfaces(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportDifferentSuperinterfaces(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;<span>java.util.List&lt;<span>? <span class="keyword">extends</span> javax.lang.model.type.TypeMirror</span>&gt;</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportDifferentThrownTypes(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportDifferentThrownTypes(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;<span>java.util.List&lt;<span>? <span class="keyword">extends</span> javax.lang.model.type.TypeMirror</span>&gt;</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportDifferentTypeParameters(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportDifferentTypeParameters(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;<span>? <span class="keyword">extends</span> javax.lang.model.element.TypeParameterElement</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportDifferentTypes(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportDifferentTypes(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;<span>? <span class="keyword">extends</span> javax.lang.model.type.TypeMirror</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportDifferentValues(Position,APIMap)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportDifferentValues(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>jdk.codetools.apidiff.model.APIMap&lt;?&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reportMissing(Position,Set)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> reportMissing(<span class="parameters"><span class="parameter">jdk.codetools.apidiff.model.Position arg0</span>, <span class="parameter"><span>java.util.Set&lt;jdk.codetools.apidiff.model.API&gt;</span> arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

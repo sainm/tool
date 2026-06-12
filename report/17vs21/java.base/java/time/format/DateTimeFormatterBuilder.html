@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.time.format.DateTimeFormatterBuilder</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/time/format/package-summary.html">java.time.format</a></div>
+<h1>Class&nbsp;DateTimeFormatterBuilder</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> DateTimeFormatterBuilder <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> DateTimeFormatterBuilder()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="append(DateTimeFormatter)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder append(<span class="parameters"><span class="parameter">java.time.format.DateTimeFormatter arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendChronologyId()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendChronologyId()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendChronologyText(TextStyle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendChronologyText(<span class="parameters"><span class="parameter">java.time.format.TextStyle arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendDayPeriodText(TextStyle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendDayPeriodText(<span class="parameters"><span class="parameter">java.time.format.TextStyle arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendFraction(TemporalField,int,int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendFraction(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendGenericZoneText(TextStyle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendGenericZoneText(<span class="parameters"><span class="parameter">java.time.format.TextStyle arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendGenericZoneText(TextStyle,Set)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendGenericZoneText(<span class="parameters"><span class="parameter">java.time.format.TextStyle arg0</span>, <span class="parameter"><span>java.util.Set&lt;java.time.ZoneId&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendInstant()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendInstant()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendInstant(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendInstant(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendLiteral(char)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendLiteral(<span class="parameters"><span class="parameter"><span class="keyword">char</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendLiteral(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendLiteral(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="appendLocalized(String)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendLocalized(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendLocalized(FormatStyle,FormatStyle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendLocalized(<span class="parameters"><span class="parameter">java.time.format.FormatStyle arg0</span>, <span class="parameter">java.time.format.FormatStyle arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendLocalizedOffset(TextStyle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendLocalizedOffset(<span class="parameters"><span class="parameter">java.time.format.TextStyle arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendOffset(String,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendOffset(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendOffsetId()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendOffsetId()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendOptional(DateTimeFormatter)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendOptional(<span class="parameters"><span class="parameter">java.time.format.DateTimeFormatter arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendPattern(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendPattern(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendText(TemporalField)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendText(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendText(TemporalField,TextStyle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendText(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span>, <span class="parameter">java.time.format.TextStyle arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendText(TemporalField,Map)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendText(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span>, <span class="parameter"><span>java.util.Map&lt;java.lang.Long, java.lang.String&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendValue(TemporalField)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendValue(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendValue(TemporalField,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendValue(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendValue(TemporalField,int,int,SignStyle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendValue(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">java.time.format.SignStyle arg3</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendValueReduced(TemporalField,int,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendValueReduced(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendValueReduced(TemporalField,int,int,ChronoLocalDate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendValueReduced(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">java.time.chrono.ChronoLocalDate arg3</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendZoneId()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendZoneId()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendZoneOrOffsetId()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendZoneOrOffsetId()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendZoneRegionId()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendZoneRegionId()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendZoneText(TextStyle)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendZoneText(<span class="parameters"><span class="parameter">java.time.format.TextStyle arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="appendZoneText(TextStyle,Set)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder appendZoneText(<span class="parameters"><span class="parameter">java.time.format.TextStyle arg0</span>, <span class="parameter"><span>java.util.Set&lt;java.time.ZoneId&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLocalizedDateTimePattern(String,Chronology,Locale)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String getLocalizedDateTimePattern(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.time.chrono.Chronology arg1</span>, <span class="parameter">java.util.Locale arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getLocalizedDateTimePattern(FormatStyle,FormatStyle,Chronology,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.lang.String getLocalizedDateTimePattern(<span class="parameters"><span class="parameter">java.time.format.FormatStyle arg0</span>, <span class="parameter">java.time.format.FormatStyle arg1</span>, <span class="parameter">java.time.chrono.Chronology arg2</span>, <span class="parameter">java.util.Locale arg3</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="optionalEnd()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder optionalEnd()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="optionalStart()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder optionalStart()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="padNext(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder padNext(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="padNext(int,char)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder padNext(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">char</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="parseCaseInsensitive()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder parseCaseInsensitive()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="parseCaseSensitive()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder parseCaseSensitive()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="parseDefaulting(TemporalField,long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder parseDefaulting(<span class="parameters"><span class="parameter">java.time.temporal.TemporalField arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="parseLenient()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder parseLenient()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="parseStrict()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatterBuilder parseStrict()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toFormatter()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatter toFormatter()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toFormatter(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.time.format.DateTimeFormatter toFormatter(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/time/format/DateTimeFormatterBuilder.html#appendLocalized(String)">appendLocalized(String)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/time/format/DateTimeFormatterBuilder.html#getLocalizedDateTimePattern(String,Chronology,Locale)">getLocalizedDateTimePattern(String,Chronology,Locale)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

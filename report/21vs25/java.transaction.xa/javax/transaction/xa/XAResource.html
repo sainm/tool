@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.transaction.xa/javax.transaction.xa.XAResource</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.transaction.xa/module-summary.html">java.transaction.xa</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.transaction.xa/javax/transaction/xa/package-summary.html">javax.transaction.xa</a></div>
+<h1>Interface&nbsp;XAResource</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> XAResource </div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="TMENDRSCAN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TMENDRSCAN = 8388608</div>
+</div>
+</li><li><div class="element" id="TMFAIL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TMFAIL = 536870912</div>
+</div>
+</li><li><div class="element" id="TMJOIN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TMJOIN = 2097152</div>
+</div>
+</li><li><div class="element" id="TMNOFLAGS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TMNOFLAGS = 0</div>
+</div>
+</li><li><div class="element" id="TMONEPHASE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TMONEPHASE = 1073741824</div>
+</div>
+</li><li><div class="element" id="TMRESUME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TMRESUME = 134217728</div>
+</div>
+</li><li><div class="element" id="TMSTARTRSCAN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TMSTARTRSCAN = 16777216</div>
+</div>
+</li><li><div class="element" id="TMSUCCESS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TMSUCCESS = 67108864</div>
+</div>
+</li><li><div class="element" id="TMSUSPEND"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TMSUSPEND = 33554432</div>
+</div>
+</li><li><div class="element" id="XA_OK"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> XA_OK = 0</div>
+</div>
+</li><li><div class="element" id="XA_RDONLY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> XA_RDONLY = 3</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="commit(Xid,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> commit(<span class="parameters"><span class="parameter">javax.transaction.xa.Xid arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.transaction.xa.XAException</span></div>
+</div>
+</li><li><div class="element" id="end(Xid,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> end(<span class="parameters"><span class="parameter">javax.transaction.xa.Xid arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.transaction.xa.XAException</span></div>
+</div>
+</li><li><div class="element" id="forget(Xid)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> forget(<span class="parameters"><span class="parameter">javax.transaction.xa.Xid arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.transaction.xa.XAException</span></div>
+</div>
+</li><li><div class="element" id="getTransactionTimeout()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> getTransactionTimeout() <span class="throws"><span class="keyword">throws</span> javax.transaction.xa.XAException</span></div>
+</div>
+</li><li><div class="element" id="isSameRM(XAResource)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isSameRM(<span class="parameters"><span class="parameter">javax.transaction.xa.XAResource arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.transaction.xa.XAException</span></div>
+</div>
+</li><li><div class="element" id="prepare(Xid)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> prepare(<span class="parameters"><span class="parameter">javax.transaction.xa.Xid arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.transaction.xa.XAException</span></div>
+</div>
+</li><li><div class="element" id="recover(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>javax.transaction.xa.Xid[]</span> recover(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.transaction.xa.XAException</span></div>
+</div>
+</li><li><div class="element" id="rollback(Xid)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> rollback(<span class="parameters"><span class="parameter">javax.transaction.xa.Xid arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.transaction.xa.XAException</span></div>
+</div>
+</li><li><div class="element" id="setTransactionTimeout(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> setTransactionTimeout(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.transaction.xa.XAException</span></div>
+</div>
+</li><li><div class="element" id="start(Xid,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> start(<span class="parameters"><span class="parameter">javax.transaction.xa.Xid arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.transaction.xa.XAException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

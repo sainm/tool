@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.imageio.plugins.tiff.ExifTIFFTagSet</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/imageio/plugins/tiff/package-summary.html">javax.imageio.plugins.tiff</a></div>
+<h1>Class&nbsp;ExifTIFFTagSet</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> ExifTIFFTagSet <div class="superclass"><span class="keyword">extends</span> javax.imageio.plugins.tiff.TIFFTagSet</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="COLOR_SPACE_SRGB"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COLOR_SPACE_SRGB = 1</div>
+</div>
+</li><li><div class="element" id="COLOR_SPACE_UNCALIBRATED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COLOR_SPACE_UNCALIBRATED = 65535</div>
+</div>
+</li><li><div class="element" id="COMPONENTS_CONFIGURATION_B"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPONENTS_CONFIGURATION_B = 6</div>
+</div>
+</li><li><div class="element" id="COMPONENTS_CONFIGURATION_CB"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPONENTS_CONFIGURATION_CB = 2</div>
+</div>
+</li><li><div class="element" id="COMPONENTS_CONFIGURATION_CR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPONENTS_CONFIGURATION_CR = 3</div>
+</div>
+</li><li><div class="element" id="COMPONENTS_CONFIGURATION_DOES_NOT_EXIST"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPONENTS_CONFIGURATION_DOES_NOT_EXIST = 0</div>
+</div>
+</li><li><div class="element" id="COMPONENTS_CONFIGURATION_G"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPONENTS_CONFIGURATION_G = 5</div>
+</div>
+</li><li><div class="element" id="COMPONENTS_CONFIGURATION_R"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPONENTS_CONFIGURATION_R = 4</div>
+</div>
+</li><li><div class="element" id="COMPONENTS_CONFIGURATION_Y"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> COMPONENTS_CONFIGURATION_Y = 1</div>
+</div>
+</li><li><div class="element" id="CONTRAST_HARD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CONTRAST_HARD = 2</div>
+</div>
+</li><li><div class="element" id="CONTRAST_NORMAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CONTRAST_NORMAL = 0</div>
+</div>
+</li><li><div class="element" id="CONTRAST_SOFT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CONTRAST_SOFT = 1</div>
+</div>
+</li><li><div class="element" id="CUSTOM_RENDERED_CUSTOM"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CUSTOM_RENDERED_CUSTOM = 1</div>
+</div>
+</li><li><div class="element" id="CUSTOM_RENDERED_NORMAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CUSTOM_RENDERED_NORMAL = 0</div>
+</div>
+</li><li><div class="element" id="EXIF_VERSION_2_1"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String EXIF_VERSION_2_1 = "0210"</div>
+</div>
+</li><li><div class="element" id="EXIF_VERSION_2_2"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String EXIF_VERSION_2_2 = "0220"</div>
+</div>
+</li><li><div class="element" id="EXPOSURE_MODE_AUTO_BRACKET"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXPOSURE_MODE_AUTO_BRACKET = 2</div>
+</div>
+</li><li><div class="element" id="EXPOSURE_MODE_AUTO_EXPOSURE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXPOSURE_MODE_AUTO_EXPOSURE = 0</div>
+</div>
+</li><li><div class="element" id="EXPOSURE_MODE_MANUAL_EXPOSURE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXPOSURE_MODE_MANUAL_EXPOSURE = 1</div>
+</div>
+</li><li><div class="element" id="EXPOSURE_PROGRAM_ACTION_PROGRAM"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXPOSURE_PROGRAM_ACTION_PROGRAM = 6</div>
+</div>
+</li><li><div class="element" id="EXPOSURE_PROGRAM_APERTURE_PRIORITY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXPOSURE_PROGRAM_APERTURE_PRIORITY = 3</div>
+</div>
+</li><li><div class="element" id="EXPOSURE_PROGRAM_CREATIVE_PROGRAM"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXPOSURE_PROGRAM_CREATIVE_PROGRAM = 5</div>
+</div>
+</li><li><div class="element" id="EXPOSURE_PROGRAM_LANDSCAPE_MODE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXPOSURE_PROGRAM_LANDSCAPE_MODE = 8</div>
+</div>
+</li><li><div class="element" id="EXPOSURE_PROGRAM_MANUAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXPOSURE_PROGRAM_MANUAL = 1</div>
+</div>
+</li><li><div class="element" id="EXPOSURE_PROGRAM_MAX_RESERVED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXPOSURE_PROGRAM_MAX_RESERVED = 255</div>
+</div>
+</li><li><div class="element" id="EXPOSURE_PROGRAM_NORMAL_PROGRAM"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXPOSURE_PROGRAM_NORMAL_PROGRAM = 2</div>
+</div>
+</li><li><div class="element" id="EXPOSURE_PROGRAM_NOT_DEFINED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXPOSURE_PROGRAM_NOT_DEFINED = 0</div>
+</div>
+</li><li><div class="element" id="EXPOSURE_PROGRAM_PORTRAIT_MODE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXPOSURE_PROGRAM_PORTRAIT_MODE = 7</div>
+</div>
+</li><li><div class="element" id="EXPOSURE_PROGRAM_SHUTTER_PRIORITY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> EXPOSURE_PROGRAM_SHUTTER_PRIORITY = 4</div>
+</div>
+</li><li><div class="element" id="FILE_SOURCE_DSC"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FILE_SOURCE_DSC = 3</div>
+</div>
+</li><li><div class="element" id="FLASH_DID_NOT_FIRE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FLASH_DID_NOT_FIRE = 0</div>
+</div>
+</li><li><div class="element" id="FLASH_FIRED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FLASH_FIRED = 1</div>
+</div>
+</li><li><div class="element" id="FLASH_MASK_FIRED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FLASH_MASK_FIRED = 1</div>
+</div>
+</li><li><div class="element" id="FLASH_MASK_FUNCTION_NOT_PRESENT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FLASH_MASK_FUNCTION_NOT_PRESENT = 32</div>
+</div>
+</li><li><div class="element" id="FLASH_MASK_MODE_AUTO"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FLASH_MASK_MODE_AUTO = 24</div>
+</div>
+</li><li><div class="element" id="FLASH_MASK_MODE_FLASH_FIRING"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FLASH_MASK_MODE_FLASH_FIRING = 8</div>
+</div>
+</li><li><div class="element" id="FLASH_MASK_MODE_FLASH_SUPPRESSION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FLASH_MASK_MODE_FLASH_SUPPRESSION = 16</div>
+</div>
+</li><li><div class="element" id="FLASH_MASK_RED_EYE_REDUCTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FLASH_MASK_RED_EYE_REDUCTION = 64</div>
+</div>
+</li><li><div class="element" id="FLASH_MASK_RETURN_DETECTED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FLASH_MASK_RETURN_DETECTED = 6</div>
+</div>
+</li><li><div class="element" id="FLASH_MASK_RETURN_NOT_DETECTED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FLASH_MASK_RETURN_NOT_DETECTED = 4</div>
+</div>
+</li><li><div class="element" id="FLASH_STROBE_RETURN_LIGHT_DETECTED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FLASH_STROBE_RETURN_LIGHT_DETECTED = 7</div>
+</div>
+</li><li><div class="element" id="FLASH_STROBE_RETURN_LIGHT_NOT_DETECTED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FLASH_STROBE_RETURN_LIGHT_NOT_DETECTED = 5</div>
+</div>
+</li><li><div class="element" id="FOCAL_PLANE_RESOLUTION_UNIT_CENTIMETER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FOCAL_PLANE_RESOLUTION_UNIT_CENTIMETER = 3</div>
+</div>
+</li><li><div class="element" id="FOCAL_PLANE_RESOLUTION_UNIT_INCH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FOCAL_PLANE_RESOLUTION_UNIT_INCH = 2</div>
+</div>
+</li><li><div class="element" id="FOCAL_PLANE_RESOLUTION_UNIT_NONE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FOCAL_PLANE_RESOLUTION_UNIT_NONE = 1</div>
+</div>
+</li><li><div class="element" id="GAIN_CONTROL_HIGH_GAIN_DOWN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> GAIN_CONTROL_HIGH_GAIN_DOWN = 4</div>
+</div>
+</li><li><div class="element" id="GAIN_CONTROL_HIGH_GAIN_UP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> GAIN_CONTROL_HIGH_GAIN_UP = 2</div>
+</div>
+</li><li><div class="element" id="GAIN_CONTROL_LOW_GAIN_DOWN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> GAIN_CONTROL_LOW_GAIN_DOWN = 3</div>
+</div>
+</li><li><div class="element" id="GAIN_CONTROL_LOW_GAIN_UP"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> GAIN_CONTROL_LOW_GAIN_UP = 1</div>
+</div>
+</li><li><div class="element" id="GAIN_CONTROL_NONE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> GAIN_CONTROL_NONE = 0</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_CLOUDY_WEATHER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_CLOUDY_WEATHER = 10</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_COOL_WHITE_FLUORESCENT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_COOL_WHITE_FLUORESCENT = 14</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_D50"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_D50 = 23</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_D55"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_D55 = 20</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_D65"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_D65 = 21</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_D75"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_D75 = 22</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_DAYLIGHT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_DAYLIGHT = 1</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_DAYLIGHT_FLUORESCENT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_DAYLIGHT_FLUORESCENT = 12</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_DAY_WHITE_FLUORESCENT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_DAY_WHITE_FLUORESCENT = 13</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_FINE_WEATHER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_FINE_WEATHER = 9</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_FLASH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_FLASH = 4</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_FLUORESCENT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_FLUORESCENT = 2</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_ISO_STUDIO_TUNGSTEN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_ISO_STUDIO_TUNGSTEN = 24</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_OTHER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_OTHER = 255</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_SHADE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_SHADE = 11</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_STANDARD_LIGHT_A"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_STANDARD_LIGHT_A = 17</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_STANDARD_LIGHT_B"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_STANDARD_LIGHT_B = 18</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_STANDARD_LIGHT_C"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_STANDARD_LIGHT_C = 19</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_TUNGSTEN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_TUNGSTEN = 3</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_UNKNOWN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_UNKNOWN = 0</div>
+</div>
+</li><li><div class="element" id="LIGHT_SOURCE_WHITE_FLUORESCENT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> LIGHT_SOURCE_WHITE_FLUORESCENT = 15</div>
+</div>
+</li><li><div class="element" id="METERING_MODE_AVERAGE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> METERING_MODE_AVERAGE = 1</div>
+</div>
+</li><li><div class="element" id="METERING_MODE_CENTER_WEIGHTED_AVERAGE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> METERING_MODE_CENTER_WEIGHTED_AVERAGE = 2</div>
+</div>
+</li><li><div class="element" id="METERING_MODE_MAX_RESERVED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> METERING_MODE_MAX_RESERVED = 254</div>
+</div>
+</li><li><div class="element" id="METERING_MODE_MIN_RESERVED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> METERING_MODE_MIN_RESERVED = 7</div>
+</div>
+</li><li><div class="element" id="METERING_MODE_MULTI_SPOT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> METERING_MODE_MULTI_SPOT = 4</div>
+</div>
+</li><li><div class="element" id="METERING_MODE_OTHER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> METERING_MODE_OTHER = 255</div>
+</div>
+</li><li><div class="element" id="METERING_MODE_PARTIAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> METERING_MODE_PARTIAL = 6</div>
+</div>
+</li><li><div class="element" id="METERING_MODE_PATTERN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> METERING_MODE_PATTERN = 5</div>
+</div>
+</li><li><div class="element" id="METERING_MODE_SPOT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> METERING_MODE_SPOT = 3</div>
+</div>
+</li><li><div class="element" id="METERING_MODE_UNKNOWN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> METERING_MODE_UNKNOWN = 0</div>
+</div>
+</li><li><div class="element" id="SATURATION_HIGH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SATURATION_HIGH = 2</div>
+</div>
+</li><li><div class="element" id="SATURATION_LOW"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SATURATION_LOW = 1</div>
+</div>
+</li><li><div class="element" id="SATURATION_NORMAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SATURATION_NORMAL = 0</div>
+</div>
+</li><li><div class="element" id="SCENE_CAPTURE_TYPE_LANDSCAPE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SCENE_CAPTURE_TYPE_LANDSCAPE = 1</div>
+</div>
+</li><li><div class="element" id="SCENE_CAPTURE_TYPE_NIGHT_SCENE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SCENE_CAPTURE_TYPE_NIGHT_SCENE = 3</div>
+</div>
+</li><li><div class="element" id="SCENE_CAPTURE_TYPE_PORTRAIT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SCENE_CAPTURE_TYPE_PORTRAIT = 2</div>
+</div>
+</li><li><div class="element" id="SCENE_CAPTURE_TYPE_STANDARD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SCENE_CAPTURE_TYPE_STANDARD = 0</div>
+</div>
+</li><li><div class="element" id="SCENE_TYPE_DSC"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SCENE_TYPE_DSC = 1</div>
+</div>
+</li><li><div class="element" id="SENSING_METHOD_COLOR_SEQUENTIAL_AREA_SENSOR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SENSING_METHOD_COLOR_SEQUENTIAL_AREA_SENSOR = 5</div>
+</div>
+</li><li><div class="element" id="SENSING_METHOD_COLOR_SEQUENTIAL_LINEAR_SENSOR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SENSING_METHOD_COLOR_SEQUENTIAL_LINEAR_SENSOR = 8</div>
+</div>
+</li><li><div class="element" id="SENSING_METHOD_NOT_DEFINED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SENSING_METHOD_NOT_DEFINED = 1</div>
+</div>
+</li><li><div class="element" id="SENSING_METHOD_ONE_CHIP_COLOR_AREA_SENSOR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SENSING_METHOD_ONE_CHIP_COLOR_AREA_SENSOR = 2</div>
+</div>
+</li><li><div class="element" id="SENSING_METHOD_THREE_CHIP_COLOR_AREA_SENSOR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SENSING_METHOD_THREE_CHIP_COLOR_AREA_SENSOR = 4</div>
+</div>
+</li><li><div class="element" id="SENSING_METHOD_TRILINEAR_SENSOR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SENSING_METHOD_TRILINEAR_SENSOR = 7</div>
+</div>
+</li><li><div class="element" id="SENSING_METHOD_TWO_CHIP_COLOR_AREA_SENSOR"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SENSING_METHOD_TWO_CHIP_COLOR_AREA_SENSOR = 3</div>
+</div>
+</li><li><div class="element" id="SHARPNESS_HARD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SHARPNESS_HARD = 2</div>
+</div>
+</li><li><div class="element" id="SHARPNESS_NORMAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SHARPNESS_NORMAL = 0</div>
+</div>
+</li><li><div class="element" id="SHARPNESS_SOFT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SHARPNESS_SOFT = 1</div>
+</div>
+</li><li><div class="element" id="SUBJECT_DISTANCE_RANGE_CLOSE_VIEW"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SUBJECT_DISTANCE_RANGE_CLOSE_VIEW = 2</div>
+</div>
+</li><li><div class="element" id="SUBJECT_DISTANCE_RANGE_DISTANT_VIEW"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SUBJECT_DISTANCE_RANGE_DISTANT_VIEW = 3</div>
+</div>
+</li><li><div class="element" id="SUBJECT_DISTANCE_RANGE_MACRO"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SUBJECT_DISTANCE_RANGE_MACRO = 1</div>
+</div>
+</li><li><div class="element" id="SUBJECT_DISTANCE_RANGE_UNKNOWN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SUBJECT_DISTANCE_RANGE_UNKNOWN = 0</div>
+</div>
+</li><li><div class="element" id="TAG_APERTURE_VALUE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_APERTURE_VALUE = 37378</div>
+</div>
+</li><li><div class="element" id="TAG_BRIGHTNESS_VALUE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_BRIGHTNESS_VALUE = 37379</div>
+</div>
+</li><li><div class="element" id="TAG_CFA_PATTERN"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_CFA_PATTERN = 41730</div>
+</div>
+</li><li><div class="element" id="TAG_COLOR_SPACE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_COLOR_SPACE = 40961</div>
+</div>
+</li><li><div class="element" id="TAG_COMPONENTS_CONFIGURATION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_COMPONENTS_CONFIGURATION = 37121</div>
+</div>
+</li><li><div class="element" id="TAG_COMPRESSED_BITS_PER_PIXEL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_COMPRESSED_BITS_PER_PIXEL = 37122</div>
+</div>
+</li><li><div class="element" id="TAG_CONTRAST"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_CONTRAST = 41992</div>
+</div>
+</li><li><div class="element" id="TAG_CUSTOM_RENDERED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_CUSTOM_RENDERED = 41985</div>
+</div>
+</li><li><div class="element" id="TAG_DATE_TIME_DIGITIZED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_DATE_TIME_DIGITIZED = 36868</div>
+</div>
+</li><li><div class="element" id="TAG_DATE_TIME_ORIGINAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_DATE_TIME_ORIGINAL = 36867</div>
+</div>
+</li><li><div class="element" id="TAG_DEVICE_SETTING_DESCRIPTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_DEVICE_SETTING_DESCRIPTION = 41995</div>
+</div>
+</li><li><div class="element" id="TAG_DIGITAL_ZOOM_RATIO"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_DIGITAL_ZOOM_RATIO = 41988</div>
+</div>
+</li><li><div class="element" id="TAG_EXIF_VERSION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_EXIF_VERSION = 36864</div>
+</div>
+</li><li><div class="element" id="TAG_EXPOSURE_BIAS_VALUE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_EXPOSURE_BIAS_VALUE = 37380</div>
+</div>
+</li><li><div class="element" id="TAG_EXPOSURE_INDEX"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_EXPOSURE_INDEX = 41493</div>
+</div>
+</li><li><div class="element" id="TAG_EXPOSURE_MODE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_EXPOSURE_MODE = 41986</div>
+</div>
+</li><li><div class="element" id="TAG_EXPOSURE_PROGRAM"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_EXPOSURE_PROGRAM = 34850</div>
+</div>
+</li><li><div class="element" id="TAG_EXPOSURE_TIME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_EXPOSURE_TIME = 33434</div>
+</div>
+</li><li><div class="element" id="TAG_FILE_SOURCE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_FILE_SOURCE = 41728</div>
+</div>
+</li><li><div class="element" id="TAG_FLASH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_FLASH = 37385</div>
+</div>
+</li><li><div class="element" id="TAG_FLASHPIX_VERSION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_FLASHPIX_VERSION = 40960</div>
+</div>
+</li><li><div class="element" id="TAG_FLASH_ENERGY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_FLASH_ENERGY = 41483</div>
+</div>
+</li><li><div class="element" id="TAG_FOCAL_LENGTH"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_FOCAL_LENGTH = 37386</div>
+</div>
+</li><li><div class="element" id="TAG_FOCAL_LENGTH_IN_35MM_FILM"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_FOCAL_LENGTH_IN_35MM_FILM = 41989</div>
+</div>
+</li><li><div class="element" id="TAG_FOCAL_PLANE_RESOLUTION_UNIT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_FOCAL_PLANE_RESOLUTION_UNIT = 41488</div>
+</div>
+</li><li><div class="element" id="TAG_FOCAL_PLANE_X_RESOLUTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_FOCAL_PLANE_X_RESOLUTION = 41486</div>
+</div>
+</li><li><div class="element" id="TAG_FOCAL_PLANE_Y_RESOLUTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_FOCAL_PLANE_Y_RESOLUTION = 41487</div>
+</div>
+</li><li><div class="element" id="TAG_F_NUMBER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_F_NUMBER = 33437</div>
+</div>
+</li><li><div class="element" id="TAG_GAIN_CONTROL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GAIN_CONTROL = 41991</div>
+</div>
+</li><li><div class="element" id="TAG_GPS_INFO_IFD_POINTER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_GPS_INFO_IFD_POINTER = 34853</div>
+</div>
+</li><li><div class="element" id="TAG_IMAGE_UNIQUE_ID"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_IMAGE_UNIQUE_ID = 42016</div>
+</div>
+</li><li><div class="element" id="TAG_INTEROPERABILITY_IFD_POINTER"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_INTEROPERABILITY_IFD_POINTER = 40965</div>
+</div>
+</li><li><div class="element" id="TAG_ISO_SPEED_RATINGS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_ISO_SPEED_RATINGS = 34855</div>
+</div>
+</li><li><div class="element" id="TAG_LIGHT_SOURCE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_LIGHT_SOURCE = 37384</div>
+</div>
+</li><li><div class="element" id="TAG_MAKER_NOTE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_MAKER_NOTE = 37500</div>
+</div>
+</li><li><div class="element" id="TAG_MARKER_NOTE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_MARKER_NOTE = 37500</div>
+</div>
+</li><li><div class="element" id="TAG_MAX_APERTURE_VALUE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_MAX_APERTURE_VALUE = 37381</div>
+</div>
+</li><li><div class="element" id="TAG_METERING_MODE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_METERING_MODE = 37383</div>
+</div>
+</li><li><div class="element" id="TAG_OECF"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_OECF = 34856</div>
+</div>
+</li><li><div class="element" id="TAG_PIXEL_X_DIMENSION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_PIXEL_X_DIMENSION = 40962</div>
+</div>
+</li><li><div class="element" id="TAG_PIXEL_Y_DIMENSION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_PIXEL_Y_DIMENSION = 40963</div>
+</div>
+</li><li><div class="element" id="TAG_RELATED_SOUND_FILE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_RELATED_SOUND_FILE = 40964</div>
+</div>
+</li><li><div class="element" id="TAG_SATURATION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SATURATION = 41993</div>
+</div>
+</li><li><div class="element" id="TAG_SCENE_CAPTURE_TYPE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SCENE_CAPTURE_TYPE = 41990</div>
+</div>
+</li><li><div class="element" id="TAG_SCENE_TYPE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SCENE_TYPE = 41729</div>
+</div>
+</li><li><div class="element" id="TAG_SENSING_METHOD"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SENSING_METHOD = 41495</div>
+</div>
+</li><li><div class="element" id="TAG_SHARPNESS"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SHARPNESS = 41994</div>
+</div>
+</li><li><div class="element" id="TAG_SHUTTER_SPEED_VALUE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SHUTTER_SPEED_VALUE = 37377</div>
+</div>
+</li><li><div class="element" id="TAG_SPATIAL_FREQUENCY_RESPONSE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SPATIAL_FREQUENCY_RESPONSE = 41484</div>
+</div>
+</li><li><div class="element" id="TAG_SPECTRAL_SENSITIVITY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SPECTRAL_SENSITIVITY = 34852</div>
+</div>
+</li><li><div class="element" id="TAG_SUBJECT_AREA"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SUBJECT_AREA = 37396</div>
+</div>
+</li><li><div class="element" id="TAG_SUBJECT_DISTANCE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SUBJECT_DISTANCE = 37382</div>
+</div>
+</li><li><div class="element" id="TAG_SUBJECT_DISTANCE_RANGE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SUBJECT_DISTANCE_RANGE = 41996</div>
+</div>
+</li><li><div class="element" id="TAG_SUBJECT_LOCATION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SUBJECT_LOCATION = 41492</div>
+</div>
+</li><li><div class="element" id="TAG_SUB_SEC_TIME"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SUB_SEC_TIME = 37520</div>
+</div>
+</li><li><div class="element" id="TAG_SUB_SEC_TIME_DIGITIZED"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SUB_SEC_TIME_DIGITIZED = 37522</div>
+</div>
+</li><li><div class="element" id="TAG_SUB_SEC_TIME_ORIGINAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_SUB_SEC_TIME_ORIGINAL = 37521</div>
+</div>
+</li><li><div class="element" id="TAG_USER_COMMENT"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_USER_COMMENT = 37510</div>
+</div>
+</li><li><div class="element" id="TAG_WHITE_BALANCE"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> TAG_WHITE_BALANCE = 41987</div>
+</div>
+</li><li><div class="element" id="WHITE_BALANCE_AUTO"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> WHITE_BALANCE_AUTO = 0</div>
+</div>
+</li><li><div class="element" id="WHITE_BALANCE_MANUAL"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> WHITE_BALANCE_MANUAL = 1</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="getInstance()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> javax.imageio.plugins.tiff.ExifTIFFTagSet getInstance()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

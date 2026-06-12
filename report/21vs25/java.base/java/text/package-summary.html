@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: package java.base/java.text</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<h1>Package&nbsp;java.text</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="keyword">package</span> java.text</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/Annotation.html">Annotation</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/AttributedCharacterIterator.html">AttributedCharacterIterator</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/AttributedString.html">AttributedString</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/Bidi.html">Bidi</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/BreakIterator.html">BreakIterator</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/CharacterIterator.html">CharacterIterator</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/text/ChoiceFormat.html">ChoiceFormat</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/CollationElementIterator.html">CollationElementIterator</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/CollationKey.html">CollationKey</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/Collator.html">Collator</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/text/CompactNumberFormat.html">CompactNumberFormat</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/DateFormat.html">DateFormat</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/DateFormatSymbols.html">DateFormatSymbols</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/text/DecimalFormat.html">DecimalFormat</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/DecimalFormatSymbols.html">DecimalFormatSymbols</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/FieldPosition.html">FieldPosition</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/Format.html">Format</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../java.base/java/text/ListFormat.html">ListFormat</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/text/MessageFormat.html">MessageFormat</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/Normalizer.html">Normalizer</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/text/NumberFormat.html">NumberFormat</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/ParseException.html">ParseException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/ParsePosition.html">ParsePosition</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/RuleBasedCollator.html">RuleBasedCollator</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../java.base/java/text/SimpleDateFormat.html">SimpleDateFormat</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../java.base/java/text/StringCharacterIterator.html">StringCharacterIterator</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.base/java/text/ChoiceFormat.html">ChoiceFormat</a></th>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/text/CompactNumberFormat.html">CompactNumberFormat</a></th>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/text/DecimalFormat.html">DecimalFormat</a></th>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/text/ListFormat.html">ListFormat</a></th>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/text/MessageFormat.html">MessageFormat</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/text/NumberFormat.html">NumberFormat</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/text/SimpleDateFormat.html">SimpleDateFormat</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>18</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>18</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

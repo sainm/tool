@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: package java.base/java.util.concurrent</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<h1>Package&nbsp;java.util.concurrent</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="keyword">package</span> java.util.concurrent</div>
+</div>
+<section class="enclosed"><h2>Types</h2>
+<ul><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/AbstractExecutorService.html">AbstractExecutorService</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ArrayBlockingQueue.html">ArrayBlockingQueue</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/BlockingDeque.html">BlockingDeque</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/BlockingQueue.html">BlockingQueue</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/BrokenBarrierException.html">BrokenBarrierException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/Callable.html">Callable</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/CancellationException.html">CancellationException</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/CompletableFuture.html">CompletableFuture</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/CompletionException.html">CompletionException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/CompletionService.html">CompletionService</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/CompletionStage.html">CompletionStage</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/ConcurrentHashMap.html">ConcurrentHashMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ConcurrentLinkedDeque.html">ConcurrentLinkedDeque</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ConcurrentLinkedQueue.html">ConcurrentLinkedQueue</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ConcurrentMap.html">ConcurrentMap</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ConcurrentNavigableMap.html">ConcurrentNavigableMap</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/ConcurrentSkipListMap.html">ConcurrentSkipListMap</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/ConcurrentSkipListSet.html">ConcurrentSkipListSet</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/CopyOnWriteArrayList.html">CopyOnWriteArrayList</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/CopyOnWriteArraySet.html">CopyOnWriteArraySet</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/CountDownLatch.html">CountDownLatch</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/CountedCompleter.html">CountedCompleter</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/CyclicBarrier.html">CyclicBarrier</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/DelayQueue.html">DelayQueue</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/Delayed.html">Delayed</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/Exchanger.html">Exchanger</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ExecutionException.html">ExecutionException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/Executor.html">Executor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ExecutorCompletionService.html">ExecutorCompletionService</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/ExecutorService.html">ExecutorService</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/Executors.html">Executors</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/Flow.html">Flow</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/ForkJoinPool.html">ForkJoinPool</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/ForkJoinTask.html">ForkJoinTask</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/ForkJoinWorkerThread.html">ForkJoinWorkerThread</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/Future.html">Future</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/FutureTask.html">FutureTask</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/LinkedBlockingDeque.html">LinkedBlockingDeque</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/LinkedBlockingQueue.html">LinkedBlockingQueue</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/LinkedTransferQueue.html">LinkedTransferQueue</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/Phaser.html">Phaser</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/PriorityBlockingQueue.html">PriorityBlockingQueue</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/RecursiveAction.html">RecursiveAction</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/RecursiveTask.html">RecursiveTask</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/RejectedExecutionException.html">RejectedExecutionException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/RejectedExecutionHandler.html">RejectedExecutionHandler</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/RunnableFuture.html">RunnableFuture</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/RunnableScheduledFuture.html">RunnableScheduledFuture</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ScheduledExecutorService.html">ScheduledExecutorService</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ScheduledFuture.html">ScheduledFuture</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html">ScheduledThreadPoolExecutor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/Semaphore.html">Semaphore</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/util/concurrent/StructureViolationException.html">StructureViolationException</a></span></li><li><span><span class="add">&plus;</span> <a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html">StructuredTaskScope</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/SubmissionPublisher.html">SubmissionPublisher</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/SynchronousQueue.html">SynchronousQueue</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ThreadFactory.html">ThreadFactory</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/ThreadLocalRandom.html">ThreadLocalRandom</a></span></li><li><span><span class="diff">&ne;</span> <a href="../../../../java.base/java/util/concurrent/ThreadPoolExecutor.html">ThreadPoolExecutor</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/TimeUnit.html">TimeUnit</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/TimeoutException.html">TimeoutException</a></span></li><li class="unchanged"><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/TransferQueue.html">TransferQueue</a></span></li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th>Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/CompletableFuture.html">CompletableFuture</a></th>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ConcurrentHashMap.html">ConcurrentHashMap</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ConcurrentSkipListMap.html">ConcurrentSkipListMap</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ConcurrentSkipListSet.html">ConcurrentSkipListSet</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/CopyOnWriteArrayList.html">CopyOnWriteArrayList</a></th>
+<td>7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>7</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/DelayQueue.html">DelayQueue</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ExecutorService.html">ExecutorService</a></th>
+<td>1</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/Executors.html">Executors</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ForkJoinPool.html">ForkJoinPool</a></th>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ForkJoinTask.html">ForkJoinTask</a></th>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>6</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ForkJoinWorkerThread.html">ForkJoinWorkerThread</a></th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/Future.html">Future</a></th>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/FutureTask.html">FutureTask</a></th>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructureViolationException.html">StructureViolationException</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/StructuredTaskScope.html">StructuredTaskScope</a></th>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/SynchronousQueue.html">SynchronousQueue</a></th>
+<td>1</td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ThreadLocalRandom.html">ThreadLocalRandom</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/ThreadPoolExecutor.html">ThreadPoolExecutor</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>44</td>
+<td>5</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>50</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

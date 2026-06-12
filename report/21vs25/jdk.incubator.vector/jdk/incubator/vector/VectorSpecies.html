@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface jdk.incubator.vector/jdk.incubator.vector.VectorSpecies</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../jdk.incubator.vector/module-summary.html">jdk.incubator.vector</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../jdk.incubator.vector/jdk/incubator/vector/package-summary.html">jdk.incubator.vector</a></div>
+<h1>Interface&nbsp;VectorSpecies</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> VectorSpecies<span class="typarams">&lt;<span>E</span>&gt;</span> </div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="broadcast(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>jdk.incubator.vector.Vector&lt;E&gt;</span> broadcast(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="check(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="typarams">&lt;<span>F</span>&gt;</span> <span>jdk.incubator.vector.VectorSpecies&lt;F&gt;</span> check(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;F&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="checkValue(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">long</span> checkValue(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="elementSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> elementSize()</div>
+</div>
+</li><li><div class="element" id="elementSize(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="keyword">int</span> elementSize(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="elementType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.lang.Class&lt;E&gt;</span> elementType()</div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fromArray(Object,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>jdk.incubator.vector.Vector&lt;E&gt;</span> fromArray(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="fromMemorySegment(MemorySegment,long,ByteOrder)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>jdk.incubator.vector.Vector&lt;E&gt;</span> fromMemorySegment(<span class="parameters"><span class="parameter">java.lang.foreign.MemorySegment arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span>, <span class="parameter">java.nio.ByteOrder arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="indexInRange(int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>jdk.incubator.vector.VectorMask&lt;E&gt;</span> indexInRange(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="indexInRange(long,long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>jdk.incubator.vector.VectorMask&lt;E&gt;</span> indexInRange(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="iotaShuffle(int,int,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>jdk.incubator.vector.VectorShuffle&lt;E&gt;</span> iotaShuffle(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="length()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> length()</div>
+</div>
+</li><li><div class="element" id="loadMask(boolean[],int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>jdk.incubator.vector.VectorMask&lt;E&gt;</span> loadMask(<span class="parameters"><span class="parameter"><span><span class="keyword">boolean</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="loopBound(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> loopBound(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="loopBound(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">long</span> loopBound(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="maskAll(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>jdk.incubator.vector.VectorMask&lt;E&gt;</span> maskAll(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="maskType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.lang.Class&lt;<span>? <span class="keyword">extends</span> <span>jdk.incubator.vector.VectorMask&lt;E&gt;</span></span>&gt;</span> maskType()</div>
+</div>
+</li><li><div class="element" id="of(Class,VectorShape)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>jdk.incubator.vector.VectorSpecies&lt;E&gt;</span> of(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;E&gt;</span> arg0</span>, <span class="parameter">jdk.incubator.vector.VectorShape arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofLargestShape(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>jdk.incubator.vector.VectorSpecies&lt;E&gt;</span> ofLargestShape(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;E&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofPreferred(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>E</span>&gt;</span> <span>jdk.incubator.vector.VectorSpecies&lt;E&gt;</span> ofPreferred(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;E&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="partLimit(VectorSpecies,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> partLimit(<span class="parameters"><span class="parameter"><span>jdk.incubator.vector.VectorSpecies&lt;?&gt;</span> arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="shuffleFromArray(int[],int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>jdk.incubator.vector.VectorShuffle&lt;E&gt;</span> shuffleFromArray(<span class="parameters"><span class="parameter"><span><span class="keyword">int</span>[]</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="shuffleFromOp(IntUnaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>jdk.incubator.vector.VectorShuffle&lt;E&gt;</span> shuffleFromOp(<span class="parameters"><span class="parameter">java.util.function.IntUnaryOperator arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="shuffleFromValues(int[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>jdk.incubator.vector.VectorShuffle&lt;E&gt;</span> shuffleFromValues(<span class="parameters"><span class="parameter"><span><span class="keyword">int</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String toString()</div>
+</div>
+</li><li><div class="element" id="vectorBitSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> vectorBitSize()</div>
+</div>
+</li><li><div class="element" id="vectorByteSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">int</span> vectorByteSize()</div>
+</div>
+</li><li><div class="element" id="vectorShape()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> jdk.incubator.vector.VectorShape vectorShape()</div>
+</div>
+</li><li><div class="element" id="vectorType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.lang.Class&lt;<span>? <span class="keyword">extends</span> <span>jdk.incubator.vector.Vector&lt;E&gt;</span></span>&gt;</span> vectorType()</div>
+</div>
+</li><li><div class="element" id="withLanes(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="typarams">&lt;<span>F</span>&gt;</span> <span>jdk.incubator.vector.VectorSpecies&lt;F&gt;</span> withLanes(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;F&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="withShape(VectorShape)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>jdk.incubator.vector.VectorSpecies&lt;E&gt;</span> withShape(<span class="parameters"><span class="parameter">jdk.incubator.vector.VectorShape arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="zero()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>jdk.incubator.vector.Vector&lt;E&gt;</span> zero()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

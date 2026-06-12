@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class jdk.incubator.foreign/jdk.internal.foreign.AbstractMemorySegmentImpl</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../jdk.incubator.foreign/module-summary.html">jdk.incubator.foreign</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../jdk.incubator.foreign/jdk/internal/foreign/package-summary.html">jdk.internal.foreign</a></div>
+<h1>Class&nbsp;AbstractMemorySegmentImpl</h1>
+</div>
+<div class="element"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK17; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> AbstractMemorySegmentImpl <div class="superclass"><span class="keyword">extends</span> jdk.internal.access.foreign.MemorySegmentProxy</div>
+<div class="superinterfaces"><span class="keyword">implements</span> jdk.incubator.foreign.MemorySegment</div>
+</div>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="address()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> jdk.incubator.foreign.MemoryAddress address()</div>
+</div>
+</li><li><div class="element" id="asByteBuffer()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.nio.ByteBuffer asByteBuffer()</div>
+</div>
+</li><li><div class="element" id="asReadOnly()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.internal.foreign.AbstractMemorySegmentImpl asReadOnly()</div>
+</div>
+</li><li><div class="element" id="asSlice(long)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.internal.foreign.AbstractMemorySegmentImpl asSlice(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="asSlice(long,long)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.internal.foreign.AbstractMemorySegmentImpl asSlice(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="byteSize()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">long</span> byteSize()</div>
+</div>
+</li><li><div class="element" id="checkAccess(long,long,boolean)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> checkAccess(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="copyFrom(MemorySegment)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> copyFrom(<span class="parameters"><span class="parameter">jdk.incubator.foreign.MemorySegment arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="copyFromSwap(MemorySegment,long)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> copyFromSwap(<span class="parameters"><span class="parameter">jdk.incubator.foreign.MemorySegment arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="elements(MemoryLayout)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.stream.Stream&lt;jdk.incubator.foreign.MemorySegment&gt;</span> elements(<span class="parameters"><span class="parameter">jdk.incubator.foreign.MemoryLayout arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fill(byte)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> jdk.incubator.foreign.MemorySegment fill(<span class="parameters"><span class="parameter"><span class="keyword">byte</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="force()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> force()</div>
+</div>
+</li><li><div class="element" id="id()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> id()</div>
+</div>
+</li><li><div class="element" id="isAlive()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isAlive()</div>
+</div>
+</li><li><div class="element" id="isLoaded()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isLoaded()</div>
+</div>
+</li><li><div class="element" id="isMapped()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isMapped()</div>
+</div>
+</li><li><div class="element" id="isNative()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isNative()</div>
+</div>
+</li><li><div class="element" id="isReadOnly()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isReadOnly()</div>
+</div>
+</li><li><div class="element" id="isSmall()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSmall()</div>
+</div>
+</li><li><div class="element" id="load()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> load()</div>
+</div>
+</li><li><div class="element" id="mismatch(MemorySegment)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> mismatch(<span class="parameters"><span class="parameter">jdk.incubator.foreign.MemorySegment arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofBuffer(ByteBuffer)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> jdk.internal.foreign.AbstractMemorySegmentImpl ofBuffer(<span class="parameters"><span class="parameter">java.nio.ByteBuffer arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ownerThread()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Thread ownerThread()</div>
+</div>
+</li><li><div class="element" id="scope()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> jdk.internal.foreign.ResourceScopeImpl scope()</div>
+</div>
+</li><li><div class="element" id="spliterator(MemoryLayout)"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Spliterator&lt;jdk.incubator.foreign.MemorySegment&gt;</span> spliterator(<span class="parameters"><span class="parameter">jdk.incubator.foreign.MemoryLayout arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toByteArray()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span><span class="keyword">byte</span>[]</span> toByteArray()</div>
+</div>
+</li><li><div class="element" id="toCharArray()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span><span class="keyword">char</span>[]</span> toCharArray()</div>
+</div>
+</li><li><div class="element" id="toDoubleArray()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span><span class="keyword">double</span>[]</span> toDoubleArray()</div>
+</div>
+</li><li><div class="element" id="toFloatArray()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span><span class="keyword">float</span>[]</span> toFloatArray()</div>
+</div>
+</li><li><div class="element" id="toIntArray()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span><span class="keyword">int</span>[]</span> toIntArray()</div>
+</div>
+</li><li><div class="element" id="toLongArray()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span><span class="keyword">long</span>[]</span> toLongArray()</div>
+</div>
+</li><li><div class="element" id="toShortArray()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span><span class="keyword">short</span>[]</span> toShortArray()</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li><li><div class="element" id="unload()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> unload()</div>
+</div>
+</li><li><div class="element" id="unsafeGetBase()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object unsafeGetBase()</div>
+</div>
+</li><li><div class="element" id="unsafeGetOffset()"><span class="remove">&minus;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> unsafeGetOffset()</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../jdk.incubator.foreign/jdk/internal/foreign/AbstractMemorySegmentImpl.html">AbstractMemorySegmentImpl</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

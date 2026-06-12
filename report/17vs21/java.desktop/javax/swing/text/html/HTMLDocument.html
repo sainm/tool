@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.desktop/javax.swing.text.html.HTMLDocument</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.desktop/javax/swing/text/html/package-summary.html">javax.swing.text.html</a></div>
+<h1>Class&nbsp;HTMLDocument</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> HTMLDocument <div class="superclass"><span class="keyword">extends</span> javax.swing.text.DefaultStyledDocument</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/text/html/HTMLDocument.BlockElement.html">BlockElement</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.html">HTMLReader</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/text/html/HTMLDocument.Iterator.html">Iterator</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../../java.desktop/javax/swing/text/html/HTMLDocument.RunElement.html">RunElement</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="AdditionalComments"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String AdditionalComments = "AdditionalComments"</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> HTMLDocument()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(StyleSheet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> HTMLDocument(<span class="parameters"><span class="parameter">javax.swing.text.html.StyleSheet arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Content,StyleSheet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> HTMLDocument(<span class="parameters"><span class="parameter">javax.swing.text.AbstractDocument.Content arg0</span>, <span class="parameter">javax.swing.text.html.StyleSheet arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="create(ElementSpec[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> create(<span class="parameters"><span class="parameter"><span>javax.swing.text.DefaultStyledDocument.ElementSpec[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createBranchElement(Element,AttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.text.Element createBranchElement(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span>, <span class="parameter">javax.swing.text.AttributeSet arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="createDefaultRoot()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.text.AbstractDocument.AbstractElement createDefaultRoot()</div>
+</div>
+</li><li><div class="element" id="createLeafElement(Element,AttributeSet,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.text.Element createLeafElement(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span>, <span class="parameter">javax.swing.text.AttributeSet arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter"><span class="keyword">int</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="fireChangedUpdate(DocumentEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireChangedUpdate(<span class="parameters"><span class="parameter">javax.swing.event.DocumentEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fireUndoableEditUpdate(UndoableEditEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireUndoableEditUpdate(<span class="parameters"><span class="parameter">javax.swing.event.UndoableEditEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBase()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.net.URL getBase()</div>
+</div>
+</li><li><div class="element" id="getElement(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.Element getElement(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getElement(Element,Object,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.Element getElement(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span>, <span class="parameter">java.lang.Object arg1</span>, <span class="parameter">java.lang.Object arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getIterator(Tag)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.html.HTMLDocument.Iterator getIterator(<span class="parameters"><span class="parameter">javax.swing.text.html.HTML.Tag arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getParser()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.html.HTMLEditorKit.Parser getParser()</div>
+</div>
+</li><li><div class="element" id="getPreservesUnknownTags()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getPreservesUnknownTags()</div>
+</div>
+</li><li><div class="element" id="getReader(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.html.HTMLEditorKit.ParserCallback getReader(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getReader(int,int,int,Tag)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.html.HTMLEditorKit.ParserCallback getReader(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span>, <span class="parameter">javax.swing.text.html.HTML.Tag arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="getStyleSheet()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.text.html.StyleSheet getStyleSheet()</div>
+</div>
+</li><li><div class="element" id="getTokenThreshold()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getTokenThreshold()</div>
+</div>
+</li><li><div class="element" id="insert(int,ElementSpec[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> insert(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span>javax.swing.text.DefaultStyledDocument.ElementSpec[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="insertAfterEnd(Element,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> insertAfterEnd(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="insertAfterStart(Element,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> insertAfterStart(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="insertBeforeEnd(Element,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> insertBeforeEnd(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="insertBeforeStart(Element,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> insertBeforeStart(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="insertUpdate(DefaultDocumentEvent,AttributeSet)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> insertUpdate(<span class="parameters"><span class="parameter">javax.swing.text.AbstractDocument.DefaultDocumentEvent arg0</span>, <span class="parameter">javax.swing.text.AttributeSet arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="processHTMLFrameHyperlinkEvent(HTMLFrameHyperlinkEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> processHTMLFrameHyperlinkEvent(<span class="parameters"><span class="parameter">javax.swing.text.html.HTMLFrameHyperlinkEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setBase(URL)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setBase(<span class="parameters"><span class="parameter">java.net.URL arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setInnerHTML(Element,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setInnerHTML(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="setOuterHTML(Element,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setOuterHTML(<span class="parameters"><span class="parameter">javax.swing.text.Element arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, javax.swing.text.BadLocationException</span></div>
+</div>
+</li><li><div class="element" id="setParagraphAttributes(int,int,AttributeSet,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setParagraphAttributes(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter">javax.swing.text.AttributeSet arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span></span>)</div>
+</div>
+</li><li><div class="element" id="setParser(Parser)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setParser(<span class="parameters"><span class="parameter">javax.swing.text.html.HTMLEditorKit.Parser arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setPreservesUnknownTags(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setPreservesUnknownTags(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setTokenThreshold(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setTokenThreshold(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-3832619996088288452<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">java.net.URL&nbsp;base</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.lang.String&nbsp;baseTarget</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;frameDocument</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;hasBaseTag</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;insertInBody</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.text.html.HTMLEditorKit.Parser&nbsp;parser</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;preservesUnknownTags</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.util.HashMap&lt;java.lang.String, javax.swing.ButtonGroup&gt;</span>&nbsp;radioButtonGroupsMap</div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

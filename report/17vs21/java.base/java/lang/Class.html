@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.lang.Class</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/lang/package-summary.html">java.lang</a></div>
+<h1>Class&nbsp;Class</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> Class<span class="typarams">&lt;<span>T</span>&gt;</span> <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable, java.lang.constant.Constable, java.lang.reflect.AnnotatedElement, java.lang.reflect.GenericDeclaration, java.lang.reflect.Type, <span>java.lang.invoke.TypeDescriptor.OfField&lt;<span>java.lang.Class&lt;?&gt;</span>&gt;</span></div>
+</div>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="accessFlags()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Set&lt;java.lang.reflect.AccessFlag&gt;</span> accessFlags()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="arrayType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> arrayType()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="asSubclass(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.lang.Class&lt;<span>? <span class="keyword">extends</span> U</span>&gt;</span> asSubclass(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;U&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="cast(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> T cast(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="componentType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> componentType()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="describeConstable()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Optional&lt;java.lang.constant.ClassDesc&gt;</span> describeConstable()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="descriptorString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String descriptorString()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="desiredAssertionStatus()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> desiredAssertionStatus()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="forName(Module,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.Class&lt;?&gt;</span> forName(<span class="parameters"><span class="parameter">java.lang.Module arg0</span>, <span class="parameter">java.lang.String arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="forName(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.Class&lt;?&gt;</span> forName(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="forName(String,boolean,ClassLoader)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.lang.Class&lt;?&gt;</span> forName(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span>, <span class="parameter">java.lang.ClassLoader arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAnnotatedInterfaces()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.reflect.AnnotatedType[]</span> getAnnotatedInterfaces()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAnnotatedSuperclass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.reflect.AnnotatedType getAnnotatedSuperclass()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAnnotation(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>A</span>&gt;</span> A getAnnotation(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;A&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAnnotations()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.annotation.Annotation[]</span> getAnnotations()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAnnotationsByType(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>A</span>&gt;</span> <span>A[]</span> getAnnotationsByType(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;A&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getCanonicalName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getCanonicalName()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getClassLoader()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ClassLoader getClassLoader()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getClasses()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span>java.lang.Class&lt;?&gt;</span>[]</span> getClasses()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getComponentType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> getComponentType()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getConstructor(Class[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.reflect.Constructor&lt;T&gt;</span> getConstructor(<span class="parameters"><span class="parameter"><span><span>java.lang.Class&lt;?&gt;</span>[]</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.NoSuchMethodException, java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getConstructors()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span>java.lang.reflect.Constructor&lt;?&gt;</span>[]</span> getConstructors() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDeclaredAnnotation(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>A</span>&gt;</span> A getDeclaredAnnotation(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;A&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDeclaredAnnotations()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.annotation.Annotation[]</span> getDeclaredAnnotations()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDeclaredAnnotationsByType(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>A</span>&gt;</span> <span>A[]</span> getDeclaredAnnotationsByType(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;A&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDeclaredClasses()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span>java.lang.Class&lt;?&gt;</span>[]</span> getDeclaredClasses() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDeclaredConstructor(Class[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.reflect.Constructor&lt;T&gt;</span> getDeclaredConstructor(<span class="parameters"><span class="parameter"><span><span>java.lang.Class&lt;?&gt;</span>[]</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.NoSuchMethodException, java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDeclaredConstructors()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span>java.lang.reflect.Constructor&lt;?&gt;</span>[]</span> getDeclaredConstructors() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDeclaredField(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.reflect.Field getDeclaredField(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.NoSuchFieldException, java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDeclaredFields()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.reflect.Field[]</span> getDeclaredFields() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDeclaredMethod(String,Class[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.reflect.Method getDeclaredMethod(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span><span>java.lang.Class&lt;?&gt;</span>[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.NoSuchMethodException, java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDeclaredMethods()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.reflect.Method[]</span> getDeclaredMethods() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDeclaringClass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> getDeclaringClass() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getEnclosingClass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> getEnclosingClass() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getEnclosingConstructor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.reflect.Constructor&lt;?&gt;</span> getEnclosingConstructor() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getEnclosingMethod()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.reflect.Method getEnclosingMethod() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getEnumConstants()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>T[]</span> getEnumConstants()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getField(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.reflect.Field getField(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.NoSuchFieldException, java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFields()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.reflect.Field[]</span> getFields() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getGenericInterfaces()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.reflect.Type[]</span> getGenericInterfaces()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getGenericSuperclass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.reflect.Type getGenericSuperclass()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getInterfaces()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span>java.lang.Class&lt;?&gt;</span>[]</span> getInterfaces()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getMethod(String,Class[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.reflect.Method getMethod(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span><span>java.lang.Class&lt;?&gt;</span>[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.NoSuchMethodException, java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getMethods()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.reflect.Method[]</span> getMethods() <span class="throws"><span class="keyword">throws</span> java.lang.SecurityException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getModifiers()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getModifiers()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getModule()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Module getModule()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getName()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getNestHost()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> getNestHost()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getNestMembers()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span>java.lang.Class&lt;?&gt;</span>[]</span> getNestMembers()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getPackage()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Package getPackage()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getPackageName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getPackageName()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getPermittedSubclasses()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span>java.lang.Class&lt;?&gt;</span>[]</span> getPermittedSubclasses()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getProtectionDomain()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.security.ProtectionDomain getProtectionDomain()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getRecordComponents()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.reflect.RecordComponent[]</span> getRecordComponents()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getResource(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.net.URL getResource(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getResourceAsStream(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.InputStream getResourceAsStream(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getSigners()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Object[]</span> getSigners()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getSimpleName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getSimpleName()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getSuperclass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> getSuperclass()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getTypeName()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getTypeName()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getTypeParameters()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span><span>java.lang.reflect.TypeVariable&lt;<span>java.lang.Class&lt;T&gt;</span>&gt;</span>[]</span> getTypeParameters()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isAnnotation()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isAnnotation()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isAnnotationPresent(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isAnnotationPresent(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;<span>? <span class="keyword">extends</span> java.lang.annotation.Annotation</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isAnonymousClass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isAnonymousClass()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isArray()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isArray()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isAssignableFrom(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isAssignableFrom(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isEnum()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isEnum()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isHidden()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isHidden()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isInstance(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isInstance(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isInterface()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isInterface()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isLocalClass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isLocalClass()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isMemberClass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isMemberClass()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isNestmateOf(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isNestmateOf(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isPrimitive()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isPrimitive()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isRecord()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isRecord()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isSealed()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSealed()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isSynthetic()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSynthetic()</div>
+</div>
+</li><li><div class="element" id="isUnnamedClass()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isUnnamedClass()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newInstance()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> T newInstance() <span class="throws"><span class="keyword">throws</span> java.lang.IllegalAccessException, java.lang.InstantiationException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="toGenericString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toGenericString()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>3206093459760846163</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.base/java/lang/Class.html#accessFlags()">accessFlags()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.base/java/lang/Class.html#isUnnamedClass()">isUnnamedClass()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

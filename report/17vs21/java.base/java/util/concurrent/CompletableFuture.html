@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.util.concurrent.CompletableFuture</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/util/concurrent/package-summary.html">java.util.concurrent</a></div>
+<h1>Class&nbsp;CompletableFuture</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> CompletableFuture<span class="typarams">&lt;<span>T</span>&gt;</span> <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> <span>java.util.concurrent.CompletionStage&lt;T&gt;</span>, <span>java.util.concurrent.Future&lt;T&gt;</span></div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/CompletableFuture.AsynchronousCompletionTask.html">AsynchronousCompletionTask</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> CompletableFuture()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="acceptEither(CompletionStage,Consumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> acceptEither(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="acceptEitherAsync(CompletionStage,Consumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> acceptEitherAsync(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="acceptEitherAsync(CompletionStage,Consumer,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> acceptEitherAsync(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg1</span>, <span class="parameter">java.util.concurrent.Executor arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="allOf(CompletableFuture[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> allOf(<span class="parameters"><span class="parameter"><span><span>java.util.concurrent.CompletableFuture&lt;?&gt;</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="anyOf(CompletableFuture[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Object&gt;</span> anyOf(<span class="parameters"><span class="parameter"><span><span>java.util.concurrent.CompletableFuture&lt;?&gt;</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="applyToEither(CompletionStage,Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> applyToEither(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, U&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="applyToEitherAsync(CompletionStage,Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> applyToEitherAsync(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, U&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="applyToEitherAsync(CompletionStage,Function,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> applyToEitherAsync(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, U&gt;</span> arg1</span>, <span class="parameter">java.util.concurrent.Executor arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="cancel(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> cancel(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="complete(T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> complete(<span class="parameters"><span class="parameter">T arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="completeAsync(Supplier)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;T&gt;</span> completeAsync(<span class="parameters"><span class="parameter"><span>java.util.function.Supplier&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="completeAsync(Supplier,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;T&gt;</span> completeAsync(<span class="parameters"><span class="parameter"><span>java.util.function.Supplier&lt;<span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span>, <span class="parameter">java.util.concurrent.Executor arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="completeExceptionally(Throwable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> completeExceptionally(<span class="parameters"><span class="parameter">java.lang.Throwable arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="completeOnTimeout(T,long,TimeUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;T&gt;</span> completeOnTimeout(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter"><span class="keyword">long</span> arg1</span>, <span class="parameter">java.util.concurrent.TimeUnit arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="completedFuture(U)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> completedFuture(<span class="parameters"><span class="parameter">U arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="completedStage(U)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletionStage&lt;U&gt;</span> completedStage(<span class="parameters"><span class="parameter">U arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="copy()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;T&gt;</span> copy()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="defaultExecutor()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.concurrent.Executor defaultExecutor()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="delayedExecutor(long,TimeUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.concurrent.Executor delayedExecutor(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.util.concurrent.TimeUnit arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="delayedExecutor(long,TimeUnit,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.concurrent.Executor delayedExecutor(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.util.concurrent.TimeUnit arg1</span>, <span class="parameter">java.util.concurrent.Executor arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="exceptionNow()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Throwable exceptionNow()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="exceptionally(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;T&gt;</span> exceptionally(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;java.lang.Throwable, <span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="exceptionallyAsync(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;T&gt;</span> exceptionallyAsync(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;java.lang.Throwable, <span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="exceptionallyAsync(Function,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;T&gt;</span> exceptionallyAsync(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;java.lang.Throwable, <span>? <span class="keyword">extends</span> T</span>&gt;</span> arg0</span>, <span class="parameter">java.util.concurrent.Executor arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="exceptionallyCompose(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;T&gt;</span> exceptionallyCompose(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;java.lang.Throwable, <span>? <span class="keyword">extends</span> <span>java.util.concurrent.CompletionStage&lt;T&gt;</span></span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="exceptionallyComposeAsync(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;T&gt;</span> exceptionallyComposeAsync(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;java.lang.Throwable, <span>? <span class="keyword">extends</span> <span>java.util.concurrent.CompletionStage&lt;T&gt;</span></span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="exceptionallyComposeAsync(Function,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;T&gt;</span> exceptionallyComposeAsync(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;java.lang.Throwable, <span>? <span class="keyword">extends</span> <span>java.util.concurrent.CompletionStage&lt;T&gt;</span></span>&gt;</span> arg0</span>, <span class="parameter">java.util.concurrent.Executor arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="failedFuture(Throwable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> failedFuture(<span class="parameters"><span class="parameter">java.lang.Throwable arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="failedStage(Throwable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletionStage&lt;U&gt;</span> failedStage(<span class="parameters"><span class="parameter">java.lang.Throwable arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="get()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> T get() <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException, java.util.concurrent.ExecutionException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="get(long,TimeUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> T get(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.util.concurrent.TimeUnit arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException, java.util.concurrent.ExecutionException, java.util.concurrent.TimeoutException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getNow(T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> T getNow(<span class="parameters"><span class="parameter">T arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getNumberOfDependents()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getNumberOfDependents()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="handle(BiFunction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> handle(<span class="parameters"><span class="parameter"><span>java.util.function.BiFunction&lt;<span>? <span class="keyword">super</span> T</span>, java.lang.Throwable, <span>? <span class="keyword">extends</span> U</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="handleAsync(BiFunction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> handleAsync(<span class="parameters"><span class="parameter"><span>java.util.function.BiFunction&lt;<span>? <span class="keyword">super</span> T</span>, java.lang.Throwable, <span>? <span class="keyword">extends</span> U</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="handleAsync(BiFunction,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> handleAsync(<span class="parameters"><span class="parameter"><span>java.util.function.BiFunction&lt;<span>? <span class="keyword">super</span> T</span>, java.lang.Throwable, <span>? <span class="keyword">extends</span> U</span>&gt;</span> arg0</span>, <span class="parameter">java.util.concurrent.Executor arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isCancelled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isCancelled()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isCompletedExceptionally()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isCompletedExceptionally()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isDone()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isDone()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="join()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> T join()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="minimalCompletionStage()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletionStage&lt;T&gt;</span> minimalCompletionStage()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="newIncompleteFuture()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> newIncompleteFuture()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="obtrudeException(Throwable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> obtrudeException(<span class="parameters"><span class="parameter">java.lang.Throwable arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="obtrudeValue(T)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> obtrudeValue(<span class="parameters"><span class="parameter">T arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="orTimeout(long,TimeUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;T&gt;</span> orTimeout(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.util.concurrent.TimeUnit arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="resultNow()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> T resultNow()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="runAfterBoth(CompletionStage,Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> runAfterBoth(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.Runnable arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="runAfterBothAsync(CompletionStage,Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> runAfterBothAsync(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.Runnable arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="runAfterBothAsync(CompletionStage,Runnable,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> runAfterBothAsync(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.Runnable arg1</span>, <span class="parameter">java.util.concurrent.Executor arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="runAfterEither(CompletionStage,Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> runAfterEither(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.Runnable arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="runAfterEitherAsync(CompletionStage,Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> runAfterEitherAsync(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.Runnable arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="runAfterEitherAsync(CompletionStage,Runnable,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> runAfterEitherAsync(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;?&gt;</span> arg0</span>, <span class="parameter">java.lang.Runnable arg1</span>, <span class="parameter">java.util.concurrent.Executor arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="runAsync(Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> runAsync(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="runAsync(Runnable,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> runAsync(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span>, <span class="parameter">java.util.concurrent.Executor arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="state()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.concurrent.Future.State state()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="supplyAsync(Supplier)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> supplyAsync(<span class="parameters"><span class="parameter"><span>java.util.function.Supplier&lt;U&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="supplyAsync(Supplier,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> supplyAsync(<span class="parameters"><span class="parameter"><span>java.util.function.Supplier&lt;U&gt;</span> arg0</span>, <span class="parameter">java.util.concurrent.Executor arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenAccept(Consumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> thenAccept(<span class="parameters"><span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenAcceptAsync(Consumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> thenAcceptAsync(<span class="parameters"><span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenAcceptAsync(Consumer,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> thenAcceptAsync(<span class="parameters"><span class="parameter"><span>java.util.function.Consumer&lt;<span>? <span class="keyword">super</span> T</span>&gt;</span> arg0</span>, <span class="parameter">java.util.concurrent.Executor arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenAcceptBoth(CompletionStage,BiConsumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> thenAcceptBoth(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;<span>? <span class="keyword">extends</span> U</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.BiConsumer&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">super</span> U</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenAcceptBothAsync(CompletionStage,BiConsumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> thenAcceptBothAsync(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;<span>? <span class="keyword">extends</span> U</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.BiConsumer&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">super</span> U</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenAcceptBothAsync(CompletionStage,BiConsumer,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> thenAcceptBothAsync(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;<span>? <span class="keyword">extends</span> U</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.BiConsumer&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">super</span> U</span>&gt;</span> arg1</span>, <span class="parameter">java.util.concurrent.Executor arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenApply(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> thenApply(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">extends</span> U</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenApplyAsync(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> thenApplyAsync(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">extends</span> U</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenApplyAsync(Function,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> thenApplyAsync(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">extends</span> U</span>&gt;</span> arg0</span>, <span class="parameter">java.util.concurrent.Executor arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenCombine(CompletionStage,BiFunction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>, <span>V</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;V&gt;</span> thenCombine(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;<span>? <span class="keyword">extends</span> U</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.BiFunction&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">super</span> U</span>, <span>? <span class="keyword">extends</span> V</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenCombineAsync(CompletionStage,BiFunction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>, <span>V</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;V&gt;</span> thenCombineAsync(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;<span>? <span class="keyword">extends</span> U</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.BiFunction&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">super</span> U</span>, <span>? <span class="keyword">extends</span> V</span>&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenCombineAsync(CompletionStage,BiFunction,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>, <span>V</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;V&gt;</span> thenCombineAsync(<span class="parameters"><span class="parameter"><span>java.util.concurrent.CompletionStage&lt;<span>? <span class="keyword">extends</span> U</span>&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.BiFunction&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">super</span> U</span>, <span>? <span class="keyword">extends</span> V</span>&gt;</span> arg1</span>, <span class="parameter">java.util.concurrent.Executor arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenCompose(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> thenCompose(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">extends</span> <span>java.util.concurrent.CompletionStage&lt;U&gt;</span></span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenComposeAsync(Function)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> thenComposeAsync(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">extends</span> <span>java.util.concurrent.CompletionStage&lt;U&gt;</span></span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenComposeAsync(Function,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.concurrent.CompletableFuture&lt;U&gt;</span> thenComposeAsync(<span class="parameters"><span class="parameter"><span>java.util.function.Function&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">extends</span> <span>java.util.concurrent.CompletionStage&lt;U&gt;</span></span>&gt;</span> arg0</span>, <span class="parameter">java.util.concurrent.Executor arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenRun(Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> thenRun(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenRunAsync(Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> thenRunAsync(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="thenRunAsync(Runnable,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;java.lang.Void&gt;</span> thenRunAsync(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span>, <span class="parameter">java.util.concurrent.Executor arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toCompletableFuture()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;T&gt;</span> toCompletableFuture()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="whenComplete(BiConsumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;T&gt;</span> whenComplete(<span class="parameters"><span class="parameter"><span>java.util.function.BiConsumer&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">super</span> java.lang.Throwable</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="whenCompleteAsync(BiConsumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;T&gt;</span> whenCompleteAsync(<span class="parameters"><span class="parameter"><span>java.util.function.BiConsumer&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">super</span> java.lang.Throwable</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="whenCompleteAsync(BiConsumer,Executor)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.CompletableFuture&lt;T&gt;</span> whenCompleteAsync(<span class="parameters"><span class="parameter"><span>java.util.function.BiConsumer&lt;<span>? <span class="keyword">super</span> T</span>, <span>? <span class="keyword">super</span> java.lang.Throwable</span>&gt;</span> arg0</span>, <span class="parameter">java.util.concurrent.Executor arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/CompletableFuture.html#exceptionNow()">exceptionNow()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/CompletableFuture.html#resultNow()">resultNow()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/java/util/concurrent/CompletableFuture.html#state()">state()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

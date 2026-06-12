@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/javax.swing.JFileChooser</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.desktop/javax/swing/package-summary.html">javax.swing</a></div>
+<h1>Class&nbsp;JFileChooser</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="annotation">@JavaBean(defaultProperty="UI"description="A component which allows for the interactive selection of a file.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> JFileChooser <div class="superclass"><span class="keyword">extends</span> javax.swing.JComponent</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.accessibility.Accessible</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.desktop/javax/swing/JFileChooser.AccessibleJFileChooser.html">AccessibleJFileChooser</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY = "acceptAllFileFilterUsedChanged"</div>
+</div>
+</li><li><div class="element" id="ACCESSORY_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String ACCESSORY_CHANGED_PROPERTY = "AccessoryChangedProperty"</div>
+</div>
+</li><li><div class="element" id="APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY = "ApproveButtonMnemonicChangedProperty"</div>
+</div>
+</li><li><div class="element" id="APPROVE_BUTTON_TEXT_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String APPROVE_BUTTON_TEXT_CHANGED_PROPERTY = "ApproveButtonTextChangedProperty"</div>
+</div>
+</li><li><div class="element" id="APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY = "ApproveButtonToolTipTextChangedProperty"</div>
+</div>
+</li><li><div class="element" id="APPROVE_OPTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> APPROVE_OPTION = 0</div>
+</div>
+</li><li><div class="element" id="APPROVE_SELECTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String APPROVE_SELECTION = "ApproveSelection"</div>
+</div>
+</li><li><div class="element" id="CANCEL_OPTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CANCEL_OPTION = 1</div>
+</div>
+</li><li><div class="element" id="CANCEL_SELECTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String CANCEL_SELECTION = "CancelSelection"</div>
+</div>
+</li><li><div class="element" id="CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY = "ChoosableFileFilterChangedProperty"</div>
+</div>
+</li><li><div class="element" id="CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY = "ControlButtonsAreShownChangedProperty"</div>
+</div>
+</li><li><div class="element" id="CUSTOM_DIALOG"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> CUSTOM_DIALOG = 2</div>
+</div>
+</li><li><div class="element" id="DIALOG_TITLE_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DIALOG_TITLE_CHANGED_PROPERTY = "DialogTitleChangedProperty"</div>
+</div>
+</li><li><div class="element" id="DIALOG_TYPE_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DIALOG_TYPE_CHANGED_PROPERTY = "DialogTypeChangedProperty"</div>
+</div>
+</li><li><div class="element" id="DIRECTORIES_ONLY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> DIRECTORIES_ONLY = 1</div>
+</div>
+</li><li><div class="element" id="DIRECTORY_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String DIRECTORY_CHANGED_PROPERTY = "directoryChanged"</div>
+</div>
+</li><li><div class="element" id="ERROR_OPTION"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> ERROR_OPTION = -1</div>
+</div>
+</li><li><div class="element" id="FILES_AND_DIRECTORIES"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FILES_AND_DIRECTORIES = 2</div>
+</div>
+</li><li><div class="element" id="FILES_ONLY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> FILES_ONLY = 0</div>
+</div>
+</li><li><div class="element" id="FILE_FILTER_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String FILE_FILTER_CHANGED_PROPERTY = "fileFilterChanged"</div>
+</div>
+</li><li><div class="element" id="FILE_HIDING_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String FILE_HIDING_CHANGED_PROPERTY = "FileHidingChanged"</div>
+</div>
+</li><li><div class="element" id="FILE_SELECTION_MODE_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String FILE_SELECTION_MODE_CHANGED_PROPERTY = "fileSelectionChanged"</div>
+</div>
+</li><li><div class="element" id="FILE_SYSTEM_VIEW_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String FILE_SYSTEM_VIEW_CHANGED_PROPERTY = "FileSystemViewChanged"</div>
+</div>
+</li><li><div class="element" id="FILE_VIEW_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String FILE_VIEW_CHANGED_PROPERTY = "fileViewChanged"</div>
+</div>
+</li><li><div class="element" id="MULTI_SELECTION_ENABLED_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String MULTI_SELECTION_ENABLED_CHANGED_PROPERTY = "MultiSelectionEnabledChangedProperty"</div>
+</div>
+</li><li><div class="element" id="OPEN_DIALOG"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> OPEN_DIALOG = 0</div>
+</div>
+</li><li><div class="element" id="SAVE_DIALOG"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">int</span> SAVE_DIALOG = 1</div>
+</div>
+</li><li><div class="element" id="SELECTED_FILES_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SELECTED_FILES_CHANGED_PROPERTY = "SelectedFilesChangedProperty"</div>
+</div>
+</li><li><div class="element" id="SELECTED_FILE_CHANGED_PROPERTY"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.lang.String SELECTED_FILE_CHANGED_PROPERTY = "SelectedFileChangedProperty"</div>
+</div>
+</li><li><div class="element" id="accessibleContext"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.accessibility.AccessibleContext accessibleContext</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JFileChooser()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JFileChooser(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(File,FileSystemView)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JFileChooser(<span class="parameters"><span class="parameter">java.io.File arg0</span>, <span class="parameter">javax.swing.filechooser.FileSystemView arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JFileChooser(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String,FileSystemView)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JFileChooser(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">javax.swing.filechooser.FileSystemView arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(FileSystemView)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> JFileChooser(<span class="parameters"><span class="parameter">javax.swing.filechooser.FileSystemView arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="accept(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> accept(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="addActionListener(ActionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addActionListener(<span class="parameters"><span class="parameter">java.awt.event.ActionListener arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="addChoosableFileFilter(FileFilter)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="Adds a filter to the list of user choosable file filters.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addChoosableFileFilter(<span class="parameters"><span class="parameter">javax.swing.filechooser.FileFilter arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="approveSelection()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> approveSelection()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="cancelSelection()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> cancelSelection()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="changeToParentDirectory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> changeToParentDirectory()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="createDialog(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.swing.JDialog createDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="ensureFileIsVisible(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> ensureFileIsVisible(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="fireActionPerformed(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> fireActionPerformed(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAcceptAllFileFilter()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.swing.filechooser.FileFilter getAcceptAllFileFilter()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAccessibleContext()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.accessibility.AccessibleContext getAccessibleContext()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getAccessory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.JComponent getAccessory()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getActionListeners()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span>java.awt.event.ActionListener[]</span> getActionListeners()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getApproveButtonMnemonic()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getApproveButtonMnemonic()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getApproveButtonText()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getApproveButtonText()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getApproveButtonToolTipText()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getApproveButtonToolTipText()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getChoosableFileFilters()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span>javax.swing.filechooser.FileFilter[]</span> getChoosableFileFilters()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getControlButtonsAreShown()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getControlButtonsAreShown()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getCurrentDirectory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.File getCurrentDirectory()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDescription(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getDescription(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDialogTitle()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getDialogTitle()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDialogType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getDialogType()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getDragEnabled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getDragEnabled()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFileFilter()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.filechooser.FileFilter getFileFilter()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFileSelectionMode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getFileSelectionMode()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFileSystemView()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.filechooser.FileSystemView getFileSystemView()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFileView()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.filechooser.FileView getFileView()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getIcon(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.swing.Icon getIcon(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getName(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getName(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getSelectedFile()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.File getSelectedFile()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getSelectedFiles()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.io.File[]</span> getSelectedFiles()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getTypeDescription(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getTypeDescription(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getUI()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> javax.swing.plaf.FileChooserUI getUI()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getUIClassID()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falseexpert=truedescription="A string that specifies the name of the L&amp;F class.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> java.lang.String getUIClassID()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isAcceptAllFileFilterUsed()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isAcceptAllFileFilterUsed()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isDirectorySelectionEnabled()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isDirectorySelectionEnabled()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isFileHidingEnabled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isFileHidingEnabled()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isFileSelectionEnabled()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isFileSelectionEnabled()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isMultiSelectionEnabled()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isMultiSelectionEnabled()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isTraversable(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isTraversable(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="paramString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String paramString()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="removeActionListener(ActionListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeActionListener(<span class="parameters"><span class="parameter">java.awt.event.ActionListener arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="removeChoosableFileFilter(FileFilter)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> removeChoosableFileFilter(<span class="parameters"><span class="parameter">javax.swing.filechooser.FileFilter arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="rescanCurrentDirectory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> rescanCurrentDirectory()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="resetChoosableFileFilters()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> resetChoosableFileFilters()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setAcceptAllFileFilterUsed(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="Sets whether the AcceptAll FileFilter is used as an available choice in the choosable filter list.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAcceptAllFileFilterUsed(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setAccessory(JComponent)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="Sets the accessory component on the JFileChooser.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAccessory(<span class="parameters"><span class="parameter">javax.swing.JComponent arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setApproveButtonMnemonic(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="The mnemonic key accelerator for the ApproveButton.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setApproveButtonMnemonic(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setApproveButtonMnemonic(char)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setApproveButtonMnemonic(<span class="parameters"><span class="parameter"><span class="keyword">char</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setApproveButtonText(String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="The text that goes in the ApproveButton.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setApproveButtonText(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setApproveButtonToolTipText(String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="The tooltip text for the ApproveButton.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setApproveButtonToolTipText(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setControlButtonsAreShown(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="Sets whether the approve &amp; cancel buttons are shown.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setControlButtonsAreShown(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setCurrentDirectory(File)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="The directory that the JFileChooser is showing files of.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCurrentDirectory(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setDialogTitle(String)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="The title of the JFileChooser dialog window.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDialogTitle(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setDialogType(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=trueenumerationValues={"JFileChooser.OPEN_DIALOG", "JFileChooser.SAVE_DIALOG", "JFileChooser.CUSTOM_DIALOG"}description="The type (open, save, custom) of the JFileChooser.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDialogType(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setDragEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(bound=falsedescription="determines whether automatic drag handling is enabled")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDragEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setEnabled(boolean)"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK25; not in: JDK21.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setFileFilter(FileFilter)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="Sets the File Filter used to filter out files of type.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFileFilter(<span class="parameters"><span class="parameter">javax.swing.filechooser.FileFilter arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setFileHidingEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="Sets file hiding on or off.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFileHidingEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setFileSelectionMode(int)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=trueenumerationValues={"JFileChooser.FILES_ONLY", "JFileChooser.DIRECTORIES_ONLY", "JFileChooser.FILES_AND_DIRECTORIES"}description="Sets the types of files that the JFileChooser can choose.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFileSelectionMode(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setFileSystemView(FileSystemView)"><span class="diff">&ne;</span><div class="signature"><span class="annotation">@BeanProperty(bound = true, description = <span class="diffs"><span class="api" title="JDK21">"Sets the FileSytemView used to get filesystem information."</span><span class="api" title="JDK25">"Sets the FileSystemView used to get filesystem information."</span></span>, enumerationValues = {}, expert = true, hidden = false, preferred = false, required = false, visualUpdate = false)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFileSystemView(<span class="parameters"><span class="parameter">javax.swing.filechooser.FileSystemView arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setFileView(FileView)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=truedescription="Sets the File View used to get file type information.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setFileView(<span class="parameters"><span class="parameter">javax.swing.filechooser.FileView arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setMultiSelectionEnabled(boolean)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="Sets multiple file selection mode.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMultiSelectionEnabled(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setSelectedFile(File)"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(preferred=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectedFile(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setSelectedFiles(File[])"><span class="same">&equals;</span><div class="signature"><span class="annotation">@BeanProperty(description="The list of selected files if the chooser is in multiple selection mode.")</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSelectedFiles(<span class="parameters"><span class="parameter"><span>java.io.File[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setup(FileSystemView)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> setup(<span class="parameters"><span class="parameter">javax.swing.filechooser.FileSystemView arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="showDialog(Component,String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> showDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span>, <span class="parameter">java.lang.String arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="showOpenDialog(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> showOpenDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="showSaveDialog(Component)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> showSaveDialog(<span class="parameters"><span class="parameter">java.awt.Component arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.awt.HeadlessException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="updateUI()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> updateUI()</div>
+</div>
+</li></ul>
+</section>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="diff">&ne;</span><h3>serialVersionUID</h3>
+<span class="diff">&ne;</span><span class="diffs"><span class="api" title="JDK21">-5546134224901406291</span><span class="api" title="JDK25">-6351972142171651264</span></span><section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.accessibility.AccessibleContext&nbsp;accessibleContext</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.JComponent&nbsp;accessory</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;approveButtonMnemonic</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.lang.String&nbsp;approveButtonText</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.lang.String&nbsp;approveButtonToolTipText</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;controlsShown</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.io.File&nbsp;currentDirectory</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.JDialog&nbsp;dialog</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.lang.String&nbsp;dialogTitle</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;dialogType</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;dragEnabled</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.filechooser.FileFilter&nbsp;fileFilter</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;fileSelectionMode</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.filechooser.FileSystemView&nbsp;fileSystemView</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.swing.filechooser.FileView&nbsp;fileView</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.util.Vector&lt;javax.swing.filechooser.FileFilter&gt;</span>&nbsp;filters</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;multiSelectionEnabled</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;returnValue</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.io.File&nbsp;selectedFile</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.io.File[]</span>&nbsp;selectedFiles</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;useAcceptAllFileFilter</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;useFileHiding</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th>Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../java.desktop/javax/swing/JFileChooser.html">JFileChooser</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.desktop/javax/swing/JFileChooser.html#setEnabled(boolean)">setEnabled(boolean)</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../java.desktop/javax/swing/JFileChooser.html#setFileSystemView(FileSystemView)">setFileSystemView(FileSystemView)</a></th>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>1</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

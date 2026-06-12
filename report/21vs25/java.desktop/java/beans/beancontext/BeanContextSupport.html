@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.desktop/java.beans.beancontext.BeanContextSupport</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.desktop/module-summary.html">java.desktop</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.desktop/java/beans/beancontext/package-summary.html">java.beans.beancontext</a></div>
+<h1>Class&nbsp;BeanContextSupport</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="23"forRemoval=true)</span><br>
+<span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> BeanContextSupport <div class="superclass"><span class="keyword">extends</span> java.beans.beancontext.BeanContextChildSupport</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable, java.beans.PropertyChangeListener, java.beans.VetoableChangeListener, java.beans.beancontext.BeanContext</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../java.desktop/java/beans/beancontext/BeanContextSupport.BCSChild.html">BCSChild</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.desktop/java/beans/beancontext/BeanContextSupport.BCSIterator.html">BCSIterator</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Fields</h2>
+<ul><li><div class="element" id="bcmListeners"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> <span>java.util.ArrayList&lt;java.beans.beancontext.BeanContextMembershipListener&gt;</span> bcmListeners</div>
+</div>
+</li><li><div class="element" id="children"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">transient</span></span> <span>java.util.HashMap&lt;java.lang.Object, java.beans.beancontext.BeanContextSupport.BCSChild&gt;</span> children</div>
+</div>
+</li><li><div class="element" id="designTime"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> designTime</div>
+</div>
+</li><li><div class="element" id="locale"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.util.Locale locale</div>
+</div>
+</li><li><div class="element" id="okToUseGui"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> okToUseGui</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BeanContextSupport()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(BeanContext)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BeanContextSupport(<span class="parameters"><span class="parameter">java.beans.beancontext.BeanContext arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(BeanContext,Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BeanContextSupport(<span class="parameters"><span class="parameter">java.beans.beancontext.BeanContext arg0</span>, <span class="parameter">java.util.Locale arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(BeanContext,Locale,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BeanContextSupport(<span class="parameters"><span class="parameter">java.beans.beancontext.BeanContext arg0</span>, <span class="parameter">java.util.Locale arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(BeanContext,Locale,boolean,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> BeanContextSupport(<span class="parameters"><span class="parameter">java.beans.beancontext.BeanContext arg0</span>, <span class="parameter">java.util.Locale arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span>, <span class="parameter"><span class="keyword">boolean</span> arg3</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="add(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> add(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addAll(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> addAll(<span class="parameters"><span class="parameter">java.util.Collection arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="addBeanContextMembershipListener(BeanContextMembershipListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> addBeanContextMembershipListener(<span class="parameters"><span class="parameter">java.beans.beancontext.BeanContextMembershipListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="avoidingGui()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> avoidingGui()</div>
+</div>
+</li><li><div class="element" id="bcsChildren()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>java.util.Iterator&lt;java.beans.beancontext.BeanContextSupport.BCSChild&gt;</span> bcsChildren()</div>
+</div>
+</li><li><div class="element" id="bcsPreDeserializationHook(ObjectInputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> bcsPreDeserializationHook(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li><div class="element" id="bcsPreSerializationHook(ObjectOutputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> bcsPreSerializationHook(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="childDeserializedHook(Object,BCSChild)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> childDeserializedHook(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.beans.beancontext.BeanContextSupport.BCSChild arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="childJustAddedHook(Object,BCSChild)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> childJustAddedHook(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.beans.beancontext.BeanContextSupport.BCSChild arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="childJustRemovedHook(Object,BCSChild)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> childJustRemovedHook(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.beans.beancontext.BeanContextSupport.BCSChild arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="classEquals(Class,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> classEquals(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="clear()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> clear()</div>
+</div>
+</li><li><div class="element" id="contains(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> contains(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="containsAll(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> containsAll(<span class="parameters"><span class="parameter">java.util.Collection arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="containsKey(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> containsKey(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="copyChildren()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> <span>java.lang.Object[]</span> copyChildren()</div>
+</div>
+</li><li><div class="element" id="createBCSChild(Object,Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.beans.beancontext.BeanContextSupport.BCSChild createBCSChild(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="deserialize(ObjectInputStream,Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> <span class="keyword">void</span> deserialize(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span>, <span class="parameter">java.util.Collection arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li><div class="element" id="dontUseGui()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> dontUseGui()</div>
+</div>
+</li><li><div class="element" id="fireChildrenAdded(BeanContextMembershipEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> <span class="keyword">void</span> fireChildrenAdded(<span class="parameters"><span class="parameter">java.beans.beancontext.BeanContextMembershipEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="fireChildrenRemoved(BeanContextMembershipEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> <span class="keyword">void</span> fireChildrenRemoved(<span class="parameters"><span class="parameter">java.beans.beancontext.BeanContextMembershipEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getBeanContextPeer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.beans.beancontext.BeanContext getBeanContextPeer()</div>
+</div>
+</li><li><div class="element" id="getChildBeanContextChild(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.beans.beancontext.BeanContextChild getChildBeanContextChild(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getChildBeanContextMembershipListener(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.beans.beancontext.BeanContextMembershipListener getChildBeanContextMembershipListener(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getChildPropertyChangeListener(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.beans.PropertyChangeListener getChildPropertyChangeListener(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getChildSerializable(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.io.Serializable getChildSerializable(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getChildVetoableChangeListener(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.beans.VetoableChangeListener getChildVetoableChangeListener(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getChildVisibility(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">static</span> <span class="keyword">final</span></span> java.beans.Visibility getChildVisibility(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLocale()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.Locale getLocale()</div>
+</div>
+</li><li><div class="element" id="getResource(String,BeanContextChild)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.net.URL getResource(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.beans.beancontext.BeanContextChild arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getResourceAsStream(String,BeanContextChild)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.InputStream getResourceAsStream(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter">java.beans.beancontext.BeanContextChild arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="initialize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> initialize()</div>
+</div>
+</li><li><div class="element" id="instantiateChild(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object instantiateChild(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li><div class="element" id="isDesignTime()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isDesignTime()</div>
+</div>
+</li><li><div class="element" id="isEmpty()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isEmpty()</div>
+</div>
+</li><li><div class="element" id="isSerializing()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isSerializing()</div>
+</div>
+</li><li><div class="element" id="iterator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Iterator&lt;java.lang.Object&gt;</span> iterator()</div>
+</div>
+</li><li><div class="element" id="needsGui()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> needsGui()</div>
+</div>
+</li><li><div class="element" id="okToUseGui()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> okToUseGui()</div>
+</div>
+</li><li><div class="element" id="propertyChange(PropertyChangeEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> propertyChange(<span class="parameters"><span class="parameter">java.beans.PropertyChangeEvent arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="readChildren(ObjectInputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> readChildren(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li><div class="element" id="remove(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> remove(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="remove(Object,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> remove(<span class="parameters"><span class="parameter">java.lang.Object arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeAll(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> removeAll(<span class="parameters"><span class="parameter">java.util.Collection arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="removeBeanContextMembershipListener(BeanContextMembershipListener)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> removeBeanContextMembershipListener(<span class="parameters"><span class="parameter">java.beans.beancontext.BeanContextMembershipListener arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="retainAll(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> retainAll(<span class="parameters"><span class="parameter">java.util.Collection arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="serialize(ObjectOutputStream,Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span> <span class="keyword">final</span></span> <span class="keyword">void</span> serialize(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span>, <span class="parameter"><span>java.util.Collection&lt;?&gt;</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="setDesignTime(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setDesignTime(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setLocale(Locale)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setLocale(<span class="parameters"><span class="parameter">java.util.Locale arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.beans.PropertyVetoException</span></div>
+</div>
+</li><li><div class="element" id="size()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> size()</div>
+</div>
+</li><li><div class="element" id="toArray()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Object[]</span> toArray()</div>
+</div>
+</li><li><div class="element" id="toArray(Object[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Object[]</span> toArray(<span class="parameters"><span class="parameter"><span>java.lang.Object[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="validatePendingAdd(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> validatePendingAdd(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="validatePendingRemove(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">boolean</span> validatePendingRemove(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="vetoableChange(PropertyChangeEvent)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> vetoableChange(<span class="parameters"><span class="parameter">java.beans.PropertyChangeEvent arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.beans.PropertyVetoException</span></div>
+</div>
+</li><li><div class="element" id="writeChildren(ObjectOutputStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> writeChildren(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>-4879613978649577204<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;designTime</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.util.Locale&nbsp;locale</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">boolean</span>&nbsp;okToUseGui</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">int</span>&nbsp;serializable</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="serial-method-writeObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> writeObject(<span class="parameters"><span class="parameter">java.io.ObjectOutputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

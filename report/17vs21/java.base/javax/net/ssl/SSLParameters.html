@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/javax.net.ssl.SSLParameters</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/javax/net/ssl/package-summary.html">javax.net.ssl</a></div>
+<h1>Class&nbsp;SSLParameters</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> SSLParameters <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> SSLParameters()</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> SSLParameters(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(String[],String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> SSLParameters(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span>, <span class="parameter"><span>java.lang.String[]</span> arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="getAlgorithmConstraints()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.security.AlgorithmConstraints getAlgorithmConstraints()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getApplicationProtocols()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getApplicationProtocols()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getCipherSuites()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getCipherSuites()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getEnableRetransmissions()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getEnableRetransmissions()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getEndpointIdentificationAlgorithm()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String getEndpointIdentificationAlgorithm()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getMaximumPacketSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMaximumPacketSize()</div>
+</div>
+</li><li><div class="element" id="getNamedGroups()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getNamedGroups()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getNeedClientAuth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getNeedClientAuth()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getProtocols()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getProtocols()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getSNIMatchers()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span>java.util.Collection&lt;javax.net.ssl.SNIMatcher&gt;</span> getSNIMatchers()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getServerNames()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span>java.util.List&lt;javax.net.ssl.SNIServerName&gt;</span> getServerNames()</div>
+</div>
+</li><li><div class="element" id="getSignatureSchemes()"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.String[]</span> getSignatureSchemes()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getUseCipherSuitesOrder()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> getUseCipherSuitesOrder()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getWantClientAuth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> getWantClientAuth()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setAlgorithmConstraints(AlgorithmConstraints)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAlgorithmConstraints(<span class="parameters"><span class="parameter">java.security.AlgorithmConstraints arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setApplicationProtocols(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setApplicationProtocols(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setCipherSuites(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCipherSuites(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setEnableRetransmissions(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setEnableRetransmissions(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setEndpointIdentificationAlgorithm(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setEndpointIdentificationAlgorithm(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setMaximumPacketSize(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMaximumPacketSize(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setNamedGroups(String[])"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setNamedGroups(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setNeedClientAuth(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setNeedClientAuth(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setProtocols(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setProtocols(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setSNIMatchers(Collection)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setSNIMatchers(<span class="parameters"><span class="parameter"><span>java.util.Collection&lt;javax.net.ssl.SNIMatcher&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setServerNames(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setServerNames(<span class="parameters"><span class="parameter"><span>java.util.List&lt;javax.net.ssl.SNIServerName&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setSignatureSchemes(String[])"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setSignatureSchemes(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setUseCipherSuitesOrder(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">void</span> setUseCipherSuitesOrder(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="setWantClientAuth(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setWantClientAuth(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../java.base/javax/net/ssl/SSLParameters.html#getNamedGroups()">getNamedGroups()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/javax/net/ssl/SSLParameters.html#getSignatureSchemes()">getSignatureSchemes()</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/javax/net/ssl/SSLParameters.html#setNamedGroups(String%5B%5D)">setNamedGroups(String[])</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../java.base/javax/net/ssl/SSLParameters.html#setSignatureSchemes(String%5B%5D)">setSignatureSchemes(String[])</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

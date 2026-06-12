@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.time.temporal.TemporalAdjusters</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/time/temporal/package-summary.html">java.time.temporal</a></div>
+<h1>Class&nbsp;TemporalAdjusters</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> TemporalAdjusters <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="dayOfWeekInMonth(int,DayOfWeek)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.temporal.TemporalAdjuster dayOfWeekInMonth(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter">java.time.DayOfWeek arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="firstDayOfMonth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.temporal.TemporalAdjuster firstDayOfMonth()</div>
+</div>
+</li><li><div class="element" id="firstDayOfNextMonth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.temporal.TemporalAdjuster firstDayOfNextMonth()</div>
+</div>
+</li><li><div class="element" id="firstDayOfNextYear()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.temporal.TemporalAdjuster firstDayOfNextYear()</div>
+</div>
+</li><li><div class="element" id="firstDayOfYear()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.temporal.TemporalAdjuster firstDayOfYear()</div>
+</div>
+</li><li><div class="element" id="firstInMonth(DayOfWeek)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.temporal.TemporalAdjuster firstInMonth(<span class="parameters"><span class="parameter">java.time.DayOfWeek arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="lastDayOfMonth()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.temporal.TemporalAdjuster lastDayOfMonth()</div>
+</div>
+</li><li><div class="element" id="lastDayOfYear()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.temporal.TemporalAdjuster lastDayOfYear()</div>
+</div>
+</li><li><div class="element" id="lastInMonth(DayOfWeek)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.temporal.TemporalAdjuster lastInMonth(<span class="parameters"><span class="parameter">java.time.DayOfWeek arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="next(DayOfWeek)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.temporal.TemporalAdjuster next(<span class="parameters"><span class="parameter">java.time.DayOfWeek arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="nextOrSame(DayOfWeek)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.temporal.TemporalAdjuster nextOrSame(<span class="parameters"><span class="parameter">java.time.DayOfWeek arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="ofDateAdjuster(UnaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.temporal.TemporalAdjuster ofDateAdjuster(<span class="parameters"><span class="parameter"><span>java.util.function.UnaryOperator&lt;java.time.LocalDate&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="previous(DayOfWeek)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.temporal.TemporalAdjuster previous(<span class="parameters"><span class="parameter">java.time.DayOfWeek arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="previousOrSame(DayOfWeek)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.time.temporal.TemporalAdjuster previousOrSame(<span class="parameters"><span class="parameter">java.time.DayOfWeek arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

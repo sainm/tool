@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.base/java.util.concurrent.ThreadPoolExecutor</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/util/concurrent/package-summary.html">java.util.concurrent</a></div>
+<h1>Class&nbsp;ThreadPoolExecutor</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> ThreadPoolExecutor <div class="superclass"><span class="keyword">extends</span> java.util.concurrent.AbstractExecutorService</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ThreadPoolExecutor.AbortPolicy.html">AbortPolicy</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ThreadPoolExecutor.CallerRunsPolicy.html">CallerRunsPolicy</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ThreadPoolExecutor.DiscardOldestPolicy.html">DiscardOldestPolicy</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/concurrent/ThreadPoolExecutor.DiscardPolicy.html">DiscardPolicy</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(int,int,long,TimeUnit,BlockingQueue)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ThreadPoolExecutor(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span>, <span class="parameter">java.util.concurrent.TimeUnit arg3</span>, <span class="parameter"><span>java.util.concurrent.BlockingQueue&lt;java.lang.Runnable&gt;</span> arg4</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,int,long,TimeUnit,BlockingQueue,RejectedExecutionHandler)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ThreadPoolExecutor(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span>, <span class="parameter">java.util.concurrent.TimeUnit arg3</span>, <span class="parameter"><span>java.util.concurrent.BlockingQueue&lt;java.lang.Runnable&gt;</span> arg4</span>, <span class="parameter">java.util.concurrent.RejectedExecutionHandler arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,int,long,TimeUnit,BlockingQueue,ThreadFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ThreadPoolExecutor(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span>, <span class="parameter">java.util.concurrent.TimeUnit arg3</span>, <span class="parameter"><span>java.util.concurrent.BlockingQueue&lt;java.lang.Runnable&gt;</span> arg4</span>, <span class="parameter">java.util.concurrent.ThreadFactory arg5</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(int,int,long,TimeUnit,BlockingQueue,ThreadFactory,RejectedExecutionHandler)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ThreadPoolExecutor(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">long</span> arg2</span>, <span class="parameter">java.util.concurrent.TimeUnit arg3</span>, <span class="parameter"><span>java.util.concurrent.BlockingQueue&lt;java.lang.Runnable&gt;</span> arg4</span>, <span class="parameter">java.util.concurrent.ThreadFactory arg5</span>, <span class="parameter">java.util.concurrent.RejectedExecutionHandler arg6</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="afterExecute(Runnable,Throwable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> afterExecute(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span>, <span class="parameter">java.lang.Throwable arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="allowCoreThreadTimeOut(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> allowCoreThreadTimeOut(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="allowsCoreThreadTimeOut()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> allowsCoreThreadTimeOut()</div>
+</div>
+</li><li><div class="element" id="awaitTermination(long,TimeUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> awaitTermination(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.util.concurrent.TimeUnit arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.InterruptedException</span></div>
+</div>
+</li><li><div class="element" id="beforeExecute(Thread,Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> beforeExecute(<span class="parameters"><span class="parameter">java.lang.Thread arg0</span>, <span class="parameter">java.lang.Runnable arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="execute(Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> execute(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="finalize()"><span class="same">&equals;</span><div class="signature"><span class="annotation">@Deprecated(since="9"forRemoval=true)</span><br>
+<span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> finalize()</div>
+</div>
+</li><li><div class="element" id="getActiveCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getActiveCount()</div>
+</div>
+</li><li><div class="element" id="getCompletedTaskCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getCompletedTaskCount()</div>
+</div>
+</li><li><div class="element" id="getCorePoolSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getCorePoolSize()</div>
+</div>
+</li><li><div class="element" id="getKeepAliveTime(TimeUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getKeepAliveTime(<span class="parameters"><span class="parameter">java.util.concurrent.TimeUnit arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getLargestPoolSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getLargestPoolSize()</div>
+</div>
+</li><li><div class="element" id="getMaximumPoolSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getMaximumPoolSize()</div>
+</div>
+</li><li><div class="element" id="getPoolSize()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> getPoolSize()</div>
+</div>
+</li><li><div class="element" id="getQueue()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.concurrent.BlockingQueue&lt;java.lang.Runnable&gt;</span> getQueue()</div>
+</div>
+</li><li><div class="element" id="getRejectedExecutionHandler()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.concurrent.RejectedExecutionHandler getRejectedExecutionHandler()</div>
+</div>
+</li><li><div class="element" id="getTaskCount()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">long</span> getTaskCount()</div>
+</div>
+</li><li><div class="element" id="getThreadFactory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.util.concurrent.ThreadFactory getThreadFactory()</div>
+</div>
+</li><li><div class="element" id="isShutdown()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isShutdown()</div>
+</div>
+</li><li><div class="element" id="isTerminated()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isTerminated()</div>
+</div>
+</li><li><div class="element" id="isTerminating()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isTerminating()</div>
+</div>
+</li><li><div class="element" id="prestartAllCoreThreads()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> prestartAllCoreThreads()</div>
+</div>
+</li><li><div class="element" id="prestartCoreThread()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> prestartCoreThread()</div>
+</div>
+</li><li><div class="element" id="purge()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> purge()</div>
+</div>
+</li><li><div class="element" id="remove(Runnable)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> remove(<span class="parameters"><span class="parameter">java.lang.Runnable arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setCorePoolSize(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setCorePoolSize(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setKeepAliveTime(long,TimeUnit)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setKeepAliveTime(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span>, <span class="parameter">java.util.concurrent.TimeUnit arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="setMaximumPoolSize(int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setMaximumPoolSize(<span class="parameters"><span class="parameter"><span class="keyword">int</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setRejectedExecutionHandler(RejectedExecutionHandler)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setRejectedExecutionHandler(<span class="parameters"><span class="parameter">java.util.concurrent.RejectedExecutionHandler arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setThreadFactory(ThreadFactory)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setThreadFactory(<span class="parameters"><span class="parameter">java.util.concurrent.ThreadFactory arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="shutdown()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> shutdown()</div>
+</div>
+</li><li><div class="element" id="shutdownNow()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.List&lt;java.lang.Runnable&gt;</span> shutdownNow()</div>
+</div>
+</li><li><div class="element" id="terminated()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> terminated()</div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

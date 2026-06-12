@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface java.base/java.util.stream.DoubleStream</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../java.base/java/util/stream/package-summary.html">java.util.stream</a></div>
+<h1>Interface&nbsp;DoubleStream</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> DoubleStream <div class="superinterfaces"><span class="keyword">extends</span> <span>java.util.stream.BaseStream&lt;java.lang.Double, java.util.stream.DoubleStream&gt;</span></div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/stream/DoubleStream.Builder.html">Builder</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/stream/DoubleStream.DoubleMapMultiConsumer.html">DoubleMapMultiConsumer</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="allMatch(DoublePredicate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> allMatch(<span class="parameters"><span class="parameter">java.util.function.DoublePredicate arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="anyMatch(DoublePredicate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> anyMatch(<span class="parameters"><span class="parameter">java.util.function.DoublePredicate arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="average()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.OptionalDouble average()</div>
+</div>
+</li><li><div class="element" id="boxed()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.stream.Stream&lt;java.lang.Double&gt;</span> boxed()</div>
+</div>
+</li><li><div class="element" id="builder()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.stream.DoubleStream.Builder builder()</div>
+</div>
+</li><li><div class="element" id="collect(Supplier,ObjDoubleConsumer,BiConsumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="typarams">&lt;<span>R</span>&gt;</span> R collect(<span class="parameters"><span class="parameter"><span>java.util.function.Supplier&lt;R&gt;</span> arg0</span>, <span class="parameter"><span>java.util.function.ObjDoubleConsumer&lt;R&gt;</span> arg1</span>, <span class="parameter"><span>java.util.function.BiConsumer&lt;R, R&gt;</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="concat(DoubleStream,DoubleStream)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.stream.DoubleStream concat(<span class="parameters"><span class="parameter">java.util.stream.DoubleStream arg0</span>, <span class="parameter">java.util.stream.DoubleStream arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="count()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">long</span> count()</div>
+</div>
+</li><li><div class="element" id="distinct()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.DoubleStream distinct()</div>
+</div>
+</li><li><div class="element" id="dropWhile(DoublePredicate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.util.stream.DoubleStream dropWhile(<span class="parameters"><span class="parameter">java.util.function.DoublePredicate arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="empty()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.stream.DoubleStream empty()</div>
+</div>
+</li><li><div class="element" id="filter(DoublePredicate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.DoubleStream filter(<span class="parameters"><span class="parameter">java.util.function.DoublePredicate arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="findAny()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.OptionalDouble findAny()</div>
+</div>
+</li><li><div class="element" id="findFirst()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.OptionalDouble findFirst()</div>
+</div>
+</li><li><div class="element" id="flatMap(DoubleFunction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.DoubleStream flatMap(<span class="parameters"><span class="parameter"><span>java.util.function.DoubleFunction&lt;<span>? <span class="keyword">extends</span> java.util.stream.DoubleStream</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="forEach(DoubleConsumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> forEach(<span class="parameters"><span class="parameter">java.util.function.DoubleConsumer arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="forEachOrdered(DoubleConsumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> forEachOrdered(<span class="parameters"><span class="parameter">java.util.function.DoubleConsumer arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="generate(DoubleSupplier)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.stream.DoubleStream generate(<span class="parameters"><span class="parameter">java.util.function.DoubleSupplier arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="iterate(double,DoublePredicate,DoubleUnaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.stream.DoubleStream iterate(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter">java.util.function.DoublePredicate arg1</span>, <span class="parameter">java.util.function.DoubleUnaryOperator arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="iterate(double,DoubleUnaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.stream.DoubleStream iterate(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter">java.util.function.DoubleUnaryOperator arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="iterator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.PrimitiveIterator.OfDouble iterator()</div>
+</div>
+</li><li><div class="element" id="limit(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.DoubleStream limit(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="map(DoubleUnaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.DoubleStream map(<span class="parameters"><span class="parameter">java.util.function.DoubleUnaryOperator arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mapMulti(DoubleMapMultiConsumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.util.stream.DoubleStream mapMulti(<span class="parameters"><span class="parameter">java.util.stream.DoubleStream.DoubleMapMultiConsumer arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mapToInt(DoubleToIntFunction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.IntStream mapToInt(<span class="parameters"><span class="parameter">java.util.function.DoubleToIntFunction arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mapToLong(DoubleToLongFunction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.LongStream mapToLong(<span class="parameters"><span class="parameter">java.util.function.DoubleToLongFunction arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="mapToObj(DoubleFunction)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="typarams">&lt;<span>U</span>&gt;</span> <span>java.util.stream.Stream&lt;U&gt;</span> mapToObj(<span class="parameters"><span class="parameter"><span>java.util.function.DoubleFunction&lt;<span>? <span class="keyword">extends</span> U</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="max()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.OptionalDouble max()</div>
+</div>
+</li><li><div class="element" id="min()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.OptionalDouble min()</div>
+</div>
+</li><li><div class="element" id="noneMatch(DoublePredicate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> noneMatch(<span class="parameters"><span class="parameter">java.util.function.DoublePredicate arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(double)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.stream.DoubleStream of(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="of(double[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> java.util.stream.DoubleStream of(<span class="parameters"><span class="parameter"><span><span class="keyword">double</span>[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="parallel()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.DoubleStream parallel()</div>
+</div>
+</li><li><div class="element" id="peek(DoubleConsumer)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.DoubleStream peek(<span class="parameters"><span class="parameter">java.util.function.DoubleConsumer arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="reduce(double,DoubleBinaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">double</span> reduce(<span class="parameters"><span class="parameter"><span class="keyword">double</span> arg0</span>, <span class="parameter">java.util.function.DoubleBinaryOperator arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="reduce(DoubleBinaryOperator)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.OptionalDouble reduce(<span class="parameters"><span class="parameter">java.util.function.DoubleBinaryOperator arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="sequential()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.DoubleStream sequential()</div>
+</div>
+</li><li><div class="element" id="skip(long)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.DoubleStream skip(<span class="parameters"><span class="parameter"><span class="keyword">long</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="sorted()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.stream.DoubleStream sorted()</div>
+</div>
+</li><li><div class="element" id="spliterator()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.Spliterator.OfDouble spliterator()</div>
+</div>
+</li><li><div class="element" id="sum()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">double</span> sum()</div>
+</div>
+</li><li><div class="element" id="summaryStatistics()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.util.DoubleSummaryStatistics summaryStatistics()</div>
+</div>
+</li><li><div class="element" id="takeWhile(DoublePredicate)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">default</span></span> java.util.stream.DoubleStream takeWhile(<span class="parameters"><span class="parameter">java.util.function.DoublePredicate arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="toArray()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span><span class="keyword">double</span>[]</span> toArray()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

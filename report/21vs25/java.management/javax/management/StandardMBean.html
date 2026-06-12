@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.management/javax.management.StandardMBean</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.management/module-summary.html">java.management</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.management/javax/management/package-summary.html">javax.management</a></div>
+<h1>Class&nbsp;StandardMBean</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> StandardMBean <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> javax.management.DynamicMBean, javax.management.MBeanRegistration</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> StandardMBean(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.management.NotCompliantMBeanException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(Class,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> StandardMBean(<span class="parameters"><span class="parameter"><span>java.lang.Class&lt;?&gt;</span> arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(T,Class)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> StandardMBean(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> javax.management.NotCompliantMBeanException</span></div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(T,Class,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>T</span>&gt;</span> StandardMBean(<span class="parameters"><span class="parameter">T arg0</span>, <span class="parameter"><span>java.lang.Class&lt;T&gt;</span> arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="cacheMBeanInfo(MBeanInfo)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">void</span> cacheMBeanInfo(<span class="parameters"><span class="parameter">javax.management.MBeanInfo arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAttribute(String)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getAttribute(<span class="parameters"><span class="parameter">java.lang.String arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.management.AttributeNotFoundException, javax.management.MBeanException, javax.management.ReflectionException</span></div>
+</div>
+</li><li><div class="element" id="getAttributes(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.management.AttributeList getAttributes(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getCachedMBeanInfo()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> javax.management.MBeanInfo getCachedMBeanInfo()</div>
+</div>
+</li><li><div class="element" id="getClassName(MBeanInfo)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String getClassName(<span class="parameters"><span class="parameter">javax.management.MBeanInfo arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getConstructors(MBeanConstructorInfo[],Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span>javax.management.MBeanConstructorInfo[]</span> getConstructors(<span class="parameters"><span class="parameter"><span>javax.management.MBeanConstructorInfo[]</span> arg0</span>, <span class="parameter">java.lang.Object arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDescription(MBeanAttributeInfo)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String getDescription(<span class="parameters"><span class="parameter">javax.management.MBeanAttributeInfo arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDescription(MBeanConstructorInfo)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String getDescription(<span class="parameters"><span class="parameter">javax.management.MBeanConstructorInfo arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDescription(MBeanConstructorInfo,MBeanParameterInfo,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String getDescription(<span class="parameters"><span class="parameter">javax.management.MBeanConstructorInfo arg0</span>, <span class="parameter">javax.management.MBeanParameterInfo arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDescription(MBeanFeatureInfo)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String getDescription(<span class="parameters"><span class="parameter">javax.management.MBeanFeatureInfo arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDescription(MBeanInfo)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String getDescription(<span class="parameters"><span class="parameter">javax.management.MBeanInfo arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDescription(MBeanOperationInfo)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String getDescription(<span class="parameters"><span class="parameter">javax.management.MBeanOperationInfo arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getDescription(MBeanOperationInfo,MBeanParameterInfo,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String getDescription(<span class="parameters"><span class="parameter">javax.management.MBeanOperationInfo arg0</span>, <span class="parameter">javax.management.MBeanParameterInfo arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getImpact(MBeanOperationInfo)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> <span class="keyword">int</span> getImpact(<span class="parameters"><span class="parameter">javax.management.MBeanOperationInfo arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getImplementation()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object getImplementation()</div>
+</div>
+</li><li><div class="element" id="getImplementationClass()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.lang.Class&lt;?&gt;</span> getImplementationClass()</div>
+</div>
+</li><li><div class="element" id="getMBeanInfo()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.management.MBeanInfo getMBeanInfo()</div>
+</div>
+</li><li><div class="element" id="getMBeanInterface()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span>java.lang.Class&lt;?&gt;</span> getMBeanInterface()</div>
+</div>
+</li><li><div class="element" id="getParameterName(MBeanConstructorInfo,MBeanParameterInfo,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String getParameterName(<span class="parameters"><span class="parameter">javax.management.MBeanConstructorInfo arg0</span>, <span class="parameter">javax.management.MBeanParameterInfo arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="getParameterName(MBeanOperationInfo,MBeanParameterInfo,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> java.lang.String getParameterName(<span class="parameters"><span class="parameter">javax.management.MBeanOperationInfo arg0</span>, <span class="parameter">javax.management.MBeanParameterInfo arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="invoke(String,Object[],String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Object invoke(<span class="parameters"><span class="parameter">java.lang.String arg0</span>, <span class="parameter"><span>java.lang.Object[]</span> arg1</span>, <span class="parameter"><span>java.lang.String[]</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> javax.management.MBeanException, javax.management.ReflectionException</span></div>
+</div>
+</li><li><div class="element" id="postDeregister()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> postDeregister()</div>
+</div>
+</li><li><div class="element" id="postRegister(Boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> postRegister(<span class="parameters"><span class="parameter">java.lang.Boolean arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="preDeregister()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> preDeregister() <span class="throws"><span class="keyword">throws</span> java.lang.Exception</span></div>
+</div>
+</li><li><div class="element" id="preRegister(MBeanServer,ObjectName)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.management.ObjectName preRegister(<span class="parameters"><span class="parameter">javax.management.MBeanServer arg0</span>, <span class="parameter">javax.management.ObjectName arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.lang.Exception</span></div>
+</div>
+</li><li><div class="element" id="setAttribute(Attribute)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setAttribute(<span class="parameters"><span class="parameter">javax.management.Attribute arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.management.AttributeNotFoundException, javax.management.InvalidAttributeValueException, javax.management.MBeanException, javax.management.ReflectionException</span></div>
+</div>
+</li><li><div class="element" id="setAttributes(AttributeList)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> javax.management.AttributeList setAttributes(<span class="parameters"><span class="parameter">javax.management.AttributeList arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="setImplementation(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> setImplementation(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>) <span class="throws"><span class="keyword">throws</span> javax.management.NotCompliantMBeanException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

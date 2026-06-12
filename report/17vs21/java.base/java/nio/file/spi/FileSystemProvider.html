@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.nio.file.spi.FileSystemProvider</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.base/java/nio/file/spi/package-summary.html">java.nio.file.spi</a></div>
+<h1>Class&nbsp;FileSystemProvider</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">class</span> FileSystemProvider <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">protected</span></span> FileSystemProvider()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="checkAccess(Path,AccessMode[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> checkAccess(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span>java.nio.file.AccessMode[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="copy(Path,Path,CopyOption[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> copy(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter">java.nio.file.Path arg1</span>, <span class="parameter"><span>java.nio.file.CopyOption[]</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="createDirectory(Path,FileAttribute[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> createDirectory(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span><span>java.nio.file.attribute.FileAttribute&lt;?&gt;</span>[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="createLink(Path,Path)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> createLink(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter">java.nio.file.Path arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="createSymbolicLink(Path,Path,FileAttribute[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> createSymbolicLink(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter">java.nio.file.Path arg1</span>, <span class="parameter"><span><span>java.nio.file.attribute.FileAttribute&lt;?&gt;</span>[]</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="delete(Path)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> delete(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="deleteIfExists(Path)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> deleteIfExists(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="exists(Path,LinkOption[])"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> exists(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span>java.nio.file.LinkOption[]</span> arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFileAttributeView(Path,Class,LinkOption[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="typarams">&lt;<span>V</span>&gt;</span> V getFileAttributeView(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span>java.lang.Class&lt;V&gt;</span> arg1</span>, <span class="parameter"><span>java.nio.file.LinkOption[]</span> arg2</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFileStore(Path)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.nio.file.FileStore getFileStore(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="getFileSystem(URI)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.nio.file.FileSystem getFileSystem(<span class="parameters"><span class="parameter">java.net.URI arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getPath(URI)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.nio.file.Path getPath(<span class="parameters"><span class="parameter">java.net.URI arg0</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="getScheme()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.lang.String getScheme()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="installedProviders()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.List&lt;java.nio.file.spi.FileSystemProvider&gt;</span> installedProviders()</div>
+</div>
+</li><li class="unchanged"><div class="element" id="isHidden(Path)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isHidden(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="isSameFile(Path,Path)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">boolean</span> isSameFile(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter">java.nio.file.Path arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="move(Path,Path,CopyOption[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> move(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter">java.nio.file.Path arg1</span>, <span class="parameter"><span>java.nio.file.CopyOption[]</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="newAsynchronousFileChannel(Path,Set,ExecutorService,FileAttribute[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.nio.channels.AsynchronousFileChannel newAsynchronousFileChannel(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span>java.util.Set&lt;<span>? <span class="keyword">extends</span> java.nio.file.OpenOption</span>&gt;</span> arg1</span>, <span class="parameter">java.util.concurrent.ExecutorService arg2</span>, <span class="parameter"><span><span>java.nio.file.attribute.FileAttribute&lt;?&gt;</span>[]</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="newByteChannel(Path,Set,FileAttribute[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.nio.channels.SeekableByteChannel newByteChannel(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span>java.util.Set&lt;<span>? <span class="keyword">extends</span> java.nio.file.OpenOption</span>&gt;</span> arg1</span>, <span class="parameter"><span><span>java.nio.file.attribute.FileAttribute&lt;?&gt;</span>[]</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="newDirectoryStream(Path,Filter)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.nio.file.DirectoryStream&lt;java.nio.file.Path&gt;</span> newDirectoryStream(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span>java.nio.file.DirectoryStream.Filter&lt;<span>? <span class="keyword">super</span> java.nio.file.Path</span>&gt;</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="newFileChannel(Path,Set,FileAttribute[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.nio.channels.FileChannel newFileChannel(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span>java.util.Set&lt;<span>? <span class="keyword">extends</span> java.nio.file.OpenOption</span>&gt;</span> arg1</span>, <span class="parameter"><span><span>java.nio.file.attribute.FileAttribute&lt;?&gt;</span>[]</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="newFileSystem(URI,Map)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> java.nio.file.FileSystem newFileSystem(<span class="parameters"><span class="parameter">java.net.URI arg0</span>, <span class="parameter"><span>java.util.Map&lt;java.lang.String, ?&gt;</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="newFileSystem(Path,Map)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.nio.file.FileSystem newFileSystem(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span>java.util.Map&lt;java.lang.String, ?&gt;</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="newInputStream(Path,OpenOption[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.InputStream newInputStream(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span>java.nio.file.OpenOption[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="newOutputStream(Path,OpenOption[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.OutputStream newOutputStream(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span>java.nio.file.OpenOption[]</span> arg1</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="readAttributes(Path,Class,LinkOption[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="typarams">&lt;<span>A</span>&gt;</span> A readAttributes(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span>java.lang.Class&lt;A&gt;</span> arg1</span>, <span class="parameter"><span>java.nio.file.LinkOption[]</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="readAttributes(Path,String,LinkOption[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.Map&lt;java.lang.String, java.lang.Object&gt;</span> readAttributes(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter"><span>java.nio.file.LinkOption[]</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="readAttributesIfExists(Path,Class,LinkOption[])"><span class="add">&plus;</span><span class="missing missing-caption-add">Only in: JDK21; not in: JDK17.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="typarams">&lt;<span>A</span>&gt;</span> A readAttributesIfExists(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter"><span>java.lang.Class&lt;A&gt;</span> arg1</span>, <span class="parameter"><span>java.nio.file.LinkOption[]</span> arg2</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="readSymbolicLink(Path)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.nio.file.Path readSymbolicLink(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li class="unchanged"><div class="element" id="setAttribute(Path,String,Object,LinkOption[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> setAttribute(<span class="parameters"><span class="parameter">java.nio.file.Path arg0</span>, <span class="parameter">java.lang.String arg1</span>, <span class="parameter">java.lang.Object arg2</span>, <span class="parameter"><span>java.nio.file.LinkOption[]</span> arg3</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th>Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../../java.base/java/nio/file/spi/FileSystemProvider.html#exists(Path,LinkOption%5B%5D)">exists(Path,LinkOption[])</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr><th scope="row"><a href="../../../../../java.base/java/nio/file/spi/FileSystemProvider.html#readAttributesIfExists(Path,Class,LinkOption%5B%5D)">readAttributesIfExists(Path,Class,LinkOption[])</a></th>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

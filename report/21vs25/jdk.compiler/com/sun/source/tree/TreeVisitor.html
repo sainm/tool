@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: interface jdk.compiler/com.sun.source.tree.TreeVisitor</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../jdk.compiler/module-summary.html">jdk.compiler</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../jdk.compiler/com/sun/source/tree/package-summary.html">com.sun.source.tree</a></div>
+<h1>Interface&nbsp;TreeVisitor</h1>
+</div>
+<div class="element"><span class="diff">&ne;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> TreeVisitor<span class="typarams">&lt;<span>R</span>, <span>P</span>&gt;</span> </div>
+</div>
+<section class="enclosed"><h2>Methods</h2>
+<ul><li class="unchanged"><div class="element" id="visitAnnotatedType(AnnotatedTypeTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitAnnotatedType(<span class="parameters"><span class="parameter">com.sun.source.tree.AnnotatedTypeTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitAnnotation(AnnotationTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitAnnotation(<span class="parameters"><span class="parameter">com.sun.source.tree.AnnotationTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitAnyPattern(AnyPatternTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitAnyPattern(<span class="parameters"><span class="parameter">com.sun.source.tree.AnyPatternTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitArrayAccess(ArrayAccessTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitArrayAccess(<span class="parameters"><span class="parameter">com.sun.source.tree.ArrayAccessTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitArrayType(ArrayTypeTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitArrayType(<span class="parameters"><span class="parameter">com.sun.source.tree.ArrayTypeTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitAssert(AssertTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitAssert(<span class="parameters"><span class="parameter">com.sun.source.tree.AssertTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitAssignment(AssignmentTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitAssignment(<span class="parameters"><span class="parameter">com.sun.source.tree.AssignmentTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitBinary(BinaryTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitBinary(<span class="parameters"><span class="parameter">com.sun.source.tree.BinaryTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitBindingPattern(BindingPatternTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitBindingPattern(<span class="parameters"><span class="parameter">com.sun.source.tree.BindingPatternTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitBlock(BlockTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitBlock(<span class="parameters"><span class="parameter">com.sun.source.tree.BlockTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitBreak(BreakTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitBreak(<span class="parameters"><span class="parameter">com.sun.source.tree.BreakTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitCase(CaseTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitCase(<span class="parameters"><span class="parameter">com.sun.source.tree.CaseTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitCatch(CatchTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitCatch(<span class="parameters"><span class="parameter">com.sun.source.tree.CatchTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitClass(ClassTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitClass(<span class="parameters"><span class="parameter">com.sun.source.tree.ClassTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitCompilationUnit(CompilationUnitTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitCompilationUnit(<span class="parameters"><span class="parameter">com.sun.source.tree.CompilationUnitTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitCompoundAssignment(CompoundAssignmentTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitCompoundAssignment(<span class="parameters"><span class="parameter">com.sun.source.tree.CompoundAssignmentTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitConditionalExpression(ConditionalExpressionTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitConditionalExpression(<span class="parameters"><span class="parameter">com.sun.source.tree.ConditionalExpressionTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitConstantCaseLabel(ConstantCaseLabelTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitConstantCaseLabel(<span class="parameters"><span class="parameter">com.sun.source.tree.ConstantCaseLabelTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitContinue(ContinueTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitContinue(<span class="parameters"><span class="parameter">com.sun.source.tree.ContinueTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitDeconstructionPattern(DeconstructionPatternTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitDeconstructionPattern(<span class="parameters"><span class="parameter">com.sun.source.tree.DeconstructionPatternTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitDefaultCaseLabel(DefaultCaseLabelTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitDefaultCaseLabel(<span class="parameters"><span class="parameter">com.sun.source.tree.DefaultCaseLabelTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitDoWhileLoop(DoWhileLoopTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitDoWhileLoop(<span class="parameters"><span class="parameter">com.sun.source.tree.DoWhileLoopTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitEmptyStatement(EmptyStatementTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitEmptyStatement(<span class="parameters"><span class="parameter">com.sun.source.tree.EmptyStatementTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitEnhancedForLoop(EnhancedForLoopTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitEnhancedForLoop(<span class="parameters"><span class="parameter">com.sun.source.tree.EnhancedForLoopTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitErroneous(ErroneousTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitErroneous(<span class="parameters"><span class="parameter">com.sun.source.tree.ErroneousTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitExports(ExportsTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitExports(<span class="parameters"><span class="parameter">com.sun.source.tree.ExportsTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitExpressionStatement(ExpressionStatementTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitExpressionStatement(<span class="parameters"><span class="parameter">com.sun.source.tree.ExpressionStatementTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitForLoop(ForLoopTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitForLoop(<span class="parameters"><span class="parameter">com.sun.source.tree.ForLoopTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitIdentifier(IdentifierTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitIdentifier(<span class="parameters"><span class="parameter">com.sun.source.tree.IdentifierTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitIf(IfTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitIf(<span class="parameters"><span class="parameter">com.sun.source.tree.IfTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitImport(ImportTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitImport(<span class="parameters"><span class="parameter">com.sun.source.tree.ImportTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitInstanceOf(InstanceOfTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitInstanceOf(<span class="parameters"><span class="parameter">com.sun.source.tree.InstanceOfTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitIntersectionType(IntersectionTypeTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitIntersectionType(<span class="parameters"><span class="parameter">com.sun.source.tree.IntersectionTypeTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitLabeledStatement(LabeledStatementTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitLabeledStatement(<span class="parameters"><span class="parameter">com.sun.source.tree.LabeledStatementTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitLambdaExpression(LambdaExpressionTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitLambdaExpression(<span class="parameters"><span class="parameter">com.sun.source.tree.LambdaExpressionTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitLiteral(LiteralTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitLiteral(<span class="parameters"><span class="parameter">com.sun.source.tree.LiteralTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitMemberReference(MemberReferenceTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitMemberReference(<span class="parameters"><span class="parameter">com.sun.source.tree.MemberReferenceTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitMemberSelect(MemberSelectTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitMemberSelect(<span class="parameters"><span class="parameter">com.sun.source.tree.MemberSelectTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitMethod(MethodTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitMethod(<span class="parameters"><span class="parameter">com.sun.source.tree.MethodTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitMethodInvocation(MethodInvocationTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitMethodInvocation(<span class="parameters"><span class="parameter">com.sun.source.tree.MethodInvocationTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitModifiers(ModifiersTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitModifiers(<span class="parameters"><span class="parameter">com.sun.source.tree.ModifiersTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitModule(ModuleTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitModule(<span class="parameters"><span class="parameter">com.sun.source.tree.ModuleTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitNewArray(NewArrayTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitNewArray(<span class="parameters"><span class="parameter">com.sun.source.tree.NewArrayTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitNewClass(NewClassTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitNewClass(<span class="parameters"><span class="parameter">com.sun.source.tree.NewClassTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitOpens(OpensTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitOpens(<span class="parameters"><span class="parameter">com.sun.source.tree.OpensTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitOther(Tree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitOther(<span class="parameters"><span class="parameter">com.sun.source.tree.Tree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitPackage(PackageTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitPackage(<span class="parameters"><span class="parameter">com.sun.source.tree.PackageTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitParameterizedType(ParameterizedTypeTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitParameterizedType(<span class="parameters"><span class="parameter">com.sun.source.tree.ParameterizedTypeTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitParenthesized(ParenthesizedTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitParenthesized(<span class="parameters"><span class="parameter">com.sun.source.tree.ParenthesizedTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitPatternCaseLabel(PatternCaseLabelTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitPatternCaseLabel(<span class="parameters"><span class="parameter">com.sun.source.tree.PatternCaseLabelTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitPrimitiveType(PrimitiveTypeTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitPrimitiveType(<span class="parameters"><span class="parameter">com.sun.source.tree.PrimitiveTypeTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitProvides(ProvidesTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitProvides(<span class="parameters"><span class="parameter">com.sun.source.tree.ProvidesTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitRequires(RequiresTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitRequires(<span class="parameters"><span class="parameter">com.sun.source.tree.RequiresTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitReturn(ReturnTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitReturn(<span class="parameters"><span class="parameter">com.sun.source.tree.ReturnTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li><div class="element" id="visitStringTemplate(StringTemplateTree,P)"><span class="remove">&minus;</span><span class="missing missing-caption-remove">Only in: JDK21; not in: JDK25.</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitStringTemplate(<span class="parameters"><span class="parameter">com.sun.source.tree.StringTemplateTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitSwitch(SwitchTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitSwitch(<span class="parameters"><span class="parameter">com.sun.source.tree.SwitchTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitSwitchExpression(SwitchExpressionTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitSwitchExpression(<span class="parameters"><span class="parameter">com.sun.source.tree.SwitchExpressionTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitSynchronized(SynchronizedTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitSynchronized(<span class="parameters"><span class="parameter">com.sun.source.tree.SynchronizedTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitThrow(ThrowTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitThrow(<span class="parameters"><span class="parameter">com.sun.source.tree.ThrowTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitTry(TryTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitTry(<span class="parameters"><span class="parameter">com.sun.source.tree.TryTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitTypeCast(TypeCastTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitTypeCast(<span class="parameters"><span class="parameter">com.sun.source.tree.TypeCastTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitTypeParameter(TypeParameterTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitTypeParameter(<span class="parameters"><span class="parameter">com.sun.source.tree.TypeParameterTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitUnary(UnaryTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitUnary(<span class="parameters"><span class="parameter">com.sun.source.tree.UnaryTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitUnionType(UnionTypeTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitUnionType(<span class="parameters"><span class="parameter">com.sun.source.tree.UnionTypeTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitUses(UsesTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitUses(<span class="parameters"><span class="parameter">com.sun.source.tree.UsesTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitVariable(VariableTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitVariable(<span class="parameters"><span class="parameter">com.sun.source.tree.VariableTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitWhileLoop(WhileLoopTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitWhileLoop(<span class="parameters"><span class="parameter">com.sun.source.tree.WhileLoopTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitWildcard(WildcardTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitWildcard(<span class="parameters"><span class="parameter">com.sun.source.tree.WildcardTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li><li class="unchanged"><div class="element" id="visitYield(YieldTree,P)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> R visitYield(<span class="parameters"><span class="parameter">com.sun.source.tree.YieldTree arg0</span>, <span class="parameter">P arg1</span></span>)</div>
+</div>
+</li></ul>
+</section>
+<section class="summary"><h2>Summary</h2>
+<table class="summary"><caption>Differences</caption>
+<thead><tr><td rowspan="2"></td>
+<th colspan="3">Elements</th>
+<th class="allZero" colspan="3">Comments</th>
+<th class="allZero" colspan="3">Descriptions</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr><th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th>Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+<th class="allZero">Added</th>
+<th class="allZero">Changed</th>
+<th class="allZero">Removed</th>
+</tr>
+</thead>
+<tbody><tr><th scope="row"><a href="../../../../../jdk.compiler/com/sun/source/tree/TreeVisitor.html#visitStringTemplate(StringTemplateTree,P)">visitStringTemplate(StringTemplateTree,P)</a></th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tbody>
+<tfoot><tr><th scope="row">Total</th>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+</tfoot>
+</table>
+</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

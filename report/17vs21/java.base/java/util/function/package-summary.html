@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: package java.base/java.util.function</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../resources/apidiff.css">
+</head>
+<body class="package"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../java.base/module-summary.html">java.base</a></div>
+<h1>Package&nbsp;java.util.function</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="keyword">package</span> java.util.function</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/BiConsumer.html">BiConsumer</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/BiFunction.html">BiFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/BiPredicate.html">BiPredicate</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/BinaryOperator.html">BinaryOperator</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/BooleanSupplier.html">BooleanSupplier</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/Consumer.html">Consumer</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/DoubleBinaryOperator.html">DoubleBinaryOperator</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/DoubleConsumer.html">DoubleConsumer</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/DoubleFunction.html">DoubleFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/DoublePredicate.html">DoublePredicate</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/DoubleSupplier.html">DoubleSupplier</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/DoubleToIntFunction.html">DoubleToIntFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/DoubleToLongFunction.html">DoubleToLongFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/DoubleUnaryOperator.html">DoubleUnaryOperator</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/Function.html">Function</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/IntBinaryOperator.html">IntBinaryOperator</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/IntConsumer.html">IntConsumer</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/IntFunction.html">IntFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/IntPredicate.html">IntPredicate</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/IntSupplier.html">IntSupplier</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/IntToDoubleFunction.html">IntToDoubleFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/IntToLongFunction.html">IntToLongFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/IntUnaryOperator.html">IntUnaryOperator</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/LongBinaryOperator.html">LongBinaryOperator</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/LongConsumer.html">LongConsumer</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/LongFunction.html">LongFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/LongPredicate.html">LongPredicate</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/LongSupplier.html">LongSupplier</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/LongToDoubleFunction.html">LongToDoubleFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/LongToIntFunction.html">LongToIntFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/LongUnaryOperator.html">LongUnaryOperator</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/ObjDoubleConsumer.html">ObjDoubleConsumer</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/ObjIntConsumer.html">ObjIntConsumer</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/ObjLongConsumer.html">ObjLongConsumer</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/Predicate.html">Predicate</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/Supplier.html">Supplier</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/ToDoubleBiFunction.html">ToDoubleBiFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/ToDoubleFunction.html">ToDoubleFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/ToIntBiFunction.html">ToIntBiFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/ToIntFunction.html">ToIntFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/ToLongBiFunction.html">ToLongBiFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/ToLongFunction.html">ToLongFunction</a></span></li><li><span><span class="same">&equals;</span> <a href="../../../../java.base/java/util/function/UnaryOperator.html">UnaryOperator</a></span></li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

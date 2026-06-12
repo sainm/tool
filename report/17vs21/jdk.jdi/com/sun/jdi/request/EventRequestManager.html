@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: interface jdk.jdi/com.sun.jdi.request.EventRequestManager</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../jdk.jdi/module-summary.html">jdk.jdi</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../jdk.jdi/com/sun/jdi/request/package-summary.html">com.sun.jdi.request</a></div>
+<h1>Interface&nbsp;EventRequestManager</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">interface</span> EventRequestManager <div class="superinterfaces"><span class="keyword">extends</span> com.sun.jdi.Mirror</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="accessWatchpointRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.AccessWatchpointRequest&gt;</span> accessWatchpointRequests()</div>
+</div>
+</li><li><div class="element" id="breakpointRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.BreakpointRequest&gt;</span> breakpointRequests()</div>
+</div>
+</li><li><div class="element" id="classPrepareRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.ClassPrepareRequest&gt;</span> classPrepareRequests()</div>
+</div>
+</li><li><div class="element" id="classUnloadRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.ClassUnloadRequest&gt;</span> classUnloadRequests()</div>
+</div>
+</li><li><div class="element" id="createAccessWatchpointRequest(Field)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.AccessWatchpointRequest createAccessWatchpointRequest(<span class="parameters"><span class="parameter">com.sun.jdi.Field arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createBreakpointRequest(Location)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.BreakpointRequest createBreakpointRequest(<span class="parameters"><span class="parameter">com.sun.jdi.Location arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createClassPrepareRequest()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.ClassPrepareRequest createClassPrepareRequest()</div>
+</div>
+</li><li><div class="element" id="createClassUnloadRequest()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.ClassUnloadRequest createClassUnloadRequest()</div>
+</div>
+</li><li><div class="element" id="createExceptionRequest(ReferenceType,boolean,boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.ExceptionRequest createExceptionRequest(<span class="parameters"><span class="parameter">com.sun.jdi.ReferenceType arg0</span>, <span class="parameter"><span class="keyword">boolean</span> arg1</span>, <span class="parameter"><span class="keyword">boolean</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="createMethodEntryRequest()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.MethodEntryRequest createMethodEntryRequest()</div>
+</div>
+</li><li><div class="element" id="createMethodExitRequest()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.MethodExitRequest createMethodExitRequest()</div>
+</div>
+</li><li><div class="element" id="createModificationWatchpointRequest(Field)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.ModificationWatchpointRequest createModificationWatchpointRequest(<span class="parameters"><span class="parameter">com.sun.jdi.Field arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="createMonitorContendedEnterRequest()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.MonitorContendedEnterRequest createMonitorContendedEnterRequest()</div>
+</div>
+</li><li><div class="element" id="createMonitorContendedEnteredRequest()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.MonitorContendedEnteredRequest createMonitorContendedEnteredRequest()</div>
+</div>
+</li><li><div class="element" id="createMonitorWaitRequest()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.MonitorWaitRequest createMonitorWaitRequest()</div>
+</div>
+</li><li><div class="element" id="createMonitorWaitedRequest()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.MonitorWaitedRequest createMonitorWaitedRequest()</div>
+</div>
+</li><li><div class="element" id="createStepRequest(ThreadReference,int,int)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.StepRequest createStepRequest(<span class="parameters"><span class="parameter">com.sun.jdi.ThreadReference arg0</span>, <span class="parameter"><span class="keyword">int</span> arg1</span>, <span class="parameter"><span class="keyword">int</span> arg2</span></span>)</div>
+</div>
+</li><li><div class="element" id="createThreadDeathRequest()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.ThreadDeathRequest createThreadDeathRequest()</div>
+</div>
+</li><li><div class="element" id="createThreadStartRequest()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.ThreadStartRequest createThreadStartRequest()</div>
+</div>
+</li><li><div class="element" id="createVMDeathRequest()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> com.sun.jdi.request.VMDeathRequest createVMDeathRequest()</div>
+</div>
+</li><li><div class="element" id="deleteAllBreakpoints()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> deleteAllBreakpoints()</div>
+</div>
+</li><li><div class="element" id="deleteEventRequest(EventRequest)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> deleteEventRequest(<span class="parameters"><span class="parameter">com.sun.jdi.request.EventRequest arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="deleteEventRequests(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span class="keyword">void</span> deleteEventRequests(<span class="parameters"><span class="parameter"><span>java.util.List&lt;<span>? <span class="keyword">extends</span> com.sun.jdi.request.EventRequest</span>&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="exceptionRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.ExceptionRequest&gt;</span> exceptionRequests()</div>
+</div>
+</li><li><div class="element" id="methodEntryRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.MethodEntryRequest&gt;</span> methodEntryRequests()</div>
+</div>
+</li><li><div class="element" id="methodExitRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.MethodExitRequest&gt;</span> methodExitRequests()</div>
+</div>
+</li><li><div class="element" id="modificationWatchpointRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.ModificationWatchpointRequest&gt;</span> modificationWatchpointRequests()</div>
+</div>
+</li><li><div class="element" id="monitorContendedEnterRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.MonitorContendedEnterRequest&gt;</span> monitorContendedEnterRequests()</div>
+</div>
+</li><li><div class="element" id="monitorContendedEnteredRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.MonitorContendedEnteredRequest&gt;</span> monitorContendedEnteredRequests()</div>
+</div>
+</li><li><div class="element" id="monitorWaitRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.MonitorWaitRequest&gt;</span> monitorWaitRequests()</div>
+</div>
+</li><li><div class="element" id="monitorWaitedRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.MonitorWaitedRequest&gt;</span> monitorWaitedRequests()</div>
+</div>
+</li><li><div class="element" id="stepRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.StepRequest&gt;</span> stepRequests()</div>
+</div>
+</li><li><div class="element" id="threadDeathRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.ThreadDeathRequest&gt;</span> threadDeathRequests()</div>
+</div>
+</li><li><div class="element" id="threadStartRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.ThreadStartRequest&gt;</span> threadStartRequests()</div>
+</div>
+</li><li><div class="element" id="vmDeathRequests()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">abstract</span></span> <span>java.util.List&lt;com.sun.jdi.request.VMDeathRequest&gt;</span> vmDeathRequests()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

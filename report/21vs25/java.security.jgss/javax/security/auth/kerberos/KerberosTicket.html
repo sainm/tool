@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 21 → 25 API 变化: class java.security.jgss/javax.security.auth.kerberos.KerberosTicket</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK21 : JDK25<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../../../java.security.jgss/module-summary.html">java.security.jgss</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../../../java.security.jgss/javax/security/auth/kerberos/package-summary.html">javax.security.auth.kerberos</a></div>
+<h1>Class&nbsp;KerberosTicket</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">class</span> KerberosTicket <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+<div class="superinterfaces"><span class="keyword">implements</span> java.io.Serializable, javax.security.auth.Destroyable, javax.security.auth.Refreshable</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(byte[],KerberosPrincipal,KerberosPrincipal,byte[],int,boolean[],Date,Date,Date,Date,InetAddress[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> KerberosTicket(<span class="parameters"><span class="parameter"><span><span class="keyword">byte</span>[]</span> arg0</span>, <span class="parameter">javax.security.auth.kerberos.KerberosPrincipal arg1</span>, <span class="parameter">javax.security.auth.kerberos.KerberosPrincipal arg2</span>, <span class="parameter"><span><span class="keyword">byte</span>[]</span> arg3</span>, <span class="parameter"><span class="keyword">int</span> arg4</span>, <span class="parameter"><span><span class="keyword">boolean</span>[]</span> arg5</span>, <span class="parameter">java.util.Date arg6</span>, <span class="parameter">java.util.Date arg7</span>, <span class="parameter">java.util.Date arg8</span>, <span class="parameter">java.util.Date arg9</span>, <span class="parameter"><span>java.net.InetAddress[]</span> arg10</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="destroy()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> destroy() <span class="throws"><span class="keyword">throws</span> javax.security.auth.DestroyFailedException</span></div>
+</div>
+</li><li><div class="element" id="equals(Object)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> equals(<span class="parameters"><span class="parameter">java.lang.Object arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="getAuthTime()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.util.Date getAuthTime()</div>
+</div>
+</li><li><div class="element" id="getClient()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> javax.security.auth.kerberos.KerberosPrincipal getClient()</div>
+</div>
+</li><li><div class="element" id="getClientAddresses()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span>java.net.InetAddress[]</span> getClientAddresses()</div>
+</div>
+</li><li><div class="element" id="getEncoded()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span><span class="keyword">byte</span>[]</span> getEncoded()</div>
+</div>
+</li><li><div class="element" id="getEndTime()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.util.Date getEndTime()</div>
+</div>
+</li><li><div class="element" id="getFlags()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span><span class="keyword">boolean</span>[]</span> getFlags()</div>
+</div>
+</li><li><div class="element" id="getRenewTill()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.util.Date getRenewTill()</div>
+</div>
+</li><li><div class="element" id="getServer()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> javax.security.auth.kerberos.KerberosPrincipal getServer()</div>
+</div>
+</li><li><div class="element" id="getSessionKey()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> javax.crypto.SecretKey getSessionKey()</div>
+</div>
+</li><li><div class="element" id="getSessionKeyType()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">int</span> getSessionKeyType()</div>
+</div>
+</li><li><div class="element" id="getStartTime()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> java.util.Date getStartTime()</div>
+</div>
+</li><li><div class="element" id="hashCode()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">int</span> hashCode()</div>
+</div>
+</li><li><div class="element" id="isCurrent()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isCurrent()</div>
+</div>
+</li><li><div class="element" id="isDestroyed()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> isDestroyed()</div>
+</div>
+</li><li><div class="element" id="isForwardable()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isForwardable()</div>
+</div>
+</li><li><div class="element" id="isForwarded()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isForwarded()</div>
+</div>
+</li><li><div class="element" id="isInitial()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isInitial()</div>
+</div>
+</li><li><div class="element" id="isPostdated()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isPostdated()</div>
+</div>
+</li><li><div class="element" id="isProxiable()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isProxiable()</div>
+</div>
+</li><li><div class="element" id="isProxy()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isProxy()</div>
+</div>
+</li><li><div class="element" id="isRenewable()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">boolean</span> isRenewable()</div>
+</div>
+</li><li><div class="element" id="refresh()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">void</span> refresh() <span class="throws"><span class="keyword">throws</span> javax.security.auth.RefreshFailedException</span></div>
+</div>
+</li><li><div class="element" id="toString()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.String toString()</div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="serial-form"><h2>Serialized Form</h2>
+<span class="same">&equals;</span><h3>serialVersionUID</h3>
+<span class="same">&equals;</span>7395334370157380539<section class="enclosed"><h3>Serialized Fields</h3>
+<ul><li><div class="element"><span class="same">&equals;</span><div class="signature"><span><span class="keyword">byte</span>[]</span>&nbsp;asn1Encoding</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.util.Date&nbsp;authTime</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.security.auth.kerberos.KerberosPrincipal&nbsp;client</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span>java.net.InetAddress[]</span>&nbsp;clientAddresses</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.util.Date&nbsp;endTime</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature"><span><span class="keyword">boolean</span>[]</span>&nbsp;flags</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.security.auth.kerberos.KerberosTicket&nbsp;proxy</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.util.Date&nbsp;renewTill</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.security.auth.kerberos.KerberosPrincipal&nbsp;server</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">javax.security.auth.kerberos.KeyImpl&nbsp;sessionKey</div>
+</div>
+</li><li><div class="element"><span class="same">&equals;</span><div class="signature">java.util.Date&nbsp;startTime</div>
+</div>
+</li></ul>
+</section>
+<section class="enclosed"><h3>Serialization Methods</h3>
+<ul><li class="unchanged"><div class="element" id="serial-method-readObject"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">private</span></span> <span class="keyword">void</span> readObject(<span class="parameters"><span class="parameter">java.io.ObjectInputStream arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException, java.lang.ClassNotFoundException</span></div>
+</div>
+</li></ul>
+</section>
+</section>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK21 : JDK25</div>
+<nav><ul><li><a href="../../../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>

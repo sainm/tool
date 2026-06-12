@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>JDK 17 → 21 API 变化: class java.base/java.lang.ProcessBuilder</title>
+<meta name="generator" content="apidiff">
+<link rel="stylesheet" type="text/css; charset=UTF-8" href="../../../resources/apidiff.css">
+</head>
+<body class="type"><header><div class="bar"><div class="info">JDK17 : JDK21<script>
+    function adjustShowUnchanged() {
+        if (document.getElementById("show-unchanged-checkbox").checked) {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.remove("hidden");
+            }
+        } else {
+            var unchanged = document.getElementsByClassName("unchanged");
+            for (var i = 0; i < unchanged.length; i++) {
+                unchanged[i].classList.add("hidden");
+            }
+        }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        adjustShowUnchanged();
+    });
+</script>
+<input type='checkbox' id='show-unchanged-checkbox'
+       onchange='adjustShowUnchanged()'>
+Show unchanged
+</input>
+</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</header>
+<main><div class="pageHeading"><div><span class="label">Module</span>&nbsp;<a href="../../../java.base/module-summary.html">java.base</a></div>
+<div><span class="label">Package</span>&nbsp;<a href="../../../java.base/java/lang/package-summary.html">java.lang</a></div>
+<h1>Class&nbsp;ProcessBuilder</h1>
+</div>
+<div class="element"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">final</span></span> <span class="keyword">class</span> ProcessBuilder <div class="superclass"><span class="keyword">extends</span> java.lang.Object</div>
+</div>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Nested Types</h2>
+<ul><li><span><span class="same">&equals;</span> <a href="../../../java.base/java/lang/ProcessBuilder.Redirect.html">Redirect</a></span></li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Constructors</h2>
+<ul><li><div class="element" id="&lt;init&gt;(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ProcessBuilder(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="&lt;init&gt;(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> ProcessBuilder(<span class="parameters"><span class="parameter"><span>java.util.List&lt;java.lang.String&gt;</span> arg0</span></span>)</div>
+</div>
+</li></ul>
+</section>
+</div>
+<div class="unchanged"><section class="enclosed"><h2>Methods</h2>
+<ul><li><div class="element" id="command()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.List&lt;java.lang.String&gt;</span> command()</div>
+</div>
+</li><li><div class="element" id="command(String[])"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ProcessBuilder command(<span class="parameters"><span class="parameter"><span>java.lang.String[]</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="command(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ProcessBuilder command(<span class="parameters"><span class="parameter"><span>java.util.List&lt;java.lang.String&gt;</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="directory()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.io.File directory()</div>
+</div>
+</li><li><div class="element" id="directory(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ProcessBuilder directory(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="environment()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span>java.util.Map&lt;java.lang.String, java.lang.String&gt;</span> environment()</div>
+</div>
+</li><li><div class="element" id="inheritIO()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ProcessBuilder inheritIO()</div>
+</div>
+</li><li><div class="element" id="redirectError()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ProcessBuilder.Redirect redirectError()</div>
+</div>
+</li><li><div class="element" id="redirectError(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ProcessBuilder redirectError(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="redirectError(Redirect)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ProcessBuilder redirectError(<span class="parameters"><span class="parameter">java.lang.ProcessBuilder.Redirect arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="redirectErrorStream()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> <span class="keyword">boolean</span> redirectErrorStream()</div>
+</div>
+</li><li><div class="element" id="redirectErrorStream(boolean)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ProcessBuilder redirectErrorStream(<span class="parameters"><span class="parameter"><span class="keyword">boolean</span> arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="redirectInput()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ProcessBuilder.Redirect redirectInput()</div>
+</div>
+</li><li><div class="element" id="redirectInput(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ProcessBuilder redirectInput(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="redirectInput(Redirect)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ProcessBuilder redirectInput(<span class="parameters"><span class="parameter">java.lang.ProcessBuilder.Redirect arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="redirectOutput()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ProcessBuilder.Redirect redirectOutput()</div>
+</div>
+</li><li><div class="element" id="redirectOutput(File)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ProcessBuilder redirectOutput(<span class="parameters"><span class="parameter">java.io.File arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="redirectOutput(Redirect)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.ProcessBuilder redirectOutput(<span class="parameters"><span class="parameter">java.lang.ProcessBuilder.Redirect arg0</span></span>)</div>
+</div>
+</li><li><div class="element" id="start()"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span></span> java.lang.Process start() <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li><li><div class="element" id="startPipeline(List)"><span class="same">&equals;</span><div class="signature"><span class="modifiers"><span class="keyword">public</span> <span class="keyword">static</span></span> <span>java.util.List&lt;java.lang.Process&gt;</span> startPipeline(<span class="parameters"><span class="parameter"><span>java.util.List&lt;java.lang.ProcessBuilder&gt;</span> arg0</span></span>) <span class="throws"><span class="keyword">throws</span> java.io.IOException</span></div>
+</div>
+</li></ul>
+</section>
+</div>
+<section class="summary"><h2>Summary</h2>
+No differences.</section>
+</main>
+<footer><div class="bar"><div class="info">JDK17 : JDK21</div>
+<nav><ul><li><a href="../../../index.html">Overview</a></li></ul>
+</nav>
+</div>
+</footer>
+</body>
+</html>
